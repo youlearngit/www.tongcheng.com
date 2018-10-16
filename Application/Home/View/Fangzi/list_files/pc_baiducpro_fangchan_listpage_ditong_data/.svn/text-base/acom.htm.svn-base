@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<!--baiduCustNativeADImageTxt_1-->
+<title>
+    百度推广
+</title>
+<style type="text/css">
+body{margin:0;padding:0;font-size:14px;font-family:arial,'microsoft yahei',\5b8b\4f53,sans-serif}body *{margin:0;padding:0;font-size:100%}body em{font-style:normal}body ul,body ol{list-style:none}body img{border:0}body .cur-item .item-img{-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box}body .clearfix:after{clear:both;content:'\20';height:0;display:block}body .clear{clear:both;height:0;line-height:0;font-size:0;visibility:hidden;overflow:hidden}body .yahei{font-family:"microsoft yahei","微软雅黑E\8F6F\96C5\9ED1",Tahoma,Arial,Helvetica,STHeiti}body .heiti{font-family:SimHei,STHeiti,"microsoft yahei","微软雅黑E\8F6F\96C5\9ED1",Tahoma,Arial,Helvetica}.s-hl-content{position:relative}.s-hl-content .s-bd-logo{height:20px;width:100px;background:url('http://su.bdstatic.com/static/cun/img/bd_logo_78626fb5.png') no-repeat left top;background-position:0 0}.s-hl-content .s-bd-logo:hover{background-position:0 -20px}.s-hl-content .s-bd-logo{text-decoration:none;cursor:pointer;display:block;overflow:hidden;position:absolute;bottom:0;right:0;z-index:2147483647}.s-hl-content .s-bd-logo-small:hover{background-position:-70px 0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://su.bdstatic.com/static/cun/img/logo_border_dark_fe7d5068.png",sizingMethod="crop")}.s-hl-content .s-bd-logo-small{position:absolute;cursor:pointer;bottom:0;right:0;height:18px;width:18px;background:url(http://su.bdstatic.com/static/cun/img/bd_logo2_fe7c9450.png) no-repeat left top;background-position:0 0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://su.bdstatic.com/static/cun/img/logo_border_light_0f0bac10.png",sizingMethod="crop");_background:none;z-index:2147483647}
+</style>
+<script type="text/javascript">
+(function(c){var b=typeof module==="undefined"?(c.baidu=c.baidu||{}):module.exports;b.template=function(g,f){var e=(function(){if(!c.document){return a._compile(g)}var i=document.getElementById(g);if(i){if(a.cache[g]){return a.cache[g]}var h=/^(textarea|input)$/i.test(i.nodeName)?i.value:i.innerHTML;return a._compile(h)}else{return a._compile(g)}})();var d=a._isObject(f)?e(f):e;e=null;return d};var a=b.template;a.versions=a.versions||[];a.versions.push("1.0.6");a.cache={};a.LEFT_DELIMITER=a.LEFT_DELIMITER||"<%";a.RIGHT_DELIMITER=a.RIGHT_DELIMITER||"%>";a.ESCAPE=true;a._encodeHTML=function(d){return String(d).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\\/g,"&#92;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")};a._encodeReg=function(d){return String(d).replace(/([.*+?^=!:${}()|[\]/\\])/g,"\\$1")};a._encodeEventHTML=function(d){return String(d).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/\\\\/g,"\\").replace(/\\\//g,"/").replace(/\\n/g,"\n").replace(/\\r/g,"\r")};a._compile=function(e){var d="var _template_fun_array=[];\nvar fn=(function(__data__){\nvar _template_varName='';\nfor(name in __data__){\n_template_varName+=('var '+name+'=__data__[\"'+name+'\"];');\n};\neval(_template_varName);\n_template_fun_array.push('"+a._analysisStr(e)+"');\n_template_varName=null;\n})(_template_object);\nfn = null;\nreturn _template_fun_array.join('');\n";return new Function("_template_object",d)};a._isObject=function(d){return"function"===typeof d||!!(d&&"object"===typeof d)};a._analysisStr=function(f){var d=a.LEFT_DELIMITER;var h=a.RIGHT_DELIMITER;var e=a._encodeReg(d);var g=a._encodeReg(h);f=String(f).replace(new RegExp("("+e+"[^"+g+"]*)//.*\n","g"),"$1").replace(new RegExp("<!--.*?-->","g"),"").replace(new RegExp(e+"\\*.*?\\*"+g,"g"),"").replace(new RegExp("[\\r\\t\\n]","g"),"").replace(new RegExp(e+"(?:(?!"+g+")[\\s\\S])*"+g+"|((?:(?!"+e+")[\\s\\S])+)","g"),function(j,i){var k="";if(i){k=i.replace(/\\/g,"&#92;").replace(/'/g,"&#39;");while(/<[^<]*?&#39;[^<]*?>/g.test(k)){k=k.replace(/(<[^<]*?)&#39;([^<]*?>)/g,"$1\r$2")}}else{k=j}return k});f=f.replace(new RegExp("("+e+"[\\s]*?var[\\s]*?.*?[\\s]*?[^;])[\\s]*?"+g,"g"),"$1;"+h).replace(new RegExp("("+e+":?[hvu]?[\\s]*?=[\\s]*?[^;|"+g+"]*?);[\\s]*?"+g,"g"),"$1"+h).split(d).join("\t");if(a.ESCAPE){f=f.replace(new RegExp("\\t=(.*?)"+g,"g"),"',typeof($1) === 'undefined'?'':baidu.template._encodeHTML($1),'")}else{f=f.replace(new RegExp("\\t=(.*?)"+g,"g"),"',typeof($1) === 'undefined'?'':$1,'")}f=f.replace(new RegExp("\\t:h=(.*?)"+g,"g"),"',typeof($1) === 'undefined'?'':baidu.template._encodeHTML($1),'").replace(new RegExp("\\t(?::=|-)(.*?)"+g,"g"),"',typeof($1)==='undefined'?'':$1,'").replace(new RegExp("\\t:u=(.*?)"+g,"g"),"',typeof($1)==='undefined'?'':encodeURIComponent($1),'").replace(new RegExp("\\t:v=(.*?)"+g,"g"),"',typeof($1)==='undefined'?'':baidu.template._encodeEventHTML($1),'").split("\t").join("');").split(h).join("_template_fun_array.push('").split("\r").join("\\'");return f}})(window);
+</script>
+<script type="text/template" id="native_ad_frame_template">
+    <div class="s-hl-content">
+        <div id="bd-hl-content" class="bd-hl-content">
+            <div class="title_style title_style_<%=style.hasTitle%>"><%=style.header%></div>
+            <div id="pic_container" class="pic_container"> </div>
+            <a class="bd-logo2" target="_blank" href="http://wangmeng.baidu.com/" title="百度网盟推广" style="zoom: 1;">&nbsp;</a>
+        </div>
+    </div>
+    <style type="text/css">
+        .s-hl-content .bd-hl-content a,
+        .s-hl-content .bd-hl-content a:hover,
+        .s-hl-content .bd-hl-content a:visited,
+        .s-hl-content .bd-hl-content a{text-decoration:none}
+        .s-hl-content .bd-hl-content .pic_container{padding:0px;border:0;position:relative;overflow:hidden;float:left;}
+        .s-hl-content .bd-hl-content{
+            position:relative; margin:0;padding:0;font-family:'microsoft yahei';font-size: 14px;font-weight:normal; overflow:hidden;
+            border:<%=style.containerBorder%>px solid #CCC;
+            background-color:<%=style.containerBgColor%>;
+            width:<%=style.containerWidth%>px;
+            height:<%=style.containerHeight%>px;
+            padding:<%=style.containerPaddingTop%>px <%=style.containerPaddingRight%>px <%=style.containerPaddingBottom%>px <%=style.containerPaddingLeft%>px;
+        }
+        .bd-logo2{text-decoration:none;cursor:pointer;display:block;overflow:hidden;position:absolute;bottom:0;right:0;z-index:2147483647}.bd-logo2{margin:0 2px 2px 0;height:14px;width:13px;background:url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position:0 -20px;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/logo-noborder-light.png",sizingMethod="crop");_background:0}.bd-logo2:hover{background-position:0 -35px;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/logo-noborder-dark.png",sizingMethod="crop")}
+        .s-hl-content .bd-hl-content .title_style {<%if(style.hasTitle==2){%>margin-left:5px;<%}%>width:<%=(style.containerWidth-5)%>px;height:25px;line-height:25px;padding-left:5px;font-size:<%=style.headerFontSize%>px;margin-bottom:3px;font-weight:900;}
+        .s-hl-content .bd-hl-content .title_style_0 {display:none;}
+        .s-hl-content .bd-hl-content .title_style_2 {border-left:5px solid <%=style.headerBgColor%>;color:<%=style.headerFontColor%>}
+        .s-hl-content .bd-hl-content .title_style_1 {background-color:<%=style.headerBgColor%>;color:<%=style.headerFontColor%>}
+    </style>
+</script>
+<script type="text/template" id="native_ad_pic_template">
+<div style="margin-top:<%=style.blockMarginTop%>px;<%if(style.align==1){%>margin-left:5px;<%}%>">
+    <%for(var row=0;row<style.imgRow;++row){
+        %><div id="imgRow<%=row%>"style="margin-top:<%=style.imgRowMarginTop%>px;clear:both;"><%
+            for(var col=0;col<style.imgCol;++col){
+                var i = row * style.imgCol + col;%>
+                <div class="pic_itemColumnSpace" ></div>
+                <div class="pic_item" id="picItem_<%=row%>_<%=col%>" >
+                            <div class="pic">
+                                <a  href="<%=ads[i].curl%>" target="_blank" style="cursor: pointer">
+                                <%if((style.Sys.ie && style.Sys.ie>= 10 || style.Sys.safari)){%>
+                                    <svg>
+                                        <defs>
+                                            <filter id="blur_<%=row%>_<%=col%>">
+                                            <feGaussianBlur id="filter__<%=row%>_<%=col%>" stdDeviation="0" />
+                                            </filter>
+                                        </defs>
+                                        <image xlink:href="<%=ads[i].image_url%>" preserveAspectRatio="none" width="<%=style.picWidth%>" height="<%=style.picHeight%>" filter="url(#blur_<%=row%>_<%=col%>)" />
+                                    </svg>
+                                <%}else{%>
+                                    <img class="img" src="<%=ads[i].image_url%>">
+                                <%}%>
+                                <div class="mask">
+                                    <%
+                                    var T = advLength(ads[i].title,14);
+                                    var H = Math.min(Math.ceil(T/(style.picWidth-20)),2);
+                                    if(style.titlePosition){
+                                    var L = Math.max((style.picHeight-H*21)/2-10,0);
+                                    }else{
+                                    var L = Math.max((style.picHeight-H*21)/2,0);
+                                    }
+                                    %>
+                                    <span class="mask_title" style="margin-top:<%=L%>px" x=<%=T%> y=<%=H%> ><%=ads[i].title%></span>
+                                    <%if(config.h1){%>
+                                        <span class="mask_head">百度一下</span>
+                                    <%}else{%>
+                                        <span class="mask_head"><div class="mask_logo" src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png" style="background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position: 0 -19px;float:left;width:15px;height:15px;margin-right:3px;"></div><span class="mask_logo" style="">百度一下</span></span>
+                                    <%}%>
+                                </div>
+                                </a>
+                            </div>
+                    <a  href="<%=ads[i].curl%>" target="_blank" style="cursor: pointer">
+                            <%if(style.titlePosition){%>
+                                <div class="pic_title title_on_pic title_on_pic_bg"></div>
+                            <%}%>
+                            <div class="pic_title <%if(style.titlePosition){%>title_on_pic<%}else{%>title_under_pic<%}%>">
+                                <%=ads[i].title%>
+                            </div>
+                    </a>
+                </div> 
+            <%}%>
+            <div style="clear:both;"></div></div>
+        <%}%>
+    <div style="clear:both"></div>
+</div>
+<style>
+
+.pic_itemColumnSpace {height:40px;float:left;margin-top:0;margin-bottom:0;width:<%=config.cMR%>px}
+.pic_item {float:left;overflow: hidden;width:<%=(style.imgItemWidth)%>px;height:<%=style.imgItemHeight%>px;position:relative;}
+.pic {text-align:center;margin:0px;border:1px solid #ddd;height:<%=style.picHeight%>px;overflow:hidden;} 
+.pic .img{width:<%=style.picWidth%>px;height:<%=style.picHeight%>px;}
+.pic_title{margin:0 auto;padding:0;overflow:hidden;text-align:center;text-decoration:none;font-weight:normal;width:<%=(style.picWidth)%>px;height:<%=style.picTitleHeight%>px;line-height:<%=style.picTitleHeight%>px;}
+
+.pic_container .title_on_pic{color:#ffffff; position:absolute;top:<%=style.picHeight-19%>px;left:1px;}
+.pic_container .title_under_pic{color:<%=style.titleFontColor%>;font-family:"<%=style.titleFontFamily%>";font-size:<%=style.titleFontSize%>px;font-weight:normal;}
+
+.title_on_pic_bg{background-color:#000000;filter:alpha(opacity=50);opacity:<%=style.titleBgOpa%>;height:20px;}
+.mask{position:absolute;top:1px;left:1px;height:<%=style.picHeight+16%>px;width:<%=(style.picWidth)%>px;background-color:rgba(0,0,0,0.5);display:none;filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);}
+<%if(config.h1){%>
+.mask_head{color:#fff;text-align:left;background-color: #3285FF;display:inline-block;padding:2px 4px;margin-top:2px;font-size:12px;}
+.mask_title {color:#000;background-color: #fff; padding: 2px 5px; border: 1px solid #ccc;display:inline-block;width:<%=style.picWidth-20%>px;line-height:16px;max-height:32px;overflow:hidden;}
+<%}else{%>
+.mask_head{color:#fff;text-align:left;display:inline-block;padding:2px 4px;font-size:12px;}
+.mask_title {color:#fff; padding: 3px 5px; border: 1px solid #fff;display:inline-block;width:<%=style.picWidth-20%>px;font-size:14px;overflow:hidden;max-height:32px;line-height:16px;}
+<%}%>
+.hover .pic{border : 1px solid #f40000;}
+.hover .title_under_pic{color:#f40000;}
+.hover .title_on_pic{color:#f40000;}
+
+.pic_item_hover .mask {display:block;}
+.pic_item_hover .pic_title a{color:#ffffff;font-weight:900;}
+.pic_item_hover .title_on_pic_bg{display:none;}
+.pic_item_hover .title_on_pic{top:-<%=parseInt(style.picHeight*1.6)+1%>px;font-size:16px;font-weight:900;}
+.pic_item_hover .img{ -webkit-filter: blur(4px);-moz-filter: blur(4px);-ms-filter: blur(4px);filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false);}
+<%if(!style.titlePosition){%>
+.pic_item_hover .img,.pic_item_hover .pic{height:<%=style.picHeight+16%>px}
+<%}%>
+</style>
+</script>
+
+<script>
+    var ads = [{"bid":"","curl":"http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&app_id=0&c=news&cf=20&ch=0&di=8&fv=0&is_app=0&jk=851356ea2b8d85cb&k=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&k0=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&k1=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&k2=%B6%FE%CA%D6%B7%BF&k3=%B1%B1%BE%A9%D7%E2%B7%BF&k4=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&k5=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&kdi0=8&kdi1=8&kdi2=8&kdi3=8&kdi4=8&kdi5=8&luki=1&n=10&p=baidu&q=14026035_1_cpr&rb=0&rs=1&seller_id=1&sid=cb858d2bea561385&ssp2=1&stid=115&t=tpclicked3_hc&td=1733019&tu=u1733019&u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&urlid=0","desc":"北京二手房","height":90,"image_url":"http://t11.baidu.com/it/u=596557723,3993318077&fm=76","isHb":false,"lpId":3,"surl":"","title":"北京二手房","type":"text","width":960,"word_src":"a"},{"bid":"","curl":"http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&app_id=0&c=news&cf=20&ch=0&di=8&fv=0&is_app=0&jk=851356ea2b8d85cb&k=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&k0=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&k1=%B6%FE%CA%D6%B7%BF&k2=%B1%B1%BE%A9%D7%E2%B7%BF&k3=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&k4=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&k5=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&kdi0=8&kdi1=8&kdi2=8&kdi3=8&kdi4=8&kdi5=8&luki=2&n=10&p=baidu&q=14026035_1_cpr&rb=0&rs=1&seller_id=1&sid=cb858d2bea561385&ssp2=1&stid=115&t=tpclicked3_hc&td=1733019&tu=u1733019&u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&urlid=0","desc":"阳台装修效果图","height":90,"image_url":"http://t10.baidu.com/it/u=1552539747,1921483060&fm=76","isHb":false,"lpId":3,"surl":"","title":"阳台装修效果图","type":"text","width":960,"word_src":"f"},{"bid":"","curl":"http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&app_id=0&c=news&cf=20&ch=0&di=8&fv=0&is_app=0&jk=851356ea2b8d85cb&k=%B6%FE%CA%D6%B7%BF&k0=%B6%FE%CA%D6%B7%BF&k1=%B1%B1%BE%A9%D7%E2%B7%BF&k2=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&k3=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&k4=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&k5=%D1%F4%CC%A8%BB%A4%C0%B8&kdi0=8&kdi1=8&kdi2=8&kdi3=8&kdi4=8&kdi5=8&luki=3&n=10&p=baidu&q=14026035_1_cpr&rb=0&rs=1&seller_id=1&sid=cb858d2bea561385&ssp2=1&stid=115&t=tpclicked3_hc&td=1733019&tu=u1733019&u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&urlid=0","desc":"二手房","height":90,"image_url":"http://t11.baidu.com/it/u=2042452246,2952553703&fm=76","isHb":false,"lpId":3,"surl":"","title":"二手房","type":"text","width":960,"word_src":"3"},{"bid":"","curl":"http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&app_id=0&c=news&cf=20&ch=0&di=8&fv=0&is_app=0&jk=851356ea2b8d85cb&k=%B1%B1%BE%A9%D7%E2%B7%BF&k0=%B1%B1%BE%A9%D7%E2%B7%BF&k1=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&k2=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&k3=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&k4=%D1%F4%CC%A8%BB%A4%C0%B8&k5=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&kdi0=8&kdi1=8&kdi2=8&kdi3=8&kdi4=8&kdi5=8&luki=4&n=10&p=baidu&q=14026035_1_cpr&rb=0&rs=1&seller_id=1&sid=cb858d2bea561385&ssp2=1&stid=115&t=tpclicked3_hc&td=1733019&tu=u1733019&u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&urlid=0","desc":"北京租房","height":90,"image_url":"http://t10.baidu.com/it/u=2141568009,3135245953&fm=76","isHb":false,"lpId":3,"surl":"","title":"北京租房","type":"text","width":960,"word_src":"f"},{"bid":"","curl":"http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&app_id=0&c=news&cf=20&ch=0&di=8&fv=0&is_app=0&jk=851356ea2b8d85cb&k=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&k0=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&k1=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&k2=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&k3=%D1%F4%CC%A8%BB%A4%C0%B8&k4=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&k5=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&kdi0=8&kdi1=8&kdi2=8&kdi3=8&kdi4=8&kdi5=8&luki=5&n=10&p=baidu&q=14026035_1_cpr&rb=0&rs=1&seller_id=1&sid=cb858d2bea561385&ssp2=1&stid=115&t=tpclicked3_hc&td=1733019&tu=u1733019&u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&urlid=0","desc":"酒店式公寓","height":90,"image_url":"http://t12.baidu.com/it/u=742244387,429178228&fm=76","isHb":false,"lpId":3,"surl":"","title":"酒店式公寓","type":"text","width":960,"word_src":"f"},{"bid":"","curl":"http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&app_id=0&c=news&cf=20&ch=0&di=8&fv=0&is_app=0&jk=851356ea2b8d85cb&k=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&k0=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&k1=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&k2=%D1%F4%CC%A8%BB%A4%C0%B8&k3=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&k4=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&k5=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&kdi0=8&kdi1=8&kdi2=8&kdi3=8&kdi4=8&kdi5=8&luki=6&n=10&p=baidu&q=14026035_1_cpr&rb=0&rs=1&seller_id=1&sid=cb858d2bea561385&ssp2=1&stid=115&t=tpclicked3_hc&td=1733019&tu=u1733019&u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&urlid=0","desc":"小会议室出租","height":90,"image_url":"http://t10.baidu.com/it/u=3793804350,3833475333&fm=76","isHb":false,"lpId":3,"surl":"","title":"小会议室出租","type":"text","width":960,"word_src":"6"},{"bid":"","curl":"http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&app_id=0&c=news&cf=20&ch=0&di=8&fv=0&is_app=0&jk=851356ea2b8d85cb&k=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&k0=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&k1=%D1%F4%CC%A8%BB%A4%C0%B8&k2=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&k3=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&k4=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&k5=%B6%FE%CA%D6%B7%BF&kdi0=8&kdi1=8&kdi2=8&kdi3=8&kdi4=8&kdi5=8&luki=7&n=10&p=baidu&q=14026035_1_cpr&rb=0&rs=1&seller_id=1&sid=cb858d2bea561385&ssp2=1&stid=115&t=tpclicked3_hc&td=1733019&tu=u1733019&u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&urlid=0","desc":"天津化妆学校","height":90,"image_url":"http://t10.baidu.com/it/u=4103090166,4236057738&fm=76","isHb":false,"lpId":3,"surl":"","title":"天津化妆学校","type":"text","width":960,"word_src":"6"},{"bid":"","curl":"http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&app_id=0&c=news&cf=20&ch=0&di=8&fv=0&is_app=0&jk=851356ea2b8d85cb&k=%D1%F4%CC%A8%BB%A4%C0%B8&k0=%D1%F4%CC%A8%BB%A4%C0%B8&k1=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&k2=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&k3=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&k4=%B6%FE%CA%D6%B7%BF&k5=%B1%B1%BE%A9%D7%E2%B7%BF&kdi0=8&kdi1=8&kdi2=8&kdi3=8&kdi4=8&kdi5=8&luki=8&n=10&p=baidu&q=14026035_1_cpr&rb=0&rs=1&seller_id=1&sid=cb858d2bea561385&ssp2=1&stid=115&t=tpclicked3_hc&td=1733019&tu=u1733019&u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&urlid=0","desc":"阳台护栏","height":90,"image_url":"http://t12.baidu.com/it/u=1237503998,251194695&fm=76","isHb":false,"lpId":3,"surl":"","title":"阳台护栏","type":"text","width":960,"word_src":"f"},{"bid":"","curl":"http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&app_id=0&c=news&cf=20&ch=0&di=8&fv=0&is_app=0&jk=851356ea2b8d85cb&k=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&k0=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&k1=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&k2=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&k3=%B6%FE%CA%D6%B7%BF&k4=%B1%B1%BE%A9%D7%E2%B7%BF&k5=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&kdi0=8&kdi1=8&kdi2=8&kdi3=8&kdi4=8&kdi5=8&luki=9&n=10&p=baidu&q=14026035_1_cpr&rb=0&rs=1&seller_id=1&sid=cb858d2bea561385&ssp2=1&stid=115&t=tpclicked3_hc&td=1733019&tu=u1733019&u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&urlid=0","desc":"租赁led显示屏","height":90,"image_url":"http://t11.baidu.com/it/u=3914508691,4138080870&fm=76","isHb":false,"lpId":3,"surl":"","title":"租赁led显示屏","type":"text","width":960,"word_src":"6"}]; 
+    var news = [];
+    var config = {"IF_m_char":14,"adp":1,"at":0,"aurl":"","cad":1,"conBW":1,"conOP":1,"exp_flag":10,"exp_flag_mob":0,"exp_flag_secretary":0,"imC":9,"imHeight":66,"imR":1,"imStid":115,"imTab":1,"imWidth":95,"lunum":6,"n":"14026035_1_cpr","pat":6,"ptbg":90,"ptp":0,"ptt":0,"rad":"","rsi0":960,"rsi1":90,"rsi5":4,"rss0":"#FFFFFF","rss1":"#FFFFFF","rss2":"#000000","rss3":"","rss4":"","rss6":"#e10900","rss7":"","scale":"","skin":"","titFF":"%E5%AE%8B%E4%BD%93","titFS":14,"titSU":0,"titTA":"left","txtC":0,"txtLC":0,"txtR":0,"txtRH":0};
+    config.hover = config.exp_flag & 2 ? 1 : 0;
+</script>
+</head>
+<body><div style="display:none;"><img src="acom_data/adx.gif" alt="" width="1px" height="1px"></div>
+    <div id="wrapper">    <div class="s-hl-content">        <div id="bd-hl-content" class="bd-hl-content">            <div class="title_style title_style_0">undefined</div>            <div id="pic_container" class="pic_container"><div style="margin-top:0px;">    <div id="imgRow0" style="margin-top:2px;clear:both;">                <div class="pic_itemColumnSpace"></div>                <div class="pic_item" id="picItem_0_0">                            <div class="pic">                                <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k0=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k1=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k2=%B6%FE%CA%D6%B7%BF&amp;k3=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k4=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k5=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=1&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                                    <svg>                                        <defs>                                            <filter id="blur_0_0">                                            <feGaussianBlur id="filter__0_0" stdDeviation="0"></feGaussianBlur>                                            </filter>                                        </defs>                                        <image xlink:href="acom_data/u5965577233993318077fm76.jpg" preserveAspectRatio="none" width="95" height="66" filter="url(#blur_0_0)"></image>                                    </svg>                                                                <div class="mask">                                                                        <span class="mask_title" style="margin-top:22.5px" x="70" y="1">北京二手房</span>                                                                            <span class="mask_head"><div class="mask_logo" src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png" style="background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position: 0 -19px;float:left;width:15px;height:15px;margin-right:3px;"></div><span class="mask_logo" style="">百度一下</span></span>                                                                    </div>                                </a>                            </div>                    <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k0=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k1=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k2=%B6%FE%CA%D6%B7%BF&amp;k3=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k4=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k5=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=1&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                        <div class="pic_title title_under_pic">                                北京二手房                            </div>                    </a>                </div>                             <div class="pic_itemColumnSpace"></div>                <div class="pic_item" id="picItem_0_1">                            <div class="pic">                                <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k0=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k1=%B6%FE%CA%D6%B7%BF&amp;k2=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k3=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k4=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k5=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=2&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                                    <svg>                                        <defs>                                            <filter id="blur_0_1">                                            <feGaussianBlur id="filter__0_1" stdDeviation="0"></feGaussianBlur>                                            </filter>                                        </defs>                                        <image xlink:href="acom_data/u15525397471921483060fm76.jpg" preserveAspectRatio="none" width="95" height="66" filter="url(#blur_0_1)"></image>                                    </svg>                                                                <div class="mask">                                                                        <span class="mask_title" style="margin-top:12px" x="98" y="2">阳台装修效果图</span>                                                                            <span class="mask_head"><div class="mask_logo" src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png" style="background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position: 0 -19px;float:left;width:15px;height:15px;margin-right:3px;"></div><span class="mask_logo" style="">百度一下</span></span>                                                                    </div>                                </a>                            </div>                    <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k0=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k1=%B6%FE%CA%D6%B7%BF&amp;k2=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k3=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k4=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k5=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=2&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                        <div class="pic_title title_under_pic">                                阳台装修效果图                            </div>                    </a>                </div>                             <div class="pic_itemColumnSpace"></div>                <div class="pic_item" id="picItem_0_2">                            <div class="pic">                                <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%B6%FE%CA%D6%B7%BF&amp;k0=%B6%FE%CA%D6%B7%BF&amp;k1=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k2=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k3=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k4=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k5=%D1%F4%CC%A8%BB%A4%C0%B8&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=3&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                                    <svg>                                        <defs>                                            <filter id="blur_0_2">                                            <feGaussianBlur id="filter__0_2" stdDeviation="0"></feGaussianBlur>                                            </filter>                                        </defs>                                        <image xlink:href="acom_data/u20424522462952553703fm76.jpg" preserveAspectRatio="none" width="95" height="66" filter="url(#blur_0_2)"></image>                                    </svg>                                                                <div class="mask">                                                                        <span class="mask_title" style="margin-top:22.5px" x="42" y="1">二手房</span>                                                                            <span class="mask_head"><div class="mask_logo" src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png" style="background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position: 0 -19px;float:left;width:15px;height:15px;margin-right:3px;"></div><span class="mask_logo" style="">百度一下</span></span>                                                                    </div>                                </a>                            </div>                    <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%B6%FE%CA%D6%B7%BF&amp;k0=%B6%FE%CA%D6%B7%BF&amp;k1=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k2=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k3=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k4=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k5=%D1%F4%CC%A8%BB%A4%C0%B8&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=3&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                        <div class="pic_title title_under_pic">                                二手房                            </div>                    </a>                </div>                             <div class="pic_itemColumnSpace"></div>                <div class="pic_item" id="picItem_0_3">                            <div class="pic">                                <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k0=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k1=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k2=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k3=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k4=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k5=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=4&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                                    <svg>                                        <defs>                                            <filter id="blur_0_3">                                            <feGaussianBlur id="filter__0_3" stdDeviation="0"></feGaussianBlur>                                            </filter>                                        </defs>                                        <image xlink:href="acom_data/u21415680093135245953fm76.jpg" preserveAspectRatio="none" width="95" height="66" filter="url(#blur_0_3)"></image>                                    </svg>                                                                <div class="mask">                                                                        <span class="mask_title" style="margin-top:22.5px" x="56" y="1">北京租房</span>                                                                            <span class="mask_head"><div class="mask_logo" src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png" style="background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position: 0 -19px;float:left;width:15px;height:15px;margin-right:3px;"></div><span class="mask_logo" style="">百度一下</span></span>                                                                    </div>                                </a>                            </div>                    <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k0=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k1=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k2=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k3=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k4=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k5=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=4&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                        <div class="pic_title title_under_pic">                                北京租房                            </div>                    </a>                </div>                             <div class="pic_itemColumnSpace"></div>                <div class="pic_item" id="picItem_0_4">                            <div class="pic">                                <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k0=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k1=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k2=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k3=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k4=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k5=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=5&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                                    <svg>                                        <defs>                                            <filter id="blur_0_4">                                            <feGaussianBlur id="filter__0_4" stdDeviation="0"></feGaussianBlur>                                            </filter>                                        </defs>                                        <image xlink:href="acom_data/u742244387429178228fm76.jpg" preserveAspectRatio="none" width="95" height="66" filter="url(#blur_0_4)"></image>                                    </svg>                                                                <div class="mask">                                                                        <span class="mask_title" style="margin-top:22.5px" x="70" y="1">酒店式公寓</span>                                                                            <span class="mask_head"><div class="mask_logo" src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png" style="background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position: 0 -19px;float:left;width:15px;height:15px;margin-right:3px;"></div><span class="mask_logo" style="">百度一下</span></span>                                                                    </div>                                </a>                            </div>                    <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k0=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;k1=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k2=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k3=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k4=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k5=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=5&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                        <div class="pic_title title_under_pic">                                酒店式公寓                            </div>                    </a>                </div>                             <div class="pic_itemColumnSpace"></div>                <div class="pic_item" id="picItem_0_5">                            <div class="pic">                                <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k0=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k1=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k2=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k3=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k4=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k5=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=6&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                                    <svg>                                        <defs>                                            <filter id="blur_0_5">                                            <feGaussianBlur id="filter__0_5" stdDeviation="0"></feGaussianBlur>                                            </filter>                                        </defs>                                        <image xlink:href="acom_data/u37938043503833475333fm76.jpg" preserveAspectRatio="none" width="95" height="66" filter="url(#blur_0_5)"></image>                                    </svg>                                                                <div class="mask">                                                                        <span class="mask_title" style="margin-top:12px" x="84" y="2">小会议室出租</span>                                                                            <span class="mask_head"><div class="mask_logo" src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png" style="background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position: 0 -19px;float:left;width:15px;height:15px;margin-right:3px;"></div><span class="mask_logo" style="">百度一下</span></span>                                                                    </div>                                </a>                            </div>                    <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k0=%D0%A1%BB%E1%D2%E9%CA%D2%B3%F6%D7%E2&amp;k1=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k2=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k3=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k4=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k5=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=6&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                        <div class="pic_title title_under_pic">                                小会议室出租                            </div>                    </a>                </div>                             <div class="pic_itemColumnSpace"></div>                <div class="pic_item" id="picItem_0_6">                            <div class="pic">                                <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k0=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k1=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k2=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k3=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k4=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k5=%B6%FE%CA%D6%B7%BF&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=7&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                                    <svg>                                        <defs>                                            <filter id="blur_0_6">                                            <feGaussianBlur id="filter__0_6" stdDeviation="0"></feGaussianBlur>                                            </filter>                                        </defs>                                        <image xlink:href="acom_data/u41030901664236057738fm76.jpg" preserveAspectRatio="none" width="95" height="66" filter="url(#blur_0_6)"></image>                                    </svg>                                                                <div class="mask">                                                                        <span class="mask_title" style="margin-top:12px" x="84" y="2">天津化妆学校</span>                                                                            <span class="mask_head"><div class="mask_logo" src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png" style="background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position: 0 -19px;float:left;width:15px;height:15px;margin-right:3px;"></div><span class="mask_logo" style="">百度一下</span></span>                                                                    </div>                                </a>                            </div>                    <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k0=%CC%EC%BD%F2%BB%AF%D7%B1%D1%A7%D0%A3&amp;k1=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k2=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k3=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k4=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k5=%B6%FE%CA%D6%B7%BF&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=7&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                        <div class="pic_title title_under_pic">                                天津化妆学校                            </div>                    </a>                </div>                             <div class="pic_itemColumnSpace"></div>                <div class="pic_item" id="picItem_0_7">                            <div class="pic">                                <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k0=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k1=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k2=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k3=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k4=%B6%FE%CA%D6%B7%BF&amp;k5=%B1%B1%BE%A9%D7%E2%B7%BF&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=8&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                                    <svg>                                        <defs>                                            <filter id="blur_0_7">                                            <feGaussianBlur id="filter__0_7" stdDeviation="0"></feGaussianBlur>                                            </filter>                                        </defs>                                        <image xlink:href="acom_data/u1237503998251194695fm76.jpg" preserveAspectRatio="none" width="95" height="66" filter="url(#blur_0_7)"></image>                                    </svg>                                                                <div class="mask">                                                                        <span class="mask_title" style="margin-top:22.5px" x="56" y="1">阳台护栏</span>                                                                            <span class="mask_head"><div class="mask_logo" src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png" style="background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position: 0 -19px;float:left;width:15px;height:15px;margin-right:3px;"></div><span class="mask_logo" style="">百度一下</span></span>                                                                    </div>                                </a>                            </div>                    <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k0=%D1%F4%CC%A8%BB%A4%C0%B8&amp;k1=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k2=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k3=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k4=%B6%FE%CA%D6%B7%BF&amp;k5=%B1%B1%BE%A9%D7%E2%B7%BF&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=8&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                        <div class="pic_title title_under_pic">                                阳台护栏                            </div>                    </a>                </div>                             <div class="pic_itemColumnSpace"></div>                <div class="pic_item" id="picItem_0_8">                            <div class="pic">                                <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k0=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k1=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k2=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k3=%B6%FE%CA%D6%B7%BF&amp;k4=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k5=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=9&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                                    <svg>                                        <defs>                                            <filter id="blur_0_8">                                            <feGaussianBlur id="filter__0_8" stdDeviation="0"></feGaussianBlur>                                            </filter>                                        </defs>                                        <image xlink:href="acom_data/u39145086914138080870fm76.jpg" preserveAspectRatio="none" width="95" height="66" filter="url(#blur_0_8)"></image>                                    </svg>                                                                <div class="mask">                                                                        <span class="mask_title" style="margin-top:12px" x="112" y="2">租赁led显示屏</span>                                                                            <span class="mask_head"><div class="mask_logo" src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png" style="background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position: 0 -19px;float:left;width:15px;height:15px;margin-right:3px;"></div><span class="mask_logo" style="">百度一下</span></span>                                                                    </div>                                </a>                            </div>                    <a href="http://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=20&amp;ch=0&amp;di=8&amp;fv=0&amp;is_app=0&amp;jk=851356ea2b8d85cb&amp;k=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k0=%D7%E2%C1%DEled%CF%D4%CA%BE%C6%C1&amp;k1=%B1%B1%BE%A9%B6%FE%CA%D6%B7%BF&amp;k2=%D1%F4%CC%A8%D7%B0%D0%DE%D0%A7%B9%FB%CD%BC&amp;k3=%B6%FE%CA%D6%B7%BF&amp;k4=%B1%B1%BE%A9%D7%E2%B7%BF&amp;k5=%BE%C6%B5%EA%CA%BD%B9%AB%D4%A2&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=9&amp;n=10&amp;p=baidu&amp;q=14026035_1_cpr&amp;rb=0&amp;rs=1&amp;seller_id=1&amp;sid=cb858d2bea561385&amp;ssp2=1&amp;stid=116&amp;t=tpclicked3_hc&amp;td=1733019&amp;tu=u1733019&amp;u=http%3A%2F%2Fbj%2E58%2Ecom%2Fershoufang%2F%3Futm%5Fsource%3Dmarket%26spm%3Db%2D31580022738699%2Dpe%2Df%2D851%2Esogoupz%5Fbiaoti%26PGTID%3D14468072641140%2E19337265886727306%26ClickID%3D1&amp;urlid=0" target="_blank" style="cursor: pointer">                                                        <div class="pic_title title_under_pic">                                租赁led显示屏                            </div>                    </a>                </div>                         <div style="clear:both;"></div></div>            <div style="clear:both"></div></div><style>.pic_itemColumnSpace {height:40px;float:left;margin-top:0;margin-bottom:0;width:8px}.pic_item {float:left;overflow: hidden;width:97px;height:84px;position:relative;}.pic {text-align:center;margin:0px;border:1px solid #ddd;height:66px;overflow:hidden;} .pic .img{width:95px;height:66px;}.pic_title{margin:0 auto;padding:0;overflow:hidden;text-align:center;text-decoration:none;font-weight:normal;width:95px;height:16px;line-height:16px;}.pic_container .title_on_pic{color:#ffffff; position:absolute;top:47px;left:1px;}.pic_container .title_under_pic{color:#000000;font-family:"宋体";font-size:14px;font-weight:normal;}.title_on_pic_bg{background-color:#000000;filter:alpha(opacity=50);opacity:0.9;height:20px;}.mask{position:absolute;top:1px;left:1px;height:82px;width:95px;background-color:rgba(0,0,0,0.5);display:none;filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);}.mask_head{color:#fff;text-align:left;display:inline-block;padding:2px 4px;font-size:12px;}.mask_title {color:#fff; padding: 3px 5px; border: 1px solid #fff;display:inline-block;width:75px;font-size:14px;overflow:hidden;max-height:32px;line-height:16px;}.hover .pic{border : 1px solid #f40000;}.hover .title_under_pic{color:#f40000;}.hover .title_on_pic{color:#f40000;}.pic_item_hover .mask {display:block;}.pic_item_hover .pic_title a{color:#ffffff;font-weight:900;}.pic_item_hover .title_on_pic_bg{display:none;}.pic_item_hover .title_on_pic{top:-106px;font-size:16px;font-weight:900;}.pic_item_hover .img{ -webkit-filter: blur(4px);-moz-filter: blur(4px);-ms-filter: blur(4px);filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false);}.pic_item_hover .img,.pic_item_hover .pic{height:82px}</style></div>            <a class="bd-logo2" target="_blank" href="http://wangmeng.baidu.com/" title="百度网盟推广" style="zoom: 1;">&nbsp;</a>        </div>    </div>    <style type="text/css">        .s-hl-content .bd-hl-content a,        .s-hl-content .bd-hl-content a:hover,        .s-hl-content .bd-hl-content a:visited,        .s-hl-content .bd-hl-content a{text-decoration:none}        .s-hl-content .bd-hl-content .pic_container{padding:0px;border:0;position:relative;overflow:hidden;float:left;}        .s-hl-content .bd-hl-content{            position:relative; margin:0;padding:0;font-family:&#39;microsoft yahei&#39;;font-size: 14px;font-weight:normal; overflow:hidden;            border:1px solid #CCC;            background-color:#FFFFFF;            width:958px;            height:88px;            padding:0px 0px 0px 0px;        }        .bd-logo2{text-decoration:none;cursor:pointer;display:block;overflow:hidden;position:absolute;bottom:0;right:0;z-index:2147483647}.bd-logo2{margin:0 2px 2px 0;height:14px;width:13px;background:url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position:0 -20px;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/logo-noborder-light.png",sizingMethod="crop");_background:0}.bd-logo2:hover{background-position:0 -35px;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/logo-noborder-dark.png",sizingMethod="crop")}        .s-hl-content .bd-hl-content .title_style {width:953px;height:25px;line-height:25px;padding-left:5px;font-size:14px;margin-bottom:3px;font-weight:900;}        .s-hl-content .bd-hl-content .title_style_0 {display:none;}        .s-hl-content .bd-hl-content .title_style_2 {border-left:5px solid #ffffff;color:#000000}        .s-hl-content .bd-hl-content .title_style_1 {background-color:#ffffff;color:#000000}    </style></div>
+ 
+<script>
+    var thisPage = {
+        doc : document,
+        Sys : {},
+        AdStruc : {},
+        focusId : -1,
+        playTimer : 0,
+        timer:[],
+        flag:config.exp_flag & 8,
+        get : function(id){
+            return this.doc.getElementById(id);
+        },
+        _initContainerSize:function(){
+            this.container = this.get("container");
+            this.containerBorder = parseInt(config.conBW);
+            this.containerBorderColor = config.rss0;
+            this.containerBgColor = config.rss1 || "#ffffff";
+            this.containerPaddingTop = 0;
+            this.containerPaddingRight = 0;
+            this.containerPaddingBottom = 0;
+            this.containerPaddingLeft = 0;
+            this.containerWidth = parseInt(config.rsi0) - 2 * this.containerBorder - this.containerPaddingLeft - this.containerPaddingRight;
+            this.containerHeight = parseInt(config.rsi1) - 2 * this.containerBorder - this.containerPaddingTop - this.containerPaddingBottom;
+            this.bodyHeight = this.containerHeight;
+            if(config.ptt)  this.bodyHeight -=30;
+            this.bodyWidth = this.containerWidth;
+            this.brand_margin = 0;
+        },
+        _initTextStyle:function(){
+            this.listStyle = config.tlt ;
+            this.titleFontColor = config.rss2 || "#000000";
+            this.titleFontSize = config.titFS || 0;
+            this.titleHoverColor = config.pthc || "#ff0000";
+            this.titleFontFamily = decodeURIComponent(config.titFF) || decodeURIComponent("%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91");
+            this.titleUnderLine = config.titSU || 0;
+            this.hoverUnderline = config.pul || 0;
+            this.hoverBgColor = config.hover_color ? "#3399DB":"#D14836";
+            this.titlePosition = config.ptp || 0;
+            this.tft = config.tft;
+            this.icon = config.icon;
+            if(typeof config.ptbg != "undefined"){
+                this.titleBgOpa = parseInt(config.ptbg)/100;
+            } else { 
+                this.titleBgOpa = 0.7;
+            }
+        },
+        _initImageStyle:function(){
+            this.hover = config.hover;
+            this.align = config.adp || 1;
+            this.logIS = config.logIS;
+            this.picHeight = config.imHeight;
+            this.picWidth = config.imWidth;
+            this.picTitleHeight = 16;
+            this.imgItemWidth = this.picWidth + 2;
+            this.imgItemHeight = 2 + (config.ptp ? this.picHeight : this.picHeight+this.picTitleHeight )
+            this.imgCol = config.imC;
+            this.imgRow = config.imR;
+            this.radius = config.radius||0;
+            this.image_zoom = config.image_zoom;
+        },
+        _initHeaderStyle:function(){
+            this.hasTitle = config.ptt || 0;
+            this.header = decodeURIComponent(config.ptc);
+            this.headerBgColor = config.ptBC || "#ffffff";
+            this.headerFontColor = config.ptFC || "#000000";
+            this.headerFontSize = config.ptFS || 14;
+            this.txtRowHeight = config.ptrh || 27;
+        },
+        _initAds:function(){
+            for(var i=0;i<ads.length;++i){
+                if(ads[i].word_src != "pa")
+                    ads[i].curl = ads[i].curl.replace(/&stid=\d*/,'&stid=116');
+            }
+            while(ads.length&&ads[ads.length-1].word_src=="pa"){
+                var t = ads.pop();
+                var to = new Object(); 
+                var from = ads[0];
+                for(var i in from) 
+                    to[i] = from[i]; 
+                to.title = t.title;
+                to.image_url = t.pa_url;
+                var ori = t.ori || "";
+                to.curl = ads[0].curl.replace(/&k=[^&]*/g, "&k="+t.title).replace(/&di=\d*/g, "&di=8").replace(/&stid=\d*/,'&stid=115')+"&ori="+ori;
+                to.word_src = 'pa';
+                if(config.pat==1||config.pat==3||config.pat==15) {
+                    news.unshift(to);
+                } else if(config.pat==6) {
+                    ads.unshift(to);
+                }
+            }
+        
+        },
+        _initEnv:function(){
+            var s,ua = navigator.userAgent.toLowerCase();
+            (s = ua.match(/msie ([\d.]+)/)) ? this.Sys.ie = s[1] :
+            (s = ua.match(/rv:([\d.]+)/)) ? this.Sys.ie = s[1] :
+            (s = ua.match(/firefox\/([\d.]+)/)) ? this.Sys.firefox = s[1] :
+            (s = ua.match(/chrome\/([\d.]+)/)) ? this.Sys.chrome = s[1] :
+            (s = ua.match(/opera.([\d.]+)/)) ? this.Sys.opera = s[1] :
+            (s = ua.match(/version\/([\d.]+).*safari/)) ? this.Sys.safari = s[1] : 0;
+        },
+        calcLayout:function(){
+            var imgAreaHeight = Math.max(config.imR * this.imgItemHeight, 0)
+            this.notUsedHeight = this.bodyHeight - imgAreaHeight;
+            this.blockMarginTop = 0;
+            this.imgRowMarginTop = 0;
+            this.luWordSpace = 15;
+
+        },
+        calcImageParam:function(){
+            this.align = 2;
+            this.columnWidth = Math.floor(this.bodyWidth/config.txtC);
+            this.imgRowMarginTop = Math.floor(this.notUsedHeight/(config.imR+1));
+            config.cMR = Math.floor((this.bodyWidth - this.imgItemWidth*config.imC) / (config.imC+1));
+        },
+        init : function(){
+            this.T = baidu.template;
+
+            this._initEnv();
+            this._initAds();
+            this._initContainerSize();
+            this._initHeaderStyle();
+            this._initImageStyle();
+            this._initTextStyle();
+
+            //must init last
+            this.calcLayout();
+            config.pat==6 && this.calcImageParam();
+        },
+        run : function(){
+            this.init();
+            this.paint();
+            this.initEvents();
+        },
+        paint:function(){
+            var picContainerHtml = '';
+            this.get("wrapper").innerHTML = this.T('native_ad_frame_template',{'ads':ads,'style':this});
+            var adsJson = this.AdStruc = this.layout();
+            if(config.pat==6) picContainerHtml += this.T('native_ad_pic_template',{'ads':adsJson['imageAreaAds'],'style':this});
+            this.get("pic_container").innerHTML = picContainerHtml;
+        },
+        layout:function(){
+            var resort_ads=[],tmp_ads = ads.splice(0,config.imC*config.imR);
+            resort_ads = tmp_ads;
+            var adsJson = {
+                'imageAreaAds':resort_ads,
+                'textAreaAds':[]
+            };
+            return adsJson;
+        },
+        getElementsByClass: function(dom,cls){
+            if(dom.nodeType==1){
+                if(dom.className==cls){
+                    return dom;
+                }else{
+                    for(var i=0;i<dom.childNodes.length;++i){
+                        var d = this.getElementsByClass(dom.childNodes[i],cls)
+                        if(d != null) return d;
+                    }
+                }
+            }
+            return null;
+        },
+        animate : function(id, mask, start ,step, target){
+            clearInterval(this.timer[id])
+            this.timer[id] = setInterval(this.proxy(this,function(){
+                var top = isNaN(parseInt(mask.style.top))? start : parseInt(mask.style.top)
+                var cond = step < 0 ? top - target : target - top
+                if (cond <= Math.abs(step)){
+                    clearInterval(this.timer[id])
+                    mask.style.top = target+"px"
+                    return
+                }else{
+                    top+=step;
+                    mask.style.top = top+"px"
+                }
+            }),15)
+        },
+        setHover:function(node){
+            var className = node.className || '';
+            if(className.indexOf('pic_item') !== -1){
+                if (this.hover == 1) {
+                    node.className = "pic_item pic_item_hover";
+                    var svg = node.getElementsByTagName('feGaussianBlur')[0];
+                    if (svg) svg.setAttribute('stdDeviation',"4");
+                    if (this.flag){
+                        var mask = this.getElementsByClass(node,'mask');
+                        mask.style.display="block"
+                        mask.style.top=(0-this.picHeight)+"px"
+                        this.animate(node.id, mask, (0-this.picHeight-16), 9, 1)
+                    }
+                } else if(this.hover == 2) {
+                    node.className = "pic_item pic_item_hover_L";
+                } else if(this.hover == 3) {
+                    node.className = "pic_item pic_item_hover_L2";
+                } else {
+                    node.className = "pic_item hover";
+                }
+            }
+        },
+        setNormal:function(node){
+            var className = node.className || '';
+            if(className.indexOf('pic_item') !== -1){
+                node.className = "pic_item";
+                var svg=node.getElementsByTagName('feGaussianBlur')[0];
+                if(svg)svg.setAttribute('stdDeviation',"0");
+                if(this.hover == 1 && this.flag){
+                    var mask = this.getElementsByClass(node,'mask');
+                    this.animate(node.id, mask, 1, -9, (0-this.picHeight-16))
+                }
+            }
+        },
+        initEvents: function(){
+            var container = this.get("pic_container");
+            function getEvent(e) {
+                return e || window.event;
+            }
+            function bind(el, type, fn){
+                el.addEventListener ? el.addEventListener(type, fn, false) :
+                el.attachEvent ? el.attachEvent("on" + type, fn) :
+                el['on'+type] = fn;    
+            }
+            function checkHover(e, target) {
+                if (getEvent(e).type == "mouseover") {
+                    return !contains(target, getEvent(e).relatedTarget || getEvent(e).fromElement) && !((getEvent(e).relatedTarget || getEvent(e).fromElement) === target);
+                } else {
+                    return !contains(target, getEvent(e).relatedTarget || getEvent(e).toElement) && !((getEvent(e).relatedTarget || getEvent(e).toElement) === target);
+                }
+            }
+            function contains(parentNode, childNode) {
+                if(!(childNode && parentNode))return false;
+                if (parentNode.contains) {
+                    return parentNode != childNode && parentNode.contains(childNode);
+                } else {
+                    return !!(parentNode.compareDocumentPosition(childNode) & 16);
+                }
+            }
+            bind(container,'mouseover',function(e){
+                var element = e.srcElement ? e.srcElement : e.target;
+                if(checkHover(e,element)){
+                    while(element&&(typeof element.className !=="string"||element.className.indexOf("pic_item")==-1)){
+                        if(element === this){
+                            element = 0;
+                            break;
+                        }
+                        element = element.parentNode;
+                    }
+                    if(!element)return;
+                    if(element.className=="pic_itemColumnSpace")return;
+                    if(checkHover(e,element)) thisPage.setHover(element); 
+                }
+            });
+            bind(container,'mouseout',function(e){
+                var element = e.srcElement ? e.srcElement : e.target;
+                var related = getEvent(e).relatedTarget || getEvent(e).toElement
+                if (related && typeof related.className == "string"&& related.className.indexOf('mask')!=-1)return
+                if(checkHover(e,element)){
+                    while(element&&(typeof element.className !=="string"||element.className.indexOf("pic_item")==-1))element = element.parentNode;
+                    if(!element)return;
+                    if(element.className=="pic_itemColumnSpace")return;
+                    if(checkHover(e,element)) thisPage.setNormal(element); 
+                }
+            });
+
+        },
+        proxy : function(obj,func){
+            return function(){
+                return func.apply(obj,arguments);
+            }
+        }
+    }
+    function advLength(str,fs){
+        var ch = 0;
+        var en = 0;
+        for(var i=0;i<str.length;++i){
+            if(escape(str.substring(0,1)).indexOf( "%u" )<0){
+                en += 1;
+            }else{
+                ch += 1;
+            }
+        }
+        return Math.ceil(fs*(ch + en/2));
+    }
+    function shorten(str,length,fontSize){
+        if(length<=0)return -1;
+        var len = advLength(str,fontSize);
+        if(len <= length)return str;
+        var index = str.length;
+        while(len+fontSize > length && len >0){
+            str = str.substring(0,str.length-1);
+            len = advLength(str,fontSize);
+            if(len+fontSize<=length){
+                str+="..";
+                return str;
+            }
+        }
+        return -1;
+    }
+    thisPage.run();
+</script>
+
+</body></html>

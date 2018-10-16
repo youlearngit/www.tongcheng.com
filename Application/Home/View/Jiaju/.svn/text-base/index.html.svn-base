@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>【北京二手车市场|北京二手车交易市场】 - 北京58同城</title>
+    <meta name="keywords" content="北京二手车市场,北京二手车交易市场">
+    <meta name="description" content="北京二手车交易市场是网上最大最专业的北京二手车市场，为您提供大量的北京二手车交易市场信息，经过我们严格审核的北京二手车市场二手汽车出售转让信息，是您网上选购北京2手车交易信息最佳的北京二手车网站。">
+    <meta name="location" content="province=北京;city=北京;coord=116.395645,39.929986">
+
+<meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.58.com/bj/ershouche?minprice=0_3&amp;utm_source=d_hao360&amp;spm=360-mingzhan-1010">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://m.58.com/bj/ershouche?minprice=0_3&amp;utm_source=d_hao360&amp;spm=360-mingzhan-1010">
+<meta http-equiv="mobile-agent" content="format=wml; url=http://m.58.com/bj/ershouche?minprice=0_3&amp;utm_source=d_hao360&amp;spm=360-mingzhan-1010">
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/Home/car_files/base_v20150121133540.css" media="all">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/car_files/list-ui7-03_v20151105184507.css" media="all">
+   
+<style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+style.firebugResetStyles {
+    display: none !important;
+}
+#youqing{
+width:1000px;
+height:60px;
+border-bottom:solid 1px #efefef;
+border-top:dashed 1px #cccccc;
+margin:0 auto;
+line-height: 50px;
+list-style: none;
+/*margin-bottom: 20px;*/
+margin-top: 3px;
+
+/*float:left;*/
+}
+
+ #youxing ul li{
+
+/*color:gray;*/
+ }
+#linklogo{
+     margin-top:10px;
+
+}
+ .you_link li{
+    float: left;
+    /*background: #efefef;*/
+     margin-left: 40px;
+    margin-bottom:10px;
+}
+
+.cright{
+    width:160px;
+    height:auto;
+    float:left;
+    margin-top:35px;
+    margin-left:17px;
+
+}
+
+.pubu{
+    width:150px;
+    height:auto;
+    float:left;
+    list-style:none;
+}
+
+#item{
+    width:160px;
+    height:auto;
+    /*border:solid 1px #ddd;*/
+    padding-bottom:10px;
+}
+
+#footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    text-align: center;
+    font-size:10px;
+    padding: 10px 0 30px;
+}
+
+.footer {
+    border-top: 1px solid #ededed;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style>
+</head>
+<body>
+    <iframe style="display: none;" src="javascript:false;"></iframe>
+        <div id="header">
+            <span class="logo"><a href="http://bj.58.com/?utm_source=d_hao360&amp;spm=360-mingzhan-1010" target="_blank"><img src="__PUBLIC__/Home/car_files/logo_list.gif" title="58同城" alt="58同城"></a></span>
+            <span class="fl"><a href="http://post.58.com/1/29/s5" target="_blank" class="postBtn" rel="nofollow"></a></span>
+            <div class="nav">
+                <a href="http://bj.58.com/?utm_source=d_hao360&amp;spm=360-mingzhan-1010">北京58同城</a><cite></cite>&nbsp;
+                <a href="http://bj.58.com/car.shtml?utm_source=d_hao360&amp;spm=360-mingzhan-1010">北京二手车网</a><cite></cite>&nbsp;
+                <a href="http://bj.58.com/ershouche/?utm_source=d_hao360&amp;spm=360-mingzhan-1010">北京二手车</a>
+            </div>
+        </div> 
+        <div class="brandad1000" style="display: block;" id="brand_list_top_banner">
+            <style>
+                .brandad1000{ height:50px; margin:0 auto 10px; overflow:hidden; width:1000px; position:relative;}
+                .brandad1000 ul{}
+                .brandad1000 li{ height:50px;}
+                .brandad1000 img{ width:1000px; height:50px;}
+            </style>
+
+            <ul style="margin-top: 0px;">
+                <li>
+                    <a href="http://click.58.com/adJump?adType=7&amp;target=PakzrEDQTHnKnWbKnEDQnjN3PjNKnHTdrjEdTHTKnTDksWN1njDvnH01Pj0QP1DdnWmKPakzriYQsHnVniYksHDYPj0kP1bkPjDYP1nVnHc1nWcknW9YnTDdrTDzgvdbTgmQsWTK0v66UhIJpyDKmyQ_Ty6YIZTlszqbILC8mv3fnRIawy6HTgcQpv6oELmYXA0zwgPLuR01PAnzmHbknHFWnyNdPWI6ujPhPHR6PH7WnHPbnH7hnW7WnHRWuH-WmywBujN1PjTOuW9YnHb1nyuhujI-PAEL" target="_blank"><img src="__PUBLIC__/Home/car_files/n_v1bl2lwwiopbafml6nguza.png"></a>
+                </li>
+                <li>
+                    <a href="http://click.58.com/adJump?adType=7&amp;target=PakzrEDQTHnKnWbKnEDQn19LrHNKnHn3P1bdTHTKnTDksWnzPW0LrjTdrjc1rj91rjNYTHE_nWbVniY1sHDVnaYQPjELnj0OnjEQPj01sHDzn1cznjc3PjTKPH9Kn-qVuT7vni3kTgPCmyOMph-6Ty7_UT7CIZwkrBtfpWD8PH6WuA38mvqVshP8svP60BqkmztznjDdsL-fIyPCugGYsh6YUyk4uMFfUHd_pgPYm97juAurm-IwmNwOphuiHM7QmHIhrH66ujP6uyR-PAEYPj-BmHP-n1mzPvm3rHmzn1--njNOnAuhuhcYmhRhuWNkmWIhPAEQmH7WrHEvPH6Wnk" target="_blank"><img src="__PUBLIC__/Home/car_files/n_v1bkujjd4zka6fnnpfvr7a.jpg"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="selection">
+            <i class="line"></i>    
+            <dl class="secitem mt10">
+                <dt class="secitem_brand">类别：</dt>
+                    <dd>
+                        <a class="select" href="{:U('Home/Jiaju/index')}">全部</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?type=床">床</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?type=床垫">床垫</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?type=柜子">柜子</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?type=架子">架子</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?type=桌子">桌子</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?type=椅子">椅子</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?type=沙发">沙发</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?type=茶几">茶几</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?type=其他家具">其他家具</a>
+                    </dd>
+            </dl>
+            
+            <dl class="secitem "><dt class="secitem_brand">价格：</dt>
+                <dd>
+                    <a class="" href="{:U('Home/Jiaju/index')}">不限</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?price1=0&price2=300">300以内</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?price1=300&price2=700">300-700</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?price1=700&price2=1000">700-1000</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?price1=1000&price2=2000">1000-2000</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?price1=2000&price2=3000">2000-3000</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?price1=3000&price2=4000">3000-4000</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?price1=4000&price2=1000000000">4000以上</a>
+                    <form action="{:U('Home/Jiaju/index')}" method="get">
+                        <span class="prifilter">
+                            <span class="text text2">
+                                <input value="100" autocomplete="off" para="minprice" size="3" muti="1" onkeyup="cknum(this)" min="0" name="price1" type="text">
+                            </span>
+                            <span class="dev"> - </span>
+                            <span class="text text2">
+                                <input value="300" autocomplete="off" para="minprice" size="3" muti="1" onkeyup="cknum(this)" min="0" name="price2" type="text">
+                            </span>
+                            <span class="dev c_000">元  </span>
+                            
+                        </span>
+                    </form> 
+                </dd>
+                <dt class="secitem_brand">新旧：</dt>
+                <dd>
+                    <a class="select" href="{:U('Home/Jiaju/index')}">不限</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?xj=5成新">5成新以下</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?xj=6成新">6成新</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?xj=7成新">7成新</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?xj=8成新">8成新</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?xj=9成新">9成新</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Jiaju/index')}?xj=95成新">95成新</a>
+                </dd>
+            </dl>
+            <br>
+            <i class="shadow"></i>
+            <input style="display: block;" id="selected" type="hidden"><div class="barct">
+            <span></span>
+                
+                <div id="selectedRightSection">
+                    <a style="display: none;" href="javascript:void(0)" id="btn_b">(<i id="lsCount">0</i>)</a>
+                <div id="msgTips" class="msgTips" style="display:none;">
+                    <i class="msgTips_arrow"></i>
+                    <a class="msgTips_close" href="javascript:void(0)"></a>
+                <div class="msgTips_con">注册58同城会员。让我们做您身边的生活帮手！<br>
+                    <i class="btn"><input value="马上免费注册" type="button"></i>
+                    <i class="btn"><input value="马上登记需求" type="button"></i>
+                </div>
+                    <i class="shadow"></i></div></div></div></div>
+                <div class="tabsbar">
+                    <div class="list-tabs" >
+                        <a title="北京二手家居" href="{:U('Home/Jiaju/index')}"><span><h1>北京二手家居</h1></span></a>
+                    </div>
+
+                    <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"> </script>
+                    <script type="text/javascript">
+                        var inte = null;
+                        $('.list-tabs a').click(function(){
+                                $(this).attr('class','sel');
+                                $(this).siblings().removeAttr('class');
+                        })
+
+                    </script>
+
+
+                    <a href="http://bj.58.com/chepai/?from=pc_list_chepai" target="_blank" class="pinanchexian">【租车牌，他们都在约！】</a>
+                </div>    <!-- =S mainlist -->
+                <div id="mainlist" class="main clearfix pr">
+                    <div id="infolist" class="cleft">
+                        <div class="filterbar" id="filterbar">
+                            <table class="car_tbfilter" cellpadding="0" cellspacing="0">
+                                <colgroup>
+                                    <col><col class="w120"><col class="w90">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="">
+                                        <td>
+                                            <span class="checkbox">
+                                                <input id="feishiguche" onclick="clickLog('from=esc_meizhou_Accident');" type="checkbox"><label for="feishiguche">非事故车</label>
+                                            </span>
+                                            <span class="checkbox">
+                                                <input id="changjiazhibao" onclick="clickLog('from=esc_meizhou_factory');" type="checkbox"><label for="changjiazhibao">原厂质保</label>
+                                            </span>
+                                            <span class="checkbox">
+                                                <input id="shangjiazhibao" onclick="clickLog('from=esc_meizhou_shop');" type="checkbox"><label for="shangjiazhibao">商家质保</label>
+                                            </span>
+                                            <span class="checkbox">
+                                                <input id="oshoufu" onclick="clickLog('from=esc_meizhou_first');" type="checkbox"><label for="oshoufu">0首付</label></span> 
+                                            <span class="checkbox">
+                                                <input id="zbjiance" onclick="clickLog('from=esc_meizhou_jiance');" type="checkbox"><label for="zbjiance">58检测</label></span>
+                                            <span class="checkbox cancelhand">
+                                                <label>共找到 <span class="red">29462</span> 辆二手车</label>
+                                            </span>
+                                        </td>
+                                        <td class="jai">价格</td>
+                                        <td class="tl jai">消费保障</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="yishouchebar clearfix">
+                            <div class="renzheng">
+                                <h1>58专业出品</h1>
+                                <div>
+                                    <i class="ysicon"></i><p>找二手家具 就来58同城!</p>
+                                </div>
+                                 <a href="http://bj.58.com/ershouche/?minprice=0_3&amp;utm_source=d_hao360&amp;spm=360-mingzhan-1010&amp;zbjiance=525377&amp;bar=4" para="biz" ck="0" target="_self" title="查看全部放心家居" class="ysicon" id="allGenrenCheyuan">查看全部放心家居</a>
+                            </div>
+                        </div>
+                        <div style="display: none;" id="tongyong_div"></div>
+                        <table class="tbimg" cellpadding="0" cellspacing="0">
+                            <colgroup><col class="ws100">
+                                      <col>
+                                      <col class="w120">
+                                      <col class="w90">
+                            </colgroup>
+                            <tbody>
+                                <foreach name="jiaju" item="vo">
+                                    <tr class="" logr=" q_2_26575631949830_23942045979194_4_2" _pos="1" sortid="500391233">
+                                        <td class="img">
+                                            <a href="{:U('Home/Jiaji/detail')}?id={$vo['id']}" rel="nofollow" target="_blank" name="23942045979194"><img width="60" class="product-thumb" src="__PUBLIC__{$vo['pic'][0]}"></a>
+                                        </td>
+                                        <td class="t">
+                                            <a href="{:U('Home/Jiaju/detail')}?id={$vo['id']}" target="_blank" rel="nofollow" name="23942045979194" class="t"><font style="font-family: '微软雅黑';" color="red"></font>{$vo['title']}</a>
+                                            <span class="jingpin"></span><i class="clear"></i>{$vo['intro']}<i class="clear"></i>
+                                            <div>
+                                                {$vo['show_time']} <span class="c_ccc">/</span> {$vo['addr']}<span class="c_ccc"></span><span class="c_ccc"></span>  
+                                            </div>  
+                                            <i class="clear"></i>
+                                            <a href="" target="_blank" rel="nofollow">
+                                            <span class="wlt-ico wlt2" title="58同城认证商家"></span></a>
+                                            <span zx="1" name="zaixian_26575631949830"></span>
+                                        </td>
+                                        <td class="tc">
+                                            <b class="pri">{$vo['price']}</b>元
+                                        </td>
+                                        <td>        
+                                            <div class="btn_all"></div>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                            </tbody>
+                        </table> 
+                    </div>
+                    
+                    <!-- 右侧广告 -->
+                    <div id="rightframe" class="cright">
+                        <li style="display:none" id="item">
+                            <img src="" alt="" width="100%">
+                        </li>
+            
+                        <ul class="pubu"></ul>
+                        <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"> </script>
+                        <script type="text/javascript">
+                            var p = 1;
+                            var isLoading = false;//
+
+                            //滚动事件
+                            $(window).scroll(function(){
+                                //如果正在请求  返回函数
+                                if(isLoading) return;
+                                //获取滚动高度
+                                var sT = $(window).scrollTop();
+                                //获取窗口的高度
+                                var wH = $(window).height();
+                                //整个文档的高度
+                                var sH = $(document).height();
+                                //
+                                if(sH - sT - wH <= 200 ){
+                                    ///关门  其他请求不能发送
+                                    isLoading = true;
+                                    load();
+                                }
+                            })
+
+                            //获取数据的函数封装
+                            function load(){
+                                $.get("{:U('Home/Jiaju/gettips')}",{p:p},function(data){
+                                    //循环创建元素
+                                    for(var i=0;i<data.length;i++){
+                                        //克隆元素
+                                        var newLi = $('#item').clone(true);
+                                        //修改元素的信息
+                                        newLi.find('img').attr('src','__PUBLIC__/'+data[i].pic);
+                                        //显示元素
+                                        newLi.show();
+                                        //执行插入
+                                        $('.pubu').append(newLi);
+                                    }
+                                    p++;
+                                    isLoading = false;
+                                },'json');
+                            }
+
+                            //页面加载的时候请求一次
+                            load();
+                        </script>
+
+                    </div>
+                </div>   
+
+
+               
+        <!--页码-->
+        <style type="text/css">
+        #pages{height:50px;width:500px;margin:0 auto;}
+        #pages a{
+            background-color: #fff;
+            border: 1px solid #ddd;
+            color: #337ab7;
+            float: left;
+            line-height: 1.42857;
+            margin-left: -1px;
+            padding: 6px 12px;
+            position: relative;
+            text-decoration: none;
+        }
+        #pages span{
+            display: block;
+            border: 1px solid #ddd;
+            float: left;
+            line-height: 1.42857;
+            margin-left: -1px;
+            padding: 6px 12px;
+            position: relative;
+            text-decoration: none;
+            background-color: #337ab7;
+            border-color: #337ab7;
+            color: #fff;
+            cursor: default;
+            z-index: 2;
+        }
+        </style>
+        <div id="pages">
+        {$pages}
+        </div>
+         <!-- 友情链接   -->
+        <div id="youqing">
+                <ul class="you_link">
+                    <foreach name="link" item="vo">    
+
+                        <li><a class="you_link" href="{$vo['link']}"><div id="linklogo"><img src="__PUBLIC__{$vo['pic'][0]}" alt="{$vo['title']}" title="{$vo['title']}" width="50" height="30" width="100%"/></div></a></li>
+                    </foreach>
+           
+                </ul>
+        </div>
+
+        <div id="footer" class="footer">
+            © 58.com <a id="askicon" target="_blank" title="有问题请与58客服进行对话" rel="nofollow" href="http://about.58.com/v5/">帮助中心</a>
+        </div>                                              
+    </body>
+</html>

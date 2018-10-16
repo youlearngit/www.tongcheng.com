@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+<head><!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="lib/PIE_IE678.js"></script>
+<![endif]-->
+<link href="__PUBLIC__/Admin/css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/lib/icheck/icheck.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<title>职位编辑</title>
+
+
+<!-- 引入城市选择器的js样式 -->
+<script type="text/javascript" src="__PUBLIC__/Admin/city/js/jquery.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Admin/city/js/jquery.cityselect.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#city").citySelect({
+					nodata:"none",
+					required:true
+				}); 
+			});
+		</script>
+
+
+
+
+</head>
+<body>
+<div class="pd-20">
+	<form action="{:U('Admin/Zhaopin/update')}" method="post" class="form form-horizontal" id="form-article-add" enctype="multipart/form-data">
+		<div class="row cl">
+			<label class="form-label col-2"><span class="c-red">*</span>职务标题：</label>
+			<div class="formControls col-10">
+				<input type="text" class="input-text" value="{$info['title']}" placeholder="" id="" name="title">
+			</div>
+		</div>
+		<!-- <div class="row cl">
+			<label class="form-label col-2">简略标题：</label>
+			<div class="formControls col-10">
+				<input type="text" class="input-text" value="" placeholder="" id="" name="">
+			</div>
+		</div> -->
+
+		<div class="row cl">
+			<label class="form-label col-2"><span class="c-red">*</span>福利待遇：</label>
+			<div class="formControls col-2"> <span class="select-box">
+				<select name="daiyu" class="select">
+					<option value="五险一金" <if condition="$info['daiyu'] eq '五险一金'" >selected</if>>五险一金</option>
+					<option value="不是五险一金" <if condition="$info['daiyu'] eq '不是五险一金'" >selected</if>>不是五险一金</option>
+				</select>
+				</span> 
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-2"><span class="c-red">*</span>休假：</label>
+			<div class="formControls col-2"> <span class="select-box">
+				<select name="xiujia" class="select">
+					<option value="双休" <if condition="$info['xiujia'] eq '双休'" >selected</if>>双休</option>
+					<option value="单休" <if condition="$info['xiujia'] eq '单休'" >selected</if>>单休</option>
+				</select>
+				</span> 
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-2"><span class="c-red">*</span>是否接受残疾：</label>
+			<div class="formControls col-2">
+				<input type="radio" name="canji" value="是"  <if condition="$info['canji'] eq '是'" >checked</if>>是
+				<input type="radio" name="canji" value="否" <if condition="$info['canji'] eq '否'" >checked</if>>否
+			</div>
+		</div>
+
+		<div class="row cl">
+			
+			<label class="form-label col-2"><span class="c-red">*</span>职务类型：</label>
+			<div class="formControls col-2"> <span class="select-box">
+				<select name="zhonglei" id="zhonglei" class="select">
+					<option value="">请选择</option>
+				</select>
+				</span> 
+			</div>
+			
+			<!-- <label class="form-label col-2"><span class="c-red">*</span>宠物品种：</label> -->
+			<div class="formControls col-2"> <span class="select-box">
+				<select name="fenlei" id="fenlei" class="select">
+				</select>
+				</span> 
+			</div>
+			<script type="text/javascript">
+	//信息声明
+		//信息声明
+	var p = ['销售','客服'];
+	var c = [];
+	c[0] = ['销售代表','销售助理','销售总监'];
+	c[1] = ['客服经理','客服总监'];
+	
+
+	//初始化
+	function init(){
+		var html = "";
+		for(var i=0;i<p.length;i++){
+			html += '<option value="'+p[i]+'" ww="'+i+'">'+p[i]+'</option>';
+		}
+		//设置省的innerHTML
+		zhonglei.innerHTML = html;
+	}
+	init();
+
+	//省份绑定onchange事件
+	zhonglei.onchange = function(){
+		var options = zhonglei.getElementsByTagName('option');
+		for(var i=0;i<options.length;i++){
+			if(options[i].selected==true){
+				var v = options[i].getAttribute('ww');
+			}
+		}
+		//获得当前省份所对象的城市的列表
+		var fenlei = c[v];
+		//动态循环创建元素
+		var html = '';
+		for(var i=0;i<fenlei.length;i++){
+			html += '<option value="'+fenlei[i]+'">'+fenlei[i]+'</option>';
+		}
+		//获取元素
+		var cs = document.getElementById('fenlei');
+		//设置文本
+		cs.innerHTML = html;
+	}
+
+	</script>
+			
+
+
+			<!-- <label class="form-label col-2">排序值：</label> -->
+			<!-- <div class="formControls col-2"> -->
+				<!-- <input type="text" class="input-text" value="0" placeholder="" id="" name=""> -->
+			</div>
+			<!-- <label class="form-label col-2">允许评论：</label> -->
+			<!-- <div class="formControls col-2 skin-minimal">
+				<div class="check-box">
+					<input type="checkbox" id="checkbox-1">
+					<label for="checkbox-1">&nbsp;</label>
+				</div>
+			</div> -->
+		<!-- </div> -->
+		
+
+		<div class="row cl">
+		
+			<label class="form-label col-2">工资：</label>
+			<div class="formControls col-4">
+				<input type="hidden" name='id' value="{$info['id']}">
+				<input type="text" name="price" id="" placeholder="" value="{$info['price']}" class="input-text" style="width:90%">
+				元</div>
+		</div>
+		
+		<!-- <div class="row cl">
+			<label class="form-label col-2">产品关键字：</label>
+			<div class="formControls col-10">
+				<input type="text" name="" id="" placeholder="多个关键字用英文逗号隔开，限10个关键字" value="" class="input-text">
+			</div>
+		</div> -->
+		<div class="row cl" id="city">
+			<label class="form-label col-2">您的城市：</label>
+			<select class="prov" name="prov"></select>  
+			<select class="city" disabled="disabled" name="city"></select> 
+			<select class="dist" disabled="disabled" name="dist"></select> 
+		</div>
+		<div class="row cl" id="picdiv">
+			<label class="form-label col-2">上传图片：</label>
+			<input type="file" name="pic[]">
+			<input type="button" id="add" value="继续添加">
+		</div>
+		<div class="row cl" id="picdiv">
+			<label class="form-label col-2">修改图片：</label>
+			<div class="formControls col-4">
+			<div style="height:200px;width:800px;border:1px solid red">
+			<foreach name="info['pic']" item="vo">
+				<img src="__PUBLIC__{$vo}" alt="" width="100px">
+			</foreach>
+			</div>
+			
+			</div>
+		</div>
+		<literal>
+		<script type="text/javascript">
+		$('#add').click(function(){
+			var input = $('input[type="file"][name="pic[]"]').eq(0).clone(true);
+			input.prependTo('#picdiv');
+
+		})
+		</script>
+		</liretal> 
+		<div class="row cl">
+			<label class="form-label col-2">要求描述：</label>
+			<div class="formControls col-10">
+				<textarea name="miaoshu" cols="" rows="" class="textarea"  placeholder="" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="textarealength(this,200)">{$info['miaoshu']}</textarea>
+				<p class="textarea-numberbar"><em class="textarea-length">0</em>/200</p>
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-10 col-offset-2">
+				<button onClick="article_save_submit();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存并提交审核</button>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+
+
+</body>
+</html>

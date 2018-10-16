@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>用户登录-58同城</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+
+
+
+<link rel="stylesheet" href="__PUBLIC__/Home/css/login_6_v20150304144336.css" type="text/css"><style type="text/css">
+*:focus {outline: none}
+#conright{background:#ffffff; border-bottom:4px solid #f9f9f9; padding-bottom:0;width:404px;}
+.scrool-bg{border:2px solid #dedede; background:none;width:400px;padding:25px 0 0;overflow:hidden;height:auto!important;height:406px;min-height:406px;position:relative;}
+.logintit{background:#fffdcc; border:1px solid #f2e2ad; padding:5px 10px; line-height:22px; overflow:hidden}
+.logintit .red{color:#f23f0f}
+.logintit input,.logintit label{margin:0;cursor:pointer; vertical-align:middle; display:inline-block}
+.logintit label{padding-left:6px; _margin-top:3px}
+#scrool1{margin-left:20px}
+.logpic{text-align:right;padding-right:5px;width:50px; color:#666; font-size:14px; float:left}
+#conright .loginbox{padding:0 23px 15px;line-height:20px;min-height:240px;}
+#conright .loginbox #pulogin{padding:0 20px;}
+#conright .loginbox .inp{width:210px; height:22px; line-height:22px; border:1px solid #ddd; float:left; margin:0; padding:8px 0; padding-left:10px;}
+#conright .loginbox #validatecode{width:60px; margin-right:3px; _margin-right:0; padding-top:4px; padding-bottom:4px; float:inherit; *margin-top:3px; _margin-top:0}
+#conright .loginbox #validatetr td{*padding-top:12px; _padding-top:8px}
+#conright .loginbox input.wrong_color{border:1px solid #f7611e;background-color:#fff}
+#conright .loginbox input.action_color{border:1px solid #a7c0f1;height:22px; background-color:#fff}
+#conright .loginbox .logpic.wrong_color,#conright .loginbox .logpic.action_color{background-color:#fff; border:1px solid #a7c0f1; height:38px; border-right:none}
+#conright .loginbox input.pw,#conright .loginbox input.pw_wc{background:url(http://img.58cdn.com.cn/ui6/my/images/passwordbg.png?20120814) no-repeat 0 0}
+#conright .mid{ background:none; border:none; color:#f23f0f; height:21px; line-height:21px; padding:0 10px 0 60px; width:235px; position:static;}
+#conright .mid .conn{line-height:20px; line-height:22px\9; _line-height:20px; overflow:hidden}
+.loginbox table td{padding:4px 0}
+#passwordtr td{padding-bottom:0; *padding-bottom:5px; _padding-bottom:0}
+.link-login{ border-top:1px solid #eeeeee; padding-top:15px;padding-bottom:8px;padding-left:14px;padding-right:18px;position:relative;bottom:0;left:0;width: 364px;}
+/*weixin*/
+html{overflow-y: scroll;}
+.clearfix{ zoom: 1;}
+.clearfix:after{ content: '.'; font-size: 0; height: 0; visibility: hidden; display: block; clear: both;}
+.logininfo{height: auto;}
+.login_name{width: 100%;background-color:#f3f3f7;}
+.scrool-bg{padding-top: 0;}
+#conright .loginbox{margin-top: 24px;}
+/*weixin default*/
+.loico{background:none;padding:0 9px;color:#666666;}
+#login_sina{padding-left:0;}
+#login_renren{padding-right:0;border-right:none;}
+.snslogin{list-style: none;float: left;}
+.reglink{position:absolute;top:41px;right:12px;line-height: 22px;text-align: right;}
+.link-login span.lots{color:#cccccc;}
+.snslogin li{display: inline;}
+#wxwrap{width: 100%;position: relative;}
+#ewmwrap{position: absolute;top: 28px;width: 100%;}
+#tipwrap{position: absolute;top: 38px;width: 100%;text-align: center;}
+#ewmwrap p{text-align: center;color: #888888;font-weight: bold;line-height: 35px;}
+#ewmimgwrap{margin: 0 auto;width: 149px;height: 149px;border: 1px solid #d3d3d3;position: relative;}
+#expireMask{display: block;z-index: 1;cursor: pointer;}
+#expireMask div{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #000;opacity: 0.6;filter:Alpha(Opacity=60);}
+#expireMask p{color: #FFF;font-size: 12px;line-height: 25px;padding-top: 48px;position: absolute;top: 0;width: 100%;}
+#showtip{padding-top:245px;text-align: center;}
+#showtip a{color:#b8b8b8;}
+#usernametr,#passwordtr,#logintr{height:60px;}
+/*qq default*/
+.login_ul li { display: inline-block; width: 198px; background: #f3f3f7; cursor: pointer; text-align: center; height: 43px; line-height: 43px; margin-top: 0; float: left; border-bottom: solid 1px #dedede; font-size: 14px; font-weight: bold; color: #666666; border-left: solid 1px #dedede; }
+.login_ul li.first { border-left: none; width: 198px;}
+.login_ul li.cur { background: #ffffff; border-bottom: #ffffff 1px solid; color: #000000; }
+#login-welcome-bg { width: 500px; height: 400px; }
+#conleft { width: 500px; }
+.qqloginerror { display:none;margin: 10px 10px 0 10px; background-color: #fff2f1; color: #ff0000; font-size: 12px; line-height: 20px; padding: 9px 12px;_zoom: 1; }
+.qqloginerror a { color: #3382cf; }
+.passport-qqlogin-frame{width:400px;height:362px;}
+/* tab */
+.tablogin ul{margin-left:80px;}
+.tablogin li{float:left; display:inline; padding-right:28px;}
+.tablogin a{display:inline-block;line-height:20px; height:20px; color:#666; background:url("") no-repeat 0 1px;padding-left:20px;font-size:12px;outline:none 0; text-decoration:none;}
+.tablogin li.active a{color:#f4691c;}
+.tablogin .pu-icon:hover,.tablogin .active .pu-icon{background-position:0px -20px;text-decoration:none;color:#f4691c;}
+.tablogin .tel-icon{background-position:0px -40px;}
+.tablogin .tel-icon:hover,.tablogin .active .tel-icon{background-position:0px -61px;text-decoration:none;color:#f4691c;}
+/* mobile vcode */
+.passport-login-input-li{ margin-top:10px;*margin-top:13px;}
+.passport-login-input-li a{color:#666; font-size:12px; text-decoration:none; padding-left:8px;vertical-align: middle;}
+#vcodeTelImg{width: 120px;height:40px;vertical-align: middle;cursor:pointer;}
+#pptmobilecodeloginmobile,#pptmobilecodeloginvcode,#pptmobilecodeloginmobilecode{width:210px; height:22px; line-height:22px; border:1px solid #ddd;margin:0; padding:8px 0; padding-left:10px; background:url(http://img.58cdn.com.cn/ui6/my/images/loginpbg.gif) repeat-x 0 0 #fff;font-size: 14px;vertical-align:middle;}
+.passport-login-input-span{width:70px;display: inline-block;color:#666;text-align: right;padding-right: 12px;font-size:14px; vertical-align:middle;}
+#pptmobilecodeloginvcode{width:86px;}
+#mobilecodeloginButtonLi label{padding-right: 1px;display: inline-block;font-weight: 700;background: url(http://img.58cdn.com.cn/ui6/my/images/reg-btn.gif) right top no-repeat;height: 34px;line-height: 34px;}
+#pptmobilecodeloginButton{padding: 8px 20px;display: block;background: url(http://img.58cdn.com.cn/ui6/my/images/reg-btn.gif) no-repeat;border: none;color: #fff;font-size: 14px;font-weight: bold;cursor: pointer;margin: 0;height:34px;}
+li#mobileLoginTipLi{padding-left:80px;margin-top:5px;line-height: 21px;} #mobileLoginTipLi #mobileLoginTip{display:inline;width:auto;color:#f23f0f;}
+/* shouji querenma */
+.passport-login-mobilecode-button{width: 146px;height:28px;background: url("http://img.58cdn.com.cn/ui6/my/images/vcodebg.png") repeat-x scroll 0 0 #f5f5f5;border:1px solid #d4d4d4;text-align: center;color:#333;cursor:pointer;}
+.mobilesendtip{padding-left:82px;font-size:12px;line-height:20px; vertical-align:middle; color:#aaa;}
+.mobilesendtip img{margin-bottom:-2px;}
+/* 180sec tipstyle */
+.countdown{color:#a0a0a0;}
+#mobilecodeloginSendMobileCodeLi input{font-size: 12px;vertical-align: middle;}
+/*验证码*/
+#vcodeTelImg{width: 63px;height:36px;vertical-align: middle;}
+#pptmobilecodeloginvcode{width:111px;height:34px;line-height:34px;padding:0 10px;}
+#mobilecodeloginVcodeLi a{vertical-align: middle;font-size: 12px;color:#666;}
+#pptvalidatecode{ width:70px; margin-right:5px;}
+.sc{margin-top:5px;}
+.scrool-bg span.reg-a{margin-left: 74px;}
+
+
+.passport-login-mobilecode-button {
+    background: url("http://img.58cdn.com.cn/ui6/my/images/vcodebg1.png") no-repeat;
+    border:0 none;
+    color: #fafafa;
+    cursor: pointer;
+    height: 28px;
+    text-align: center;
+    width: 146px;
+}
+.mobilecode_yellow {
+    background-position:0 0;
+    color: #fafafa;
+}
+.mobilecode_grey {
+    background-position:0 -34px;
+    color: #a0a0a0;
+}
+
+#mobilecodeloginButtonLi label.login_grey {
+    background: url("http://img.58cdn.com.cn/ui6/my/images/reg-btn.gif") no-repeat scroll right bottom rgba(0, 0, 0, 0);
+    display: inline-block;
+    font-weight: 700;
+    height: 35px;
+    line-height: 35px;
+    padding-right: 1px;
+}
+.login_grey #pptmobilecodeloginButton {
+    background: url("http://img.58cdn.com.cn/ui6/my/images/reg-btn.gif") no-repeat scroll 0 -36px rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #a0a0a0;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    margin: 0;
+    padding: 8px 20px;
+}
+
+</style>
+
+</head>
+<body>
+<form name="submitForm" method="post" action="{:U('Home/User/doLogin')}" id="submitForm" target="formSubmitFrame">
+	<input type="hidden" value="{$url}" name="url"/>
+
+	<!-- *******header****** -->
+	<div id="login-header" class="win900">
+		<a href="{:U('Home/Index/index')}" id="logo" style="left:20px;"><img src="__PUBLIC__/Home/images/logo-49h.gif" alt="中文最大生活信息门户"></a>
+		<div id="cityname" class="loginname" style="left:208px;"><span>用户登录</span></div>
+		<div id="logintext" style="right:-10px;"><a href="{:U('Home/Index/index')}">返回首页</a>|<a target="_blank">帮助</a></div>
+	</div>
+	
+	<div class="cb win900">
+		<div id="conleft">
+			<div id="2000"><img src="__PUBLIC__/Home/images/leftTu.png" alt="" /></div>
+		</div>
+		<div id="conright">
+			<div class="scrool-bg">
+				<div class="login_name" id="login_name">
+					<ul class="login_ul">
+				
+						<li class="first" id="login_tab_tel">手机登陆</li>
+						<li class="cur" id="">58账号登录</li>
+					</ul>
+					<div class="c"></div>
+				</div>
+                
+				
+               
+                
+			  <div class="loginbox" style="display: block;">
+                
+			  	
+			<div id="pulogin" class="username">
+				<div id="tipDiv"></div>
+				  <div id="error"></div>
+				  <table id="userLogin">
+					  <tbody>
+					  	<tr id="usernametr"><td><span class="logpic">账户名</span></td><td><input class="inp inw c_ccc useplaceholder" id="username" name="username" size="20" value="" placeholder="用户名" type="text"></td></tr>
+
+
+					  	<tr id="passwordtr"><td><span class="logpic">密码</span></td><td><input class="inp" placeholder="请输入密码" id="password" name="password" size="20"  maxlength="16" type="password"></td></tr>
+						
+
+					 
+						
+						<tr id="strtr" style="display:none"><td><span class="logpic">验证码</span></td><td><input name="ucode" size="15" value=""  type="text">
+						<img src="{:U('Home/User/code')}" width="120" height="40" width="100%" alt="" onclick="this.src='{:U('Home/User/code')}?id='+Math.random()"/></td></tr>
+					  <tr>
+					  	<td></td>
+						  <td style="padding: 0pt;">
+							  <input style="vertical-align: middle;padding:0;margin:0;" id="coks" value="" name="remember" type="checkbox">
+							  <label class="logintip" for="coks">记住密码 </label>
+							  <span class="reg-a"><a href="{:U('Home/User/passRecycle')}">忘记密码</a> </span>
+						  </td>
+					  </tr>
+					  <tr id="logintr">
+					  	<td></td>
+						  <td>
+							  <span class="" style="line-height:34px;">
+							  <input name="" value="登录" class="submit" type="submit" id="submit">
+							  </span>
+							  <span class="" style="line-height:34px;">
+							  <input name="" value="重置" class="" type="reset">
+							  </span>
+						  </td>
+					  </tr>
+				  </tbody>
+				 </table>
+
+
+
+
+			</div>
+
+			
+
+
+				
+                </div>
+				<div class="link-login" style="display: block;">
+					<span class="lots">使用合作网站登录：</span>
+                    <a class="reglink" href="{:U('Home/User/register')}">免费58同城</a>
+                     <ul class="snslogin">
+                         <li><a class="loico">新浪微博</a></li>
+                         <li><a class="loico">支付宝</a></li>
+                         <li><a class="loico">飞信</a></li>
+                         <li><a class="loico">百度</a></li>
+                         <li><a class="loico" >人人网</a></li>
+                    </ul>
+				</div>
+				
+			</div><!--scrool bg-->
+		</div>
+		<div class="c"></div>
+	</div>
+	<div id="footer" class="win900">
+		<p>© 58.com <a class="fduihua" target="_blank" title="有问题请与58客服进行对话" href="">与58对话</a></p>
+	</div>
+	
+</form>
+
+<form name="submitForm" method="post" action="{:U('Home/User/dotelLogin')}" id="telSubmit" target="formSubmitFrame" style="display:none">
+
+
+	<!-- *******header****** -->
+	<div id="login-header" class="win900">
+		<a href="http://www.58.com/" id="logo" style="left:20px;"><img src="__PUBLIC__/Home/images/logo-49h.gif" alt="中文最大生活信息门户"></a>
+		<div id="cityname" class="loginname" style="left:208px;"><span>用户登录</span></div>
+		<div id="logintext" style="right:-10px;"><a href="http://www.58.com/">返回首页</a>|<a href="www.erhuo.com" target="_blank">帮助</a></div>
+	</div>
+	
+	<div class="cb win900">
+		<div id="conleft">
+			<div id="2000"><img src="__PUBLIC__/Home/images/leftTu.png" alt="" /></div>
+		</div>
+		<div id="conright">
+			<div class="scrool-bg">
+				<div class="login_name" id="login_name">
+					<ul class="login_ul">
+				
+						<li class="cur" id="">手机登陆</li>
+						<li class="first" id="login_tab_user">58账号登录</li>
+					</ul>
+					<div class="c"></div>
+				</div>
+                
+				
+               
+                
+			  <div class="loginbox" style="display: block;">
+                
+			  	
+			<div id="pulogin" class="username">
+				<div id="tipDiv"></div>
+				  <div id="tError"></div>
+				 
+			<!-- 手机登陆 -->
+				  <table id="telLogin">
+					  <tbody>
+					  	<tr id="usernametr"><td><span class="logpic">手机号</span></td><td><input class="inp inw c_ccc useplaceholder" id="tel" name="telphone" size="20" value="" placeholder="请输入手机号" type="text"></td></tr>
+
+						<tr id="teltr"><td><button id="sendMessage" type="button">获取验证码</button></td><td><input class="inp inw c_ccc useplaceholder"  name="telcode" size="30" value=""  type="text" code=""></td></tr>
+
+
+						
+					  <tr id="logintr">
+					  	<td></td>
+						  <td>
+							  <span class="" style="line-height:34px;">
+							  <input name="" value="登录" class="submit" type="submit" id="submit">
+							  </span>
+						  </td>
+					  </tr>
+				  </tbody>
+				 </table>
+			</div>
+
+			
+
+
+				
+                </div>
+				<div class="link-login" style="display: block;">
+					<span class="lots">使用合作网站登录：</span>
+                    <a class="reglink" href="{:U('Home/User/register')}">免费注册58同城</a>
+                     <ul class="snslogin">
+                         <li><a class="loico">新浪微博</a></li>
+                         <li><a class="loico">支付宝</a></li>
+                         <li><a class="loico">飞信</a></li>
+                         <li><a class="loico">百度</a></li>
+                         <li><a class="loico" >人人网</a></li>
+                    </ul>
+				</div>
+				
+			</div><!--scrool bg-->
+		</div>
+		<div class="c"></div>
+	</div>
+	<div id="footer" class="win900">
+		<p>© 58.com <a class="fduihua" target="_blank" title="有问题请与58客服进行对话" href="">与58对话</a></p>
+	</div>
+	
+</form>
+
+
+
+<!--
+<script type="text/javascript">
+	
+	function validMobileFormat(mobile) {
+		var numberRegStr = /^\d{11}$/;
+		var regNum = new RegExp(numberRegStr);
+		if (regNum.test(mobile)) {
+			var telRegStr = /^(13|14|15|17|18)\d{9}$/;
+			var reg = new RegExp(telRegStr);
+			if (reg.test(mobile))
+				return true;
+			else
+				return false;
+		} else {
+			return false;
+		}
+	}
+
+</script>-->
+<script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+		
+		
+		// $("#submitForm").attr("target", "formSubmitFrame");
+		// 绑定获取焦点时间
+
+		var UP = false;
+		var RP = false;
+		var CP = false;
+		$('input').focus(function(){
+				// $(this).next().html(remind).css('font-size','12px').css('color','green');
+				$(this).css('border','solid 1px #3980F4');
+			});
+
+
+
+		//丧失焦点时间     用户名
+		$('input[name=username]').blur(function(){
+			var username = $('input[name=username]').val();
+      		
+		      // alert(username);
+		      $.post('{:U("Home/User/select")}',{username:username},function(data){
+		          // alert(data);
+		          var data = data.split(' ');
+		          $('input[name=remember]').val('');
+		          if(!$('input[name=remember]').val()){
+		          }
+		            $('input[name=password]').val(data[1]);   
+		            $('input[name=remember]').val('Y');   
+		          
+		      	});
+
+
+
+			var v = $(this).val();
+
+
+			var reg_a = /^\S{2,18}$/;
+			var res_a = reg_a.test(v);
+			if(!res_a){
+				$('#error').html('用户名格式错误!!').css('color','red');
+				$('input[name=username]').css('border','solid 1px red');
+				UP = false;
+			}else{
+				$('#strtr').show();
+				$('input[name=username]').css('border','solid 1px blue');
+				$('#error').html('');
+				UP = true;
+			}
+		})
+
+		// 密码的丧失焦点事件
+		$('input[name=password]').blur(function(){
+			var v = $(this).val();
+			reg = /^(.){2,32}$/;
+			var res = reg.test(v);
+			if(!res){
+				$('#error').html('密码格式错误!!').css('color','red');
+				$('input[name=password]').css('border','solid 1px red');
+				RP = false;
+			}else{
+				RP = true;
+			}
+		})
+
+
+
+
+
+
+		// // 点击手机登陆
+		$('#login_tab_tel').click(function(){
+			$('#submitForm').hide();
+			$('#telSubmit').show();
+		})
+
+		// 点击用户名登陆
+		$('#login_tab_user').click(function(){
+			$('#submitForm').show();
+			$('#telSubmit').hide();
+
+
+		})
+		// // 绑定验证码的丧失焦点事件
+		$('input[name=ucode]').blur(function(){
+			var ucode = $('input[name=ucode]').val();
+			$.get('{:U('Home/User/check')}',{ucode:ucode},function(data){
+				if(data == 0){
+					$('#error').html('验证码输入错误!!').css('color','red');
+					$('input[name=ucode]').css('border','solid 1px red');
+					CP = false;
+				}else{
+					$('input[name=ucode]').css('border','solid 1px blue');
+					$('#error').html('');
+					CP = true;
+				}
+			})
+		})
+
+
+		$('#submitForm').submit(function(){
+				$('input[name=username]').blur();
+				$('input[name=password]').blur();
+				$('input[name=ucode]').blur();
+
+				if(UP && CP && RP){
+					return true;
+				}
+				return false;
+			})
+
+
+		var TP = false;
+		// 绑定手机号的丧失焦点事件
+		$('input[name=telphone]').blur(function(){
+			var v = $('input[name=telphone]').val();
+			var reg = /^1\d{10}$/;
+			var res = reg.test(v);
+			// alert(v);
+			if(!res){
+				$('#tError').html('请输入11位手机号!!').css('color','red');
+				$('input[name=telphone]').css('border','solid 1px red');
+				TP = false;
+			}else{
+				$('input[name=telphone]').css('border','solid 1px blue');
+				$('#tError').html('');
+				TP = true;
+			}
+				
+
+		})
+
+		
+
+		// ************
+		// ************
+		// ************
+		// ************
+
+
+
+		//发送手机验证码
+		$('#sendMessage').click(function(){
+			// alert(session('code'));
+			// alert(1);
+				var phone = $('input[name=telphone]').val();
+				// alert(phone);
+				// 发送Ajax
+				$.post('{:U('Home/User/send')}',{phone:phone},function(data){
+					// alert(1);
+					var code = eval(data);
+					// alert(code);
+					$('input[name=telcode]').attr('code',code);
+				})
+
+
+
+
+				// 使按钮不可点
+				$(this).attr('disabled','disabled');
+
+
+				var t = 10;
+				var inte = setInterval(function(){
+					$("#sendMessage").html(t+"秒后将重新发送");
+					t--;
+					if(t<0){
+						$('#sendMessage').removeAttr('disabled');
+						$('#sendMessage').html("点击发送验证码");
+						clearInterval(inte);
+					}
+				},1000)
+			});
+
+
+		var TC = false;
+		// 检测手机验证码是否正确
+		$('input[name=telcode]').blur(function(){
+			var v = $('input[name=telcode]').val();
+			var code = $('input[name=telcode]').attr('code');
+			// alert(code);
+			if(v != code){
+				$('#tError').html('验证码输入错误').css('color','red');
+				$('input[name=telcode]').css('border','solid 1px red');
+				TC = false;
+			}else{
+				$('#tError').html('');
+				$('input[name=telcode]').css('border','solid 1px blue');
+				TC = true;
+			}
+		})
+
+		$('#telSubmit').submit(function(){
+				$('input[name=telphone]').blur();
+				$('input[name=telcode]').blur();
+				if(TP && TC){
+					return true;
+				}
+				return false;
+			})
+
+</script>
+
+
+
+<div style="display:inline;">
+<img style="border-style:none;" alt="" src="__PUBLIC__/Home/images/a.gif" height="1" width="1">
+</div>
+
+
+</body></html>

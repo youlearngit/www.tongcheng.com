@@ -1,0 +1,200 @@
+<extend name="Ziying/index" />
+<block name="content">
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width">
+<meta name="baidu-tc-cerfication" content="bfce60f87fb38b64c36ee8f3841f97f2">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta name="format-detection" content="address=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>【北京丽人服务|北京女性服务】- 北京58到家</title>
+<meta name="keywords" content="北京丽人服务,北京女性服务">
+<meta name="description" content="58到家北京丽人为您提供专业、便捷、安心的标准化女性服务，主要包括美甲、美睫、修护及卸甲、化妆等到家服务，找女性服务就上58到家。"><meta name="location" content="province=北京;city=北京">
+<link href="__PUBLIC__/Home/liren_files/style.css" rel="stylesheet" type="text/css">
+
+<script src="__PUBLIC__/Home/liren_files/hm.js"></script><script src="__PUBLIC__/Home/liren_files/tracker.js"></script><script type="text/javascript">
+var bi_params = { cityid:'96',cateid:'2',pagetype:'list',termtype:1};
+(function() {
+  var bi_hm = document.createElement("script");
+  bi_hm.src = "http://pic2.58.com/m58/app58/m_static/js/bi/tracker.js";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(bi_hm, s);
+})();
+
+</script><link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/liren_files/home.css">
+</head>
+
+<body class="lir-banner" style="background:url(__PUBLIC__/Home/index/bgliren.jpg) no-repeat 0px 50px">
+</block>
+
+     
+<block name="content1">
+
+	<div id="main" class="main">
+		<!-- liren start  -->
+    	<div class="jiazbg clearfix">
+    		<div class="jiaz-j">
+    			<ul>
+    				    				<li class="jiaz-z">
+    					<a href="http://bj.daojia.com/meijia/"><img src="__PUBLIC__/Home/liren_files/lir-01.jpg" class="jiaz-t fl"></a>
+    					<div class="jiaz-yh"><span>首单立减</span></div>
+    					<h3>美甲</h3>
+    					<h4>66-99元起</h4>
+    					<h5>千种甲样、风格各异<br>标准美甲流程，高效便捷，专业美甲师贴心服务。</h5>
+    					<p><a href="{:U('Home/Ziying/xiangqing')}?id=23">查看详情</a></p>
+    				</li>
+    				    				
+    				    				<li>
+    					<a href="http://bj.daojia.com/xiejia/"><img src="__PUBLIC__/Home/liren_files/lir-02.jpg" class="jiaz-t fl"></a>
+    					<h3>修护及卸甲</h3>
+    					<h4>76-88元起</h4>
+    					<h5>清洁、消毒、卸甲规范流程<br>进口优质护理产品，健康卫生。</h5>
+    					<p><a href="{:U('Home/Ziying/xiangqing')}?id=24">查看详情</a></p>
+    				</li>
+    				    				
+    				    				<li>
+    					<a href="http://bj.daojia.com/meijie/"><img src="__PUBLIC__/Home/liren_files/lir-03.jpg" class="jiaz-t fl"></a>
+    					<h3>美睫</h3>
+    					<h4>99元起</h4>
+    					<h5>自然型、浓密型高端材质<br>健康舒适的眼妆新体验。</h5>
+    					<p><a href="{:U('Home/Ziying/xiangqing')}?id=25">查看详情</a></p>
+    				</li>
+    				    				
+    				    				<li class="jiaz-x">
+    					<a href="http://bj.daojia.com/huazhuang/"><img src="__PUBLIC__/Home/liren_files/lir-04.jpg" class="jiaz-t fl"></a>
+    					<h3>化妆</h3>
+    					<h4>168元起</h4>
+    					<h5>随时下单预约，美丽不再等候。</h5>
+    					<p><a href="{:U('Home/Ziying/xiangqing')}?id=15">查看详情</a></p>
+    				</li>
+    				    			</ul>
+    		</div>
+    	</div>
+        <!-- liren end  -->
+	</div>
+</block>
+	<!--main-->
+
+
+        <div class="footer">
+        	<!-- 左侧按钮begin -->
+<div id="tbox">
+  <div class="icon">
+    <a id="coder" href="#tag_cmt"></a>
+    <div id="icon-01"></div>
+    <div id="coder_img"></div>
+  </div>
+  <div class="icon-t">
+    <a id="code" href="#tag_about"></a>
+    <div id="icon-02"></div>
+    <div id="code_img"></div>
+  </div>
+  <a style="display: none;" id="gotop" href="javascript:void(0)"></a>
+</div>
+<!-- 左侧按钮end -->            <div class="standard">
+  <ul>
+    <li class="standard-l">
+      <p>
+        <span></span>专业
+      </p>
+      <h6>标准化培训 严格甄选 专业设备</h6>
+    </li>
+    <li class="standard-l standard-c">
+      <p>
+        <span></span>保障
+      </p>
+      <h6>专属客服跟进 有问题先赔款 服务到您满意</h6>
+    </li>
+    <li class="standard-l standard-r">
+      <p>
+        <span></span>便捷
+      </p>
+      <h6>上千位服务人员 全城高密度覆盖 上门准时</h6>
+    </li>
+  </ul>
+</div>            
+
+<div class="nav-footer">
+  <div class="link">
+            <ul>
+      <li><b>热门类别：</b></li>
+      <li class="ll">
+            	      	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/baojie1/">北京日常保洁</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/caboli/">北京擦玻璃</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/baojie2/">北京深度保洁</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/jiadianqingxi/">北京家电清洗</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/yanghu/">北京家居养护</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/yuesao/">北京月嫂</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/baomu/">北京保姆</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/meijia/">北京美甲</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/meijie/">北京美睫</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/xiejia/">北京修护及卸甲</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/huazhuang/">北京化妆</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/huoyun/">北京速运</a>
+        	</div>
+        	      	               	               	               	               	               </li>
+    </ul>
+                <ul class="last">
+      <li><b>友情链接：</b></li>
+      <li class="ll">
+                <div class="link-item">
+          <a href="http://weifang.anjuke.com/sale/gaomishj/" target="blank">高密二手房网</a>
+        </div>
+                <div class="link-item">
+          <a href="http://beijing.huangye88.com/shenghuo-meifameiti-meijia/" target="blank">北京美甲</a>
+        </div>
+                <div class="link-item">
+          <a href="http://114.79.cn/trade-mrhz.html" target="blank">美容加盟 </a>
+        </div>
+              </li>
+    </ul>
+      </div>
+</div>
+
+<div class="nav-bottom">
+  <p>
+    <a href="http://bj.daojia.com/join/" rel="nofollow">加入我们</a>
+    |<a href="http://www.daojia.com/aboutus/" rel="nofollow">关于我们</a>
+    |<a href="http://bj.daojia.com/map/">网站地图</a>
+    |<a href="http://www.daojia.com/reports/" rel="nofollow">媒体报道</a>
+  </p>
+  ©2015 Daojia.com 58到家版权所有  津ICP备15004920号 
+  <br> 天津五八到家生活服务有限公司
+</div> 
+<block name="content3">
+
+</div>
+<!-- 代码开始 --> 	
+<!-- 代码结束 -->
+<script type="text/javascript" src="__PUBLIC__/Home/liren_files/jquery-1.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/liren_files/right_js.js"></script>
+
+
+</body></html>
+</block>

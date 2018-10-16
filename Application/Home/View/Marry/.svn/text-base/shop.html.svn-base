@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script src="__PUBLIC__/Home/daili_files/ga.js" async=""></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>58同城全国渠道招商火热进行中 - 58同城</title>
+<meta name="Keywords" content="58同城全国渠道招商">
+<meta name="Description" content="">
+<script src="__PUBLIC__/Home/daili_files/move.js"></script>
+<link href="__PUBLIC__/Home/daili_files/biz.css" type="text/css" rel="stylesheet">
+<script src="__PUBLIC__/Home/daili_files/jquery-1.js"></script>
+</head>
+
+<body>
+<!-- header头部分 -->
+<block name="header">
+<div id="head">
+	<div class="loog">
+    	<a href="{:U('Home/Index/index')}" target="_blank"><img title="58同城，让生活更简单" alt="中文最大生活信息门户" src="__PUBLIC__/Home/daili_files/logo.gif">
+        </a>
+    </div>
+    <div class="relation">
+    	<p>全国统一招商电话：<span><font size="3"><b>400-818-1858</b></font></span></p>
+        <p>咨询QQ：<a href="" target="_blank" rel="nofollow">给我留言</a></p>
+    </div>
+</div>
+<!-- header结束 -->
+<div class="navBack" id="navBack">
+<!-- 头部主标题 -->
+
+
+<div class="nav" id="nav">
+	<ul>
+    	<li id="index" class="active"><a href="{:U('Home/Marry/index')}" target="_blank">首页</a></li>
+    	<li id="policy"><a href="{:U('Home/Business/policy')}" target="_blank">代理政策</a></li>
+    	<li id="support"><a href="{:U('Home/Business/powered')}" target="_blank">渠道支持</a></li>
+    	<li id="news"><a href="{:U('Home/Business/link')}" target="_blank">友情链接</a></li>
+    	<li id="products"><a href="javascript:void(0);">产品中心</a>
+        	<ul style="display: none;" class="navList">
+            	<li><a href="{:U('Home/Marry/index')}?gtype=婚庆" target="_blank">婚庆</a></li>
+            	<li><a href="{:U('Home/Marry/index')}?gtype=摄像摄影" target="_blank">摄像摄影</a></li>
+            	<li><a href="{:U('Home/Marry/index')}?gtype=礼仪庆典" target="_blank">礼仪庆典</a></li>
+            	<li><a href="{:U('Home/Marry/index')}?gtype=婚车租赁" target="_blank">婚车租赁</a></li>
+            </ul>
+        </li>
+    	<li id="toapply"><a href="{:U('Home/Business/apply')}" target="_blank">申请代理</a></li>
+    </ul>
+</div>
+<!--  -->
+</div>
+
+
+<script type="text/javascript">
+$(function () {
+	var liArr = new Array("index","policy","support","news","products","toapply");
+	var url = location.href;
+	for (var i=0; i<liArr.length; i++) {
+		if (url.indexOf(liArr[i]) > -1) {
+			$("#navBack").find("li").each(function(index){
+				$(this).removeClass("active");
+			});
+			$("#" + liArr[i]).addClass("active");
+		}
+	}
+});
+</script>
+
+<div class="cont">
+
+</block>
+	
+</div>
+
+
+<div class="offal">
+	<p><a href="" target="_blank" rel="nofollow">京IOP证060405</a> |
+	<a href="" target="_blank" rel="nofollow">关于我们</a> |
+    <a href="" target="_blank" rel="nofollow">推广服务</a> |
+    <a href="" target="_blank" rel="nofollow">渠道招商</a> |
+    <a href="" target="_blank" rel="nofollow">58招聘</a> |
+    <a href="" target="_blank" rel="nofollow">与58对话</a></p>
+</div>
+
+</body>
+</html>

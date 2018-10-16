@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>【北京二手房网|北京二手房出售|北京二手房买卖信息】- 北京58同城</title>
+        <meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.58.com/bj/list?utm_source=market&amp;spm=b-31580022738699-pe-f-851.sogoupz_biaoti">
+        <meta http-equiv="mobile-agent" content="format=html5; url=http://m.58.com/bj/list?utm_source=market&amp;spm=b-31580022738699-pe-f-851.sogoupz_biaoti">
+        <meta http-equiv="mobile-agent" content="format=wml; url=http://m.58.com/bj/list?utm_source=market&amp;spm=b-31580022738699-pe-f-851.sogoupz_biaoti">
+
+        <meta name="keywords" content="北京二手房网,北京二手房买卖信息">
+        <meta name="description" content="58同城北京二手房网,为您提供最新、最真实的北京二手房信息,免费发布北京二手房买卖、二手房出售信息，找北京二手房经纪人、个人房源信息，欢迎您来到58同城北京二手房网。">
+        <meta name="location" content="province=北京;city=北京;coord=116.395645,39.929986">
+
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/Home/list_files/base_v20150121133540.css" media="all">
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/list_files/list-fang_second-hand-bj_v20151104103651.css" media="all">
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/list_files/fang-ctt_v20151022211223.css" media="all">
+
+    </head>	  
+    <body>	       
+        <div id="header">
+           	<div class="logo">
+                <a href="" target="_blank">
+                    <img src="__PUBLIC__/Home/list_files/logonew.gif" title="58同城" alt="58同城">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="">北京58同城</a>
+                <cite></cite>
+        		<a href="">北京房产信息</a>
+        		<cite></cite>
+                <a href="">北京二手房</a>				
+        	</div>
+            <span><a href="" target="_blank" class="postBtn" rel="nofollow"></a></span>
+        </div>
+
+        <div style="display: block;" id="brand_list_top_banner" class="fang_top_banner brandad1000">
+            <style>
+                .brandad1000{ height:50px; margin:0 auto 10px; overflow:hidden; width:1000px; position:relative;}
+                .brandad1000 ul{}
+                .brandad1000 li{ height:50px;}
+                .brandad1000 img{ width:1000px; height:50px;}
+
+
+                .cright{
+                    width:170px;
+                    height:auto;
+                    float:left;
+                    margin-top:0px;
+                    margin-left:17px;
+                    position: relative;
+
+                    }
+                
+                .pubu{
+                    width:162px;
+                    height:auto;
+                    float:right;
+                    list-style:none;
+                }
+
+                #item{
+                    width:140px;
+                    height:auto;
+                    border:solid 1px #ddd;
+                    padding:10px;
+                }
+            </style>
+            <ul style="margin-top: 0px;">
+                <li><a href="" target="_blank">
+                        <img src="__PUBLIC__/Home/list_files/n_v1bkuymc2awcnvlzs7myfa.png">
+                    </a>
+                </li>
+                <li><a href="" target="_blank">
+                        <img src="__PUBLIC__/Home/list_files/n_v1bl2lwwldfyxvnugltvmq.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+			<!--------------------------------------------------------筛选项---------------------------------------------------------------->
+	        <!-- =S selection -->
+        <div id="selection">
+        	
+        		<div class="seltabs">
+                  <a href="" class="select"><span>区域/地标</span></a>
+                
+                  <a href="" target="_blank"><span>相机</span></a>      
+                  <a href="" target="_blank"><span>手机</span></a>
+                
+                </div>
+        		
+        				
+                <div class="relative relative_show">
+                		
+                	<dl class="secitem" id="region">
+                        <dt>区域：</dt>
+                        <dd>
+                        <a href="{:U('Home/Jiazheng/index')}?condition={$condition}" class="select" onclick="">全{$city}</a>
+                                <!--如果有地铁的话-设置显示的地铁线路名称-->
+                                        
+                        <foreach name="areas" item="ov">                         <!-- 所有区域名称 -->   
+                        <a href="{:U('Home/Jiazheng/index')}?area={$ov['area']}&condition={$condition}" vppvval="1142" onclick="">{$ov['area']}</a>
+                        </foreach>
+                      
+                        <a href="{:U('Home/Jiazheng/index')}?condition={$condition}" vppvval="1146" onclick="">{$city}周边 </a>
+                                                                    
+                                <!--  商圈end -->
+                    
+                        </dd>
+                    </dl>
+                	
+                    <dl class="secitem" id="mianji">
+                        <dt>服务类型：</dt>
+                        <dd>
+
+                            <a rel="nofollow" href="{:U('Home/Jiazheng/index')}" class="select" onclick="clickLog('from=fc_esflist_bj_mianji_$areaVal');">不限 
+                            </a>
+                            <foreach name="sclass" item="vo">
+                            <a rel="nofollow" href="{:U('Home/Jiazheng/index')}?sclass={$vo}&condition={$condition}" vppvval="0_50" onclick="clickLog('from=fc_esflist_bj_mianji_0_50');">{$vo} 
+                            </a>
+                            </foreach>
+                      
+                        </dd>
+                    </dl>	
+                    <div class="house-recommend mt10">
+                        <div style="top: -56px;" class="house-recommend-default">
+                          
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            	<i class="shadow"></i>
+                <div class="line-x"> </div>
+
+        </div><!--end selection  -->
+						
+        <div id="category">
+        	<!-- 小区匹配显示区域 -->
+        	<!-- 小区匹配显示区域 -->						
+
+         <!-- Start main-->
+            <div id="main">
+                <div class="cleft" id="infolist">
+                    <style>
+                    .no-result {
+                    background: #ffc;
+                    line-height: 20px;
+                    padding: 10px 0 10px 20px;
+                    font-size: 12px;
+                    }
+                    </style>	
+
+                    <!--end for tbimg-->
+                    <!--底部智能广告，通过js获取-->
+                    <div style="display: block; position: relative; margin-top: -1px;" id="bottom_google_ad">
+                        <div id="zhineng_list_inner_bottom">
+                            <table class="tbimg" cellpadding="0" cellspacing="0">
+                                
+                            </table>
+                        </div>
+                        <div id="list_bottom_google_ad">
+                            <div id="bottom_jiameng_adframe"></div>
+                            <div id="btm_direct_ad" style="display: none;"></div>
+                            <div id="btm_wangmeng_ad" style="display: block;">
+                                <div>
+                                    <table class="tbimg" cellpadding="0" cellspacing="0">   
+                                        <tbody>
+                                        <foreach name="goods" item = "ov">
+                                            <tr onmouseover="this.className='bg'" onmouseout="this.className=''">
+                                                <td class="img" style="padding:0; border-top: 1px solid rgb(241, 241, 241); width:162px;" width="">
+                                                    <a style="text-decoration:none;display:block;zoom:1;width:100%;padding:8px 0px 8px 15px;" onmouseover="window.status='';return true;" name="" target="_blank" href="{:U('Jiazheng/xiangqing')}?id={$ov['id']}"><img src="__PUBLIC__{$ov['pic'][0]}"></a>
+                                                </td>
+                                                <td class="t" style="border-top: 1px solid rgb(241, 241, 241); padding: 5px;">
+                                                    <a href="{:U('Jiazheng/xiangqing')}?id={$ov['id']}" target="_blank" onmouseover="window.status='';return true;" style="text-decoration:none;display:block;zoom:1;width:641px;padding:5px 0 0 20px;">
+                                                        <span style="font-size: 16px;font-family: 微软雅黑;text-decoration:none;">{$ov['title']}
+                                                        </span>
+                                                        <i class="clear"></i>
+                                                        <span style="color:#585858;font-family: 微软雅黑;padding-right:75px;">{$ov['ps']}
+                                                        </span>
+                                                        <i class="clear"></i>
+                                                        <div class="qj-listright">
+                                                            <b class="pri">当月预约5 </b>
+                                                            <span class="fz14">&nbsp;&nbsp;次</span>
+                                                            <br>
+                                                            <span class="fz14">                 
+                                                            </span>
+                                                            <br>
+                                                        </div>
+
+                                                        <span>bj.lianjia.com</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr onmouseover="this.className='bg'" onmouseout="this.className=''">
+                                                <td class="img" style="padding:0; border-top: 1px solid rgb(241, 241, 241); width:162px;" width="">
+                                                    <a style="text-decoration:none;display:block;zoom:1;width:100%;padding:8px 0px 8px 15px;" onmouseover="window.status='';return true;" name="" target="_blank" href="">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            </foreach>
+                                        
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="left" class="cright">
+                        <li style="display:none" id="item">
+                            <img src="" alt="" width="100%">
+                        </li>
+            
+                        <ul class="pubu"></ul>
+                        <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"> </script>
+                        <script type="text/javascript">
+                            var p = 1;
+                            var isLoading = false;//
+
+                            //滚动事件
+                            $(window).scroll(function(){
+                                //如果正在请求  返回函数
+                                if(isLoading) return;
+                                //获取滚动高度
+                                var sT = $(window).scrollTop();
+                                //获取窗口的高度
+                                var wH = $(window).height();
+                                //整个文档的高度
+                                var sH = $(document).height();
+                                //
+                                if(sH - sT - wH <= 200 ){
+                                    ///关门  其他请求不能发送
+                                    isLoading = true;
+                                    load();
+                                }
+                            })
+
+                            //获取数据的函数封装
+                            function load(){
+                                $.get("{:U('Home/Jiazheng/gettips')}",{p:p},function(data){
+                                    //循环创建元素
+                                    for(var i=0;i<data.length;i++){
+                                        //克隆元素
+                                        var newLi = $('#item').clone(true);
+                                        //修改元素的信息
+                                        newLi.find('img').attr('src','__PUBLIC__/'+data[i].pic);
+                                        //显示元素
+                                        newLi.show();
+                                        //执行插入
+                                        $('ul').append(newLi);
+                                    }
+                                    p++;
+                                    isLoading = false;
+                                },'json');
+                            }
+
+                            //页面加载的时候请求一次
+                            load();
+                        </script>
+
+                    </div>
+                        <!--页码-->
+
+                        <div class="pager" id="house-area"> 
+                        <a class="prv" href="{:U('Home/Jiazheng/index')}?pagenow={$pagenow-1}&condition={$condition}&gclass={$gclass}"><span>上一页</span></a>
+
+                       <for start="1" end="3" name="i">
+                            <a href="{:U('Home/Jiazheng/index')}?pagenow={$i}&condition={$condition}&gclass={$gclass}"><span>{$i}</span></a>
+                        </for>
+                        <a class="next" href="{:U('Home/Jiazheng/index')}?pagenow={$pagenow+1}&condition={$condition}&gclass={$gclass}"><span>下一页</span></a></div>
+                        
+            						
+                </div>
+            </div>  
+        </div>
+        <div id="list_right_oldoutside"></div>
+        <div id="list_right_sogou"></div>
+        <div id="list_right_afc"></div>
+        <div id="list_fangchan_yigao_cpc"></div>
+
+        <style>
+            .xb-all { width:998px; border:#e1e1e1 solid 1px; border-top:none;}
+            .box-xb { padding:0 15px; font-size:12px; line-height:24px;color:#808080}
+            .box-xb  a{color:#808080!important;}
+            .box-xb  a:hover{color:#f00!important}
+            .xb-qh { height:91px;overflow:hidden;}
+            .xb-xgxx-js,.xb-xgxx,.xb-xgxx-sq,.xb-xgxx-zb,.xb-xgxx-link{padding:13px 0;border-bottom:1px dotted #e1e1e1; overflow:hidden;}
+            .xb-xgxx-link{ border-bottom:none}
+            .box-145,.xb-xgxx-link strong { float:left; width:135px;padding-right:15px;height:24px;color:#808080}
+            .box-145 h2{ font-weight:100}
+            .box-813,.box-813-link{ width:818px; float:right;}
+            .box-813 li { display:inline-block; width:134px; height:24px;float:left;}
+            .box-813-link a{display:inline-block; height:24px;margin-right:10px;}
+        </style>
+
+        <!-- =E categorySearch -->  	        <!-- =S footer -->
+			<!-- =S footer -->
+        <div id="footer" class="footer">
+            © 58.com 
+            <a id="askicon" target="_blank" title="有问题请与58客服进行对话" rel="nofollow" href="http://about.58.com/v5/">帮助中心
+            </a>
+        </div>
+        <!-- =E footer -->			<!-- =E footer -->
+	    
+	    
+	    
+        <div style="display: none;" id="cboxOverlay">
+        </div>
+        <div style="display: none;" class="" id="colorbox">
+            <div id="cboxWrapper">
+                <div>
+                    <div style="float: left;" id="cboxTopLeft">
+                    </div>
+                    <div style="float: left;" id="cboxTopCenter">
+                    </div>
+                    <div style="float: left;" id="cboxTopRight">
+                    </div>
+                </div>
+                <div style="clear: left;">
+                    <div style="float: left;" id="cboxMiddleLeft">
+                        
+                    </div>
+                    <div style="float: left;" id="cboxContent">
+                        <div style="width: 0px; height: 0px; overflow: hidden; float: left;" id="cboxLoadedContent">
+                            
+                        </div>
+                        <div style="float: left;" id="cboxTitle">
+                            
+                        </div>
+                        <div style="float: left;" id="cboxCurrent">
+                            
+                        </div>
+                        <div style="float: left;" id="cboxNext">
+                            
+                        </div>
+                        <div style="float: left;" id="cboxPrevious">
+                            
+                        </div>
+                        <div style="float: left;" id="cboxSlideshow">
+                            
+                        </div>
+                        <div style="float: left;" id="cboxClose">
+                            
+                        </div>
+                    </div>
+                    <div style="float: left;" id="cboxMiddleRight">
+                        
+                    </div>
+                </div>
+                <div style="clear: left;">
+                    <div style="float: left;" id="cboxBottomLeft">
+                        
+                    </div>
+                    <div style="float: left;" id="cboxBottomCenter">
+                        
+                    </div>
+                    <div style="float: left;" id="cboxBottomRight">
+                        
+                    </div>
+                </div>
+            </div>
+            <div style="position: absolute; width: 9999px; visibility: hidden; display: none;">
+                
+            </div>
+        </div>
+        <a style="display: none;" class="erweima" id="erweimaAd" target="_blank" href="">
+            <i></i>
+            <p>58手机客户端
+            </p>
+            <img src="__PUBLIC__/Home/list_files/erweimaB.png">
+            <p class="endword">手机抢房东房源
+            </p>
+            <p style="display:none" class="endwordover">点击或扫描下载
+            </p>
+        </a>
+        <style type="text/css" id="aaaa">
+            a.erweima{
+                        z-index:100;
+                        width:100px;
+                        height:174px;
+                        text-align:center;
+                        background:#f2f2f2;
+                        padding:5px;
+                        font-size:12px;
+                        line-height:20px;
+                        display:block;
+                        color:#8a898e;
+                        position:fixed;
+                        top:150px;
+                        right:0px;
+                        _position:absolute;
+                    }
+
+            a:hover.erweima{
+                            background:#fefee4; 
+                            text-decoration:none
+                        }
+
+            .erweima i{
+                            width:9px;
+                            height:8px; 
+                            overflow:hidden;
+                            background:url(http://img.58cdn.com.cn//ui6/index/indexclose.png) no-repeat;
+                            position:absolute;
+                            top:10px;
+                            right:5px;
+                        }
+            a:hover.erweima i{background-position:-9px 0}</style>
+           <!--  <div class="goTab" id="goTab"><ul><li class="gTop"><a style="display: none;" href="javascript:;"><span>回到顶部</span><b></b></a></li><li class="gNext"><a href="http://bj.58.com/list/pn2/?utm_source=market&amp;spm=b-31580022738699-pe-f-851.sogoupz_biaoti"><span>下一页</span><b></b></a></li><li class="gSuggest"><a target="_blank" href="http://about.58.com/">投诉<br>建议</a></li></ul></div> -->
+            <style type="text/css">.goTab{position:fixed; bottom:56px; right:10px;_position:absolute; z-index:999;}.goTab ul{margin:0;}.goTab li{position:relative; width:45px; height:45px; line-height:45px; margin-bottom:4px; font-size:14px; list-style:none;}.goTab li a{position:absolute; width:45px; height:45px; right:0;top:0; text-align:center; color:#fff !important; background-color:#c0c0c0; transition: background-color 0.3s linear 0s; overflow:hidden;text-decoration: none; cursor:pointer; color:#fff;}.goTab li a:hover{color:#fff;text-decoration:none;background-color: #989898;}.goTab li b{background:url('http://img.58cdn.com.cn/ui6/index/bg_goTab.png'); width:19px; height:23px; display:block; position:absolute; right:13px; top:11px;}.goTab li span{position: absolute; color:#fff; right:32px; width:92px;}.goTab .gTop b{background-position: 0 0;}.goTab .gPrev b{background-position: 0 -24px;}.goTab .gNext b{background-position: 0 -48px;}.goTab .gSuggest{margin-bottom:0; line-height:16px; font-size:12px;}.goTab .gSuggest a{padding-top:6px; height:39px;}
+        </style>
+        <ul class="lso-hide" id="localInfo">
+            
+        </ul>
+    </body><!------------------------------------------------------底部的js---------------------------------------------------------------->
+</html>

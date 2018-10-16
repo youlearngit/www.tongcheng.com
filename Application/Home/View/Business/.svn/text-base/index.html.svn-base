@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script src="__PUBLIC__/Home/daili_files/ga.js" async=""></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>58同城全国渠道招商火热进行中 - 58同城</title>
+<meta name="Keywords" content="58同城全国渠道招商">
+<meta name="Description" content="">
+<script src="__PUBLIC__/Home/daili_files/move.js"></script>
+<link href="__PUBLIC__/Home/daili_files/biz.css" type="text/css" rel="stylesheet">
+<script src="__PUBLIC__/Home/daili_files/jquery-1.js"></script>
+</head>
+
+<body>
+<!-- header头部分 -->
+<div id="head">
+	<div class="loog">
+    	<a href="{:U('Home/Index/index')}" target="_blank"><img title="58同城，让生活更简单" alt="中文最大生活信息门户" src="__PUBLIC__/Home/daili_files/logo.gif">
+        </a>
+    </div>
+    <div class="relation">
+    	<p>全国统一招商电话：<span><font size="3"><b>400-818-1858</b></font></span></p>
+        <p>咨询QQ：<a href="" target="_blank" rel="nofollow">给我留言</a></p>
+    </div>
+</div>
+<!-- header结束 -->
+<div class="navBack" id="navBack">
+<!-- 头部主标题 -->
+
+
+<div class="nav" id="nav">
+	<ul>
+    	<li id="index" class="active"><a href="{:U('Home/Business/index')}" target="_blank">首页</a></li>
+    	<li id="policy"><a href="{:U('Home/Business/policy')}" target="_blank">代理政策</a></li>
+    	<li id="support"><a href="{:U('Home/Business/powered')}" target="_blank">渠道支持</a></li>
+    	<li id="news"><a href="{:U('Home/Business/link')}" target="_blank">友情链接</a></li>
+    	<li id="products"><a href="javascript:void(0);">产品中心</a>
+        	<ul style="display: none;" class="navList">
+            	<li><a href="{:U('Home/Business/huangye')}?agency=黄页产品线" target="_blank">黄页产品线</a></li>
+            	<li><a href="{:U('Home/Business/wanted')}?agency=招聘产品线" target="_blank">招聘产品线</a></li>
+            	<li><a href="{:U('Home/Business/homes')}?agency=房产产品线" target="_blank">房产产品线</a></li>
+            </ul>
+        </li>
+    	<li id="toapply"><a href="{:U('Home/Business/apply')}" target="_blank">申请代理</a></li>
+    </ul>
+</div>
+<!--  -->
+</div>
+
+
+<script type="text/javascript">
+$(function () {
+	var liArr = new Array("index","policy","support","news","products","toapply");
+	var url = location.href;
+	for (var i=0; i<liArr.length; i++) {
+		if (url.indexOf(liArr[i]) > -1) {
+			$("#navBack").find("li").each(function(index){
+				$(this).removeClass("active");
+			});
+			$("#" + liArr[i]).addClass("active");
+		}
+	}
+});
+</script>
+
+<block name="focus">
+<div class="focus" id="focus">
+	<ul style="width: 2880px;">
+    	<li style="display: none;"><a href="" target="_blank"><img style="width:960px;height:323px" src="__PUBLIC__/Home/daili_files/n_v1bkuymc6t5swvlorqne4q.jpg"></a></li>
+    	<li style="display: none;"><a href="" target="_blank"><img style="width:960px;height:323px" src="__PUBLIC__/Home/daili_files/n_v1bl2lwtjck6lfkmxia4da.jpg"></a></li>
+    	<li style="display: block;"><a href="" target="_blank"><img style="width:960px;height:323px" src="__PUBLIC__/Home/daili_files/n_s1203359211303758001-9.jpg"></a></li>
+    </ul>
+    <p>
+    	<span class=""></span>
+    	<span class=""></span>
+    	<span class="active"></span>
+    </p>
+</div>
+
+</block>
+<!-- ****************
+***轮播窗口******
+**************** -->
+
+
+
+<div class="cont">
+<block name="contL">
+	<div class="contL"><!--左侧主题-->
+    	<h2><span>代理风采</span></h2>
+        <div class="costar" id="costar">
+            <div class="slide">
+                <ul style="width: 1920px; left: 0px;">	               			 
+					 <foreach name="infoA" item="vo" >            			 
+                		<li><a href="{:U('Home/Business/detail')}?id={$vo['id']}" target="_blank"><img style="width:640px;height:273px" src="__PUBLIC__{$vo['pic'][0]}" title="{$vo['addr']}{$vo['company']}"></a></li>
+                		<p class="title">{$vo['addr']}{$vo['company']}</p>
+					</foreach>
+
+                
+                </ul>
+                <div class="eventL"></div>
+                <div class="eventR"></div>
+                <div class="shade"></div>
+
+            </div>
+        </div>
+
+    	<h2><span>推荐代理商</span></h2>
+            <ul class="list" style="border-bottom:none;">
+        	<foreach name="infoA" item="vo" >
+                <li><a href="{:U('Home/Business/detail')}?id={$vo['id']}" target="_blank">{$vo['agency_city']}{$vo['company']}</a></li>
+            </foreach>
+            </ul>
+        	<h2 style="border-top:1px dashed #E6E6E6;margin: 0px 20px;height: 0px;"></h2>
+        	<ul class="list" style="height:164px;">
+        	<foreach name="infoB" item="vo" >
+                <li><a href="{:U('Home/Business/detail')}?id={$vo['id']}" target="_blank">{$vo['agency_city']}{$vo['company']}</a></li>
+	        </foreach>	
+        	</ul>  
+    </div>
+
+</block>
+    <!-- 代理商申请与查询**** -->
+	<div class="contR"><!--右侧主题-->
+        <!-- 代理商申请 -->
+    	<div class="costar">
+            <h2><span>在线申请代理</span></h2>
+            <div class="apply">
+                <a href="{:U('Home/Business/apply')}" onclick="biz_applyform_load()" target="_blank">申请代理</a>
+            </div>
+        </div>
+
+        <!-- 代理商查询 -->
+    	<div class="costar">
+            <h2><span>授权代理商查询</span></h2>
+            <div class="refer">
+            	<form id="queryForm1" action="/agent/searchagent" method="post">
+                	<input id="agentBusinessName" name="agentBusinessName" class="txtA" type="text">
+                	<input style="display:none" type="text">
+                	<input class="butA" value="点击查询" style="text-align:center" readonly="readonly" onclick="query1()" type="button">
+                </form>
+            </div>
+        </div>
+
+
+    	<div class="costar">
+            <h2><span>联系我们</span></h2>
+            <div class="contact">
+            	<p>电话：400-818-1858</p>
+            	<p>E-mail：qudao-kf01@58.com</p>
+            	<p>地址：北京市朝阳区北苑路乙108号北美国际商务中心E座</p>
+            </div>
+            <h2 style="padding-top:10px;"><span>区域招商负责人查询</span></h2>
+            <div class="refer" style="margin-top:-13px">
+                <!-- 区域查询 -->
+            	<form id="queryForm2">
+                	<select id="cityId" name="agency_city">
+                		<option selected="selected" value="0">请选择查询城市</option>
+		                    <foreach name="citys" item="vo" >
+				               <option value="{$vo['city']}">{$vo['city']}</option>
+	                		</foreach>
+	                    </select>
+                	<input class="butA" value="点击查询" onclick="query2()" type="button">
+            	</form>
+
+            </div>
+        </div>
+    	
+    </div>
+	    <!-- 右侧结束部分 -->
+	    
+	<!-- 区域查询弹框部分 -->
+	    
+	<div id="hasResult" class="referA" style="width:700px">
+		
+
+	</div>
+	<div id="noResult" class="referA" style="width:700px">
+		<div class="close"></div>
+		<h3 id="warning">对不起,共查到<span class="red">0</span>个相关内容</h3>
+	    <p>您可以尝试重新输入您要查询的企业名称进行查询，完整的企业名称更容易获得准确的查询结果。</p>
+	</div>
+	<div id="contactMe" style="top: 150px;left: 45%;">
+		<div class="close"></div>
+		<p><b>您正在查询的城市是：</b><span id="city"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		<table id="tt">
+		</table>
+	</div>
+
+	<div id="contactMeNoManager" class="referA referWidB">
+		<div class="close"></div>
+	    <p><b>您正在查询的城市是：</b><span id="city">西安</span></p>
+	    <p><b>联系方式：</b><span id="mobile">1333333333333</span></p>
+	    
+	</div>
+<style>
+	#contactMe {
+		background: none repeat scroll 0 0 #fff;
+	    border: 3px solid #2c93e2;
+	    padding: 24px 0 24px 24px;
+	    margin-left: -158px;
+	    position: fixed;
+	    display: none;
+	}
+	#contactMe .close {
+	    background: url("__PUBLIC__/Home/daili_files/close.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	    cursor: pointer;
+	    height: 11px;
+	    overflow: hidden;
+	    position: absolute;
+	    right: 10px;
+	    top: 10px;
+	    width: 12px;
+	}
+	#tt td{
+		border: 0px;
+		padding: 20px;
+	}
+</style>
+<script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	
+	
+</script>
+<script src="__PUBLIC__/Home/daili_files/json2.js"></script>
+<script>
+
+$(function(){
+	
+	//点击弹层的关闭按钮
+	// $(".close").bind("click", function(){
+	// 	// alert(23);
+	// 	$(this).parent().css("display","none");
+	// });
+
+
+	$('.close').click(function(){
+		// alert(25);
+		$(this).parent().css("display","none");		
+	})
+
+
+	$('#hasResult').click(function(){
+		$(this).css('display','none');
+	})
+});
+
+
+//授权代理商查询
+function query1() {
+	
+	
+	var agentBusinessName = $("#queryForm1 #agentBusinessName").val();
+	
+	if ($.trim(agentBusinessName) == "") {
+		alert("请输入代理商企业名称进行查询");
+		return;
+	}
+	
+	$.ajax({
+		type : "POST",
+		data : {"agentBusinessName" : agentBusinessName},
+		url	:  "{:U('Home/Business/bselect')}",
+		async : false,
+		success : function(data){
+			// try{
+			// 	var agent = eval(data);
+			// 	// alert(agent);
+			// 	$("#warning").text(agent.warning);
+			// 	$("#noResult").css("display", "block");
+			// 	var elementScrollTop = document.body.scrollTop == 0 ?
+			// 			document.documentElement.scrollTop : document.body.scrollTop;
+			// 	$("#noResult").css("top", elementScrollTop + window.screen.availHeight/2-134);
+				
+			// }catch(e) {
+			// 	$("#hasResult").html('<div class="close"></div><h3 id="warning"></h3><div><table><tbody><tr><th>联系人</th><th>电话</th></tr></tbody></table></div>');
+			
+			// }
+			var agent = eval(data);
+			// alert(empty(agent));
+			var len = agent.length;
+			if(len != 0){
+				var agent = eval(data);
+				$("#hasResult").css("display", "block");
+				var elementScrollTop = document.body.scrollTop == 0 ?
+						document.documentElement.scrollTop : document.body.scrollTop;
+				$("#hasResult").css("top", elementScrollTop + window.screen.availHeight/2-134);
+				// alert(agent);
+				var table = '';
+				for(var i=0;i<agent.length;i++){
+					table += '<tr align="center"><td>'+agent[i].company+'</td><td>'+agent[i].pname+'</td><td>'+agent[i].tel+'</td><td>'+agent[i].email+'</td></tr>';
+					
+					// alert(agent[i]+'i'); 
+				}
+				$("#hasResult").html('<h3>为您找到<span class="red">'+len+'</span>家58同城授权的合作伙伴</h3><div class="close"></div><h3 id="warning"></h3><p>您可以通过下面的信息与其联系</p><div><table style="margin:0 auto"><tbody><tr><th>企业名称</th><th>联系人</th><th>电话</th><th>地址</th></tr>'+table+'</tbody></table></div>');
+			}else{
+				// alert(0);
+				// var agent = eval(data);
+				$("#noResult").css("display", "block");
+				var elementScrollTop = document.body.scrollTop == 0 ?
+						document.documentElement.scrollTop : document.body.scrollTop;
+				$("#noResult").css("top", elementScrollTop + window.screen.availHeight/2-134);
+
+				// $("#noResult").html('<div class="close"></div><h3 id="warning"></h3><p>您可以尝试重新输入您要查询的企业名称进行查询，完整的企业名称更容易获得准确的查询结果.</p>');
+			}
+
+		}
+	});	
+}
+
+//按照城市查询城市负责人
+function query2 () {
+	
+	var cityId = $("#queryForm2 #cityId").val();
+	if ("0" == cityId) {
+		alert("请选择查询城市");
+		return;
+	}
+	var cityName = $("#queryForm2 #cityId option[value="+cityId+"]").text();
+	cityName = cityName.substring(1);
+
+	
+	$.ajax({
+		type : "POST",
+		data : {agency_city : cityId},
+		url	:  "{:U('Home/Business/citySelect')}",
+		async : false,
+		success : function(data){
+			// alert(data);
+			$("#city").html(cityName);
+			var managers = eval(data);
+			// alert(managers);
+			var table =$("<table>");
+			var currentTr;
+			var len = managers.length;
+			if(len==0){
+				$("#tt").html("<b>联系方式：400-818-1858</b>");
+				$("#contactMe").css("display", "block");
+				return;
+			}
+			
+			for(var i=0 ; i<len;i++){
+				var manager = managers[i];
+				if(manager.pname){
+					if(i%2==0){
+						currentTr =$("<tr>");
+						table.append(currentTr);
+					}
+					var td = $("<td>");
+					currentTr.append(td);
+					
+					var p2 = $("<p>");
+					p2.html('<b>城市经理：</b><span id="manager">'+manager.pname+'</span>(负责'+manager.agency+')');
+					td.append(p2);
+					
+					var p3 = $("<p>");
+					p3.html('<b>联系方式：</b><span id="mobile">'+manager.tel+'</span>');
+					td.append(p3);
+					
+					var p4 = $("<p>");
+					p4.html('<b>电子邮箱：</b><span id="email">'+manager.email+'</span>');
+					td.append(p4);
+				}
+				
+			}
+			$("#tt").html(table.html());
+			$("#contactMe").css("display", "block");
+			
+		}
+	});
+
+
+	
+	
+}
+
+</script>
+
+</div>
+<div class="message">
+	<dl>
+    	<dt><a href="" target="_blank">代理政策</a></dt>
+        <dd>开放的渠道资源</dd>
+        <dd>全方位政策支持</dd>
+        <dd>可持续发展的渠道系统</dd>
+    </dl>
+	<dl>
+    	<dt><a href="" target="_blank">渠道支持</a></dt>
+        <dd>开放的渠道资源</dd>
+        <dd>全方位政策支持</dd>
+        <dd>可持续发展的渠道系统</dd>
+    </dl>
+	<dl>
+    	<dt><a href="" target="_blank">产品中心</a></dt>
+        <dd>开放的渠道资源</dd>
+        <dd>全方位政策支持</dd>
+        <dd>可持续发展的渠道系统</dd>
+    </dl>
+	<dl>
+    	<dt><a href="" target="_blank">媒体报道</a></dt>
+        <dd>开放的渠道资源</dd>
+        <dd>全方位政策支持</dd>
+        <dd>可持续发展的渠道系统</dd>
+    </dl>
+</div>
+<div class="issue">
+	<h2><span>常见问题</span><a href="" target="_blank">more》</a></h2>
+	    <p><b>Q：请问我可以代理所有产品线吗？</b></p>
+    <p>A：我们先会转至由城市负责人与您沟通具体公司状况，在进行实地考察贵公司的情况，具体代理哪条产品线，是由贵公司目前的经营状况、团队规模、目前从事的行业、当地人口数量以及当地现有的代理结构来决定。</p>
+        <p><b>Q：如果我代理商某个城市，我的利润从哪来？</b></p>
+    <p>A：目前我们与渠道代理商之间是分成模式，并且每个季度会制定相应的考核指标，按照完成的情况，给予相应的奖励返点，从中即可赚取利润。</p>
+</div>
+<div class="offal">
+	<p><a href="" target="_blank" rel="nofollow">京IOP证060405</a> |
+	<a href="" target="_blank" rel="nofollow">关于我们</a> |
+    <a href="" target="_blank" rel="nofollow">推广服务</a> |
+    <a href="" target="_blank" rel="nofollow">渠道招商</a> |
+    <a href="" target="_blank" rel="nofollow">58招聘</a> |
+    <a href="" target="_blank" rel="nofollow">与58对话</a></p>
+</div>
+
+</body>
+</html>

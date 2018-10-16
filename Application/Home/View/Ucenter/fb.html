@@ -1,0 +1,747 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>用户中心</title>
+     <script type="text/javascript">document.domain="58.com";</script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/fb_files/user_center_new_v20150804171656.css">
+<script type="text/javascript" src="__PUBLIC__/Home/fb_files/jquery-1.js"></script>
+<script type="text/javascript">try { var ____json4fe = { catentry: { dispid: '', name: '', listname: '39' }, locallist: { dispid: '1', name: '北京', listname: 'bj' }, modules: 'my'} } catch (e) { };</script>
+<script type="text/javascript" src="__PUBLIC__/Home/fb_files/boot_mypage_new_v20150714230612.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/fb_files/topbar_new_v20150906105001.js"></script><script src="__PUBLIC__/Home/fb_files/im_config.js" type="text/javascript"></script>
+<link rel="stylesheet" href="__PUBLIC__/Home/fb_files/slide_btn_v20150827115731.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/fb_files/alert_v20150831104811.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/fb_files/jiugongge_v20150827163254.css">
+
+<script> var win = new GetToolTipWindow('tooltipdiv', 'keyword', '3', '1', '', true, 4); win.setSearchButton('searchbtn');</script>
+<script type="text/javascript">
+       function displayPhoneAlias(infoId, alias) {
+            var html = $('#phone_alias_button_' + infoId).html();
+            $.ajax('http://my.58.com/phonealias/display/' + infoId + "/" + alias,{
+                dataType: 'json',
+                type: 'POST',
+                beforeSend: function(){$('#phone_alias_button_' + infoId).html('处理中...')},
+                error: function(){
+                    alert('显示失败');
+                    $('#phone_alias_button_' + infoId).html(html);
+                },
+                success: function(json) {
+                    if(json && json.code == 0) {
+                        $('#pao_container_' + infoId).html('小号：' + alias);
+                        $('#phone_alias_button_' + infoId).fadeOut();
+                    }else {
+                        alert('显示失败:' + json.msg);
+                        $('#phone_alias_button_' + infoId).html(html);
+                    }
+                }
+            });
+        }
+       
+
+      
+       
+</script>
+
+<script type="text/javascript">
+
+jQuery(function($){
+
+	//左侧菜单
+	$(".leftmenu-content li").click(function(){
+			var $subnav = $(this).children("ul");
+			var menu_id =  $(this).attr("id").substr(4);
+			var closed_menu_id = Cookie.getCookie(24567868631815 + "_closed_menu_id"); //cookie中获取折叠状态的左侧菜单，cookie值的格式为-menuId-menuId-menuId-
+			var opened_menu_id = Cookie.getCookie(24567868631815 + "_opened_menu_id"); //cookie中获取展开状态的左侧菜单，cookie值的格式为-menuId-menuId-menuId-
+			if($subnav && $subnav.is(":visible")){
+				//折叠菜单
+												
+				//cookie closed_menu_id中记录要折叠的菜单的menuId
+				if(closed_menu_id){//有已折叠状态的左侧菜单
+					if(closed_menu_id.indexOf("-"+ menu_id + "-")<0){
+						Cookie.setCookie(24567868631815 + "_closed_menu_id",closed_menu_id + menu_id +"-",{expireDays:30,path:"/",domain:"my.58.com"});
+				  }
+				}else{//没有已折叠状态的左侧菜单
+					  Cookie.setCookie(24567868631815 + "_closed_menu_id","-"+menu_id+ "-",{expireDays:30,path:"/",domain:"my.58.com"});
+				}
+				
+				//从cookie opened_menu_id中删除要折叠的菜单的menuId
+				if(opened_menu_id && opened_menu_id.indexOf("-" + menu_id + "-")>=0){
+					if(opened_menu_id.split("-"+menu_id+"-")[0] + "-" + opened_menu_id.split("-"+menu_id+"-")[1] == "-"){//判断cookie中的最后一个menuId
+						Cookie.setCookie(24567868631815 + "_opened_menu_id","",{expireDays:30,path:"/",domain:"my.58.com"});
+					}else{
+						Cookie.setCookie(24567868631815 + "_opened_menu_id",opened_menu_id.split("-"+menu_id+"-")[0] + "-" + opened_menu_id.split("-"+menu_id+"-")[1],{expireDays:30,path:"/",domain:"my.58.com"});
+					}
+				}
+			
+			}else{
+				 				 				
+				//从cookie中删除要展开的菜单的menuId
+					if(closed_menu_id && closed_menu_id.indexOf("-" + menu_id + "-")>=0){
+						if(closed_menu_id.split("-"+menu_id+"-")[0] + "-" + closed_menu_id.split("-"+menu_id+"-")[1] == "-"){//判断cookie中的最后一个menuId
+							Cookie.setCookie(24567868631815 + "_closed_menu_id","",{expireDays:30,path:"/",domain:"my.58.com"});
+						}else{
+							Cookie.setCookie(24567868631815 + "_closed_menu_id",closed_menu_id.split("-"+menu_id+"-")[0] + "-" + closed_menu_id.split("-"+menu_id+"-")[1],{expireDays:30,path:"/",domain:"my.58.com"});
+						}
+					}
+					
+					//cookie closed_menu_id中记录要展开的菜单的menuId
+					if(opened_menu_id){//有已展开状态的左侧菜单
+						if(opened_menu_id.indexOf("-"+ menu_id + "-")<0){
+							Cookie.setCookie(24567868631815 + "_opened_menu_id",opened_menu_id + menu_id +"-",{expireDays:30,path:"/",domain:"my.58.com"});
+					  }
+					}else{//没有已折叠状态的左侧菜单
+						  Cookie.setCookie(24567868631815 + "_opened_menu_id","-"+menu_id+ "-",{expireDays:30,path:"/",domain:"my.58.com"});
+					}
+				
+			}
+	});
+	
+	$(".leftmenu-content li a ").click(function(){
+		$("li").removeClass("li1-selected");
+		$(".leftmenu-content-ul li").removeClass("li-selected");
+		$(".leftmenu-content-slide-li1").removeClass("li1-selected");
+		$(".leftmenu-content-li2").removeClass("li1-selected");
+		var ul_temp = $(this).parent("li").parent("ul").attr("class");
+		if(ul_temp == "leftmenu-content-ul")
+			$(this).parent("li").addClass("li-selected");
+		else
+			$(this).parent("li").addClass("li1-selected");
+		$("#currentmenu_name").text("");
+		$("#currentmenu_name").append($(this).text());
+	});
+	
+})
+
+
+/**
+	*COOKIE相关 add by bsrn  
+	*
+*/
+ 
+		var Cookie=new Object();
+		var Cookie={
+			setCookie:function(){},
+			getCookie:function(){},
+			deleteCookie:function(){}
+		}
+		//setCookie
+		//name是要设置cookie的名字，value是要设置的值
+		//option 包括其他选项，是一个对象参数
+		Cookie.setCookie=function(name,value,option){
+			//用于存储负值给document.cookie的cookie格式字符串
+			var str=name+"="+escape(value);
+			if(option){
+				//如果设置了过期时间
+				if(option.expireDays){
+					var date=new Date();
+					var ms=option.expireDays*24*3600*1000;
+					date.setTime(date.getTime()+ms);
+					str+=";expires="+date.toGMTString();
+				}
+				if(option.path)str+=";path="+option.path;//设置访问路径
+				if(option.domain)str+=";domain="+option.domain;//设置访问主机
+				if(option.secure)str+=";true";//设置安全性
+			}
+			document.cookie=str;
+		}
+		//实现取Cookie值的方法
+		//name是指定Cookie的名字
+		Cookie.getCookie=function(cookieName){
+		var reg=new RegExp(cookieName+"=([^;]*);?");
+		if(reg.test(document.cookie)){
+			return decodeURIComponent(RegExp.$1);
+		}		
+	}
+		//实现删除Cookie 的方法
+		//name是指定的Cookie名称， 通过将expireDays属性指定为负数
+		Cookie.deleteCookie=function(name){
+			this.setCookie(name,"",{expireDays:-1,path:"/"});//将过期时间设置为过去来删除Cookie			
+			
+
+		}
+</script>
+
+     <script type="text/javascript">	 
+			var hashurl =  window.location.hash;
+			var menuurl="";
+			var menuReg=/^\/pro\/\w{2,30}\/(\w{1,30}\/)?$/; 
+			try{
+				if(hashurl!="" && hashurl.indexOf("#")>=0){
+					menuurl= decodeURI( hashurl.split("#")[1]);	 
+					if(menuurl!="" && menuurl.match(menuReg)){			
+						window.location.href=menuurl;
+					}
+				}			 
+			 }
+			catch(e){}			
+				
+			function getSubframe(){
+	            return document.getElementById("ContainerFrame");
+	        }
+			
+            function stateChangeIE(_frame) {
+                if (_frame.readyState == "complete") { ResizeFrame(_frame); }
+            }
+            var oldheight=0;
+            
+            function Statistics(){
+           		var hashurl =  window.location.hash;
+           		var statUrl;
+           		
+           		if(hashurl.split("#")[1]==undefined){
+           			url = window.location.href;
+           			statUrl =url.substring(url.indexOf("/pro")).split("?")[0];
+           		}else{
+           			statUrl = hashurl.split("#")[1];
+           		}
+           		try{
+               		_gaq.push(['_trackEvent', 'my', 'menu',statUrl]);
+           	 	}catch(e){}	
+            }
+            
+            function ResizeFrame(iframe) {
+                try {
+                	iframe=iframe||getSubframe();    
+                    	var height = Math.max(iframe.contentWindow.document.body.scrollHeight, iframe.contentWindow.document.documentElement.scrollHeight);
+                	
+                	height=Math.max(750,height);
+                    if(oldheight!=height){
+                		iframe.style.height = height + "px";
+                    }
+                    oldheight=height;
+                }
+                catch (ex) {}
+            }
+            setInterval("ResizeFrame()",1000);
+            
+            function isIE10(){
+			　　var flag = false;
+			　　try{
+			　　　　if(window.matchMedia("screen and (-ms-high-contrast: active), (-ms-high-contrast: none)").matches){
+			　　　　　　flag = true;
+			　　　　}
+			　　}catch(e){ }
+			
+			　　return flag;
+			}
+  </script>
+<script src="__PUBLIC__/Home/fb_files/m2013ad.js"></script></head>
+<body>
+
+
+<!--顶部用户工具栏-->
+    <!--水平导航栏-->
+    <div id="topbar">
+    	<div class="w pos">
+    		<div class="bar_left">
+    			<a href="http://bj.58.com/">58同城首页</a>
+    			<span class="gap">|</span>
+    			<a target="_blank" class="mobile" href="">手机上58</a>
+    			<a href="" style="margin-left:10px;">返回旧版 &gt;</a>
+    		</div>
+    	<div class="bar_right">
+    <div id="myunamemenu" class="haschild">
+    	<div id="login-name">
+    		<a href="">idhzn_p0</a>
+    	</div>
+    	<span class="arrow"></span>
+    	<div style="width: 63px;" class="hc" id="unamebox">
+    		<a id="tomypost" href="" onclick="clickLog('form=my_topbar_myrelease');">我的发布</a>
+    		<a id="tomyqiuzhi" href="" onclick="clickLog('form=my_topbar_myapply')">我的求职</a>
+    		<a id="tozhaopin" href="" onclick="clickLog('from=my_topbar_myrecruit');">我的招聘</a>
+    		<a href="" onclick="clickLog('form=my_topbar_account')">管理账户</a>
+    		<a href="" onclick="clickLog('my_topbar_mytiny58')">我的微58</a>
+    		<a id="tomytrade" href="" onclick="clickLog('my_topbar_mydeal')">我的交易</a>
+    		<a target="_self" href="" onclick="clickLog('my_topbar_exit')">退出</a>
+    	</div>
+    </div>
+    <div id="message" class="haschild">消息<span class="arrow"></span> 
+    	<div id="messagebox" class="hc"><i class="shadow"></i>
+    	</div>
+    </div>
+    <div style="padding-right:10px" class="haschild"><a href="" onclick="javascript:clickLog('from=clicktohelp&amp;source=list&amp;city=bj&amp;cate=');_gaq.push(['pageTracker._trackEvent', 'list', 'topbar_click', '/bj/list/topbar/clicktohelp']);" target="_blank">帮助</a>
+   	</div>
+   	<div id="myfeet" class="haschild">
+   		<span class="topbaricon icon-history">浏览记录</span>
+   		<div id="myfeetBox" class="hc"><ul id="feet_final"><li>数据加载中...</li></ul><i class="shadow"></i>
+   		</div>
+   	</div> 
+   	<div id="sitemap" class="haschild"><span class="topbaricon icon-sitemap">导航</span> <div id="sitemapBox" class="hc">     <div class="maplist"> <a href="http://bj.58.com/house.shtml">房产</a>：<a href="http://bj.58.com/zufang/">租房</a>   <a href="http://bj.58.com/ershoufang/">买房</a>   <a href="http://bj.58.com/duanzu/">短租</a><br><a href="http://bj.58.com/sale.shtml">二手</a>：<a href="http://bj.58.com/diannao/">电脑</a>   <a href="http://bj.58.com/shouji/">手机</a>   <a href="http://bj.58.com/jiadian/">家电</a><br><a href="http://bj.58.com/job.shtml">招聘</a>：<a href="http://bj.58.com/yewu/">销售</a>   <a href="http://bj.58.com/kefu/">客服</a>   <a href="http://bj.58.com/zpshengchankaifa/">普工</a><br><a href="http://bj.58.com/car.shtml">车辆</a>：<a href="http://bj.58.com/ershouche/">汽车</a>   <a href="http://bj.58.com/zuche/">租车</a>   <a href="http://bj.58.com/pinche/">拼车</a><br><a href="http://bj.58.com/searchjob.shtml">求职</a>   <a href="http://bj.58.com/jianzhi.shtml">兼职</a>   <a href="http://bj.58.com/huangye/">黄页</a>   <a href="http://bj.58.com/jiaoyu.shtml">培训</a><br><a href="http://bj.58.com/piaowu.shtml">票务</a>   <a href="http://bj.58.com/lvyouxiuxian.shtml">旅游</a>   <a href="http://bj.58.com/pets.shtml">宠物</a>   <a href="http://bj.58.com/jiaoyou.shtml">交友</a>  </div>       <div class="mapfuc"><a href="http://t.58.com/?utm_source=58.com_myheader" class="c_r">同城团购   每日一团</a> <br><a href="http://post.58.com/t/">免费发布</a>   <a href="http://about.58.com/info/del-menu.html">删除信息</a><br><a href="http://about.58.com/yinsibaohu.html?utm_source=top-navigation&amp;utm_medium=58call&amp;utm_campaign=link-click">58隐私保护助手</a><br><a href="http://wap.58.com/wap.html">手机畅游58同城</a> <br><a href="http://apply.vip.58.com/">58同城网邻通</a> <br><a href="http://bangbang.58.com/?source=11" class="bangbang">58帮帮</a> <br><a class="fduihua" href="http://about.58.com/">帮助中心</a></div>   <i class="shadow"></i></div></div></div></div></div>
+    <script>
+        boot.require('business.topbar',
+                function (frame, topbar) {
+                    topbar.init();
+                })
+    </script>
+     <!--水平导航栏-->
+    <div class="header-guide">
+        <div class="header-container">
+        	<img src="__PUBLIC__/Home/fb_files/uc_logo.gif" onclick="window.open('http://www.58.com');clickLog('from=my_logo');" style="cursor:pointer">
+            <ul class="header-ul" id="header-ul">
+            	             	 				 <li class="header-selected">
+					<a class="a1" href="http://my.58.com/index?r=0.37595290150440774" target="_self" onclick="clickLog('from=my_tab_center')">个人中心</a>
+				 </li>
+				 			 	             	             	 <li>
+                    <div id="account-setting">
+                        <div class="account-setting-div"><a class="a1 header-li-dropdown" href="http://my.58.com/pro/zhanghaoset/?r=0.13057302392330528" onclick="clickLog('from=my_tab_account')">账户设置<i class="icon"></i></a></div>
+                        <div class="account-dropdown-div" style="display:none">
+                            <div>
+                                <p class="title">安全设置</p>
+                                <p><a href="http://my.58.com/pro/safeset/password" onclick="clickLog('from=my_tab_account_changepassword')">修改登录密码</a></p>
+                                <p><a href="http://my.58.com/pro/safeset/authmobile" onclick="clickLog('from=my_tab_account_bindphone')">手机绑定</a></p>
+                                <p><a href="http://my.58.com/pro/safeset/authmail" onclick="clickLog('from=my_tab_account_bindemail')">邮箱绑定</a></p>
+                            </div>
+                            <div>
+                                <p class="title">个人资料</p> 
+                                <p><a href="http://my.58.com/pro/userdata" onclick="clickLog('from=my_tab_account_changephoto')">修改头像昵称</a></p>
+                                <p><a href="http://my.58.com/pro/mycredit" onclick="clickLog('from=my_tab_account_credit')">信用明细</a></p>
+                                <p><a href="http://my.58.com/pro/safeset/privacySet" onclick="clickLog('from=my_tab_account_setprivacy')">隐私保护</a></p>
+                            </div>
+                            <div class="last">
+                                <p class="title">账号绑定</p>
+                                <p><a href="http://my.58.com/userbindlist" onclick="clickLog('from=my_tab_account_bindqq')">QQ</a></p>
+                                <p><a href="http://my.58.com/userbindlist" onclick="clickLog('from=my_tab_account_bindsina')">新浪微博</a></p>
+                                <p><a href="http://my.58.com/userbindlist" onclick="clickLog('from=my_tab_account_bindalipay')">支付宝</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            	 			 	             	 				 <li>
+					<a class="a1" href="http://my.58.com/pro/balance/?r=0.6962383154609154" target="_self" onclick="clickLog('from=my_tab_fund')">我的资金</a>
+				 </li>
+				 			 	             	 				 <li>
+					<a class="a1" href="http://vip.58.com/" target="_blank" onclick="clickLog('from=my_tab_procenter')">专业版</a>
+				 </li>
+				 			 	             
+            </ul>
+            <div class="header-search-div">
+                <form onsubmit="b_query();return false;">
+			        <div class="header-input-div" id="searchbar">
+			                        <span id="key">
+			                            <input id="keyword" name="key" class="header-input" onblur="win.closeToolTipWindow();" placeholder="搜索" autocomplete="off" onkeyup="win.GetContentData();" type="text">
+			                        </span>
+			            <input class="header-input-search-bt" id="searchbtn" value="" onclick="clickLog('from=my_top_search_btn')" type="submit">
+			        </div>
+			    </form>
+                
+                <a class="header-bt" href="http://post.58.com/t/" onclick="clickLog('from=my_post_btn');" target="_blank">发布信息</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="uc-content-div">
+	<script type="text/javascript">
+function gotoFuncPage(menuUrl,funcId,name,content){
+	var tj_log = "from=" + content ;
+	clickLog(tj_log);
+	 if($("#ContainerFrame").length>0){		 
+		 $("#ContainerFrame").attr("src","/func/"+funcId + "?r=" + Math.random());
+		 window.location.href="#"+menuUrl;
+		 window.title="58同城-"+name;
+		 document.title="58同城-"+name;		
+	 }else{		
+		 window.location.href=menuUrl+ "?r=" + Math.random();
+	 }	
+}
+</script>
+
+        <!--左侧垂直导航栏-->
+        <div class="leftmenu-div">
+            <div class="leftmenu-content">
+                <div class="leftmenu-content-header">
+                    <a href=""><span>个人中心</span></a>
+                </div>
+                <ul class="leftmenu-content-ul">
+                            	              	<li class="li-selected" id="menu2">
+             	<a class="" id="15" href="" target="_self" onclick="clickLog('from=my_left_mypost')">
+				<span>我的发布</span>
+				</a></li>
+             	             	             	              	<li id="menu3">
+             	<a class="" id="19" onclick="gotoFuncPage('/pro/shoucangjianli/','19','我的收藏','my_left_mycollection');">
+				<span>我的收藏</span>
+				</a></li>
+             	             	             	              	<li class="leftmenu-content-slide-li" id="menu4" onclick="clickLog('from=my_jobhunt')">
+             	<span>我的求职</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 		                	<li id="menu14">
+	                		                	<a id="20" onclick="gotoFuncPage('/pro/myseekjob/1/','20','我的简历','my_jobhunt_resume');">						<span>我的简历</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu15">
+	                		                	<a id="21" onclick="gotoFuncPage('/pro/resumehisotry/','21','简历投递记录','my_jobhunt_sendrecord');">						<span>简历投递记录</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu16">
+	                		                	<a id="22" onclick="gotoFuncPage('/pro/resumedownhis/','22','谁下载了我的简历','my_jobhunt_whodownload');">						<span>谁下载了我的简历</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu17">
+	                		                	<a id="23" onclick="gotoFuncPage('/pro/interviewinvited/','23','工作邀请','my_jobhunt_invitation');">						<span>工作邀请</span>
+						</a>
+						
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu5" onclick="clickLog('from=my_recruit')">
+             	<span>我的招聘</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 							<li class="leftmenu-content-slide-li1" id="menu18" onclick="clickLog('from=my_recruit_position')">
+						<i class="icon up"></i><span>职位管理</span>
+							<ul class="leftmenu-content-ul2" style="display:block; position:relative;">
+							 							 <li id="menu39" class="leftmenu-content-li2">
+								 			                	<a id="24" onclick="gotoFuncPage('/pro/zpinfoall/574/','24','全职职位','my_recruit_position_full');">
+									<span>全职职位</span>
+								</a>
+															</li>
+														 <li id="menu40" class="leftmenu-content-li2">
+								 			                	<a id="25" onclick="gotoFuncPage('/pro/zpinfoall/577/','25','兼职职位','my_recruit_position_parttime');">
+									<span>兼职职位</span>
+								</a>
+															</li>
+														 <li id="menu41" class="leftmenu-content-li2">
+								 			                	<a id="26" onclick="gotoFuncPage('/pro/weizhaopin/','26','微招聘','my_recruit_position_tiny');">
+									<span>微招聘</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+					             		 							<li class="leftmenu-content-slide-li1" id="menu19" onclick="clickLog('from=my_recruit_resume')">
+						<i class="icon"></i><span>简历管理</span>
+							<ul class="leftmenu-content-ul2" style="display:none;">
+							 							 <li id="menu42" class="leftmenu-content-li2">
+								 			                	<a id="27" onclick="gotoFuncPage('/pro/reciveresume/','27','收到的简历','my_recruit_resume_receive');">
+									<span>收到的简历</span>
+								</a>
+															</li>
+														 <li id="menu43" class="leftmenu-content-li2">
+								 			                	<a id="28" onclick="gotoFuncPage('/pro/favoriteresumelist/','28','已下载的简历','my_recruit_resume_download');">
+									<span>已下载的简历</span>
+								</a>
+															</li>
+														 <li id="menu44" class="leftmenu-content-li2">
+								 			                	<a id="29" onclick="gotoFuncPage('/pro/interviewinvitesend/','29','发送的面试邀请','my_recruit_resume_interview');">
+									<span>发送的面试邀请</span>
+								</a>
+															</li>
+														 <li id="menu45" class="leftmenu-content-li2">
+								 			                	<a id="30" onclick="gotoFuncPage('/pro/resumereportrecord/','30','举报/返点记录','my_recruit_resume_report');">
+									<span>举报/返点记录</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+					             		 							<li class="leftmenu-content-slide-li1" id="menu135" onclick="clickLog('from=my_recruit_kszr')">
+						<i class="icon up"></i><span>快速招人</span>
+							<ul class="leftmenu-content-ul2" style="display:block; position:relative;">
+							 							 <li id="menu136" class="leftmenu-content-li2">
+								 			                	<a id="83" href="http://jianli.58.com/" target="_blank" onclick="clickLog('from=my_recruit_kszr_search')">
+									<span>搜索简历</span>
+								</a>
+															</li>
+														 <li id="menu137" class="leftmenu-content-li2">
+								 			                	<a id="32" onclick="gotoFuncPage('/pro/recruitautoorder/','32','购买简历','my_recruit_kszr_buy');">
+									<span>购买简历</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+					             		 							<li class="leftmenu-content-slide-li1" id="menu20" onclick="clickLog('from=my_recruit_account')">
+						<i class="icon"></i><span>账号信息</span>
+							<ul class="leftmenu-content-ul2" style="display:none;">
+							 							 <li id="menu48" class="leftmenu-content-li2">
+								 			                	<a id="31" onclick="gotoFuncPage('/pro/companyinfoextend/','31','公司资料','my_recruit_account_datum');">
+									<span>公司资料</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu6" onclick="clickLog('from=my_tiny58')">
+             	<span>我的微58</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 		                	<li id="menu21">
+	                		                	<a id="12" onclick="gotoFuncPage('/pro/wei58/','12','微58','my_tiny58_tiny58');">						<span>微58</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu139">
+	                		                	<a id="108" onclick="gotoFuncPage('/pro/wfang/','108','我的微房产','my_tiny58_mywfang');">						<span>我的微房产</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu140">
+	                		                	<a id="109" onclick="gotoFuncPage('/pro/wlife/','109','微生活','my_tiny58_tinylife');">						<span>微生活</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu141">
+	                		                	<a id="110" onclick="gotoFuncPage('/pro/wcar/','110','微车','my_tiny58_tinycar');">						<span>微车</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu22">
+	                		                	<a id="33" onclick="gotoFuncPage('/pro/wei58/wd/','33','我的微店','my_tiny58_tinyshop');">						<span>我的微店</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu23">
+	                		                	<a id="34" onclick="gotoFuncPage('/pro/wei58/settings/','34','微信消息设置','my_tiny58_setmessage');">						<span>微信消息设置</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu24">
+	                		                	<a id="35" onclick="gotoFuncPage('/pro/wei58/resume/','35','微简历','my_tiny58_tinyresume');">						<span>微简历</span>
+						</a>
+						
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu7" onclick="clickLog('from=my_deal')">
+             	<span>我的交易</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 							<li class="leftmenu-content-slide-li1" id="menu25" onclick="clickLog('from=my_deal_buyer')">
+						<i class="icon up"></i><span>买家交易</span>
+							<ul class="leftmenu-content-ul2" style="display:block; position:relative;">
+							 							 <li id="menu49" class="leftmenu-content-li2">
+								 			                	<a id="13" onclick="gotoFuncPage('/pro/buyordermgr/','13','订单管理','my_deal_buyer_order');">
+									<span>订单管理</span>
+								</a>
+															</li>
+														 <li id="menu50" class="leftmenu-content-li2">
+								 			                	<a id="61" onclick="gotoFuncPage('/pro/buyevaluatemgr/','61','评价管理','my_deal_buyer_judge');">
+									<span>评价管理</span>
+								</a>
+															</li>
+														 <li id="menu51" class="leftmenu-content-li2">
+								 			                	<a id="62" onclick="gotoFuncPage('/pro/buyrefundmgr/','62','退款管理','my_deal_buyer_refund');">
+									<span>退款管理</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+					             		 							<li class="leftmenu-content-slide-li1" id="menu26" onclick="clickLog('from=my_deal_seller')">
+						<i class="icon up"></i><span>卖家交易</span>
+							<ul class="leftmenu-content-ul2" style="display:block; position:relative;">
+							 							 <li id="menu52" class="leftmenu-content-li2">
+								 			                	<a id="14" onclick="gotoFuncPage('/pro/saleordermgr/','14','订单管理','my_deal_seller_order');">
+									<span>订单管理</span>
+								</a>
+															</li>
+														 <li id="menu117" class="leftmenu-content-li2">
+								 			                	<a id="63" onclick="gotoFuncPage('/pro/saleevaluatemgr/','63','评价管理','my_deal_seller_judge');">
+									<span>评价管理</span>
+								</a>
+															</li>
+														 <li id="menu53" class="leftmenu-content-li2">
+								 			                	<a id="64" onclick="gotoFuncPage('/pro/salerefundmgr/','64','退款管理','my_deal_seller_refund');">
+									<span>退款管理</span>
+								</a>
+															</li>
+														 <li id="menu54" class="leftmenu-content-li2">
+								 			                	<a id="65" onclick="gotoFuncPage('/pro/salewithdrawmoneymgr/','65','提现管理','my_deal_seller_tixian');">
+									<span>提现管理</span>
+								</a>
+															</li>
+														 <li id="menu118" class="leftmenu-content-li2">
+								 			                	<a id="66" onclick="gotoFuncPage('/pro/vipshop/shopdrawmoneymgr/','66','店铺提现','my_deal_seller_tixianshop');">
+									<span>店铺提现</span>
+								</a>
+															</li>
+														 <li id="menu119" class="leftmenu-content-li2">
+								 			                	<a id="67" onclick="gotoFuncPage('/pro/wubaquan/','67','58券管理','my_deal_seller_58card');">
+									<span>58券管理</span>
+								</a>
+															</li>
+														 <li id="menu138" class="leftmenu-content-li2">
+								 			                	<a id="107" onclick="gotoFuncPage('/pro/busimessage/','107','商机留言管理','my_deal_seller_busimessage');">
+									<span>商机留言管理</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu8" onclick="clickLog('from=my_left_shop_mag')">
+             	<span>店铺管理</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 		                	<li id="menu97">
+	                		                	<a id="68" onclick="gotoFuncPage('/pro/vipshop/shopinfo/','68','店铺资料','my_left_shop_mag_data');">						<span>店铺资料</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu99">
+	                		                	<a id="69" onclick="gotoFuncPage('/pro/vipshop/albummgr/','69','相册管理','my_left_shop_mag_album');">						<span>相册管理</span>
+						</a>
+						
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu9" onclick="clickLog('from=my_left_dgfw')">
+             	<span>我的订购</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 		                	<li id="menu27">
+	                		                	<a id="59" onclick="gotoFuncPage('/pro/order/','59','我的订单','my_left_dgfw_order');">						<span>我的订单</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu28">
+	                		                	<a id="60" onclick="gotoFuncPage('/pro/contract/','60','我的合同','my_left_dgfw_contract');">						<span>我的合同</span>
+						</a>
+						
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu10" onclick="clickLog('from=my_left_khfw')">
+             	<span>客户服务</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 		                	<li id="menu29">
+	                		                	<a id="58" href="http://fanqizha.58.com/" target="_blank" onclick="clickLog('from=my_left_khfw_wdfqz')">						<span>我的反欺诈</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu30">
+	                		                	<a id="36" onclick="gotoFuncPage('/pro/mycomplain/','36','我的申诉','my_left_khfw_wdss');">						<span>我的申诉</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu31">
+	                		                	<a id="37" onclick="gotoFuncPage('/pro/voteappeal/','37','我的投诉','my_left_khfw_wdts');">						<span>我的投诉</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu32">
+	                		                	<a id="38" onclick="gotoFuncPage('/pro/showillegal/','38','违规记录','my_left_khfw_wgjl');">						<span>违规记录</span>
+						</a>
+						
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li id="menu11">
+             	<a id="105" href="http://about.58.com/help.html" target="_blank" onclick="clickLog('from=my_left_helpcenter')">
+				<span>帮助中心</span>
+				</a></li>
+             	             	              	 </ul>
+             	<div class="leftmenu-content-header tuiguang">
+                    <a onclick="clickLog('from=my_left_tgzx')" class="pointer" href="http://tuiguang.58.com/" target="_blank">推广中心</a>
+                    <i class="icon"></i>
+                </div>
+                <div class="leftmenu-life-tool-div">
+                    <div class="leftmenu-title">生活工具</div>
+                </div>
+                <div class="leftmenu-life-content">
+                    <div class="leftmenu-life-item">
+                    <a href="http://tools.58.com/phone.shtml" target="_blank" onclick="clickLog('from=my_tool_telphonefee');">
+                        <span class="icon phone"></span>
+                        <span>话费</span>
+                    </a>
+                    </div>
+                    <div class="leftmenu-life-item">
+                    <a href="http://tools.58.com/game.shtml" target="_blank" onclick="clickLog('from=my_tool_gamecard');">
+                        <span class="icon card"></span>
+                        <span>点卡</span>
+                    </a>
+                    </div>
+                    <div class="leftmenu-life-item">
+                    <a href="http://lieche.58.com/" target="_blank" onclick="clickLog('from=my_tool_train');">
+                        <span class="icon train"></span>
+                        <span>火车</span>
+                    </a>
+                    </div>
+                    <div class="leftmenu-life-item">
+                    <a href="http://jipiao.58.com/" target="_blank" onclick="clickLog('from=my_tool_airplane');">
+                        <span class="icon plane"></span>
+                        <span>飞机</span>
+                    </a>
+                    </div>
+                    <div class="leftmenu-life-item">
+                    <a href="http://tools.58.com/traffic.shtml" target="_blank" onclick="clickLog('from=my_tool_breakrules');">
+                        <span class="icon breakrule"></span>
+                        <span>违章</span>
+                    </a>
+                    </div>
+                    <div class="leftmenu-life-item">
+                    <a href="http://www.58.com/jdyd/" target="_blank" onclick="clickLog('from=my_tool_hotel');">
+                        <span class="icon hotel"></span>
+                        <span>酒店</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rightmenu-div">
+        	<a class="tousu-bt" href="http://about.58.com/feedback.html" target="_blank" onclick="clickLog('from=my_complain');"></a>
+            <span id="currentmenu_name">我的发布</span>
+
+        <iframe style="height: 750px;" id="ContainerFrame" name="ContainerFrame" onreadystatechange="stateChangeIE(this)" onload="ResizeFrame(this);Statistics()" scrolling="no" src="__PUBLIC__/Home/fb_files/infoall.htm" frameborder="0" height="750px" width="815px"></iframe>
+    </div>
+    </div>
+<div class="footer">
+    <span class="blk">@58.com</span>
+    <span class="red"><a href="http://about.58.com/" target="_blank">联系客服</a></span>
+</div><div class="syn_wx_mask"></div>
+<div class="syn_wx_con">
+	<a class="syn_wx_close" title="关闭"></a>
+	<div class="syn_wx_code"><img src=""></div>
+</div>
+<div id="job_doalog_mask" class="fe_window_mask" style=" position: fixed; height:100%; width:100%; _position:absolute;display: none"></div>
+<div id="job_doalog_content" class="fe_window" style=" display: none; left: 50%; margin: -135px 0px 0px -260px; top: 45%;">
+<div class="outer">
+	<div class="frame" style="width: 520px; height: 270px; padding: 8px;"></div>
+	<div class="contains" style="width: 520px; height: 270px; top: 8px; left: 8px;">
+		<div class="topbar" style="height: 34px;"><a id="job_doalog_closebtn" target="_self" class="closebtn" href="javascript:void(0);"></a><span id="fe_window_5990_title" class="title" style="">帖子刷新提示</span></div>
+		<iframe onload="" class="fe_window_iframe" style="height: 236px; width: 100%; display: block;" scrolling="no" id="fe_window_5990_iframe" src="__PUBLIC__/Home/fb_files/codebck_v1.htm" visible="false" frameborder="0"></iframe>
+	</div>
+</div>
+</div>
+<div class="jgg-content" style="display:none">
+   <i id="jggClose" class="jgg-close"></i>
+   <input id="captcha_infoid" value="" type="hidden">
+   <input id="captcha_mobile" value="" type="hidden">
+   <input id="captcha_validateCodeKey" value="" type="hidden">
+   <div id="jggYzm" style="display:none">
+        <input id="captcha_type" name="captcha_type" value="600" type="hidden">
+        <input id="captcha_input" class="cptrHidden action_color" name="captcha_input" maxlength="6" type="text">
+        <span id="jggTitle" class="jgg-title"></span>
+        <div class="jgg-input-div"><input class="jgg-input" placeholder="请点击九宫格数字" type="text"></div>
+
+        <span id="jggTipSpan" class="jgg-tip-span" placeholder="请点击九宫格数字">请根据信息内容点击下面的图片<span id="jggResend" class="jgg-resend" style="display:none">重新获取</span><span id="jggTipCountSpan" class="jgg-tip-count-span">(<span id="timeCount"></span>秒后可重新发送)</span></span>
+        <table id="sqrTable" class="character">
+            <tbody>
+            <tr>
+                <td class="r1c1"></td>
+                <td class="r1c2"></td>
+                <td class="r1c3"></td>
+            </tr>
+            <tr>
+                <td class="r2c1"></td>
+                <td class="r2c2"></td>
+                <td class="r2c3"></td>
+            </tr>
+            <tr>
+                <td class="r3c1"></td>
+                <td class="r3c2"></td>
+                <td class="r3c3"></td>
+            </tr>
+            </tbody>
+        </table>
+        <a id="jggSubmit" class="jgg-submit">提交</a>
+    </div>
+    <div id="jggAudio" style="display:none">
+            <span id="jggAudioTitle" class="jgg-title">您发送的请求太多，客服一会儿会给你打电话，请提前想好怎么解释</span><a id="jggAudioUrl" href="javascript:void(0);" onclick="getAudioCaptcha();" style="color: #2c61cc;">获取验证码</a>
+            <span id="jggAudioTipCountSpan" class="jgg-tip-count-span">(<span id="audio-timeCount"></span>秒后可重新发送)</span>
+            <input id="jggAudioInput" class="jgg-audio-input" type="text">
+            <a id="jggAudioSubmit" class="jgg-audio-submit">确定</a>
+    </div>
+</div>   
+<script type="text/javascript" src="__PUBLIC__/Home/fb_files/user_center_new_v20150714230618.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/fb_files/referrer4.js"></script>
+<script src="__PUBLIC__/Home/fb_files/alert_v20150827115731.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/fb_files/9gongge_v20150827212814.js"></script>
+
+<div style="position: fixed; right: 0px; bottom: 0px; width: 0px; height: 0px; border: 0px none; cursor: default; z-index: 1000;" name="im_div" id="im_div"><object data="__PUBLIC__/Home/fb_files/im_3.swf" name="im_swf" id="im_swf" type="application/x-shockwave-flash" align="middle" height="100%" width="100%"><param value="high" name="quality"><param value="always" name="allowscriptaccess"><param value="false" name="allowfullscreen"></object></div></body></html>

@@ -1,0 +1,29 @@
+<extend name="Business/index" />
+<block name="focus"></block>
+<block name="contL">
+	<div class="contL">
+		<h2><span>
+	    			招聘代理
+	    			    		</span></h2>
+				<div class="costar" id="costar">
+		            <div class="slide">
+		                <ul style="width: 1920px; left: 0px;">	               			 
+							 <foreach name="info" item="vo" >            			 
+		                		<li><a href="{:U('Home/Business/detail')}?id={$vo['id']}" target="_blank"><img style="width:640px;height:273px" src="__PUBLIC__{$vo['pic'][0]}" title="{$vo['addr']}{$vo['company']}"></a></li>
+		                		<p class="title">{$vo['addr']}{$vo['company']}</p>
+							</foreach>
+		                </ul>
+		                <div class="eventL"></div>
+		                <div class="eventR"></div>
+		                <div class="shade"></div>
+
+		            </div>
+		        </div>
+    	<h2><span>
+    			招聘产品线
+    			    		</span></h2>
+        <div class="answers">
+        	<p style="white-space: normal; text-align: center;"><br></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-family: 宋体;">【招聘网邻通</span></strong><span style="font-family: 宋体;">】</span></p><p style="white-space: normal; text-indent: 14px; line-height: 2em; "><span style="font-family: 宋体;">58</span><span style="font-family: 宋体;">同城针对中小型企业推出的招聘及网络营销工具，不仅帮助中小企业解决招聘难题，还帮助企业快速提升网络推广及宣传的效果<strong>。</strong></span></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-family: 宋体;">&nbsp;</span></strong></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-family: 宋体;">【标识】</span></strong><span style="font-family: 宋体;">公司名称后有绿色“验”字标识</span></p><p style="white-space: normal; line-height: 2em; "><img src="__PUBLIC__/Home/wanted_files/n_s11880920776376331.jpg" title="4.jpg"></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-family: 宋体;">【招聘网邻通10大功能】</span></strong></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">精品职位、验证标识、优先审核、优先显示、无限次重复推广、自动、手动刷新、简历搜索、面试邀请短信、信息访问统计、赠送300M企业网站</span></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">&nbsp;</span></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-family: 宋体;">【资源配置】</span></strong></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">版本：季度版、半年版、全年版</span></p><p style="white-space: normal; line-height: 2em; "><img src="__PUBLIC__/Home/wanted_files/n_s11880921287295243.jpg" title="5.jpg"></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">【<strong>招聘网邻通VIP后台</strong>】</span></p><p style="white-space: normal; line-height: 2em; "><img src="__PUBLIC__/Home/wanted_files/n_s11883651085353995.jpg" title="招聘图片.jpg"></p><p style="white-space: normal;"><br></p><p><br></p>
+        </div>
+    </div>
+</block>

@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>用户注册 - 58游戏</title>
+<link href="__PUBLIC__/Home/gamezhuce_files/base.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Home/gamezhuce_files/reg.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="header" style="background:#3F4553">
+<div class="wrap"><a href="" id="logo"><img src="__PUBLIC__/Home/gamezhuce_files/logo_03.jpg" alt="" /></a>
+<ul id="nav">
+<li class="nav nav_1"><a href="http://wan.58.com/"><span>游戏首页</span></a></li>
+<li class="nav nav_2"><a href="http://wan.58.com/pay/index"><span>游戏充值</span></a></li>
+<li class="nav nav_3"><a href="http://about.58.com/leaveword2.aspx?cateid=185"><span>客服中心</span></a></li>
+<li class="nav nav_4"><a href="http://bbs.wan.58.com/forum.php"><span>游戏论坛</span></a></li>
+</ul>
+</div>
+</div>
+
+
+<div class="regbox">
+<h2 class="pageTit">用户注册</h2>
+<div class="porleft">
+	<form action="{:U('Home/Games/userinsert')}" id="userReg" method="post">
+		<input name="domain" value="58.com" type="hidden">
+		<input name="callback" value="handleRegResult" type="hidden">
+		<input name="sysIndex" value="0" type="hidden">
+		<input name="remember" value="0" type="hidden">
+		<ul id="pptregul" class="passport-reg-input-ul">
+			<li id="regUserNameLi" class="passport-reg-input-li">
+				<span class="passport-reg-input-span">用户名</span>
+				<input id="pptregusername" name="username" size="20" class="passport-reg-input passport-reg-input-username" type="text" remind="请输入用户名 6-12位数字字母">
+				<span class="regerror" id="pptregusername_tip"></span>
+			</li>
+			<li id="regEmailLi" class="passport-reg-input-li">
+				<span class="passport-reg-input-span">手机号</span>
+				<input name="phone" id="pptregemail" class="passport-reg-input passport-reg-input-email" type="text" remind="请输入正确的手机号">
+				<span class="regerror" id="pptregemail_tip"></span>
+			</li>
+			<li id="regPasswordLi" class="passport-reg-input-li">
+				<span class="passport-reg-input-span">密码</span>
+				<input name="password" id="pptregpassword" class="passport-reg-input passport-reg-input-password" type="password" remind="请输入密码 6-12位数字字母">
+				<span id="pptregpassword_tip" class="regerror" ></span>
+			</li>
+			<li id="regCpPasswordLi" class="passport-reg-input-li">
+				<span class="passport-reg-input-span">确认密码</span>
+				<input name="repassword" id="pptregcppassword" class="passport-reg-input passport-reg-input-password" type="password" remind="与第一次密码保持一致">
+				<span class="regerror" id="pptregcppassword_tip"></span>
+			</li>
+			<li id="regButtonLi" class="passport-reg-input-li">
+				<span class="passport-reg-input-span">&nbsp;</span>
+				<label><input type="image" name="denglu" src="__PUBLIC__/Home/login_files/zhuceanniu.png"></label>
+			</li>
+		</ul>
+	</form>
+	<script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"> </script>
+	<script type="text/javascript">
+		var CU = false;//检测用户名
+		var CP = false;//检测密码
+		var CRP = false;//检测确认密码
+		var CPH = false;//检测手机号
+
+		//用户名获得焦点事件
+			$('input').focus(function(){
+				//获得提示语
+				var remind = $(this).attr('remind');
+				//设置提示信息
+				$(this).next().html(remind);
+			})
+
+		//绑定丧失焦点事件
+			$('input[name=username]').blur(function(){
+				//获取用户输入的值   value
+				var v = $(this).val();
+				//声明正则表达式
+				var reg = /^\w{6,18}$/;
+				//验证数据
+				var res = reg.test(v);
+				//判断结果
+				if(!res){
+					//提示
+					$(this).next().html('格式错误');
+					CU = false;
+				}else{
+					var user = $(this);
+					$.ajax({
+						url:'{:U("Home/Games/namecheck")}',
+						data:{username:v},
+						type:'post',
+						async:false,//设置同步
+						success:function(data){
+							if(data == 1){
+								user.next().html('用户名已经存在');
+								CU = false;
+							}else{
+								user.next().html('');
+								CU = true;
+							}
+						}
+					})
+				}
+			})
+
+		//密码元素丧失焦点事件
+			$('input[name=password]').blur(function(){
+				//获得密码
+				var v = $(this).val();
+				//声明正则
+				var reg = /^\S{6,18}$/;
+				//检测
+				var res = reg.test(v);
+				//判断结果
+				if(!res){
+					$(this).next().html('格式错误');
+					CP = false;
+				}else{
+					$(this).next().html('');
+					CP = true;
+				}
+			})
+
+		//丧失焦点事件
+			$('input[name=repassword]').blur(function(){
+				//获得再一次密码
+				var v = $(this).val();
+				//获得密码
+				var lv = $('input[name=password]').val();
+				//检测
+				var res = v == lv;
+				//判断结果
+				if(!res){
+					$(this).next().html('两次密码不一致');
+					CRP = false;
+				}else{
+					$(this).next().html('');
+					CRP = true;
+				}
+			})
+	
+		//邮箱丧失焦点事件
+			$('input[name=phone]').blur(function(){
+				//获得手机号
+				var v = $(this).val();
+				//声明正则
+				var reg = /^1\d{10}$/;
+				//检测
+				var res = reg.test(v);
+				//判断和
+				if(!res){
+					$(this).next().html('手机号格式不正确');
+					CPH = false;
+				}else{
+					$(this).next().html('');
+					CPH = true;
+				}
+			})
+		  
+
+		//表单事件绑定
+			$('#userReg').submit(function(){
+				//触发丧失焦点事件
+				$('input[name=username]').blur();
+				$('input[name=password]').blur();
+				$('input[name=repassword]').blur();
+				$('input[name=phone]').blur();
+
+				console.log(CU);
+				console.log(CP);
+				console.log(CRP);
+				console.log(CPH);
+
+				//判断元素输入的值是否ok
+				if(CU && CP && CRP && CPH){
+					return true;
+				}else{
+					return false;
+				}
+			})
+
+	</script>
+	
+</div>
+
+
+<div class="porright">
+			<p>您已经是会员，请<a href="http://dxz.wan.58.com/">登录</a></p>
+			<div class="tel-tip">
+				<strong>想免费更快速注册？</strong><br>
+					中国大陆手机用户<br>
+					编辑短信“<span class="red">zc</span>”发送到<br>
+					<b class="red">1069015958</b><br>
+				<span class="gray">根据短信提示操作，即可成功注册<br>
+				运营商收取短信费0.1元/条，无额外费用</span> </div>
+		</div>
+       <div class="clear"></div>
+</div>
+<div class="footer"><span><a target="_blank" href="http://about.58.com/index.html">联系客服</a><i>|</i><a target="_blank" href="http://about.58.com/home/">关于我们</a><i>|</i><a target="_blank" href="http://about.58.com/home/cooperation.html">合作洽谈</a><i>|</i><a target="_blank" href="http://e.58.com/">推广服务</a><i>|</i><a target="_blank" href="http://about.58.com/hr/">加入我们</a><i>|</i><a target="_blank" href="http://www.58.com/xiaoyuan/">校园招聘</a></span><span>京ICP证030609号  文网文[2012] 136号</span><span>北京五八信息技术有限公司 ©  58.com</span></div>
+
+
+</body></html>

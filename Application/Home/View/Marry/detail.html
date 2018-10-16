@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="mobile-agent" content="format=xhtml; url=http://i.m.58.com/bj/shouji/23856221696777x.shtml">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://i.m.58.com/bj/shouji/23856221696777x.shtml">
+<meta http-equiv="mobile-agent" content="format=wml; url=http://i.m.58.com/bj/shouji/23856221696777x.shtml">
+<meta http-equiv="mobile-agent" content="format=xhtml; url=http://i.m.58.com/bj/shouji/23856221696777x.shtml">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://i.m.58.com/bj/shouji/23856221696777x.shtml">
+<meta http-equiv="mobile-agent" content="format=wml; url=http://i.m.58.com/bj/shouji/23856221696777x.shtml">
+<meta name="location" content="province=北京;city=北京;coord=116.395645,39.929986">
+ <title>{$info['title']}</title>
+<meta name="description" content="{$info['intro']}">
+
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/Home/xiangqing_files/base_v20150121133540.css" media="all">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/xiangqing_files/detail-ui7_v20151026121732.css" media="all">
+<script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"></script>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/Home/xiangqing_files/bdsstyle.css"></head>
+<body>
+<div id="cover" style="background:black;display:none;width:2000px;height:3000px;position:fixed;z-index:100;opacity:0.5">
+</div>
+  <iframe style="display: none;" frameborder="0"></iframe>
+      <div style="display: block;" id="bdshare_s"></div>
+      <div id="header">
+          <div id="logo"><a href="http://bj.58.com/" target="_blank"><img src="__PUBLIC__/Home/xiangqing_files/logo.gif" title="58同城" alt="58同城"></a></div>
+            <div class="breadCrumb f12">
+                <span><a>北京58同城</a></span>
+                <span class="crb_i"><a href="{:U('Home/Marry/index')}">北京婚庆</a></span>
+                
+                <!-- <a id="fabu" class="postBtn fr" rel="nofollow" href="http://post.58.com/1/36/s5"><i></i>免费发布信息</a> -->
+            </div>
+          </div>
+          <div id="brand_detial_top_banner"></div>
+          <div id="action"></div>
+          <div id="action"></div>
+          <div id="sbar1"></div>
+              
+          <div class="cover" id="pop_cover" style="z-index:9999"></div>
+      <!-- 提示框 -->
+          <div class="num_tan" style="display: none;clear:both;top:350px;z-index:992399" id="tan_tishi">
+
+            <a id="fe_window_3458_closebtn" target="_self" class="closebtn" href="javascript:void(0);"></a>
+              <h3>查看联系方式</h3>
+              <div class="num_tan_in">
+                  <p class="num_tan_hint"><strong class="red">提醒：</strong>
+                      <span id="tan_diaoyu_0">
+                          最近出现高仿苹果、三星、小米手机以“港货”名义出售，普通验机方式难以验出真伪。建议交易时采用以下方式：
+                          <br>1.见面交易请尽量选择去品牌专柜验明手机真伪。
+                          <br>2.快递交易请使用58担保交易，收货后充分验机，有问题及时申诉。
+                      </span>
+                  </p>
+                  <div class="num_tan_main">
+                    <!--== s 优化后的显示逻辑  -->
+                      <span class="num_tan_bg num_tan_bg_dh"></span>
+                        <div class="num_tan_text">
+                          <span id="t_phone" class="f20 arial red"><img src="__PUBLIC__/Home/xiangqing_files/showphone.gif"></span>
+                          <span class="pl10">北京</span>
+                            <p class="c_666">卖家：余店长
+                          <span class="red">（网邻通商家）</span>
+                          &nbsp;|&nbsp;&nbsp;<a target="_blank" href="http://my.58.com/mobileposthistory/?query=0398AF4EA4EEEFFCB15BB58F2A85A16890ACE50BA7731451,17243582248199,1" rel="nofollow">查看发帖记录</a></p>
+                        </div>           
+                                                           <!--== e 优化后的显示逻辑  -->
+                  </div>
+                  <div class="num_tan_aft c_666">联系后如不满意，告诉58:<a href="javascript:void(0);" class="aft_purple" id="tan_jubao">信息虚假举报 </a>
+                  </div>
+              </div>
+          </div>    
+      <!-- 提示框结束 -->
+
+          <div id="content" class="clearfix per_add_div">
+                  <div class="person_add_top  no_ident_top ">
+                  		<div class="per_ad_left">
+                          <div class="col_sub mainTitle">
+                            <h1>{$info['title']}</h1>
+                              <div class="mtit_con c_999 f12 clearfix" id="index_show">
+                                  <ul class="mtit_con_left fl">
+                                    <li class="time" title="发布日期">2015-11-01</li>
+                                    <li class="count" title="历史订单数"><em id="hiscount">{$orders}</em></li>
+                                  </ul> 
+                                          <!-- =S 功能区 -->
+                                  <ul class="mtit_con_right fr">
+                                              <!-- hover 为鼠标划入是的状态，该状态需要脚本做处理 -->
+                                    <li id="freemsg" class="freemsg"><span id="gaq_phone" class="ml_1"><i class="mtit1"></i>免费发送到手机</span></li>
+                                    <li id="collect" class="collect"><span class="ml_2"><i class="mtit2"></i>收藏<i class="mtit0"></i></span></li>
+                                    <li style="margin-right: 6px; margin-left: 10px;" id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"><span style="background: url('http://img.58cdn.com.cn/ui7/fang/detail/img/main_title_bg.png') no-repeat -5px -149px !important;height:18px;padding-bottom:0px;padding-left:14px;padding-top:0px;" id="bds_more" class="bds_more">求鉴定<i class="mtit0"></i></span></li>
+                                    <li id="report" class="report"><span class="ml_4"><i class="mtit4"></i>举报<i class="mtit0"></i></span></li>
+                                  </ul>
+                                  <div id="collectBar" class="collectBox">
+                                      <ul class="mtit_con_ul">
+                                        <li><a title="收藏信息" id="gaq_favorite" href="javascript:;" onclick="clickLog('from=ES_detail_store_1&amp;entityId=23856221696777&amp;entityType=0&amp;psid=159500635189634479660323842');" rel="nofollow">收藏到个人中心(需登录)</a></li>
+                                        <li><a id="gaq_savedesk" href="http://my.58.com/submit/savetodesk/?infoid=23856221696777" onclick="clickLog('from=ES_detail_store_2&amp;entityId=23856221696777&amp;entityType=0&amp;psid=159500635189634479660323842');">保存到桌面</a></li>
+                                        <li><a href="javascript:void(0)" id="addFavBtn" onclick="clickLog('from=ES_detail_store_3&amp;entityId=23856221696777&amp;entityType=0&amp;psid=159500635189634479660323842');">添加到浏览器收藏夹</a></li>
+                                      </ul>
+                                      <i class="shadow_"></i>
+                                  </div>
+                      
+                                  <div id="reportBar" class="reportBox">
+                                      <ul class="mtit_con_ul">
+                                        <li><a id="gaq_phoneinfringe" target="_blank" href="http://about.58.com/info/deleteinfo.aspx">电话被冒用</a></li>
+                                        <li><a href="javascript:void(0)" id="gaq_infofake">信息虚假违法</a></li>
+                                        <li><a id="infosubmitted" href="javascript:void(0);">信息已成交</a></li>
+                                      </ul>
+                                      <i class="shadow_"></i>
+                                  </div>
+                                              <!--=S 管理 -->
+                                  <div id="manageBar" class="controlBox">
+                                      <ul class="mtit_con_ul">
+                                        <li><a id="gaq_update" href="javascript:;" rel="nofollow">修改</a></li>
+                                        <li><a id="gaq_delete" href="javascript:;" rel="nofollow">删除</a></li>
+                                        <li><a id="gaq_refresh" href="javascript:;" rel="nofollow">刷新</a></li>
+                                        <li><a id="gaq_top" href="javascript:;" rel="nofollow">置顶</a></li>
+                                      </ul>
+                                      <i class="shadow_"></i>
+                                  </div>
+                              </div>
+                          </div>
+                                  <!-- =E mainTitle 主标题 -->
+                                  <!-- =S gallery 产品图片 -->
+                          <div class="gallery">
+                              <div class="g_img"><span><img id="img1" src="__PUBLIC__/{$info['pic'][0]}" title="{$info['title']}" alt="$info['intro']"></span></div>
+                                <div class="g_thumb">
+                                  <a href="#" id="img_scrollLeft" class="icon_left"></a>
+                                  <a href="#" id="img_scrollRight" class="icon_right"></a>
+                                    <div class="g_thumb_main">
+                                      <ul id="img_smalls" style="width: 1071px;">  
+                                        <foreach name="info['pic']" item="vo" >    
+                                          <li><img src="__PUBLIC__{$vo}"></li>
+                                        </foreach>
+                                      </ul>
+                                    </div>
+                                    <div class="cl"></div>
+                                </div>                    
+                              </div>
+                           <!-- ***********success -->
+                           <!-- ***********success -->
+                           <!-- ***********success -->
+                           <!-- ***********success -->
+                            <div style="position:fixed;top:100px;left:400px;z-index:1000000;opacity:0.7;display:none;width:400px;height:300px" id="success"><img width="100%" src="__PUBLIC__/Home/success.jpg" alt="" />
+                            <center><span class="red" style="font-size:20px">下单成功</span></center>
+                            </div>
+                                
+                             <!-- 遮罩********** -->
+                            <!-- 遮罩********** -->
+                            <!-- 遮罩********** -->
+                            <div style="position:fixed;top:100px;left:400px;background:#F5F5F5;z-index:10000;display:none;width:400px;height:300px" id="talk">
+                                  <div id="shut" style="position:relative;top:0px;left:370px;border:solid 1px black;width:29px;height:12px;cursor:pointer"><span class="red">close</span></div>
+                                  <!-- 订单表 -->
+                                  <center>
+                                    <span class="red" style="font-weight:900">请填写以下信息:</span><br /><br><br><br>
+                                    
+                                        <div><span>预订者:</span> <input type="text" name="buyer"/><img src="" alt="" /></div><br>
+
+                                        <!-- 隐藏域 -->
+                                        <input type="hidden" name="seller" value="{$user['username']}"/>
+                                        <input type="hidden" name="sTel" value="{$user['tel']}"/>
+                                        <input type="hidden" name="company" value="{$info['company']}"/>
+
+
+                                       <div><span>电&nbsp;&nbsp;&nbsp;&nbsp;话:</span> <input type="text" name="bTel"/><img src="" alt="" /></div><br>
+
+                                       <div><span>定&nbsp;&nbsp;&nbsp;&nbsp;金:</span> <input type="text" name="money" value="{$info['price']}" readonly/></div><br>
+
+                                        <div><span id="xiadan" style="background:#f5f5f5;border:solid 1px black;font-size:12px;cursor:pointer">立即下单</span></div><br>                                       
+
+
+                                   
+                                  </center>
+                            </div>
+                            <!-- ***********订单结束 -->
+                            <!-- ***********订单结束 -->
+                            <!-- ***********订单结束 -->
+
+                              <div class="col_sub sumary">
+                                  <ul class="suUl">
+                                    <li><div class="su_tit">价格：</div>
+                                        <div class="su_con"><span class="price c_f50">{$info['price']}</span>元</div>
+                                    </li>
+                                    <li><div class="su_tit">承办：</div>
+                                        <div class="su_con"><span>{$info['company']}</span></div>
+                                    </li>
+                                    <li><div class="su_tit">区域：</div>
+                                        <div class="su_con"><span class="c_25d"><a href="">{$info['addr']}</a></span></div>
+                                    </li>
+                                    <li>
+                                        <div class="su_tit">卖家：</div>
+                                        <div id="divContacter" class="fl"><ul class="userinfo"><ul class="vcard">  <li><i>联  系 人：</i>       <a title="{$user['username']}" href="http://my.58.com/17243582248199/" target="_blank" cfglass="tx">{$user['username']}</a>      <span class="belong">（<span title="58.com建议您优先选择网邻通商家" class="wb-m-wlt-ico"><i>2</i></span><span class="gap">|</span>        <span><a href="{:U('Home/Marry/shop1')}?id={$info['uid']}" target="_blank">历史订单</a></span>）</span></li>  </ul></ul></div>
+                                    </li>
+                                    <li class="wupin_b">
+                                        <div class="su_tit">联系：</div>
+                                        <div class="su_con"><span class="f20 arial red" id="t_phone">{$user['tel']}</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="su_tit">预付：</div>
+
+                                        <span class="red" id="buy" style="border:solid 1px black;cursor:pointer">立即预约</span>
+
+
+                                    </li>
+                                    <li class="qqnum mb15">
+                                        <div class="su_tit">Q&nbsp;&nbsp;Q：</div>
+                                        <div class="su_con"><span><img src="__PUBLIC__/Home/xiangqing_files/showphone_002.gif"></span></div>
+                                    </li>                     
+                                  </ul>
+                              </div>
+
+                              
+                          </div>
+
+                          <div class="per_ad_right" id="perAdRight">
+                            <div class="cont_imgPa">
+                               <span class="cont_img"><i class="cir_img"></i><img src="__PUBLIC__/Home/xiangqing_files/default_b.jpg" alt=""></span>
+                            </div>
+                            <div class="mod owner rsale">
+                                <div id="divOwner" class="owner_tit">
+                                  <ul class="userinfo">
+
+                                    <!-- <li style="border-bottom: 1px dotted rgb(196, 196, 196); margin-left: 20px; margin-right: 20px; padding-bottom: 10px;"><i>联  系  人：</i><a class="tx" target="_blank" href="http://my.58.com/17243582248199/" title="{$user['username']}">{$user['username']}</a><em class="medium">（网邻通商家）</em><style type="text/css">
+
+                                    #bangbangWrapBox{position:relative;z-index:995}
+
+                                    .bangbangTips2012{width:344px; height:296px; position:absolute;top:30px;left:-110px;z-index:9998;}
+
+                                      .b_btn2,.b_close{display:block;width:103px;height:33px;position:absolute;cursor:pointer}
+
+                                      .b_btn2{width:107px;height:25px;left:162px;top:171px}.b_close{width:34px; height:34px;left:306px; top:71px;}
+
+                                      </style>
+                                        <span id="bangbangWrapBox">
+                                        <img id="imgbang17243582248199" name="iconbang" src="__PUBLIC__/Home/xiangqing_files/offline.gif" style="display:block;cursor:pointer;margin-left:5px;">
+
+                                        <div class="bangbangTips2012" id="bangbigtip" style="display: block;">
+
+                                        <span name="zaixian" class="b_btn2" title="联系对方" id="bangtipsendmsg"></span>
+                                        <span class="b_close" title="关闭" onclick="document.getElementById('bangbigtip').style.display='block';">****</span>
+                                        </div>
+                                        </span>
+                                        </li> -->
+
+                                    <li style="height: 12px;" class="rep-li"><span class="report" style="text-align: right; display: block; float: left; width: 103.5px; height: 12px;">加入58时间 ：</span><span class="report" style="text-align: left; display: block; float: left; width: 103.5px; height: 12px;">&nbsp;2年  81天</span></li>
+
+                                    <li><span class="belong">（<span title="58.com建议您优先选择网邻通商家" class="wb-m-wlt-ico"><i>2</i></span><span class="gap">|</span>        <span><a target="_blank" href="{:U('Home/Marry/shop1')}?id={$info['uid']}">历史订单</a></span>）</span></li>
+
+                                    <li><i>商家认证：</i><a href="http://my.58.com/17243582248199/" target="_blank" class="icon2" title="邮件已认证"></a><a href="http://my.58.com/17243582248199/" target="_blank" class="icon3" title="手机已认证"></a><a href="http://my.58.com/17243582248199/" target="_blank" class="icon1" title="身份已认证"></a><a href="http://my.58.com/17243582248199/" target="_blank" class="icon4" title="营业执照已认证"></a></li>
+                                  </ul>
+                                </div>
+                                <div id="divAuth" class="approve"></div>
+                                <div id="newuser" name="data_1"></div>
+                            </div>
+                						
+                            <div class="tonte_two_p">
+                                <span class="color_ip"></span>北京<p></p><p class="content_info"><a href="http://my.58.com/17243582248199" target="_blank">查看卖家完整信息&gt;</a></p>
+                            </div>
+                          </div>
+                      </div>
+                      <div id="main">
+                          <div class="col detailPrimary mb15">
+                          <div class="col_sub description">
+                          <div style="width: 730px; background-color: rgb(255, 255, 255); position: static;" class="pr detail-title mb20" id="float">
+                          <div class="desMenu clearfix pa">
+                          <a href="javascript:;" class="cur" target="_self" rel="nofollow" jumpto="sub_1"><span id="detail">物品详情</span></a>
+
+                          <a href="javascript:;" class="" target="_self" rel="nofollow" jumpto="sub_1"><span id="history">历史订单</span></a>
+                      </div>
+                  </div>
+                  <div id="phoneFrame_con" class="des_con">
+                  <div id="sub_1" style="display:block">
+                      <div class="descriptionImg">
+                        <foreach name="info['pic']" item="vo" >
+                          <a><img src="__PUBLIC__{$vo}" width="600" width="100%"></a>
+                        </foreach>
+                      </div>
+                  </div>
+
+                   <div id="sub_2">
+                      <div class="descriptionImg">
+                        <!-- <ul>
+                          <foreach name="orders" item="vo" >
+
+                          </foreach>
+                        </ul> -->
+                          <br><br>
+                          <h3>历史下单数共达<span class="red">{$orders}</span>单</h3>
+                          
+                      
+                      </div>
+                  </div>
+                  <script type="text/javascript">
+                      $('#detail').click(function(){
+                        $(this).parent().attr('class','cur');
+                        $(this).parent().next().removeAttr('class');
+
+                        $('#sub_1').show();
+                        $('#sub_2').hide();
+
+                      })
+
+                      $('#history').click(function(){
+                        $(this).parent().attr('class','cur');
+                        $(this).parent().prev().removeAttr('class');
+
+                        $('#sub_2').show();
+                        $('#sub_1').hide();
+
+                      })
+                  </script>
+
+                  <div class="more-goods">
+                      <div class="sub_tit">
+                          <h3>还有更多家婚庆摄影等服务等待联系...</h3>
+                      </div>
+                      <div class="more-goods-b">
+                          <ul class="goods-tu clearfix">      
+                            <foreach name="more" item="vo" >
+                              <li><img src="__PUBLIC__{$vo['pic'][0]}" alt="" title="{$vo['title']}">
+                                  <p class="goods-tit"><a target="_blank" href="{:U('Home/Marry/detail')}?id={$vo['id']}" alt="{$vo['title']}" title="iPhone6s 16GB 99新">{$vo['title']}</a></p>
+                                  <p class="clearfix"><span class="fl"><font>{$vo['price']}</font>元</span><span class="fr">{$vo['addr']}</span></p>
+                              </li>                                                    
+                              </foreach>             
+                          </ul>
+                          <p class="check-goods mt15 ml10 clearfix"><strong><span class="red">MORE:</span></strong>
+                              <a href="{:U('Home/Marry/index')}" style="font-size:12px">更多请点击</a>
+                              
+                          </p>
+                      </div>
+                  </div>          
+                  </div>
+          </div>
+      </div>
+
+      <div class="col mb15">
+          <div class="wlt_con" sytle="padding:5px"></div>
+      </div>
+<!--右侧推荐商品-->
+      <div class="recommand mb15" id="tongjia" style=" margin-top: 15px;">
+      </div>
+      <div class="recommand mb15" id="goumai">
+      </div>              
+      <div id="direct_ad_bottom"></div>
+      <div class="col detailBottomAd">
+          <div class="col_con">
+              <div id="googlead_list"></div>
+              <div id="a125" class="w zhaoshangad">
+                  <div class="topSearch clearfix">
+                      <h3 class="topSearch_t">热门搜索：</h3>
+                    <div class="topSearch_c"> 
+                        <a href="">二手金立W100</a>
+                        <a href="">二手三星p3100</a>
+                        <a href="">酷派手机转让</a>
+                        <a href="">oppo手机转让</a>
+                        <a href="">二手OPPO A201</a>
+                        <a href="">二手索尼爱立信st15i</a>
+                        <a href="">黑莓9800出售</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+<!-- =E col detailBottomAd 底部谷歌广告 -->
+</div>
+<!-- =E main -->       
+<!-- =S side -->
+    <div id="side" class="detailSide">           
+        <div class="bd">  
+            <div class="modLine"></div>
+                <dl id="tongjia_d"></dl>
+                <div class="mod detailRightAd">
+                <div class="rightbox pb50" id="search_box_ui_position" style="display:none;"></div>
+                <div id="sideAD"></div>
+                <div id="smallAd"></div>
+            </div>
+            <div style="display: none;">1229=11,5463=748301.</div>
+    	      <div class="tuijian_con t_backnone">
+      		    <dl class="remengtjdl schangqi"><dt>苹果iPhone6s最新用户发帖</dt>
+                <dd>
+        				<ul>
+                    <li>
+        							<a title="苹果 iPhone6s" target="_blank">苹果 iPhone6s</a>
+        						</li>
+        						<li>
+        							<a title="玫瑰金 苹果 iPhone6s 16GB 国行正品发票 在保修期内" target="_blank">玫瑰金 苹果 iPhone6s 16GB...</a>
+        						</li>
+        						<li>
+        							<a title="金色 苹果 iPhone6s" target="_blank">金色 苹果 iPhone6s</a>
+        						</li>
+        						<li>
+        							<a title="今天新买的金色苹果 iPhone6s 64GB 国行正品发票" target="_blank">今天新买的金色苹果 iPhone...</a>
+        						</li>
+        						<li>
+        							<a title="个人转让玫瑰金iPhone6S国行.价格可商议" target="_blank">个人转让玫瑰金iPhone6S国行...</a>
+        						</li>
+        						<li>
+        							<a title="iPhone6s 16GB 99新" target="_blank">iPhone6s 16GB 99新</a>
+        						</li>
+        						<li>
+        							<a title="玫瑰金 苹果 iPhone6s 16GB 国行正品发票" target="_blank">玫瑰金 苹果 iPhone6s 16GB...</a>
+        						</li>
+        						<li>
+        							<a title="iphone6s plus" target="_blank">iphone6s plus</a>
+        						</li>
+        						<li>
+        							<a title="玫瑰金 苹果 iPhone6s 64GB 国行正品发票 保修期内 无拆无修" target="_blank">玫瑰金 苹果 iPhone6s 64GB...</a>
+        						</li>
+        						<li>
+        							<a title="金色 苹果 iPhone6s 16GB 港版" target="_blank">金色 苹果 iPhone6s 16GB 港...</a>
+        						</li>
+        				</ul>
+      			   </dd>
+      		    </dl>
+    	     </div>
+        </div>
+        </div>
+    </div>      
+    <div id="sbar2"></div>
+<footer id="footer" class="footer">
+    <p class="copyright">© 58.com <a href="http://about.58.com/" target="_blank" rel="nofollow">帮助中心</a></p>
+</footer>   
+
+
+<script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+  $('#buy').click(function(){
+      $('#cover').show();
+      $('#talk').show();
+  })
+
+  var BP = false;
+  var TP = false;
+  // 绑定获取焦点时间
+  $('input').focus(function(){
+      $(this).css('border','solid 1px blue');
+  })
+
+   // 买家的正则
+    $('input[name=buyer]').blur(function(){
+        var v = $('input[name=buyer]').val();
+        var reg = /^\S{2,18}$/;
+        var res = reg.test(v);
+        // alert(2123);
+        if(!res){
+            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+            BP = false;
+        }else{
+            var buyer = $(this);
+            $.post('{:U('Home/Marry/checkUser')}',{buyer:v},function(data){
+                
+                if(data == 0){
+                    
+                    buyer.next().attr('src','__PUBLIC__/Home/images/wrong.png');
+                    BP = false;
+                }else{
+                  if(data<0){
+                    alert('您的余额为'+data+',请适度透支使用!');
+                  }
+                   buyer.next().next().html('').css('background','#FFECEC');
+                    buyer.next().attr('src','__PUBLIC__/Home/images/right.png');  
+                    BP = true;
+ 
+                }
+            })
+        }   
+
+         })
+
+    // 绑定买家手机的丧失焦点事件
+    $('input[name=bTel]').blur(function(){
+        var v = $('input[name=bTel]').val();
+        // alert(v);
+        var reg = /^1\d{10}$/;
+        var res = reg.test(v);
+        if(!res){
+            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+            TP = false;
+        }else{
+            // alert(res);
+              $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+              TP = true;
+ 
+             
+        }
+    })
+    var buyer = $('input[name=buyer]').val();
+    var seller = $('input[name=seller]').val();
+    var bTel = $('input[name=bTel]').val();
+    var sTel = $('input[name=sTel]').val();
+    var company = $('input[name=company]').val();
+    var money = $('input[name=money]').val();
+
+    
+    $('#xiadan').click(function(){
+        $('input[name=buyer]').blur();
+        $('input[name=bTel]').blur();
+
+      if(TP && BP){
+          $.post('{:U('Home/Marry/doBuy')}',{buyer:buyer,seller:seller,bTel:bTel,sTel:sTel,company:company,money:money},function(data){
+              // alert(data);
+              if(data == 1){
+                  var count = $('#hiscount').val();
+
+                  var newCount = Number(count)+1;
+                  $('#count').html(newCount);
+                  $('#cover').hide();
+                  $('#talk').hide();
+                  $('#success').show();
+                  var inte = setTimeout(function(){
+                    $('#success').fadeOut();
+                  },1000)
+              }else{
+
+              }
+          })
+      }else{
+        return false;
+      }
+    })
+
+
+
+  $('input').blur(function(){
+    $(this).css('border','');
+    $(this).css('background','#cccccc');
+  })
+
+  $('#shut').click(function(){
+    $('#cover').hide();
+    $('#talk').hide();
+  })
+</script>
+
+</body>
+
+</html>

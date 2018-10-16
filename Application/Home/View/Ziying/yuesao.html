@@ -1,0 +1,1051 @@
+<extend name="Ziying/index" />
+<block name="content">
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>【北京月嫂|北京月嫂公司|北京月嫂价格】- 北京58到家</title>
+<meta name="keywords" content="58月嫂,北京月嫂,北京月嫂公司,北京金牌月嫂,北京月嫂网,北京月嫂价格">
+<meta name="description" content="58到家北京月嫂为您提供专业、便捷、安心的标准化月嫂服务，主要提供新妈妈和宝宝的生活照顾及护理等到家服务，找月嫂服务就上58到家。">	<meta name="location" content="province=北京;city=北京">
+	<link href="__PUBLIC__/Home/yuesao_files/style.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/yuesao_files/layer.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/yuesao_files/ys.css" rel="stylesheet" type="text/css">
+    	
+<script src="__PUBLIC__/Home/yuesao_files/hm.js"></script><script src="__PUBLIC__/Home/yuesao_files/tracker.js"></script><script type="text/javascript">
+var bi_params = {csbaction:'daojia_yuesao_base_show', cityid:'96',cateid:'9',pagetype:'detail',termtype:1};
+(function() {
+  var bi_hm = document.createElement("script");
+  bi_hm.src = "http://pic2.58.com/m58/app58/m_static/js/bi/tracker.js";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(bi_hm, s);
+})();
+
+</script><link id="layui_layer_http:dj58cdncomcncsdjpcpubliccsspartslayercss" href="__PUBLIC__/Home/yuesao_files/layer_002.css" rel="stylesheet"></head>
+<body  style="background:url(__PUBLIC__/Home/index/bg2.png) no-repeat 0px 50px"> 
+</block>
+    <div class="header">
+  		<div class="head clearfix">
+    		<div class="fl">
+      			<a class="logo" href="http://bj.daojia.com/"></a>
+    		</div>
+    		<div class="site fl">
+            	<p class="site-t">
+            		<strong>北京</strong> 
+        		</p>
+        		<p class="site-c">
+            		[ <span><a href="javascript:void(0)" onclick="changeCity()">切换城市</a></span> ]
+        		</p>
+            </div>
+    		<div class="head-r fr">
+     			<div class="tbar-login sty000 fr clearfix"></div>
+      			<div class="nav sty000 fr clearfix">
+        			<a href="http://www.daojia.com/download/" rel="nofollow">下载APP</a> 
+			        <a href="http://bj.daojia.com/vip/" rel="nofollow">购买会员</a>
+			        <a href="http://bj.daojia.com/duigong/">对公业务</a>  
+                 	<a href="http://bj.daojia.com/baomu/" onclick='trackClick("action=daojia_baomu_pc_daohang");'>保姆</a>
+	                <a class="on nav-ys" href="http://bj.daojia.com/yuesao/"><i></i>月嫂</a> 
+	                <a href="http://bj.daojia.com/suyun/">速运</a> 
+                	<a href="http://bj.daojia.com/liren/">丽人</a> 
+	    	        <a href="http://bj.daojia.com/jiazheng/">家政</a> 
+                	<a href="http://bj.daojia.com/">首页</a>
+      			</div>
+    		</div>
+		    <form id="form1" method="post" action="http://www.daojia.com/yuesao/selectCity/">
+		      <input id="backCityUrl" name="backCityUrl" value="http://_city_.daojia.com/yuesao/" type="hidden">
+		    </form>
+		    <script>
+		    	function changeCity() {
+		    		document.getElementById("form1").submit();
+		    	}
+		    	function window_redirect(href) {
+		    		if(href.indexOf("huazhuang/huazhuangshi/list/")>-1){
+		    			var vals = "";
+		    			var str = vals.replace(/'/g, '"');  
+		    			var json = $.parseJSON(str);
+		    			
+		    			var queryForm = $("<form method='post' action='"+href+"'></form>")
+		    			var paramValsForm = $("<input type='hidden' name='paramVals' value=''/>"); 
+		    			paramValsForm.val('');
+		    			$.each(json,function(node){
+		    	    		var input = document.createElement("input");
+		    	        	input.type = 'hidden';
+		    	        	input.name = node;
+		    	        	input.value = json[node];
+		    	        	queryForm.append(input);
+		    	    	});
+		    			queryForm.append(paramValsForm);
+		    			$("body").append(queryForm).hide();
+		    			queryForm.submit();
+		    			
+		    		}else if(href.indexOf("huazhuang/huazhuangshi/")>-1){
+		    			var paramVals = "";
+		    			var str = paramVals.replace(/'/g, '"');  
+		    			var json = $.parseJSON(str);
+		    			
+		    			var param = "";
+		    			
+		    			if(paramVals == null || paramVals == ""){
+		    				window.location.href = "/huazhuang";
+		    				return;
+		    			}
+		    			
+		    			var formDom = $("<form method='post' action='"+href+"'></form>")
+		    			$.each(json,function(node){
+		    	    		var input = document.createElement("input");
+		    	        	input.type = 'hidden';
+		    	        	input.name = node;
+		    	        	input.value = json[node];
+		    	        	formDom.append(input);
+		    	    	});
+		    			var paramValsDom = $("<input name='paramVals' value='' />");
+		    			var paramDom = $("<input name='param' value='"+param+"'/>");
+		    			//paramValsDom.val(paramVals);
+		    			var cityDom = $("<input name='city' value='"+"bj"+"'/>");
+		    			var zhuangRongIdDom = $("<input name='zhuangRongId' value='"+$paramMap.get("a")+"'/>");
+		    			//var url = "http://www.daojia.com/huazhuang/huazhuangshi/" + artificerId + "?city=bj&zhuangRongId="+$paramMap.get("a");
+		    			formDom.append(paramValsDom);
+		    			formDom.append(paramDom);
+		    			formDom.append(cityDom);
+		    			formDom.append(zhuangRongIdDom);
+		    			
+		    			formDom.submit();
+		    		}
+		    		else{
+		    			
+			    		$("#createorderId").attr("action", href).submit();
+		    		}
+		    		
+		    
+		    	}
+			</script>
+  		</div>
+        <div class="breadcrumb">
+		    <p class="c_c">
+		        <i class="breadcrumb-icon"></i>
+	      		<a href="http://bj.daojia.com/">首页</a> 
+	      	    &gt;<a href="http://bj.daojia.com/jiazheng/"> 北京家政</a> 
+	        	&gt;<a href="http://bj.daojia.com/yuesao/"> 北京月嫂</a> 
+	        </p>
+  	    </div>    
+    </div> 
+	<block name="content1">
+
+    <div class="wrapper clearfix">
+    	<div class="wra-b">
+            <div class="banner"><a style="display:block; height:100%;" href="http://bj.daojia.com/yuesao/coupons/" target="_blank" onclick='trackClick("action=58yuesao_daojia_pc_shouyebanner");'></a></div>
+            <!-- left start -->
+            <div class="container clearfix">
+            <div class="left fl">
+            	<!-- yibu start -->
+            	<div id="baozhang">
+            	<div class="ysbg clearfix">
+                	<div class="one-p clearfix">
+                    	<div class="yi">1</div>
+                        <dl class="yi-t">
+                        	<dt>58月嫂自营 更放心</dt>
+                            <dd>与用户签订甲乙方合同的服务机构， 服务期间全程试用，随时与公司沟通月嫂服务状况，服务不满意，随时更换月嫂。</dd>
+                        </dl>
+                        <div class="one-b fl clearfix">
+                        	<div class="one-b-l fl">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <thead>
+                                      <tr>
+                                        <th><span></span>58月嫂</th>
+                                      </tr>
+                                      </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>自营</td>
+                                      </tr>
+                                      <tr>
+                                        <td>甲乙方合同</td>
+                                      </tr>
+                                      <tr>
+                                        <td>严格培训筛选，服务专业有保障</td>
+                                      </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                            <div class="vs"></div>
+                            <div class="one-b-l one-b-r fr">
+                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <thead>
+                                      <tr>
+                                        <th><span></span>普通家政公司</th>
+                                      </tr>
+                                      </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>中介</td>
+                                      </tr>
+                                      <tr>
+                                        <td>月嫂公司顾客 三方合同</td>
+                                      </tr>
+                                      <tr>
+                                        <td>无专业培训，服务水平参差不齐</td>
+                                      </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- yibu end -->
+                <!-- erbu start -->
+            	<div class="ysbg margin-top clearfix">
+                	<div class="one-p clearfix">
+                    	<div class="yi">2</div>
+                        <dl class="yi-t">
+                        	<dt>国际ISO9001认证更省心</dt>
+                            <dd>通过ISO国际标准化组织认证的标准化的服务机构，服务获得国际认可。</dd>
+                        </dl>
+                        <div class="erbu-img fl">
+                        	<img src="__PUBLIC__/Home/yuesao_files/iso.jpg" alt="">
+                        </div>
+                        <div class="erbu fl">
+                            <dl>
+                        		<dt>1. 装备标准化：</dt>
+                        		<dd>婴儿护理箱、上户箱、家居服、洗漱用品、拖鞋等由公司统一配备</dd>
+                        	</dl>
+                        	<dl>
+                        		<dt>2. 照顾标准化：</dt>
+                        		<dd>24小时全天候呵护母婴，覆盖母婴全面事务</dd>
+                        	</dl>
+                        	<dl>
+                        		<dt>3. 客服标准化：</dt>
+                        		<dd>客服老师定期回访，确保月子关键问题稳妥解决</dd>
+                        	</dl>
+                        	<dl>
+                        		<dt>4. 服务标准化：</dt>
+                        		<dd>胎盘加工：紫河车卫生加工有效食用<br>客服督导：客服老师登门巡检，及时发现并解决问题<br>产后修复：帮助恢复到未孕状态的完美体形<br>满月汗蒸：中药配方通经祛病<br>宝贝游泳：提高宝贝智商、情商和抗病能力</dd>
+                        	</dl>
+                        </div>
+                    </div>
+                </div>
+                <!-- erbu end -->
+                <!-- sambu start -->
+            	<div class="ysbg margin-top clearfix">
+                	<div class="one-p clearfix">
+                    	<div class="yi">3</div>
+                        <dl class="yi-t">
+                        	<dt>百万保险化解后顾之忧</dt>
+                            <dd>为用户提供100万人身+物品保障的服务机构，是国内家庭服务业保险保障覆盖率高而全的公司。</dd>
+                        </dl>
+                        <div class="sambu">
+                        	<h4>1. 我们为客户办理100万用户人身+财物保险<br>2. 我们为月嫂办理30万的人身意外险，让月子全程无忧</h4>
+                        	<p><img src="__PUBLIC__/Home/yuesao_files/baoxian.jpg" alt=""></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- sambu end -->
+                <!-- sibu start -->
+            	<div class="ysbg margin-top clearfix">
+                	<div class="one-p clearfix">
+                    	<div class="yi">4</div>
+                        <dl class="yi-t">
+                        	<dt>五重过滤筛选 月嫂更专业</dt>
+                            <dd>七段式情境化培训，满足养育不同月龄宝宝的家庭需求，月嫂服务更加专业</dd>
+                        </dl>
+                        <div class="sibu fl clearfix">
+                        	<ul>
+                        		<li><img src="__PUBLIC__/Home/yuesao_files/20150801.jpg">家政培训</li>
+                        		<li><img src="__PUBLIC__/Home/yuesao_files/20150802.jpg">餐饮培训</li>
+                        	</ul>
+                            <ol>
+                        		<li><img src="__PUBLIC__/Home/yuesao_files/20150803.jpg">母婴护理培训</li>
+                        		<li><img src="__PUBLIC__/Home/yuesao_files/20150804.jpg">催乳培训</li>
+                                <li><img src="__PUBLIC__/Home/yuesao_files/20150805.jpg">中医理论培训</li>
+                        	</ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- sibu end -->
+                <!-- wubu start -->
+            	<div class="ysbg margin-top clearfix">
+                	<div class="one-p clearfix">
+                    	<div class="yi">5</div>
+                        <dl class="yi-t">
+                        	<dt>3证上岗 5证护航</dt>
+                            <dd>身份证、健康证，母婴护理师证（月嫂证）上岗必备，全方位确保妈妈和宝宝的健康</dd>
+                        </dl>
+                        <ul class="credentials">
+                            <li class="sfz"><div>公安局联网，严格核查月嫂身份，杜绝犯罪等不良记录</div></li>
+                            <li class="jkz"><div>统一使用卫生部制定的《中华人民共和国预防性健康检查用表》，按照卫生监督机构确定的人员到健康体检单位进行预防性健康检查</div></li>
+                            <li class="myz"><div>参加培训和人力资源和社会保障部组织的考试，考核合格者统一颁发中华人民共和国人力资源和社会保障部母婴护理师或高级母婴护理师岗位专项能力证书</div></li>
+                            <li class="yyz"><div>由劳动和社会保障部统一鉴定，鉴定合格者按照有关规定统一核发相应等级的《中华人民共和国职业资格证书》，此证书全国通用</div></li>
+                            <li class="crz"><div>
+                             证书由人社部中国就业培训技术指导中心审核、考核、颁发</div>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+                <!-- wubu end -->
+                </div>
+                <div class="ysbg margin-top clearfix" id="peixun">
+                    <div class="title"><b>月嫂培训进行时</b></div>
+                    <div class="yspx">
+                        <div class="pxbg"><img src="__PUBLIC__/Home/index/yspx.jpg" alt=""></div>
+                        <ul class="content">
+                            <li class="pic">
+                                <a href="http://www.daojia.com/yuesao/fengcai/" target="_blank">
+                                <img src="__PUBLIC__/Home/yuesao_files/ysfc.jpg">
+                                <div></div>
+                                <p>月嫂风采</p>
+                                <i class="pic-icon"></i>
+                                </a>
+                            </li>
+                            <li class="video">
+                                <a href="http://www.daojia.com/yuesao/player?ddy=true" target="_blank">
+                                <img src="__PUBLIC__/Home/yuesao_files/ysdy.jpg">
+                                <div></div>
+                                <p>58月嫂大电影</p>
+                                <i class="video-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="content">
+                            <li class="pic">
+                                <a href="http://www.daojia.com/yuesao/player?player_addr=fumo" target="_blank">
+                                <img src="__PUBLIC__/Home/yuesao_files/fcsp.jpg">
+                                <div></div>
+                                <p>58月嫂专业培训之抚触篇</p>
+                                <i class="video-icon"></i>
+                                </a>
+                            </li>
+                            <li class="video">
+                                <a href="http://www.daojia.com/yuesao/player?player_addr=weinai" target="_blank">
+                                <img src="__PUBLIC__/Home/yuesao_files/wnsp.jpg">
+                                <div></div>
+                                <p>58月嫂专业培训之喂奶篇</p>
+                                <i class="video-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- laixin start -->
+            	<div class="ysbg margin-top clearfix">
+                    <div class="title" id="laixin"><b>宝妈来信</b></div>
+                    <div class="laixin clearfix">
+                    	<div class="laixin-b clearfix">
+                            <div class="laixin-l fl"><img src="__PUBLIC__/Home/yuesao_files/20150801.png" alt=""></div>
+                            <div class="laixin-r fr">
+                                <p></p>
+                                <dl>
+                                    <dt>周妈妈 来信：</dt>
+                                    <dd>高阿姨做事非常认真负责，对宝宝更是无微不至，我们非常放心，同时也从高阿姨那里学习很多东西，现在宝宝非常健康聪明，感谢高阿姨的付出和辛苦，祝她今后更加顺利！</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="laixin-b clearfix">
+                            <div class="laixin-l fl"><img src="__PUBLIC__/Home/yuesao_files/20150802.png" alt=""></div>
+                            <div class="laixin-r fr">
+                                <p></p>
+                                <dl>
+                                    <dt>许妈妈 来信：</dt>
+                                    <dd>在这26天里，蔡姐很有责任心，专业的护理知识，工作热情，相处融洽，以后有朋友请月嫂我会推荐蔡姐的，感谢蔡姐的细心照顾！</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="laixin-b clearfix">
+                            <div class="laixin-l fl"><img src="__PUBLIC__/Home/yuesao_files/20150803.png" alt=""></div>
+                            <div class="laixin-r fr">
+                                <p></p>
+                                <dl>
+                                    <dt>郭妈妈 来信：</dt>
+                                    <dd>程姐性格温和随和，比较容易相处，她在宝宝喂养方面较有经验，善于观察宝宝的状态，判断哭闹原因。我家宝宝夜里突然哭闹不止，程姐认为宝宝有肠绞痛，采用热敷，得到缓解，对新手父母，在照顾方面不正确的做法，她能给予意见和纠正，很感谢！</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="laixin-title clearfix" id="yitian">
+                        	<h3>58月嫂的一天</h3>
+                            <h4>24小时无微不至 贴身照顾</h4>
+                        </div>
+                        <div class="time">
+                        	<dl class="time-t">
+                            	<dt>时间<span></span></dt>
+                                <dd>服务内容</dd>
+                            </dl>
+                            <dl>
+                            	<dt>06:00<span></span></dt>
+                                <dd>月嫂起床洗漱、准备早餐</dd>
+                            </dl>
+                            <dl>
+                            	<dt>06:45<span></span></dt>
+                                <dd>给妈妈、宝宝测体温、换尿布、洗脸、妈妈起床、洗漱、吃早餐</dd>
+                            </dl>
+                            <dl>
+                            	<dt>08:00<span></span></dt>
+                                <dd>指导妈妈喂奶、拍嗝</dd>
+                            </dl>
+                            <dl>
+                            	<dt>08:30<span></span></dt>
+                                <dd>收拾房间、开窗换新鲜空气、安排乳房护理、清洗伤口、检查子宫恢复情况、观察恶露及气味</dd>
+                            </dl>
+                            <dl>
+                            	<dt>09:30<span></span></dt>
+                                <dd>准备10:00的加餐和中午营养汤</dd>
+                            </dl>
+                            <dl>
+                            	<dt>10:00<span></span></dt>
+                                <dd>指导哺乳、拍嗝、换尿片、妈妈加餐</dd>
+                            </dl>
+                            <dl>
+                            	<dt>11:30<span></span></dt>
+                                <dd>准备午餐</dd>
+                            </dl>
+                            <dl>
+                            	<dt>12:00<span></span></dt>
+                                <dd>中餐</dd>
+                            </dl>
+                            <dl>
+                            	<dt>12:30<span></span></dt>
+                                <dd>妈妈午休</dd>
+                            </dl>
+                            <dl>
+                            	<dt>13:30<span></span></dt>
+                                <dd>指导妈妈喂奶、拍嗝、换尿片</dd>
+                            </dl>
+                            <dl>
+                            	<dt>15:00<span></span></dt>
+                                <dd>准备加餐</dd>
+                            </dl>
+                            <dl>
+                            	<dt>15:30<span></span></dt>
+                                <dd>妈妈加餐</dd>
+                            </dl>
+                            <dl>
+                            	<dt>16:00<span></span></dt>
+                                <dd>给宝宝洗澡、潜能开发、洗衣服、尿布、和妈妈换洗的衣服</dd>
+                            </dl>
+                            <dl>
+                            	<dt>16:30<span></span></dt>
+                                <dd>宝宝哺乳、拍嗝、换尿片</dd>
+                            </dl>
+							<dl>
+                            	<dt>17:00<span></span></dt>
+                                <dd>准备晚餐</dd>
+                            </dl>
+                            <dl>
+                            	<dt>18:00<span></span></dt>
+                                <dd>晚餐后指导妈妈喂奶、拍嗝、晚上给妈妈乳房护理</dd>
+                            </dl>
+                            <dl>
+                            	<dt>20:30<span></span></dt>
+                                <dd>准备晚上的加餐</dd>
+                            </dl>
+                            <dl>
+                            	<dt>21:00<span></span></dt>
+                                <dd>妈妈加餐</dd>
+                            </dl>
+                            <dl>
+                            	<dt>21:30<span></span></dt>
+                                <dd>清洗妈妈侧切伤口、帮助妈妈泡脚、准备让妈妈洗漱休息</dd>
+                            </dl>
+                            <dl>
+                            	<dt>21:40<span></span></dt>
+                                <dd>指导妈妈喂奶、拍嗝、宝宝大便、洗屁屁、换尿片</dd>
+                            </dl>
+                            <dl>
+                            	<dt>22:00<span></span></dt>
+                                <dd>清洗宝宝的衣服和尿片</dd>
+                            </dl>
+                            <dl>
+                            	<dt>00:30<span></span></dt>
+                                <dd>指导妈妈哺乳、拍嗝、换尿布</dd>
+                            </dl>
+                            <dl>
+                            	<dt>03:00<span></span></dt>
+                                <dd>宝宝大小便、换尿布、哺乳、拍嗝</dd>
+                            </dl>
+                            <dl>
+                            	<dt>05:30<span></span></dt>
+                                <dd>宝宝换尿片、洗屁屁、哺乳、拍嗝</dd>
+                            </dl>
+                            <p>58月嫂会根据每日具体日程和宝宝与妈妈的需要，合理安排工作</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- laixin end -->
+                <!-- my serve -->
+                <div class="ysbg margin-top clearfix" id="fuwu">
+                    <div class="title"><b>我们的服务</b></div>
+                    <div class="myservice clearfix">
+                    <ul>
+                        <li>
+                           <img src="__PUBLIC__/Home/yuesao_files/bsz.jpg">
+                            <div>
+                                <p><b>宝宝生活照顾</b></p>
+                                <p>婴儿喂养</p>
+                                <p>婴儿照顾</p>
+                                <p>用具安全</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="__PUBLIC__/Home/yuesao_files/bzz.jpg">
+                            <div>
+                                <p><b>宝宝专业护理</b></p>
+                                <p>湿疹红臀防护</p>
+                                <p>脐带消毒护理 </p>
+                                <p>常见病及早教</p>
+                            </div>
+                        </li>
+                        <li><img src="__PUBLIC__/Home/yuesao_files/msz.jpg">
+                            <div>
+                                <p><b>新妈妈生活照顾</b></p>
+                                <p>烹制月子餐饮</p>
+                                <p>指导产后自理</p>
+                                <p>洗理衣服卫生</p>
+                            </div>
+                        </li>
+                        <li><img src="__PUBLIC__/Home/yuesao_files/mzz.jpg">
+                            <div>
+                                <p><b>新妈妈专业护理</b></p>
+                                <p>乳房护理</p>
+                                <p>伤口处理</p>
+                                <p>形体恢复</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <!-- end -->
+            	<!-- jiage start -->
+            	<div class="ysbg margin-top clearfix" id="jiage">
+                    <div class="title"><b>服务价格</b></div>
+                    <div class="jiage">
+                    	<h4>价格透明，绝无任何强迫消费或隐形消费。您所支付的费用，将全部用于购买高品质的月嫂服务。<br>月嫂的定级是根据“工作经历、技能、证书、用户满意度”来综合评估的。</h4>
+                        <ul>
+                        	<li class="jiage-01">
+                            	<h5><span><strong>8800</strong>元</span>中级月嫂</h5>
+                                <div class="clearfix">
+                                <i></i>
+                                <dl>
+                                	<dt>服务：</dt>
+                                    <dd>26天</dd>
+                                </dl>
+                                <dl>
+                                	<dt>经验：</dt>
+                                    <dd>3年以上工作经验</dd>
+                                </dl>
+                                <dl>
+                                    <dt>&nbsp;&nbsp;&nbsp;</dt>
+                                    <dd>母婴护理师证</dd>
+                                </dl>
+                                </div>
+                            </li>
+                            <li class="jiage-01 jiage-02">
+                            	<h5><span><strong>10800</strong>元</span>高级月嫂 </h5>
+                                <div class="clearfix">
+                                <i></i>
+                                <dl>
+                                	<dt>服务：</dt>
+                                    <dd>26天</dd>
+                                </dl>
+                                <dl>
+                                	<dt>经验：</dt>
+                                    <dd>4年以上工作经验</dd>
+                                </dl>
+                                <dl>
+                                    <dt>&nbsp;&nbsp;&nbsp;</dt>
+                                    <dd>母婴护理师证、催乳师证</dd>
+                                </dl>
+                                </div>
+                            </li>
+                            <li class="jiage-01 jiage-03">
+                            	<h5><span><strong>12800</strong>元</span>特I级月嫂</h5>
+                                <div class="clearfix">
+                                <i></i>
+                                <dl>
+                                	<dt>服务：</dt>
+                                    <dd>26天</dd>
+                                </dl>
+                                <dl>
+                                	<dt>经验：</dt>
+                                    <dd>5年以上工作经验</dd>
+                                </dl>
+                                <dl>
+                                    <dt>&nbsp;&nbsp;&nbsp;</dt>
+                                    <dd>母婴护理师证、催乳师证、营养月子餐配制</dd>
+                                </dl>
+                                </div>
+                            </li>
+                            <li class="jiage-01 jiage-04">
+                                <h5><span><strong>15800</strong>元</span>特II级月嫂 </h5>
+                                <div class="clearfix">
+                                <i></i>
+                                <dl>
+                                    <dt>服务：</dt>
+                                    <dd>26天</dd>
+                                </dl>
+                                <dl>
+                                    <dt>经验：</dt>
+                                    <dd>6年以上工作经验
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>&nbsp;&nbsp;&nbsp;</dt>
+                                    <dd>母婴护理师证、催乳师证、营养月子餐配制、小儿推拿或产后调理
+                                    </dd>
+                                </dl>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- jiage end -->
+                <!-- liucheng start -->
+            	<div class="ysbg margin-top clearfix" id="liucheng">
+                    <div class="title"><b>服务流程</b></div>
+                    <div class="liucheng"><img src="__PUBLIC__/Home/yuesao_files/liucheng.gif"></div>
+                </div>
+                <!-- liucheng end -->
+            </div>
+            <!-- left end  -->
+            <!-- right start -->
+            <div class="right fr">
+               <div style="height: 602px;" class="pin-wrapper"><div style="width: 290px;" class="panel">
+                <div class="form">
+                    <h2 class="title">在线预约</h2>
+                    <div class="body">
+                        <div class="form-group">
+                            <input class="form-control" id="tel" placeholder="请输入手机号码" onblur="inputTel(this.value);" type="text">
+                            <i class="inp-del" id="inp-del"></i>
+                            <div style="display: none;" class="input-z" id="mobile_error">
+                               <!--  <span>请输入正确的电话号码格式</span> -->
+                            </div>
+                        </div>
+                        <h3>选择需要月嫂的开始时间及天数</h3>
+                        <div class="form-group">
+                            <input class="form-control ui-datepicker-time" id="datetime" readonly="readonly" placeholder="请选择开始日期" type="text">
+                            <i class="date-icon"></i>
+                            <div style="display: none;" class="input-z input-ts" id="calendar_error">
+                                <!-- <span>请选择需要月嫂天数</span> -->
+                            </div>
+                        </div>
+                        <div class="radio" id="tians">
+	                        <ul>
+	                            <li class="hover" onclick="setDuration(26,this)">26天</li>
+	                            <li onclick="setDuration(42,this)">42天</li>
+	                            <li onclick="setDuration(52,this)">52天</li>
+	                        </ul>
+                        <input id="duration" name="duration" value="26" type="hidden">
+                        </div>
+                        <div class="submit-btn styfff" id="ljyy">立即预约</div>
+                    </div>
+                </div>
+                
+                <div class="online-search" style="display:none">
+                    <div>
+                    <i class="qq"></i>
+                    <a href="javascript:;">在线咨询</a>
+                    </div>
+                </div>
+                <div class="phone-search">
+                    <div class="company-tel" href="javascript:;">
+                        <i class="phone-icon"></i>
+                        <strong class="tel-name">电话咨询  :</strong> 
+                        <strong>400-631-5858</strong>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="header">
+                    <h2 class="title">常见疑问</h2>
+                    <a class="more" href="http://bj.daojia.com/yuesao/yiwen/" target="_blank">更多 &gt;&gt;</a>
+                    </div>
+                    <ul>
+                        <li><a href="http://bj.daojia.com/yuesao/yiwen#aa" target="_blank">月嫂与保姆的区别是什么？</a></li>
+                        <li><a href="http://bj.daojia.com/yuesao/yiwen#bb" target="_blank">月嫂请多久比较合适？</a></li>
+                        <li><a href="http://bj.daojia.com/yuesao/yiwen#ff" target="_blank">58月嫂是如何挑选并分级的？</a></li>
+                    </ul>
+                </div>
+            </div></div>
+            </div>
+            <!-- right end  -->
+            <!-- 侧边菜单 -->
+                <div style="height: 483px;" class="pin-wrapper"><div style="width: 63px;" id="elevator" class="elevator stuckMenu">
+                    <ul>
+                        <li class="menuItem active">
+                            <a class="etitle" href="#baozhang">保障</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="etitle" href="#peixun">培训</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="etitle" href="#laixin">评价</a>
+                        </li>
+                        <li class="menuItem oneday">
+                            <a class="etitle" href="#yitian">月嫂<br>的一天</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="etitle" href="#fuwu">服务</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="etitle" href="#jiage">价格</a>
+                        </li>                        
+                        <li class="menuItem">
+                            <a class="etitle" href="#liucheng">服务流程</a>
+                        </li>
+                    </ul>
+                </div></div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
+    <input id="randomYuesao" value="40000000006918" type="hidden">
+    <!-- wrapper end  -->
+    <!-- footer start -->
+    </block>
+	<div class="footer clear">
+	    <div class="standard">
+		  	<ul>
+			    <li class="standard-l">
+			      <p>
+			        <span></span>专业
+			      </p>
+			      <h6>标准化培训 严格甄选 专业设备</h6>
+			    </li>
+			    <li class="standard-l standard-c">
+			      <p>
+			        <span></span>保障
+			      </p>
+			      <h6>专属客服跟进 有问题先赔款 服务到您满意</h6>
+			    </li>
+			    <li class="standard-l standard-r">
+			      <p>
+			        <span></span>便捷
+			      </p>
+			      <h6>上千位服务人员 全城高密度覆盖 上门准时</h6>
+			    </li>
+		  	</ul>
+		</div>		
+
+		<div class="nav-footer">
+  			<div class="link">
+        <ul>
+		      <li><b>热门城市： </b></li>
+		      <li class="ll">
+		      	        	<div class="link-item">
+		         		 <a href="http://bj.daojia.com/yuesao/">北京月嫂</a>
+		        	</div>
+		                        <div class="link-item">
+		          <a href="http://sh.daojia.com/yuesao/">上海月嫂</a>
+		        </div>
+		                        <div class="link-item">
+		          <a href="http://gz.daojia.com/yuesao/">广州月嫂</a>
+		        </div>
+		                        <div class="link-item">
+		          <a href="http://sz.daojia.com/yuesao/">深圳月嫂</a>
+		        </div>
+		                        <div class="link-item">
+		          <a href="http://tj.daojia.com/yuesao/">天津月嫂</a>
+		        </div>
+		                        <div class="link-item">
+		          <a href="http://cd.daojia.com/yuesao/">成都月嫂</a>
+		        </div>
+		                        <div class="link-item">
+		          <a href="http://hz.daojia.com/yuesao/">杭州月嫂</a>
+		        </div>
+		                        <div class="link-item">
+		          <a href="http://su.daojia.com/yuesao/">苏州月嫂</a>
+		        </div>
+		                        <div class="link-item">
+		          <a href="http://cs.daojia.com/yuesao/">长沙月嫂</a>
+		        </div>
+		                        <div class="link-item">
+		          <a href="http://cq.daojia.com/yuesao/">重庆月嫂</a>
+		        </div>
+		                        <div class="link-item">
+		          <a href="http://dl.daojia.com/yuesao/">大连月嫂</a>
+		        </div>
+		                        <div class="link-item">
+		          <a href="http://hrb.daojia.com/yuesao/">哈尔滨月嫂</a>
+		        </div>
+		              </li>
+    	</ul>
+        <ul>
+		      <li><b>热门类别：</b></li>
+		      <li class="ll">
+		            	      	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/baojie1/">北京日常保洁</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/caboli/">北京擦玻璃</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/baojie2/">北京深度保洁</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/jiadianqingxi/">北京家电清洗</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/yanghu/">北京家居养护</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/yuesao/">北京月嫂</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/baomu/">北京保姆</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/meijia/">北京美甲</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/meijie/">北京美睫</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/xiejia/">北京修护及卸甲</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/huazhuang/">北京化妆</a>
+		        	</div>
+		        	      	               	       	 	 <div class="link-item">
+		         		 <a href="http://bj.daojia.com/huoyun/">北京速运</a>
+		        	</div>
+						</li>
+    	</ul>
+       <ul class="last">
+		      <li><b>友情链接：</b></li>
+		      <li class="ll">
+		                <div class="link-item">
+		          <a href="http://qiche.tieyou.com/beijing-1161/" target="blank">六里桥长途汽车站</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.shuyingyuesao.com/" target="blank">潍坊月嫂</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://bj.liepin.com/kehujingli/" target="blank">北京客户经理招聘</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.zuiben.com/pc_3/3" target="blank">游戏辅助</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.ht.cn/Index/tmclass/id/35.html" target="blank">商标转让</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://bj.liepin.com/kehujingli/" target="blank">北京客户经理招聘</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://baoding.anjuke.com/sale/qingyuanjif/" target="blank">清苑二手房网</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.scarbbs.com/31t6p1/" target="blank">疤痕怎么治疗</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://ys.yongsao.com/" target="blank">南宁月嫂</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.zuiben.com/a_game/1" target="blank">好玩的安卓休闲游戏</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.d9soft.com/zhuanti/aqsydn/" target="blank">电脑安全软件</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://sz.168dc.com/xiezilou-longhuajiedao/" target="blank">龙华写字楼</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://app.tongbu.com/iphone-yinyue/" target="blank">苹果音乐软件下载</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.songchaye.com/fenlei19" target="blank">信阳毛尖价格</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://kaoshi.china.com/zhengquan/wangxiao/" target="blank">证券从业培训</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://bj.ganji.com/yuesao/" target="blank">北京月嫂</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.songchaye.com/fenlei1" target="blank">乌龙茶价格</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.mffanwen.com/sw/bgwx/" target="blank">报告文学</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.tianqi4.com/beijing/" target="blank">北京天气预报30天</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://news.wbiao.cn/armani/" target="blank">阿玛尼官网</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.tianqi4.com/miyun/" target="blank">密云天气预报30天</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.duoduoyin.com/bj/" target="blank">北京名片制作</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.kuaidi10.com/aae.html" target="blank">AAE-中国件单号查询</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://job.timefr.com/beijing/" target="blank">北京兼职招聘</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://lc.cfuym.com/jsq/ershoufangjiaoyishui.html" target="blank">二手房交易税费计算器</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.qi-wen.com/shijiezhizui/" target="blank">世界之最</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.qi-wen.com/" target="blank">奇闻趣事</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://jiangmen.wbnsp.com/" target="blank">江门信息网</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.21xia.cn/job/jianzhu-c109-1.html" target="blank">建筑工</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.21xia.cn/sell/huagong-c149-1.html" target="blank">化工</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.yilvcheng.com/beijing" target="blank">北京旅游</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.kanzhun.com/job/c7/" target="blank">北京招聘网</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.tujian.com/gclw/" target="blank">建筑工程论文</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.tujian.com/gcsj/" target="blank">工程资料书籍</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.lvzheng.com/reg_bj.html" target="blank">北京公司注册代理</a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://www.99danji.com/new/" target="blank">最新单机游戏 </a>
+		        </div>
+		                <div class="link-item">
+		          <a href="http://g.58.com/j-glvancouver/glyuesao/" target="blank">温哥华月子中心</a>
+		        </div>
+		              </li>
+    	</ul>
+    </div>
+    </block>
+<block name="content3">
+
+</div>
+
+<div class="nav-bottom">
+  <p>
+    <a href="http://bj.daojia.com/join/" rel="nofollow">加入我们</a>
+    |<a href="http://www.daojia.com/aboutus/" rel="nofollow">关于我们</a>
+    |<a href="http://bj.daojia.com/map/">网站地图</a>
+    |<a href="http://www.daojia.com/reports/" rel="nofollow">媒体报道</a>
+  </p>
+  ©2015 Daojia.com 58到家版权所有  津ICP备15004920号 
+  <br> 天津五八到家生活服务有限公司
+</div>	</div>
+        <!-- footer end  -->
+    <!-- 侧边栏菜单 start -->
+	 <div id="tbox">
+      <div class="icon-q"><a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzkzODAzNTk4OF8zMjM2NjdfNDAwNjMxNTg1OF8yXw" target="_blank" onclick='trackClick("csbaction=daojia_yuesao_base_consult&amp;consult=QQ");'>QQ咨询</a></div>
+      <div class="icon"><a href="http://p.qiao.baidu.com//im/index?siteid=7240135&amp;ucid=10883567" target="_blank" onclick='trackClick("csbaction=daojia_yuesao_base_consult&amp;consult=BAIDU");'>在线咨询</a></div>
+      <div class="icon-d"><a href="#tag_about">400-631-5858</a></div>
+      <a style="display: none;" id="gotop" href="javascript:void(0)"></a>
+ </div>
+<!-- <div class="zix-wrap" style="display: none;">
+    <a class="zix-close" onclick="shutdown();"></a>
+    <div class="zix-dianhua">400-631-5858</div>
+    <div class="zix-btn">
+	    <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAzNTk4OF8zMjM2NjdfNDAwNjMxNTg1OF8yXw" target="_blank" class="an-n" onclick='trackClick("csbaction=daojia_yuesao_base_consult");'>
+	    <img src="http://dj.58cdn.com.cn/csdj/pc/ys/2.0.0/images/eject-02.gif">
+	    </a>
+	    <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAzNTk4OF8zMjM2NjdfNDAwNjMxNTg1OF8yXw" target="_blank" class="an-y" onclick='trackClick("csbaction=daojia_yuesao_base_consult");'>
+	    <img src="http://dj.58cdn.com.cn/csdj/pc/ys/2.0.0/images/eject-01.gif">
+	    </a>
+    </div>
+</div>
+ -->		<!-- QQ自动弹窗 -->
+	 <script type="text/javascript">
+function onGetSigtSigu(a) {
+	if (null == a || "" == a) {
+		return
+	}
+	trackClick('action=daojia_yuesao_base_consult&csbaction=daojia_yuesao_base_consult&consult=QQ');
+	location["href"] = 'tencent://message/?Menu=yes&amp;uin=938035988&amp;Service=58&amp;SigT=A7F6FEA02730C98854AC72D0306350FDF60D857859BA9F4AB65F92F0B02B735A11CB3A8BD6754F22ADA7C87D251E08ECA08BC28B1692ADEA3AB99C985F5B3E1A0F9CC76AEE2B034EEBBB565F83B222C49A9DDB6BE75CC1E78213CC2574468507B23CDB591BE323D115A16AD0EB7B3F91CE4FE9C1E67F9929&amp;SigU=30E5D5233A443AB2B735CE87F01CF176C2E4D6ED59630A09AC1B7548C6B806A6D515B1C34399FC62DFCB6CACE3B31359E9C434396CCA11E83C57CC0CC459BBD5FDC1B68B7F2755D0'
+}
+window["onload"] = onGetSigtSigu;
+var intervalId = setInterval(function(){
+	if(window.frames[1]) {
+		try{
+		    var launchBtn = window.frames[1].document.getElementById("launchBtn");
+		    launchBtn.onclick = function(){
+			    //统计代码
+			    trackClick('action=daojia_yuesao_base_consult&csbaction=daojia_yuesao_base_consult&consult=QQ');
+		    }
+		    clearInterval(intervalId);
+		}catch(e){
+			clearInterval(intervalId);
+		}
+	}
+},60);
+</script>
+<!-- WPA Button Begin -->
+<!--<script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php? key=XzkzODAzNTk4OF8zMjE1ODRfNDAwNjMxNTg1OF8"></script>
+ WPA Button End -->    <script type="text/javascript" src="__PUBLIC__/Home/yuesao_files/jquery-1.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/yuesao_files/core.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/yuesao_files/index.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/yuesao_files/jquery.js"></script>	
+	<script type="text/javascript">
+		var jd_server_path = "http://www.daojia.com";
+		var userIpCount = '';
+		var cookieCount = '0';
+		var value=  $.cookie("QQ_SHOW_TIMES");
+		if(isNaN(value) || null == value){
+			$(".zix-wrap").css("display", "block");
+			var cookietime = new Date();
+			cookietime.setTime(cookietime.getTime() + 30 * 24 * 60 * 60 * 1000);
+			$.cookie("QQ_SHOW_TIMES", 1, {path: '/',expires:cookietime,domain:'daojia.com'});	
+		}else{
+			var times = parseInt(value);
+			if(times < 2){
+				$(".zix-wrap").css("display", "block");
+			}
+		}
+		function shutdown (){
+			$(".zix-wrap").css("display", "none");
+			var value=  $.cookie("QQ_SHOW_TIMES");
+			if(isNaN(value)){
+				$.cookie("QQ_SHOW_TIMES", 1);	
+			}else{
+				var times = parseInt(value);
+				if(times >=2 ){
+					$(".zix-wrap").css("display", "none");
+				}else{
+					setTimeout(function(){
+						$(".zix-wrap").css("display", "block");
+						var times2 = times + 1 ;
+						var cookietime = new Date();
+						cookietime.setTime(cookietime.getTime() + 30 * 24 * 60 * 60 * 1000);
+						$.cookie("QQ_SHOW_TIMES",times2,{path: '/',expires:cookietime,domain:'daojia.com'});
+					},15000);
+				}
+			}
+		}
+</script>
+	<script type="text/javascript">
+		function inputTel(obj) {
+			var tel = obj;
+			//判断是否是合法的电话号码
+			var flag = /^1\d{10}$/.test(tel);
+			//如果是合法的电话号码则进行统计
+			if (flag) {
+				$.ajax({
+					type : "POST",
+					url : "/yuesao/countInputTelephone",
+					data : {
+						tel : tel
+					},
+					dataType : "json",
+					success : function(data) {
+						//alert(data.success);
+					}
+				});
+			}
+		}
+	</script>
+ 
+
+</body></html>
+</script>
+</block>

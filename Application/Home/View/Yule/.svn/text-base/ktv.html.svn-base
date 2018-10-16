@@ -1,0 +1,25 @@
+<extend name="sport" />
+<block name="type">
+	
+	<dl class="secitem" id="mianji">
+    <dt>服务类型：</dt>
+    <dd>
+
+        <a rel="nofollow" href="{:U('Home/yule/index/gclass/ktv')}" class="select" onclick="clickLog('from=fc_esflist_bj_mianji_$areaVal');">不限 
+        </a>
+        <foreach name="sclass" item="vo">
+        <a rel="nofollow" href="{:U('Home/yule/index/gclass/ktv')}?sclass={$vo}" vppvval="0_50" onclick="clickLog('from=fc_esflist_bj_mianji_0_50');">{$vo} 
+        </a>
+        </foreach>
+</block>
+
+
+<block name="page">
+	 <div class="pager" id="house-area"> 
+        <a class="prv" href="{:U('Home/yule/index/gclass/ktv')}?pagenow={$pagenow-1}"><span>上一页</span></a>
+
+       <for start="1" end="3" name="i">
+            <a href="{:U('Home/yule/index/gclass/ktv')}?pagenow={$i}"><span>{$i}</span></a>
+        </for>
+        <a class="next" href="{:U('Home/yule/index/gclass/ktv')}?pagenow={$pagenow+1}"><span>下一页</span></a></div>
+</block>

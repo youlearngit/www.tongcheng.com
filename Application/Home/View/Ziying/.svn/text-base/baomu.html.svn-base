@@ -1,0 +1,502 @@
+<extend name="Ziying/index" />
+<block name="content">
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>【北京保姆|北京住家保姆|北京保姆价格】- 北京58到家</title>
+<meta name="keywords" content="北京保姆,北京住家保姆,北京保姆价格,北京陪床保姆,北京家庭保姆">
+<meta name="description" content="58到家北京保姆为您提供专业、便捷、安心的标准化保姆服务，主要包括育儿师、家政师、住家保姆等到家服务，找保姆服务就上58到家。">	<link href="__PUBLIC__/Home/baomu_files/style.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/baomu_files/ys.css" rel="stylesheet" type="text/css">
+        <meta name="location" content="province=北京;city=北京">
+	
+<script src="__PUBLIC__/Home/baomu_files/hm.js"></script><script src="__PUBLIC__/Home/baomu_files/tracker.js"></script><script type="text/javascript">
+var bi_params = {csbaction:'daojia_baomu_base_show', cityid:'96',cateid:'19',pagetype:'DETAIL',termtype:1};
+(function() {
+  var bi_hm = document.createElement("script");
+  bi_hm.src = "http://pic2.58.com/m58/app58/m_static/js/bi/tracker.js";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(bi_hm, s);
+})();
+
+</script></head>
+<body>
+</block>
+    <div class="header">
+        <div class="head clearfix">
+            <div class="fl">
+                <a class="logo" href="http://bj.daojia.com/"></a>
+            </div>
+            <div class="site fl"></div>
+            <div class="head-r fr">
+                <div class="tbar-login sty000 fr clearfix"></div>
+                <div class="nav sty000 fr clearfix">
+                    <a href="http://www.daojia.com/download/" rel="nofollow">下载APP</a> 
+                    <a href="http://bj.daojia.com/vip/" rel="nofollow">购买会员</a>
+                    <a href="http://bj.daojia.com/duigong/">对公业务</a>  
+                    <a class="on" href="http://bj.daojia.com/baomu/" onclick='trackClick("action=daojia_baomu_pc_daohang");'>保姆</a>
+                    <a class="nav-ys" href="http://bj.daojia.com/yuesao/"><i></i>月嫂</a> 
+                    <a href="http://bj.daojia.com/suyun/">速运</a> 
+                	<a href="http://bj.daojia.com/liren/">丽人</a> 
+	    	        <a href="http://bj.daojia.com/jiazheng/">家政</a> 
+                    <a href="http://bj.daojia.com/">首页</a>
+                </div>
+            </div>
+            <form id="form1" method="post" action="http://www.daojia.com/baomu/selectCity/">
+              <input id="backCityUrl" name="backCityUrl" value="http://_city_.daojia.com/baomu/" type="hidden">
+            </form>
+        </div>
+        <div class="breadcrumb">
+    	    <p class="c_c">
+    	        <i class="breadcrumb-icon"></i>
+              	<a href="http://bj.daojia.com/">首页</a> 
+        	    &gt;<a href="http://bj.daojia.com/jiazheng/"> 北京家政</a> 
+        	    &gt;<a href="http://bj.daojia.com/baomu/"> 北京保姆</a> 
+    	    </p>
+  	    </div>    
+    </div>  
+<block name="content1">
+    <div class="wrapper clearfix" style="background:url(__PUBLIC__/Home/index/bg1.png) no-repeat">
+    	<div class="wra-b">
+            <div class="banner"></div>
+            <!-- left start -->
+            <div class="container clearfix">
+            <div class="left fl">
+            	<!-- yibu start -->
+            	<div class="ysbg clearfix" id="youshi">
+                	<div class="one-p clearfix">
+                    	<div class="yi">1</div>
+                        <dl class="yi-t">
+                        	<dt>58品牌保姆 更放心</dt>
+                            <dd>58到家是58同城投资打造的互联网家政品牌，服务项目涉及钟点工、保姆、月嫂等多个领域，业务覆盖全国28个城市，拥有劳动者10000余人的互联网家政企业。</dd>
+                        </dl>
+                        <div class="one-b fl clearfix">
+                        	<div class="one-b-l fl">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <thead>
+                                      <tr>
+                                        <th><span></span>58保姆</th>
+                                      </tr>
+                                      </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>58品牌保障</td>
+                                      </tr>
+                                      <tr>
+                                        <td>保姆数量多、选择空间大、线上匹配、快速精准</td>
+                                      </tr>
+                                      <tr>
+                                        <td>保姆正规体检、身份验证、安全放心</td>
+                                      </tr>
+                                      <tr>
+                                        <td>技能经验评分体系完善、甄选优势服务项目</td>
+                                      </tr>
+                                      <tr>
+                                        <td>快速跟踪服务情况、及时处理问题纠纷</td>
+                                      </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                            <div class="vs"></div>
+                            <div class="one-b-l one-b-r fr">
+                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <thead>
+                                      <tr>
+                                        <th><span></span>传统家政</th>
+                                      </tr>
+                                      </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>中介</td>
+                                      </tr>
+                                      <tr>
+                                        <td>保姆资源有限、可选择数目少</td>
+                                      </tr>
+                                      <tr>
+                                        <td>保姆信息不透明、存在安全隐患</td>
+                                      </tr>
+                                      <tr>
+                                        <td>无技能及经验评判、服务水平参差不齐</td>
+                                      </tr>
+                                      <tr>
+                                        <td>抱怨投诉无门、保姆更换难</td>
+                                      </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- yibu end -->
+                <!-- erbu start -->
+            	<div class="ysbg margin-top clearfix" id="fuwu">
+                	<div class="one-p clearfix">
+                    	<div class="yi">2</div>
+                        <dl class="yi-t">
+                        	<dt>58保姆类型</dt>
+                        </dl>
+                        <div class="erbu">
+                            <h3 class="bg-yes">育儿嫂</h3>
+                            <p class="tl-h">负责小孩的起居护理、饮食护理、疾病护理等日常护理和生活保健与五项行为能力。</p>
+                            <ul class="wh-bf612">
+                                <li class="fl-gy bg-colA wh-bf142">
+                                    <h4>起居护理</h4>
+                                    <p>洗漱、四具清洁、睡眠</p>
+                                </li>
+                                <li class="fl-gy bg-colA wh-bf224">
+                                    <h4>疾病护理</h4>
+                                    <p>常见病的辨识、常见病简单处理方法</p>
+                                </li><li class="fl-gy bg-colA wh-bf130">
+                                    <h4>饮食护理</h4>
+                                    <p>奶粉冲调、辅食制作</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="fl-gy bg-colA wh-bf224">
+                                    <h4>生活保健</h4>
+                                    <p>测量身长与头围、测量体温与数脉搏</p>
+                                </li>
+                                <li class="fl-gy bg-colA wh-bf340">
+                                    <h4>五项行为能力</h4>
+                                    <p>抚触、被动操、主被动操、精细动作及知识认知</p>
+                                </li>
+                            </ul>
+                            <h3 class="bg-bm">保姆</h3>
+                            <p class="tl-h">负责家庭的日常清洁维护、做饭、协助照顾老人、小孩以及客户吩咐的其他事物等。</p>
+                            <ul>
+                                <li class="fl-gy bg-colB wh-bf310">
+                                    <h4>日常保洁</h4>
+                                    <p>打扫卫生：卧室、卫生间、厨房</p>
+                                    <p>家居清洁：沙发、冰箱、洗衣机、灶台、油烟机等</p>
+                                </li>
+                                <li class="fl-gy bg-colB wh-bf254">
+                                    <h4>协助照顾老人</h4>
+                                    <p>陪护：看病取药、散步、聊天、购物</p>
+                                    <p>照顾：提醒按医嘱吃药、协助脱穿衣服等</p>
+                                </li>
+                                <li class="fl-gy bg-colB wh-bf228">
+                                    <h4>做家庭餐、西餐、营养餐</h4>
+                                    <p>面食：包子、饺子、面条、烙饼</p>
+                                    <p>菜肴：红烧、煎炸、清蒸、凉拌、炒</p>
+                                    <p>汤粥：荤汤、素汤、家常粥、营养粥</p>
+                                </li>
+                                <li class="fl-gy bg-colB wh-bf338">
+                                    <h4>洗涤熨烫</h4>
+                                    <p>物料识别：丝、棉、麻、毛、化纤</p>
+                                    <p>洗涤方法：机洗、手洗、干洗</p>
+                                    <p>熨烫方法：普通熨烫、蒸汽喷雾式熨烫、挂烫机</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- erbu end -->
+                <!-- sambu start -->
+            	<div class="ysbg margin-top clearfix" id="laiyuan">
+                	<div class="one-p clearfix">
+                    	<div class="yi">3</div>
+                        <dl class="yi-t">
+                        	<dt>优质保姆来源</dt>
+                        </dl>
+                        <div class="yzbmly">
+                            <div class="bm-banner"><img src="__PUBLIC__/Home/baomu_files/bm-banner.png"></div>
+                            <h3>58全网直招</h3>
+                            <p>58同城品牌担保， 严格招聘、专业培训、考核上岗。</p>
+                            <h3>各地劳务输送</h3>
+                            <p>与百家家政劳务公司深度合作，服务人员供给充足。</p>
+                            <h3>经纪人担保</h3>
+                            <p>专业一对一服务，快速匹配用户需求、全程跟踪服务质量。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- sambu end -->
+                <!-- sibu start -->
+            	<div class="ysbg margin-top clearfix" id="jiage">
+                	<div class="one-p clearfix">
+                    	<div class="yi">4</div>
+                        <dl class="yi-t">
+                        	<dt>58保姆价格</dt>
+                        </dl>
+                        <div class="price">
+                        	<p>58到家采取<span>保姆工资+信息服务费</span>的收费模式，根据客户对保姆类型及实际工作项目的不同选择核算，价格普遍低于市场价格10%。58到家提供免费的定期电话跟踪服务，听取顾客反映真实服务情况，改善服务不足或处理用户预期。</p>
+                            <dl>
+                                <dt>信息服务费</dt>
+                                &nbsp;&nbsp;&nbsp;<img src="__PUBLIC__/Home/index/baomuxin.png" alt="">
+                            <img src="__PUBLIC__/Home/index/yuerxin.png" alt="">
+
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!-- sibu end -->
+                <!-- wubu start -->
+            	<div class="ysbg margin-top clearfix" id="liucheng">
+                	<div class="one-p clearfix">
+                    	<div class="yi">5</div>
+                        <dl class="yi-t">
+                        	<dt>58保姆预约流程</dt>
+                        </dl>
+                        <div class="process">
+                            <dl>
+                                <dt>签约前<span></span></dt>
+                            <img src="__PUBLIC__/Home/index/yuyueqian.png" alt="">
+                            </dl>
+                            <dl>
+                                <dt>签约后<span></span></dt>
+                            <img src="__PUBLIC__/Home/index/yuyuehou.png" alt="">
+                            </dl>
+                        </div>                        
+                    </div>
+                </div>
+                <!-- wubu end -->
+                <!-- choice start -->
+                <div class="ysbg margin-top clearfix" id="baozhang">
+                    <div class="one-p clearfix">
+                        <div class="yi">6</div>
+                        <dl class="yi-t">
+                            <dt>安心品质、放心选择</dt>
+                        </dl>
+                        <div class="choice">
+                            <ul>
+                                <img src="__PUBLIC__/Home/index/pinpai.png" alt="">
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+                <!-- choice end -->
+            </div>
+            <!-- left end  -->
+            <!-- right start -->
+            <div class="right fr">
+            	<div style="height: 604px;" class="pin-wrapper"><div style="width: 290px;" class="panel">
+                <div class="form">
+                    <h2 class="title">在线预约</h2>
+                    <div class="body" id="form_com">
+                        <div class="form-group">
+                            <input class="form-control" id="username" placeholder="请输入姓名" maxlength="10" name="username" type="text">
+                            <i class="inp-del"></i>
+                            <div class="input-z">
+                                <span>请输入姓名</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="phone" name="phone" maxlength="11" placeholder="请输入手机号码" type="text">
+                            <i class="inp-del"></i>
+                            <div class="input-z">
+                                <span>请输入正确的电话号码格式</span>
+                            </div>
+                        </div>
+                        <div class="single-choice" name="childcare" value="育儿嫂">
+                            <strong>我要找：</strong>
+                            <span class="ativer">育儿嫂</span>
+                            <span>保姆</span>
+                        </div>
+                        <div class="drop-down clearfix">
+                            <div class="drop-down-com" style="z-index: 10;">
+                                <span name="experi">经验年限&nbsp;&nbsp;&nbsp;&nbsp;<img src="index/xiala.png" alt="" style="cursor:pointer"></span>
+                                <ul>
+                                    <li>一年以下</li>
+                                    <li>1-3年</li>
+                                    <li>3-5年</li>
+                                    <li>5年以上</li>
+                                </ul>
+                            </div>
+                            <div class="drop-down-com" style="z-index: 9;">
+                                <span name="age">保姆年龄&nbsp;&nbsp;&nbsp;&nbsp;<img src="index/xiala.png" alt="" style="cursor:pointer"></span>
+                                <ul>
+                                    <li>18-25周岁</li>
+                                    <li>26-30周岁</li>
+                                    <li>31-35周岁</li>
+                                    <li>36-40周岁</li>
+                                    <li>41-45周岁</li>
+                                    <li>46-50周岁</li>
+                                    <li>51-55周岁</li>
+                                </ul>
+                            </div>
+                            <div class="drop-down-com" style="z-index: 8;">
+                                <span name="whether">是否住家&nbsp;&nbsp;&nbsp;&nbsp;<img src="index/xiala.png" alt="" style="cursor:pointer"></span>
+                                <ul>
+                                    <li>是</li>
+                                    <li>否</li>
+                                </ul>
+                            </div>
+                            <div class="drop-down-com" style="z-index: 7;">
+                                <span name="service">服务区域&nbsp;&nbsp;&nbsp;&nbsp;<img src="index/xiala.png" alt="" style="cursor:pointer"></span>
+                                <ul>
+                                    <li>朝阳</li>
+                                    <li>海淀</li>
+                                    <li>东城</li>
+                                    <li>西城</li>
+                                    <li>昌平</li>
+                                    <li>石景山</li>
+                                    <li>通州</li>
+                                    <li>其它</li>
+                                </ul>
+                            </div>
+                            <div class="drop-down-com" style="z-index: 6;">
+                                <span name="price">价格区间&nbsp;&nbsp;&nbsp;&nbsp;<img src="index/xiala.png" alt="" style="cursor:pointer"></span>
+                                <ul>
+                                    <li>3000元以下</li>
+                                    <li>3001-5000元</li>
+                                    <li>5001-8000元</li>
+                                    <li>8001-10000元</li>
+                                    <li>10000以上</li>
+                                </ul>
+                            </div>
+                            <div class="drop-down-com" style="z-index: 5;">
+                                <span name="expect">预期服务时间<img src="index/xiala.png" alt="" style="cursor:pointer"></span>
+                                <ul>
+                                    <li>1-3个月</li>
+                                    <li>3-6个月</li>
+                                    <li>6-12个月</li>
+                                    <li>一年以上</li>
+                                </ul>
+                            </div>
+                        </div>
+                       <div class="submit-btn styfff"><a href="{:U('Home/Ziying/saixuan')}">立即预约</a></div>
+                        <p>每日9:00-17:00提交的订单,30分钟之内与您联系。其余时间收到订单后，我们会在次日12:00前与您联系。请保持手机畅通！</p>
+                    </div>
+                </div>
+                
+                <div class="phone-search">
+                    <div class="company-tel" href="javascript:;">
+                        <i class="phone-icon"></i>
+                        <strong class="tel-name">电话咨询  :</strong> 
+                        <strong>400-8909-238<br>010-60845444</strong>
+                    </div>
+                </div>
+                </div></div>
+            </div>
+            <!-- right end  -->
+            <!-- 侧边菜单 -->
+                <div style="height: 414px;" class="pin-wrapper"><div style="width: 63px;" id="elevator" class="elevator stuckMenu">
+                    <ul>
+                        <li class="menuItem active">
+                            <a class="etitle" href="#youshi">优势</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="etitle" href="#fuwu">服务范围</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="etitle" href="#laiyuan">保姆来源</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="etitle" href="#jiage">价格</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="etitle" href="#liucheng">预约流程</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="etitle" href="#baozhang">保障</a>
+                        </li>
+                    </ul>
+                </div></div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
+    </block>
+
+    <div class="footer">
+        <div id="tbox">
+      <div class="icon"><a href="http://p.qiao.baidu.com//im/index?siteid=7612628&amp;ucid=10883567" target="_blank" onclick='trackClick("csbaction=daojia_baomu_base_consult&amp;consult=BAIDU");'>在线咨询</a></div>
+      <div class="icon-d"><a href="#tag_about">电话咨询</a></div>
+      <!-- <a style="display: none;" id="gotop" href="javascript:void(0)"></a> -->
+</div>
+    	<div class="standard">
+  <ul>
+    <li class="standard-l">
+      <p>
+        <span></span>专业
+      </p>
+      <h6>标准化培训 严格甄选 专业设备</h6>
+    </li>
+    <li class="standard-l standard-c">
+      <p>
+        <span></span>保障
+      </p>
+      <h6>专属客服跟进 有问题先赔款 服务到您满意</h6>
+    </li>
+    <li class="standard-l standard-r">
+      <p>
+        <span></span>便捷
+      </p>
+      <h6>上千位服务人员 全城高密度覆盖 上门准时</h6>
+    </li>
+  </ul>
+</div>    	
+
+<div class="nav-footer">
+  <div class="link">
+            <ul class="last">
+      <li><b>热门类别：</b></li>
+      <li class="ll">
+            	      	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/baojie1/">北京日常保洁</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/caboli/">北京擦玻璃</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/baojie2/">北京深度保洁</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/jiadianqingxi/">北京家电清洗</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/yanghu/">北京家居养护</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/yuesao/">北京月嫂</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/baomu/">北京保姆</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/meijia/">北京美甲</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/meijie/">北京美睫</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/xiejia/">北京修护及卸甲</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/huazhuang/">北京化妆</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/huoyun/">北京速运</a>
+        	</div>
+		</li>
+    </ul>
+  </div>
+</div>
+
+<div class="nav-bottom">
+  <p>
+    <a href="http://bj.daojia.com/join/" rel="nofollow">加入我们</a>
+    |<a href="http://www.daojia.com/aboutus/" rel="nofollow">关于我们</a>
+    |<a href="http://bj.daojia.com/map/">网站地图</a>
+    |<a href="http://www.daojia.com/reports/" rel="nofollow">媒体报道</a>
+  </p>
+  ©2015 Daojia.com 58到家版权所有  津ICP备15004920号 
+  <br> 天津五八到家生活服务有限公司
+</div>    </div>
+      
+ <!--弹层-->
+ <div class="tsn-joh">
+    <div class="tsn-joh-tou"></div>
+    <div class="zix-wrap">
+        <h3>预约成功</h3>
+        <a class="zix-close">知道了</a>
+    </div>
+    <block name="content3">
+
+ </div>
+<!--弹层-->
+<script type="text/javascript" src="__PUBLIC__/Home/baomu_files/jquery-1.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/baomu_files/right_js.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/baomu_files/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/baomu_files/index.js"></script>
+
+</body></html>
+</block>

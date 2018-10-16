@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>【58游戏】最新网页游戏大全 - 好玩的网页游戏平台</title>
+<meta name="keywords" content="最新网页游戏,好玩的网页游戏">
+<meta name="description" content="58游戏是58同城旗下网页游戏平台,这里汇聚多款好玩的网页游戏。为广大玩家提供最新网页游戏，打造最好玩的网页游戏平台。58游戏，玩家首选好玩的网页游戏平台！">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<!-- 请置于所有广告位代码之前 -->
+<script src="__PUBLIC__/Home/login_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="__PUBLIC__/Home/login_files/m.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/login_files/jquery-1.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/login_files/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/login_files/slider.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/login_files/wbox.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/login_files/public.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/login_files/main.js"></script>
+<script src="__PUBLIC__/Home/login_files/pcuc.js" type="text/javascript"></script>
+<link rel="shortcut icon" type="image/jpeg" href="http://bj.58.com/favicon.ico">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/login_files/wbox.css">
+<link href="__PUBLIC__/Home/login_files/index_css_v4.css" rel="stylesheet" type="text/css">
+<script>
+document.domain = '58.com'; // 修改为与投放广告的页面一致的domain值
+</script>
+<style>
+.footer dl dt{ width:270px; position:relative;}
+.footer dl dd{ width:668px;}
+.logo-wen{ position:absolute; right:20px; top:10px;}
+</style>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    load_left();
+    doback();
+  });
+  
+  
+  // 加载登录区域
+    function load_left(){
+        $.ajax({
+            url: '/user/userinfo',
+            dataType: 'json',
+            cache:false,
+            success: function(data){
+                if (data.userid > 0){
+                    do_has_login(data);
+                }
+            }
+        });
+    }
+  
+  // 左侧区域登录后的文本
+    function do_has_login(data){
+    var face = data.face;
+    if (face=="") {
+      face = "http://pic2.58.com/n/wan/index_1307/touxiang.gif";
+    } else {
+      face = "http://pic1.58cdn.com.cn"+face;
+    }
+    $('#wanlogin').html('<div class="loginBox"><div class="login_ok"><dl><dt><img src="'+face+'" /></dt><dd><b><a href="http://my.58.com/" target="_blank">'+data.username+'</a></b><span><a href="http://wan.58.com/pay/index" target="_blank">[充值]</a><a onclick="newclearCookie()" href="https://passport.58.com/logout?back=now&path=http://wan.58.com">[退出]</a></span></dd></dl><p>最近登录服务器</p><ul id="lastloginserver"></ul></div></div><span class="dl"><a href="http://about.58.com/leaveword2.aspx?cateid=185" target="_blank">联系客服</a>|<a href="http://bbs.wan.58.com/forum.php" target="_blank">论坛社区</a>|<a href="/saveGameToDesk">保存到桌面</a></span>');
+    $('#userinfoid').html('<li><a href="http://my.58.com/" target="_blank">'+data.username+'</a><i>|</i></li><li><a onclick="newclearCookie()" href="https://passport.58.com/logout?back=now&path=http://wan.58.com">退出</a></li>');
+    $.ajax({
+      url: '/recentVisit?uid='+data.userid,
+      cache:false,
+       success: function(data){
+        $('#lastloginserver').html(data);
+       }
+    });
+    }
+
+  // 登录回调
+    function successFunction(){
+        login_back_call();
+    }
+    
+  // 注册页面
+    function toreg(){
+      var backurl = location.href;
+      location.href = "/user/reg?backurl="+backurl;
+    }
+  
+    function doback(){
+        $('#rememberLi').find('.passport-login-label').html("下次自动登录");
+        $('#rememberLi').append('<span id="forgetpassword-span"></span> <a id="forgetpassword-a" target="blank" href="https://passport.58.com/forgetpassword">忘记密码?</a>');
+        
+        //密码输入框获添加背景图片
+    if($("#pptpassword").val() != ''){
+        $("#pptpassword").removeClass().addClass("passport-login-input passport-login-input-password");
+    }else{
+      $("#pptpassword").removeClass().addClass("passport_img");
+    };
+      
+      
+    //密码输入框获取焦点事件
+    $("#pptpassword").bind("focus",function(){
+      $("#pptpassword").removeClass().addClass("passport-login-input passport-login-input-password");
+    });
+    //密码输入框失去焦点事件
+    $("#pptpassword").bind("blur",function(){
+      if($("#pptpassword").val() == ''){
+        $("#pptpassword").removeClass().addClass("passport_img");
+      }
+    });
+    
+    
+    //用户名输入框获取焦点事件
+    $("#pptusername").bind("focus",function(){
+      $("#pptusername").val('');
+      $("#pptpassword").removeClass().addClass("passport-login-input passport-login-input-password");
+    });
+    //用户名输入框失去焦点事件
+    $("#pptusername").bind("blur",function(){
+      if($("#pptusername").val() == ''){
+        $("#pptusername").val('用户名/电子邮箱');
+      }
+      if($("#pptpassword").val() != ''){
+        $("#pptpassword").removeClass().addClass("passport-login-input passport-login-input-password");
+      }else{
+      $("#pptpassword").removeClass().addClass("passport_img");
+      };
+    });
+    }
+    
+    function jyzhover() {
+      $("#jyzhdiv").css("display", "block");
+      $("#jyzha").addClass("nav_a_hover");
+    }
+    
+    function jyzhout() {
+      $("#jyzhdiv").css("display", "none");
+      $("#jyzha").removeClass("nav_a_hover");
+    }
+    
+    function spxcover() {
+      $("#spxcdiv").css("display", "block");
+      $("#spxca").addClass("nav_a_hover");
+    }
+    
+    function spxcout() {
+      $("#spxcdiv").css("display", "none");
+      $("#spxca").removeClass("nav_a_hover");
+    }
+    
+    function yxdtover() {
+      $("#yxdtdiv").css("display", "block");
+      $("#yxdta").addClass("nav_a_hover");
+    }
+    
+    function yxdtout() {
+      $("#yxdtdiv").css("display", "none");
+      $("#yxdta").removeClass("nav_a_hover");
+    }
+    
+    function closediv() {
+      $("#gameaddiv").css("display", "none");
+    }
+</script>
+</head>
+
+<body><div style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;" id="BAIDU_DUP_fp_wrapper"><iframe style="width: 0px; height: 0px; visibility: hidden; display: none;" src="__PUBLIC__/Home/login_files/o.htm" id="BAIDU_DUP_fp_iframe"></iframe></div><div style="width: 220px; height: 197px; overflow: hidden; z-index: 2147483647; right: 5px; bottom: 5px; position: fixed;" id="BAIDU_DUP_wrapper_857357_0"><iframe id="baidu_clb_slot_iframe_857357_0" src="about:blank" onload="BAIDU_DUP_CLB_renderFrame('857357_0')" vspace="0" hspace="0" allowtransparency="true" scrolling="no" marginwidth="0" marginheight="0" style="border:0; vertical-align:bottom; margin:0; display:block;" frameborder="0" height="180" width="220"></iframe><div style="height:15px;border:1px solid #e1e1e1;background:#f0f0f0;margin:0;padding:0;overflow:hidden;"><span style="float:right;clear:right;margin:2px 5px 0 0;width:39px;height:13px;cursor:pointer;background:url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/clb/1.0.0/close.gif) no-repeat scroll 0 0;" onmouseover="this.style.backgroundPosition='0 -20px';" onmouseout="this.style.backgroundPosition='0 0';" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"></span></div></div>
+<!-- 广告位：悬浮图片广告 -->
+<script type="text/javascript">BAIDU_CLB_fillSlot("857357");</script><script charset="utf-8" src="__PUBLIC__/Home/login_files/ecom"></script><script charset="utf-8" src="__PUBLIC__/Home/login_files/float7o.js"></script>
+<!--<div class="ad_game" id="gameaddiv"><a class="close" href="javascript:void(0)" onclick="closediv()"></a><a href="http://bbs.wan.58.com/ad/wan/piaofu?v=1448110072260" target="_blank"><img src="http://bbs.wan.58.com/ad/image/game-ad.gif"></a></div>-->
+  <div class="head" style="background:#434A59">
+    <div class="top">
+      <a class="logo" href="#"><img src="__PUBLIC__/Home/login_files/logo_03.jpg"></a><!--logo_end-->
+      <div class="nav">
+      <ul>
+      <li><a href="http://jiaoyou.58.com/?utm_source=top_wan_jyzh_0" target="_blank" class="nav_a " onmouseover="jyzhover()" onmouseout="jyzhout()" id="jyzha">交友征婚</a>
+          <div class="y_icon" style="display:none" id="jyzhdiv" onmouseover="jyzhover()" onmouseout="jyzhout()"><ol>
+          <li><a href="http://jiaoyou.58.com/usercenter/?utm_source=top_wan_jyzh_jy" target="_blank"><em class="jiaoyou"></em>我的交友</a></li>
+          <li><a href="http://jiaoyou.58.com/sjjy/?utm_source=top_wan_jyzh_zh" target="_blank"><em class="zhenghun"></em>征婚</a></li>
+          <li><a href="http://jiaoyou.58.com/encounter/?utm_source=top_wan_jyzh_xh" target="_blank"><em class="xiehou"></em>邂逅缘分</a></li>
+          <li><a href="http://jiaoyou.58.com/nearby/?utm_source=top_wan_jyzh_fj" target="_blank"><em class="fjdr"></em>附近的人</a></li>
+          <li><a href="http://jiaoyou.58.com/giftmall/?utm_source=top_wan_jyzh_lwsc" target="_blank"><em class="lwsc"></em>礼物商场</a></li>
+          <li><a href="http://jiaoyou.58.com/skills/?utm_source=top_wan_jyzh_jnjh" target="_blank"><em class="jnjh"></em>技能交换</a></li>
+          <li><a href="http://jiaoyou.58.com/photowall/?utm_source=top_wan_jyzh_zpq" target="_blank"><em class="zpq"></em>照片墙</a></li>
+          </ol>
+          <p class="d_x"></p>
+          </div><!--y_icon_end-->
+      </li>
+      <li><a href="http://jiaoyou.58.com/6rooms/?utm_source=top_wan_spxc_0" target="_blank" class="nav_a " onmouseover="spxcover()" onmouseout="spxcout()" id="spxca">美女直播</a>
+      <div class="y_icon" style="display:none" id="spxcdiv" onmouseover="spxcover()" onmouseout="spxcout()"><ol>
+          <li><a href="http://jiaoyou.58.com/6rooms/?utm_source=top_wan_spxc_mnzb" target="_blank"><em class="mnzb"></em>美女主播</a></li>
+          <li><a href="http://jiaoyou.58.com/mmvideo/?utm_source=top_wan_spxc_spjy" target="_blank"><em class="spjy"></em>视频交友</a></li>
+          <li><a href="http://jiaoyou.58.com/6rooms/?utm_source=top_wan_spxc_lb" target="_blank"><em class="liaoba"></em>聊吧</a></li>
+          <li><a href="http://jiaoyou.58.com/6rooms/?utm_source=top_wan_spxc_zy" target="_blank"><em class="zongyi"></em>K歌</a></li>
+          <li><a href="http://jiaoyou.58.com/6rooms/?utm_source=top_wan_spxc_wq" target="_blank"><em class="wuqu"></em>舞区</a></li>
+          </ol>
+          <p class="d_x"></p>
+          </div>
+      </li>
+      <li><a href="http://wan.58.com/?utm_source=top_wan_0" target="_blank" class="nav_a " onmouseover="yxdtover()" onmouseout="yxdtout()" id="yxdta">游戏中心</a>
+      <div class="y_icon" style="display:none" id="yxdtdiv" onmouseover="yxdtover()" onmouseout="yxdtout()">
+      <ol>
+    <li><a href="http://bbs.wan.58.com/ad/wan/jjsg/" onclick="_gaq.push(['pageTracker._trackEvent', 'topbar', 'top_jiaoyou', 'top/jjsg']);" target="_blank"><em class="n_jjsg"></em>街机三国</a></li><!--
+        <li><a href="http://bbs.wan.58.com/ad/wan/dxz/" onclick="_gaq.push(['pageTracker._trackEvent', 'topbar', 'top/dxz', 'top/zhenghun']);" target="_blank"><em class="n_dxz"></em>大侠传</a></li>
+        --><li><a href="http://bbs.wan.58.com/ad/wan/9lc/" onclick="_gaq.push(['pageTracker._trackEvent', 'topbar', 'top/jiaoyou', 'top/9lc']);" target="_blank"><em class="n_jlc"></em>九龙朝</a></li>
+        <li><a href="http://bbs.wan.58.com/ad/wan/rxhzw/" onclick="_gaq.push(['pageTracker._trackEvent', 'topbar', 'top/jiaoyou', 'top/rxhzw']);" target="_blank"><em class="n_rxhzw"></em>热血海贼王</a></li>
+        <li><a href="http://bbs.wan.58.com/ad/wan/mm/" onclick="_gaq.push(['pageTracker._trackEvent', 'topbar', 'top/jiaoyou', 'top/mm']);" target="_blank"><em class="n_nslm"></em>女神联盟</a></li>
+       </ol>
+          <p class="d_x"></p>
+          </div>
+      </li>
+      </ul>
+      </div><!--nav_end-->
+      <ul class="user_top" id="userinfoid"><li><a href="#" onclick="danchu()">登录</a><i>|</i></li><li><a href="http://wan.58.com/user/reg?backurl=http://wan.58.com/" target="_blank">注册</a></li></ul>
+    </div>
+</div><!--head_end-->
+
+
+    <div class="container">
+        <div class="topCon1">
+            <div class="slides">
+                <div class="slidesBgWrapper">
+                  <img src="__PUBLIC__/Home/login_files/lb.png" alt="" / width="100%" height="100%">
+                </div>
+                <div class="slidesWrapper" id="slidesWrapper0">
+                  <img src="__PUBLIC__/Home/login_files/lb1.png" alt="" / width="100%" height="100%">
+                </div>
+                <div class="slidesWrapper" id="slidesWrapper1">
+                  <img src="__PUBLIC__/Home/login_files/lb2.png" alt="" / width="100%" height="100%">
+                </div>
+                <div class="slidesWrapper" id="slidesWrapper2">
+                  <img src="__PUBLIC__/Home/login_files/lb2.png" alt="" / width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slides_but_p">
+        <div class="slides_btn">
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+        </div>
+    </div>
+   <!--<style>
+        .slides_btn .blue{
+            background:orange;
+        }
+
+    </style>-->
+
+    <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"> </script>
+                <script type="text/javascript">
+                //获取元素
+                $('.slides div').css('display','none');
+                $('.slides div').eq(0).css('display','block');
+
+                //绑定鼠标移入事件
+                var index = 0
+                var inte = null;
+
+                $('.slides_btn span').mouseover(function(){
+                    $(this).attr('class','on');
+                    $(this).siblings().removeAttr('class','on');
+                    index = $(this).index();
+                    $('.slides div').eq(index).show();
+                    $('.slides div').eq(index).siblings().css('display','none');
+                    clearInterval(inte);
+                })
+
+                //绑定鼠标移开事件
+                $('.slides_btn span').mouseout(function(){
+                    $(this).attr('class','on');
+                    inte = setInterval(function(){
+                        $('.slides div').eq(index).show();
+                        $('.slides div').eq(index).siblings().css('display','none');
+                        $(this).attr('class');
+                        $(this).siblings().removeAttr('class','on');
+                        index++;
+                        if(index>1){
+                            index = 0;
+                        }
+                    },3000);
+                })
+
+
+                 inte = setInterval(function(){
+                        $('.slides div').eq(index).show();
+                        $('.slides div').eq(index).siblings().css('display','none');
+                        $(this).attr('class');
+                        $(this).siblings().removeAttr('class','on');
+                        index++;
+                        if(index>1){
+                            index = 0;
+                        }
+                },3000);
+            </script>
+
+
+
+  <div class="main">
+    <div class="column">
+      <div class="left">
+        
+        <!-- 登录后的用户信息显示 -->
+        <div id="wanlogin xinxi" class="login">
+            <div class="loginBox">
+                <div class="login_ok">
+                    <dl>
+                        <dt><img src="__PUBLIC__/Home/index_files/touxiang.gif"></dt>
+                        <dd>
+                            <b>
+                                <a href="http://my.58.com/" target="_blank">{$info['username']}</a>
+                            </b>
+                            <span>
+                                <a href="http://wan.58.com/pay/index" target="_blank">[充值]</a>
+                                <a onclick="newclearCookie()" href="{:U('Home/Games/login')}">[退出]</a>
+                            </span>
+                        </dd>
+                    </dl>
+                    <p>最近登录服务器</p>
+                    <ul id="lastloginserver">
+                        <li>
+                            <a target="_blank" href="http://dts.wan.58.com/startgame/74?v=1448110128996"><i class="dts_icon"></i><b>大天使之剑</b><em>58双线74区</em></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <span class="dl">
+                <a href="http://about.58.com/leaveword2.aspx?cateid=185" target="_blank">联系客服</a>|<a href="{:U('Home/Games/postlist')}" target="_blank">论坛社区</a>|<a href="http://wan.58.com/saveGameToDesk">保存到桌面</a>
+            </span>
+        </div>
+
+     
+
+
+        <div class="new_game">
+        <h2 class="c_bt">最新开服</h2>
+            <dl><dt>
+                          <a href="http://dts.wan.58.com/" target="_blank"> 
+                  <img src="__PUBLIC__/Home/login_files/dtszj_zxkf.jpg">
+        </a>
+      </dt>
+        <dd>
+        <b>
+                        <a href="#" onclick="enterGame('74','dts','1','1');return false;" target="_blank">58双线74区</a>
+                      </b>
+        <span>02-07 11:00</span>
+               <a class="jryx" href="#" onclick="enterGame('74','dts','1','1');return false;">开始游戏</a>
+                  </dd></dl>
+            <dl><dt>
+                          <a href="http://gcld.wan.58.com/" target="_blank">  
+                  <img src="__PUBLIC__/Home/login_files/gcld_zxkf.jpg">
+        </a>
+      </dt>
+        <dd>
+        <b>
+                        <a href="#" onclick="enterGame('126','gcld','1','1');return false;" target="_blank">58双线126区</a>
+                      </b>
+        <span>02-06 11:00</span>
+               <a class="jryx" href="#" onclick="enterGame('126','gcld','1','1');return false;">开始游戏</a>
+                  </dd></dl>
+            <dl><dt>
+                          <a href="http://dhd.wan.58.com/" target="_blank"> 
+                  <img src="__PUBLIC__/Home/login_files/dhd_zxkf.jpg">
+        </a>
+      </dt>
+        <dd>
+        <b>
+                        <a href="#" onclick="enterGame('6','dhd','1','1');return false;" target="_blank">58双线6区</a>
+                      </b>
+        <span>02-04 11:00</span>
+               <a class="jryx" href="#" onclick="enterGame('6','dhd','1','1');return false;">开始游戏</a>
+                  </dd></dl>
+            <dl><dt>
+                          <a href="http://bhzr.wan.58.com/" target="_blank">  
+                  <img src="__PUBLIC__/Home/login_files/bhzr_zxkf.jpg">
+        </a>
+      </dt>
+        <dd>
+        <b>
+                        <a href="#" onclick="enterGame('9','bhzr','1','1');return false;" target="_blank">58双线9区</a>
+                      </b>
+        <span>02-04 11:00</span>
+               <a class="jryx" href="#" onclick="enterGame('9','bhzr','1','1');return false;">开始游戏</a>
+                  </dd></dl>
+            <dl><dt>
+                          <a href="http://dts.wan.58.com/" target="_blank"> 
+                  <img src="__PUBLIC__/Home/login_files/dtszj_zxkf.jpg">
+        </a>
+      </dt>
+        <dd>
+        <b>
+                        <a href="#" onclick="enterGame('73','dts','1','1');return false;" target="_blank">58双线73区</a>
+                      </b>
+        <span>02-03 11:00</span>
+               <a class="jryx" href="#" onclick="enterGame('73','dts','1','1');return false;">开始游戏</a>
+                  </dd></dl>
+            <dl><dt>
+                          <a href="http://gcld.wan.58.com/" target="_blank">  
+                  <img src="__PUBLIC__/Home/login_files/gcld_zxkf.jpg">
+        </a>
+      </dt>
+        <dd>
+        <b>
+                        <a href="#" onclick="enterGame('125','gcld','1','1');return false;" target="_blank">58双线125区</a>
+                      </b>
+        <span>02-02 11:00</span>
+               <a class="jryx" href="#" onclick="enterGame('125','gcld','1','1');return false;">开始游戏</a>
+                  </dd></dl>
+    
+        <p class="x_1"></p>
+        </div><!--nuw_game_end-->
+        <div class="cjwt">
+        <h2 class="c_bt">常见问题</h2>
+          <ul><li><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=706" target="_blank">游戏页面无法正常显示？ </a></li>
+              <li><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=707" target="_blank">充值元宝没有到账怎么办？</a></li>
+              <li><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=708" target="_blank">怎么才能防止账号被盗？</a></li>
+              <li><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=709" target="_blank">游戏加载时卡住了怎么办？</a></li><li><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=710" target="_blank">我的游戏角色不见了？ </a></li>
+              <li><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=711" target="_blank">游戏如何充值？ </a></li></ul>
+    
+        <p class="x_1"></p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="top_game">
+        <h2 class="c_bt">精品游戏</h2>
+        <div class="game_gg"><a href="http://wan.58.com/jjsg/new" target="_blank"></a></div>
+        <div class="game">
+            <dl><dt><a target="_blank" href="http://rxhzw.wan.58.com/?link_id=tuijian_rxhzw"><img src="__PUBLIC__/Home/login_files/rxhzw_jp.jpg" height="140" width="226"></a>
+          <span class="d_zi"><b>《热血海贼王》</b><i>类型：
+          角色扮演
+        </i></span>
+      <span class="d_bj"></span>
+      </dt>
+      <dd>
+            <a target="_blank" class="n_g" href="http://rxhzw.wan.58.com/libao/rxhzw" title="58双线27区">新手卡</a><a target="_blank" class="n_g" href="http://rxhzw.wan.58.com/">官网</a>
+      <a target="_blank" class="go_game" href="#" onclick="enterGame('S27','rxhzw','','');return false;">开始游戏</a>
+            </dd></dl>
+            <dl><dt><a target="_blank" href="http://mm.wan.58.com/?link_id=tuijian_mm"><img src="__PUBLIC__/Home/login_files/nslm_jp.jpg" height="140" width="226"></a>
+              <span class="tj"></span>
+          <span class="d_zi"><b>《女神联盟》</b><i>类型：
+          角色扮演
+        </i></span>
+      <span class="d_bj"></span>
+      </dt>
+      <dd>
+            <a target="_blank" class="n_g" href="http://mm.wan.58.com/libao/mm" title="58双线25区">新手卡</a><a target="_blank" class="n_g" href="http://mm.wan.58.com/">官网</a>
+      <a target="_blank" class="go_game" href="#" onclick="enterGame('S25','mm','','');return false;">开始游戏</a>
+            </dd></dl>
+            <dl><dt><a target="_blank" href="http://jjsg.wan.58.com/?link_id=tuijian_jjsg"><img src="__PUBLIC__/Home/login_files/jjsg_jp.jpg" height="140" width="226"></a>
+              <span class="tj"></span>
+          <span class="d_zi"><b>《街机三国》</b><i>类型：
+          角色扮演
+        </i></span>
+      <span class="d_bj"></span>
+      </dt>
+      <dd>
+            <a target="_blank" class="n_g" href="http://jjsg.wan.58.com/libao/jjsg" title="58双线51区">新手卡</a><a target="_blank" class="n_g" href="http://jjsg.wan.58.com/">官网</a>
+      <a target="_blank" class="go_game" href="#" onclick="enterGame('51','jjsg','','');return false;">开始游戏</a>
+            </dd></dl>
+            </div>
+        <p class="x_1"></p>
+        </div><!--top_game_end-->
+        <div class="hot_game">
+          <h2 class="c_bt">热门游戏</h2>
+          <div class="game1">
+            <dl><dt><a href="#" target="_blank" onclick="enterGame('S25','mm','','');return false;"><img src="__PUBLIC__/Home/login_files/hot_game_nslm.jpg"></a></dt>
+            <dd class="rm_game"><b>女神联盟</b>
+            <span class="c_9">类型：     角色扮演
+    </span>
+                  <span>
+            <a target="_blank" href="http://mm.wan.58.com/libao/mm">新手卡</a><i>|</i>
+            <a target="_blank" href="http://mm.wan.58.com/">官网</a></span>
+            <span><a href="#" target="_blank" onclick="enterGame('S25','mm','','');return false;" class="jr_yx">开始游戏</a></span>
+                        </dd></dl>
+            <dl><dt><a href="#" target="_blank" onclick="enterGame('S27','rxhzw','','');return false;"><img src="__PUBLIC__/Home/login_files/hot_game_rxhzw.jpg"></a></dt>
+            <dd class="rm_game"><b>热血海贼王</b>
+            <span class="c_9">类型：     角色扮演
+    </span>
+                  <span>
+            <a target="_blank" href="http://rxhzw.wan.58.com/libao/rxhzw">新手卡</a><i>|</i>
+            <a target="_blank" href="http://rxhzw.wan.58.com/">官网</a></span>
+            <span><a href="#" target="_blank" onclick="enterGame('S27','rxhzw','','');return false;" class="jr_yx">开始游戏</a></span>
+                        </dd></dl>
+            <dl><dt><a href="#" target="_blank" onclick="enterGame('6','dhd','','');return false;"><img src="__PUBLIC__/Home/login_files/dhd_hot.jpg"></a></dt>
+            <dd class="rm_game"><b>大皇帝</b>
+            <span class="c_9">类型：     战争策略
+    </span>
+                  <span>
+            <a target="_blank" href="http://dhd.wan.58.com/">官网</a></span>
+            <span><a href="#" onclick="enterGame('6','dhd','','');return false;" target="_blank" class="jr_yx">开始游戏</a></span>
+                  </dd></dl>
+            <dl><dt><a href="#" target="_blank" onclick="enterGame('13','zlcq','','');return false;"><img src="__PUBLIC__/Home/login_files/zlcq_hot.jpg"></a></dt>
+            <dd class="rm_game"><b>斩龙传奇</b>
+            <span class="c_9">类型：     休闲竞技
+    </span>
+                  <span>
+            <a target="_blank" href="http://zlcq.wan.58.com/">官网</a></span>
+            <span><a href="#" onclick="enterGame('13','zlcq','','');return false;" target="_blank" class="jr_yx">开始游戏</a></span>
+                  </dd></dl>
+            <dl><dt><a href="#" target="_blank" onclick="enterGame('126','gcld','','');return false;"><img src="__PUBLIC__/Home/login_files/gcld_hot.jpg"></a></dt>
+            <dd class="rm_game"><b>攻城掠地</b>
+            <span class="c_9">类型：     战争策略
+    </span>
+                  <span>
+            <a target="_blank" href="http://gcld.wan.58.com/">官网</a></span>
+            <span><a href="#" onclick="enterGame('126','gcld','','');return false;" target="_blank" class="jr_yx">开始游戏</a></span>
+                  </dd></dl>
+            <dl><dt><a href="#" target="_blank" onclick="enterGame('51','jjsg','','');return false;"><img src="__PUBLIC__/Home/login_files/hot_game_jjsg.jpg"></a></dt>
+            <dd class="rm_game"><b>街机三国</b>
+            <span class="c_9">类型：     角色扮演
+    </span>
+                  <span>
+            <a target="_blank" href="http://jjsg.wan.58.com/libao/jjsg">新手卡</a><i>|</i>
+            <a target="_blank" href="http://jjsg.wan.58.com/">官网</a></span>
+            <span><a href="#" target="_blank" onclick="enterGame('51','jjsg','','');return false;" class="jr_yx">开始游戏</a></span>
+                        </dd></dl>
+            <dl><dt><a href="#" target="_blank" onclick="enterLZGame('drmj');return false;"><img src="__PUBLIC__/Home/login_files/hot_game_drmj.jpg"></a></dt>
+            <dd class="rm_game"><b>达人麻将</b>
+            <span class="c_9">类型：     棋牌游戏
+    </span>
+            <span><a target="_blank" href="#" onclick="enterLZGame('drmj');return false;">官网</a></span>
+      <span><a href="#" target="_blank" onclick="enterLZGame('drmj');return false;" class="jr_yx">开始游戏</a></span>
+                  </dd></dl>
+            <dl><dt><a href="#" target="_blank" onclick="enterLZGame('dzpk');return false;"><img src="__PUBLIC__/Home/login_files/hot_game_dzpk.jpg"></a></dt>
+            <dd class="rm_game"><b>德州扑克</b>
+            <span class="c_9">类型：     棋牌游戏
+    </span>
+            <span><a target="_blank" href="#" onclick="enterLZGame('dzpk');return false;">官网</a></span>
+      <span><a href="#" target="_blank" onclick="enterLZGame('dzpk');return false;" class="jr_yx">开始游戏</a></span>
+                  </dd></dl>
+            <dl><dt><a href="#" target="_blank" onclick="enterLZGame('ttddz');return false;"><img src="__PUBLIC__/Home/login_files/hot_game_ttddz.jpg"></a></dt>
+            <dd class="rm_game"><b>天天斗地主</b>
+            <span class="c_9">类型：     棋牌游戏
+    </span>
+            <span><a target="_blank" href="#" onclick="enterLZGame('ttddz');return false;">官网</a></span>
+      <span><a href="#" target="_blank" onclick="enterLZGame('ttddz');return false;" class="jr_yx">开始游戏</a></span>
+                  </dd></dl>
+                </div>
+          <p class="x_1"></p>
+        </div><!--hot_game_end-->
+        <div class="hot_game qipai">
+          <h2 class="c_bt">棋牌专区</h2>
+          <div class="game1">
+            <dl><dt><a href="#" target="_blank" onclick="enterGame('34','wz','','');return false;"><img src="__PUBLIC__/Home/login_files/hot_game_wz.jpg"></a></dt>
+            <dd class="rm_game"><b>武尊传奇</b>
+            <span class="c_9">类型：     角色扮演
+    </span>
+                  <span><a target="_blank" href="http://wz.wan.58.com/libao/wz">新手卡</a><i>|</i><a target="_blank" href="http://wz.wan.58.com/">官网</a></span>
+            <span><a href="#" target="_blank" onclick="enterGame('34','wz','','');return false;" class="jr_yx">开始游戏</a></span>
+                        </dd></dl>
+            <dl><dt><a href="#" target="_blank" onclick="enterGame('1','ddts','','');return false;"><img src="__PUBLIC__/Home/login_files/ddts_hot.jpg"></a></dt>
+            <dd class="rm_game"><b>弹弹堂3</b>
+            <span class="c_9">类型：     角色扮演
+    </span>
+                  <span><a target="_blank" href="http://ddts.wan.58.com/libao/ddts">新手卡</a><i>|</i><a target="_blank" href="http://ddts.wan.58.com/">官网</a></span>
+            <span><a href="#" target="_blank" onclick="enterGame('1','ddts','','');return false;" class="jr_yx">开始游戏</a></span>
+                        </dd></dl>
+            <dl><dt><a href="#" target="_blank" onclick="enterGame('2','ymll','','');return false;"><img src="__PUBLIC__/Home/login_files/ymll_hot.jpg"></a></dt>
+            <dd class="rm_game"><b>灌篮高手</b>
+            <span class="c_9">类型：     模拟经营
+    </span>
+                  <span><a target="_blank" href="http://ymll.wan.58.com/libao/ymll">新手卡</a><i>|</i><a target="_blank" href="http://ymll.wan.58.com/">官网</a></span>
+            <span><a href="#" target="_blank" onclick="enterGame('2','ymll','','');return false;" class="jr_yx">开始游戏</a></span>
+                        </dd></dl>
+                </div>
+          <p class="x_1"></p>
+        </div>
+      </div>
+    </div>
+    <div class="all_game">
+    <h2 class="c_bt">全部游戏</h2>
+     <ul>
+      
+   <li><a href="http://ddts.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/ddts_icon.jpg" border="0">弹弹堂3<i class="      hot_icon
+    "></i></span></a></li>
+      
+   <li><a href="http://ftx.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/ftx_icon.jpg" border="0">范特西篮球<i class="     hot_icon
+    "></i></span></a></li>
+      
+   <li><a href="http://xxd.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/xxd_icon.jpg" border="0">仙侠道<i class="     hot_icon
+    "></i></span></a></li>
+      
+   <li><a href="http://sgh.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/sgh_icon.jpg" border="0">新三国魂<i class="      new_icon
+    "></i></span></a></li>
+      
+   <li><a href="http://dhd.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/dhd_icon.jpg" border="0">大皇帝<i class=""></i></span></a></li>
+      
+   <li><a href="#" onclick="enterLZGame('drmj');return false;"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/drmj_icon.jpg" border="0">达人麻将<i class=""></i></span></a></li>
+      
+   <li><a href="http://zlcq.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/zlcq_icon.jpg" border="0">斩龙传奇<i class=""></i></span></a></li>
+      
+   <li><a href="http://gcld.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/gcld_icon.jpg" border="0">攻城掠地<i class="      hot_icon
+    "></i></span></a></li>
+      
+   <li><a href="#" onclick="enterLZGame('dzpk');return false;"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/dzpk_icon.jpg" border="0">德州扑克<i class=""></i></span></a></li>
+      
+   <li><a href="http://jjsg.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/jjsg_icon.jpg" border="0">街机三国<i class=""></i></span></a></li>
+      
+   <li><a href="http://ymll.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/ymll_icon.jpg" border="0">灌篮高手<i class=""></i></span></a></li>
+      
+   <li><a href="http://jzz.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/jzz_icon.jpg" border="0">九州志<i class=""></i></span></a></li>
+      
+   <li><a href="#" onclick="enterLZGame('ttddz');return false;"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/ttddz_icon.jpg" border="0">天天斗地主<i class="     new_icon
+    "></i></span></a></li>
+      
+   <li><a href="http://kdxy.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/kdxy_icon.jpg" border="0">快打西游<i class=""></i></span></a></li>
+      
+   <li><a href="http://mm.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/nslm_icon.jpg" border="0">女神联盟<i class=""></i></span></a></li>
+      
+   <li><a href="http://9lc.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/jlc_icon.jpg" border="0">九龙朝<i class="     hot_icon
+    "></i></span></a></li>
+      
+   <li><a href="http://rxhzw.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/rxhzw_icon.jpg" border="0">热血海贼王<i class=""></i></span></a></li>
+      
+   <li><a href="http://dts.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/dtszj_icon.jpg" border="0">大天使之剑<i class=""></i></span></a></li>
+      
+   <li><a href="http://wz.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/wz_icon.jpg" border="0">武尊传奇<i class=""></i></span></a></li>
+      
+   <li><a href="http://txzq.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/txzq_icon.jpg" border="0">天下足球<i class=""></i></span></a></li>
+      
+   <li><a href="http://qs.wan.58.com/" target="_blank"><span><img class="dxz_icon" style="background:''" src="__PUBLIC__/Home/login_files/qs_icon.jpg" border="0">七杀<i class=""></i></span></a></li>
+    
+      <li class="g_no"><a href="#"><span></span></a></li>
+      <li class="g_no"><a href="#"><span></span></a></li>
+      <li class="g_no"><a href="#"><span></span></a></li>
+      <li class="g_no"><a href="#"><span></span></a></li>
+     </ul>
+    <p class="x_1"></p>
+    </div><!--all_game_end-->
+    <div class="column">
+      <div class="left">
+       <div class="kfzx kf_11">
+        <p><img src="__PUBLIC__/Home/login_files/kefu_img.gif" height="79" width="228"></p>
+        <span><em>客服QQ：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1459746731&amp;site=qq&amp;menu=yes" target="_blank">1459746731<img title="点击这里给我发消息" alt="点击这里给我发消息" src="__PUBLIC__/Home/login_files/pa.gif" border="0"></a></em>
+        <em>我怕疼，轻点戳！↗</em></span>
+        <label>适度游戏益脑　　沉迷游戏伤身</label>
+        <p class="x_1"></p>
+       </div><!--kfzx_end-->
+      </div>
+      <div class="right">
+      <div class="wanj mnsp">
+       <h2 class="c_bt more"><b>美女玩家</b><a href="http://jiaoyou.58.com/6rooms/?utm_source=wan_more" target="_blank">还有更多主播在等你！&gt;&gt;</a></h2>
+       <ul>
+                <li>
+         <a href="http://jiaoyou.58.com/6rooms/?bgurl=http%3A%2F%2Fv.6.cn%2F809465%3Fcoop%3D1017" class="wj" target="_blank">
+         <img src="__PUBLIC__/Home/login_files/1010v1447770772906149294_s.jpg">
+         <span class="sp_zc"></span>
+         <span class="sp_z">高清</span>
+         <span class="sp_i"><img src="__PUBLIC__/Home/login_files/sw_gift.png"></span>
+         </a>
+         <a href="http://jiaoyou.58.com/6rooms/?bgurl=http%3A%2F%2Fv.6.cn%2F809465%3Fcoop%3D1017" target="_blank">涵萱才艺主播</a></li>
+                <li>
+         <a href="http://jiaoyou.58.com/6rooms/?bgurl=http%3A%2F%2Fv.6.cn%2F2778%3Fcoop%3D1017" class="wj" target="_blank">
+         <img src="__PUBLIC__/Home/login_files/1010v1447828663088267252_s.jpg">
+         <span class="sp_zc"></span>
+         <span class="sp_z">高清</span>
+         <span class="sp_i"><img src="__PUBLIC__/Home/login_files/sw_gift.png"></span>
+         </a>
+         <a href="http://jiaoyou.58.com/6rooms/?bgurl=http%3A%2F%2Fv.6.cn%2F2778%3Fcoop%3D1017" target="_blank">❧Cat︷〆缪斯❦</a></li>
+                <li>
+         <a href="http://jiaoyou.58.com/6rooms/?bgurl=http%3A%2F%2Fv.6.cn%2F96370%3Fcoop%3D1017" class="wj" target="_blank">
+         <img src="__PUBLIC__/Home/login_files/1010v1443245601115425421_s.jpg">
+         <span class="sp_zc"></span>
+         <span class="sp_z">高清</span>
+         <span class="sp_i"><img src="__PUBLIC__/Home/login_files/sw_gift.png"></span>
+         </a>
+         <a href="http://jiaoyou.58.com/6rooms/?bgurl=http%3A%2F%2Fv.6.cn%2F96370%3Fcoop%3D1017" target="_blank">请叫我女神经-叶瑀晰</a></li>
+                <li>
+         <a href="http://jiaoyou.58.com/6rooms/?bgurl=http%3A%2F%2Fv.6.cn%2F809783%3Fcoop%3D1017" class="wj" target="_blank">
+         <img src="__PUBLIC__/Home/login_files/1010v1447484796628650472_s.jpg">
+         <span class="sp_zc"></span>
+         <span class="sp_z">高清</span>
+         <span class="sp_i"><img src="__PUBLIC__/Home/login_files/sw_gift.png"></span>
+         </a>
+         <a href="http://jiaoyou.58.com/6rooms/?bgurl=http%3A%2F%2Fv.6.cn%2F809783%3Fcoop%3D1017" target="_blank">〝Ｍo莫言ღ</a></li>
+                <li>
+         <a href="http://jiaoyou.58.com/6rooms/?bgurl=http%3A%2F%2Fv.6.cn%2F807196%3Fcoop%3D1017" class="wj" target="_blank">
+         <img src="__PUBLIC__/Home/login_files/1010v1447834873252816515_s.jpg">
+         <span class="sp_zc"></span>
+         <span class="sp_z">高清</span>
+         <span class="sp_i"><img src="__PUBLIC__/Home/login_files/sw_gift.png"></span>
+         </a>
+         <a href="http://jiaoyou.58.com/6rooms/?bgurl=http%3A%2F%2Fv.6.cn%2F807196%3Fcoop%3D1017" target="_blank">~妞妞~*</a></li>
+              </ul>
+       <p class="x_1"></p>
+      </div><!--wanj_end-->
+      </div>
+    </div>
+  </div><!--main_end-->
+  <div class="footer">
+    <dl><dt><a href="http://wan.58.com/" target="_blank"><img src="__PUBLIC__/Home/login_files/footer_logo_03.gif"></a><a href="http://182.131.21.137/ccnt-apply/admin/business/preview/business-preview%21lookUrlRFID.action?main_id=2B020B14165B4CF697FD1E96C87E6318" target="_blank" class="logo-wen"><img src="__PUBLIC__/Home/login_files/logo-wen.gif" height="50" width="50"></a></dt>
+    <dd><span><a href="http://about.58.com/index.html" target="_blank">联系客服</a><i>|</i><a href="http://about.58.com/home/" target="_blank">关于我们</a><i>|</i><a href="http://about.58.com/home/cooperation.html" target="_blank">合作洽谈</a><i>|</i><a href="http://e.58.com/" target="_blank">推广服务</a><i>|</i><a href="http://about.58.com/hr/" target="_blank">加入我们</a><i>|</i><a href="http://www.58.com/xiaoyuan/" target="_blank">校园招聘</a></span>
+    <span><a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP证030609号</a>　<a target="_blank" href="http://182.131.21.137/ccnt-apply/admin/business/preview/business-preview%21lookUrlRFID.action?main_id=2B020B14165B4CF697FD1E96C87E6318">津网文[2013]0121-02</a></span>
+    <span>北京五八信息技术有限公司 © 58.com</span>
+    <span class="f_link"><strong>友情链接</strong>:<a href="http://qszg.wan.58.com/" target="_blank">58骑士战歌</a>&nbsp;<a href="http://dntg.wan.58.com/" target="_blank">58大闹天宫</a>&nbsp;<a href="http://jiaoyou.58.com/" target="_blank">交友</a>&nbsp;<a href="http://fyws.wan.58.com/" target="_blank">58风云无双</a>&nbsp;<a href="http://www.52kso.com/" target="_blank">采购网</a>&nbsp;<a href="http://www.9170.com/" target="_blank">免费八字算命</a>&nbsp;<a href="http://jiaoyou.58.com/" target="_blank">交友网站</a>&nbsp;<a href="http://www.kuaishang100.com/" target="_blank">快上</a>&nbsp;<a href="http://www.haoyuncai.cn/" target="_blank">好运彩</a>&nbsp;  </span></dd></dl>
+  </div><!--footer_end-->
+<script type="text/javascript"> var _gaq = _gaq || []; var site_name = "58"; 
+    _gaq.push(['_setAccount', 'UA-877409-4']); 
+    _gaq.push(['_setDomainName', '.58.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_addOrganic', 'sogou', 'query']);
+    _gaq.push(['_addOrganic', 'baidu', 'word']);
+    _gaq.push(['_addOrganic', 'soso', 'w']); 
+    _gaq.push(['_addOrganic', 'youdao', 'q']);
+    _gaq.push(['_addOrganic', '360', 'q']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    <script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F858c7ca19007f1e952bf950d2d1b9d02' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="__PUBLIC__/Home/login_files/h.js" type="text/javascript"></script>
+<script>    var _hl = _hl || [];
+  _hl.push(['_setLRSM']);
+  _hl.push(['_setLGP', 'http://data.t.58.com/log/wan/collectlog.gif']);
+  _hl.push(['_setDomainName', '.58.com']);
+  _hl.push(['_tp']);
+</script>
+<script type="text/javascript" src="__PUBLIC__/Home/login_files/ualog.js"></script>
+
+
+</body></html>

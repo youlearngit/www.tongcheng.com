@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>58游戏论坛 -  58游戏|58游戏平台|网页游戏|大侠转|九龙朝|热血海贼王</title>
+
+<meta name="keywords" content="58游戏平台,58游戏论坛,58同城游戏,58游戏中心,网页游戏,大侠传,热血海贼王,九龙朝">
+<meta name="description" content="58游戏论坛 ">
+<meta name="generator" content="Discuz! X2.5">
+<meta name="author" content="Discuz! Team and Comsenz UI Team">
+<meta name="copyright" content="2001-2012 Comsenz Inc.">
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<!-- base href="http://bbs.wan.58.com/" --><link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/games_files/style_5_common.css"><link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/games_files/style_5_forum_index.css"><script src="__PUBLIC__/Home/games_files/ping_hotclick.js" charset="utf-8" type="text/javascript"></script><script src="__PUBLIC__/Home/games_files/MjI5NzUwMjA.js" charset="utf-8" type="text/javascript"></script><script type="text/javascript">var STYLEID = '5', STATICURL = 'static/', IMGDIR = 'template/yeei_xiami/css/yeei/', VERHASH = 'oa6', charset = 'utf-8', discuz_uid = '0', cookiepre = 'lB6a_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|威望|,2|金钱|,3|贡献|', defaultstyle = '', REPORTURL = 'aHR0cDovL2Jicy53YW4uNTguY29tL2ZvcnVtLnBocA==', SITEURL = 'http://bbs.wan.58.com/', JSPATH = 'static/js/';</script>
+<script src="__PUBLIC__/Home/games_files/common.js" type="text/javascript"></script>
+<meta name="application-name" content="58游戏论坛">
+<meta name="msapplication-tooltip" content="58游戏论坛">
+<meta name="msapplication-task" content="name=论坛;action-uri=http://bbs.wan.58.com/forum.php;icon-uri=http://bbs.wan.58.com/template/yeei_xiami/css/yeei//bbs.ico">
+<link rel="archives" title="58游戏论坛" href="http://bbs.wan.58.com/archiver/">
+<script src="__PUBLIC__/Home/games_files/forum.js" type="text/javascript"></script>
+
+    
+<!--[if IE 6]>
+<script src="template/yeei_dream1/css/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.head_logo img,.nv_q div,.nv_q li.a a,.nv_q li a:hover,.nv_q li,.c_yt,#scbar_yeei,.yeei_sw_1l .hot,.c_yt,.c_yb,.c_r,.c_l,.hot'); 
+</script> 
+
+<![endif]--> 
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/games_files/wbox.css">
+<script src="__PUBLIC__/Home/games_files/wbox.css" type="text/javascript"></script>
+<script src="__PUBLIC__/Home/games_files/wbox.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Home/games_files/login58.js" type="text/javascript"></script>
+
+
+<script src="__PUBLIC__/Home/games_files/common_extra.js" charset="UTF-8" id="jljdhYYFOYYKIIKJUanPNWXFOOKWFQJZ" type="text/javascript"></script></head>
+
+
+ 
+
+
+<body id="nv_forum" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+        
+            
+            
+<div id="qmenu_menu" class="p_pop blk" style="display: none;">
+<div class="ptm pbw hm">
+<!--'请 <a href="#" class="xi2"  onclick="danchu(); return false;"><strong>登录</strong></a> 后使用快捷导航<br />没有帐号？<a href="http://bbs.wan.58.com/login.php" class="xi2 xw1">立即注册</a>'-->
+</div>
+</div>
+        
+
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+
+  
+<div class="head_y ">
+
+<div class="head_yn_bg">
+
+<div class="head_yn" style="background:#FC9202"><div class="nv_q">
+<div class="nv_q_ie6">
+<div class="nv_l"></div>
+<div class="nv_c">
+
+<ul class="yeei_nv"><li class="a" id="mn_Ncc2b" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})"><a href="http://wan.58.com/" hidefocus="true" target="_blank" style="font-weight: bold;">游戏首页</a></li><li id="mn_N728a"><a href="http://wan.58.com/pay/index" hidefocus="true" target="_blank" style="font-weight: bold;">充值中心</a></li><li id="mn_N6518"><a href="http://about.58.com/leaveword2.aspx?cateid=185" hidefocus="true" target="_blank" style="font-weight: bold;">客服中心</a></li></ul>
+                 
+</div>
+<div class="nv_r">
+<a href="javascript:;" id="qmenu" onmouseover="showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});"></a></div>
+</div>
+</div>
+<div class="head_logo"><h2><a href="http://bbs.wan.58.com/" title="58游戏论坛"><img src="__PUBLIC__/Home/games_files/logo_white.png" alt="58游戏论坛" border="0"></a></h2></div>
+
+</div>
+
+</div>
+</div>
+
+
+<div class="c_y">
+<div class="c_yt">
+<div class="c_yt2">
+<div class="c_r">
+<div class="c_l" style="background:#FFFFFF">
+<div id="scbar_yeei">
+<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="{:U('Home/Games/postlist')}" target="_blank">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="border:1px solid #cdcdcd">
+    <td class="scbar_icon_td"></td>
+    <td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="showmenu xg1 xs2" onclick="showMenu(this.id)" hidefocus="true" onfocus="this.blur()">帖子</a></td>
+    <td class="scbar_txt_td"><input placeholder="请输入搜索内容" class=" xg1" name="keywords" id="scbar_txt" autocomplete="off" type="text" style="border-left:1px solid #cdcdcd"></td>
+    <td class="scbar_btn_td">
+    <button type="submit" name="searchsubmit" id="scbar_btn" class="pn pnc" value="true">搜索</button></td>
+<td class="scbar_hot_td">
+
+</td>
+</tr>
+</tbody></table>
+</form>
+</div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar');
+</script>
+<div class="member">
+<div class="avt"><a href="http://bbs.wan.58.com/home.php?mod=space&amp;uid=0"><img src="__PUBLIC__/Home/games_files/avatar.gif"></a></div>
+<div class="mb_1 mb_11">
+<span>58游戏论坛欢迎您</span> 
+<span class="pipe" style="font-size:16px;">{$username}</span> 
+
+</div> 
+<div class="mb_3">
+</div>
+<div style="display: none;"><div class="fastlg cl">
+<span id="return_ls" style="display:none"></span>
+<script>
+    function lsSubmit ()
+    {
+        document.location = 'http://bbs.wan.58.com/login.php';
+    }
+</script>
+<div class="y pns">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td></td>
+<td></td>
+<td class="fastlg_l"><button type="submit" class="pn vm dl58" tabindex="904" style="width: 75px;" onclick="document.location='http://bbs.wan.58.com/login.php'"><em>登录</em></button></td>
+<td>&nbsp;<a href="http://bbs.wan.58.com/login.php" class="xi2 xw1">立即注册</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+
+</div> 
+</div></div>
+</div>
+</div>
+</div>
+<div class="c_yc">
+<div class="c_ycr">
+<div class="c_yeeib"><div id="wp" class="wp">
+</div>
+<div class="yeei_sw">
+<div class="yeei_sw1">
+<div class="yeei_sw1r">
+<div id="chart" class="bm bw0 cl">
+<p class="chart z">今日: <em>0</em><span class="pipe">|</span>昨日: <em>0</em><span class="pipe">|</span>帖子: <em>875</em><span class="pipe">|</span>会员: <em>1020</em></p>
+</div>
+<div class="yeei_wb">
+
+<!--[diy=yeei2]<div id="yeei2" class="area"><div id="frameF3bff4" class="frame move-span cl frame-1"><div id="frameF3bff4_left" class="column frame-1-c"><div id="frameF3bff4_left_temp" class="move-span temp"></div><div id="portal_block_42" class="block move-span"><div id="portal_block_42_content" class="dxb_bc"><div class="portal_block_summary"><dl>
+<a href="http://weibo.com/2964320285" target="_blank">
+<dd class="m"><img src="__PUBLIC__/Home/games_files/0.jpg"></dd>
+<dt><span>58游戏</span><span class="ting"></span></dt>
+<dd class="n">关注<b>58游戏</b>微博，了解最新动态。</dd>
+
+</a>
+</dl></div></div></div></div></div><div id="framejB6614" class="frame move-span cl frame-1"><div id="framejB6614_left" class="column frame-1-c"><div id="framejB6614_left_temp" class="move-span temp"></div><div id="portal_block_28" class="block move-span"><div id="portal_block_28_content" class="dxb_bc"></div></div></div></div><div id="framex6Y61Y" class="frame move-span cl frame-1"><div id="framex6Y61Y_left" class="column frame-1-c"><div id="framex6Y61Y_left_temp" class="move-span temp"></div><div id="portal_block_21" class="block move-span"><div id="portal_block_21_content" class="dxb_bc"></div></div></div></div><div id="framef7wwWq" class="frame move-span cl frame-1"><div id="framef7wwWq_left" class="column frame-1-c"><div id="framef7wwWq_left_temp" class="move-span temp"></div><div id="portal_block_13" class="block move-span"><div id="portal_block_13_content" class="dxb_bc"></div></div></div></div></div><!--[/diy]-->
+</div>
+</div>
+<div class="yeei_sw1l">
+<div class="hot"></div>
+<!--[diy=yeei1]--><div id="yeei1" class="area"><div id="frameTRxfQl" class="frame move-span cl frame-1"><div id="frameTRxfQl_left" class="column frame-1-c"><div id="frameTRxfQl_left_temp" class="move-span temp"></div><div id="portal_block_41" class="block move-span"><div id="portal_block_41_content" class="dxb_bc"><div class="module cl xld"><dl class="cl">
+    <dd class="m"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=770" target="_blank"><img src="__PUBLIC__/Home/games_files/d5428dc7416ff44582d5388863d60ade.jpg" height="80" width="80"></a></dd>
+    <dt><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=770" target="_blank">《热血海贼王》第十七届“王者之战”跨服赛重磅开启</a></dt>
+    <dd>
+《热血海贼王》第十七届“王者之战”跨服赛重磅开启每一个踏上伟大航道，开启冒险的海贼，都有一个希望通过战斗来成为最强海贼的梦想！9月1日，《热血海贼王》第十七届“王 ...
+</dd>
+    <dd class="b"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=770">查看详细</a> 2015-08-31</dd>
+    
+</dl></div></div></div></div></div><div id="tabfH990H" class="frame-tab move-span cl"><div id="tabfH990H_title" class="tab-title title column cl" switchtype="mouseover">
+    <ul class="tb cl">
+        <!-- <li class="a" id="portal_block_43"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">论坛公告</a></li>
+        <li class="" id="portal_block_44"><a href="javascript:;" onfocus="this.blur();">最近回复</a></li> -->
+        <li class="" id="portal_block_46"><a href="javascript:;" onfocus="this.blur();">精华热帖</a></li>
+      <!--   <li class="" id="portal_block_46"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">最新主题</a></li> -->
+    </ul>
+</div><div id="tabfH990H_content" class="tb-c"><div id="portal_block_43_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>08-05</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=761" title="大侠传停服公告" target="_blank">大侠传停服公告</a></span></li><li><em>06-17</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=736" title="58同城《大侠传》6月17日数据互通公告" target="_blank">58同城《大侠传》6月17日数据互通公告</a></span></li><li><em>01-10</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=715" title="《大侠传》1月10日服务器维护公告" target="_blank">《大侠传》1月10日服务器维护公告</a></span></li><li><em>11-18</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=697" title="《大侠传》九重活动喜迎合服" target="_blank">《大侠传》九重活动喜迎合服</a></span></li><li><em>11-12</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=696" title="《大侠传》11月12日临时停机维护补偿公告" target="_blank">《大侠传》11月12日临时停机维护补偿公告</a></span></li><li><em>11-08</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=695" title="《大侠传》九重活动喜迎合服" target="_blank">《大侠传》九重活动喜迎合服</a></span></li><li><em>11-08</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=694" title="《大侠传》11月13日数据互通公告" target="_blank">《大侠传》11月13日数据互通公告</a></span></li><li><em>10-15</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=683" title="58同城《大侠传》10月18日数据互通公告" target="_blank">58同城《大侠传》10月18日数据互通公告</a></span></li><li><em>07-11</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=658" title="《大侠传》合区公告" target="_blank">《大侠传》合区公告</a></span></li><li><em>07-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=655" title="《大侠传》新版本开启 第五职业天刃曝光" target="_blank">《大侠传》新版本开启 第五职业天刃曝光</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_44_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=544" title="充值问题" target="_blank">充值问题</a></span></li><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=425" title="冲值问题到底有没有人管的啊？" target="_blank">冲值问题到底有没有人管的啊？</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=468" title="360什么时候开14区？" target="_blank">360什么时候开14区？</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=571" title="请问天喔茶庄的饮料key码这里能用么" target="_blank">请问天喔茶庄的饮料key码这里能用么</a></span></li><li><em>04-20</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=550" title=".。。。" target="_blank">.。。。</a></span></li><li><em>04-13</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=507" title="50级装备礼包无法打开" target="_blank">50级装备礼包无法打开</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=411" title="关于充值的问题" target="_blank">关于充值的问题</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=409" title="求教怎么打造红色套装" target="_blank">求教怎么打造红色套装</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=457" title="充值不到账" target="_blank">充值不到账</a></span></li><li><em>03-29</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=434" title="升级问题" target="_blank">升级问题</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_45_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=465" title="热血海贼王 出航奖励答案" target="_blank">热血海贼王 出航奖励答案</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=459" title="作为6区指导员 跟大家分享一下我的海贼王游戏心得" target="_blank">作为6区指导员 跟大家分享一下我的海贼王游</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_46_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>09-01</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=773" title="街机三国9月2日更新公告" target="_blank">街机三国9月2日更新公告</a></span></li><li><em>09-01</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=772" title="9月2日新系统淬毒" target="_blank">9月2日新系统淬毒</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=771" title="《热血海贼王》海贼守卫战活动！" target="_blank">《热血海贼王》海贼守卫战活动！</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=770" title="《热血海贼王》第十七届“王者之战”跨服赛重磅开启" target="_blank">《热血海贼王》第十七届“王者之战”跨服赛</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=769" title="超值回馈活动" target="_blank">超值回馈活动</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=768" title="《热血海贼王》“任务大作战”开启公告" target="_blank">《热血海贼王》“任务大作战”开启公告</a></span></li><li><em>08-27</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=767" title="《热血海贼王》限时充值礼包活动" target="_blank">《热血海贼王》限时充值礼包活动</a></span></li><li><em>08-25</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=766" title="《热血海贼王》8月26日全服更新停机更新公告" target="_blank">《热血海贼王》8月26日全服更新停机更新公</a></span></li><li><em>08-25</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=765" title="街机三国8月26日更新公告" target="_blank">街机三国8月26日更新公告</a></span></li><li><em>08-20</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=764" title="迎七夕，绝版称号超值送！" target="_blank">迎七夕，绝版称号超值送！</a></span></li></ul>
+</div></div></div><script type="text/javascript">initTab("tabfH990H","mouseover");</script></div><div id="frameDyZD5j" class="frame move-span cl frame-1"><div id="frameDyZD5j_left" class="column frame-1-c"><div id="frameDyZD5j_left_temp" class="move-span temp"></div><div id="portal_block_34" class="block move-span"><div id="portal_block_34_content" class="dxb_bc"><div class="module cl xld"></div></div></div></div></div><div id="frameg25DqZ" class="frame move-span cl frame-1"><div class="title frame-title"><span class="titletext">1框架</span></div><div id="frameg25DqZ_left" class="column frame-1-c"><div id="frameg25DqZ_left_temp" class="move-span temp"></div></div></div><div id="framehknaI1" class="frame move-span cl frame-1"><div id="framehknaI1_left" class="column frame-1-c"><div id="framehknaI1_left_temp" class="move-span temp"></div><div id="portal_block_27" class="block move-span"><div id="portal_block_27_content" class="dxb_bc"><div class="module cl xld"></div></div></div></div></div><div id="frameS3Xc55" class="frame move-span cl frame-1"><div id="frameS3Xc55_left" class="column frame-1-c"><div id="frameS3Xc55_left_temp" class="move-span temp"></div></div></div><div id="framecBxUEU" class="frame move-span cl frame-1"><div class="title frame-title"><span class="titletext">1框架</span></div><div id="framecBxUEU_left" class="column frame-1-c"><div id="framecBxUEU_left_temp" class="move-span temp"></div></div></div><div id="frameuSEEb7" class="frame move-span cl frame-1"><div id="frameuSEEb7_left" class="column frame-1-c"><div id="frameuSEEb7_left_temp" class="move-span temp"></div><div id="portal_block_12" class="block move-span"><div id="portal_block_12_content" class="dxb_bc"><div class="module cl xld"></div></div></div></div></div></div><!--[/diy]-->
+
+</div>
+
+</div>
+<div class="yeei_sw2">
+<div class="yeei_sw2r">
+
+<!--[diy=yeei4]--><div id="yeei4" class="area"><div id="frameQJ3jpT" class="frame move-span cl frame-1"><div id="frameQJ3jpT_left" class="column frame-1-c"><div id="frameQJ3jpT_left_temp" class="move-span temp"></div><div id="portal_block_40" class="block move-span"><div style="position: relative;" id="portal_block_40_content" class="dxb_bc"><div style="display: block;" id="0.9299981088065077" class="module cl slidebox">
+    <ul class="slideshow">
+      
+        <li style="width: 308px; height: 185px; display: block;">
+            <a href=""><img src="__PUBLIC__/Home/games_files/b4fc0424a64e8e2167d9671ecdfa9c89.jpg" height="185" width="308"></a><span class="title">GM进来回答下！</span>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript">
+runslideshow();
+</script>
+    <div style="position: absolute; top: 5px; left: 4px;" class="slidebar"></div></div></div></div></div><div id="framenkUPCM" class="frame move-span cl frame-1"><div id="framenkUPCM_left" class="column frame-1-c"><div id="framenkUPCM_left_temp" class="move-span temp"></div><div id="portal_block_33" class="block move-span"><div style="position: relative;" id="portal_block_33_content" class="dxb_bc"><div style="display: block;" id="0.19417014050026982" class="module cl slidebox">
+<ul class="slideshow">
+    <li style="width: 308px; height: 185px; display: none;"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=773" target="_blank"><img src="__PUBLIC__/Home/games_files/d11642f8f6446b09cf3f312b13ec1fbd.jpg" height="185" width="308"></a><span class="title">街机三国9月2日更新公告</span></li><li style="width: 308px; height: 185px; display: none;"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=770" target="_blank"><img src="__PUBLIC__/Home/games_files/a4616f982ce030ac3aecc0154595044f.jpg" height="185" width="308"></a><span class="title">《热血海贼王》第十七届“王者之</span></li><li style="width: 308px; height: 185px; display: block;"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=769" target="_blank"><img src="__PUBLIC__/Home/games_files/1b2a9974ab47986d879298c23aa365f7.jpg" height="185" width="308"></a><span class="title">超值回馈活动</span></li></ul>
+</div>
+<script type="text/javascript">
+runslideshow();
+</script><div style="position: absolute; top: 5px; left: 4px;" class="slidebar"><ul><li class="" onmouseover="slideshow.entities[0.19417014050026982].xactive(0); return false;">1</li><li class="" onmouseover="slideshow.entities[0.19417014050026982].xactive(1); return false;">2</li><li class="on" onmouseover="slideshow.entities[0.19417014050026982].xactive(2); return false;">3</li></ul></div></div></div></div></div><div id="frameVcz4t1" class="frame move-span cl frame-1"><div id="frameVcz4t1_left" class="column frame-1-c"><div id="frameVcz4t1_left_temp" class="move-span temp"></div><div id="portal_block_26" class="block move-span"><div style="position: relative;" id="portal_block_26_content" class="dxb_bc"><div style="display: block;" id="0.055106926144193324" class="module cl slidebox">
+<ul class="slideshow"><li style="width: 308px; height: 185px; display: none;"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=15" target="_blank"><img src="__PUBLIC__/Home/games_files/ba85f65047c65232e517742334ff020b.jpg" height="185" width="308"></a><span class="title">跨服战，还是很多人参与的。</span></li><li style="width: 308px; height: 185px; display: none;"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=16" target="_blank"><img src="__PUBLIC__/Home/games_files/8bdc43df8845c86c08eeba9dd40b8963.jpg" height="185" width="308"></a><span class="title">东方不败太娘了吗？</span></li><li style="width: 308px; height: 185px; display: block;"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=92" target="_blank"><img src="__PUBLIC__/Home/games_files/c143263898e78ba2b7806e3e0bcf8d21.jpg" height="185" width="308"></a><span class="title">58《大侠传》美人无泪之黄衫女现</span></li></ul>
+</div>
+<script type="text/javascript">
+runslideshow();
+</script><div style="position: absolute; top: 5px; left: 4px;" class="slidebar"><ul><li class="" onmouseover="slideshow.entities[0.055106926144193324].xactive(0); return false;">1</li><li class="" onmouseover="slideshow.entities[0.055106926144193324].xactive(1); return false;">2</li><li class="on" onmouseover="slideshow.entities[0.055106926144193324].xactive(2); return false;">3</li></ul></div></div></div></div></div><div id="frameSqq2yH" class="frame move-span cl frame-1"><div id="frameSqq2yH_left" class="column frame-1-c"><div id="frameSqq2yH_left_temp" class="move-span temp"></div><div id="portal_block_18" class="block move-span"><div style="position: relative;" id="portal_block_18_content" class="dxb_bc"><div style="display: block;" id="0.4153834468959944" class="module cl slidebox">
+<ul class="slideshow"><li style="width: 308px; height: 185px; display: none;"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=15" target="_blank"><img src="__PUBLIC__/Home/games_files/ba85f65047c65232e517742334ff020b.jpg" height="185" width="308"></a><span class="title">跨服战，还是很多人参与的。</span></li><li style="width: 308px; height: 185px; display: none;"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=16" target="_blank"><img src="__PUBLIC__/Home/games_files/8bdc43df8845c86c08eeba9dd40b8963.jpg" height="185" width="308"></a><span class="title">东方不败太娘了吗？</span></li><li style="width: 308px; height: 185px; display: block;"><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=92" target="_blank"><img src="__PUBLIC__/Home/games_files/c143263898e78ba2b7806e3e0bcf8d21.jpg" height="185" width="308"></a><span class="title">58《大侠传》美人无泪之黄衫女现</span></li></ul>
+</div>
+<script type="text/javascript">
+runslideshow();
+</script><div style="position: absolute; top: 5px; left: 4px;" class="slidebar"><ul><li class="" onmouseover="slideshow.entities[0.4153834468959944].xactive(0); return false;">1</li><li class="" onmouseover="slideshow.entities[0.4153834468959944].xactive(1); return false;">2</li><li class="on" onmouseover="slideshow.entities[0.4153834468959944].xactive(2); return false;">3</li></ul></div></div></div></div></div></div><!--[/diy]-->
+</div>
+<div class="yeei_sw2l">
+<!--[diy=yeei3]--><div id="yeei3" class="area">
+<div id="tabFXJaY1" class="cl_frame_bm frame-tab move-span cl">
+    <div id="tabFXJaY1_title" class="tab-title title column cl" switchtype="mouseover">
+        <ul class="tb cl">
+            <!-- <li class="" id="portal_block_36"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">论坛公告</a></li>
+            <li class="" id="portal_block_37"><a href="javascript:;" onfocus="this.blur();">最近回复</a></li> -->
+            <li class="a" id="portal_block_39" style="border:0.5px solid #cdcdcd"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">精华热帖</a></li>
+           <!--  <li class="" id="portal_block_38"><a href="javascript:;" onfocus="this.blur();">精华热帖</a></li>
+            <li class="a" id="portal_block_39"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">最新主题</a></li>
+        </ul> -->
+    </div>
+<div id="tabFXJaY1_content" class="tb-c">
+
+    <div id="portal_block_36_content" class="dxb_bc">
+        <div class="module cl xl xl1">
+            <ul>
+                <foreach name="posts" item="vo">
+                    <li>
+                        <em>{$vo['ftime']}</em>
+                        <span>[<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=44&amp;filter=typeid&amp;typeid=5" title="活动" target="_blank">活动</a>]<a href="{:U('Home/games/huitie')}?id={$vo['id']}" title="{$vo['title']}" target="_blank">{$vo['title']}！</a></span>
+                    </li>
+                </foreach>
+            </ul>
+        </div>
+    </div>
+
+</div></div><div id="tabeRhtyt" class="frame-tab move-span cl"><div id="tabeRhtyt_title" class="tab-title title column cl" switchtype="mouseover"><span class="titletext" style="float:right;"><a href="http://127.0.0.1/dx22/forum.php?mod=guide" target="_blank" style="color:rgb(102, 102, 102) !important;">更多</a></span><ul class="tb cl"><li class="a" id="portal_block_29"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">论坛公告</a></li><li class="" id="portal_block_30"><a href="javascript:;" onfocus="this.blur();">
+最近回复</a></li><li class="" id="portal_block_31"><a href="javascript:;" onfocus="this.blur();">
+精华热帖</a></li><li class="" id="portal_block_32"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">最新主题</a></li></ul></div><div id="tabeRhtyt_content" class="tb-c"><div id="portal_block_29_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>08-05</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=761" title="大侠传停服公告" target="_blank">大侠传停服公告</a></span></li><li><em>06-17</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=736" title="58同城《大侠传》6月17日数据互通公告" target="_blank">58同城《大侠传》6月17日数据互通公告</a></span></li><li><em>01-10</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=715" title="《大侠传》1月10日服务器维护公告" target="_blank">《大侠传》1月10日服务器维护公告</a></span></li><li><em>11-18</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=697" title="《大侠传》九重活动喜迎合服" target="_blank">《大侠传》九重活动喜迎合服</a></span></li><li><em>11-12</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=696" title="《大侠传》11月12日临时停机维护补偿公告" target="_blank">《大侠传》11月12日临时停机维护补偿公告</a></span></li><li><em>11-08</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=695" title="《大侠传》九重活动喜迎合服" target="_blank">《大侠传》九重活动喜迎合服</a></span></li><li><em>11-08</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=694" title="《大侠传》11月13日数据互通公告" target="_blank">《大侠传》11月13日数据互通公告</a></span></li><li><em>10-15</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=683" title="58同城《大侠传》10月18日数据互通公告" target="_blank">58同城《大侠传》10月18日数据互通公告</a></span></li><li><em>07-11</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=658" title="《大侠传》合区公告" target="_blank">《大侠传》合区公告</a></span></li><li><em>07-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=655" title="《大侠传》新版本开启 第五职业天刃曝光" target="_blank">《大侠传》新版本开启 第五职业天刃曝光</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_30_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=544" title="充值问题" target="_blank">充值问题</a></span></li><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=425" title="冲值问题到底有没有人管的啊？" target="_blank">冲值问题到底有没有人管的啊？</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=468" title="360什么时候开14区？" target="_blank">360什么时候开14区？</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=571" title="请问天喔茶庄的饮料key码这里能用么" target="_blank">请问天喔茶庄的饮料key码这里能用么</a></span></li><li><em>04-20</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=550" title=".。。。" target="_blank">.。。。</a></span></li><li><em>04-13</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=507" title="50级装备礼包无法打开" target="_blank">50级装备礼包无法打开</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=411" title="关于充值的问题" target="_blank">关于充值的问题</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=409" title="求教怎么打造红色套装" target="_blank">求教怎么打造红色套装</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=457" title="充值不到账" target="_blank">充值不到账</a></span></li><li><em>03-29</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=434" title="升级问题" target="_blank">升级问题</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_31_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=465" title="热血海贼王 出航奖励答案" target="_blank">热血海贼王 出航奖励答案</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=459" title="作为6区指导员 跟大家分享一下我的海贼王游戏心得" target="_blank">作为6区指导员 跟大家分享一下我的海贼王游</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_32_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>09-01</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=773" title="街机三国9月2日更新公告" target="_blank">街机三国9月2日更新公告</a></span></li><li><em>09-01</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=772" title="9月2日新系统淬毒" target="_blank">9月2日新系统淬毒</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=771" title="《热血海贼王》海贼守卫战活动！" target="_blank">《热血海贼王》海贼守卫战活动！</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=770" title="《热血海贼王》第十七届“王者之战”跨服赛重磅开启" target="_blank">《热血海贼王》第十七届“王者之战”跨服赛</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=769" title="超值回馈活动" target="_blank">超值回馈活动</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=768" title="《热血海贼王》“任务大作战”开启公告" target="_blank">《热血海贼王》“任务大作战”开启公告</a></span></li><li><em>08-27</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=767" title="《热血海贼王》限时充值礼包活动" target="_blank">《热血海贼王》限时充值礼包活动</a></span></li><li><em>08-25</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=766" title="《热血海贼王》8月26日全服更新停机更新公告" target="_blank">《热血海贼王》8月26日全服更新停机更新公</a></span></li><li><em>08-25</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=765" title="街机三国8月26日更新公告" target="_blank">街机三国8月26日更新公告</a></span></li><li><em>08-20</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=764" title="迎七夕，绝版称号超值送！" target="_blank">迎七夕，绝版称号超值送！</a></span></li></ul>
+</div></div></div><script type="text/javascript">initTab("tabeRhtyt","mouseover");</script></div><div id="tabbl8SBM" class="frame-tab move-span cl"><div id="tabbl8SBM_title" class="tab-title title column cl" switchtype="mouseover"><span class="titletext" style="float:right;"><a href="http://127.0.0.1/dx22/forum.php?mod=guide" target="_blank" style="color:rgb(102, 102, 102) !important;">更多</a></span><ul class="tb cl"><li class="a" id="portal_block_22"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">论坛公告</a></li><li class="" id="portal_block_23"><a href="javascript:;" onfocus="this.blur();">
+最近回复</a></li><li class="" id="portal_block_24"><a href="javascript:;" onfocus="this.blur();">
+精华热帖</a></li><li class="" id="portal_block_25"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">最新主题</a></li></ul></div><div id="tabbl8SBM_content" class="tb-c"><div id="portal_block_22_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>08-05</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=761" title="大侠传停服公告" target="_blank">大侠传停服公告</a></span></li><li><em>06-17</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=736" title="58同城《大侠传》6月17日数据互通公告" target="_blank">58同城《大侠传》6月17日数据互通公告</a></span></li><li><em>01-10</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=715" title="《大侠传》1月10日服务器维护公告" target="_blank">《大侠传》1月10日服务器维护公告</a></span></li><li><em>11-18</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=697" title="《大侠传》九重活动喜迎合服" target="_blank">《大侠传》九重活动喜迎合服</a></span></li><li><em>11-12</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=696" title="《大侠传》11月12日临时停机维护补偿公告" target="_blank">《大侠传》11月12日临时停机维护补偿公告</a></span></li><li><em>11-08</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=695" title="《大侠传》九重活动喜迎合服" target="_blank">《大侠传》九重活动喜迎合服</a></span></li><li><em>11-08</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=694" title="《大侠传》11月13日数据互通公告" target="_blank">《大侠传》11月13日数据互通公告</a></span></li><li><em>10-15</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=683" title="58同城《大侠传》10月18日数据互通公告" target="_blank">58同城《大侠传》10月18日数据互通公告</a></span></li><li><em>07-11</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=658" title="《大侠传》合区公告" target="_blank">《大侠传》合区公告</a></span></li><li><em>07-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=655" title="《大侠传》新版本开启 第五职业天刃曝光" target="_blank">《大侠传》新版本开启 第五职业天刃曝光</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_23_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=544" title="充值问题" target="_blank">充值问题</a></span></li><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=425" title="冲值问题到底有没有人管的啊？" target="_blank">冲值问题到底有没有人管的啊？</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=468" title="360什么时候开14区？" target="_blank">360什么时候开14区？</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=571" title="请问天喔茶庄的饮料key码这里能用么" target="_blank">请问天喔茶庄的饮料key码这里能用么</a></span></li><li><em>04-20</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=550" title=".。。。" target="_blank">.。。。</a></span></li><li><em>04-13</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=507" title="50级装备礼包无法打开" target="_blank">50级装备礼包无法打开</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=411" title="关于充值的问题" target="_blank">关于充值的问题</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=409" title="求教怎么打造红色套装" target="_blank">求教怎么打造红色套装</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=457" title="充值不到账" target="_blank">充值不到账</a></span></li><li><em>03-29</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=434" title="升级问题" target="_blank">升级问题</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_24_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=465" title="热血海贼王 出航奖励答案" target="_blank">热血海贼王 出航奖励答案</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=459" title="作为6区指导员 跟大家分享一下我的海贼王游戏心得" target="_blank">作为6区指导员 跟大家分享一下我的海贼王游</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_25_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>09-01</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=773" title="街机三国9月2日更新公告" target="_blank">街机三国9月2日更新公告</a></span></li><li><em>09-01</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=772" title="9月2日新系统淬毒" target="_blank">9月2日新系统淬毒</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=771" title="《热血海贼王》海贼守卫战活动！" target="_blank">《热血海贼王》海贼守卫战活动！</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=770" title="《热血海贼王》第十七届“王者之战”跨服赛重磅开启" target="_blank">《热血海贼王》第十七届“王者之战”跨服赛</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=769" title="超值回馈活动" target="_blank">超值回馈活动</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=768" title="《热血海贼王》“任务大作战”开启公告" target="_blank">《热血海贼王》“任务大作战”开启公告</a></span></li><li><em>08-27</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=767" title="《热血海贼王》限时充值礼包活动" target="_blank">《热血海贼王》限时充值礼包活动</a></span></li><li><em>08-25</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=766" title="《热血海贼王》8月26日全服更新停机更新公告" target="_blank">《热血海贼王》8月26日全服更新停机更新公</a></span></li><li><em>08-25</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=765" title="街机三国8月26日更新公告" target="_blank">街机三国8月26日更新公告</a></span></li><li><em>08-20</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=764" title="迎七夕，绝版称号超值送！" target="_blank">迎七夕，绝版称号超值送！</a></span></li></ul>
+</div></div></div><script type="text/javascript">initTab("tabbl8SBM","mouseover");</script></div><div id="tabMp33L5" class="frame-tab move-span cl"><div id="tabMp33L5_title" class="tab-title title column cl" switchtype="mouseover"><span class="titletext" style="float:right;"><a href="http://127.0.0.1/dx22/forum.php?mod=guide" target="_blank" style="color:rgb(102, 102, 102) !important;">更多</a></span><ul class="tb cl"><li class="a" id="portal_block_14"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">论坛公告</a></li><li class="" id="portal_block_15"><a href="javascript:;" onfocus="this.blur();">
+最近回复</a></li><li class="" id="portal_block_16"><a href="javascript:;" onfocus="this.blur();">
+精华热帖</a></li><li class="" id="portal_block_17"><a href="javascript:;" onfocus="this.blur();" style=";float:;margin-left:px;font-size:;color: !important;;">最新主题</a></li></ul></div><div id="tabMp33L5_content" class="tb-c"><div id="portal_block_14_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>08-05</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=761" title="大侠传停服公告" target="_blank">大侠传停服公告</a></span></li><li><em>06-17</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=736" title="58同城《大侠传》6月17日数据互通公告" target="_blank">58同城《大侠传》6月17日数据互通公告</a></span></li><li><em>01-10</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=715" title="《大侠传》1月10日服务器维护公告" target="_blank">《大侠传》1月10日服务器维护公告</a></span></li><li><em>11-18</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=697" title="《大侠传》九重活动喜迎合服" target="_blank">《大侠传》九重活动喜迎合服</a></span></li><li><em>11-12</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=696" title="《大侠传》11月12日临时停机维护补偿公告" target="_blank">《大侠传》11月12日临时停机维护补偿公告</a></span></li><li><em>11-08</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=695" title="《大侠传》九重活动喜迎合服" target="_blank">《大侠传》九重活动喜迎合服</a></span></li><li><em>11-08</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=694" title="《大侠传》11月13日数据互通公告" target="_blank">《大侠传》11月13日数据互通公告</a></span></li><li><em>10-15</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=683" title="58同城《大侠传》10月18日数据互通公告" target="_blank">58同城《大侠传》10月18日数据互通公告</a></span></li><li><em>07-11</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=658" title="《大侠传》合区公告" target="_blank">《大侠传》合区公告</a></span></li><li><em>07-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=655" title="《大侠传》新版本开启 第五职业天刃曝光" target="_blank">《大侠传》新版本开启 第五职业天刃曝光</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_15_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=544" title="充值问题" target="_blank">充值问题</a></span></li><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=425" title="冲值问题到底有没有人管的啊？" target="_blank">冲值问题到底有没有人管的啊？</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=468" title="360什么时候开14区？" target="_blank">360什么时候开14区？</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=571" title="请问天喔茶庄的饮料key码这里能用么" target="_blank">请问天喔茶庄的饮料key码这里能用么</a></span></li><li><em>04-20</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=550" title=".。。。" target="_blank">.。。。</a></span></li><li><em>04-13</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=507" title="50级装备礼包无法打开" target="_blank">50级装备礼包无法打开</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=411" title="关于充值的问题" target="_blank">关于充值的问题</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=409" title="求教怎么打造红色套装" target="_blank">求教怎么打造红色套装</a></span></li><li><em>04-04</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=457" title="充值不到账" target="_blank">充值不到账</a></span></li><li><em>03-29</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=434" title="升级问题" target="_blank">升级问题</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_16_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>05-07</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=465" title="热血海贼王 出航奖励答案" target="_blank">热血海贼王 出航奖励答案</a></span></li><li><em>05-03</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=459" title="作为6区指导员 跟大家分享一下我的海贼王游戏心得" target="_blank">作为6区指导员 跟大家分享一下我的海贼王游</a></span></li></ul>
+</div></div><div style="display: none;" id="portal_block_17_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><em>09-01</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=773" title="街机三国9月2日更新公告" target="_blank">街机三国9月2日更新公告</a></span></li><li><em>09-01</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=772" title="9月2日新系统淬毒" target="_blank">9月2日新系统淬毒</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=771" title="《热血海贼王》海贼守卫战活动！" target="_blank">《热血海贼王》海贼守卫战活动！</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=770" title="《热血海贼王》第十七届“王者之战”跨服赛重磅开启" target="_blank">《热血海贼王》第十七届“王者之战”跨服赛</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=769" title="超值回馈活动" target="_blank">超值回馈活动</a></span></li><li><em>08-31</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=768" title="《热血海贼王》“任务大作战”开启公告" target="_blank">《热血海贼王》“任务大作战”开启公告</a></span></li><li><em>08-27</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=767" title="《热血海贼王》限时充值礼包活动" target="_blank">《热血海贼王》限时充值礼包活动</a></span></li><li><em>08-25</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=766" title="《热血海贼王》8月26日全服更新停机更新公告" target="_blank">《热血海贼王》8月26日全服更新停机更新公</a></span></li><li><em>08-25</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=765" title="街机三国8月26日更新公告" target="_blank">街机三国8月26日更新公告</a></span></li><li><em>08-20</em><span><a href="http://bbs.wan.58.com/forum.php?mod=viewthread&amp;tid=764" title="迎七夕，绝版称号超值送！" target="_blank">迎七夕，绝版称号超值送！</a></span></li></ul>
+</div></div></div><script type="text/javascript">initTab("tabMp33L5","mouseover");</script></div></div><!--[/diy]-->
+</div>
+
+
+</div>
+
+</div>
+<div id="wp" class="wp">
+
+<div id="pt" class="bm cl">
+<div class="z">
+<a href="http://bbs.wan.58.com/" class="nvhm" title="首页">58游戏论坛</a><em>»</em><a href="http://bbs.wan.58.com/forum.php">论坛</a></div>
+<div class="z"></div>
+</div>
+
+
+
+<style id="diy_style" type="text/css">#portal_block_12 {  border:medium none !important;}#portal_block_27 {  border:medium none !important;}#portal_block_34 {  border:medium none !important;}#portal_block_41 {  border:medium none !important;}</style>
+
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="wp cl">
+
+<div class="mn">
+
+
+<div class="fl bm">
+<div class="bm bmw  flg cl">
+<div class="bm_h cl">
+<span class="o">
+<img id="category_1_img" src="__PUBLIC__/Home/games_files/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_1');">
+</span>
+<h2><a href="http://bbs.wan.58.com/forum.php?gid=1" style="">游戏中心</a></h2>
+</div>
+<div id="category_1" class="bm_c" style="">
+<table class="fl_tb" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=72"><img src="__PUBLIC__/Home/games_files/common_72_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=72">武尊</a></dt>
+<dd><em>主题: 5</em>, <em>帖数: 5</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=739&amp;goto=lastpost#lastpost" class="xi2">《武尊》关服公告</a> <cite>2014-10-14 18:04 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=73"><img src="__PUBLIC__/Home/games_files/common_73_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=73">女神联盟</a></dt>
+<dd><em>主题: 8</em>, <em>帖数: 8</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=728&amp;goto=lastpost#lastpost" class="xi2">3月22日合区公告</a> <cite>2014-3-21 11:04 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=81"><img src="__PUBLIC__/Home/games_files/common_81_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=81">大闹天宫</a></dt>
+<dd><em>主题: 6</em>, <em>帖数: 6</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=755&amp;goto=lastpost#lastpost" class="xi2">大闹天宫 停服公告</a> <cite>2015-2-2 18:02 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=85"><img src="__PUBLIC__/Home/games_files/common_85_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=85">枪魂</a></dt>
+<dd><em>主题: 7</em>, <em>帖数: 7</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=760&amp;goto=lastpost#lastpost" class="xi2">《枪魂》停服公告!</a> <cite>2015-3-4 13:04 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 170px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=90"><img src="__PUBLIC__/Home/games_files/common_90_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 170px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=90">骑士战歌</a></dt>
+<dd><em>主题: 5</em>, <em>帖数: 5</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=737&amp;goto=lastpost#lastpost" class="xi2">58游戏《骑士战歌》9月15日停服 ...</a> <cite>2014-7-15 14:41 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=94"><img src="__PUBLIC__/Home/games_files/common_94_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=94">龙之纹章</a></dt>
+<dd><em>主题: 6</em>, <em>帖数: 6</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=727&amp;goto=lastpost#lastpost" class="xi2">《龙之纹章》暂时停服公告 ...</a> <cite>2014-3-19 17:15 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 170px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=98"><img src="__PUBLIC__/Home/games_files/common_98_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 170px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=98">风云无双</a></dt>
+<dd><em>主题: 5</em>, <em>帖数: 5</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=754&amp;goto=lastpost#lastpost" class="xi2">停服公告</a> <cite>2015-2-2 17:58 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=2"><img src="__PUBLIC__/Home/games_files/common_2_icon.png" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=2">大侠传</a></dt>
+<dd><em>主题: 255</em>, <em>帖数: 442</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=761&amp;goto=lastpost#lastpost" class="xi2">大侠传停服公告</a> <cite>2015-8-5 18:45 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=42"><img src="__PUBLIC__/Home/games_files/common_42_icon.png" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=42">热血海贼王</a></dt>
+<dd><em>主题: 119</em>, <em>帖数: 277</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=771&amp;goto=lastpost#lastpost" class="xi2">《热血海贼王》海贼守卫战活动！ ...</a> <cite>2015-8-31 19:31 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=46"><img src="__PUBLIC__/Home/games_files/common_46_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=46">九龙朝</a></dt>
+<dd><em>主题: 54</em>, <em>帖数: 77</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=772&amp;goto=lastpost#lastpost" class="xi2">9月2日新系统淬毒</a> <cite>2015-9-1 18:22 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=51"><img src="__PUBLIC__/Home/games_files/common_51_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=51">神将三国</a></dt>
+<dd><em>主题: 3</em>, <em>帖数: 3</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=609&amp;goto=lastpost#lastpost" class="xi2">阵法系统</a> <cite>2013-5-8 10:44 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=%E4%BA%94%E5%85%AB%E6%B8%B8%E6%88%8F%E5%AE%A2%E6%9C%8D">五八游戏客服</a></cite>
+</dd>
+</dl>
+</td>
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=55"><img src="__PUBLIC__/Home/games_files/common_55_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=55">战三国</a></dt>
+<dd><em>主题: 3</em>, <em>帖数: 3</em></dd><dd>
+从未
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=59"><img src="__PUBLIC__/Home/games_files/common_59_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=59">烈焰</a></dt>
+<dd><em>主题: 1</em>, <em>帖数: 1</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=730&amp;goto=lastpost#lastpost" class="xi2">58烈焰2014年4月15日停服公告 ...</a> <cite>2014-4-9 15:53 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=64"><img src="__PUBLIC__/Home/games_files/common_64_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=64">街机三国</a></dt>
+<dd><em>主题: 24</em>, <em>帖数: 24</em></dd><dd>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=773&amp;goto=lastpost#lastpost" class="xi2">街机三国9月2日更新公告 ...</a> <cite>2015-9-1 18:30 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_g" width="49.9%">
+<div class="fl_icn_g" style="width: 172px;">
+<a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=68"><img src="__PUBLIC__/Home/games_files/common_68_icon.jpg" alt="" align="left"></a></div>
+<dl style="margin-left: 172px;">
+<dt><a href="http://bbs.wan.58.com/forum.php?mod=forumdisplay&amp;fid=68">大将军</a></dt>
+<dd><em>主题: 0</em>, <em>帖数: 0</em></dd><dd>
+从未
+</dd>
+</dl>
+</td>
+<td width="49.9%">&nbsp;</td></tr>
+</tbody></table>
+</div>
+</div><div class="bm bmw  cl">
+<div class="bm_h cl">
+<span class="o">
+<img id="category_63_img" src="__PUBLIC__/Home/games_files/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_63');">
+</span>
+<h2><a href="http://bbs.wan.58.com/forum.php?gid=63" style="">客服中心</a></h2>
+</div>
+<div id="category_63" class="bm_c" style="">
+<table class="fl_tb" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="fl_icn">
+<a href="{{:U('Home/Games/liebiao')}"><img src="__PUBLIC__/Home/games_files/forum.gif"></a>
+</td>
+<td>
+<h2><a href="{:U('Home/Games/liebiao')}">游戏常见问题</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">6</span><span class="xg1"> / 6</span></td>
+<td class="fl_by">
+<div>
+<a href="http://bbs.wan.58.com/forum.php?mod=redirect&amp;tid=711&amp;goto=lastpost#lastpost" class="xi2">游戏如何充值？</a> <cite>2013-12-20 12:16 <a href="http://bbs.wan.58.com/home.php?mod=space&amp;username=admin">admin</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+</tr>
+</tbody></table>
+</div>
+</div></div>
+
+<div class="wp mtn">
+<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="online" class="bm oll">
+<div class="bm_h">
+<span class="o"><a href="http://bbs.wan.58.com/forum.php?showoldetails=no#online" title="收起/展开"><img src="__PUBLIC__/Home/games_files/collapsed_no.gif" alt="收起/展开"></a></span>
+<h3>
+<strong><a href="http://bbs.wan.58.com/home.php?mod=space&amp;do=friend&amp;view=online&amp;type=member">在线会员</a></strong>
+<span class="xs1">- <strong>5</strong> 人在线
+- <strong>0</strong> 会员(<strong>0</strong> 隐身),
+<strong>5</strong> 位游客
+- 最高记录是 <strong>120</strong> 于 <strong>2013-6-2</strong>.</span>
+</h3>
+</div>
+<dl id="onlinelist" class="bm_c">
+<dt class="ptm pbm bbda"><img src="__PUBLIC__/Home/games_files/online_admin.gif"> 管理员 &nbsp; &nbsp; &nbsp; <img src="__PUBLIC__/Home/games_files/online_supermod.gif"> 超级版主 &nbsp; &nbsp; &nbsp; <img src="__PUBLIC__/Home/games_files/online_moderator.gif"> 版主 &nbsp; &nbsp; &nbsp; <img src="__PUBLIC__/Home/games_files/online_member.gif"> 会员 &nbsp; &nbsp; &nbsp; </dt>
+<dd class="ptm pbm">
+<ul class="cl">
+<li style="width: auto">当前只有游客或隐身会员在线</li>
+</ul>
+</dd>
+</dl>
+</div>
+
+</div>
+
+</div>
+    </div>
+        </div>
+</div></div>
+
+</div>
+<div class="c_b">
+<div class="c_yb"><div class="c_yb2"><div class="c_r"><div class="c_l">
+<ul>
+<div class="y">&nbsp;&nbsp;<a target="_blank" title="腾讯分析" href="http://stats.discuz.qq.com/?ADTAG=FROUM.FOOTER.CLICK.ICON"><img src="__PUBLIC__/Home/games_files/toss_11.gif" title="腾讯分析" border="0"></a><script type="text/javascript" src="__PUBLIC__/Home/games_files/ping.js" charset="utf-8"></script><script type="text/javascript" reload="1">pgvMain({"discuzParams":{"r2":"22975020","ui":0,"rt":"forum","md":"index","pn":1,"qq":"000","logo":11},"extraParams":""});</script><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F858c7ca19007f1e952bf950d2d1b9d02' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="__PUBLIC__/Home/games_files/h.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Home/games_files/stats" charset="UTF-8"></script>
+</div><a href="http://bbs.wan.58.com/archiver/">Archiver</a><span class="pipe">|</span><a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP证060405 津网文[2013]0121-02</a>
+
+</ul>
+
+
+</div></div></div>
+
+
+
+</div>
+</div>
+
+
+
+
+<div class="yeei_ft">
+<div id="ft" class="wp cl">
+    <p class="xs0">
+GMT+8, 2015-11-23 09:54<span id="debuginfo">. This page is cached  at 09:54:49  .</span>
+</p>
+<p class="xs0">© 2001-2011  Powered by <a href="http://www.discuz.net/" target="_blank">Discuz!</a> <em>X2.5</em>. <a href="http://wan.58.com/" target="_blank">wan.58.com</a><!--Yeei版权所有，请勿修改版权--></p>
+        </div>
+</div>
+<div id="g_upmine_menu" class="tip tip_3" style="display:none;">
+<div class="tip_c">
+积分 0, 距离下一级还需  积分
+</div>
+<div class="tip_horn"></div>
+</div>
+<script src="__PUBLIC__/Home/games_files/home.php" type="text/javascript"></script>
+<span style="left: 1111px; visibility: hidden;" id="scrolltop" onclick="window.scrollTo('0','0')">回顶部</span>
+<script type="text/javascript">_attachEvent(window, 'scroll', function(){showTopLink();});</script>
+            <div id="discuz_tips" style="display:none;"></div>
+            <script type="text/javascript">
+                var discuzSId = '22975020';
+                var discuzVersion = 'X2.5';
+                var discuzRelease = '20121101';
+                var discuzApi = '0.6';
+                var discuzIsFounder = '';
+                var discuzFixbug = '25000002';
+                var discuzAdminId = '0';
+                var discuzOpenId = '';
+                var discuzUid = '0';
+                var discuzGroupId = '7';
+                var ts = '1448243689';
+                var sig = '02d438ee6f1f87a25fbb654584806524';
+                var discuzTipsCVersion = '2';
+            </script>
+            <script src="__PUBLIC__/Home/games_files/discuz_tips.js" type="text/javascript" charset="UTF-8"></script><script type="text/javascript">
+            if($('debuginfo')) {
+                $('debuginfo').innerHTML = '. This page is cached  at 09:54:49  .';
+            }
+            </script></body></html>

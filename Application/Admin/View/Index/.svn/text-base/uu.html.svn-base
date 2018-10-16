@@ -1,0 +1,79 @@
+<!-- 马宁 -->
+<dl id="menu-product">
+			<dt><i class="Hui-iconfont">&#xe620;</i> 产品管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="__PUBLIC__/Admin/product-brand.html" href="javascript:void(0)">品牌管理</a></li>
+					<li><a _href="{:U('Admin/Shuma/shumaleiadd')}" href="javascript:void(0)">分类管理</a></li>
+					<li><a _href="{:U('Admin/Goods/index')}" href="javascript:void(0)">产品管理</a></li>
+					<li><a _href="{:U('Admin/Jiazheng/index')}" href="javascript:void(0)">家政服务</a></li>
+					<li><a _href="{:U('Admin/Yule/index')}" href="javascript:void(0)">娱乐服务</a></li>
+					<li><a _href="{:U('Admin/Shop/index')}" href="javascript:void(0)">团购管理</a></li>
+					<li><a _href="{:U('Admin/Liuyan/index')}" href="javascript:void(0)">留言管理</a></li>
+					<li><a _href="{:U('Admin/Pinglun/index')}" href="javascript:void(0)">评论管理</a></li>
+				</ul>
+			</dd>
+		</dl>
+
+
+<!-- 梁辉 -->
+<dl id="menu-picture">
+			<dt><i class="Hui-iconfont">&#xe613;</i> 代理商管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="{:U('Admin/Business/index')}" href="javascript:void(0)">授权管理</a></li>
+				</ul>
+			</dd>
+		</dl>
+		
+		<dl id="menu-product">
+			<dt><i class="Hui-iconfont">&#xe620;</i> 家居管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="{:U('Admin/Jiaju/add')}" href="javascript:void(0)">商品添加</a></li>
+					<li><a _href="{:U('Admin/Jiaju/index')}" href="javascript:void(0)">商品管理</a></li>
+					<li><a _href="{:U('Admin/Jiaju/huishouzhan')}" href="javascript:void(0)">回收站</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-product">
+			<dt><i class="Hui-iconfont">&#xe620;</i> 婚庆管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="{:U('Admin/Marry/add')}" href="javascript:void(0)">业务添加</a></li>
+					<li><a _href="{:U('Admin/Marry/index')}" href="javascript:void(0)">业务管理</a></li>
+					<li><a _href="{:U('Admin/Marry/huishouzhan')}" href="javascript:void(0)">回收站</a></li>
+				</ul>
+			</dd>
+		</dl>
+
+		<dl id="menu-product">
+			<dt><i class="Hui-iconfont">&#xe620;</i>友情链接<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="{:U('Admin/Link/add')}" href="javascript:void(0)">链接添加</a></li>
+					<li><a _href="{:U('Admin/Link/index')}" href="javascript:void(0)">链接管理</a></li>
+					<li><a _href="{:U('Admin/Link/huishouzhan')}" href="javascript:void(0)">回收站</a></li>
+				</ul>
+			</dd>
+		</dl>
+
+		<?php 
+            $AUTH = new \Think\Auth();
+            if($AUTH->check('Admin/Quanxian/index', session('id'))){
+         ?>
+		<!-- 权限管理 -->
+		<dl id="menu-product">
+			<dt><i class="Hui-iconfont">&#xe620;</i>权限管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="{:U('Admin/Quanxian/index')}" href="javascript:void(0)">权限管理</a></li>
+					<li><a _href="{:U('Admin/Quanxian/add')}" href="javascript:void(0)">权限添加</a></li>
+					<li><a _href="{:U('Admin/Quanxian/ruleAdd')}" href="javascript:void(0)">规则添加</a></li>
+					<li><a _href="{:U('Admin/Quanxian/adminAdd')}" href="javascript:void(0)">管理员添加</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<?php 
+			}
+		 ?>

@@ -1,0 +1,58 @@
+ <!-- 瀑布流************** -->
+
+            <!-- 瀑布流************** -->
+            <!-- 瀑布流************** -->
+            <!-- 瀑布流************** -->
+                <div id="left" class="cright">
+                        <li style="display:none" id="item">
+                            <img src="" alt="" width="100%">
+                        </li>
+            
+                        <ul class="pubu"></ul>
+                        <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"> </script>
+                        <script type="text/javascript">
+                            var p = 1;
+                            var isLoading = false;//
+
+                            //滚动事件
+                            $(window).scroll(function(){
+                                //如果正在请求  返回函数
+                                if(isLoading) return;
+                                //获取滚动高度
+                                var sT = $(window).scrollTop();
+                                //获取窗口的高度
+                                var wH = $(window).height();
+                                //整个文档的高度
+                                var sH = $(document).height();
+                                //
+                                if(sH - sT - wH <= 200 ){
+                                    ///关门  其他请求不能发送
+                                    isLoading = true;
+                                    load();
+                                }
+                            })
+
+                            //获取数据的函数封装
+                            function load(){
+                                $.get("{:U('Home/Marry/gettips')}",{p:p},function(data){
+                                    //循环创建元素
+                                    for(var i=0;i<data.length;i++){
+                                        //克隆元素
+                                        var newLi = $('#item').clone(true);
+                                        //修改元素的信息
+                                        newLi.find('img').attr('src','__PUBLIC__/Uploads/'+data[i].pic);
+                                        //显示元素
+                                        newLi.show();
+                                        //执行插入
+                                        $('pubu').append(newLi);
+                                    }
+                                    p++;
+                                    isLoading = false;
+                                },'json');
+                            }
+
+                            //页面加载的时候请求一次
+                            load();
+                        </script>
+
+                </div>

@@ -1,0 +1,280 @@
+<extend name="Ziying/index" />
+<block name="content">
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>【北京货运服务|北京搬家服务】- 北京58到家</title>
+<meta name="keywords" content="北京货运服务,北京搬家服务,北京58到家速运">
+<meta name="description" content="58到家北京速运为您提供专业、便捷、安心的标准化速运服务，主要包括货运、搬家等到家服务，找速运服务就上58到家。"><meta name="location" content="province=北京;city=北京">
+
+<script src="__PUBLIC__/Home/suyun_files/hm.js"></script><script src="__PUBLIC__/Home/suyun_files/tracker.js"></script><script type="text/javascript">
+var bi_params = { cityid:'96',cateid:'3',pagetype:'list',termtype:1};
+(function() {
+  var bi_hm = document.createElement("script");
+  bi_hm.src = "http://pic2.58.com/m58/app58/m_static/js/bi/tracker.js";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(bi_hm, s);
+})();
+
+</script><link href="__PUBLIC__/Home/suyun_files/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/suyun_files/home.css">
+</head>
+<body class="suy-banner" style="background:url(__PUBLIC__/Home/index/bgsuyun.jpg) no-repeat 0px 50px">
+</block>
+
+  <<!-- div class="header">
+      <div class="head clearfix">
+          <div class="fl">
+            <a class="logo" href="http://bj.daojia.com/"></a>
+          </div>
+          <div class="site fl">
+            	<p class="site-t">
+                  <strong>北京</strong> 
+              </p>
+              <p class="site-c">
+                  [ <span><a href="javascript:void(0)" onclick="changeCity()">切换城市</a></span> ]
+              </p>
+          </div>
+          <div class="head-r fr">
+              <div class="tbar-login sty000 fr clearfix"></div>
+              <div class="nav sty000 fr clearfix">
+                  <a href="http://www.daojia.com/download/" rel="nofollow">下载APP</a> 
+                  <a href="http://bj.daojia.com/vip/" rel="nofollow">购买会员</a>
+                  <a href="http://bj.daojia.com/duigong/">对公业务</a>  
+                  <a href="http://bj.daojia.com/baomu/" onclick='trackClick("action=daojia_baomu_pc_daohang");'>保姆</a>
+                  <a class="nav-ys" href="http://bj.daojia.com/yuesao/"><i></i>月嫂</a> 
+                  <a class="on" href="http://bj.daojia.com/suyun/">速运</a> 
+                  <a href="http://bj.daojia.com/liren/">丽人</a> 
+      	    	    <a href="http://bj.daojia.com/jiazheng/">家政</a> 
+                  <a href="http://bj.daojia.com/">首页</a>
+              </div>
+          </div>
+          <form id="form1" method="post" action="http://www.daojia.com/suyun/selectCity/">
+            <input id="backCityUrl" name="backCityUrl" value="http://_city_.daojia.com/suyun/" type="hidden">
+          </form>
+        <script>
+          	function changeCity() {
+          		document.getElementById("form1").submit();
+          	}
+          	function window_redirect(href) {
+          		if(href.indexOf("huazhuang/huazhuangshi/list/")>-1){
+          			var vals = "";
+          			var str = vals.replace(/'/g, '"');  
+          			var json = $.parseJSON(str);
+          			
+          			var queryForm = $("<form method='post' action='"+href+"'></form>")
+          			var paramValsForm = $("<input type='hidden' name='paramVals' value=''/>"); 
+          			paramValsForm.val('');
+          			$.each(json,function(node){
+          	    		var input = document.createElement("input");
+          	        	input.type = 'hidden';
+          	        	input.name = node;
+          	        	input.value = json[node];
+          	        	queryForm.append(input);
+          	    	});
+          			queryForm.append(paramValsForm);
+          			$("body").append(queryForm).hide();
+          			queryForm.submit();
+          			
+          		}else if(href.indexOf("huazhuang/huazhuangshi/")>-1){
+          			var paramVals = "";
+          			var str = paramVals.replace(/'/g, '"');  
+          			var json = $.parseJSON(str);
+          			
+          			var param = "";
+          			
+          			if(paramVals == null || paramVals == ""){
+          				window.location.href = "/huazhuang";
+          				return;
+          			}
+          			
+          			var formDom = $("<form method='post' action='"+href+"'></form>")
+          			$.each(json,function(node){
+          	    		var input = document.createElement("input");
+          	        	input.type = 'hidden';
+          	        	input.name = node;
+          	        	input.value = json[node];
+          	        	formDom.append(input);
+          	    	});
+          			var paramValsDom = $("<input name='paramVals' value='' />");
+          			var paramDom = $("<input name='param' value='"+param+"'/>");
+          			//paramValsDom.val(paramVals);
+          			var cityDom = $("<input name='city' value='"+"bj"+"'/>");
+          			var zhuangRongIdDom = $("<input name='zhuangRongId' value='"+$paramMap.get("a")+"'/>");
+          			//var url = "http://www.daojia.com/huazhuang/huazhuangshi/" + artificerId + "?city=bj&zhuangRongId="+$paramMap.get("a");
+          			formDom.append(paramValsDom);
+          			formDom.append(paramDom);
+          			formDom.append(cityDom);
+          			formDom.append(zhuangRongIdDom);
+          			
+          			formDom.submit();
+          		}
+          		else{
+          			
+      	    		$("#createorderId").attr("action", href).submit();
+          		}
+          		
+          
+          	}
+	      </script>
+      </div>
+      <div class="breadcrumb">
+    	    <p class="c_c">
+    	      <i class="breadcrumb-icon"></i>
+          	<a href="http://bj.daojia.com/">首页</a> 
+    	      	        	        &gt;<a href="http://bj.daojia.com/suyun/"> 北京速运搬家</a> 
+    	   </p>
+  	  </div>      
+  </div> -->
+<block name="content1">
+  
+<div id="main" class="main">
+	<!-- suyun start  -->
+    	<div class="jiazbg clearfix">
+    		<div class="jiaz-j suyun">
+    			<ul>
+    				    				<li class="jiaz-z">
+    					<a href="http://bj.daojia.com/huoyun/"><img src="__PUBLIC__/Home/suyun_files/suy-01.jpg" class="jiaz-t fl"></a>
+    					<div class="jiaz-yh"><span>首单立减</span></div>
+    					<h3>速运</h3>
+    					<h4>22-33元起</h4>
+    					<h5>快速、实惠的同城货运，全城覆盖，统一定价，绝不坐地起价</h5>
+    					<p><a href="{:U('Home/Ziying/xiangqing')}?id=13">查看详情</a></p>
+    				</li>
+    				    				
+    				    				<li class="jiaz-x">
+    					<a href="http://bj.daojia.com/banjia/"><img src="__PUBLIC__/Home/suyun_files/suy-02.jpg" class="jiaz-t fl"></a>
+    					<h3>搬家</h3>
+    					<h4>78-98元起</h4>
+    					<h5>专业团队上门服务，更省心，中国平安千万承保，更放心</h5>
+    					<p><a href="{:U('Home/Ziying/xiangqing')}?id=22">查看详情</a></p>
+    				</li>
+    				    				
+    			</ul>
+    		</div>
+    	</div>
+        <!-- suyun end  -->
+</div>
+
+</block>
+        <div class="footer">
+        	<!-- 左侧按钮begin -->
+<div id="tbox">
+  <div class="icon">
+    <a id="coder" href="#tag_cmt"></a>
+    <div id="icon-01"></div>
+    <div id="coder_img"></div>
+  </div>
+  <div class="icon-t">
+    <a id="code" href="#tag_about"></a>
+    <div id="icon-02"></div>
+    <div id="code_img"></div>
+  </div>
+  <a style="display: none;" id="gotop" href="javascript:void(0)"></a>
+</div>
+<!-- 左侧按钮end -->            <div class="standard">
+  <ul>
+    <li class="standard-l">
+      <p>
+        <span></span>专业
+      </p>
+      <h6>标准化培训 严格甄选 专业设备</h6>
+    </li>
+    <li class="standard-l standard-c">
+      <p>
+        <span></span>保障
+      </p>
+      <h6>专属客服跟进 有问题先赔款 服务到您满意</h6>
+    </li>
+    <li class="standard-l standard-r">
+      <p>
+        <span></span>便捷
+      </p>
+      <h6>上千位服务人员 全城高密度覆盖 上门准时</h6>
+    </li>
+  </ul>
+</div>            
+
+<div class="nav-footer">
+  <div class="link">
+            <ul>
+      <li><b>热门类别：</b></li>
+      <li class="ll">
+            	      	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/baojie1/">北京日常保洁</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/caboli/">北京擦玻璃</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/baojie2/">北京深度保洁</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/jiadianqingxi/">北京家电清洗</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/yanghu/">北京家居养护</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/yuesao/">北京月嫂</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/baomu/">北京保姆</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/meijia/">北京美甲</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/meijie/">北京美睫</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/xiejia/">北京修护及卸甲</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/huazhuang/">北京化妆</a>
+        	</div>
+        	      	               	       	 	 <div class="link-item">
+         		 <a href="http://bj.daojia.com/huoyun/">北京速运</a>
+        	</div>
+        	      	               	               	               	               	               </li>
+    </ul>
+                <ul class="last">
+      <li><b>友情链接：</b></li>
+      <li class="ll">
+                <div class="link-item">
+          <a href="http://gz.zu.anjuke.com/fangyuan/xinqu/" target="blank">新区房屋出租</a>
+        </div>
+                <div class="link-item">
+          <a href="http://bj.liepin.com/zongjianwangluo/" target="blank">北京总监网络招聘</a>
+        </div>
+                <div class="link-item">
+          <a href="http://beijing.huangye88.com/shenghuo-banjia-changtubanjia/" target="blank">北京长途搬家</a>
+        </div>
+                <div class="link-item">
+          <a href="http://bj.ganji.com/huoyundaili/" target="blank">北京货运代理</a>
+        </div>
+              </li>
+    </ul>
+      </div>
+</div>
+
+<div class="nav-bottom">
+  <p>
+    <a href="http://bj.daojia.com/join/" rel="nofollow">加入我们</a>
+    |<a href="http://www.daojia.com/aboutus/" rel="nofollow">关于我们</a>
+    |<a href="http://bj.daojia.com/map/">网站地图</a>
+    |<a href="http://www.daojia.com/reports/" rel="nofollow">媒体报道</a>
+  </p>
+  ©2015 Daojia.com 58到家版权所有  津ICP备15004920号 
+  <br> 天津五八到家生活服务有限公司
+</div>     
+</block>
+<block name="content3">
+
+   </div>
+<script type="text/javascript" src="__PUBLIC__/Home/suyun_files/jquery-1.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/suyun_files/right_js.js"></script>
+
+
+</body></html>
+</block>

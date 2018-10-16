@@ -1,0 +1,954 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script type="text/javascript">document.domain="58.com";</script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/touxiang_files/user_center_new_v20150804171656.css">
+<script type="text/javascript" src="__PUBLIC__/Home/touxiang_files/jquery-1.js"></script>
+<script type="text/javascript">try { var ____json4fe = { catentry: { dispid: '', name: '', listname: '39' }, locallist: { dispid: '1', name: '北京', listname: 'bj' }, modules: 'my'} } catch (e) { };</script>
+<script type="text/javascript" src="__PUBLIC__/Home/touxiang_files/boot_mypage_new_v20150714230612.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/touxiang_files/topbar_new_v20150906105001.js"></script><script src="__PUBLIC__/Home/touxiang_files/im_config.js" type="text/javascript"></script>
+<link rel="stylesheet" href="__PUBLIC__/Home/touxiang_files/slide_btn_v20150827115731.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/touxiang_files/alert_v20150831104811.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/touxiang_files/jiugongge_v20150827163254.css">
+
+<script> var win = new GetToolTipWindow('tooltipdiv', 'keyword', '3', '1', '', true, 4); win.setSearchButton('searchbtn');</script>
+<script type="text/javascript">
+       function displayPhoneAlias(infoId, alias) {
+            var html = $('#phone_alias_button_' + infoId).html();
+            $.ajax('http://my.58.com/phonealias/display/' + infoId + "/" + alias,{
+                dataType: 'json',
+                type: 'POST',
+                beforeSend: function(){$('#phone_alias_button_' + infoId).html('处理中...')},
+                error: function(){
+                    alert('显示失败');
+                    $('#phone_alias_button_' + infoId).html(html);
+                },
+                success: function(json) {
+                    if(json && json.code == 0) {
+                        $('#pao_container_' + infoId).html('小号：' + alias);
+                        $('#phone_alias_button_' + infoId).fadeOut();
+                    }else {
+                        alert('显示失败:' + json.msg);
+                        $('#phone_alias_button_' + infoId).html(html);
+                    }
+                }
+            });
+        }
+       
+
+      
+       
+</script>
+
+<script type="text/javascript">
+
+jQuery(function($){
+
+	//左侧菜单
+	$(".leftmenu-content li").click(function(){
+			var $subnav = $(this).children("ul");
+			var menu_id =  $(this).attr("id").substr(4);
+			var closed_menu_id = Cookie.getCookie($userId + "_closed_menu_id"); //cookie中获取折叠状态的左侧菜单，cookie值的格式为-menuId-menuId-menuId-
+			var opened_menu_id = Cookie.getCookie($userId + "_opened_menu_id"); //cookie中获取展开状态的左侧菜单，cookie值的格式为-menuId-menuId-menuId-
+			if($subnav && $subnav.is(":visible")){
+				//折叠菜单
+												
+				//cookie closed_menu_id中记录要折叠的菜单的menuId
+				if(closed_menu_id){//有已折叠状态的左侧菜单
+					if(closed_menu_id.indexOf("-"+ menu_id + "-")<0){
+						Cookie.setCookie($userId + "_closed_menu_id",closed_menu_id + menu_id +"-",{expireDays:30,path:"/",domain:"my.58.com"});
+				  }
+				}else{//没有已折叠状态的左侧菜单
+					  Cookie.setCookie($userId + "_closed_menu_id","-"+menu_id+ "-",{expireDays:30,path:"/",domain:"my.58.com"});
+				}
+				
+				//从cookie opened_menu_id中删除要折叠的菜单的menuId
+				if(opened_menu_id && opened_menu_id.indexOf("-" + menu_id + "-")>=0){
+					if(opened_menu_id.split("-"+menu_id+"-")[0] + "-" + opened_menu_id.split("-"+menu_id+"-")[1] == "-"){//判断cookie中的最后一个menuId
+						Cookie.setCookie($userId + "_opened_menu_id","",{expireDays:30,path:"/",domain:"my.58.com"});
+					}else{
+						Cookie.setCookie($userId + "_opened_menu_id",opened_menu_id.split("-"+menu_id+"-")[0] + "-" + opened_menu_id.split("-"+menu_id+"-")[1],{expireDays:30,path:"/",domain:"my.58.com"});
+					}
+				}
+			
+			}else{
+				 				 				
+				//从cookie中删除要展开的菜单的menuId
+					if(closed_menu_id && closed_menu_id.indexOf("-" + menu_id + "-")>=0){
+						if(closed_menu_id.split("-"+menu_id+"-")[0] + "-" + closed_menu_id.split("-"+menu_id+"-")[1] == "-"){//判断cookie中的最后一个menuId
+							Cookie.setCookie($userId + "_closed_menu_id","",{expireDays:30,path:"/",domain:"my.58.com"});
+						}else{
+							Cookie.setCookie($userId + "_closed_menu_id",closed_menu_id.split("-"+menu_id+"-")[0] + "-" + closed_menu_id.split("-"+menu_id+"-")[1],{expireDays:30,path:"/",domain:"my.58.com"});
+						}
+					}
+					
+					//cookie closed_menu_id中记录要展开的菜单的menuId
+					if(opened_menu_id){//有已展开状态的左侧菜单
+						if(opened_menu_id.indexOf("-"+ menu_id + "-")<0){
+							Cookie.setCookie($userId + "_opened_menu_id",opened_menu_id + menu_id +"-",{expireDays:30,path:"/",domain:"my.58.com"});
+					  }
+					}else{//没有已折叠状态的左侧菜单
+						  Cookie.setCookie($userId + "_opened_menu_id","-"+menu_id+ "-",{expireDays:30,path:"/",domain:"my.58.com"});
+					}
+				
+			}
+	});
+	
+	$(".leftmenu-content li a ").click(function(){
+		$("li").removeClass("li1-selected");
+		$(".leftmenu-content-ul li").removeClass("li-selected");
+		$(".leftmenu-content-slide-li1").removeClass("li1-selected");
+		$(".leftmenu-content-li2").removeClass("li1-selected");
+		var ul_temp = $(this).parent("li").parent("ul").attr("class");
+		if(ul_temp == "leftmenu-content-ul")
+			$(this).parent("li").addClass("li-selected");
+		else
+			$(this).parent("li").addClass("li1-selected");
+		$("#currentmenu_name").text("");
+		$("#currentmenu_name").append($(this).text());
+	});
+	
+})
+
+
+/**
+	*COOKIE相关 add by bsrn  
+	*
+*/
+ 
+		var Cookie=new Object();
+		var Cookie={
+			setCookie:function(){},
+			getCookie:function(){},
+			deleteCookie:function(){}
+		}
+		//setCookie
+		//name是要设置cookie的名字，value是要设置的值
+		//option 包括其他选项，是一个对象参数
+		Cookie.setCookie=function(name,value,option){
+			//用于存储负值给document.cookie的cookie格式字符串
+			var str=name+"="+escape(value);
+			if(option){
+				//如果设置了过期时间
+				if(option.expireDays){
+					var date=new Date();
+					var ms=option.expireDays*24*3600*1000;
+					date.setTime(date.getTime()+ms);
+					str+=";expires="+date.toGMTString();
+				}
+				if(option.path)str+=";path="+option.path;//设置访问路径
+				if(option.domain)str+=";domain="+option.domain;//设置访问主机
+				if(option.secure)str+=";true";//设置安全性
+			}
+			document.cookie=str;
+		}
+		//实现取Cookie值的方法
+		//name是指定Cookie的名字
+		Cookie.getCookie=function(cookieName){
+		var reg=new RegExp(cookieName+"=([^;]*);?");
+		if(reg.test(document.cookie)){
+			return decodeURIComponent(RegExp.$1);
+		}		
+	}
+		//实现删除Cookie 的方法
+		//name是指定的Cookie名称， 通过将expireDays属性指定为负数
+		Cookie.deleteCookie=function(name){
+			this.setCookie(name,"",{expireDays:-1,path:"/"});//将过期时间设置为过去来删除Cookie			
+			
+
+		}
+</script>
+
+<link href="__PUBLIC__/Home/touxiang_files/userdata_data/user-n2012_v20151106153044.css" rel="stylesheet" type="text/css">
+
+<title>用户中心</title>
+<script type="text/javascript">    document.domain = ''; </script>
+<script type="text/javascript">    try { var ____json4fe = { catentry: { dispid: '', name: '', listname: '39' }, locallist: { dispid: '1', name: '北京', listname: 'bj' }, modules: 'my'} } catch (e) { };</script>
+<script src="__PUBLIC__/Home/touxiang_files/m2013ad.js"></script></head>
+<body>
+<div>
+			<script>
+function uploadresult(msg) {
+    msg = $.c.Uploader.uploaduserimgresult(msg);
+    msg = msg.split('|');
+    if (msg.length > 1) {
+        if (msg[1] == "toobig1") {
+            alert("图片过大,上传图片需小于100k！");
+            return;
+        }else if(msg[1] == "noimg") {
+            alert("图片格式不正确！");
+            return;
+        }
+        window.location = window.location;
+    }
+    else {
+        alert(msg[0]);
+    }
+}
+</script>
+<form  method="post" enctype="multipart/form-data" action="{:U('Home/Ucenter/touxiangxiugai')}">
+
+<input name="wbtk" value="823c85de58ba9455315a46b86d63fb8f" type="hidden">
+
+<div class="title clearfix">
+	<h2 class="balance-h2">修改头像</h2>
+</div>
+<table class="grpic mt20">
+	<tbody>
+		<tr>
+			<th rowspan="2"><div id="previewimage"> <span class="tx"> <img id="userimg" src="__PUBLIC__{$arr['pic'][0]}"></span></div></th>
+			<td>
+				<div>快速上传</div>
+				<div><input id="btn_use_wx_face" value="使用微信头像" type="button"> (
+					 未绑定微信 				)
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<div>本地上传</div>
+				<input size="38" onchange="$.c.Uploader.uploaduserimg('subform')" id="userface" name="pic" type="file">
+				<input value="uploadresult" name="backFunction" id="backFunction" type="hidden">
+				<iframe name="uploadframe" id="uploadframe" src="userdata_data/submit_002.htm" style="display: none;"> </iframe>
+				<br>
+				图片格式:GIF、JPG、JPEG、PNG,最适合尺寸120*120 像素 
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="title clearfix">
+	<h2 class="balance-h2">修改联系方式</h2>
+</div>
+<table class="grinfo">
+	<tbody>
+		<tr>
+			<th> 手 &nbsp; &nbsp;机：</th>
+			<td>
+									<strong>{$arr['tel']}</strong>
+					<img alt="手机已验证" src="userdata_data/icotel.gif" align="absmiddle">
+											<a href=>修改</a>
+					            	            </td>
+		</tr>
+		
+	</tbody>
+</table>
+
+<div class="title clearfix">
+	<h2 class="balance-h2">修改资料</h2>
+</div>
+<table class="grinfo">
+<tbody>
+	<tr>
+		<th>用户名：</th>
+		<td> <strong>{$arr['username']}</strong></td>
+	</tr>
+	<tr>
+		<th><span class="red">*</span> 真实姓名：</th>
+		<td>
+							<input class="inp inw" name="z_name" id="txtTrueName" type="text" value="{$arr['z_name']}">
+										<a href="">验证身份增加信用</a>
+							
+        </td>
+	</tr>
+	<tr>
+		<th><span class="red">*</span> 性 &nbsp; &nbsp;别：</th>
+		<td>
+			<input value="1" name="sex" id="rbSex1" type="radio" <if condition="$arr['sex'] eq  1" >checked</if>>
+			<label for="rbSex1">女</label>
+			<input value="0" name="sex" id="rbSex2" type="radio" <if condition="$arr['sex'] eq 0" >checked</if>>
+			<label for="rbSex2">男</label>
+			<span id="Sex_Tip"></span>
+		</td>
+	</tr>
+	<tr>
+		<th><span class="red">*</span> 生 &nbsp; &nbsp;日：</th>
+		<td>
+			<style type="text/css">
+				.yearcssdefault{width: 55px;}
+				.monthcssdefault{width: 50px;}
+				.daycssdefault{width: 50px;}
+			</style>
+			<span id="templateyearmonthandday">
+				<script>
+	                var date1 = new $.c.public1.dropdowndate("date1",undefined,1980,1,1);
+	                // date1.load(2015);
+	            </script><span class="yearcssdefault" style="width:auto"><select value="1980" id="yeardate1" class="yearcssdefault" name="year" onchange="date1.InitMonth(0);date1.InitDay(this.value,1,1)"><option value="1916">1916</option><option value="1917">1917</option><option value="1918">1918</option><option value="1919">1919</option><option value="1920">1920</option><option value="1921">1921</option><option value="1922">1922</option><option value="1923">1923</option><option value="1924">1924</option><option value="1925">1925</option><option value="1926">1926</option><option value="1927">1927</option><option value="1928">1928</option><option value="1929">1929</option><option value="1930">1930</option><option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option><option value="1936">1936</option><option value="1937">1937</option><option value="1938">1938</option><option value="1939">1939</option><option value="1940">1940</option><option value="1941">1941</option><option value="1942">1942</option><option value="1943">1943</option><option value="1944">1944</option><option value="1945">1945</option><option value="1946">1946</option><option value="1947">1947</option><option value="1948">1948</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option selected="selected" value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option></select>  年</span><span class="monthcssdefault" style="width:auto"><select value="1" id="monthdate1" class="monthcssdefault" name="month" onchange="date1.MonthChange(this.value)"><option selected="selected" value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>  月</span><span class="daycssdefault" style="width:auto"><select value="1" id="daydate1" class="daycssdefault" name="day" onchange=""><option selected="selected" value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>  日</span>
+			</span>
+		</td>
+	</tr>
+	
+	<tr>
+		<th>通讯地址：</th>
+		<td colspan="2">
+			<input class="inp inw" id="txtAddress"   type="text">
+			<span id="txtAddress_Tip" style="color:red"></span>
+		</td>
+	</tr>
+	<tr>
+		<th>&nbsp;邮 &nbsp; &nbsp;编：</th>
+		<td>
+			<input class="inp inw" maxlength="6" id="txtPostZip" name="txtPostZip" type="text" value={$arr['txtPostZip']}>
+			<span id="txtPostZip_Tip" style="color:red"></span>
+		</td>
+	</tr>
+
+	<script type="text/javascript">
+		// 当填写完通讯地址以后
+		var bb;
+		$('#txtAddress').blur(function(){
+			// 获取当前元素的值
+			var str=$('#txtAddress').val();
+			if(str){
+				$('#txtAddress_Tip').html('');
+				bb=1;
+			}else{
+				$('#txtAddress_Tip').html('请填写通讯地址');
+				bb=0;
+			}
+		})
+		// 当填写完邮编，丧失焦点以后，判断是否事由6位数字组成的
+		var aa;
+		$('#txtPostZip').blur(function(){
+			// 获取当前元素的值
+			var str=$('#txtPostZip').val();
+			// 写正则表达式
+			var reg=/^\d{6}$/;
+			// alert('aa');
+			// 进行匹配
+			var res=reg.test(str);
+			if(res){
+				$('#txtPostZip_Tip').html('');
+				aa=1;
+			}else{
+				$('#txtPostZip_Tip').html('请输入正确的邮编');
+				aa=0;
+			}
+		})
+
+
+
+	</script>
+	
+	<tr>
+		<th>家 &nbsp; &nbsp;乡：</th>
+		<td>
+			<select id="hometown" name="hometown">
+									<option selected="selected" value="1">北京</option>
+									<option value="2">上海</option>
+									<option value="3">广州</option>
+									<option value="4">深圳</option>
+									<option value="5">苏州</option>
+									<option value="18">天津</option>
+									<option value="37">重庆</option>
+									<option value="79">杭州</option>
+									<option value="93">无锡</option>
+									<option value="102">成都</option>
+									<option value="122">青岛</option>
+									<option value="135">宁波</option>
+									<option value="147">大连</option>
+									<option value="158">武汉</option>
+									<option value="172">南京</option>
+									<option value="188">沈阳</option>
+									<option value="202">哈尔滨</option>
+									<option value="222">佛山</option>
+									<option value="228">烟台</option>
+									<option value="241">石家庄</option>
+									<option value="265">济南</option>
+									<option value="276">唐山</option>
+									<option value="291">泉州</option>
+									<option value="304">福州</option>
+									<option value="319">长春</option>
+									<option value="330">温州</option>
+									<option value="342">郑州</option>
+									<option value="355">绍兴</option>
+									<option value="362">潍坊</option>
+									<option value="375">大庆</option>
+									<option value="385">淄博</option>
+									<option value="394">南通</option>
+									<option value="403">台州</option>
+									<option value="413">东莞</option>
+									<option value="414">长沙</option>
+									<option value="424">保定</option>
+									<option value="450">济宁</option>
+									<option value="463">常州</option>
+									<option value="471">徐州</option>
+									<option value="483">西安</option>
+									<option value="497">嘉兴</option>
+									<option value="505">临沂</option>
+									<option value="518">威海</option>
+									<option value="523">鞍山</option>
+									<option value="531">金华</option>
+									<option value="541">昆明</option>
+									<option value="556">洛阳</option>
+									<option value="572">邯郸</option>
+									<option value="592">南阳</option>
+									<option value="606">厦门</option>
+									<option value="613">盐城</option>
+									<option value="623">东营</option>
+									<option value="629">江门</option>
+									<option value="637">扬州</option>
+									<option value="645">镇江</option>
+									<option value="652">沧州</option>
+									<option value="669">南昌</option>
+									<option value="679">茂名</option>
+									<option value="686">泰安</option>
+									<option value="693">泰州</option>
+									<option value="700">吉林</option>
+									<option value="710">漳州</option>
+									<option value="722">惠州</option>
+									<option value="728">德州</option>
+									<option value="740">太原</option>
+									<option value="751">邢台</option>
+									<option value="771">中山</option>
+									<option value="772">廊坊</option>
+									<option value="783">汕头</option>
+									<option value="791">湛江</option>
+									<option value="801">包头</option>
+									<option value="811">呼和浩特</option>
+									<option value="821">岳阳</option>
+									<option value="831">湖州</option>
+									<option value="837">合肥</option>
+									<option value="845">南宁</option>
+									<option value="858">宜昌</option>
+									<option value="872">常德</option>
+									<option value="882">聊城</option>
+									<option value="891">襄阳</option>
+									<option value="901">肇庆</option>
+									<option value="910">珠海</option>
+									<option value="914">衡阳</option>
+									<option value="927">揭阳</option>
+									<option value="933">周口</option>
+									<option value="944">滨州</option>
+									<option value="952">兰州</option>
+									<option value="961">枣庄</option>
+									<option value="968">淮安</option>
+									<option value="977">许昌</option>
+									<option value="979">禹州</option>
+									<option value="984">乌鲁木齐</option>
+									<option value="993">衡水</option>
+									<option value="1005">平顶山</option>
+									<option value="1016">新乡</option>
+									<option value="1029">商丘</option>
+									<option value="1039">桂林</option>
+									<option value="1057">绵阳</option>
+									<option value="1067">驻马店</option>
+									<option value="1078">秦皇岛</option>
+									<option value="1086">株洲</option>
+									<option value="1096">安阳</option>
+									<option value="1734">黄石</option>
+									<option value="2015">贵阳</option>
+									<option value="2032">十堰</option>
+									<option value="2037">鄂尔多斯</option>
+									<option value="2038">辽阳</option>
+									<option value="2039">马鞍山</option>
+									<option value="2040">玉溪</option>
+									<option value="2041">盘锦</option>
+									<option value="2042">克拉玛依</option>
+									<option value="2043">海拉尔</option>
+									<option value="2044">宝鸡</option>
+									<option value="2045">芜湖</option>
+									<option value="2046">梧州</option>
+									<option value="2047">湘潭</option>
+									<option value="2048">三明</option>
+									<option value="2049">连云港</option>
+									<option value="2050">香港</option>
+									<option value="2051">台湾</option>
+									<option value="2052">西宁</option>
+									<option value="2053">海口</option>
+									<option value="2054">银川</option>
+									<option value="2055">拉萨</option>
+									<option value="2192">韶关</option>
+									<option value="2247">九江</option>
+									<option value="2248">萍乡</option>
+									<option value="2258">其他</option>
+									<option value="2284">阳江</option>
+									<option value="2292">莱芜</option>
+									<option value="2296">荆门</option>
+									<option value="2299">黄冈</option>
+									<option value="2302">恩施</option>
+									<option value="2303">邵阳</option>
+									<option value="2307">永州</option>
+									<option value="2315">松原</option>
+									<option value="2319">淮南</option>
+									<option value="2323">黄山</option>
+									<option value="2325">阜阳</option>
+									<option value="2328">六安</option>
+									<option value="2329">亳州</option>
+									<option value="2335">钦州</option>
+									<option value="2337">玉林</option>
+									<option value="2340">河池</option>
+									<option value="2342">开封</option>
+									<option value="2344">鹤壁</option>
+									<option value="2346">濮阳</option>
+									<option value="2347">漯河</option>
+									<option value="2350">宿迁</option>
+									<option value="2354">锦州</option>
+									<option value="2360">景德镇</option>
+									<option value="2363">赣州</option>
+									<option value="2364">吉安</option>
+									<option value="2371">攀枝花</option>
+									<option value="2372">泸州</option>
+									<option value="2373">德阳</option>
+									<option value="2378">南充</option>
+									<option value="2380">宜宾</option>
+									<option value="2381">广安</option>
+									<option value="2389">曲靖</option>
+									<option value="2390">保山</option>
+									<option value="2392">丽江</option>
+									<option value="2393">楚雄</option>
+									<option value="2394">红河</option>
+									<option value="2395">文山</option>
+									<option value="2397">西双版纳</option>
+									<option value="2398">大理</option>
+									<option value="2404">乌海</option>
+									<option value="2408">锡林郭勒</option>
+									<option value="2421">固原</option>
+									<option value="2422">三亚</option>
+									<option value="2429">莆田</option>
+									<option value="2501">辽源</option>
+									<option value="3157">安康</option>
+									<option value="3163">汉中</option>
+									<option value="3177">日照</option>
+									<option value="3184">延边</option>
+									<option value="3198">正定</option>
+									<option value="3209">鹰潭</option>
+									<option value="3222">吕梁</option>
+									<option value="3237">乐山</option>
+									<option value="3251">安庆</option>
+									<option value="3266">焦作</option>
+									<option value="3279">瓦房店</option>
+									<option value="3306">庄河</option>
+									<option value="3328">张家口</option>
+									<option value="3350">晋城</option>
+									<option value="3359">宿州</option>
+									<option value="3434">孝感</option>
+									<option value="3445">丹东</option>
+									<option value="3453">忻州</option>
+									<option value="3470">蚌埠</option>
+									<option value="3479">荆州</option>
+									<option value="3489">牡丹江</option>
+									<option value="5333">余姚</option>
+									<option value="5632">菏泽</option>
+									<option value="5633">宣城</option>
+									<option value="5653">运城</option>
+									<option value="5669">临汾</option>
+									<option value="5695">郴州</option>
+									<option value="5709">宜春</option>
+									<option value="5722">抚顺</option>
+									<option value="5733">渭南</option>
+									<option value="5756">怀化</option>
+									<option value="5772">沭阳县</option>
+									<option value="5845">本溪</option>
+									<option value="5853">齐齐哈尔</option>
+									<option value="5898">营口</option>
+									<option value="5918">白城</option>
+									<option value="5928">内江</option>
+									<option value="5942">榆林</option>
+									<option value="6700">赤峰</option>
+									<option value="6718">绥化</option>
+									<option value="6729">铁岭</option>
+									<option value="6745">自贡</option>
+									<option value="6752">龙岩</option>
+									<option value="6760">承德</option>
+									<option value="6770">贵港</option>
+									<option value="6776">佳木斯</option>
+									<option value="6788">张家界</option>
+									<option value="6793">衢州</option>
+									<option value="6803">资阳</option>
+									<option value="6921">长治</option>
+									<option value="6964">大同</option>
+									<option value="7112">临夏</option>
+									<option value="7133">柳州</option>
+									<option value="7154">平凉</option>
+									<option value="7168">库尔勒</option>
+									<option value="7289">鸡西</option>
+									<option value="7303">清远</option>
+									<option value="7428">金昌</option>
+									<option value="7452">哈密</option>
+									<option value="7453">咸阳</option>
+									<option value="7458">安顺</option>
+									<option value="7624">遵义</option>
+									<option value="7923">丽水</option>
+									<option value="7969">宁德</option>
+									<option value="8408">定州</option>
+									<option value="8467">天水</option>
+									<option value="8470">舟山</option>
+									<option value="8531">明港</option>
+									<option value="8556">阳春</option>
+									<option value="8572">昌吉</option>
+									<option value="8658">章丘</option>
+									<option value="8672">信阳</option>
+									<option value="8684">馆陶</option>
+									<option value="8694">顺德</option>
+									<option value="8706">全国</option>
+									<option value="8738">阳泉</option>
+									<option value="8832">晋中</option>
+									<option value="8951">延安</option>
+									<option value="9026">赵县</option>
+									<option value="9039">鹤岗</option>
+									<option value="9101">鄢陵</option>
+									<option value="9124">诸城</option>
+									<option value="9179">临猗</option>
+									<option value="9303">三门峡</option>
+									<option value="9311">喀什</option>
+									<option value="9329">长葛</option>
+									<option value="9342">淮北</option>
+									<option value="9348">黔东南</option>
+									<option value="9374">梅州</option>
+									<option value="9384">澳门</option>
+									<option value="9394">昭通</option>
+									<option value="9407">临沧</option>
+									<option value="9417">迪庆</option>
+									<option value="9422">德宏</option>
+									<option value="9429">普洱</option>
+									<option value="9441">汕尾</option>
+									<option value="9452">怒江</option>
+									<option value="9455">娄底</option>
+									<option value="9464">吐鲁番</option>
+									<option value="9465">伊犁</option>
+									<option value="9475">天门</option>
+									<option value="9486">和田</option>
+									<option value="9510">阿克苏</option>
+									<option value="9527">克孜勒苏</option>
+									<option value="9533">巴音郭楞</option>
+									<option value="9539">博尔塔拉</option>
+									<option value="9545">阿拉尔</option>
+									<option value="9556">石河子</option>
+									<option value="9563">图木舒克</option>
+									<option value="9564">五家渠</option>
+									<option value="9578">山南</option>
+									<option value="9587">日喀则</option>
+									<option value="9597">神农架</option>
+									<option value="9616">咸宁</option>
+									<option value="9625">那曲</option>
+									<option value="9630">随州</option>
+									<option value="9635">林芝</option>
+									<option value="9636">昌都</option>
+									<option value="9655">潜江</option>
+									<option value="9676">雅安</option>
+									<option value="9686">阿里</option>
+									<option value="9690">日土县</option>
+									<option value="9692">改则县</option>
+									<option value="9695">遂宁</option>
+									<option value="9702">鄂州</option>
+									<option value="9704">眉山</option>
+									<option value="9715">凉山</option>
+									<option value="9723">仙桃</option>
+									<option value="9751">广元</option>
+									<option value="9760">甘孜</option>
+									<option value="9765">伊春</option>
+									<option value="9799">达州</option>
+									<option value="9808">巴中</option>
+									<option value="9814">阿坝</option>
+									<option value="9829">铜川</option>
+									<option value="9836">双鸭山</option>
+									<option value="9846">七台河</option>
+									<option value="9851">商洛</option>
+									<option value="9858">黑河</option>
+									<option value="9869">朔州</option>
+									<option value="9875">大兴安岭</option>
+									<option value="9886">玉树</option>
+									<option value="9894">济源</option>
+									<option value="9896">黄南</option>
+									<option value="9905">海西</option>
+									<option value="9921">海东</option>
+									<option value="9934">海北</option>
+									<option value="9940">果洛</option>
+									<option value="9948">五指山</option>
+									<option value="9949">中卫</option>
+									<option value="9959">吴忠</option>
+									<option value="9967">石嘴山</option>
+									<option value="9968">文昌</option>
+									<option value="9983">兴安盟</option>
+									<option value="9998">乌兰察布</option>
+									<option value="10011">万宁</option>
+									<option value="10012">通辽</option>
+									<option value="10035">呼伦贝尔</option>
+									<option value="10049">屯昌</option>
+									<option value="10060">琼中</option>
+									<option value="10063">巴彦淖尔市</option>
+									<option value="10078">阿拉善盟</option>
+									<option value="10083">葫芦岛</option>
+									<option value="10093">阜新</option>
+									<option value="10102">朝阳</option>
+									<option value="10111">新余</option>
+									<option value="10116">上饶</option>
+									<option value="10130">琼海</option>
+									<option value="10138">抚州</option>
+									<option value="10157">通化</option>
+									<option value="10166">陵水</option>
+									<option value="10167">四平</option>
+									<option value="10177">白山</option>
+									<option value="10193">益阳</option>
+									<option value="10196">临高</option>
+									<option value="10214">湘西</option>
+									<option value="10224">巢湖</option>
+									<option value="10231">乐东</option>
+									<option value="10244">东方</option>
+									<option value="10254">池州</option>
+									<option value="10260">滁州</option>
+									<option value="10279">铜陵</option>
+									<option value="10285">南平</option>
+									<option value="10297">定安</option>
+									<option value="10307">白银</option>
+									<option value="10316">澄迈</option>
+									<option value="10320">定西</option>
+									<option value="10337">甘南</option>
+									<option value="10347">昌江</option>
+									<option value="10356">嘉峪关</option>
+									<option value="10367">保亭</option>
+									<option value="10375">白沙</option>
+									<option value="10381">酒泉</option>
+									<option value="10390">儋州</option>
+									<option value="10409">陇南</option>
+									<option value="10419">铜仁</option>
+									<option value="10430">黔西南</option>
+									<option value="10441">黔南</option>
+									<option value="10443">武威</option>
+									<option value="10449">张掖</option>
+									<option value="10456">潮州</option>
+									<option value="10462">河源</option>
+									<option value="10470">庆阳</option>
+									<option value="10480">云浮</option>
+									<option value="10500">六盘水</option>
+									<option value="10506">百色</option>
+									<option value="10510">北海</option>
+									<option value="10514">崇左</option>
+									<option value="10530">防城港</option>
+									<option value="10541">贺州</option>
+									<option value="10549">来宾</option>
+									<option value="10553">毕节</option>
+									<option value="10567">海南</option>
+									<option value="10737">武夷山</option>
+									<option value="10868">和县</option>
+									<option value="10884">清徐</option>
+									<option value="11053">永新</option>
+									<option value="11176">张北</option>
+									<option value="11201">霍邱</option>
+									<option value="11238">台山</option>
+									<option value="11254">大丰</option>
+									<option value="11271">桐城</option>
+									<option value="11288">垦利</option>
+									<option value="12221">义乌</option>
+									<option value="13663">三沙</option>
+									<option value="13894">瑞安</option>
+									<option value="13895">乐清</option>
+									<option value="16122">菲律宾</option>
+									<option value="16141">新加坡</option>
+									<option value="16194">缅甸</option>
+									<option value="16200">泰国</option>
+									<option value="16281">柬埔寨</option>
+									<option value="16306">马来西亚</option>
+									<option value="16312">印度尼西亚</option>
+									<option value="16319">日本</option>
+									<option value="16329">蒙古</option>
+									<option value="16955">越南</option>
+									<option value="16956">老挝</option>
+									<option value="16957">加拿大</option>
+									<option value="16958">美国</option>
+									<option value="16959">韩国</option>
+									<option value="16960">秘鲁</option>
+									<option value="16961">印度</option>
+									<option value="16962">俄罗斯</option>
+									<option value="16963">巴西</option>
+									<option value="16964">巴拿马</option>
+									<option value="16965">英国</option>
+									<option value="16966">荷兰</option>
+									<option value="16967">澳大利亚</option>
+									<option value="16968">新西兰</option>
+									<option value="16969">西班牙</option>
+									<option value="16970">德国</option>
+									<option value="16971">法国</option>
+									<option value="16972">意大利</option>
+									<option value="18804">阿勒泰</option>
+									<option value="18812">塔城</option>
+									<option value="20643">洛杉矶</option>
+									<option value="20645">旧金山</option>
+									<option value="20646">雪兰莪</option>
+									<option value="20647">森美兰</option>
+									<option value="20648">吉隆坡</option>
+									<option value="20649">布城</option>
+									<option value="20650">澳门</option>
+									<option value="20651">香港</option>
+									<option value="20652">台北</option>
+									<option value="20653">新北</option>
+									<option value="20654">台中</option>
+									<option value="20655">台南</option>
+									<option value="20656">高雄</option>
+									<option value="20657">基隆</option>
+									<option value="20658">新竹市</option>
+									<option value="20659">嘉义</option>
+									<option value="20660">桃园</option>
+									<option value="20661">新竹县</option>
+									<option value="20662">苗栗</option>
+									<option value="20663">彰化</option>
+									<option value="20664">南投</option>
+									<option value="20665">云林</option>
+									<option value="20666">嘉义</option>
+									<option value="20667">屏东</option>
+									<option value="20668">宜兰</option>
+									<option value="20669">花莲</option>
+									<option value="20670">台东</option>
+									<option value="20671">澎湖</option>
+									<option value="20672">新加坡</option>
+									<option value="20673">纽约</option>
+									<option value="20674">曼谷</option>
+									<option value="20675">悉尼</option>
+									<option value="20676">墨尔本</option>
+									<option value="20677">芝加哥</option>
+									<option value="20678">圣地亚哥</option>
+									<option value="20679">拉斯维加斯</option>
+									<option value="20680">多伦多</option>
+									<option value="20681">温哥华</option>
+									<option value="20682">蒙特利尔</option>
+									<option value="22584">伦敦</option>
+									<option value="23275">东京</option>
+									<option value="23301">首尔</option>
+				            </select>
+        </td>
+	</tr>
+	<tr>
+		<th valign="top">个性签名：</th>
+		<td>
+			<textarea id="txtSignContent" class="grtextarea" name="texta"> {$arr['texta']}</textarea>
+			<span id="txtSignContent_Tip"></span>
+			<br>
+			<span class="fgrey">(128字符以内)</span>
+		</td>
+	</tr>
+	<script type="text/javascript">
+		//限定个性签名程度
+		var cc;
+		$('#txtSignContent').blur(function(){
+			// 获取当前文档的值
+			var str=$('#txtSignContent').html();
+			var ss=str.length;
+			if(ss<128){
+				cc=1;
+			}else{
+				cc=0;
+			}
+		})
+	</script>
+	<tr>
+
+		<th>&nbsp;</th>
+		<td colspan="2">
+			<!-- <label class="butt" id="butt"> -->
+
+				<input id="btnSubmit" value="完成修改" type="submit">
+			<!-- </label> -->
+		</td>
+	</tr>
+
+	<script type="text/javascript">
+
+		$('#btnSubmit').click(function(){
+			$('#txtPostZip').blur();
+			$('#txtSignContent').blur();
+			$('#txtAddress').blur();
+
+
+			if(aa!=1 || bb!=1 || cc!=1){
+				return false;
+			}
+		})
+	</script>
+</tbody>
+</table>
+
+</form>
+<script id="postScript">
+var QQ_RANGE = [
+   		938000000,938099999,
+   		938100000,938199999,
+   		800000000,800099999,
+   		3000000000,3000999999,
+   		1068660000,1068679999,
+   		1153800000,1153999999,
+   		1495000000,1496999999,
+   		2355000000,2355999999,
+   		2850121000,2854120999,
+   		2880000000,2881999999,
+   		2885000000,2885999999
+    ];
+$(document).ready(function() {
+    $.formValidator.initConfig({ formid: "subform", errorfocus: true, btnid: 'btnSubmit', btnvalue: '完成修改', btnactionvalue: '正在提交....', fun: function() {
+        var form = $("#subform").get(0);
+        form.target = "formSubmit";
+        form.action = "/submit/userdata/?sys=my";
+        return true;
+    }
+    });
+    $("#txtTrueName").formValidator({ onfocus: "请输入真实姓名" }).inputValidator({ onerror: "请输入真实姓名" }).regexValidator({ regexp: "[\\u4e00-\\u9fa5]{2,8}", onerror: "对不起,真实姓名格式不对。" });
+    $("#txtSignContent").formValidator({ onfocus: "128字符以内", 'empty': true }).inputValidator({ onerror: "个性签名填写不正确" }).regexValidator({ regexp: "^[\\s\\S]{4,128}$", onerror: "个性签名长度不正确。" });
+    $(':radio[name="rbsex"]').formValidator({ tipid: 'Sex_Tip', onfocus: '' }).functionValidator({ fun: function(val, elem) { return $(':radio[name="rbsex"]:checked').length > 0; }, onerror: '请选择性别' });
+    $("#txtPhone").formValidator({ onfocus: "", q2b: true, 'empty': true }).regexValidator({ regexp: "^([\\d-]{3,5})?(\\d){5,8}(-[\\d]{1,5})?(-[\\d]{1,5})?$", onerror: "请输入正确电话号码格式,如:010-58621888或58621888" });
+    //$("#txtQQ").formValidator({ onfocus: "", q2b: true, 'empty': true }).regexValidator({ regexp: "^\\d*?$", onerror: "请输入正确QQ格式,如:123453" });
+    $("#txtQQ").formValidator({onfocus: '', q2b:true, 'empty': true}).functionValidator({fun: function(val, who){
+	    	if(!/^\d*?$/.test(val)) return false;
+	    	var qqNumber = val;
+	    	for(var i = 0; i < QQ_RANGE.length - 1; i+=2) if(qqNumber >= QQ_RANGE[i] && qqNumber <= QQ_RANGE[i+1]) return true;
+	    	return false;
+	    },
+	    onerror: '您填写的不是企业QQ员工号！<a target="_blank" href="http://about.58.com/376.html">获取帮助&raquo;</a>'
+    });
+    
+    $('#btn_use_wx_face').click(function() {
+    	var sys = "my";
+    	    		if(window.top.location.href.indexOf('/pro/qiyeziliao') != -1) {
+    			window.top.getRedirectURL('zhanghu.renzheng',0,'type=authweixin');
+    		}else {
+    			if(sys =="vip") {
+    				window.top.location.href = 'http://vip.58.com/app/certifycenter/?type=authweixin';
+    			}else{
+    				window.top.location.href = 'http://my.58.com/pro/binding/weixin';
+    			}
+    		}  
+        		
+    	    	return false;
+    });
+});
+
+function showmoredetail(obj) {
+    var parent = $(obj).parent().parent();
+    var show = false;
+    if (obj.innerHTML == "展开填写更多资料") {
+        show = true;
+    }
+    if (show) {
+        obj.innerHTML = "隐藏填写更多资料";
+    }
+    else {
+        obj.innerHTML = "展开填写更多资料";
+    }
+    var next;
+    for (var i = 0; i < 5; i++) {
+        if (i == 0) {
+            next = parent.next();
+        }
+        else {
+            next = next.next();
+        }
+        if (show) {
+            next.css("display", "");
+        }
+        else {
+            next.css("display", "none");
+        }
+    }
+}
+</script>
+<iframe style="display: none" src="userdata_data/submit_002.htm" id="formSubmit" name="formSubmit"> </iframe>
+		
+	<script type="text/javascript">
+	    var  IM_Init=function (){
+	    	//   如果 不加载im就写这个空函数 覆盖掉默认的 IM_init方法.
+	    }
+	</script>
+</div>
+
+
+</body></html>

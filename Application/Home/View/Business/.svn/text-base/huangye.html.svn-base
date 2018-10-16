@@ -1,0 +1,29 @@
+<extend name="Business/index" />
+<block name="focus"></block>
+<block name="contL">
+	<div class="contL">
+		<h2><span>
+	    			黄页代理
+	    			    		</span></h2>
+				<div class="costar" id="costar">
+		            <div class="slide">
+		                <ul style="width: 1920px; left: 0px;">	               			 
+							 <foreach name="info" item="vo" >            			 
+		                		<li><a href="{:U('Home/Business/detail')}?id={$vo['id']}" target="_blank"><img style="width:640px;height:273px" src="__PUBLIC__{$vo['pic'][0]}" title="{$vo['addr']}{$vo['company']}"></a></li>
+		                		<p class="title">{$vo['addr']}{$vo['company']}</p>
+							</foreach>
+		                </ul>
+		                <div class="eventL"></div>
+		                <div class="eventR"></div>
+		                <div class="shade"></div>
+
+		            </div>
+		        </div>
+	    	<h2><span>
+	    			黄页产品线
+	    			    		</span></h2>
+	        <div class="answers">
+	        	<p style="white-space: normal; text-align: center; line-height: 1.75em; "><br></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-family: 宋体;">【生活网邻通</span></strong><span style="font-family: 宋体;">】</span></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">58</span><span style="font-family: 宋体;">同城针对生活服务类企业推出的网络营销一站式解决方案，拥有精准的网络推广及超强网站建设功能，能快速提升中小企业的推广效果。</span></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-size: 14px; font-family: 宋体;"><br></span></strong></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-size: 14px; font-family: 宋体;">【标识】&nbsp;</span></strong><img src="__PUBLIC__/Home/huangye_files/n_s11880909581369355.jpg" title="1.jpg"><strong><span style="font-size: 14px; font-family: 宋体;">&nbsp;</span></strong><span style="font-family: 宋体;">象征网邻通与商家，以及商家与用户之间真诚携手、合作共赢</span></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-family: 宋体;">&nbsp;</span></strong></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-family: 宋体;">【生活服务产品结构】</span></strong></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">会员基础服务-生活网邻通</span></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">增值服务-黄页名店列表页右侧、黄页榜中榜</span></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">&nbsp;</span></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">【<strong>生活网邻通四大功能</strong>】</span></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">独立VIP后台管理、特有认证标识及信用指数、会员信息优先推送、智能建站系统</span></p><p style="white-space: normal; line-height: 2em; "><span style="font-family: 宋体;">网站共有82套企业型和7套营销型模板供客户选择，客户可根据自己的需求选择风格</span></p><p style="white-space: normal; line-height: 2em; "><img src="__PUBLIC__/Home/huangye_files/n_s11887772516253707.jpg" title="黄页1.jpg"></p><p style="white-space: normal; line-height: 2em; "><strong><span style="font-family: 宋体;">【生活网邻通VIP后台】</span></strong><br></p><p style="white-space: normal; line-height: 2em; "><img src="__PUBLIC__/Home/huangye_files/n_s11887773164143627.jpg" title="黄页2.jpg"></p><p><br></p>
+	        </div>
+	    </div>
+</block>

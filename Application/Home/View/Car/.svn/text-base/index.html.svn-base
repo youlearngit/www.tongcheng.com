@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>【北京二手车市场|北京二手车交易市场】 - 北京58同城</title>
+    <meta name="keywords" content="北京二手车市场,北京二手车交易市场">
+    <meta name="description" content="北京二手车交易市场是网上最大最专业的北京二手车市场，为您提供大量的北京二手车交易市场信息，经过我们严格审核的北京二手车市场二手汽车出售转让信息，是您网上选购北京2手车交易信息最佳的北京二手车网站。">
+    <meta name="location" content="province=北京;city=北京;coord=116.395645,39.929986">
+
+<meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.58.com/bj/ershouche?minprice=0_3&amp;utm_source=d_hao360&amp;spm=360-mingzhan-1010">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://m.58.com/bj/ershouche?minprice=0_3&amp;utm_source=d_hao360&amp;spm=360-mingzhan-1010">
+<meta http-equiv="mobile-agent" content="format=wml; url=http://m.58.com/bj/ershouche?minprice=0_3&amp;utm_source=d_hao360&amp;spm=360-mingzhan-1010">
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/Home/car_files/base_v20150121133540.css" media="all">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/car_files/list-ui7-03_v20151105184507.css" media="all">
+   
+<style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+style.firebugResetStyles {
+    display: none !important;
+}
+
+.cright{
+    width:160px;
+    height:auto;
+    float:left;
+    margin-top:-35px;
+    margin-left:0px;
+
+}
+
+.pubu{
+    width:150px;
+    height:auto;
+    float:left;
+    list-style:none;
+}
+
+#item{
+    width:160px;
+    height:auto;
+    border:solid 1px #ddd;
+    margin-bottom:-10px;
+    /*border:3px solid #cdcdcd;*/
+
+}
+
+#footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    text-align: center;
+    font-size:10px;
+    padding: 10px 0 30px;
+}
+
+.footer {
+    border-top: 1px solid #ededed;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+
+div .prev{
+    display:block;
+    left:left;
+}
+
+div .next{
+    display:block;
+    left:left;
+}
+
+div .num{
+    display:block;
+    border:1px solid #ccc;
+    width:15px;
+    height:20px;
+    left:left;
+}
+
+div .curret{
+    display:block;
+    border:1px solid #ccc;
+    width:15px;
+    height:20px;
+    left:left;
+}
+
+.pager{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <iframe style="display: none;" src="javascript:false;"></iframe>
+        <div id="header">
+            <span class="logo"><a href="http://bj.58.com/?utm_source=d_hao360&amp;spm=360-mingzhan-1010" target="_blank"><img src="__PUBLIC__/Home/car_files/logo_list.gif" title="58同城" alt="58同城"></a></span>
+            <span class="fl"><a href="http://post.58.com/1/29/s5" target="_blank" class="postBtn" rel="nofollow"></a></span>
+            <div class="nav">
+                <a href="http://bj.58.com/?utm_source=d_hao360&amp;spm=360-mingzhan-1010">北京58同城</a><cite></cite>&nbsp;
+                <a href="http://bj.58.com/car.shtml?utm_source=d_hao360&amp;spm=360-mingzhan-1010">北京二手车网</a><cite></cite>&nbsp;
+                <a href="http://bj.58.com/ershouche/?utm_source=d_hao360&amp;spm=360-mingzhan-1010">北京二手车</a>
+            </div>
+        </div> 
+        <div class="brandad1000" style="display: block;" id="brand_list_top_banner">
+            <style>
+                .brandad1000{ height:50px; margin:0 auto 10px; overflow:hidden; width:1000px; position:relative;}
+                .brandad1000 ul{}
+                .brandad1000 li{ height:50px;}
+                .brandad1000 img{ width:1000px; height:50px;}
+            </style>
+
+            <ul style="margin-top: 0px;">
+                <li>
+                    <a href="" target="_blank"><img src="__PUBLIC__/Home/car_files/n_v1bl2lwwiopbafml6nguza.png"></a>
+                </li>
+                <li>
+                    <a href=""><img src="__PUBLIC__/Home/car_files/n_v1bkujjd4zka6fnnpfvr7a.jpg"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="selection">
+            <i class="line"></i>    
+            <dl class="secitem mt10">
+                <dt class="secitem_brand">类型：</dt>
+                    <dd>
+                        <a class="select" href="{:U('Home/Car/index')}">不限</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?type=轿车&condition={$condition}">轿车</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?type=越野车&condition={$condition}">越野车</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?type=MPV&condition={$condition}">MPV</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?type=跑车&condition={$condition}">跑车</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?type=客车&condition={$condition}">客车</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?type=货车&condition={$condition}">货车</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?type=面包车&condition={$condition}">面包车</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?type=工程车&condition={$condition}">工程车</a>
+                        <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?type=皮卡&condition={$condition}">皮卡</a>
+                    </dd>
+            </dl>
+            <dl class="secitem "><dt class="secitem_brand">品牌：</dt>
+                <dd>
+                    <a class="select" href="{:U('Home/Car/index')}">不限</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=大众&condition={$condition}">大众</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=本田&condition={$condition}">本田</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=别克&condition={$condition}">别克</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=丰田&condition={$condition}">丰田</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=夏利&condition={$condition}">夏利</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=日产&condition={$condition}">日产</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=奇瑞&condition={$condition}">奇瑞</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=宝马&condition={$condition}">宝马</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=现代&condition={$condition}">现代</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=奥迪&condition={$condition}">奥迪</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=马自达&condition={$condition}">马自达</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=福田&condition={$condition}">福田</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=比亚迪&condition={$condition}">比亚迪</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=铃木&condition={$condition}">铃木</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=雪铁龙&condition={$condition}">雪铁龙</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=吉利&condition={$condition}">吉利</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=奔驰&condition={$condition}">奔驰</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=长安&condition={$condition}">长安</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=福特&condition={$condition}">福特</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?brand=雪佛兰&condition={$condition}">雪佛兰</a>
+                    <a href="{:U('Home/Car/index')}" id="moreBrandbtn" class="moreBrand hold clearfix" onclick="showmoreBrand()">其它品牌<em></em></a>
+                    <input id="utmspm" name="utmspm" value="utm_source=d_hao360&amp;spm=360-mingzhan-1010" type="hidden">
+                </dd>
+            </dl>
+            <dl class="secitem "><dt class="secitem_brand">车系：</dt>
+                <dd>
+                    <a class="select" href="{:U('Home/Car/index')}">不限</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=捷达&condition={$condition}">捷达</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=帕萨特&condition={$condition}">帕萨特</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=A6L&condition={$condition}">A6L</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=雅阁&condition={$condition}">雅阁</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=GL8&condition={$condition}">GL8</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=迈腾&condition={$condition}">迈腾</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=速腾&condition={$condition}">速腾</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=5系&condition={$condition}">5系</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=马自达6&condition={$condition}">马自达6</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=凯越&condition={$condition}">凯越</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=3系&condition={$condition}">3系</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=凯美瑞&condition={$condition}">凯美瑞</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=桑塔纳&condition={$condition}">桑塔纳</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=金杯海狮&condition={$condition}">金杯海狮</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=君威&condition={$condition}">君威</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?chexi=科鲁兹&condition={$condition}">科鲁兹</a>
+                </dd>
+            </dl>
+            <dl class="secitem "><dt class="secitem_brand">价格：</dt>
+                <dd>
+                    <a class="" href="{:U('Home/Car/index')}">不限</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?price1=3&condition={$condition}">3万以内</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?price1=3&price2=7&condition={$condition}">3-7万</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?price1=7&price2=10&condition={$condition}">7-10万</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?price1=10&price2=20&condition={$condition}">10-20万</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?price1=20&price2=30&condition={$condition}">20-30万</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?price1=30&price2=40&condition={$condition}">30-40万</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?price1=40&condition={$condition}">40万以上</a>
+                    <form action="{:U('Home/Car/index')}" method="get">
+                        <span class="prifilter">
+                            <span class="text text2">
+                                <input value="0" autocomplete="off" para="minprice" size="3" muti="1" onkeyup="cknum(this)" min="0" name="price1" type="text">
+                            </span>
+                            <span class="dev"> - </span>
+                            <span class="text text2">
+                                <input value="3" autocomplete="off" para="minprice" size="3" muti="1" onkeyup="cknum(this)" min="0" name="price2" type="text">
+                            </span>
+                            <span class="dev c_000"> 万元  </span>
+                            <span style="display: block;" id="pricefilter_esc" class="btn btn2">
+                                <input type="submit" value="价格筛选">
+                            </span>
+                        </span>
+                    </form> 
+                </dd>
+                <dt class="secitem_brand">车龄：</dt>
+                <dd>
+                    <a class="select" href="{:U('Home/Car/index')}">不限</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?age=1">1年以内</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?age1=1&age2=3&condition={$condition}">1-3年</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?age1=3&age2=5&condition={$condition}">3-5年</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?age1=5&age2=8&condition={$condition}">5-8年</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?age1=8&age2=10&condition={$condition}">8-10年</a>
+                    <a name="b_link" para="custom" cl="?utm_source=d_hao360&amp;spm=360-mingzhan-1010" href="{:U('Home/Car/index')}?age1=10&condition={$condition}">10年以上</a>
+                </dd>
+            </dl>
+            <br>
+            <i class="shadow"></i>
+            <input style="display: block;" id="selected" type="hidden"><div class="barct">
+            <span>已选条件：</span>
+                <a title="取消" class="par" href="http://bj.58.com/ershouche/?utm_source=d_hao360&amp;spm=360-mingzhan-1010&amp;PGTID=14470780568340.05021711941916174&amp;ClickID=11"><em>筛选: 0-3</em></a>
+                <div id="selectedRightSection">
+                    <a href="javascript:void(0)" id="btn_a">保存该筛选条件</a><a style="display: none;" href="javascript:void(0)" id="btn_b">已保存(<i id="lsCount">0</i>)</a>
+                <div id="msgTips" class="msgTips" style="display:none;">
+                    <i class="msgTips_arrow"></i>
+                    <a class="msgTips_close" href="javascript:void(0)"></a>
+                <div class="msgTips_con">注册58同城会员。让我们做您身边的生活帮手！<br>
+                    <i class="btn"><input value="马上免费注册" type="button"></i>
+                    <i class="btn"><input value="马上登记需求" type="button"></i>
+                </div>
+                    <i class="shadow"></i></div></div></div></div>
+                <div class="tabsbar">
+                    <div class="list-tabs">
+                        <a title="北京二手车" href="{:U('Home/Car/index')}"><span><h1>北京二手车</h1></span></a>
+                        <a href="{:U('Home/Car/index')}?personal=是"><span>个人</span></a>
+                        <a href="{:U('Home/Car/index')}?renzheng=是"><span>认证车商</span></a>
+                        <a title="放心车源" href="{:U('Home/Car/index')}?"><span><h1>放心车源</h1></span><i class="icon_tab_new"></i></a>
+                        <a title="0首付" href="{:U('Home/Car/index')}?shoufu=是"><span><h1>0首付</h1></span><i class="icon_tab_new"></i></a>
+                        <!-- <a href="http://esc.58.com/gcj/bj/" class="guchejia" onclick="clickLog('from=guchejia_list');" target="_blank"></a> -->
+                    </div>
+
+                    <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"> </script>
+                    <script type="text/javascript">
+                        // var inte = null;
+                        $('.list-tabs a').click(function(){
+                                $(this).attr('class','sel');
+                                $(this).siblings().removeAttr('class');
+                                return false;
+                        })
+
+                    </script>
+
+
+                    <a href="http://bj.58.com/chepai/?from=pc_list_chepai" target="_blank" class="pinanchexian">【租车牌，他们都在约！】</a>
+                </div>    <!-- =S mainlist -->
+                <div id="mainlist" class="main clearfix pr">
+                    <div id="infolist" class="cleft">
+                        <div class="filterbar" id="filterbar">
+                            <table class="car_tbfilter" cellpadding="0" cellspacing="0">
+                                <colgroup>
+                                    <col><col class="w120"><col class="w90">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="">
+                                        <td>
+                                            <span class="checkbox">
+                                                <input id="feishiguche" onclick="clickLog('from=esc_meizhou_Accident');" type="checkbox"><label for="feishiguche">非事故车</label>
+                                            </span>
+                                            <span class="checkbox">
+                                                <input id="changjiazhibao" onclick="clickLog('from=esc_meizhou_factory');" type="checkbox"><label for="changjiazhibao">原厂质保</label>
+                                            </span>
+                                            <span class="checkbox">
+                                                <input id="shangjiazhibao" onclick="clickLog('from=esc_meizhou_shop');" type="checkbox"><label for="shangjiazhibao">商家质保</label>
+                                            </span>
+                                            <span class="checkbox">
+                                                <input id="oshoufu" onclick="clickLog('from=esc_meizhou_first');" type="checkbox"><label for="oshoufu">0首付</label></span> 
+                                            <span class="checkbox">
+                                                <input id="zbjiance" onclick="clickLog('from=esc_meizhou_jiance');" type="checkbox"><label for="zbjiance">58检测</label></span>
+                                            <span class="checkbox cancelhand">
+                                                <label>共找到 <span class="red">29462</span> 辆二手车</label>
+                                            </span>
+                                        </td>
+                                        <td class="jai">价格</td>
+                                        <td class="tl jai">消费保障</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="yishouchebar clearfix">
+                            <div class="renzheng">
+                                <h1>58专业出品</h1>
+                                <div>
+                                    <i class="ysicon"></i><p>100%非事故车源，事故车七天可退！</p>
+                                </div>
+                                 <a href="http://bj.58.com/ershouche/?minprice=0_3&amp;utm_source=d_hao360&amp;spm=360-mingzhan-1010&amp;zbjiance=525377&amp;bar=4" para="biz" ck="0" target="_self" title="查看全部放心车源" class="ysicon" id="allGenrenCheyuan">全部放心车源</a>
+                            </div>
+                        </div>
+                        <div style="display: none;" id="tongyong_div"></div>
+                        <table class="tbimg" cellpadding="0" cellspacing="0">
+                            <colgroup><col class="ws100">
+                                      <col>
+                                      <col class="w120">
+                                      <col class="w90">
+                            </colgroup>
+                            <tbody>
+                                <foreach name="cars" item="vo">
+                                    <tr class="" logr=" q_2_26575631949830_23942045979194_4_2" _pos="1" sortid="500391233">
+                                        <td class="img">
+                                            <a href="{:U('Home/Car/detail')}?id={$vo['id']}" rel="nofollow" target="_blank" name="23942045979194"><img width="60" class="product-thumb" src="__PUBLIC__{$vo['pic'][0]}"></a>
+                                        </td>
+                                        <td class="t">
+                                            <a href="{:U('Home/Car/detail')}?id={$vo['id']}" target="_blank" rel="nofollow" name="23942045979194" class="t"><font style="font-family: '微软雅黑';" color="red">{$vo['brand']}</font>{$vo['title']}  {$vo['age']}</a>
+                                            <span class="jingpin"></span><i class="clear"></i>{$vo['intro']}<i class="clear"></i>
+                                            <div>
+                                                <span style="color:red;font-weight:bold;font-size:16px">{$vo['type']}</span> &nbsp;&nbsp;<span class="c_ccc">/</span> {$vo['drive']}万里<span class="c_ccc">/</span> {$vo['pailiang']} L&nbsp;<span class="c_ccc">/</span> 手动  
+                                            </div>  
+                                            <i class="clear"></i>
+                                            <a href="http://apply.vip.58.com/productinfo/qc/?utm_source=d_hao360&amp;spm=360-mingzhan-1010" target="_blank" rel="nofollow">
+                                            <span class="wlt-ico wlt2" title="58同城认证商家"></span></a>
+                                            <span zx="1" name="zaixian_26575631949830"></span>
+                                        </td>
+                                        <td class="tc">
+                                            <b class="pri">{$vo['price']}</b> 万元
+                                        </td>
+                                        <td>        
+                                            <div class="btn_all"></div>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                            </tbody>
+                        </table> 
+                    </div>
+                    
+                    <!-- 右侧广告 -->
+                    <div id="rightframe" class="cright">
+                        <li style="display:none" id="item">
+                            <img src="" alt="" width="100%">
+                        </li>
+            
+                        <ul class="pubu"></ul>
+                        <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"> </script>
+                        <script type="text/javascript">
+                            var p = 1;
+                            var isLoading = false;//
+
+                            //滚动事件
+                            $(window).scroll(function(){
+                                //如果正在请求  返回函数
+                                if(isLoading) return;
+                                //获取滚动高度
+                                var sT = $(window).scrollTop();
+                                //获取窗口的高度
+                                var wH = $(window).height();
+                                //整个文档的高度
+                                var sH = $(document).height();
+                                //
+                                if(sH - sT - wH <= 200 ){
+                                    ///关门  其他请求不能发送
+                                    isLoading = true;
+                                    load();
+                                }
+                            })
+
+                            //获取数据的函数封装
+                            function load(){
+                                $.get("{:U('Home/Car/gettips')}",{p:p},function(data){
+                                    //循环创建元素
+                                    for(var i=0;i<data.length;i++){
+                                        //克隆元素
+                                        var newLi = $('#item').clone(true);
+                                        //修改元素的信息
+                                        newLi.find('img').attr('src','__PUBLIC__/'+data[i].pic);
+                                        //显示元素
+                                        newLi.show();
+                                        //执行插入
+                                        $('ul').append(newLi);
+                                    }
+                                    p++;
+                                    isLoading = false;
+                                },'json');
+                            }
+
+                            //页面加载的时候请求一次
+                            load();
+                        </script>
+
+                    </div>
+                </div>    
+                                <!--页码-->
+                        <div class="pager" id="house-area"> 
+                           <style type="text/css">
+                    #pages{height:50px;width:800px;float:left;margin-left: 400px}
+                    #pages a{
+                        background-color: #fff;
+                        border: 1px solid #ddd;
+                        color: #337ab7;
+                        float: left;
+                        line-height: 1.42857;
+                        margin-left: -1px;
+                        padding: 6px 12px;
+                        position: relative;
+                        text-decoration: none;
+                    }
+                    #pages span{
+                        display: block;
+                        border: 1px solid #ddd;
+                        float: left;
+                        line-height: 1.42857;
+                        margin-left: -1px;
+                        padding: 6px 12px;
+                        position: relative;
+                        text-decoration: none;
+                        background-color: #337ab7;
+                        border-color: #337ab7;
+                        color: #fff;
+                        cursor: default;
+                        z-index: 2;
+                        border-radius: 80%;
+                    }
+                </style>
+                <div id="pages">
+                {$pages}
+                </div>
+                        </div>
+
+        <div id="footer" class="footer">
+            © 58.com <a id="askicon" target="_blank" title="有问题请与58客服进行对话" rel="nofollow" href="http://about.58.com/v5/">帮助中心</a>
+        </div>                                              
+    </body>
+</html>

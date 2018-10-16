@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script type="text/javascript">document.domain="58.com";</script>
+<link rel="stylesheet" type="text/css" href="user_center_new_v20150804171656.css">
+<script type="text/javascript" src="__PUBLIC__/Home/resetpa_files/jquery-1.js"></script>
+<script type="text/javascript">try { var ____json4fe = { catentry: { dispid: '', name: '', listname: '39' }, locallist: { dispid: '1', name: '北京', listname: 'bj' }, modules: 'my'} } catch (e) { };</script>
+<script type="text/javascript" src="__PUBLIC__/Home/resetpa_files/boot_mypage_new_v20150714230612.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/resetpa_files/topbar_new_v20150906105001.js"></script><script src="im_config.js" type="text/javascript"></script>
+<link rel="stylesheet" href="__PUBLIC__/Home/resetpa_files/slide_btn_v20150827115731.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/resetpa_files/alert_v20150831104811.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/resetpa_files/jiugongge_v20150827163254.css">
+
+<!-- <script type="text/javascript" src="jquery-1.8.3.min.js"></script> -->
+
+<script> var win = new GetToolTipWindow('tooltipdiv', 'keyword', '3', '1', '', true, 4); win.setSearchButton('searchbtn');</script>
+<script type="text/javascript">
+       function displayPhoneAlias(infoId, alias) {
+            var html = $('#phone_alias_button_' + infoId).html();
+            $.ajax('http://my.58.com/phonealias/display/' + infoId + "/" + alias,{
+                dataType: 'json',
+                type: 'POST',
+                beforeSend: function(){$('#phone_alias_button_' + infoId).html('处理中...')},
+                error: function(){
+                    alert('显示失败');
+                    $('#phone_alias_button_' + infoId).html(html);
+                },
+                success: function(json) {
+                    if(json && json.code == 0) {
+                        $('#pao_container_' + infoId).html('小号：' + alias);
+                        $('#phone_alias_button_' + infoId).fadeOut();
+                    }else {
+                        alert('显示失败:' + json.msg);
+                        $('#phone_alias_button_' + infoId).html(html);
+                    }
+                }
+            });
+        }
+       
+
+      
+       
+</script>
+
+<script type="text/javascript">
+
+jQuery(function($){
+
+	//左侧菜单
+	$(".leftmenu-content li").click(function(){
+			var $subnav = $(this).children("ul");
+			var menu_id =  $(this).attr("id").substr(4);
+			var closed_menu_id = Cookie.getCookie($userId + "_closed_menu_id"); //cookie中获取折叠状态的左侧菜单，cookie值的格式为-menuId-menuId-menuId-
+			var opened_menu_id = Cookie.getCookie($userId + "_opened_menu_id"); //cookie中获取展开状态的左侧菜单，cookie值的格式为-menuId-menuId-menuId-
+			if($subnav && $subnav.is(":visible")){
+				//折叠菜单
+												
+				//cookie closed_menu_id中记录要折叠的菜单的menuId
+				if(closed_menu_id){//有已折叠状态的左侧菜单
+					if(closed_menu_id.indexOf("-"+ menu_id + "-")<0){
+						Cookie.setCookie($userId + "_closed_menu_id",closed_menu_id + menu_id +"-",{expireDays:30,path:"/",domain:"my.58.com"});
+				  }
+				}else{//没有已折叠状态的左侧菜单
+					  Cookie.setCookie($userId + "_closed_menu_id","-"+menu_id+ "-",{expireDays:30,path:"/",domain:"my.58.com"});
+				}
+				
+				//从cookie opened_menu_id中删除要折叠的菜单的menuId
+				if(opened_menu_id && opened_menu_id.indexOf("-" + menu_id + "-")>=0){
+					if(opened_menu_id.split("-"+menu_id+"-")[0] + "-" + opened_menu_id.split("-"+menu_id+"-")[1] == "-"){//判断cookie中的最后一个menuId
+						Cookie.setCookie($userId + "_opened_menu_id","",{expireDays:30,path:"/",domain:"my.58.com"});
+					}else{
+						Cookie.setCookie($userId + "_opened_menu_id",opened_menu_id.split("-"+menu_id+"-")[0] + "-" + opened_menu_id.split("-"+menu_id+"-")[1],{expireDays:30,path:"/",domain:"my.58.com"});
+					}
+				}
+			
+			}else{
+				 				 				
+				//从cookie中删除要展开的菜单的menuId
+					if(closed_menu_id && closed_menu_id.indexOf("-" + menu_id + "-")>=0){
+						if(closed_menu_id.split("-"+menu_id+"-")[0] + "-" + closed_menu_id.split("-"+menu_id+"-")[1] == "-"){//判断cookie中的最后一个menuId
+							Cookie.setCookie($userId + "_closed_menu_id","",{expireDays:30,path:"/",domain:"my.58.com"});
+						}else{
+							Cookie.setCookie($userId + "_closed_menu_id",closed_menu_id.split("-"+menu_id+"-")[0] + "-" + closed_menu_id.split("-"+menu_id+"-")[1],{expireDays:30,path:"/",domain:"my.58.com"});
+						}
+					}
+					
+					//cookie closed_menu_id中记录要展开的菜单的menuId
+					if(opened_menu_id){//有已展开状态的左侧菜单
+						if(opened_menu_id.indexOf("-"+ menu_id + "-")<0){
+							Cookie.setCookie($userId + "_opened_menu_id",opened_menu_id + menu_id +"-",{expireDays:30,path:"/",domain:"my.58.com"});
+					  }
+					}else{//没有已折叠状态的左侧菜单
+						  Cookie.setCookie($userId + "_opened_menu_id","-"+menu_id+ "-",{expireDays:30,path:"/",domain:"my.58.com"});
+					}
+				
+			}
+	});
+	
+	$(".leftmenu-content li a ").click(function(){
+		$("li").removeClass("li1-selected");
+		$(".leftmenu-content-ul li").removeClass("li-selected");
+		$(".leftmenu-content-slide-li1").removeClass("li1-selected");
+		$(".leftmenu-content-li2").removeClass("li1-selected");
+		var ul_temp = $(this).parent("li").parent("ul").attr("class");
+		if(ul_temp == "leftmenu-content-ul")
+			$(this).parent("li").addClass("li-selected");
+		else
+			$(this).parent("li").addClass("li1-selected");
+		$("#currentmenu_name").text("");
+		$("#currentmenu_name").append($(this).text());
+	});
+	
+})
+
+
+/**
+	*COOKIE相关 add by bsrn  
+	*
+*/
+ 
+		var Cookie=new Object();
+		var Cookie={
+			setCookie:function(){},
+			getCookie:function(){},
+			deleteCookie:function(){}
+		}
+		//setCookie
+		//name是要设置cookie的名字，value是要设置的值
+		//option 包括其他选项，是一个对象参数
+		Cookie.setCookie=function(name,value,option){
+			//用于存储负值给document.cookie的cookie格式字符串
+			var str=name+"="+escape(value);
+			if(option){
+				//如果设置了过期时间
+				if(option.expireDays){
+					var date=new Date();
+					var ms=option.expireDays*24*3600*1000;
+					date.setTime(date.getTime()+ms);
+					str+=";expires="+date.toGMTString();
+				}
+				if(option.path)str+=";path="+option.path;//设置访问路径
+				if(option.domain)str+=";domain="+option.domain;//设置访问主机
+				if(option.secure)str+=";true";//设置安全性
+			}
+			document.cookie=str;
+		}
+		//实现取Cookie值的方法
+		//name是指定Cookie的名字
+		Cookie.getCookie=function(cookieName){
+		var reg=new RegExp(cookieName+"=([^;]*);?");
+		if(reg.test(document.cookie)){
+			return decodeURIComponent(RegExp.$1);
+		}		
+	}
+		//实现删除Cookie 的方法
+		//name是指定的Cookie名称， 通过将expireDays属性指定为负数
+		Cookie.deleteCookie=function(name){
+			this.setCookie(name,"",{expireDays:-1,path:"/"});//将过期时间设置为过去来删除Cookie			
+			
+
+		}
+</script>
+
+<link href="__PUBLIC__/Home/resetpa_files/a_data/user-n2012_v20151106153044.css" rel="stylesheet" type="text/css">
+<title>用户中心</title>
+<script type="text/javascript">    document.domain = '58.com'; </script>
+<script type="text/javascript">    try { var ____json4fe = { catentry: { dispid: '', name: '', listname: '39' }, locallist: { dispid: '1', name: '北京', listname: 'bj' }, modules: 'my'} } catch (e) { };</script>
+<script src="m2013ad.js"></script></head>
+<body>
+<div>
+			<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/resetpa_files/a_data/pc_changepwd_v20150714235235.css">
+<script type="text/javascript"></script>
+<div class="title clearfix">
+	<h2 class="balance-h2">修改密码</h2>
+</div>
+
+<div class="infos">
+   <ul class="info-item" style="height:800px">
+  		<form action="{:U('Home/Ucenter/wancheng')}" method='post'>
+   		  <li>
+			<label for="">用户名</label>
+		    <span><strong>{$arr['username']}</strong></span>
+		  </li>
+		  <li>
+			<label for=""><span class="warning">*</span>旧密码</label>
+			<input name="pwd" id="oldPassword" class="old_pwd inw inp" maxlength="16" placeholder="请输入旧密码" type="password">
+			<span id="txtOldPwd_tip"></span>
+	      </li>
+		  <li>
+			<label for=""><span class="warning">*</span>新密码</label>
+			<input name="pwd1" id="newPassword" class="new_pwd inw inp" placeholder="6-16个字符" type="password">
+			<span id="txtNewPwd_tip"></span>
+		 </li>
+		 <li>
+			 <label for=""><span class="warning">*</span>确认密码</label>
+			<input name="pwd2" id="reNewPassword" class="inw inp" placeholder="请再次输入密码" type="password">
+			<span id="txtReNewPwd_tip"></span>
+		 </li>
+		 <li>
+		 	<label></label>
+		 	<input type="hidden" value="{$arr['username']}" name="username">
+		 	<input id="submitButton" value="完成修改"  type="submit">
+		 </li>
+		</form>
+   </ul>
+</div>
+
+
+<script type="text/javascript">
+// function setSubmitState(flag){
+// 	if(flag)
+// 		$("#submitButton").attr("disabled","disabled");
+// 	else
+// 		$("#submitButton").removeAttr("disabled");
+// }
+
+function showErrorTip(objId,msg,tipType){
+	if(tipType && tipType==1){
+		$("#"+objId+"_tip").removeClass("regtip");
+		$("#"+objId+"_tip").addClass("regerror");
+	}else{
+		$("#"+objId+"_tip").removeClass("regerror");
+		$("#"+objId+"_tip").addClass("regtip");
+	}
+	$("#"+objId+"_tip").html(msg);
+	$("#"+objId+"_tip").show(500);
+	setSubmitState(false);
+	return false;
+}
+
+function clearErrorTip(objId){
+	$("#"+objId+"_tip").html("");
+	$("#"+objId+"_tip").hide(1000);
+}
+
+function checkOldPassword(){
+	var password=$("#oldPassword").val();
+	if(password==null || password.length==0){
+		showErrorTip("txtOldPwd","您还没有输入密码",1);
+		return false;
+	}
+	if(!password.match("^[\\s\\S]{6,}$")){
+		showErrorTip("txtOldPwd","密码太短最少为6位",1);
+		return false;
+	}
+	if(!password.match("^(.){6,16}$")){
+		showErrorTip("txtOldPwd","密码不应超过16个字符",1);
+		return false;
+	}	
+	clearErrorTip("txtOldPwd");
+	return true;
+}
+
+function checkNewPassword(){
+	var password=$("#newPassword").val();
+	if(password==null || password.length==0){
+		showErrorTip("txtNewPwd","您还没有输入密码",1);
+		return false;
+	}
+	if(!password.match("^[\\s\\S]{6,}$")){
+		showErrorTip("txtNewPwd","密码太短最少为6位",1);
+		return false;
+	}
+	if(!password.match("^(.){6,16}$")){
+		showErrorTip("txtNewPwd","密码不应超过16个字符",1);
+		return false;
+	}	
+	
+	var pwd = $("#newPassword").val().toLowerCase();
+	if(pwd.match("^[a-z|A-Z]+$") && (isContinuousChar(pwd) || isSameChar(pwd))){
+    	return showErrorTip("txtNewPwd", "为了您的账户安全，密码不能为重复数字和连续字母", 1);
+    }
+    if(pwd.match("^[\\d]+$") && (isContinuousChar(pwd) || isSameChar(pwd))){
+    	return showErrorTip("txtNewPwd", "为了您的账户安全，密码不能为重复数字和连续数字", 1);
+    }
+    if(isSameChar(pwd)){
+    	return showErrorTip("txtNewPwd", "密码不能全为相同的字符", 1);
+    }
+    
+    clearErrorTip("txtNewPwd");
+    return true;
+}
+
+function checkReNewPassword (){
+	var newPwd = $("#newPassword").val();
+	var reNewPwd = $("#reNewPassword").val();
+	var valid = newPwd == reNewPwd;
+	if(!valid)
+		return showErrorTip("txtReNewPwd", "您两次所输入的密码不一致,请检查", 1);
+	
+	clearErrorTip("txtReNewPwd");
+	return valid;
+}
+
+function isContinuousChar(str){
+	var str = str.toLowerCase();
+    var flag = 0;
+    for(var i=0;i<str.length;i++){
+    	if(str.charCodeAt(i) != flag+1 && flag!=0)
+    		return false;
+    	else
+    		flag = str.charCodeAt(i);
+    }
+    return true;
+}
+
+function isSameChar(str){
+	var str = str.toLowerCase();
+    var flag = 0;
+    for(var i=0;i<str.length;i++){
+    	if(str.charCodeAt(i) != flag && flag!=0)
+    		return false;
+    	else
+    		flag = str.charCodeAt(i);
+    }
+    return true;
+}
+
+$("#oldPassword").bind("blur",checkOldPassword);
+$("#oldPassword").bind("focus",function(){showErrorTip("txtOldPwd","请输入旧密码",0);});
+
+$("#newPassword").bind("blur",checkNewPassword);
+$("#newPassword").bind("focus",function(){showErrorTip("txtNewPwd","密码需由6-16个字符（数字、字母、下划线）组成，区分大小写；不能使用重复、连续的字母、数字或下划线",0);});
+
+$("#reNewPassword").bind("blur",checkReNewPassword);
+$("#reNewPassword").bind("focus",function(){showErrorTip("txtReNewPwd","请填写密码",0);});
+
+
+
+
+</script>
+<img class="googleanalyze" >
+	<div style="display:none">
+		<div id="path">http://my.58.com/password?sys=my</div>	</div>
+<iframe name="formSubmit" id="formSubmit" src="a_data/submit.htm" style="display: none;">
+</iframe>	
+		
+	<script type="text/javascript">
+	    var  IM_Init=function (){
+	    	//   如果 不加载im就写这个空函数 覆盖掉默认的 IM_init方法.
+	    }
+	</script>
+</div>
+
+
+</body></html>

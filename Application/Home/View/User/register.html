@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>注册会员-58同城</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<link rel="Shortcut Icon" href="https://passport.58.com/cdnpic2/images/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="__PUBLIC__/Home/css/login_6_v20150304144336.css" type="text/css"><link rel="stylesheet" href="__PUBLIC__/Home/css/login_6_v0.css" type="text/css">
+<style>
+.porleft p {
+ height: 35px;
+}
+.fb{ font-weight:bold;}
+.link-login{font-family: '宋体';}
+.porleft{height:800px;}
+#nextwrap{position:relative;}
+#validatecode{width:75px;}
+#pre{font-size:12px;line-height:34px;cursor:pointer;}
+.btnGray input.disable{color:#a0a0a0;cursor:default;}
+</style>
+</head>
+<body>
+   <!--  header********
+    header********
+    header********
+    header******** -->
+	<div id="header" class="win1000">
+		<a id="logo" href="{:U('Home/Index/index')}"><img alt="中文最大生活信息门户" src="__PUBLIC__/Home/images/logo-49h.gif"></a>
+		<div id="cityname" class="regname"><span>用户注册</span></div>
+		<div id="logintext"><a href="{:U('Home/Index/index')}">返回首页</a>|<a target="_blank">帮助</a></div>
+	</div>
+
+
+
+	<div class="cb win1000">
+		<form id="submitForm" action="{:U('Home/User/doRegister')}" method="post" name="submitForm" target="formSubmit">
+		<div class="porleft">
+			 <div class="regMenu">
+               
+               <span class="active" id="telRegTab"><a href="">用户注册</a></span>
+               
+               <span class="" id="loginTab">已有账号？<a href="{:U('Home/User/login')}">去登录</a></span>
+            </div>
+            <div class="regWrap">
+
+
+                <!--****
+                ********
+                ***** -->
+                <!-- 手机注册 -->
+                <div style="display: block;" id="userRegCon">
+                    <p>
+                        <span class="regtlx">用　户　名</span>
+                        <input style="display: inline;" size="20" class="inp inw" id="username" remined="2-20位,可由汉字,字母,"_"组成" maxlength="20" name="username" type="text">
+                        <img src="" alt="" /><span></span>  
+                    </p>                   
+                </div>
+                <div style="display: block;" id="telRegCon">
+                    <p>
+                    	<span class="regtlx">手　机　号</span>
+                        <input style="display: inline;" size="20" class="inp inw" id="tel" maxlength="20" remined="请输入11位手机号码" name="tel" type="text">
+                    	<img src="" alt="" /><span></span> 
+                    </p>                   
+                </div>
+                <div style="display: block;" id="emailRegCon">
+                    <p>
+                        <span class="regtlx">邮　　　箱</span>
+                        <input style="display: inline;" size="" class="inp inw" id="email" remined="请输入有效的邮箱地址" name="email" type="text">
+                        <img src="" alt="" /><span></span> 
+                    </p>                   
+                </div>
+               <div id="passwordCon">
+                    <p>
+                    	<span class="regtlx">密　　　码</span>
+                        <input size="30" name="password" id="password" class="inp inw" maxlength="16" remined="请输入除换行符外的字符" type="password">
+                        <img src="" alt="" /><span></span> 
+                    </p>
+                    <p id="cpp">
+                    	<span class="regtlx">确&nbsp;认&nbsp;密&nbsp;码</span>
+                        <input size="30" name="repassword" id="repassword" class="inp inw" maxlength="16" remined="请再次输入" type="password">
+                        <img src="" alt="" /><span></span> 
+                    </p>
+				</div>
+
+                <div style="display: block;" id="codeRegCon">
+                    <p>
+                        <span class="regtlx">验　证　码</span>
+                        <input style="display: inline;" size="10" class="" id="code" maxlength="20" remined="请按图输入" name="code" type="text">&nbsp;<img src="" alt="" /><span></span> <img src="{:U('Home/User/code')}" width="120" height="40" width="100%" alt="" onclick="this.src='{:U('Home/User/code')}?id='+Math.random()"/>
+                        
+                    </p>                   
+                </div>
+
+
+               <!-- 
+                ********************
+                *******隐藏区域*****
+                ******************** -->
+				<div style="display: none;" id="telCodeCon">
+					<p>
+						<span class="regtlx">手&nbsp;机&nbsp;号&nbsp;码</span>
+						<span id="nexttel"></span> <span id="tel_Tip2"></span> 
+					</p>
+					<p id="sendbtnp" class="p2 f12 ">
+						<span class="regtlx">&nbsp;</span>
+						<label class="fs-btn-h btnGray"><input class="" name="resendbtn" onclick="resendcode()" id="resendbtn" value="获取手机确认码" type="button"></label>
+						<span id="resendcode_Tip"></span>
+					</p>
+					<p>
+						<span class="regtlx">手机确认码</span>
+						<input style="display: inline;" size="20" maxlength="6" class="inp inw" id="telcode" name="telcode" type="text">
+						<span id="telcode_Tip"></span> 
+					</p>
+				</div>
+                
+               <!--  ************
+                ************
+                ************
+                ************
+                ************ -->
+            
+                <p class="agreement">
+                    <span class="regtlx">&nbsp;</span>
+                    <input checked="checked" id="chkagreement" name="chkagreement" type="checkbox"> <span>我已阅读并同意</span><a target="_blank" href="{:U('Home/Business/index')}">《58同城使用协议》</a>
+                    <span id="chkagreement_Tip"></span>
+                </p>
+                <!-- *****
+                **同意协议***
+                ***** -->
+                
+
+                <!-- 提交////////// -->
+                <p style="display: block;" class="submitwrap">
+                    <span class="regtlx">&nbsp;</span>
+                    <label id="butt" class="butt"><input class="" value="立即注册" id="btnSubmit" style="width:110px;height:34px;" type="submit">
+                    </label>
+                    <span id="gologin"><span id="loginOpt">已有账号？<a href="{:U('Home/User/login')}">去登录</a></span></span><span style="display: none;" id="pre"><a herf="">返回上一步</a></span>
+                </p>
+             
+				</div>
+				
+            </div>
+		</div>
+		<input name="mcresult" value="undefined" style="display:none">
+    </form>
+	</div>
+
+
+	<div id="footer" class="win1000">
+		<p>© 58.com <a class="fduihua" target="_blank" title="有问题请与58客服进行对话" href="">与58对话</a></p>
+	</div>
+
+
+<!-- ************
+*****表单*******
+*****验证*******
+****************
+************ -->
+<script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    // 绑定获取焦点事件
+    $('input').focus(function(){
+        var remined = $(this).attr('remined');
+        $(this).next().attr('src','__PUBLIC__/Home/images/warning.png');
+        $(this).next().next().html(remined).css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+    })
+    // 定义常亮
+    var UP = false;
+    var TP = false;
+    var EP = false;
+    var MP = false;
+    var RMP = false;
+    var CP = false;
+    // 用户名的正则
+    $('input[name=username]').blur(function(){
+        var v = $('input[name=username]').val();
+        var reg = /^\S{2,18}$/;
+        var res = reg.test(v);
+        // alert(2123);
+        if(!res){
+            $(this).next().next().html('用户名格式错误').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+            UP = false;
+        }else{
+            var user = $(this);
+            $.post('{:U('Home/User/checkUser')}',{username:v},function(data){
+                // alert(data);
+                if(data == 1){
+                    user.next().next().html('该用户已存在').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+                    user.next().attr('src','__PUBLIC__/Home/images/wrong.png');
+                    UP = false;
+                }else{
+                   user.next().next().html('').css('background','#FFECEC');
+                    user.next().attr('src','__PUBLIC__/Home/images/right.png');  
+                    UP = true;
+ 
+                }
+            })
+        }   
+
+         })
+
+
+    
+    // //移出error
+    
+    // 手机号的正则
+    $('input[name=tel]').blur(function(){
+        var v = $('input[name=tel]').val();
+        var reg = /^1\d{10}$/;
+        var res = reg.test(v);
+        if(!res){
+            $(this).next().next().html('请输入正确的手机号').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+            TP = false;
+        }else{
+            var phone = $(this);
+             $.post('{:U('Home/User/checkTel')}',{tel:v},function(data){
+                // alert(data);
+                if(data == 1){
+                    phone.next().next().html('该手机号已被注册').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+                    phone.next().attr('src','__PUBLIC__/Home/images/wrong.png');
+                    TP = false;
+                }else{
+                   phone.next().next().html('').css('background','#FFECEC');
+                    phone.next().attr('src','__PUBLIC__/Home/images/right.png');  
+                    TP = true;
+ 
+                }
+            })
+        }
+    })
+
+
+    // 邮箱的正则
+    $('input[name=email]').blur(function(){
+        var v = $('input[name=email]').val();
+        var reg = /^\w+@\w+\.(com|cn)$/;
+        var res = reg.test(v);
+        if(!res){
+            $(this).next().next().html('邮箱格式错误').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+            EP = false;
+        }else{
+            $(this).next().next().html('').css('background','#FFECEC');
+            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+            EP = true;
+        }
+    })
+
+    // 密码的正则
+    $('input[name=password]').blur(function(){
+        var v = $('input[name=password]').val();
+        var reg = /^(.){2,32}$/;
+        var res = reg.test(v);
+        if(!res){
+            $(this).next().next().html('密码格式有误').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+            MP = false;
+        }else{
+             $(this).next().next().html('').css('background','#FFECEC');
+            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+            MP = true;
+        }
+    })
+    // 密码的再次确认
+    $('input[name=repassword]').blur(function(){
+        var v = $(this).val();
+        var lv = $('input[name=password]').val();
+        var res = v == lv;
+        if(!res){
+            $(this).next().next().html('两次密码输入不一致').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+            RMP = false;
+        }else{
+            $(this).next().next().html('').css('background','#FFECEC');
+            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+            RMP = true;
+        }
+    })
+
+
+    // 绑定验证码的丧失焦点事件
+    $('input[name=code]').blur(function(){
+        var code = $('input[name=code]').val();
+        var COde = $(this);
+        // alert(code);
+        $.get('{:U('Home/User/check')}',{ucode:code},function(data){
+            // alert(data);
+                if(data == 0){
+                COde.next().next().html('验证码输入错误').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+                COde.next().attr('src','__PUBLIC__/Home/images/wrong.png');
+                CP = false;
+            }else{
+                COde.next().next().html('').css('background','#FFECEC');
+                COde.next().attr('src','__PUBLIC__/Home/images/right.png');  
+                CP = true;
+            }
+        })
+    })
+
+    
+    
+
+    $('#submitForm').submit(function(){
+                $('input[name=username]').blur();
+                $('input[name=email]').blur();
+                $('input[name=tel]').blur();
+                $('input[name=password]').blur();
+                $('input[name=repassword]').blur();
+                $('input[name=code]').blur();
+
+                if(UP && TP && EP && MP && RMP && CP){
+                    return true;
+                }
+                return false;
+            })
+
+    
+
+</script>
+
+
+
+<div style="display:inline;">
+<img style="border-style:none;" alt="" src="__PUBLIC__/Home/images/a.gif" height="1" width="1">
+</div>
+
+
+</body>
+</html>

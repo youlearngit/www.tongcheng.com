@@ -1,0 +1,35 @@
+<extend name="Business/index" />
+
+<block name="focus"></block>
+
+<block name="contL">
+	<div class="contL">
+    	<h2><span>最新资讯</span></h2>
+        <div class="newsText">
+	        <foreach name="res" item="vo" >
+	        	<h3>{$vo['company']}有限公司</h3>
+	            <p class="text"><span>东区</span><span>{$vo['agency_city']}</span><span>{$vo['time']}</span></p>
+
+	            <p style="text-indent:37px;background:rgb(255,255,255)">
+
+	            <strong><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei'; ">{$vo['company']}有限公司</span></strong>
+
+	            <span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei'; ">
+
+	            {$vo['intro']}
+
+				</span></p>
+
+	            <!-- <p style="text-indent:37px;background:rgb(255,255,255)"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px; ">南通秉诚信息技术有限公司集自身优势与品牌代理于一体，</span><span style="font-size: 19px; font-family: 宋体; "><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei'; ">于</span><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px; ">2010年首次与国内最大的分类信息平台58同城达成品牌合作至今已逾五年，</span></span><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px; ">凭借</span><span style="font-size: 19px; font-family: 宋体; "><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei'; ">58</span><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px; ">同城</span></span><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px; ">现代化的企业管理理念及高效的市场团队打造经验，不断发挥自身优势和整合行业资源，利用丰富的技术经验，平台优势向客户提供完整的信息化全方位解决方案。公司秉承网络与实业相结合，以网络服务实业，实业创新网络的思想，力求打造地方性最具影响力的网络实业一体服务商。</span></p><p style="text-indent:37px;background:rgb(255,255,255)"><span style=";font-size:19px;font-family:'Arial'"><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei'; ">自公司成立以来，我们一直坚持</span><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px; ">“专业、专心、诚信、诚心”的经营原则，为各行业客户提供高品质的专业化技术服务，公司以“客户至上，贴心服务”为宗旨，以“客户利益最大化”为前提，以“所思所想所做超过客户期望值”为目标，为客户提供最优质的服务，力求达成客户与企业的长久</span></span><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei'; ">共赢。</span></p><p style="text-indent:37px;background:rgb(255,255,255)"><span style=";font-size:19px;font-family:'宋体'"><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei'; ">58</span><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px; ">同城上市以来，随着品牌影响力的不断深入，南通秉诚也逐步走近人们的眼帘，备受青睐，慈善公益、大型活动处处都有我们的身影，并得到了社会各界的好评。伴随着58同城的成长而壮大，我们将越走越远，期待您的加入！</span></span></p><p style="text-indent:37px;background:rgb(255,255,255)"><span style=";font-size:19px;font-family:'宋体'"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px; "></span></span></p> -->
+
+	           <!--  <p><img src="__PUBLIC__/Home/detail_files/n_s1230415479929345404-9.jpg" style="float:none;" title="我们的合照_副本.jpg"></p>
+
+	            <p><img src="__PUBLIC__/Home/detail_files/n_s1230415479983463506-9.jpg" style="float:none;" title="我们的合照1_副本.jpg"></p> -->
+				
+	            <p><img src="__PUBLIC__{$vo['pic'][0]}" width="100%" width="650" height="431"></p>
+
+			</foreach>
+        </div>
+    </div>
+</block>
+    

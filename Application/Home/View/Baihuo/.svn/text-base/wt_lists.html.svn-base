@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>【物品转让|文体转让】- 58同城</ti<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>【北京二手市场|北京二手家具日用】- 北京58同城</title>
+        <meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.58.com/bj/list?utm_source=market&amp;spm=b-31580022738699-pe-f-851.sogoupz_biaoti">
+        <meta http-equiv="mobile-agent" content="format=html5; url=http://m.58.com/bj/list?utm_source=market&amp;spm=b-31580022738699-pe-f-851.sogoupz_biaoti">
+        <meta http-equiv="mobile-agent" content="format=wml; url=http://m.58.com/bj/list?utm_source=market&amp;spm=b-31580022738699-pe-f-851.sogoupz_biaoti">
+
+        <meta name="keywords" content="北京二手房网,北京二手房买卖信息">
+        <meta name="description" content="58同城北京二手房网,为您提供最新、最真实的北京二手房信息,免费发布北京二手房买卖、二手房出售信息，找北京二手房经纪人、个人房源信息，欢迎您来到58同城北京二手房网。">
+        <meta name="location" content="province=北京;city=北京;coord=116.395645,39.929986">
+
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/Home/list_files/base_v20150121133540.css" media="all">
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/list_files/list-fang_second-hand-bj_v20151104103651.css" media="all">
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/list_files/fang-ctt_v20151022211223.css" media="all">
+
+    </head>   
+    <body>         
+        <div id="header">
+            <div class="logo">
+                <a href="{:U('Home/Index/index')}" target="_blank">
+                    <img src="__PUBLIC__/Home/list_files/logonew.gif" title="58同城" alt="58同城">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="">58同城</a>
+                <cite></cite>
+                <a href="">文体用品转让</a>         
+            </div>
+            <span><a href="" target="_blank" class="postBtn" rel="nofollow"></a></span>
+        </div>
+        <div style="display: block;" id="brand_list_top_banner" class="fang_top_banner brandad1000">
+            <style>
+                .brandad1000{ height:50px; margin:0 auto 10px; overflow:hidden; width:1000px; position:relative;}
+                .brandad1000 ul{}
+                .brandad1000 li{ height:50px;}
+                .brandad1000 img{ width:1000px; height:50px;}
+
+                .cright{
+                    width:170px;
+                    height:auto;
+                    float:right;
+                    margin-top:0px;
+                    margin-left:17px;
+                    position: relative;
+
+                    }
+                
+                .pubu{
+                    width:162px;
+                    height:auto;
+                    float:right;
+                    list-style:none;
+                }
+
+#item{
+    width:140px;
+    height:auto;
+    border:solid 1px #ddd;
+    padding:10px;
+}
+
+            </style>
+            <ul style="margin-top: 0px;">
+                <li><a href="" target="_blank">
+                        <img src="__PUBLIC__/Home/list_files/n_v1bkuymc2awcnvlzs7myfa.png">
+                    </a>
+                </li>
+                <li><a href="" target="_blank">
+                        <img src="__PUBLIC__/Home/list_files/n_v1bl2lwwldfyxvnugltvmq.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+            <!--------------------------------------------------------筛选项---------------------------------------------------------------->
+            <!-- =S selection -->
+        <div id="selection">
+            
+                <div class="seltabs">
+                  <a href="" class="select"><span>区域/地标</span></a>
+                   <a href="{:U('Home/Baihuo/fz_lists')}" class="select"><span>服装转让</span></a>
+                   <a href="{:U('Home/Baihuo/wt_lists')}" class="select"><span>家具/日用</span></a>
+                </div>
+                
+                        
+                <div class="relative relative_show">
+
+                    <dl class="secitem" id="mianji">
+                        <dt>文体户外种类：</dt>
+                        <dd>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}" class="select" onclick="clickLog('from=fc_esflist_bj_mianji_$areaVal');">不限 
+                            </a>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}?fenlei='户外用品'" vppvval="0_50" onclick="clickLog('from=fc_esflist_bj_mianji_0_50');">户外用品 
+                            </a>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}?fenlei='健身器材'" vppvval="50_70" onclick="clickLog('from=fc_esflist_bj_mianji_50_70');">健身器材
+                            </a>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}?fenlei='轮滑/滑板'" vppvval="70_90" onclick="clickLog('from=fc_esflist_bj_mianji_70_90');">轮滑/滑板
+                            </a>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}?fenlei='瑜伽用品'" vppvval="70_90" onclick="clickLog('from=fc_esflist_bj_mianji_70_90');">瑜伽用品
+                            </a>
+                            
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists/fenlei')}" vppvval="200_300" onclick="clickLog('from=fc_esflist_bj_mianji_200_300');">其他
+                            </a> 
+                        </dd>
+                    </dl>
+
+                    <dl class="secitem" id="mianji">
+                        <dt>新旧：</dt>
+                        <dd>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}" class="select" onclick="clickLog('from=fc_esflist_bj_mianji_$areaVal');">不限 
+                            </a>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}?hownew='5成新'" vppvval="0_50" onclick="clickLog('from=fc_esflist_bj_mianji_0_50');">5成新 
+                            </a>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}?hownew='6成新'" vppvval="50_70" onclick="clickLog('from=fc_esflist_bj_mianji_50_70');">6成新
+                            </a>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}?hownew='7成新'" vppvval="70_90" onclick="clickLog('from=fc_esflist_bj_mianji_70_90');">7成新
+                            </a>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}?hownew='8成新'" vppvval="70_90" onclick="clickLog('from=fc_esflist_bj_mianji_70_90');">8成新
+                            </a>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}?hownew='9成新'" vppvval="70_90" onclick="clickLog('from=fc_esflist_bj_mianji_70_90');">9成新
+                            </a>
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists')}?hownew='95成新'" vppvval="70_90" onclick="clickLog('from=fc_esflist_bj_mianji_70_90');">95成新
+                            </a>
+                            
+                            <a rel="nofollow" href="{:U('Home/Baihuo/wt_lists/fenlei')}" vppvval="200_300" onclick="clickLog('from=fc_esflist_bj_mianji_200_300');">其他
+                            </a> 
+                        </dd>
+                    </dl>
+
+                    <!-- 按总价 -->        
+                    <dl class="secitem" id="price_secitem1" style="">
+                        <dt>价格：</dt>
+                        <dd>
+                            <a href="{:U('Home/Baihuo/wt_lists')}" class="select">不限</a>
+                            <a href="{:U('Home/Baihuo/wt_lists/price1/0/price2/30')}" vppvval="0_60" onclick="clickLog('from=fc_esflist_bj_price_0_60');">30元以下</a>
+                            <a href="{:U('Home/Baihuo/wt_lists/price1/30/price2/50')}" vppvval="60_80" onclick="clickLog('from=fc_esflist_bj_price_60_80');">30-50元</a>
+                            <a href="{:U('Home/Baihuo/wt_lists/price1/50/price2/100')}" vppvval="80_100" onclick="clickLog('from=fc_esflist_bj_price_80_100');">100-150元</a>
+                            <a href="{:U('Home/Baihuo/wt_lists/price1/150/price2/200')}" vppvval="100_150" onclick="clickLog('from=fc_esflist_bj_price_100_150');">150-200元</a>
+                            <a href="{:U('Home/Baihuo/wt_lists/price1/200/price2/300')}" vppvval="150_200" onclick="clickLog('from=fc_esflist_bj_price_150_200');">200-300元</a>
+                
+                            <a href="{:U('Home/Baihuo/wt_lists/price1/350/price2/50000')}" vppvval="300_500" onclick="clickLog('from=fc_esflist_bj_price_300_500');">350元以上</a>
+                           
+                        <form action="{:U('Home/Baihuo/wt_lists')}" method="get">
+                            <span class="prifilter" id="minprice_filter1">
+                                    <span class="text text2">
+                                        <input autocomplete="off" para="huansuanyue" muti="1" min="0" max="999999" name="price1" type="text">
+                                    </span>
+                                    <span class="dev"> - </span>
+                                    <span class="text text2">
+                                        <input autocomplete="off" para="huansuanyue" muti="1" min="0" max="999999" name="price2" type="text">
+                                    </span>
+                                    <span class="dev">元</span>
+                                    <span class="btn btn2" style="">
+                                        <input type="hidden" name="type" value="fz">
+                                        <input value="价格筛选" type="submit" name="butt">
+                                    </span>
+                                
+                            </span>
+                        </form>
+                        </dd>
+                    </dl>
+
+                    <dl class="secitem" id="region">
+                        <dt>区域：</dt>
+                        <dd>
+                        <a href="" class="select" onclick="clickLog('from=fc_esflist_bj_all');">全北京</a>
+                                <!--如果有地铁的话-设置显示的地铁线路名称-->
+                                        
+                                                 <!-- 所有区域名称 -->   
+                        <a href="" vppvval="1142" onclick="clickLog('from=fc_esflist_bj_area_chaoyang');">朝阳 </a>
+                        <a href="" vppvval="1143" onclick="clickLog('from=fc_esflist_bj_area_haidian');">海淀 </a>
+                        <a href="" vppvval="1138" onclick="clickLog('from=fc_esflist_bj_area_dongcheng');">东城 </a>
+                        <a href="" vppvval="1139" onclick="clickLog('from=fc_esflist_bj_area_xicheng');">西城 </a>
+                        <a href="" vppvval="1140" onclick="clickLog('from=fc_esflist_bj_area_chongwen');">崇文 </a>
+                        <a href="" vppvval="1141" onclick="clickLog('from=fc_esflist_bj_area_xuanwu');">宣武 </a>
+                        <a href="" vppvval="1144" onclick="clickLog('from=fc_esflist_bj_area_fengtai');">丰台 </a>
+                        <a href="" vppvval="1147" onclick="clickLog('from=fc_esflist_bj_area_tongzhou');">通州 </a>
+                        <a href="" vppvval="1145" onclick="clickLog('from=fc_esflist_bj_area_shijingshan');">石景山 </a>
+                        <a href="" vppvval="6808" onclick="clickLog('from=fc_esflist_bj_area_fangshan');">房山 </a>
+                        <a href="" vppvval="1150" onclick="clickLog('from=fc_esflist_bj_area_changping');">昌平 </a>
+                        <a href="" vppvval="6809" onclick="clickLog('from=fc_esflist_bj_area_daxing');">大兴 </a>
+                        <a href="" vppvval="6810" onclick="clickLog('from=fc_esflist_bj_area_shunyi');">顺义 </a>
+                        <a href="" vppvval="6812" onclick="clickLog('from=fc_esflist_bj_area_huairou');">怀柔 </a>
+                        <a href="" vppvval="6813" onclick="clickLog('from=fc_esflist_bj_area_yanqing');">延庆 </a>
+                        <a href="" vppvval="6814" onclick="clickLog('from=fc_esflist_bj_area_pinggu');">平谷 </a>
+                        <a href="" vppvval="6815" onclick="clickLog('from=fc_esflist_bj_area_mentougou');">门头沟 </a>
+                        <a href="" vppvval="11362" onclick="clickLog('from=fc_esflist_bj_area_yanjiao');">燕郊 </a>
+                        <a href="" vppvval="1146" onclick="clickLog('from=fc_esflist_bj_area_beijingzhoubian');">北京周边 </a>
+                                                                    
+                                <!--  商圈end -->
+                    
+                        </dd>
+                    </dl>
+                    
+                    <!-- 按单价 -->
+                    
+    
+                    <div class="house-recommend mt10">
+                        <div style="top: -56px;" class="house-recommend-default">
+                            
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+        </div><!--end selection  -->
+                        
+        
+            <!--------------------------------------------------------页面的主体部分，包括智能广告和信息列表等-------------------------------->
+        <div id="category">
+            <!-- 小区匹配显示区域 -->
+            <!-- 小区匹配显示区域 -->                       
+
+         <!-- Start main-->
+            <div id="main">
+                <div class="cleft" id="infolist">
+                    <style>
+                    .no-result {
+                    background: #ffc;
+                    line-height: 20px;
+                    padding: 10px 0 10px 20px;
+                    font-size: 12px;
+                    }
+                    </style>    
+
+                    <!--end for tbimg-->
+                    <!--底部智能广告，通过js获取-->
+                    <div style="display: block; position: relative; margin-top: -1px;" id="bottom_google_ad">
+
+                        <div id="zhineng_list_inner_bottom">
+                            <table class="tbimg" cellpadding="0" cellspacing="0">
+                                
+                            </table>
+                        </div>
+                        <div id="list_bottom_google_ad">
+                            <div id="bottom_jiameng_adframe"></div>
+                            <div id="btm_direct_ad" style="display: none;"></div>
+                            <div id="btm_wangmeng_ad" style="display: block;">
+                                <div>
+                                    <table class="tbimg" cellpadding="0" cellspacing="0">   
+                                        <tbody>
+                                            <foreach name="arr" item='vo'>
+                                            <tr onmouseover="this.className='bg'" onmouseout="this.className=''">
+                                                <td class="img" style="padding:0; border-top: 1px solid rgb(241, 241, 241); width:162px;" width="">
+                                                    <a style="text-decoration:none;display:block;zoom:1;width:100%;padding:8px 0px 8px 15px;" onmouseover="window.status='';return true;" name="" target="_blank" href="{:U('Home/Baihuo/xiangqing')}?id={$vo['id']}"><img src="__PUBLIC__{$vo['pic'][0]}"></a>
+                                                </td>
+                                                <td class="t" style="" target="_blank" onmouseover="window.status='';return true;" style="text-decoration:none;display:block;zoom:1;width:641px;padding:5px 0 0 20px;">
+                                                        <span style="font-size: 16px;font-family: 微软雅黑;text-decoration:none;">{$vo['title']}
+                                                        </span>
+                                                        <i class="clear"></i>
+                                                        <span style="color:#585858;font-family: 微软雅黑;padding-right:75px;">{$vo['miaoshu']}
+                                                        </span>
+                                                        <i class="clear"></i>
+                                                        <div class="qj-listright">
+                                                            <b class="pri">{$vo['price']}</b>
+                                                            <span class="fz14"> 元 </span>
+                                                            <br>
+                                                        
+                                                            <br>
+                                                        </div>
+
+                                                        <span>bj.lianjia.com</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </foreach>
+                                        </tbody>
+
+
+                                    </table>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="left" class="cright">
+                    <ul class="pubu">
+                        <li id="item">
+                            <a href="{:U('Home/Fangzi/er_lists')}">
+                                <img src="__PUBLIC__/images/n_v1bl2lwwnrq5avmeopquqq.jpg" alt="" width="100%">
+                            </a>
+                        </li>
+                        <li id="item">
+                            <a href="{:U('Home/Gongshang/zc_lists')}">
+                                <img src="__PUBLIC__/images/n_v1bkuymc7jrahfmhgvme6a.jpg" alt="" width="100%">
+                            </a>
+                        </li>
+
+                        <li id="item">
+                            <a href="{:U('Home/Baihuo/jj_lists')}">
+                                <img src="__PUBLIC__/images/1c760cc045ced7d2c1a27654171a6189.jpg" alt="" width="100%">
+                            </a>
+                        </li>
+            
+                    </ul>
+
+                    </div>
+                        <!--页码-->
+                    <div>
+
+
+                       
+                          <div class="pager" id="house-area"> 
+
+                        <a class="prv" href="{:U('Home/Baihuo/wt_lists')}?pagenow={$pagenow-1}"><span>上一页</span></a>
+
+                       <for start="1" end="$pagecount+1" name="i">
+                            <a href="{:U('Home/Baihuo/wt_lists')}?pagenow={$i}"><span>{$i}</span></a>
+                        </for>
+                        <a class="next" href="{:U('Home/Baihuo/wt_lists')}?pagenow={$pagenow+1}"><span>下一页</span></a></div>
+                                    
+                </div>
+            </div>  
+        </div>
+                    
+                </div>   
+        <style>
+            .xb-all { width:998px; border:#e1e1e1 solid 1px; border-top:none;}
+            .box-xb { padding:0 15px; font-size:12px; line-height:24px;color:#808080}
+            .box-xb  a{color:#808080!important;}
+            .box-xb  a:hover{color:#f00!important}
+            .xb-qh { height:91px;overflow:hidden;}
+            .xb-xgxx-js,.xb-xgxx,.xb-xgxx-sq,.xb-xgxx-zb,.xb-xgxx-link{padding:13px 0;border-bottom:1px dotted #e1e1e1; overflow:hidden;}
+            .xb-xgxx-link{ border-bottom:none}
+            .box-145,.xb-xgxx-link strong { float:left; width:135px;padding-right:15px;height:24px;color:#808080}
+            .box-145 h2{ font-weight:100}
+            .box-813,.box-813-link{ width:818px; float:right;}
+            .box-813 li { display:inline-block; width:134px; height:24px;float:left;}
+            .box-813-link a{display:inline-block; height:24px;margin-right:10px;}
+        </style>
+
+        <!-- =E categorySearch -->              <!-- =S footer -->
+            <!-- =S footer -->
+        <div id="footer" class="footer">
+            © 58.com 
+            <a id="askicon" target="_blank" title="有问题请与58客服进行对话" rel="nofollow" href="http://about.58.com/v5/">帮助中心
+            </a>
+        </div>
+        <!-- =E footer -->          <!-- =E footer -->
+        
+        
+        
+       
+      
+        
+        <style type="text/css" id="aaaa">
+            a.erweima{
+                        z-index:100;
+                        width:100px;
+                        height:174px;
+                        text-align:center;
+                        background:#f2f2f2;
+                        padding:5px;
+                        font-size:12px;
+                        line-height:20px;
+                        display:block;
+                        color:#8a898e;
+                        position:fixed;
+                        top:150px;
+                        right:0px;
+                        _position:absolute;
+                    }
+
+            a:hover.erweima{
+                            background:#fefee4; 
+                            text-decoration:none
+                        }
+
+            .erweima i{
+                            width:9px;
+                            height:8px; 
+                            overflow:hidden;
+                            background:url(http://img.58cdn.com.cn//ui6/index/indexclose.png) no-repeat;
+                            position:absolute;
+                            top:10px;
+                            right:5px;
+                        }
+            a:hover.erweima i{
+                            background-position:-9px 0
+                            }
+        </style>
+
+      <!--   <div class="goTab" id="goTab">
+            <ul>
+                <li class="gTop">
+                    <a style="display: none;" href="javascript:;">
+                        <span>回到顶部</span>
+                        <b></b>
+                    </a>
+                </li>
+                <li class="gNext">
+                    <a href="http://bj.58.com/list/pn2/?utm_source=market&amp;spm=b-31580022738699-pe-f-851.sogoupz_biaoti">
+                        <span>下一页</span>
+                        <b></b>
+                    </a>
+                </li>
+                <li class="gSuggest">
+                    <a target="_blank" href="http://about.58.com/">投诉
+                    <br>建议
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+        <style type="text/css">
+            .goTab{
+                    position:fixed; bottom:56px;
+                    right:10px;_position:absolute; z-index:999;
+                }
+            .goTab ul{
+                    margin:0;
+                }
+            .goTab li{
+                    position:relative;
+                    width:45px; 
+                    height:45px; 
+                    line-height:45px; 
+                    margin-bottom:4px; 
+                    font-size:14px; 
+                    list-style:none;
+                }
+            .goTab li a{
+                    position:absolute; 
+                    width:45px; 
+                    height:45px; 
+                    right:0;
+                    top:0; 
+                    text-align:center; 
+                    color:#fff !important; 
+                    background-color:#c0c0c0; 
+                    transition: background-color 0.3s linear 0s; 
+                    overflow:hidden;
+                    text-decoration: none; 
+                    cursor:pointer; 
+                    color:#fff;
+                }
+            .goTab li a:hover{
+                    color:#fff;
+                    text-decoration:none;
+                    background-color: #989898;
+                }
+            .goTab li b{
+                    background:url('http://img.58cdn.com.cn/ui6/index/bg_goTab.png'); 
+                    width:19px; 
+                    height:23px; 
+                    display:block; 
+                    position:absolute; 
+                    right:13px; 
+                    top:11px;
+                }
+            .goTab li span{
+                    position: absolute; 
+                    color:#fff; 
+                    right:32px; 
+                    width:92px;
+                }
+            .goTab .gTop b{
+                    background-position: 0 0;
+                }
+            .goTab .gPrev b{
+                    background-position: 0 -24px;
+                }
+            .goTab .gNext b{
+                    background-position: 0 -48px;
+                }
+            .goTab .gSuggest{
+                    margin-bottom:0; 
+                    line-height:16px; 
+                    font-size:12px;
+                }
+            .goTab .gSuggest a{
+                    padding-top:6px; 
+                    height:39px;
+            }
+        </style>
+        <ul class="lso-hide" id="localInfo">
+            
+        </ul>
+    </body><!------------------------------------------------------底部的js---------------------------------------------------------------->
+</html>

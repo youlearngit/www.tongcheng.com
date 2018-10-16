@@ -1,0 +1,140 @@
+<extend name="Business/index" />
+
+<block name="focus"></block>
+
+<block name="contL">
+	<div class="contL">
+
+		  <h2 style="background:#fefefe"><span>友情链接</span></h2>
+            <ul class="list" style="border-bottom:none;">
+        	<foreach name="link" item="vo" >
+                <li style="width:150px"><a href="{$vo['link']}" target="_blank">{$vo['title']}</a></li>
+            </foreach>
+            </ul>
+
+        <h2 style="border-top:1px dashed #E6E6E6;margin: 0px 20px;height: 0px;"></h2>
+		
+    	<h2  style="background:#fefefe"><span class="blue">申请链接</span></h2>
+        <div class="agency">
+        	<ol>
+            	<li class="active">1.填写申请表</li>
+            	<li>2.等待审核</li>
+            	<li>3.申请成功</li>
+            </ol>
+            <p>请认真填写下面信息，提交后等待审核</p>
+            <div class="table">
+	            <form id="form1" action="{:U('Home/Business/doLink')}" method="post" enctype="multipart/form-data">
+		        	<table>
+		                <tbody>
+		                    <tr>
+		                        <th><b>*</b>网站名称：</th>
+		                        <td><input class="txtA" placeholder="公司全称不能为空" name="title" type="text"><img src="" alt=""><span></span></td>
+		                    </tr>
+		                    <tr>
+		                        <th><b>*</b>网站URL：</th>
+		                        <td><input class="txtA" placeholder="公司详细地址不能为空" name="link" type="text"><img src="" alt=""><span></span></td>
+		                    </tr>
+							
+							<tr>
+		                        <th><b>*</b>网站LOGO：</th>
+		                        <td><input class="txtA" placeholder="公司详细地址不能为空" name="pic" type="file"><img src="" alt=""><span></span></td>
+		                    </tr>
+
+		                    <tr>
+		                        <th><b></b>网站详情：</th>
+		                        <td><input class="txtA" placeholder="公司主要介绍不能为空" name="intro" type="text"><img src="" alt=""><span></span></td>
+		                    </tr>
+		                    <tr>
+		                        <th></th>
+		                        <td><input id="applyForm" class="butA" value="立刻申请" type="submit"></td>
+		                    </tr>
+		                </tbody>
+		            </table>
+	            </form>
+            </div>
+        </div>
+		
+      <!-- *********** -->
+      <!-- *********** -->
+      <!-- *********** -->
+        	<script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"></script>
+
+			<script type="text/javascript">
+
+				var NP = false;
+				var LP = false;
+				var IP = false;
+				// 绑定获取焦点事件
+			    $('input').focus(function(){
+			        var remined = $(this).attr('remined');
+			        $(this).next().attr('src','__PUBLIC__/Home/images/warning.png');
+			    })
+
+
+			     // title的正则
+			    $('input[name=title]').blur(function(){
+			        var v = $('input[name=title]').val();
+			        var reg = /^\S{1,18}$/;
+			        var res = reg.test(v);
+			        if(!res){
+			            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+			            NP = false;
+			        }else{
+			            $(this).next().next().html('').css('background','#FFECEC');
+			            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+			            NP = true;
+			        }
+			    })
+
+
+			     // 网址的正则
+			    $('input[name=link]').blur(function(){
+			        var v = $('input[name=link]').val();
+			        var reg = /^http:\/\/\S{1,18}$/;
+			        var res = reg.test(v);
+			        if(!res){
+			            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+			            LP = false;
+			        }else{
+			            $(this).next().next().html('').css('background','#FFECEC');
+			            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+			            LP = true;
+			        }
+			    })
+
+
+			    // 简介的正则
+		        $('input[name=intro]').blur(function(){
+		        var v = $('input[name=intro]').val();
+		        var reg = /^\S{1,200}$/;
+		        var res = reg.test(v);
+		        if(!res){
+		            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+		            IP = false;
+		        }else{
+		            $(this).next().next().html('').css('background','#FFECEC');
+		            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+		            IP = true;
+		        }
+		    })
+
+		     $('#form1').submit(function(){
+                $('input[name=title]').blur();
+                $('input[name=link]').blur();
+                $('input[name=intro]').blur();
+
+                if(NP && LP && IP){
+                    return true;
+                }
+                return false;
+            })
+
+			</script>
+
+		</div>
+</block>
+
+
+  
+
+

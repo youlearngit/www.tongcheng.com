@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+    <link href="__PUBLIC__/Home/baomu_files/ys.css" rel="stylesheet" type="text/css">
+
+ 	<title>您可以选择的保姆</title>
+ </head>
+ <body>
+ 	<div style="width:300px;text-align:center;height:50px;line-height:50px;font-size:18px;font-weight:bold;color:red">你可以选择的有:</div>
+ 	<div class="one-b-l fl" style="width:1300px;padding-left:180px">
+        <table border="0" cellpadding="0" cellspacing="0" width="800px">
+            <thead>
+              <tr>
+                <th width="50px"><span></span>选项</th>
+                <th width="100px"><span></span>姓名</th>
+                <th width="100px"><span></span>年龄</th>
+                <th width="100px"><span></span>保姆经验</th>
+                <th width="100px"><span></span>是否住家</th>
+                <th width="150px"><span></span>保姆价格</th>
+                <th width="150px"><span></span>保姆电话</th>
+              </tr>
+              </thead>
+            <tbody>
+            	<foreach name="baomu" item="vo">
+	              <tr>
+	                <td><input type="checkbox" name="id[]"></td>
+	                <td>{$vo['name']}</td>
+	                <td>{$vo['age']}</td>
+	                <td>{$vo['jingyan']}</td>
+	                <td>{$vo['zhujia']}</td>
+	                <td>{$vo[jiage]}</td>
+	                <td>{$vo['tel']}</td>
+	              </tr>
+             	</foreach>
+              </tbody>
+        </table>
+		<br>
+        <div class="submit-btn styfff">立即预约</div>
+        <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"> </script>
+		<script type="text/javascript">
+			$('.styfff').click(function(){
+				alert("你的预约已生效,我们会尽早预约时间与您面试！");window.location.href="{:U('Home/Ziying/baomu')}";
+			})
+		</script>
+    </div>
+ </body>
+ </html> 

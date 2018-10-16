@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><style media="screen"></style>
+    <!-- initial set  -->
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+        <meta name="baidu-site-verification" content="h0fignccMW">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--seo -->
+    <title>我们爱讲冷笑话-|爱编冷笑话|挖掘冷猛料|流行冷幽默|-lengxiaohua.com</title>
+    
+    <meta property="wb:webmaster" content="0695f39670ffb8ba">
+    <meta property="qc:admins" content="2117207557701170516375"> 
+    <meta name="description" content="爱讲冷笑话的企鹅所在地,善于挖掘冷笑话,发挥冷笑话功力,一个冷笑话就能走天涯.只要听到一个冷笑话,就讲给他人听。2012最新最流行冷笑话,冷笑话其实很好笑,也经常听到别人讲冷笑话, 有人天生爱说冷笑话,痴迷讲冷笑话,人生其实就是一个冷笑话,冷笑话真的很冷啊.">
+    
+    <meta name="keywords" content="冷笑话,最新冷笑话,经典冷笑话,冷笑话谜语,冷笑话大全,lengxiaohua,冷漫画,冷视频,康康冷笑话,小白兔冷笑话,脑筋急转弯,搞笑短信,冷幽默,冷知识,冷图片,冷创意">
+    
+    <link rel="canonical" href="">
+
+    <!-- maincss -->
+    <link href="__PUBLIC__/Home/lengxiaohua_files/Icomoon.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/Home/lengxiaohua_files/core.css" type="text/css" media="screen" charset="UTF-8">
+    <link rel="stylesheet" href="__PUBLIC__/Home/lengxiaohua_files/Base.css" type="text/css" media="screen" charset="UTF-8">
+
+    <!-- favicon -->
+    <link rel="favicon icon" type="image/png" href="http://lengxiaohua.com/img/page/favicon.ico">
+
+    <!-- js plugins -->
+    <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/lengxiaohua_files/jquery-1.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/lengxiaohua_files/ddpng.js"></script> 
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/lengxiaohua_files/ZarkAPI.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/lengxiaohua_files/ZarkF.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/lengxiaohua_files/JOKE.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/lengxiaohua_files/lazyload.js"></script> 
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/lengxiaohua_files/Base.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/lengxiaohua_files/zarkfx.js"></script>
+    <!-- sub-page css, js and csshack -->
+    
+<script charset="utf-8" src="__PUBLIC__/Home/lengxiaohua_files/profile.txt"></script><link href="__PUBLIC__/Home/lengxiaohua_files/pagination.css" type="text/css" rel="stylesheet"></head>
+<body id="body" style="background:url(__PUBLIC__/Uploads/xiaohuabg.png)">
+    <div id="wrap">
+        <div id="main">
+            <!--Header-->
+            <div class="header">
+                <div class="header_inner clearfix">
+                    <span class="rabi_top"><img src="__PUBLIC__/Uploads/xiaohua1.png"></span>
+                    <div class="logobox">
+                        <a class="logo" href="" title="~回到首页吧~"><img src="__PUBLIC__/Uploads/xiaohua.png"></a>
+                    </div>
+                    <form action="/search">
+                        <div class="search_box">
+                            <input class="search_but" value="" fx="ie6png" style="background:url(__PUBLIC__/Uploads/sousou.png)">
+                            <input name="query_word" class="search_inp corner12px" fx="corner[radius=12] ie6png" type="text">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <!--SUBPAGE-->
+            <div class="sub_page_content clearfix">
+                <div class="left_wrap">
+                    <div class="nav_wrap clearfix">
+                        <div class="nav_box corner8px">
+                            <div id="main_nav" class="main_nav ">
+                                <a class="selected" href="">人气</a> 
+                                <a href="">最新</a> 
+                                <a href="">随机</a> 
+                                <a href="">每日一冷</a> 
+                                <a href="">审贴</a> 
+                                <a id="fabu" >发布</a>
+                                <a href="" target="_blank" fx="ie6png" class="app"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--POST_JOKE-->
+                    <div id="post_joke_box" class="post_box corner8px clearfix hidden" style="margin-bottom:20px; border:1px solid #D6D6D6; box-shadow:0 3px 5px #E1E1E1; overflow:hidden;display:none;">
+                        <a href="javascript:;" onclick="JOKE.closePostBox();return false;" class="btn_close" fx="ie6png" style="top:8px; right:15px;"></a>
+                        <div class="pub_cat_box corner8px_top clearfix">
+                            <a  id="wenzi" fx="switch[switchid=post_content_text;group=post;]" class="corner8px_lt zarkfx_switch_selected" style="border-left:0;font-size:16px;" return false;>文字</a>
+                            <a id="tupian" class="zarkfx_switch_unselected" fx="switch[switchid=post_content_image;group=post;]" style="font-size:16px;" return false;>图片</a>
+                            <a class="zarkfx_switch_unselected" fx="switch[switchid=post_content_video;group=post;]" style="border-right:1px solid #ddd;font-size:16px;" return false;>视频</a>
+                        </div>
+
+                        <div id="post_joke_content" class="pub_switch_box corner8px_bottom clearfix">
+
+                            <!-- text joke -->
+                            <div style="display: block;" id="post_content_text">
+                                <div class="pub_textarea clearfix">
+                                <form action="{:U('Home/Lengxiaohua/insert')}" method="post">
+                                    <textarea name="content" autocomplete="off" fx="keydown[key=ctrl+enter;target=#post_joke_btn]"></textarea>
+                                    <p id="post_tip" class="pub_tip hidden"></p>
+                                    <input type="hidden" name="u_id" value="{$userxinxi['id']}">
+                                    <input type="submit" id="tj" style="display:none">
+                                </form>
+                                </div>
+                                <a id="post_joke_btn"  fx="corner[radius=4]"  class="btn_submit corner4px" style="_margin-top: 10px;" title="按下Ctrl+Enter可以直接发布">发表</a>
+
+                            </div> <!-- text joke end -->
+
+                            <!-- image joke -->
+                            <div style="display: none;" id="post_content_image" class="hidden">
+                                <form action="{:U('Home/Lengxiaohua/insert')}" method="POST" enctype="multipart/form-data" class="basicform">
+                                    <input value="" name="referer" fx="urlquery[key=post_success;value=1;]" type="hidden">
+                                    <div class="clearfix" style="margin-bottom:15px;">
+                                        <div class="file corner4px" fx="corner[radius=4]" style="margin-bottom:0;">
+                                            <input name="pic1[]" autocomplete="off" fx="validation[type=notempty;invalid_id=post_image_error;invalid_msg=请选择一张图片] validation[type=endswith;values=.jpg,.png,.jpeg,.gif;invalid_id=post_image_error;invalid_msg=只能上传jpg/jpeg/png/gif格式的图片;ignorecase;] validation[type=filesize;min=10240;max=4194304;invalid_id=post_image_error;invalid_msg=图片的尺寸必须大于10k,小于4M]" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="pub_textarea clearfix">
+                                        <textarea name="content" autocomplete="off" fx="keydown[key=ctrl+enter;target=#post_image_btn] validation[type=maxlen;len=300;invalid_id=post_image_error;invalid_msg=内容太长了;] focusclean[color=#999]" style="height: 40px; min-height: 40px; box-shadow: none; color: rgb(153, 153, 153);"></textarea>
+                                        <p style="display: none;" id="post_image_error" class="pub_tip"></p>
+                                    </div>
+                                    <input name="type" value="image" type="hidden">
+                                    <input name="model_name" value="Joke" type="hidden">
+                                    <input name="title" value="" type="hidden">
+                                    <input id="post_image_btn" fx="corner[radius=4]" class="btn_submit corner4px" style="_margin-top: 10px;" value="发表" title="按下Ctrl+Enter可以直接发布" type="submit">
+                                </form>
+                            </div> <!-- image joke end -->
+
+                            <!-- video joke -->
+                            <div style="display: none;" id="post_content_video" class="hidden">
+                                <p class="pub_title">视频地址</p>
+                                <input value="请输入在线视频的网络地址" class="video_url_inp" name="video_uri" autocomplete="off" fx="validation[type=notempty;invalid_id=post_video_error;invalid_msg=请把视频地址复制到第一栏] validation[type=regex;regex=.+\.youku\..+|.+\.tudou\..+|.+\.sina\..+|.+\.sohu\..+|.+\.56\.com.+|.+\.ku6\.com.+|.+v\.qq\.com.+|.+\.swf;invalid_id=post_video_error;invalid_msg=这个视频地址不对,请提供包含.swf的flash地址;ignorecase;] validation[type=startswith;values=http;invalid_id=post_video_error;invalid_msg=这个视频地址不对,应该以http开头;ignorecase;] focusclean[color=#999]" style="margin-bottom: 10px; width: 564px; color: rgb(153, 153, 153);" type="text">
+                                <div class="pub_textarea clearfix">
+                                    <textarea name="content" autocomplete="off" fx="validation[type=notempty;invalid_id=post_video_error;invalid_msg=请输入视频介绍] validation[type=minlen;len=10;invalid_id=post_video_error;invalid_msg=视频介绍太短了;] validation[type=maxlen;len=300;invalid_id=post_video_error;invalid_msg=内容太长了;]  validation[type=notequal;value=写一点关于此视频的介绍吧;invalid_id=post_video_error;invalid_msg=请输入视频介绍;] focusclean[color=#999] keydown[key=ctrl+enter;target=#post_video_btn]" style="height: 40px; min-height: 40px; color: rgb(153, 153, 153);">写一点关于此视频的介绍吧</textarea>
+                                    <p style="display: none;" id="post_video_error" class="pub_tip"></p>
+                                </div>
+                                <a id="post_video_btn" href="javascript:;" fx="corner[radius=4]" onclick="JOKE.postVideoJoke();return false;" class="btn_submit corner4px" style="_margin-top: 10px;" title="按下Ctrl+Enter可以直接发布">发表</a>
+                            </div> <!-- video joke end -->
+
+                        </div>
+                    </div>
+                    <div id="post_joke_success" class="post_box post_success_tip corner8px clearfix hidden" style="margin-bottom: 20px; border: 1px solid rgb(214, 214, 214); box-shadow: 0pt 3px 5px rgb(225, 225, 225); background-color:#fff;" fx="corner[radius=8]">
+                        <p>发表成功:</p>
+                        <a href="">查看我发布的内容</a>
+                        <!--
+                        <a href="javascript:;" onclick="JOKE.openPostJokeBox();return false;" >继续发表冷笑话</a>
+                        -->
+                        <a fx="toggle[target=#post_joke_success]" class="btn_close" style="top:14px; right:15px;"></a>
+                    </div>
+                                        
+                    <!-- 修改头像 -->
+                    <div class="box01 portrait_modify corner8px clearfix" id="xgtx" style="display:none">
+                        <form action="{:U('Home/Lengxiaohua/xiugaitouxiang')}" method="POST" enctype="multipart/form-data" class="basicform" style="margin-left:10px;">
+                            <h2>从电脑中选择你喜欢的照片</h2>
+                            <div class="clearfix">
+                                <div class="file corner4px" fx="corner[radius=4]">
+                                    <input name="imagefile" value="" autocomplete="off" fx="validation[type=endswith;values=.jpg,.png,.jpeg,.gif;invalid_id=portrait_error;invalid_msg=只接受jpg/jpeg/png/gif格式的图片;ignorecase] validation[type=filesize;min=10240;max=4194304;invalid_id=portrait_error;invalid_msg=图片的尺寸必须大于10k,小于4M] " type="file">
+                                    <span style="display: none;" id="portrait_error" class="file_error hidden"></span>
+                                    <input name="sex" value="女" autocomplete="off" type="hidden">
+                                </div>
+                                <input value="上传照片" class="btn_03 corner4px" fx="corner[radius=4]" style="position: relative; left:10px;" type="submit">
+                            </div>
+                        </form>
+
+                        <div class="clearfix">
+                                    <a href="javascript:;" onclick="$(this).parents('form').submit(); return false;" class="btn_submit2 btn_act left" style="margin-top:20px;"></a>
+                                    <a id="fanhui" class="left" return false;>返回资料修改页面</a>
+                        </div>
+                    </div>
+
+
+                    <div id="xiugai_box" fx="corner[radius=8]" class="box01 corner8px modify_password clearfix" style="display:none">
+                        <div class="form_wrap clearfix">
+                            <form action="{:U('Home/Lengxiaohua/xiugaimima')}" method="POST" class="basicform" style=" width:370px; margin-bottom:30px;">
+
+                                <div class="clearfix">
+                                    <h2>修改密码</h2>
+                                    <p class="title clearfix">
+                                        <span class="left">＊原密码</span>
+                                        <span style="display: none;" id="mp_password_error" class="error"></span>
+                                    </p>
+                                    <input name="pass" class="inputFill corner4px" fx="validation[type=notempty;invalid_id=mp_password_error;invalid_msg=请输入原密码]" type="password">
+                                    <p class="title clearfix">
+                                        <span class="left">＊新密码</span>
+                                        <span style="display: none;" id="mp_newpassword_error" class="error"></span>
+                                    </p>
+                                    <input id="newpassword" name="newpass" class="inputFill corner4px" fx="validation[type=notempty;invalid_id=mp_newpassword_error;invalid_msg=请输入新密码] validation[type=minlen;len=6;invalid_id=mp_newpassword_error;invalid_msg=密码的长度不能低于6个字符]" type="password">
+
+                                    <p class="title clearfix">
+                                        <span class="left">＊再次输入密码</span>
+                                        <span style="display: none;" id="mp_password_again_error" class="error"></span>
+                                    </p>
+                                    <input name="password_again" class="inputFill corner4px" fx="validation[type=identical;another_id=newpassword;invalid_id=mp_password_again_error;invalid_msg=两次输入的密码不相同]" type="password">
+                                </div>
+                                <div class="clearfix">
+                                    <input value="提交" class="btn_submit2 btn_act left" style="margin:10px 0 20px 0;font-size:20px;" ;="" type="submit">
+                                    <a class="left" href="{:U('Home/Lengxiaohua/lengxiaohua')}" style="font-size:14px; margin:30px 0 0 15px;">或返回</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+                    
+
+
+<!--SHOW_BOX-->
+<!--
+<div class="showbox corner8px clearfix hidden">
+    <a href="#" class="corner8px"><img fx="ie6png" class="corner8px" src="/img/page/app.jpg" /></a>
+</div>
+-->
+
+
+
+
+
+
+
+
+<div id="hu" class="cat_wrap"> 
+    <a  href=""  style="background:url(__PUBLIC__/Uploads/quanbu.png)"><!-- <img src="__PUBLIC__/Uploads/quanbu.png" alt=""> -->
+        <!-- <span class="circle_icon" fx="ie6png" ></span> -->
+        <!-- 全部 -->
+    </a>
+    <a id="cat_text" href="" class="cat_text corner4px" fx="corner[radius=4] hovershow[showid=cat_text_div] ie6png" style="background:url(__PUBLIC__/Uploads/wenzi.png)">
+        <!-- <span class="circle_icon" fx="ie6png"></span> -->
+        <!-- 文字 -->
+    </a>
+    <a id="cat_pic" href="" class="cat_pic corner4px" fx="corner[radius=4] hovershow[showid=cat_pic_div] ie6png" style="background:url(__PUBLIC__/Uploads/tu.png)">
+        <!-- <span class="circle_icon" fx="ie6png"></span> -->
+        <!-- 图片 -->
+    </a>
+    <a id="cat_video" href="" class="cat_video corner4px" fx="corner[radius=4] hovershow[showid=cat_video_div] ie6png" style="background:url(__PUBLIC__/Uploads/shipin.png)">
+        <!-- <span class="circle_icon" fx="ie6png"></span> -->
+        <!-- 视频 -->
+    </a>
+</div>
+
+<script type="text/javascript">
+
+    // 获取元素
+    $('#hu a').eq(0).click(function(){
+        $(this).css('background','url(__PUBLIC__/Uploads/quanbu1.png)');
+        $('#hu a').eq(1).css('background','url(__PUBLIC__/Uploads/wenzi.png)');
+        $('#hu a').eq(2).css('background','url(__PUBLIC__/Uploads/tu.png)');
+        $('#hu a').eq(3).css('background','url(__PUBLIC__/Uploads/shipin.png)');
+
+    });
+    // 获取元素
+    $('#hu a').eq(1).click(function(){
+        $(this).css('background','url(__PUBLIC__/Uploads/wenzi1.png)');
+         $('#hu a').eq(0).css('background','url(__PUBLIC__/Uploads/quanbu.png)');
+        $('#hu a').eq(2).css('background','url(__PUBLIC__/Uploads/tu.png)');
+        $('#hu a').eq(3).css('background','url(__PUBLIC__/Uploads/shipin.png)');
+    });
+    // 获取元素
+    $('#hu a').eq(2).click(function(){
+        $(this).css('background','url(__PUBLIC__/Uploads/tu1.png)');
+         $('#hu a').eq(1).css('background','url(__PUBLIC__/Uploads/wenzi.png)');
+        $('#hu a').eq(0).css('background','url(__PUBLIC__/Uploads/quanbu.png)');
+        $('#hu a').eq(3).css('background','url(__PUBLIC__/Uploads/shipin.png)');
+    });
+    // 获取元素
+    $('#hu a').eq(3).click(function(){
+        $(this).css('background','url(__PUBLIC__/Uploads/shipin1.png)');
+        $('#hu a').eq(1).css('background','url(__PUBLIC__/Uploads/wenzi.png)');
+        $('#hu a').eq(2).css('background','url(__PUBLIC__/Uploads/tu.png)');
+        $('#hu a').eq(0).css('background','url(__PUBLIC__/Uploads/quanbu.png)');
+    });
+
+    $('#tupian').click(function(){
+
+        $(this).attr('class','corner8px_lt zarkfx_switch_selected');
+        $('#post_content_image').css('display','block');
+        $('#post_content_text').css('display','none');
+        $(this).siblings().removeClass('corner8px_lt zarkfx_switch_selected');
+        // $(this).siblings('class','zarkfx_switch_unselected');
+    })
+
+     $('#wenzi').click(function(){
+
+        $(this).attr('class','corner8px_lt zarkfx_switch_selected');
+        $(this).siblings().removeClass('corner8px_lt zarkfx_switch_selected');
+        // $(this).siblings('class','zarkfx_switch_unselected');
+    })
+
+
+</script>
+
+<!--SHOW_BOX_LEFT-->
+<!--INDEX_TOOL_BOX-->
+<div id="chose_interval_div" class="toolbox clearfix"> 
+    <div class="t_time_wrap">
+        <a href="http://lengxiaohua.com/24h">24h</a>
+        <a class="nohover">|</a>
+        <a class="selected" href="http://lengxiaohua.com/">本周</a>
+        <a class="nohover">|</a>
+        <a href="http://lengxiaohua.com/month">本月</a>
+    </div>
+</div>
+
+
+<!--JOKE-->
+<div class="joke_wrap">
+    <ul class="joke_ul clearfix">      
+        <li class="joke_li" id="joke_li_214234">
+
+            <!-- 个人中心 修改信息 -->
+            <div class="j_can clearfix">
+
+                <div class="user_page clearfix"  id="xinxishezhi" style="margin-bottom:100px;display:none">
+    
+                    <div fx="corner[radius=8]" class="info_box box01 corner8px clearfix">
+                        <div id="img_box" class="left img_box">
+                
+
+                            <div style="overflow:hidden; margin:auto; width:140px; height:140px; ">
+
+                                <!-- <img src="__PUBLIC__/Uploads/zczh.png" alt=""> -->
+
+                                <img src="__PUBLIC__{$_SESSION['pic']}" alt="{$_SESSION['username']}" title="{$_SESSION['username']}" style="display: inline; margin-left: 0px; margin-top: 0px; width: 100%; height: 100%;" >
+                            </div>
+
+                        </div>
+                        <div class="left">
+                            <div class="clearfix">
+                                 <h3>
+                                    {$_SESSION['username']}
+                                </h3>
+                                <a style="display: block;" href="http://lengxiaohua.com/oauth/setting" class="share_setting" showforme="623448" fx="ie6png">
+                                    <span fx="ie6png"></span>
+                                    <p>同步分享设置</p>
+                                </a>
+                                </div>
+                                <p>发表笑话：2篇</p>
+                                <p>笑话评论：0条</p>
+                                <p>登录次数：0次</p>
+
+            <div style="display: block;" id="tip_upload" class="tip_box hidden">
+                <a href="http://lengxiaohua.com/accounts/portrait">
+                    <span class="corner4px girl">请上传自己的头像吧，妹子～</span>
+                </a>
+            </div>
+        </div>
+            <div style="display: block;" class="btn_wrap" showforme="623448">
+                <a id="xiugaixinxi"  return false ;class="btn_modify_info btn_act"><input type="submit" value="修改信息"></a>
+            </div>
+
+    </div>
+
+
+
+        <div class="clearfix title_box">
+            <h2 id="title2" class="hidden">我最近发表的笑话</h2>
+            <div style="display: block;" class="tool_transfer" showforme="623448">
+                <a fx="corner[radius=4]" class="corner4px chosed">已通过</a>
+                <a href="http://lengxiaohua.com/judging" fx="corner[radius=4]" class="corner4px">审核中</a>
+                <a href="http://lengxiaohua.com/unjudged" fx="corner[radius=4]" class="corner4px">未通过</a>
+            </div>
+        </div>
+        <div class="tip_box01">
+            <div fx="corner[radius=8]" class="tip_info box01 corner8px clearfix">
+                <p class="tip01">当前还没有发表成功的笑话 OTL </p>
+            </div>
+        </div>
+</div>
+<!-- 个人中心 修改头像 -->
+<div  id="ziliaoxiugai" fx="corner[radius=8]" class="user_modify box01 corner8px clearfix" style="display:none">
+    <form id="user_modify" action="?referer=/user/623448" method="POST" enctype="multipart/form-data" class="basicform">
+        <h2>{$userxinxi['sex']}资料修改</h2>
+        <p class="title">用户名: {$_SESSION['username']}</p>
+
+        <p class="title">Email: {$_SESSION['youxiang']}</p>
+
+        <p class="title">性别:</p>
+        <div style="margin:0 0 10px 0;" class="clearfix">
+            <div class="clearfix radiobox" style="width:34px;">
+                <input name="sex" value="女" fx="defaultvalue[value=女]"  checked="checked" type="radio" <if condition="$userxinxi['sex'] eq '女'" >checked</if>><span>女</span>
+            </div>
+            <div class="clearfix radiobox" style="width:34px;">
+                <input name="sex" value="男" type="radio" <if condition="$userxinxi['sex'] eq '男'" >checked</if>><span>男</span>
+            </div>
+            <div class="clearfix radiobox" style="width:48px;">
+                <input name="sex" value="保密" type="radio"><span>保密</span>
+            </div>
+        </div>
+
+        <p class="title">登录密码: <a id="genggai" return false;>更改</a> </p>
+
+        <div class="portrait_box">
+            <h2>修改头像
+                <p style="font-size:12px;">建议上传200*200像素以上的照片</p>
+            </h2>
+
+            <div class="clearfix" style="width:80px;">
+                <div class="left">
+                    <div class="img_box" style="padding:5px;">
+
+                        <div style="overflow:hidden; margin:auto; width:50px; height:50px; ">
+        
+                            <img src="__PUBLIC__{$_SESSION['pic']}" alt="yonghu" title="yonghu" style="display: inline; margin-left: 0px; margin-top: 0px; width: 50px; height: 50px;" >
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a id="bianjitouxiang" class="tip01 left corner4px" style="margin-top:10px;" return false;>编辑头像</a>
+        </div>
+
+        <p id="error_tip" class="hidden"></p>
+        <div style="width:100%; margin:0 0 30px 0;">
+            <a href="javascript:;void(0)" onclick="$(this).parents('form').submit()" class="btn_submit2 btn_act left" style="margin:20px 0 20px 0"></a>
+            <a class="left" href="" style="font-size:14px; margin:40px 0 0 15px;">返回个人主页</a>
+        </div>
+    </form>
+   
+
+</div> 
+
+
+
+    <foreach name="arr" item="vo">
+        <div class="para_box corner8px" id="xinxi">
+            <div onmouseover="showReportBtns(this)" onmouseout="hideReportBtns(this)">
+                <div class="para_can" id="joke_content_214234">
+                    {$vo['content']|chuli}
+                </div>
+                <!-- 内容中的图片 -->
+                <?php
+                    if(!empty($vo['pic1'])){
+                ?>
+                    <div class="joke_img_box clearfix">
+
+                    <div class="default_load_imgbox corner8px" style="width:200px; height:200px; ">
+                    <img class="corner4px" src="__PUBLIC__{$vo[pic1][0]}" style="width:100%">
+                    </div>
+                    </div>
+                 <?php       
+                    }
+                ?>
+                
+
+                <!-- </div> -->
+                <div class="para_info clearfix">
+                    <div class="user_info">
+                        <img src="__PUBLIC__{$vo[pic][0]}" class="left corner4px" height="40" width="40">
+                        <a href="" >{$vo['username']}</a>
+                        <p>{$vo['atime']}</p>
+                        
+                    </div>
+                    <div class="para_tool" name="{$vo['xid']}">
+                        <a report="like_joke" jokeid="214234">
+                            <span>顶</span>
+                            <span id="ding{$vo['xid']}">({$vo['ding']})</span>
+                        </a>
+                        <a report="unlike_joke" jokeid="214234">
+                            <span>踩</span>
+                            <span id="cai{$vo['xid']}">({$vo['cai']})</span>
+                        </a>
+                        <div class="share_block">
+                            <span js="share_btn" joke_id="214234">分享</span>
+                            <div style="opacity: 0;" id="share_box_214234" fx="corner[radius=4]" class="share corner4px clearfix hidden">
+                                    <a fx="share[site=sinaweibo; content_selector=#joke_content_214234 &amp;[js=joke_summary&amp;]; pic_selector=#joke_content_214234 &amp;[js_share=image&amp;]; appkey=2145236240; ralateUid=1642635773; link_selector=#view_all_joke_214234;]" class="sina" title="分享到新浪微博" style="margin-left:0;"></a>
+                                    <a fx="share[site=tencentweibo; content_selector=#joke_content_214234 &amp;[js=joke_summary&amp;]; pic_selector=#joke_content_214234 &amp;[js_share=image&amp;]; appkey=801137460; assname=30818627; link_selector=#view_all_joke_214234;]" class="qq" title="分享到腾讯微博"></a>
+                                    <a fx="share[site=renren; content_selector=#joke_content_214234 &amp;[js=joke_summary&amp;]; pic_selector=#joke_content_214234 &amp;[js_share=image&amp;];  link_selector=#view_all_joke_214234;]" class="renren" title="分享到人人"></a>
+                                <span class="tri"></span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" onclick="openComments(214234, 'joke');return false;">
+                            <span>评论</span>
+                            <span id="show_comment_count_214234">(7)</span>
+                            <span class="tri hidden" fx="ie6png" js="comment_line_214234"></span>
+                            <span class="loading01 hidden" js="loading_214234"></span>
+                        </a>
+                        <a id="view_all_joke_214234" href="" target="_self">
+                            <span>查看全文</span>
+                        </a>
+                        <input id="comment_count_214234" value="7" autocomplete="off" type="hidden">
+                    </div>
+ 
+               </div>
+            </div>
+            <div class="j_comment" id="j_comment_214234" style="display:none;">
+
+                <div js="comment_line_214234" class="comment_line"> </div>
+                <div js="comments" class="hidden"></div>
+
+                <div id="post_comment_214234" class="tool_box clearfix">
+                    <div name="post_btn" class="btn_box clearfix">
+                        <a class="t_b_trigger" href="javascript:;" onclick="openPostComment(214234);return false;">发表评论</a>
+                    </div>
+                    <div name="post_box" class="post_box clearfix hidden">
+                    
+                        <textarea class="t_b_reply" fx="keydown[key=ctrl+enter;target=#post_comment_submit_214234;]" id="comment_content_214234" autocomplete="off" name="content">
+                        </textarea>
+                       
+                   
+                        <p js="error_tip" class="left" style="color:red;"></p>
+                        <a id="post_comment_submit_214234" class="btn_reply" href="javascript:;" onclick="postComment(214234);return false;">回复</a>
+                    </div>
+                </div>
+           </div>
+       </div>
+       <div class="bottom_fill left">
+           <span class="bottom_left" fx="ie6png"></span>
+           <span class="bottom_mid" fx="ie6png"></span>
+           <span class="bottom_right" fx="ie6png"></span>
+       </div>
+
+    </foreach>
+        
+
+        <!-- 发布信息 -->
+
+
+
+
+        <script type="text/javascript">
+       
+    
+           // $('.para_tool a').find('span:nth-child(2)').click(function() {
+           //      var id = $(this).attr('name');
+           //      alert(id);
+           // });
+            $('.para_tool a:nth-child(1)').click(function(){
+                var idd = $(this).parents('.para_tool').attr('name');
+                $.get('{:U('Home/Lengxiaohua/ding')}',{'xid':idd,'dings':1},function(data){
+                    if(data==1){
+                        var a=data;
+                        var vv=$('#ding'+idd).html();
+                        var reg = /\((\d*)\)/;
+                        var ss=reg.exec(vv)[1];
+                        var nn=parseInt(ss)+1;
+                        $('#ding'+idd).html('('+nn+')');
+                    }else{
+                        alert('操作失败');
+                    }
+                    
+                }) 
+            })
+
+
+
+             var stutas="{$_SESSION['username']}";
+             if(stutas.length<=0){
+                     $('#fabu').mousedown(function(){
+                    $('#jump_register_form').css('display','block');
+                    $('#login_box').css('display','block');
+                    $('#xgtx').css('display','none');
+                    return false;
+                    // $(this).css('color','red');
+
+                    });
+
+                $('#denglu').mousedown(function(){
+                    // alert('aaa');
+                    // $('#login_box').css('display','block');
+                    $('#jump_register_form').css('display','none');
+                    $('#jump_login_form').css('display','block');
+                    $('#xgtx').css('display','none');
+                   
+                });
+
+                $('#zhuce').mousedown(function(){
+                    // alert('aaa');
+                    // $('#login_box').css('display','block');
+                    $('#jump_register_form').css('display','block');
+                    $('#jump_login_form').css('display','none');
+                    $('#xgtx').css('display','none');
+                   
+                });
+            }else{
+                // alert(2345);
+                $('#fabu').mousedown(function(){
+                    $('#xinxishezhi').css('display','none');
+                    $('#xiugai_box').css('display','none');
+                    $('#xinxi').css('display','block');
+                    $('#ye').css('display','block');
+                    $('#ziliaoxiugai').css('display','none');
+                    $('#xgtx').css('display','none');
+                    $('#post_joke_box').css('display','block');
+                    
+                     return false;
+                })
+            }
+
+           
+
+            $('#xiugaixinxi').click(function(){
+                    $('#ziliaoxiugai').css('display','block');
+                    $('#xinxishezhi').css('display','none');
+                    $('#xinxi').css('display','none');
+                    $('#ye').css('display','none');
+                    $('#xgtx').css('display','none');
+            })
+
+
+
+
+                    // 改变踩的值
+                    $('.para_tool a:nth-child(2)').click(function(){
+                        var idd = $(this).parents('.para_tool').attr('name');
+                        $.get('{:U('Home/Lengxiaohua/cai')}',{'xid':idd,'cais':1},function(data){
+                            if(data==1){
+                                var a=data;
+                                var vv=$('#cai'+idd).html();
+                                var reg = /\((\d*)\)/;
+                                var ss=reg.exec(vv)[1];
+                                var nn=parseInt(ss)+1;
+                                $('#cai'+idd).html('('+nn+')');
+                            }else{
+                                alert('操作失败');
+                            }
+                            
+                        }) 
+                    })
+        </script>
+    </div>
+   
+</li>
+
+        
+        
+
+
+    </ul>
+
+    <div class="zarkfx_pagination_default" fx="pagination[style=default;max=16;displaycount=10;firsttext=第一页;lasttext=末页;]" id="ye">
+        <ul>
+            <!-- <li><a href="{:U('Home/Lengxiaohua/lengxiaohua')}??pagenow={$pagenow-1}">第一页</a></li> -->
+            <li class="zarkfx_pagination_current_page">
+                <a href="{:U('Home/Lengxiaohua/lengxiaohua')}?pagenow={$pagenow-1}">上一页</a>
+            </li>
+
+            <for start="1" end="$pagecount+1" name="i">
+                <li class="zarkfx_pagination_current_page">
+                    <a href="{:U('Home/Lengxiaohua/lengxiaohua')}?pagenow={$i}">{$i}</a>
+                </li>
+            </for>
+
+            <li class="zarkfx_pagination_current_page"><a href="{:U('Home/Lengxiaohua/lengxiaohua')}?pagenow={$pagenow+1}">下一页</a></li>
+        </ul>
+    </div>
+</div>
+
+
+</div>
+<div class="right_wrap">
+                    
+<div class="share_box box01 clearfix corner8px" fx="corner[radius=8]">
+
+    <div class="weibo_login" style="background:url(__PUBLIC__/Uploads/xinlang.png)">
+        <a class="sina" fx="ie6png" href="" title="去 '新浪微博' 捧捧场" target="_blank"></a>
+        <a class="qq" fx="ie6png" href="" title="去 '腾讯微博' 捧捧场" target="_blank"></a>
+    </div>
+
+    <p class="fun_count">已有<span>618770人</span>加入冷笑话</p>
+
+    <div class="other_login corner8px clearfix" fx="corner[radius=8]">
+        <a href="" target="_blank" class="other_qq">QQ登录</a>
+        <a href="">微博登录</a>
+        <a href="" target="_blank" class="other_renren">人人登录</a>
+    </div>
+
+</div>
+<div id="right_sign_box" class="sign_box hidden">
+    <div class="btnbox clearfix">
+        <a fx="ie6png" href="javascript:;" class="btn_login btn_act" style="margin-right:13px;" onclick="changeLoginBox('login');return false;"></a>
+        <a fx="ie6png" href="javascript:;" class="btn_signup btn_act" onclick="changeLoginBox('register');return false;"></a>
+        <!--
+        <a fx="ie6png" href="javascript:;" class="btn_signup btn_act" onclick="alert('注册功能维护中，请稍后再试');return false;" ></a>
+        -->
+    </div>
+    <div class="clearfix">
+        <div tabindex="1" id="login_form" class="sign_form left corner4px hidden" fx="keydown[key=enter;target=#right_login_post_btn;]"> 
+            <label>邮箱地址</label><input name="youxiang" fx="validation[type=notempty;invalid_id=login_error_tip;invalid_msg=请输入邮箱地址] validation[type=email;invalid_id=login_error_tip;invalid_msg=请输入正确的邮箱地址]" type="text">
+            <label>密码</label><input name="password" maxlength="60" fx="validation[type=notempty;invalid_id=login_error_tip;invalid_msg=请输入密码]" type="password">
+            <div class="rem_box clearfix">
+                <input name="rememberme" autocomplete="off" type="checkbox"><p>记住我</p>
+                <a href="">忘记密码?</a>
+            </div>
+            <div class="clearfix">
+                <a href="javascript:void(0);" id="right_login_post_btn" fx="corner[radius=4]" class="btn_submit corner4px" style="width:100%; border:0; margin:0;" onclick="rightLogin();return false;">登入</a>
+            </div>
+            <div class="clearfix" style="margin-top:10px;">
+                <p style="display: none;" id="login_error_tip" class="corner4px" fx="corner[radius=4]"></p>
+            </div>
+        </div>
+        <div tabindex="1" id="signup_form" class="sign_form left corner4px hidden" fx="keydown[key=enter;target=#right_reg_post_btn;]">
+            <div class="clearfix">
+                <p class="title_info corner4px">注册冷帐号</p>
+                <label>邮箱地址</label><input name="youxiang" maxlength="100" fx="validation[type=email;invalid_id=reg_error_tip;invalid_msg=请输入正确的邮箱地址]" type="text">
+                <label>用户名</label><input name="username" maxlength="16" fx="validation[type=notempty;invalid_id=reg_error_tip;invalid_msg=请输入用户名] validation[type=minlen;len=2;invalid_id=reg_error_tip;invalid_msg=用户名不能低于2个字符]" type="text">
+                <label>密码</label><input id="right_reg_password" name="password" fx="validation[type=notempty;invalid_id=reg_error_tip;invalid_msg=请输入密码] validation[type=minlen;len=6;invalid_id=reg_error_tip;invalid_msg=密码不能低于6个字符]" type="password">
+                <label>重复密码</label><input name="password2" maxlength="60" fx="validation[type=identical;another_id=right_reg_password;invalid_id=reg_error_tip;invalid_msg=两次输入的密码不相同]" type="password">
+                <label>性别</label>
+                <select name="sex" autocomplete="off">
+                    <option selected="selected" value="男">男孩</option>
+                    <option value="女">女孩</option>
+                    <option value="保密">保密</option>
+                </select>
+            </div>
+            <div class="clearfix">
+                <a href="javascript:void(0);" id="right_reg_post_btn" fx="corner[radius=4]" class="btn_submit corner4px" style="width:100%; border:0; margin:0; float:left;" onclick="rightRegister();return false;">提交注册</a>
+            </div>
+            <div class="clearfix" style="margin-top:10px;">
+                <p style="display: none;" id="reg_error_tip" class="corner4px" fx="corner[radius=4]"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix" style="margin-bottom:15px;">
+    <div style="display: block;" id="user_info" class="r_wrap01 box01 corner8px clearfix hidden">
+        <div class="inner">
+            <a id="home_link" return false;>{$_SESSION['username']}的主页</a>
+            <a href="{:U('Home/Lengxiaohua/lengshouye')}"  class="quit">退出</a>
+        </div>
+    </div>
+
+    
+</div>
+
+<!--AD_2d-->
+<div class="box02 ad_2d_box clearfix corner8px" fx="corner[radius=8]">
+    <span class="ad_2d" style="background:url(__PUBLIC__/Uploads/shaome.png)"></span>
+    <p class="ad_2d_p"><span>微信</span>扫描左图订阅我们爱讲冷笑话，每日最冷编辑推送</p><p>
+</p></div>
+
+<!--f LINK-->
+<div class="box02 f_link_box clearfix corner8px" fx="corner[radius=8]">
+    <div class="title_box clearfix">
+        <span fx="ie6png" style="background:url(__PUBLIC__/Uploads/tuijie.png)"></span>
+        <h3>网站推荐</h3>
+    </div>
+    <ul class="link_group clearfix">
+        <li><a href="" target="_blank">冷兔论坛</a></li>
+        <li><a href="" target="_blank">微信导航</a></li>
+        <li><a href="" target="_blank">hao123</a></li>
+        <li><a href="" target="_blank">360导航</a></li>
+        <li><a href="" target="_blank">搜狗导航</a></li>
+        <li><a href="" target="_blank">内推网</a></li>
+    </ul>
+</div>
+
+
+                    <div class="qq2D_browser"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <div id="footer" class="footer clearfix">
+            <div class="info_inner">
+                <div class="site_info clearfix">
+                    <div class="s_i_link left">
+                        <a href="">意见反馈</a>
+                        <a href="">关于冷站</a>
+                        <a href="">联系我们</a>
+                        <a href="">免责申明</a>
+                        <a href="" target="_blank">官方软件下载</a>
+                    </div> 
+                    <div class="cp_info right">Copyright © 2007-2012 我们爱讲冷笑话 京ICP备12048704号-5</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--JUMP_OVER_LAYER-->
+        <div style="z-index: 1000; background-color: rgb(0, 0, 0); position: fixed; width: 1366px; height: 728px; top: 0px; left: 0px; opacity: 0.6; display: none;" id="overlayer" fx="overlayer"></div>
+
+        <!--JUMP_SIGN_BOX-->
+        <div tabindex="1" id="login_box" fx="browsercenter corner[radius=8] keydown[key=esc;target=#unplease_login_btn;]" class="jump_box clearfix corner8px " style="display: none; top: 165.5px; left: 424.5px; position: fixed;">
+            <div id="jump_login_form" class="j_b_inner clearfix " style="display:none">
+            <form method="post" action="{:U('Home/Lengxiaohua/lengxiaohua')}">
+                <div tabindex="1" class="j_b_leftbox" fx="keydown[key=enter;target=#jump_login_post_btn;]">
+                    <h4>登录冷笑话</h4>
+                    <label>邮箱地址</label>
+                    <input name="youxiang" fx="validation[type=notempty;invalid_id=jump_error_tip;invalid_msg=请输入邮箱地址] validation[type=email;invalid_id=jump_error_tip;invalid_msg=请输入正确的邮箱地址]" type="text">
+                    <label>密码</label>
+                    <input name="pass" maxlength="60" fx="validation[type=notempty;invalid_id=jump_error_tip;invalid_msg=请输入密码]" type="password">
+                    <div class="rem_box clearfix">
+                        <label>
+                            <input name="rememberme" autocomplete="off" type="checkbox">
+                            记住我
+                        </label>
+                        <a href="">忘记密码?</a>
+                    </div>
+                    <a href="" id="jump_login_post_btn" class="btn_login btn_act" style="margin-top:7px; margin-left:65px;"><input type="submit" value="提交" style="margin-left:-60px"></a>
+                    <p style="display: none;" id="jump_error_tip" class="jump_error_tip01"></p>
+                </div>
+            </form>
+                <div  class="j_b_rightbox clearfix">
+                    <a id="unplease_login_btn" href="javascript:;" onclick="ZarkF.unpleaseLogin();return false;" class="btn_close"></a>
+                    <h4>没有帐号?</h4>
+                    <p>赶紧注册！一起爆料围观大家的冷事、糗事、囧事吧！</p>
+                    <a  href="javascript:;" id="zhuce" onclick="changeJumpLogin('login');return false;" style="margin:0 auto; line-height:37px;"><img src="__PUBLIC__/Uploads/zczh.png" alt=""></span>
+                    
+                    
+                </div>
+            </div>
+            <div id="jump_register_form" class="j_b_inner " style="display: none">
+                <a fx="ie6png" href="javascript:;" onclick="ZarkF.unpleaseLogin();return false;" class="btn_close"></a>
+                <div tabindex="1" class="j_b_allbox clearfix signup" fx="keydown[key=enter;target=#jump_reg_post_btn;]">
+                    <span class="rabi"></span>
+                    <h4 style="margin-bottom:16px;">注册冷帐号</h4>
+                    <a class="back_tip" href="javascript:;" id="denglu" onclick="changeJumpLogin('login');return false;">返回登录</a>
+                <form action="{:U('Home/Lengxiaohua/lengzhuce')}" method="post">
+                    <div class="left" style="width:220px; margin-right:10px;">
+                        <label>邮箱地址</label>
+                        <input name="youxiang" maxlength="100" fx="validation[type=notempty;invalid_id=login_error_tip;invalid_msg=请输入邮箱地址] validation[type=email;invalid_id=jump_reg_error_tip;invalid_msg=请输入正确的邮箱地址]" type="text">
+                        <label>密码</label>
+                        <input id="jump_reg_password" maxlength="60" name="pass" fx="validation[type=notempty;invalid_id=jump_reg_error_tip;invalid_msg=请输入密码] validation[type=minlen;len=6;invalid_id=jump_reg_error_tip;invalid_msg=密码不能低于6个字符]" type="password">
+                        <label>重复密码</label>
+                        <input id="jump_reg_password2" fx="validation[type=identical;another_id=jump_reg_password;invalid_id=jump_reg_error_tip;invalid_msg=两次输入的密码不相同]" type="password">
+                    </div>
+                    <div class="left" style="width:220px;">
+                        <label>用户名</label>
+                        <input name="username" maxlength="16" fx="validation[type=notempty;invalid_id=jump_reg_error_tip;invalid_msg=请输入用户名] validation[type=minlen;len=2;invalid_id=jump_reg_error_tip;invalid_msg=用户名不能低于2个字符]" type="text">
+                        <label>性别</label>
+                        <select autocomplete="off" name="sex"><option selected="selected" value="男">男孩</option><option value="女">女孩</option><option value="unknown">保密</option></select>
+                        <a href="" id="jump_reg_post_btn"  class="btn_submit2 btn_act"><input type="submit" value="提交"></a>
+
+                    </div>
+                </from>
+                    <p style="display: none;" id="jump_reg_error_tip" class="jump_error_tip02"></p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Scroll -->
+        
+
+        <!--REPORT_JOKE-->
+        <div id="report_joke_box" fx="browsercenter corner[radius=8]" class="l_wrap01 jump_box post_box corner8px clearfix " style="height: 200px; padding-bottom: 10px; display: none; top: 215.5px; left: 381.5px; position: fixed;">
+            <div class="j_b_inner" style="width:585px; height:180px; border:0; background: transparent;">
+                <a href="javascript:;" onclick="JOKE.closeReportJokeBox();return false;" class="btn_close" fx="ie6png"></a>
+                <div class="clearfix">
+                    <h4 style="margin-bottom:16px;">哪里出问题了?</h4>
+                    <textarea name="content" fx="focusclean[color=#999]" autocomplete="off" style="height: 70px; max-height: 70px; min-height: 70px; resize: none; float: left; color: rgb(153, 153, 153);">请填写您的举报理由...</textarea>
+                    <a href="javascript:;" onclick="JOKE.reportJoke();return false;" class="btn_submit2 btn_act right"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--baidu analysis-->
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F69c02520068c43c4860863f4969ee4f3' type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="__PUBLIC__/Home/lengxiaohua_files/h.js" type="text/javascript"></script>
+
+    <!--tengxun analysis-->
+    <script type="text/javascript" src="__PUBLIC__/Home/lengxiaohua_files/stats" charset="UTF-8"></script>
+
+    <script type="text/javascript">
+         // 点击用户的主页时，出现修改资料
+            $('#user_info').click(function(){
+
+                // 信息设值点击页面
+                    $('#xinxishezhi').css('display','block');
+                // 笑话列表
+                    $('#xinxi').css('display','none');
+
+                    $('#xiugai_box').css('display','none');
+                // 分页隐藏
+                    $('#ye').css('display','none');
+                // 信息修改页面
+                    $('#ziliaoxiugai').css('display','none');
+
+                    $('#post_joke_box').css('display','none');
+
+                    $('#xgtx').css('display','none');
+                    // alert('aa');
+                    // return false;
+            })
+
+        // 更改用户的登录秘密
+            $('#genggai').click(function(){
+                // alert('aaa');
+                // 该框出现
+                    $('#xiugai_box').css('display','block');
+                // 时间搜索框隐藏
+                    $('.t_time_wrap').css('display','none');
+                // 信息设值点击页面
+                    // $('#xinxishezhi').css('display','none');
+                // 笑话列表
+                    $('#xinxi').css('display','none');
+                // 分页隐藏
+                    $('#ye').css('display','none');
+                // 信息修改页面
+                    $('#ziliaoxiugai').css('display','none');
+
+                    $('#post_joke_box').css('display','none');
+                    $('#xgtx').css('display','none');
+            })
+
+
+            // 发表笑话
+            $('#post_joke_btn').click(function(){
+                $('#tj').click();
+            })
+
+            // 点击编辑头像，出现更改头像页面
+            $('#bianjitouxiang').click(function(){
+                $('#ziliaoxiugai').css('display','none');
+                $('.t_time_wrap').css('display','none');
+                $('#xgtx').css('display','block');
+
+            })
+
+            $('#fanhui').click(function(){
+                $('#ziliaoxiugai').css('display','block');
+                $('.t_time_wrap').css('display','none');
+                $('#xgtx').css('display','none');
+            })
+    </script>
+
+
+
+<a style="display: none; position: fixed; bottom: 90px; right: 20px;" fx="scroll[bottom=90;right=20;speed=0;]" class="scroll" href="#">
+            <p class="corner4px"></p>
+        </a><div style="display: none; position: absolute; top: 215px; left: 676px;" id="cat_all_div" fx="position[target=#cat_all;my=center bottom;at=center top;offset=0 67;]" class="float_tag hidden"><span class="tri"></span>全部</div><div style="display: none; position: absolute; top: 215px; left: 713px;" id="cat_text_div" fx="position[target=#cat_text;my=center bottom;at=center top;offset=0 67;]" class="float_tag hidden"><span class="tri"></span>文字</div><div style="display: none; position: absolute; top: 215px; left: 750px;" id="cat_pic_div" fx="position[target=#cat_pic;my=center bottom;at=center top;offset=0 67;]" class="float_tag hidden"><span class="tri"></span>图片</div><div style="display: none; position: absolute; top: 215px; left: 787px;" id="cat_video_div" fx="position[target=#cat_video;my=center bottom;at=center top;offset=0 67;]" class="float_tag hidden"><span class="tri"></span>视频</div></body></html>

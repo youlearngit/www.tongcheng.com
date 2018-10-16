@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>登录提示</title>
+    <link rel="stylesheet" href="sqzw_files/simple-resume_v20150318112356.css">
+    <script src="a_data_006/jquery-1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="sqzw_files/referrer4.js"></script>
+    <script type="text/javascript">
+    document.domain = "58.com";
+    
+    $(window).load(function(){
+    	(function(){
+        	setTimeout('window.parent.resizeSetBg({width:600, height:230})',10);
+        	if(window.clickLog){
+	        	window.clickLog('from=Job_detail_apply_normal');
+	        }else{
+	        	window.parent.clickLog && window.parent.clickLog('from=Job_detail_apply_normal');
+	        }
+        })();
+    })
+    function loginShow(){
+    	window.parent.setbg("申请职位",600,345,'http://jianli.58.com/weixinlogin.html?path=http://jianli.58.com/resumedelivery/?infoid=14068461647493&itype=1&fromType=1&c=13901&role=');
+    	if(window.clickLog){
+        	window.clickLog('from=Job_detail_apply_normal_login');
+        }else{
+        	window.parent.clickLog && window.parent.clickLog('from=Job_detail_apply_normal_login');
+        }
+    }
+    function CreateResume(){
+    	document.getElementById("createResume").click();
+    	$("#successTip").show();
+    	$(".win-content").hide();
+    	if(window.clickLog){
+        	window.clickLog('from=Job_detail_apply_normal_create');
+        }else{
+        	window.parent.clickLog && window.parent.clickLog('from=Job_detail_apply_normal_create');
+        }
+    }
+    </script>
+</head>
+<body>
+        <div class="win-content">
+            <div class="btn-opt">
+            	<p>申请职位需要一份简历，建议你<input class="btn btn-orange" value="创建新简历" onclick="CreateResume();" type="button" style="background:red">
+            	
+            						<a id="createResume" href="{:U('Home/Zhaopin/jianli')}" target="_blank" style="display:none;">a</a>
+				            	
+            	</p>
+            	<p>若已有简历，请登录后直接投递<input class="btn btn-orange" value="登录" onclick="loginShow()" type="button" style="background:red"></p>
+            </div>
+        </div>
+	<div id="successTip" class="btn-opt success-center" style="display:none;">
+		<p class="p10">亲爱的用户，你的简历创建成功了吗？</p>
+		<input class="btn btn-orange" onclick="location.href=location.href;" value="创建成功，申请" type="button"  style="background:red">
+		<input class="btn" onclick="window.parent.closeopendiv();" value="暂不申请" type="button">
+	</div>
+
+</body></html>

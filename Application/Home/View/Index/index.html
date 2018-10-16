@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://bj.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base target="_blank">--><base href="." target="_blank">
+
+<title>【58同城 58.com】北京分类信息 - 本地 免费 高效</title>
+<meta name="Keywords" content="北京分类信息,北京免费发布信息">
+<meta name="Description" content="58同城北京分类信息网，为你提供房产、招聘、黄页、团购、交友、二手、宠物、车辆、周边游等海量分类信息，充分满足您免费查看/发布信息的需求。北京58同城，最好的分类信息网。">
+<meta name="mobile-agent" content="format=xhtml; url=http://m.58.com/local/bj/">
+<meta name="mobile-agent" content="format=html5; url=http://m.58.com/local/bj/">
+<meta name="mobile-agent" content="format=wml; url=http://m.58.com/local/bj/">
+<link rel="stylesheet" href="__PUBLIC__/Home/css/index.css">
+<style type="text/css">
+  *,body{
+    margin:0;
+    padding:0;
+  }
+  #loginbox{
+    width:60px;
+    height:150px;
+    background:white;
+    display:none;
+    border:1px solid #ccc;
+    position:relative;
+    top:0px;
+    left:-6px;
+  }
+  #my58menu{
+    margin:0;
+    padding:0;
+  }
+  .erer{
+    font-weight:900px;
+    border-bottom:3px solid white;
+
+  }
+
+  #header .tou{
+    position:fixed;
+    top:-5px;
+    left:0;
+    border-bottom:3px solid #DADBDF;
+  }
+  #headerinside{
+  
+  }
+  #header{
+    margin:0 auto;
+  }
+</style>
+</head>
+<body class="newcrop" screen_capture_injected="true">
+
+  <div id="topbar">
+    <div class="w pos">
+      <div class="bar_left">
+        <h2>{$area}</h2> 
+        <span id="ipconfig">[
+          <a href="{:u('Home/Index/area')}" onclick="clickLog(&#39;from=pc_home_city_changecity_bj&#39;);" target="_self">切换城市</a>&nbsp;&nbsp;
+          <a onclick="clickLog(&quot;from=pc_home_city_suggest_lf&quot;);" href="" target="_self">廊坊</a>&nbsp;&nbsp;
+          <a onclick="clickLog(&quot;from=pc_home_city_suggest_tj&quot;);" href="" target="_self">天津</a>&nbsp;&nbsp;
+          <a onclick="clickLog(&quot;from=pc_home_city_suggest_bd&quot;);" href="" target="_self">保定</a>]
+        </span>
+        <div id="weather" class="weather" style="display: block; ">
+          <span class="wt">
+            <img src="./【58同城 58.com】北京分类信息 - 本地 免费 高效_files/ws_7.jpg" alt=""><em>小雨</em>&nbsp;&nbsp;<em class="wTemp">13 ~ 2℃</em>
+          </span>
+          <span class="today_lv today_lv_0">优</span>
+          <div id="weatherbox" class="wb">
+            <div class="air">今日北京空气质量指数(AQI)：
+              <em class="airNum airNum_0">31</em>
+              <div class="wsource">此功能由<a href="" onclick="clickLog(&#39;from=topbar_mojichinalink&#39;);">墨迹天气</a>提供
+              </div>
+            </div>
+            <div class="dot"></div>
+            <div class="wDay">
+              <ul>
+                <li>
+                  <p class="w_time">今天(周四)</p>
+                  <img src="./【58同城 58.com】北京分类信息 - 本地 免费 高效_files/wb_7.jpg" alt="">
+                  <p>13 ~ 2℃<br>小雨<br>微风</p>
+                </li>
+                <li>
+                  <p class="w_time">明天(周五)</p>
+                  <img src="./【58同城 58.com】北京分类信息 - 本地 免费 高效_files/wb_6.jpg" alt="">
+                  <p>4 ~ 2℃<br>雨夹雪<br>微风</p>
+                </li>
+                <li>
+                  <p class="w_time">后天(周六)</p>
+                  <img src="./【58同城 58.com】北京分类信息 - 本地 免费 高效_files/wb_2.jpg" alt="">
+                  <p>7 ~ 5℃<br>阴<br>微风</p>
+                </li>
+              </ul>
+            </div>
+            <div class="prompt">
+              <b>温馨提示：</b>天冷了，该加衣服了！今天（周四）限行尾号为：27；明天（周五）限行尾号为：38
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bar_right">
+        <div id="login">
+        
+          <?php
+            if($_SESSION['username']){
+              echo "<span>".$_SESSION['username']."</span>
+              <a href=".U('Home/User/tuichu')." onclick='clickLog(&#39;from=pc_home_regist_bj&#39;);' target='_self'>退出</a>";
+            }else{
+              echo "<a href=".U('Home/User/login')." onclick='clickLog(&#39;from=pc_home_login_bj&#39;);' target='_self'>登录</a>
+          <span class='gap'>|</span>
+          <a href=".U('Home/User/register')." onclick='clickLog(&#39;from=pc_home_regist_bj&#39;);'' target='_self'>注册</a>";
+            }
+          ?>
+        
+        </div>
+
+
+
+        <div id="my58menu" class="haschild">
+          <a id="tomy58" target="_self" href="">我的58</a>
+          <span class="arrow"></span>
+          <div class="hc" id="loginbox">
+            <a id="tomypost" href="{:U('Home/Ucenter/index')}">我的发布</a>
+            <a id="tozhaopinqiuzhi" href="http://my.58.com/zhaopinqiuzhi/?pp=topbar&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=topbarZPJL&#39;);">招聘/简历</a>
+            <a id="tomytradebuy" href="http://my.58.com/buyordermgr/?pp=topbar&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">买家交易</a>
+            <a id="tomytradesale" href="http://my.58.com/saleordermgr/?pp=topbar&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">个人卖家</a>
+            <a id="tohelp" href="http://my.58.com/mycomplain?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">客户服务</a>
+          </div>
+        </div>
+        <script type="text/javascript" src="__PUBLIC__/Admin/jquery-1.8.3.min.js">
+        </script>
+        <script type="text/javascript">
+          $('#my58menu').mouseover(function(){
+            $('#loginbox').show();
+            $(this).css('width','60px');
+            $(this).css('background','white');
+
+          })
+          $('#my58menu').mouseout(function(){
+            $('#loginbox').hide();
+            $(this).css('background','#F5F5F5');
+
+          })
+
+
+        </script>
+
+
+        <div class="vip-con">
+            <a id="xxi" href="{:U('Home/Index/xx')}" target="frame" onclick="javascript:clickLog(&#39;from=clicktovip&amp;source=home&amp;city=bj&amp;cate=&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;topbar_click&#39;, &#39;/bj/home/topbar/clicktovip&#39;]);">我的消息</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+            <a href="" onclick="javascript:clickLog(&#39;from=clicktovip&amp;source=home&amp;city=bj&amp;cate=&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;topbar_click&#39;, &#39;/bj/home/topbar/clicktovip&#39;]);">VIP中心</a>
+          
+
+        </div>
+        <div class="help-con haschild" style="padding:0 10px"> 
+          <a href="" onclick="javascript:clickLog(&#39;from=clicktohelp&amp;source=home&amp;city=bj&amp;cate=&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;topbar_click&#39;, &#39;/bj/home/topbar/clicktohelp&#39;]);">帮助
+          </a>
+        </div> 
+        <div id="sitemap" class="haschild">
+          <span class="mytxt">导航</span>
+          <span class="map_icon"></span>
+          <span class="arrow"></span> 
+          <div id="sitemapBox" class="hc">
+            <div class="maplist">
+              <ul class="maplist01"></ul>
+            </div>   
+            <i class="shadow"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="1001" style="display:none"></div>
+
+<block name="main">
+  <div id="brand_top_banner" style="display: block; " class="brandad1190"> 
+    <style>
+      .brandad1190{ height:50px; margin:0 auto 10px; overflow:hidden; width:1190px; position:relative;}
+      .brandad1190 ul{}
+      .brandad1190 li{ height:50px;}
+      .brandad1190 img{ width:1190px; height:50px;}
+      .brandad990{ height:50px; margin:0 auto 10px; overflow:hidden; width:990px; position:relative;}
+      .brandad990 ul{}
+      .brandad990 li{ height:50px;}
+      .brandad990 img{ width:990px; height:50px;}
+    </style>
+      <ul>
+        <li>
+          <a href="">
+            <img class="wide" style="display: block; " src="__PUBLIC__/Home/picture/n_v1bl2lwtowjqpvnhbhxjvq.png">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img class="wide" style="display: block; " src="./【58同城 58.com】北京分类信息 - 本地 免费 高效_files/n_v1bl2lwtowjqpvnhbhxjvq.png">
+          </a>
+        </li>
+      </ul>
+  </div>
+
+
+<div id="homeWrap" class="wrapper" style="padding-top: 0px; ">
+
+  <div id="header">
+    <div id="headerinside" ><a href="./【58同城 58.com】北京分类信息 - 本地 免费 高效_files/【58同城 58.com】北京分类信息 - 本地 免费 高效.htm" target="_self" id="logo" onclick="clickLog(&#39;from=sylogo_bj&#39;);"><img src="./【58同城 58.com】北京分类信息 - 本地 免费 高效_files/logo.gif" alt="中文最大生活信息门户" title="58同城，让生活更简单" width="188" height="50"></a><div id="1002" class="search-no" style="display:none"><a onclick="_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;adv_click&#39;, &#39;/home/adv/1002/bj&#39;]);clickLog(&#39;from=home_adv_1002_bj&amp;ToUrl=http://static.58.com/ds/other/weixinExtend/huodong_v7.html?from=indexmini&#39;);" style="background-image:url(http://pic2.58.com/ui6/index/mini_mq5000.gif);width:143px;height:46px;" class="embed03" href="http://static.58.com/ds/other/weixinExtend/huodong_v7.html?from=indexmini&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow"></a></div><div id="brand_mini_banner" class="search-no" style="display: block; "><a href="http://click.58.com/adJump?adType=7&target=nTDQTHDKnTDQTHn3nkD1rjnKnTDQnHDQnHDQnEDksWnknHmYnjbYrjT3njD3PW0KnaYQsHDVniYksHDYPjmLnWnQrHNznHbVsHDLP1mkP1mYPjnKPH9Kn-qVuT7vni3kTgPCmyOMph-6Ty7_UT7CIZwkrBtfIvRGXA-8sWN3shPfUiqkm1qh0hqV5ydGUh-BmyO8ugcW0vPBg1TQTyckIHKvI-Fyp1KRpHuBXgCQuyNdPA7WPWmkP1NvuH-6ryuWrH9QujN1m1NYrHmQrj7bPjEvnW7bPvDQnWNknHELmyNkmvDYmWubuhEYuH7W&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="embed04" style="background-image:url(http://t1.58cdn.com.cn/brandads/original/n_v1bkuymc46xcsfkipdmyba.png);"></a></div>
+      <form onsubmit="_gaq.push([&quot;pageTracker._trackEvent&quot;, &quot;home&quot;, &quot;search_top_click&quot;, &quot;/bj/index/&quot;]);var r=true;try{b_query(); r=false;}catch(e){};return r;" action="{:U('Home/Index/search')}" target="_self" method="post">
+        <div id="searchbar">
+          <div id="saerkey">
+
+            <span id="key"><input type="text" id="keyword" name="key" class="keyword" value="个人房源" onblur="win.closeToolTipWindow();if(this.value==&#39;&#39;)this.value=&#39;个人房源&#39;,this.className=&#39;keyword&#39;" onkeyup="win.GetContentData();" onfocus="if(this.value==&#39;个人房源&#39;)this.value=&#39;&#39;,this.className=&#39;keyword2&#39;" autocomplete="off" tongji_tag="pc_home_search_area_bj"></span>
+          </div>
+            
+          <div class="inputcon"><input type="submit" name="button" id="searchbtn" class="btnall" value="同城搜索" onmousemove="this.className=&#39;btnal2&#39;" onmouseout="this.className=&#39;btnall&#39;" tongji_tag="pc_home_search_button_bj"></div>
+          <div class="clear"></div>
+          <div class="search-no">
+            <span id="hot"><a href="http://bj.58.com/ershoufang/?utm_source=market&spm=b-31580022738699-me-f-824.bdpz_biaoti&PGTID=14467114854230.05576290260069072&ClickID=1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="display:block" onclick="_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;search_hot_click&#39;, &#39;/bj/view/二手房/&#39;])">二手房</a><a href="http://bj.58.com/danche/?utm_source=market&spm=b-31580022738699-me-f-824.bdpz_biaoti&PGTID=14465665594190.6093243137001991&ClickID=1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="display:block" onclick="_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;search_hot_click&#39;, &#39;/bj/view/二手摩托车/&#39;])">二手摩托车</a><a href="http://bj.58.com/shipin/?key=%E9%B1%BC%E7%BC%B8&cmcskey=%E9%B1%BC%E7%BC%B8&final=1&jump=1&sourcetype=11&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="display:block" onclick="_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;search_hot_click&#39;, &#39;/bj/search/鱼缸/&#39;])">鱼缸</a><a href="http://bj.58.com/zptaobaomeigong/?key=%E6%B7%98%E5%AE%9D%E7%BE%8E%E5%B7%A5&cmcskey=%E6%B7%98%E5%AE%9D%E7%BE%8E%E5%B7%A5&final=1&jump=1&sourcetype=11&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="display:block" onclick="_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;search_hot_click&#39;, &#39;/bj/search/淘宝美工/&#39;])">淘宝美工</a><a href="http://bj.58.com/job/?key=%E5%A4%9C%E7%8F%AD&cmcskey=%E5%A4%9C%E7%8F%AD&final=1&jump=1&sourcetype=11&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="display:block" onclick="_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;search_hot_click&#39;, &#39;/bj/search/夜班/&#39;])">夜班</a></span><span class="hot2"><a href="http://t.58.com/bj/xiuxian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;search_hot_click&#39;, &#39;/bj/adv/tuangou/&#39;]);">团购门票</a><a id="search_hot2_3" href="http://bj.58.com/kuaidi/?from=pc_home_sousuo_small_kuaidi&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="clickLog(&#39;from=pc_home_sousuo_small_kuaidi&#39;);">快递物流</a><a href="http://bj.58.com/banjia/?from=pc_home_sousuo_small_banjia&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="clickLog(&#39;from=pc_home_sousuo_small_banjia&#39;);">搬家公司</a><a onclick="_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;search_hot_click&#39;, &#39;/bj/adv/jiaoyou/&#39;]);" href="http://jiaoyou.58.com/?from=home-jiaoyou-words&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" class="cs" tongji_tag="pc_home_topad8_bj">同城交友</a><a id="search_hot2_6" href="http://zhaobiao.58.com/pc/bid/goSubmit?plid=1&pcateid=4063&from=pc_home_sousuo_zhaobiao_wyzx&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="clickLog(&#39;from=pc_home_sousuo_zhaobiao_wyzx&#39;);" class="cs" style="color:red">我要装修</a></span>
+          </div>
+        </div>
+      </form>
+      <a href="{:U('Home/Send/index')}" id="fabu" rel="nofollow" tongji_tag="pc_home_release_bj"><i></i>免费发布信息</a><a href="http://about.58.com/info/del-menu.html?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" id="delinfo" rel="nofollow" class="search-no">修改<i>/</i>删除信息</a>
+    <a id="delinfo" href="http://about.58.com/info/del-menu.html?from=home&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" class="search-no" title="可删除手机号被冒用发布的信息" onclick="_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;click&#39;, &#39;info_del&#39;]);">修改/删除信息</a></div>
+  </div>
+
+  <script type="text/javascript">
+   $('#headerinside').css('position','fiexd');
+    $('#headerinside').css('top',0);
+    $('#headerinside').css('left',0);
+  $(window).scroll(function(){
+
+      var top=$(window).scrollTop();
+
+      if(top>83){
+        $('#headerinside').attr('class','tou');
+        var ww = $(window).width();
+        var dw = $('#headerinside').width();
+         $('#headerinside').css('margin-left','0px');
+        var a = (ww-dw)/2;
+        $('#headerinside'). css('left',a+'px');
+      }
+      if(top<38){
+
+        $('#headerinside').removeClass('tou');
+        $('#headerinside').css('margin-left','0px');
+
+      }
+  })
+  
+ </script>
+
+
+  <div class="hShadow"></div>
+  <div class="navcon" id="nav">
+    <ul class="nav">
+      <li class="on" tongji_tag="index_nav_home_bj"><a href="./【58同城 58.com】北京分类信息 - 本地 免费 高效_files/【58同城 58.com】北京分类信息 - 本地 免费 高效.htm">首页</a></li>
+      <li><a href="http://bj.58.com/job.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_zhaopin_bj">招聘</a></li>
+      <li><a href="http://bj.58.com/chuzu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_zufang_bj">租房</a></li>
+      <li><a href="http://bj.58.com/ershoufang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_ershoufang_bj">二手房</a></li>
+	  <li><a href="http://bj.58.com/anjukejump.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_xinfang_bj" onclick="clickLog(&#39;from=xfanjuke_home_bj&#39;);">新房</a><i style="position:absolute;top:-5px;_top:0;right:0px;"></i></li>
+      <li><a href="http://bj.58.com/ershouche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_ershouche_bj">二手车</a></li>
+	  <li><a href="http://che.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_xinche_bj">新车</a><i style="position:absolute;top:-5px;_top:0;right:0px;"></i></li>
+      <li><a href="{:U('Home/Shuma/ershou')}" tongji_tag="index_nav_ershousc_bj">二手市场</a></li>
+      <li><a href="{:U('Home/Chongwu/gou_lists')}">宠物狗</a></li>
+      <li><a href="http://bj.58.com/huangye/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_bendifw_bj">本地服务</a></li>
+      <li><a href="http://www.daojia.com/?hmsr=58_pc_shouye_daohang&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">58到家</a><i style="position:absolute;top:-5px;_top:0;right:0px;"></i></li>
+      <li id="mobile"><a href="http://api.wap.58.com/api/redirect/to/wap?from=daohang&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_shouji58_bj" rel="nofollow" style="text-decoration:none">手机58</a><div id="mobileBox" class="mbox" style="display:none;"><div class="m_jiao bg"></div><ul><li><p>扫描二维码安装58同城客户端</p><div class="m_khd bg"></div></li><li><p><span>微信</span>扫描二维码使用58同城</p><div class="m_wx bg"></div><p style="color:#666;">微信公众号：58同城</p></li><li><p>手机浏览器访问58同城</p><div class="m_llq bg"></div></li></ul><div class="clear"></div></div></li>
+      <li id="bang"><a href="http://zhaoren.58.com/?from=pc_shouye&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" title="商家客户端" style="text-decoration:none">商家APP</a><i style="position:absolute;top:-5px;_top:0;right:0px;"></i><div id="bangBox" class="mbox" style="display:none;"><div class="m_jiao bg"></div><ul><li style="width:240px;"><p>老板招人就用<span>58招聘商家版</span></p><a href="http://zhaoren.58.com/?from=pc_shouye&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=zpuv&#39;)" class="m_zp bg"></a><p>扫码帮你8小时招到人</p></li><li style="width:240px;"><p>经纪人、二手车商、生活服务商用<span>58帮帮</span></p><a onclick="clickLog(&#39;from=bbuv&#39;)" href="http://bangbang.58.com/?from=pc_shouyebb&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="m_bb bg"></a><p>扫码帮你快速上户</p></li></ul><div class="clear"></div></div></li>
+    </ul>
+    <ul class="rightside">
+	  <li><a href="http://weizhan.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_weizhan_bj">微站</a></li>
+    <li><a href="https://qiangui.58.com/active/pc?referrer=58&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_licai_bj">理财</a></li>
+	  <li id="ksfd" style=""><a rel="nofollow" tongji_tag="index_nav_daikuan" href="http://jinrong.58.com/k?from=58_index_ss&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="color:red;">贷款</a></li>
+      <li><a href="http://e.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_wytuiguang_bj" rel="nofollow">我要推广</a></li>
+	  <li><a href="http://baozhang.58.com/?from=HomeRightWord&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_xxpeifu_bj" rel="nofollow">先行赔付</a></li>
+	  <li><a href="http://about.58.com/hr/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="index_nav_jiaru58_bj" rel="nofollow">加入58</a></li>
+    </ul>
+    <div id="1003" class="ad_nav"></div>
+  </div>
+</div>
+<div class="cb">
+  <div class="warp">
+    <div class="c_b cbp1 cauto lh28">
+      <h2><a href="{:U('Home/Fangzi/er_lists')}">北京房产</a><span id="1030"><a tongji_tag="index_bj_ditiefang" href="http://action.fang.58.com/subject/subject_20_bj.html?from=fc_bj_dtf1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="jj">热门沿线地铁房</a></span></h2>
+      <a href="{:U('Home/Fangzi/zu_lists')}">房屋出租</a>&nbsp;&nbsp;<a href="" class="jf12 red">个人房源</a><br>
+      <em>
+      <a href="{:U('Home/Fangzi/zz_lists')}">整租</a><i>/</i>
+      <a href="{:U('Home/Fangzi/zu_lists')}">合租</a></em>
+      <a href="">求租</a><br>
+      <em>
+      <a href="{:U('Home/Fangzi/er_lists')}">二手房</a></em><span id="1015"><a onclick="clickLog(&#39;from=xfanjuke_bj&#39;);" href="">新房<span style="font-size:12px;color:grey;">&nbsp;安居客</span></a></span><br>
+      <em><a href="">商铺出租</a></em><a href="">商铺出售</a><br>
+      <em><a href="">生意转让</a></em><a href="">写字楼租售</a><br>
+      <em><a href="http://bj.58.com/duanzu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">短租/日租公寓</a></em><a href="http://bj.58.partner.mayi.com/?ca_s=tg_58&ca_n=bj&from=sy_fangchan_minsuyuding&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="clickLog(&#39;from=sy_fangchan_minsuyuding&#39;);">民宿预订</a><br>
+      <a href="http://bj.58.com/fangchan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">厂房/仓库/土地/车位</a><br>
+      
+      <div class="line"></div>
+      <div class="lh29" style="line-height:28px">
+        <h3>
+        <a href="{:U('Home/Car/index')}" tongji_tag="home_zhuanrang">二手车</a>&nbsp;&nbsp;<a href="http://quanguo.58.com/ershouche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="home_quanguo" class="adv">全国二手车</a><a href="http://esc.58.com/gcj/bj/?from=esc_gcj_shouyerukou&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="jj" style="color:red;" onclick="clickLog(&#39;from=esc_gcj_shouyerukou&#39;)">估车价</a></h3>
+        <em><a href="http://bj.58.com/ershouche/?minprice=0_3&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" tongji_tag="home_0_3">3万以下</a></em><a href="http://bj.58.com/ershouche/?minprice=3_5&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" tongji_tag="home_3_5">3-5万</a><br>
+        <em><a href="http://bj.58.com/ershouche/?minprice=5_8&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" tongji_tag="home_5_8">5-8万</a></em><a href="http://bj.58.com/ershouche/?minprice=8_10&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="home_8_10" rel="nofollow">8-10万</a>
+		<em><a href="http://bj.58.com/ershouche/?zbjiance=525377&bar=4&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" tongji_tag="home_fangxinche">放心车源</a></em><a href="http://bj.58.com/ershouche/?nodownpayment=1&bar=5&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="home_0shoufu" rel="nofollow">0首付</a>
+        <em><a href="http://bj.58.com/yeuyeche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="home_suv">SUV</a><i>/</i><a href="http://bj.58.com/mpv/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="home_mpv">MPV</a></em><a href="http://quanguo.58.com/huoche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" tongji_tag="quanguohuoche">货车</a><i></i><a href="http://bj.58.com/ershouche/?from=esc_sygd&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="esc_sygd">更多&gt;&gt;</a><br>
+        <h6>按品牌</h6>
+        <em><a href="http://bj.58.com/dazhong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="dazhong">大众</a> <a href="http://bj.58.com/bentian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="bentian">本田</a></em><a href="http://bj.58.com/fengtian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="fengtian">丰田</a> <a href="http://bj.58.com/aodi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="aodi" class="mr0">奥迪</a><br>
+        <em><a href="http://bj.58.com/baoma/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="baoma">宝马</a> <a href="http://bj.58.com/xiandai/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="xiandai">现代</a></em><a href="http://bj.58.com/bieke/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="bieke">别克</a> <a href="http://bj.58.com/xuefulan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="xuefulan" class="mr0">雪佛兰</a><br>
+        <em><a href="http://bj.58.com/richan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="richan">日产</a> <a href="http://bj.58.com/benchi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="benchi">奔驰</a></em><a href="http://bj.58.com/fute/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="fute">福特</a> <a href="http://bj.58.com/mazida/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="mazida" class="mr0">马自达</a><br>
+        <em><a href="http://bj.58.com/lingmu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="lingmu">铃木</a> <a href="http://bj.58.com/qirui/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="qirui">奇瑞</a></em><a href="http://bj.58.com/xiali/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="xiali">夏利</a> <a href="http://bj.58.com/biyadi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="biyadi" class="mr0">比亚迪</a><br>
+<h6>厂商认证二手车</h6>
+        <em><a href="http://svwuc.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" tongji_tag="svwuc_2sc">阳光易手车</a></em><a href="http://faw-vw.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" tongji_tag="pinzhi">品质二手车</a><br><em><a href="http://audi.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" tongji_tag="audi">品荐二手车</a></em><a href="http://chengxin.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="clickLog(&#39;from=car_ershouche_index_chengxin_seccarlink_clk&amp;AreaPath=1&amp;CatePath=&amp;rand=&#39;+Math.random()); _gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;list&#39;, &#39;tag_click&#39;, &#39;/car/ershouche/taoyuan/index/chengxin/seccarlink/&#39;]);">诚新二手车</a><br>
+		<!--<em><a href="http://ftms.58.com" rel="nofollow" tongji_tag="ftesc">丰田二手车</a></em><a href="http://faw-vw.58.com" rel="nofollow" tongji_tag="pzesc">品质二手车</a>-->
+		<!-- 20150331 add xinche start -->
+		<div class="line"></div>
+		<h3><a tongji_tag="home_xinche" href="http://che.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">新车</a>&nbsp;&nbsp;<a class="adv" tongji_tag="home_xinche_chexing" href="http://che.58.com/chexing/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">车型大全</a><a class="jj" tongji_tag="home_xinche_jiangjia" href="http://che.58.com/jiangjia/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">热门降价</a></h3>
+		<em><a tongji_tag="baoma3xi_s" href="http://che.58.com/baoma3xi_s/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">新3系</a><i>/</i><a tongji_tag="turui_s" href="http://che.58.com/turui_s/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">途锐</a></em><a tongji_tag="aodia4l_s" href="http://che.58.com/aodia4l_s/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">A4L</a><i>/</i><a tongji_tag="puladuo_s" href="http://che.58.com/puladuo_s/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">普拉多</a><em><a href="http://che.58.com/zhuanti/d/shanghaidazhong/sign.html?s=1&from=58home_dz&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">大众</a><i>/</i><a href="http://che.58.com/zhuanti/d/shanghaidazhong/sign.html?s=2&from=58home_skd&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">斯柯达</a></em><a tongji_tag="hafu_b" href="http://che.58.com/hafu_b/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">哈弗</a><i>/</i><a tongji_tag="models_s" href="http://che.58.com/models_s/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">特斯拉</a>
+		<!-- 20150331 add xinche end -->
+		<div class="line"></div>
+        <h3><a href="http://bj.58.com/qichefw.shtml?from=58_shouye_qichefw&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">汽车服务</a><span id="1026"><a class="jj" style="margin-left:2px;" onclick="clickLog(&#39;from=pc_home_qichefw_small_baojia_bj&#39;);" href="http://c.58cdn.com.cn/index/qcfw_baojia.html?utm_source=58&utm_medium=58pc_shouye%20&utm_term=%E5%AE%9D%E9%A9%BE%E7%A7%81%E5%AE%B6%E8%BD%A6%E6%9B%B4%E4%BE%BF%E5%AE%9C&utm_content=%E5%AE%9D%E9%A9%BE%E7%A7%81%E5%AE%B6%E8%BD%A6%E6%9B%B4%E4%BE%BF%E5%AE%9C&utm_campaign=zuke&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">私家车出租更便宜</a></span></h3>
+        <em><a href="http://bj.58.com/changtupinche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">长途拼车</a></em><a href="http://bj.58.com/sxbpinche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">上下班拼车</a><br>
+        <em><a href="http://bj.58.com/zuche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="red">租车</a><i>/</i><a href="http://c.58cdn.com.cn/index/jxedt_xueche.html?from=58.com_index_qiche_1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="sy_jxedt_xueche">学车</a></em><a href="http://bj.58.com/jiaxiaopx/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">驾校</a><i>/</i><a href="http://c.58cdn.com.cn/index/jxedt_jiaolian.html?from=58.com_index_qiche_2&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="sy_jxedt_jiaolian">教练</a><br>
+        <em><a href="http://bj.58.com/peijia/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">代驾</a> <a href="http://bj.58.com/peilian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=pc_bjhome_hy_peilian&#39;)">陪练</a></em><a href="http://bj.58.com/maiche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">4S店</a><br>
+        <em><a href="http://bj.58.com/daibanguohu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">过户/验车</a></em><a href="http://bj.58.com/qichefuwu/?from=58_shouye_qichefuwu&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">汽车保险</a><br>
+        <h6>维修保养</h6>
+        <em><a href="http://bj.58.com/qichejx/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">维修保养</a></em><a href="http://bj.58.com/cheliangfuwu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">美容装饰</a><br>
+        <em><a href="http://bj.58.com/gaizhuangfanghu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">改装/防护</a></em><a href="http://bj.58.com/peijian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">汽车配件/其他</a><br>
+		<em><a href="http://peilian.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="color:#15c;" tongji_tag="peilian_home">58汽车陪练</a></em><a href="http://weizhang.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="color:#15c;" onclick="clickLog(&#39;from=wzcx_app_shouye&#39;);">违章查询</a><br>
+        <div class="line"></div>
+        <h3><a href="http://bj.58.com/jiaoyu.shtml?from=58_shouye_jiaoyu&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">教育培训</a><span id="1010"><a href="http://bj.58.com/zhiyepeix/?from=pc_home_jiaoyu_small_zhiyepeixun_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=pc_home_jiaoyu_small_zhiyepeixun_bj&#39;);" class="jj">专业技能高薪就业</a></span></h3>
+        <em><a href="http://bj.58.com/jiajiao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="color:red">家教机构</a></em><a href="http://bj.58.com/jiajiaogeren/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">家教个人</a><br>
+        <em><a href="http://bj.58.com/techang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">艺术培训</a></em><a href="http://bj.58.com/fudao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="mr0">课外辅导班</a><br>
+        <em><a href="http://bj.58.com/zhiyepeix/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">职业培训</a></em><a href="http://bj.58.com/xueli/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">学历教育</a><br>
+        <em><a href="http://bj.58.com/tiyu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">体育培训</a></em><a href="http://bj.58.com/youjiao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="mr0">婴幼儿教育</a><br>
+        <em><a href="http://bj.58.com/shejipeixun/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">设计培训</a></em><a href="http://bj.58.com/jisuanji/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">IT培训</a><br>
+        <em><a href="http://bj.58.com/waiyu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">语言培训</a></em><a href="http://bj.58.com/liuxue/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">出国留学</a><br>
+        <em><a href="http://bj.58.com/mba/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">管理培训</a></em><a href="http://bj.58.com/yimin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">移民</a><br>
+      </div>
+      <!--北京游戏和购物板块   start-->
+      <div class="line"></div>
+    <h3><a href="{:U('Home/Games/login')}" rel="nofollow">游戏中心</a><a href="http://wan.58.com/mm/new?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="jj" rel="nofollow">和美女做互动游戏</a></h3>
+  <div class="line"></div>
+  <h3><a href="{:U('Home/Shop/index')}" rel="nofollow">网上购物</a><a rel="nofollow" href="http://t.58.com/bj/p_wlgw/fuzhuang/?from=58.com_home_shangcheng_bj_1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="jj">服装服饰 </a><a rel="nofollow" class="jj" href="http://t.58.com/bj/p_wlgw/xiuxianshipin/?from=58.com_home_shangcheng_bj_2&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">休闲食品</a></h3>
+  <!--北京游戏和购物板块   end-->
+    </div>
+    <div class="c_b cbp2 cauto" style="line-height:28px">
+      <h2 style="position:relative;"><a href="{:U('Home/Shuma/ershou')}">二手市场</a><span id="ersright"><a style="position:absolute;top:12px;left:75px;width:130px;height:20px;background:url(http://img.58cdn.com.cn/ui6/index/58_es_byzj.gif) no-repeat;" href="http://youpin.58.com/bj/shouji/?from=pcindex&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=pcindex&#39;);"></a></span></h2>
+      <em><a href="http://bj.58.com/iphone6/0/pve_1230_7/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">全新 iPhone 6</a></em><a href="http://bj.58.com/pingguo.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofllow">果粉集结</a>
+      <div class="c_b_ews">
+        <h6>数码 • 通讯</h6>
+        <em><a href="">二手数码</a></em>
+        <a href="{:U('Home/Shuma/index')}?gclass=phone&sclass=苹果">苹果</a><i>/</i>
+        <a href="{:U('Home/Shuma/index')}?gclass=phone&sclass=三星">三星</a><i>/</i><a href="{:U('Home/Shuma/index')}?gclass=phone&sclass=小米">小米</a><br>
+        <em><a href="{:U('Home/Shuma/index/gclass/ts')}">台式电脑</a></em><a href="{:U('Home/Shuma/index')}?gclass=phone&sclass=苹果">显示器</a><i>/</i><a href="http://bj.58.com/diannaopeijian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">硬件</a><br>
+        <em><a href="{:U('Home/Shuma/index')}?gclass=pc">笔记本</a></em><a href="{:U('Home/Shuma/index')}?gclass=pc&sclass=Thinkpad">ThinkPad</a><i>/</i><a href="{:U('Home/Shuma/index')}?gclass=pc&sclass=苹果">苹果</a><br>
+        <em><a href="{:U('Home/Shuma/index')}?gclass=pad">平板电脑</a></em><a href="{:U('Home/Shuma/index')}?gclass=pad&sclass=三星">三星</a><i>/</i><a href="http:{:U('Home/Shuma/index')}?gclass=pad&sclass=ipad">iPad</a><br>
+        <em><a href="http:{:U('Home/Shuma/index')}?gclass=pad&sclass=数码产品">数码产品</a></em><a href="http:{:U('Home/Shuma/index')}?gclass=camera">相机</a><i>/</i><a href="http:{:U('Home/Shuma/index')}?gclass=camera">单反</a><i>/</i><a href="http://bj.58.com/youxiji/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">游戏机</a><br>
+        <em><a href="http://bj.58.com/shoujihao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">手机号码</a></em><a href="http://bj.58.com/tongxunyw/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">通讯业务</a><i>/</i><a href="http://bj.58.com/tongxunyw/0/?key=%E7%94%B5%E4%BF%A1&cmcskey=%E7%94%B5%E4%BF%A1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="PC_home_ershou_tongxundianxin_bj">电信</a><br>
+        <h6>家具 • 家电 • 车辆<a href="http://bj.58.com/ershoujiaju/0/?key=%E5%AE%9C%E5%AE%B6&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="margin-left:18px;">二手宜家家具</a></h6>
+        <em><a href="http://bj.58.com/jiadian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">二手家电</a></em><a href="http://bj.58.com/ershoukongtiao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=es_sy_jd_kongtiao&#39;);">空调</a><i>/</i><a href="http://bj.58.com/dianshiji/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">电视</a><i>/</i><a href="http://bj.58.com/bingxiang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=es_sy_jd_bingxiang&#39;);">冰箱</a><br>
+        <em><a href="http://bj.58.com/ershoujiaju/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="red">二手家具</a></em><a href="http://bj.58.com/jiajushafa/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">沙发</a><i>/</i><a href="http://bj.58.com/chuang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">床</a><i>/</i><a href="http://bj.58.com/zhuolei/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">桌</a><br>
+        <em><a href="http://bj.58.com/danche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">摩托车</a></em><a href="http://bj.58.com/yamaha/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">雅马哈</a><i>/</i><a href="http://bj.58.com/dapailiang/0/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="PC_home_ershou_danchedapailiang_bj">大排量</a><br>
+        <em><a href="http://bj.58.com/zixingche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">自行车</a></em><a href="http://bj.58.com/diandongche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">电动车</a><i>/</i><a href="http://bj.58.com/sanlunche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="PC_home_ershou_sanlunche_bj">三轮车</a><br>
+        <h6>百货 • 设备<a href="http://bj.58.com/nanzhuang/0/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="margin-left:40px;">换季衣服便宜清</a></h6>
+        <em><a href="{:U('Home/Baihuo/jj_lists')}">家居日用</a></em><a href="http://bj.58.com/guozaochuju/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">厨具</a><i>/</i><a href="http://bj.58.com/buyishipin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">布艺</a><i>/</i><a href="http://bj.58.com/chuangshangyongpin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">床品</a><br>
+        <em><a href="http://bj.58.com/yingyou/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">母婴玩具</a></em><a href="http://bj.58.com/yingerchuang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">婴儿床</a><i>/</i><a href="http://bj.58.com/muyingtongchuang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">车</a><i>/</i><a href="http://bj.58.com/ertongyongpin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">玩具</a><br>
+        <em><a href="{:U('Home/Baihuo/fz_lists')}">服装箱包</a></em><a href="http://bj.58.com/fuzhuangshoubiao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">手表</a><i>/</i><a href="http://bj.58.com/xiangbao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">箱包</a><i>/</i><a href="http://bj.58.com/fsxiemao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">鞋</a><br>
+        <em><a href="http://bj.58.com/chengren/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">成人用品</a></em><a href="http://bj.58.com/meirong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">美容保健</a><br>
+		<em><a href="{:U('Home/Baihuo/wt_lists')}">文体户外</a></em><a href="http://bj.58.com/jianshenqixie/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">健身</a><i>/</i><a href="http://bj.58.com/yueqi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">乐器</a><i>/</i><a href="http://bj.58.com/qipai/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">麻将桌</a><br>
+        <em><a href="http://bj.58.com/yishu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">艺术收藏</a></em><a href="http://bj.58.com/gudongguwan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">古玩</a><i>/</i><a href="http://bj.58.com/bawanwujian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">把件</a><i>/</i><a href="http://bj.58.com/shufahuihua/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">字画</a><br>
+        <em><a href="http://bj.58.com/bangong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">办公设备</a></em><a href="http://bj.58.com/bangongzhuoyi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">办公桌</a><i>/</i><a href="http://bj.58.com/dayinji/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">打印机</a><br>
+        <em><a class="red" href="http://bj.58.com/ershoushebei/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=es_sy_esshebei&#39;);">二手设备</a></em><a href="http://bj.58.com/kuangye/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">机床</a><i>/</i><a href="http://bj.58.com/gongcheng/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">工程机械</a><br>
+        <em><a href="http://bj.58.com/tushu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">图书音像</a></em><a href="http://bj.58.com/xiaoyuan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">校园二手</a><br>
+        <em><a href="http://bj.58.com/lipin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">礼品转让</a></em><a href="http://bj.58.com/wangyou/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">游戏交易</a><br>
+        <em><a href="http://bj.58.com/ershouqiugou/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">二手求购</a></em><a href="http://bj.58.com/huanwu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">交换</a><i>/</i><a href="http://bj.58.com/ershoufree/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">赠送</a><i>/</i><a href="http://bj.58.com/tiaozao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">其他</a><br>
+      </div>
+      <div class="line mt"></div>
+      <h3 id="petsCategory" style="position:relative;"><a href="http://bj.58.com/pets.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">宠物/宠物用品</a>
+	  <a onclick="clickLog(&#39;from=xinchonggif&#39;);" style="position: absolute; width:81px; background: url(http://img.58cdn.com.cn/ui6/index/58pets_miniban.gif) no-repeat;left:110px; top: 15px;height: 16px;" href="http://xinchong.58.com/bj/xdog/?from=home_pet_minibar&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo"></a></h3>
+      <em><a href="{:U('Home/Chongwu/gou_lists')}" class="red">宠物狗</a></em><a href="{:U('Home/Chongwu/mao_lists')}">宠物猫</a><br>
+      <em><a href="">哈士奇</a></em><a href="">金毛</a><br>
+      <em><a href="">藏獒</a></em><a href="">泰迪熊</a><br>
+      <em><a href="">花鸟鱼虫</a></em><a href="">玩赏鸟</a><br>
+      <em><a href="">观赏鱼</a></em><a href="">奇趣小宠</a><i>/</i><a href="">龟</a><br>
+      <em><a href="">宠物服务</a></em><a href="">宠物用品</a><i>/</i><a href="" tongji_tag="PC_home_ershou_yugang_bj">鱼缸</a><br>
+      <div class="line mt"></div>
+      <h3 style="position:relative;"><a href="">票务</a><span id="1012"></span></h3>
+      <em><a href="">演出票</a></em><a href="">电影票卡</a><br>
+      <em><a href="">体育赛事</a></em><a href="">游乐园景点</a><br>
+      <em><a href="">购物卡</a></em><a href="" class="red">健身卡</a><br>
+      <em><a href="">游泳卡</a></em><a href="">其他票务</a><br>
+      <em><a href="">特价机票</a></em><a href="">火车票查询</a><br>
+      <em><a href="">北京演出信息</a></em><a href="" rel="nofollow">彩票</a><i>/</i><a href="" rel="nofollow">双色球</a><br> 
+      <!--北京交友  start--> 
+      <div class="line"></div>
+      <h3><a href="http://jiaoyou.58.com/bj/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=jiaoyou-city-bj&#39;);">北京交友</a></h3>
+      <em><a href="http://jiaoyou.58.com/bj/mm/?from=home-jiaoyou-mm&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="nvyou" onclick="clickLog(&#39;from=jiaoyou-nv&#39;);" rel="nofollow">找美女</a></em><a href="http://jiaoyou.58.com/bj/zhenghun/?from=home-jiaoyou-hunlian&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="red" onclick="clickLog(&#39;from=jiaoyou-zhenghun&#39;);" rel="nofollow">同城征婚</a><br>
+      <em><a href="http://jiaoyou.58.com/bj/gg/?from=home-jiaoyou-gg&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="nanyou" onclick="clickLog(&#39;from=jiaoyou-nan&#39;);" rel="nofollow">找帅哥</a></em><a href="http://jiaoyou.58.com/encounter/?from=home-jiaoyou-encounter&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=jiaoyou-xiehou&#39;);" rel="nofollow">在线约会</a><br>
+      <em><a href="http://jiaoyou.58.com/skills?from=home-jiaoyou-jinengjh&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=jiaoyou-jineng&#39;);" rel="nofollow">技能交友</a></em><a href="http://jiaoyou.58.com/mmvideo/?from=home-jiaoyou-mmxc&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=jiaoyou-kuxing&#39;);">视频交友</a><br>
+      <em><a href="http://jiaoyou.58.com/photowall/?from=home-jiaoyou-zpjx&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=jiaoyou-zhaopian&#39;);" rel="nofollow">真人照片</a></em><a href="http://jiaoyou.58.com/6rooms/?from=home-jiaoyou-spjy&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=jiaoyou-6room&#39;);" rel="nofollow">美女表演</a><br>
+      <!--北京交友  start-->   
+    </div>
+    <div class="c_b cbp3 cauto">
+      <div class="c_b_ew3">
+        <h2 style="position:relative;"><em><a href="{:U('Home/Zhaopin/cj')}">北京招聘</a></em><em><a href="">北京求职简历</a></em><span id="pugongsp"><a href="" rel="nofollow" style="font-weight:normal;font-size:12px;" class="mg01">普工速聘</a></span></h2>
+        <em><a href="" onclick="clickLog(&#39;from=speqdl_pc_hometcspbq&#39;);" style="color:red">同城速聘</a></em><em><a href="" rel="nofollow">包吃住专区</a></em><a href="" rel="nofollow">五险一金专区</a><br>
+        <em><a href="" class="mr0">淘宝店招聘</a></em><em><a href="" rel="nofollow">周末双休专区</a></em><a href="" tongji_tag="zp_yjszq" rel="nofollow">应届生专区</a>
+        <div id="zp_brand_wrap"><style>.zp_brand_sub{display:none}</style><h6><a href="">知名企业招聘</a><span id="1023"></span></h6><em><a href="" id="brand_107342" rel="nofollow">优衣库</a></em><em><a href="" id="brand_123647" rel="nofollow">电信发展</a></em><em><a href="http://click.58.com/adJump?adType=7&target=nTDQTHDKnTDQTH9vrED3PWbKnTDQnHDQnHDQnEDksWc3Pj9zPH9YnHbYP193PHmKnaYQsHDYPjmLnWDdP19zrjbVn1D1nHELPj9zTHN3THFxUyEKIWD8nT71pA78uvGGmE76UAkKpZwY0jCfsL7OsWN3shPfUiqbuyF6Uh0fphqB01c4phqBmv7YuHYvnj0_nWEQnikzPHN1FhQfmv7_pyEqnE7FnvIcNMPcPMIKHW01UyI8nhmYmhPBPvNkPHnduhm3uHEQPW9LmyNvnHbQnvndnhE1P1bkuAN1uhNknH01nvuBrymdmWTOuARWnW66nAE3uT&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" id="brand_869" rel="nofollow">德邦物流</a></em><em><a href="http://click.58.com/adJump?adType=7&target=nTDQTHDKnTDQTHbknkDOnjnKnTDQnHDQnHDQnEDksWbYnWbdn1bOnjc3P1cQnHcKnaYQsHDYPjmLnWDdP19zrHTVnHTQn19LrjT3rTDdrTDzgvdbTgmQsWTK0v66UhIJpyDKmyQ_Ty6YIZTlszqBpB3draOWUvYfpvRhIitznH93PWN3nj0Lrj9OPg980v6YUyk4NDINiNEqnHE1n1cQn1DkPW0znWT8rHmkrHNOrjb3PHEkP1NkniujUA-WpY-D5HDKNhR-mNFVyA9kIRwHmM7APyP-rH0LPAEOPjTkuynYPjNzPWb1PADdmhR-rynYPjcvPADzuhNYuj0QmhuhmWIbPju-Phw-rjcQuWKWPAE3m1c&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" id="brand_903" rel="nofollow">贝塔斯曼</a></em><em><a href="http://click.58.com/adJump?adType=7&target=nTDQTHDKnTDQTHbkPTDOnjEKnTDQnHDQnHDQnEDksWEYPHcYPjTznWmQnjczPjNdTHTVniYQPjEvP1cQPH03nWbQsiYQn1cvn1EznjnYTHN3THFxUyEKIWD8nT71pA78uvGGmE76UAkKpZwY0jCfsvFJsWN3shPfUiql0AQvXyqdph-duA-6UBtznWTYrjbYPW9QnjEkng980v6YUykKIyF5PL71U7KvH-GNIMIswWI6nvRWnvnvuAm1P1TLnymLPjubuHTQuW-BPHmOrjubmhRWryE1mHDvPAnvnhnknvE3uHTkmymznHuhuWIBPHD&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" id="brand_904" rel="nofollow">海底捞火锅</a></em><em><a href="http://click.58.com/adJump?adType=7&target=nTDQTHDKnTDQTHDQrH9KnHDOrTDkTHDQnHDQnHDQTHT8nH0OPj9OP1n3PHbvn1EvP1mKnaYQsHDYPjmLnWDdP19zrHcVsHD1P1n1nHD1P9DdrTDzgvdbTgmQsWTK0v66UhIJpyDKmyQ_Ty6YIZTlszqQXi3draOWUvYfUgDfPWn1PWczrHNvnWnLPTDzrDuG0-FlRW61ijbzpbV5uyDduAwWrHb1mvwhP1bLnARBnj03nj-BryckPAcdmHPWPyRhrj0vrjcvPhndnARWuHmOuyuWmvNOuhEYmHczPk&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" id="brand_1198" rel="nofollow">五八同城</a></em><h6><a href="http://bj.58.com/job/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">热招职位</a><span id="1024"><a style="margin-left:15px;" href="http://www.daojia.com/subject/baomujiuye_pc/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="bjbm">58保姆 安心就业放心挣钱</a></span></h6></div>
+		<div class="zp_brand_sub">
+			<h6><a href="http://qy.58.com/famous/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">知名企业招聘</a></h6>
+			<em><a href="http://qy.58.com/debang/jobs?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">德邦物流</a></em><em><a href="http://qy.58.com/miqilinshow/bj/1?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">米其林</a></em><a href="http://qy.58.com/mq/9459488743687/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">百度</a><br><em><a href="http://qy.58.com/mq/24318198501894/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">招商银行</a></em><em><a href="http://qy.58.com/mq/20356045/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">京东商城</a></em><a href="http://qy.58.com/mq/13727145255687/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">绫致时装</a>
+			<h6><a href="http://bj.58.com/job/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">热招职位</a></h6>
+		</div>
+      </div>
+      <div class="c_b_ew2">
+        <em><a href="http://bj.58.com/yewu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">销售</a></em><em><a href="http://bj.58.com/kefu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">客服</a></em><em><a href="http://bj.58.com/siji/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">司机</a></em><a href="http://bj.58.com/yingyeyuan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">营业员</a><br>
+        <em><a href="http://bj.58.com/wenziluru/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">文员</a></em><em><a href="http://bj.58.com/mishu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">助理</a></em><em><a href="http://bj.58.com/pugong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">普工</a></em><a href="http://bj.58.com/cuxiao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">导购员</a><br>
+        <em><a href="http://bj.58.com/qiantai/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">前台</a></em><em><a href="http://bj.58.com/bianji/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">编辑</a></em><em><a href="http://bj.58.com/dianzi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">电工</a></em><a href="http://bj.58.com/shouying/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">收银员</a><br>
+        <em><a href="http://bj.58.com/caiwu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">会计</a></em><em><a href="http://bj.58.com/youerjiaoshi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">幼教</a></em><em><a href="http://bj.58.com/zpshengchankaifa/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">技工</a></em><a href="http://bj.58.com/lihuoyuan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">理货员</a><br>
+        <em><a href="http://bj.58.com/chuna/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">出纳</a></em><em><a href="http://bj.58.com/baojieyuan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">保洁</a></em><em><a href="http://bj.58.com/mugong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">木工</a></em><a href="http://bj.58.com/dianzhang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">店长</a><br>
+        <em><a href="http://bj.58.com/zhaopinjingli/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">人事</a></em><em><a href="http://bj.58.com/baomuxin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">保姆</a></em><em><a href="http://bj.58.com/zhizaogongchengshi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">操作工</a></em><a href="http://bj.58.com/cantfwy/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">服务员</a><br>
+        <em><a href="http://bj.58.com/renli/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">行政</a></em><em><a href="http://bj.58.com/yuesaoyuying/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">月嫂</a></em><em><a href="http://bj.58.com/baoanl/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">保安</a></em><a href="http://bj.58.com/canguan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">厨师</a><br>
+        <em><a href="http://bj.58.com/wangluogongchengshi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">网管</a></em><em><a href="http://bj.58.com/jiazhengbaojiexin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">家政</a></em><em><a href="http://bj.58.com/cangku/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">库管</a></em><a href="http://bj.58.com/chufangqiepei/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">配菜</a><br>
+        <em><a href="http://bj.58.com/baojiananmozuliao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">足疗师</a></em><em><a href="http://bj.58.com/fangdichan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">房产</a></em><em><a href="http://bj.58.com/sudiyuan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">快递员</a></em><a href="http://bj.58.com/zpxuetu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">学徒</a><br>
+        <em><a href="http://bj.58.com/faxingshi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">发型师</a></em><em><a href="http://bj.58.com/baoxian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">保险</a></em><em><a href="http://bj.58.com/banyungong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">搬运工</a></em><a href="http://bj.58.com/miandianshi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">面点师</a><br>
+        <em><a href="http://bj.58.com/meirongshi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">美容师</a></em><em><a href="http://bj.58.com/zhdiang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">钟点工</a></em><em><a href="http://bj.58.com/zpzagong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">杂工</a></em><a href="http://bj.58.com/xiwangong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">洗碗工</a><br>
+        <em><a href="http://bj.58.com/huazhuangshizg/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">化妆师</a></em><em><a href="http://bj.58.com/xicheyuan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">洗车工</a></em><em><a href="http://bj.58.com/songcanyuan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">送餐员</a></em><a href="http://bj.58.com/datangjingli/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">大堂经理</a><br>
+        <div id="chinahrhide"><em><a href="http://bj.58.com/zptaobaokefu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">淘宝客服</a></em><em><a href="http://bj.58.com/zhenjiuzg/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">推拿师</a></em><em><a href="http://bj.58.com/xitougong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">洗头工</a></em><a href="http://bj.58.com/zpjiudianqiantai/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">酒店前台</a><br>
+        <em><a href="http://bj.58.com/caigouyuan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">采购员</a></em><em><a href="http://bj.58.com/songshuigong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">送水工</a></em><em><a href="http://bj.58.com/ziliao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">资料员</a></em><a href="http://bj.58.com/zpjianshen/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">运动健身</a><br>
+        <em><a href="http://bj.58.com/zpdingpiao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">订票员</a></em><em><a href="http://bj.58.com/zpzhiye/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">置业顾问</a></em><em><a href="http://bj.58.com/zpwuye/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">物业管理</a></em><a href="http://bj.58.com/qiantjd/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">迎宾接待</a><br></div>
+        <em><a href="http://bj.58.com/wtxieying/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">摄影师</a></em><em><a href="http://bj.58.com/qichewx/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">汽车修理</a></em><em><a href="http://bj.58.com/qichemeirong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">汽车美容</a></em><a href="http://bj.58.com/job.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">更多职位»</a><br>
+<span id="1033"><style>#chinahrhide{display:block;}</style>		<h6><a href="http://zp.58.com/chinahr/jump?to=http://www.chinahr.com/modules/jsperson/hotwords.php&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">中高级专业人才招聘</a></h6>		<em><a href="http://zp.58.com/chinahr/jump?city=1&cate=1001_1003&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">IT/网游</a></em><em><a href="http://zp.58.com/chinahr/jump?city=1&cate=1006_1030&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">市场营销</a></em><em><a href="http://zp.58.com/chinahr/jump?city=1&key=%E5%AE%9E%E4%B9%A0&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">实习生</a></em><a href="http://zp.58.com/chinahr/jump?city=1&key=%E5%A4%96%E8%B4%B8&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">外贸</a><br>        <em><a href="http://zp.58.com/chinahr/jump?city=1&key=%E7%BF%BB%E8%AF%91&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">翻译</a></em><em><a href="http://zp.58.com/chinahr/jump?city=1&key=java&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">java</a></em><em><a href="http://zp.58.com/chinahr/jump?city=1&key=%E6%B4%BB%E5%8A%A8%E7%AD%96%E5%88%92&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">活动策划</a></em><a href="http://zp.58.com/chinahr/jump?to=http://www.chinahr.com/modules/jsperson/hotwords.php&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">更多职位</a><br></span>
+      </div>
+      <div class="clear"></div>
+      <div class="line"></div>
+      <div class="c_b_ew3">
+        <h3>热门行业<a class="hgray" style="margin-left:26px;" href="http://bj.58.com/zhaopinhui/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">北京招聘会</a><span id="1031"><a class="jj" style="margin-left:5px;" href="http://www.daojia.com/subject/hehuoren/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="djczhhr_bj">58到家诚招合伙人</a></span></h3>
+        <em><a href="http://bj.58.com/zpjiudian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">酒店/旅游</a></em><em><a href="http://bj.58.com/zpwuliucangchu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">仓储/物流</a></em><a href="http://bj.58.com/zhuanye/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">教育/培训</a><br>
+        <em><a href="http://bj.58.com/zplvyoujiudian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">餐饮</a></em><em><a href="http://bj.58.com/zpfangchanjianzhu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">建筑</a></em><a href="http://bj.58.com/tech/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">计算机/网络</a><br>
+        <em><a href="http://bj.58.com/zpwentiyingshi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">娱乐/休闲</a></em><em><a href="http://bj.58.com/zpqiche/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">汽车服务</a></em><a href="http://bj.58.com/jinrongtouzi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">金融/银行</a><br>
+        <em><a href="http://bj.58.com/chaoshishangye/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">超市/百货</a></em><em><a href="http://bj.58.com/zpyiyuanyiliao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">医疗/护理</a></em><a href="http://bj.58.com/shichang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">市场/媒介</a><br>
+        <em><a href="http://bj.58.com/zpanmo/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">保健按摩</a></em><em><a href="http://bj.58.com/zpzhiyao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">制药/生物</a></em><a href="http://bj.58.com/zpguanggao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">广告/会展</a><br>
+        <em><a href="http://bj.58.com/meirongjianshen/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">美容/美发</a></em><em><a href="http://bj.58.com/zpjixieyiqi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">电子电气</a></em><a href="http://bj.58.com/zpmeishu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">美术/设计</a><br>
+        <em><a href="http://bj.58.com/zpjianshen/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">运动健身</a></em><em><a href="http://bj.58.com/zpjixie/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">机械仪器</a></em><a href="http://bj.58.com/xiaofeipin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">纺织/食品</a><br>
+      </div>
+      <div class="c_b_ew3">
+        <div class="line"></div>
+        <h3><em><a href="http://bj.58.com/jianzhi.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">北京兼职</a></em><a rel="nofollow" href="http://bj.58.com/xueshengjianzhi/?from=jz_xueshengjianzhi&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="adv">学生兼职</a><span id="zp_jz_r"><a rel="nofollow" href="http://www.doumi.com/?ca_name=58&ca_source=58pc&ca_form=sytitle&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="color:red;font-weight:normal;margin-left:66px;font-size:13px">放心兼职</a></span></h3>
+        <em><a href="http://bj.58.com/canyinfuwu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">钟点工</a></em><em><a href="http://bj.58.com/jianzhifwy/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">服务员</a></em><a href="http://bj.58.com/fachuandan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">传单派发</a><br>
+        <em><a href="http://bj.58.com/jiaoyupeixun/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">家教</a></em><em><a href="http://bj.58.com/yuyanwenzi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">翻译</a></em><a href="http://bj.58.com/computer/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">设计制图</a><br>
+        <em><a href="http://bj.58.com/xiaoshoucuxiao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">促销</a></em><em><a href="http://bj.58.com/jianzhicaiwu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">会计</a></em><a href="http://bj.58.com/jisuanjiwl/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">网站建设</a><br>
+        <em><a href="http://bj.58.com/liyiyanyi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">礼仪</a></em><em><a href="http://bj.58.com/kefushichang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">问卷调查</a></em><a href="http://bj.58.com/partime/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">其他兼职</a><br>
+      </div>
+      <div class="clear"></div>
+      <div class="line"></div>
+      <div class="c_b_ew2" style="line-height:28px">
+        <h3><a href="http://bj.58.com/searchjob.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">求职简历</a><a class="hgray" style="margin-left:20px" href="http://jianli.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">简历搜索</a></h3>
+        <em><a href="http://bj.58.com/qzyewu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">销售</a></em><em><a href="http://bj.58.com/qzwenziluru/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">文员</a></em><em><a href="http://bj.58.com/qzcuxiao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">导购</a></em><a href="http://bj.58.com/qzsheji/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">平面设计</a><br>
+        <em><a href="http://bj.58.com/qzkefu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">客服</a></em><em><a href="http://bj.58.com/qzqiantai/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">前台</a></em><em><a href="http://bj.58.com/qzfangdichan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">房产经纪</a></em><a href="http://bj.58.com/qzrenli/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">人事/行政</a><br>
+        <em><a href="http://bj.58.com/qzmishu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">助理</a></em><em><a href="http://bj.58.com/qzcaiwu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">会计</a></em><em><a href="http://bj.58.com/qzbaoxian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">保险经纪</a></em><a href="http://bj.58.com/qzcangku/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">仓库管理</a><br>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="cbright" class="cauto lh28 cbp4">
+  <!--58到家入口  start-->
+  <div class="c_b "><h2 style="background:none"><a onclick="clickLog(&#39;from=pc_home_58daojia_icon&#39;);" rel="nofollow" href="http://bj.daojia.com/?hmsr=58_pc_shouye_youcequyu_icon&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="position:relative;top:2px;"><img src="__PUBLIC__/Home/picture/daojia_log_ico.gif"></a><a onclick="clickLog(&#39;from=pc_home_58daojia_title&#39;);" href="{:U('Home/Ziying/index')}" rel="nofollow">58到家自营服务</a><a onclick="clickLog(&#39;from=pc_home_58daojia_title&#39;);" rel="nofollow" href="http://bj.daojia.com/?hmsr=58_pc_shouye_youcequyu_icon&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="position:relative;top:2px;"><img src="__PUBLIC__/Home/picture/daojia_r_ico2.gif"></a></h2><div class="clear"></div><em style="width:14%"><a onclick="clickLog(&#39;from=pc_home_58daojia_baomu&#39;);" href="http://bj.daojia.com/baomu?hmsr=58_pc_shouye_baomu&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">保姆</a></em><em style="width:14%"><a onclick="clickLog(&#39;from=pc_home_58daojia_yuesao&#39;);" href="http://bj.daojia.com/yuesao/?hmsr=58_pc_shouye_youcequyu_yuesao&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">月嫂</a></em><em style="width:14%"><a onclick="clickLog(&#39;from=pc_home_58daojia_meijia&#39;);" href="http://bj.daojia.com/meijia/?hmsr=58_pc_shouye_youcequyu_meijia&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">美甲</a></em><em style="width:14%"><a onclick="clickLog(&#39;from=pc_home_58daojia_huazhuang&#39;);" href="http://bj.daojia.com/huazhuang/?hmsr=58_pc_shouye_youcequyu_huazhuang&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">化妆</a></em><em style="width:14%"><a onclick="clickLog(&#39;from=pc_home_58daojia_suyun&#39;);" href="http://bj.daojia.com/huoyun/?hmsr=58_pc_shouye_youcequyu_suyun&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">速运</a></em><em style="width:14%"><a onclick="clickLog(&#39;from=pc_home_58daojia_banjia&#39;);" href="http://bj.daojia.com/banjia/?hmsr=58_pc_shouye_youcequyu_banjia&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">搬家</a></em><em style="width:12%"><a onclick="clickLog(&#39;from=pc_home_58daojia_xiche&#39;);" href="http://bj.daojia.com/xiche/?hmsr=58_pc_shouye_youcequyu_xiche&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">洗车</a></em></div>
+  <!--58到家入口 end-->
+    <div class="c_b">
+      <div class=""><h2 style="background:none;"><a href="http://bj.58.com/huangye/?from=58_shouye_huangye&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">本地服务大全</a><a class="sy" onclick="clickLog(&#39;from=pc_home_small_daojia_bj&#39;);" ‍‍="" rel="nofollow" href="http://www.daojia.com/?hmsr%EF%BC%9D58_pc_shouye&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">58到家上门服务</a></h2></div>
+      <div class="clear"></div>
+	  <em><a onclick="clickLog(&#39;from=pc_home_no1_zhuangxiuji_bj&#39;);" href="http://www.58.com/?path=zhuangxiuji.shtml?from=pc_home_no1_zhuangxiuji_bd_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">58装修, "装"的是种心情</a></em><em><a onclick="clickLog(&#39;from=pc_home_no2_zhaobiao_zxdlb&#39;);" href="http://zhaobiao.58.com/pc/bid/goSubmit?plid=1&pcateid=4063&from=pc_home_no2_zhaobiao_zxdlb&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" style="color:red">快来免费领取装修大礼包</a></em><br><em><a href="http://bj.58.com/zhuce/?from=pc_home_no3_gongshangzhuce&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=pc_home_no3_gongshangzhuce&#39;);">公司注册代理靠谱更省心</a></em><em><a onclick="clickLog(&#39;from=pc_home_no4_jiameng_bj&#39;);" href="http://bj.58.com/canyinjia/?from=pc_home_no4_jiameng_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">"林殊哥哥"我们去创业吧!</a></em>
+    </div>
+    <div class="c_b c_b_ew2">
+      <h3><a href="http://bj.58.com/shenghuo.shtml?from=58_shouye_shenghuo&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">家政服务</a><span id="1027"><a class="sy" onclick="clickLog(&#39;from=pc_home_shenghuo_small_jiatingbaojie&#39;);" href="http://bj.58.com/jiatingbaojie/?from=pc_home_shenghuo_small_jiatingbaojie&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">家庭保洁，认真打扫每个角落</a></span><span id="hsj"></span></h3>
+      <em><a href="{:U('Home/Jiazheng/index')}" onclick="clickLog(&#39;from=pc_bjhome_hy_banjia&#39;)">搬家</a></em><em><a href="{:U('Home/Jiazheng/index')}" onclick="clickLog(&#39;from=pc_bjhome_hy_yuesao&#39;)">保姆/月嫂</a></em><em><a href="{:U('Home/Jiazheng/index')}?gclass=钟点工">钟点工</a></em><a href="{:U('Home/Jiazheng/index')}?gclass=保洁" onclick="clickLog(&#39;from=pc_bjhome_hy_baojie&#39;)">保洁</a><br>
+      <em><a href="{:U('Home/Jiazheng/index')}?gclass=疏通">疏通</a></em><em><a href="{:U('Home/Jiazheng/index')}">食品</a><i>/</i><a href="{:U('Home/Jiazheng/index')}">礼品</a></em><em><a href="{:U('Home/Jiazheng/index')}">生活配送</a></em><a href="http://bj.58.com/ganxi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">洗衣店</a><br>
+      <em><a href="{:U('Home/Jiazheng/index')}?gclass=回收">回收</a></em><em><a href="http://bj.58.com/lipinxianhua/?from=58_shouye_xianhua_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">鲜花绿植</a></em><em><a href="http://bj.58.com/binzang/?from=58_shouye_baishi_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">白事服务</a></em><a href="http://bj.58.com/zuche/?from=58_shouye_zuche&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">租车</a><br>
+    </div>
+    <div class="c_b c_b_ew3">
+      <em><a href="http://bj.58.com/fangweixiu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">房屋维修</a></em><em><a href="http://bj.58.com/jiajuweixiu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">家具维修</a></em><a href="http://bj.58.com/dianqi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">家电</a><i>/</i><a href="http://bj.58.com/shoujiweixiu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">手机维修</a><br>
+      <em><a href="http://bj.58.com/weixiu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">电脑维修</a></em><em><a href="http://bj.58.com/kaisuo/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">开锁换锁</a></em><a href="http://bj.58.com/dianlu/?from=58_shouye_dianlu&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">电路</a><i>/</i><a class="red" href="http://bj.58.com/kongtiao/?from=58_shouye_kongtiao&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">空调维修</a><br>
+      <h3><a href="{:U('Home/Marry/index')}" rel="nofollow">婚庆摄影</a><span id="1008"><a onclick="clickLog(&#39;from=pc_home_hunjiehunqing_small_hunqinggongsi&#39;)," href="{:U('Home/Marry/index')}" class="sy" rel="nofollow">挑婚庆公司，做幸福选择</a></span><span class="hqsy"></span></h3>
+      <em><a href="{:U('Home/Marry/index')}?gtype=婚庆">婚庆</a></em><em><a href="{:U('Home/Marry/index')}?gtype=摄像摄影" style="color:red">摄影摄像</a></em><a href="{:U('Home/Marry/index')}?gtype=礼仪庆典">礼仪庆典</a><br>
+      <em><a href="{:U('Home/Marry/index')}?gtype=婚车租赁">婚车租赁</a></em><em><a href="{:U('Home/Marry/index')}?gtype=婚纱摄影">婚纱摄影</a></em><a href="{:U('Home/Marry/index')}?gtype=儿童摄影">儿童摄影</a><br>
+      <h3><a href="{:U('Home/Zhuangxiu/zhuye')}" rel="nofollow">装修建材</a><span id="1009"><a class="sy" rel="nofollow" href="http://zhaobiao.58.com/pc/bid/goSubmit?plid=1&pcateid=4063?from=pc_home_zhuangxiujc_small_zhaobiao_mflf&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=pc_home_zhuangxiujc_small_zhaobiao_mflf&#39;);" style="color:red">找装修？免费量房、选方案</a></span></h3>
+      <em><a href="http://bj.58.com/jiazhuang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">家庭装修</a></em><em><a href="http://bj.58.com/gongzhuang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">工装服务</a></em><a href="http://xiaoguotu.58.com/meitu/?from=58_shouye_modle_tuku&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">装修效果图</a><br>
+      <em><a href="http://bj.58.com/jiancai/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">建材</a></em><em><a href="http://bj.58.com/jiajusp/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">家具</a></em><a href="http://bj.58.com/jiajuzs/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">家纺家饰</a><br>
+    </div>
+    <div class="c_b c_b_ew3">
+      <h3><a href="{:U('Home/Gongshang/zc_lists')}">商务服务</a><span id="sw"><a href="" class="sy" onclick="clickLog(&#39;from=pc_home_shangwu_small_zhaobiao_zcgs&#39;);" style="color:red;">注册公司，人人都做大老板</a></span></h3>
+      <em><a href="{:U('Home/Gongshang/zc_lists')}">工商注册</a></em><em><a href="{:U('Home/Gongshang/kj_lists')}">财务会计</a></em><a href="{:U('Home/Gongshang/zl_lists')}">商标专利</a><br>
+      <em><a href="http://bj.58.com/danbaobaoxiantouzi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">投资担保</a></em><em><a href="http://bj.58.com/lvshi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">法律</a><i>/</i><a href="http://bj.58.com/zixunzhongjie/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">咨询</a></em><a href="{:U('Home/Gongshang/qm_lists')}">起名</a><br>
+      <em><a href="http://bj.58.com/huoyun/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">货运物流</a></em><em><a href="http://bj.58.com/kuaidi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">快递</a></em><a href="http://bj.58.com/baoxianfuwu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">保险</a><i>/</i><a href="http://bj.58.com/wuliu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">货运专线</a><br>
+      <em><a href="http://bj.58.com/wangzhan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">网站建设</a></em><em><a href="http://bj.58.com/xitong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">网络布线</a></em><a href="http://bj.58.com/chuanmei/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">广告传媒</a><br>
+      <em><a href="http://bj.58.com/pingmian/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">设计策划</a></em><em><a href="http://bj.58.com/yinshua/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">印刷包装</a></em><a href="http://bj.58.com/penhui/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">喷绘</a><i>/</i><a href="http://bj.58.com/allzhika/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">制卡</a><br>
+      <em><a href="http://bj.58.com/lipindingzhi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">礼品定制</a></em><em><a href="http://bj.58.com/zhanhuifuwu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">展会服务</a></em><a href="http://bj.58.com/fanyi/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">翻译/速记</a><br>
+      <em><a href="http://bj.58.com/zulin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">租赁</a><i>/</i><a href="http://bj.58.com/huojiasheb/?from=58_shouye_huojiasheb&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">货架</a></em><em><a href="http://bj.58.com/bgsbwx/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">设备维修</a></em><a href="http://bj.58.com/jianzhuweixiu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">建筑</a><i>/</i><a href="http://bj.58.com/jixieweixiu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">机械维修</a><br>
+    </div>
+    <div class="c_b c_b_ew2">
+      <h3><a href="http://bj.58.com/lvyouxiuxian.shtml?from=58_shouye_lvyouxiuxian&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">旅游酒店</a><span id="1011"><a onclick="clickLog(&#39;from=pc_home_lvyouxiuxian_small_dujiacun&#39;);" class="sy" href="http://bj.58.com/dujia/?from=pc_home_lvyouxiuxian_small_dujiacun&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">周末快来放松一下！</a></span></h3>
+      <em><a href="http://bj.58.com/zhoubianyou/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="red">周边游</a></em><em><a href="http://bj.58.com/nongjiale/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">农家乐</a></em><em><a href="http://bj.58.com/wenquandujiacun/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">温泉</a></em><a href="http://bj.58.com/shaokaoy/?from=shaokao_bd_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">烧烤</a><br>
+      <em><a href="http://bj.58.com/lvyouxianlu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">国内游</a></em><em><a href="http://bj.58.com/guojilvyou/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">出境游</a></em><em><a href="http://bj.58.com/lvyou/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">旅行社</a></em><a href="http://kezhan.58.com/bj/?from=duanzu_kezhan_home_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">特价订房</a><br>
+    </div>
+    <div class="c_b c_b_ew2">
+      <h3><a href="http://bj.58.com/zhaoshang.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">招商加盟</a><a class="zsjm" href="http://bj.58.com/canyinjia/?from=shouye_zhaoshang_bj_1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">十大赚钱行业等你创业！</a></h3>
+      <em><a href="http://bj.58.com/canyinjia/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="red">餐饮加盟</a></em><em><a href="http://bj.58.com/fuzhuangjia/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">服装鞋包</a></em><em><a href="http://bj.58.com/qitajiameng/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">特色加盟</a></em><a href="http://bj.58.com/jixiejiagong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">机械</a><i>/</i><a href="http://bj.58.com/jiajuhuanbao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">家居</a><br>
+      <em><a href="http://bj.58.com/wanbbajm/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">网店</a><i>/</i><a href="http://bj.58.com/lipinshipin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">礼品</a></em><em><a href="http://bj.58.com/jiancaijm/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">建材加盟</a></em><em><a href="http://bj.58.com/qczsjm/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">汽车服务</a></em><a href="http://bj.58.com/meirongbaojain/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">美容</a><i>/</i><a href="http://bj.58.com/jiaoyuertong/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">母婴</a>
+    </div>
+    <div class="c_b c_b_ew3">
+      <h3><a rel="nofollow" href="http://bj.58.com/xiuxianyl.shtml?from=58_shouye_xiuxianyl&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">休闲娱乐</a><span id="1032"><a href="http://bj.58.com/jianshenzx/?from=pc_home_xiuxianyl_small_jianshenzhongxin&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="sy" onclick="clickLog(&#39;from=pc_home_xiuxianyl_small_jianshenzhongxin&#39;);">健身塑形，专业指导</a></span></h3>
+      <em><a href="{:U('Home/Yule/index')}?gclass=运动健身">运动健身</a></em><em><a href="{:U('Home/Yule/index')}?gclass=夜店酒吧">夜店酒吧</a></em><a href="{:U('Home/Yule/index')}?gclass=足疗" onclick="clickLog(&#39;from=pc_bjhome_hy_xxam&#39;)" style="color:red">足疗/按摩</a><br>
+      <em><a href="{:U('Home/Yule/index')}?gclass=KTV">KTV</a></em><em><a href="{:U('Home/Yule/index')}?gclass=户外运动">户外运动</a></em><a href="{:U('Home/Yule/index')}?gclass=洗浴">洗浴/温泉</a><br>
+    </div>
+    <div class="c_b c_b_ew2">
+      <h3><a rel="nofollow" href="http://bj.58.com/yiliaobaojian.shtml?from=58_shouye_yiliaobaojian&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">医疗健康</a><a rel="nofollow" class="sy yygh" href="http://tools.58.com/hospital.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">挂号</a><span id="1028"></span></h3>
+      <em><a href="http://bj.58.com/nanke/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">男科</a><i>/</i><a href="http://bj.58.com/zaoxie/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">早泄</a></em><em><a href="http://bj.58.com/fukeyiy/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">妇科</a><i>/</i><a href="http://bj.58.com/renliu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">人流</a></em><em><a href="http://bj.58.com/jingzhuibing/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">颈椎</a><i>/</i><a href="http://bj.58.com/yaozuijianpantch/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">腰椎</a></em><a id="tijian" class="red" href="http://58.viptijian.com/010?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="yljk_tijian_bj">体检</a><br>
+      <em><a href="http://bj.58.com/zhuankeyiy/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">皮肤病</a></em><em><a href="http://bj.58.com/baidianfeng/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">白癜风</a></em><em><a href="http://bj.58.com/yinjingyc/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">阴茎延长</a></em><a href="http://bj.58.com/buyunbuyu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">不孕不育</a><br>
+      <em><a href="http://bj.58.com/zhongyiyuan/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=pc_bjhome_hy_ylbj&#39;)">保健按摩</a></em><em><a href="http://bj.58.com/zhengxing/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">整形美容</a></em><em><a href="http://bj.58.com/jianruisy/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">尖锐湿疣</a></em><a id="jiankangwenda" href="http://www.58.com/jk/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">健康问答</a><br>
+      <ul class="c_b_list">
+        <li>
+          <h3><a href="http://bj.58.com/canyin.shtml?from=58_shouye_canyin&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">餐饮美食</a><a href="http://bj.58.com/waimai/?from=pc_home_canyin_small_waimai_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="sy" onclick="clickLog(&#39;from=pc_home_canyin_small_waimai_bj&#39;);">外卖随心选</a></h3>
+          <em><a href="http://bj.58.com/waimai/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">外卖</a></em><a href="http://bj.58.com/kuaican/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">快餐/团膳</a><br>
+          <em><a href="http://bj.58.com/dangao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">蛋糕订购</a></em><a href="http://bj.58.com/zhongcanyin/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">美食</a><br>
+        </li>
+        <li>
+          <h3><a href="http://bj.58.com/liren.shtml?from=58_shouye_liren&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">丽人</a><a href="http://bj.58.com/yujia/?from=pc_home_liren_small_yujia_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="sy" onclick="clickLog(&#39;from=pc_home_liren_small_yujia_bj&#39;);">舞出好身材</a></h3>
+          <em class="w1"><a href="http://bj.58.com/mianbumeir/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">美容</a><i>/</i><a href="http://bj.58.com/spa/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">SPA</a></em><a href="http://bj.58.com/meitishou/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">美体瘦身</a><br>
+          <em class="w1"><a href="http://bj.58.com/ssmeifa/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">美发</a></em><a href="http://bj.58.com/jianshenwudao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">舞蹈/瑜伽</a><br>
+        </li>
+      </ul>
+    </div>
+    <div class="c_b c_b_ew3"><h3><a rel="nofollow" href="http://bj.58.com/nonglinmy.shtml?from=58_shouye_nonglinmy&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="width:76px;">农林牧副渔</a><a class="nlmfy" href="http://bj.58.com/nongzuowu/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">农作物</a><a class="nlmfy" href="http://bj.58.com/yuanlinye/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">园林花卉</a><a class="nlmfy" href="http://bj.58.com/xumuye/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">畜禽养殖</a></h3>
+    </div>
+    <div class="c_b c_b_ew3"><h3><a rel="nofollow" href="http://bj.58.com/shop.shtml?from=58_shouye_pifa_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="width:76px;">批发采购</a><a href="http://bj.58.com/huazhuangp/?from=58_shouye_huazhuangp_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="nlmfy">化妆品</a><a href="http://bj.58.com/fushixm/?from=58_shouye_fushi_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="nlmfy">服饰鞋帽</a><a href="http://bj.58.com/huwaiyd/?from=58_shouye_ydyongpin_bj&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="nlmfy">运动用品</a></h3>
+    </div>
+  </div>
+</div> 
+<div class="cb" style="margin-top:12px;">
+  <div class="tab">
+    <div class="bar_right qlink"><a href="http://game.58.com/yxb/?from=58.com_bottom_bj_5&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="yxbjy">游戏币交易</a><a href="http://game.58.com/zc/?from=58.com_bottom_bj_6&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="dkcz">点卡充值</a><a href="http://weizhan.58.com/case/city/bj/all/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" tongji_tag="wzpaihang">北京微站排行</a><a href="http://bj.58.com/xunren?from=58.com_bottom_bj_1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="clickLog(&#39;from=home_bottom_ad_bj_xuren&#39;);">寻人启事</a><a href="http://bj.58.com/xunwu?from=58.com_bottom_bj_2&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="clickLog(&#39;from=home_bottom_ad_bj_xunwu&#39;);">失物招领</a><a href="http://bj.58.com/xunchong?from=58.com_bottom_bj_3&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="clickLog(&#39;from=home_bottom_ad_bj_xunchong&#39;);">寻宠物</a><a href="http://shop.58.com/bj/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=home_bottom_ad_bj_shop&#39;);">店铺大全</a></div>
+    <div class="tit">
+      <span class="active" id="changyong">常用服务</span><span id="caipiaobox">彩票　&nbsp;<i class="lipin" style="left:63px;"></i></span><span id="erdian">热点专题</span>
+    </div>
+    <script type="text/javascript">
+    $('#changyong').mouseover(function(){
+      $('#changyong').attr('class','active');
+      $('#ccc').css('display','block');
+      $('#erdian').removeClass('active');
+      $('#ttt').css('display','none');
+      $('#caipiaobox').removeClass('active');
+      $('#ppp').css('display','none');
+    })
+
+    $('#caipiaobox').mouseover(function(){
+      $('#changyong').removeClass('active');
+      $('#ccc').css('display','none');
+      $('#erdian').removeClass('active');
+      $('#ttt').css('display','none');
+      $('#caipiaobox').attr('class','active');
+      $('#ppp').css('display','block');
+    })
+   
+    $('#erdian').mouseover(function(){
+      $('#changyong').removeClass('active');
+      $('#ccc').css('display','none');
+      $('#erdian').attr('class','active');
+      $('#ttt').css('display','block');
+      $('#caipiaobox').removeClass('active');
+      $('#ppp').css('display','none');
+    })
+    </script>
+    <div class="pad-tb-15 tabCon" style="display:block;" id="ccc">
+      <div class="bw">
+        <div class="c_b">
+          <h3>交通出行</h3>
+          <em><a href="http://map.baidu.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=map&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/map&#39;]);">在线地图</a></em><a href="http://lieche.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=liecheshike&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/liecheshike&#39;]);">列车时刻</a><br>
+          <em><a href="http://bj.58.com/zumpv/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="clickLog(&#39;from=shouye_cyfw_swzuche&#39;);">商务租车</a></em><a href="http://tools.58.com/traffic.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=jiaotong&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/jiaotong&#39;]);">交通违章</a><br>
+          <em><a href="http://www.58.com/qichepiao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=qiche&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/qiche&#39;]);">汽车票查询</a></em><a href="http://bj.58.com/jipiao/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=jipiao&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/jipiao&#39;]);">特价机票</a><br>
+        </div>
+        <div class="c_b column">
+          <h3>生活助手</h3>
+          <em><a href="http://tools.58.com/tv.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=tv&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/tv&#39;]);">电视直播</a></em><a href="http://www.douguo.com/caipu?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=caipu&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/caipu&#39;]);">美食菜谱</a><br>
+          <em><a href="http://tools.58.com/hospital.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=guahao&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/guahao&#39;]);">医院挂号</a></em><a href="http://waimai.taobao.com/shop_list.htm?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=waimai&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/waimai&#39;]);">外卖订餐</a><br>
+          <em><a href="http://www.cnmo.com/?pvareaid=58&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=cnmo&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/cnmo&#39;]);">手机大全</a></em><a href="http://kaoshi.jxedt.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=jiakao&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/jiakao&#39;]);">驾校一点通</a><br>
+        </div>
+        <div class="c_b column">
+          <h3>便民服务</h3>
+          <em><a href="http://tools.58.com/kuaidi.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=kuaidi&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/kuaidi&#39;]);">快递查询</a></em><a href="http://tools.58.com/phone.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="red" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=mobile&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/mobile&#39;]);">话费充值</a><br>
+          <em><a href="http://www.cncn.com/paihang/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=travel&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/travel&#39;]);">旅游景点</a></em><a href="http://www.58.com/kaoshiyueli/?from=58_shouye_kaoshiyueli&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=ksyl&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/ksyl&#39;]);">2015考试月历</a><br>
+          <em><a href="http://tools.58.com/anquanqi.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=lady&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/lady&#39;]);">女性安全期</a></em><a href="https://jiaofei.alipay.com/jiaofei.htm?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=life&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/life&#39;]);">水电煤缴费</a><br>
+        </div>
+        <div class="c_b column">
+          <h3>金融理财</h3>
+          <em><!--<!--<a class="red" href="http://58.caipiao.163.com/?from=shouye_changjian_ssq" rel="nofollow" onclick="clickLog('from=caipiao-2yuan');">2元赢千万</a>--><a class="red" href="http://bj.58.com/qitajiameng/?from=changyong_zhaoshang&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">创业新点子</a></em><a href="http://quote.eastmoney.com/zs000001.html?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=gupiao&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/gupiao&#39;]);">股票行情</a><br>
+          <em><a href="http://gold.hexun.com/hjxh/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=gold&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/gold&#39;]);">黄金价格</a></em><a href="http://cha.58.com/calc/fang_loan.html?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=fdjsq&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/fdjsq&#39;]);">房贷计算器</a><br>
+          <em><a href="http://www.hao123.com/baoxian?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=shebao&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/shebao&#39;]);">社保查询</a></em><a href="http://www.hao123.com/haoserver/gjjcx.htm?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=zfgjj&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/zfgjj&#39;]);">住房公积金</a><br>
+        </div>
+        <div class="c_b column">
+          <h3>工具大全</h3>
+          <em><a href="http://hao.360.cn/rili/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=date&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/date&#39;]);">万年历</a></em><a href="http://tools.58.com/suanming.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=bzsm&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/bzsm&#39;]);">八字算命</a><br>
+          <em><a href="http://app.baidu.com/app/enter?appid=278234&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=hdjr&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/hdjr&#39;]);">黄道吉日</a></em><a href="http://tools.58.com/jiemeng.shtml?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=zgjm&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/zgjm&#39;]);">周公解梦</a><br>
+          <em><a href="http://astro.sina.com.cn/luck/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=luky&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/luky&#39;]);">星座运势</a></em><a href="{:U('Home/Lengxiaohua/lengshouye')}" rel="nofollow" onclick="javascript:clickLog(&#39;from=homebottomclick&amp;city=bj&amp;type=xiaohua&#39;);_gaq.push([&#39;pageTracker._trackEvent&#39;, &#39;home&#39;, &#39;bottom_click&#39;, &#39;/bj/home/bottom/xiaohua&#39;]);">爱讲冷笑话</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabCon cp" id="ppp">
+      <ul id="caipiao" class="cp_1"><li><h5><a href="http://58.lecai.com/lottery/ssq/?from=shouye_ssq&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">双色球</a></h5><span class="phase">第2015129期</span><span class="prize">奖号：<a class="result" href="http://58.lecai.com/lottery/ssq/?from=shouye_ssq&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo"><span class="c-red">05</span><span class="c-red">08</span><span class="c-red">11</span><span class="c-red">16</span><span class="c-red">18</span><span class="c-red">27</span><span class="c-blue">04</span></a></span><a href="http://58.lecai.com/lottery/ssq/?from=shouye_touzhu_ssq&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="buy" rel="nofollow">立即投注</a></li><li><h5><a href="http://58.lecai.com/lottery/dlt/?from=shouye_dlt&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">大乐透</a></h5><span class="phase">第15129期</span><span class="prize">奖号：<a class="result" href="http://58.lecai.com/lottery/dlt/?from=shouye_dlt&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo"><span class="c-red">01</span><span class="c-red">06</span><span class="c-red">23</span><span class="c-red">25</span><span class="c-red">29</span><span class="c-blue">03</span><span class="c-blue">09</span></a></span><a href="http://58.lecai.com/lottery/dlt/?from=shouye_touzhu_dlt&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="buy" rel="nofollow">立即投注</a></li><li><h5><a href="http://58.lecai.com/lottery/fc3d/?from=shouye_fc&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">福彩3D</a></h5><span class="phase">第2015301期</span><span class="prize">奖号：<a class="result" href="http://58.lecai.com/lottery/fc3d/?from=shouye_fc&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo"><span class="c-red">2</span><span class="c-red">7</span><span class="c-red">1</span></a>　<span>试机号：&nbsp;2&nbsp;0&nbsp;8</span></span><a href="http://58.lecai.com/lottery/fc3d/?from=shouye_touzhu_fc&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="buy" rel="nofollow">立即投注</a></li></ul>
+      <div class="c_b cp_2">
+        <div class="szc_em"><h5><a rel="nofollow" href="http://58.lecai.com/lottery/?from=shouye_szc_1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">数字彩</a><span>（2元博500万）</span></h5><em><a rel="nofollow" href="http://58.lecai.com/lottery/ssq/?from=shouye_szc_2&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">双色球</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/dlt/?from=shouye_szc_3&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">大乐透</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/x3d/?from_source=shouye_szc_4&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">新3D</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/qxc/?from=shouye_szc_5&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">七星彩</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/qlc/?from_source=shouye_szc_7&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">七乐彩</a></em><em class="hide"><a rel="nofollow" href="http://58.lecai.com/lottery/pl3/?from=shouye_szc_6&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">排列3</a></em></div>
+        <h5><a rel="nofollow" href="http://58.lecai.com/lottery/?from=shouye_jjc_1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">竞技彩票</a><span>（中奖率高达65%）</span></h5><em><a rel="nofollow" href="http://58.lecai.com/lottery/jczq/?from=shouye_jjc_2&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">竞彩足球</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/jclq/?from=shouye_jjc_3&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">竞彩篮球</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/zqdc/?from=shouye_jjc_4&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">单场足彩</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/sfc/?from=shouye_jjc_5&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">14场胜负</a></em><em class="hide"><a rel="nofollow" href="http://58.lecai.com/lottery/sfr9/?from=shouye_jjc_6&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">任选9场</a></em><br>
+        <h5><a rel="nofollow" href="http://58.lecai.com/lottery/?from=shouye_gpc_1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">高频彩种</a><span>（5-10分钟一期）</span></h5><em><a rel="nofollow" href="http://58.lecai.com/lottery/jlk3/?from=shouye_gpc_2&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">新快3</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/jx11x5/?utm_source=shouye_gpc_2&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">11选5</a></em><em class="hide"><a rel="nofollow" href="http://58.lecai.com/lottery/jxssc/?from=shouye_gpc_4&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">新时时彩</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/gdkl10/?from=shouye_gpc_5&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">快乐十分</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/sd11x5/?from_source=shouye_gpc_6&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">十一运夺金</a></em>
+      </div>
+      <div class="c_b cp_3">
+          <em><a rel="nofollow" href="http://58.lecai.com/lottery/?from=shouye_gongju_1&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">购彩大厅</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/syndicate/?from=shouye_gongju_2&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">红人合买</a></em><a rel="nofollow" href="http://58.lecai.com/page/zhuanti/ssqherolist/?from_source=shouye_gongju_6&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">中奖英雄榜</a><br>
+          <em><a rel="nofollow" href="http://58.lecai.com/lottery/ssq/?from_source=shouye_gongju_4&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">双色球加奖</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/zqdc/?from_source=shouye_gongju_3&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">最易中奖</a></em><a rel="nofollow" href="http://58.lecai.com/lottery/jclq/?from_source=shouye_gongju_10&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">竞猜NBA</a><br>
+          <em><a rel="nofollow" href="http://58.lecai.com/lottery/ssq/?from_source=shouye_gongju_5&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">2元博千万</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/jqc/?from_source=shouye_gongju_8&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">竞彩足球</a></em><a rel="nofollow" href="http://58.lecai.com/lottery/sd11x5/?from_source=shouye_gongju_9&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">老11选5</a><br>
+          <em><a rel="nofollow" href="http://58.lecai.com/page/zhuanti/newcomer_201409/?from_source=shouye_gongju_7&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="red">充40得红包</a></em><em><a rel="nofollow" href="http://58.lecai.com/lottery/cqssc/?from=shouye_gongju_11&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">时时彩</a></em><a rel="nofollow" href="http://58.lecai.com/?from=shouye_gongju_12&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo">更多&gt;&gt;</a>
+        </div>
+    </div>
+    <div class="tabCon" id="ttt">
+      <ul class="imgTag">
+          <li>
+            <a title="" onclick="clickLog(&#39;from=home_bottom_ad_bj_shengji&#39;);" rel="nofollow" href=""><img src="__PUBLIC__/images/20151126003819.png" width="180" height="110">
+              <span>快速卖车好时机</span>
+              <span class="shade"></span>
+            </a>
+          </li>
+          <li>
+            <a title=""  rel="nofollow" href="{:U('Home/Zhaopin/cj')}"><img src="__PUBLIC__/images/20151126004023.png" width="180" height="110"><span>残疾人招聘绿色通道</span><span class="shade"></span></a></li>
+
+          <li>
+            <a title=""  rel="nofollow" href="{:U('Home/Chongwu/mengchong')}"><img src="__PUBLIC__/images/20151126004203.png" width="180" height="110">
+              <span>meng宠十宗最</span>
+              <span class="shade"></span>
+            </a>
+          </li>
+          <li><a title="" onclick="clickLog(&#39;from=home_bottom_ad_bj_huqing&#39;);" rel="nofollow" href=""><img src="__PUBLIC__/images/20151126004303.png" width="180" height="110"><span>2015咱们结婚吧</span><span class="shade"></span></a></li>
+          <li><a title="" onclick="clickLog(&#39;from=home_bottom_ad_bj_help&#39;);" rel="nofollow" href=""><img src="__PUBLIC__/images/20151126004415.png" width="180" height="110"><span>诚信58简单生活</span><span class="shade"></span></a></li>
+          <li class="hide"><a title="" onclick="clickLog(&#39;from=home_bottom_ad_bj_listed&#39;);" rel="nofollow" href=""><img src="__PUBLIC__/images/20151126004557.png" width="180" height="110"><span>58同城成功登陆纽交所</span><span class="shade"></span></a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+<div id="brand_service_provider_wrap" style="display:none;" class="cb btop">
+  <div class="h3con"><h3>北京知名服务商</h3></div>
+  <div id="brand_service_provider" class="c_b c_b_ew5">
+  </div>
+</div>
+<div class="morelink">
+  <div class="morelinkinside">
+  <div class="searchbt">
+  <form onsubmit="_gaq.push([&quot;pageTracker._trackEvent&quot;, &quot;home&quot;, &quot;search_bottom_click&quot;, &quot;/bj/index/&quot;]);$(&quot;#keyword&quot;).val($(&quot;#keywordbt&quot;).val());b_query();return false;">
+      <div id="searchbarbt">
+        <div id="saerkeybt"><span id="keybt">
+          <input type="text" id="keywordbt" name="key" class="keyword" value="个人房源" onblur="win.closeToolTipWindow();if(this.value==&#39;&#39;)this.value=&#39;个人房源&#39;,this.className=&#39;keyword&#39;" onkeyup="win.GetContentData();" onfocus="if(this.value==&#39;个人房源&#39;)this.value=&#39;&#39;,this.className=&#39;keyword2&#39;" autocomplete="off">
+          </span></div>
+        <div class="inputcon">
+          <input type="submit" name="button" id="searchbtnbt" class="btnall" value="同城搜索" onmousemove="this.className=&#39;btnal2&#39;" onmouseout="this.className=&#39;btnall&#39;">
+        </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+    
+    </script>
+
+  </div>
+  </div>
+</div>
+<div id="1005" style="display:none"></div>
+<div id="brand_bottom_banner" style="display:none"></div>
+<div id="footer">
+  <div class="bg">
+    <div id="contact" style="color:#000;"> <a href="http://about.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" title="有问题请与58客服进行对话" class="fduihua" rel="nofollow">客服</a><span>|</span><a href="http://about.58.com/info/del-menu.html?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" class="red" rel="nofollow">删除信息</a><span>|</span><a href="http://about.58.com/home/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">关于我们</a><span>|</span><a href="http://ir.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">Investor Relations</a><span>|</span><a href="http://e.58.com/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">推广服务</a><span>|</span><a href="{:U('Home/Business/index')}" rel="nofollow">渠道招商</a><span>|</span><a href="http://about.58.com/hr/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">加入我们</a><span>|</span><a href="http://track.58.com/recookie/index?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" target="_blank" rel="nofollow">隐私协议</a><span>|</span><a href="http://about.58.com/fqz/index.html?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">防网络诈骗</a><span>|</span><a rel="nofollow" href="http://about.58.com/cleanpolitics/show/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" onclick="clickLog(&#39;from=sylianzhengjb&#39;);">廉政举报</a><span class="attention" id="attention"><a class="icon-sina" href="http://e.weibo.com/58tongcheng?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" title="新浪微博"></a><a class="icon-qq" href="http://e.t.qq.com/www-58-com?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" title="腾讯微博"></a><a class="icon-qzone" href="http://user.qzone.qq.com/1526027420/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow" title="QQ空间"></a><a class="icon-weixin" href="javascript:;" rel="nofollow" target="_self" title="微信"></a>
+    <div class="weiLayer" id="weiLayer">
+      <a class="close" href="javascript:;" target="_self">关闭</a>
+      <div class="erweima"></div>
+      <div class="erTxt">
+        <h3>轻松加微信：</h3>
+        <p>1、打开微信<br>2、点击底部菜单“发现”<br>3、选择“扫一扫”功能，<br>4、对准左方二维码即可关注</p>
+      </div>
+      <div class="line"></div>
+      <div>公众号：<span class="orange">58同城</span>　　<span>|</span>　　微信号：<span class="orange">amazing58</span></div>
+      <div class="triangle"></div>
+    </div></span><br>
+      京公网安备110105000809号 <a href="http://www.miibeian.gov.cn/?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow">京ICP证060405</a>乙测资字11018014<a id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20120918001650001720?utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" rel="nofollow"></a>违法信息举报：4008135858 &nbsp; jubao@58.com<script type="text/javascript">(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script></div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+</div>
+
+
+<a class="erweima" id="erweimaAd" href="http://api.wap.58.com/api/redirect/to/wap?from=QR_home&utm_source=market&spm=b-31580022738699-pe-f-851.sogoupz_logo" style="display: none; "><i></i><p style="text-align:center;">手机上&nbsp;5&nbsp;&nbsp;8<br>神奇一手抓</p><img src="./【58同城 58.com】北京分类信息 - 本地 免费 高效_files/58qr.0508.png" height="90" width="90"><p class="endword">试着扫扫看</p><p style="display:none" class="endwordover">58手机客户端</p></a><style type="text/css">a.erweima{width:90px; height:155px;text-align:left;background:#f2f2f2;padding:5px;font-size:12px; line-height:20px; display:block;color:#8a898e;position:fixed;bottom:36px;right:0px;_position:absolute;}a:hover.erweima{background:#fefee4; text-decoration:none}.erweima i{width:9px;height:8px; overflow:hidden;background:url(http://img.58cdn.com.cn//ui6/index/indexclose.png) no-repeat;position:absolute;top:10px;right:5px;}a:hover.erweima i{background-position:-9px 0}a.erweima p.endword,a.erweima p.endwordover{text-align:center}</style><script type="text/javascript" src="./【58同城 58.com】北京分类信息 - 本地 免费 高效_files/lottery_draw.php"></script><div class="tooltip" id="historyDialog" style="z-index: 9999; display: none; font-size: 14px; position: absolute; top: 135px; left: 458px; "></div>
+  <style type="text/css">
+  #bbb{
+    width:100%;
+    height:2000px;
+    position:fixed;
+    top:0;
+    left:0;
+    background:black;
+    opacity:0.5;
+    z-index:1900;
+    display:none;
+  }
+  #xiaoxi{
+    position:fixed;
+    width:700px;
+    height:400px;
+    border:5px solid orange;
+    border-radius:8%;
+    background:white;
+    z-index:1901;
+    display:none;
+  }
+  #xiaoxi iframe{
+    width:100%;
+    height:400px;
+  }
+  #xiaoxi .close{
+    display:block;
+    margin:0;
+    padding:0;
+    width:50px;
+    height:50px;
+    background:#eee;
+    font-size:30px;
+    color:#333;
+    float:right;
+    margin-right:20px;
+    margin-top:10px;
+    line-height:50px;
+    text-align:center;
+    border-radius:20%;
+    cursor:pointer;
+
+  }
+  #xiaoxi iframe{
+    width:680px;
+    height:330px;
+  }
+  </style>
+  <div id="bbb">
+   
+  </div>
+ <div id="xiaoxi">
+ <span class="close">X</span>
+ <iframe src="" frameborder="0" name="frame"></iframe>
+      
+</div>
+<script type="text/javascript">
+ var ff = {$ff};
+  // 屏幕宽度
+  var sw = $(window).width();
+  var sh = $(window).height();
+  var xw = $('#xiaoxi').width();
+  var xh = $('#xiaoxi').height();
+  var top1 = (sh-xh)/2;
+  var left = (sw-xw)/2;
+  $('#xiaoxi').css('top',top1+'px');
+  $('#xiaoxi').css('left',left+'px');
+
+  $('#xiaoxi .close').click(function(){
+    $('#bbb').hide();
+    $('#xiaoxi').hide();
+    ff=0
+  })
+  $('#xxi').click(function(){
+    $('#bbb').show();
+    $('#xiaoxi').show();
+    ff=0;
+  })
+
+  var d = 1;
+  
+     setInterval(function(){
+      if(ff>0){
+      if(d%2==1){
+        $('title').eq(0).html('【58同城 58.com】北京分类信息 - 本地 免费 高效');
+        $('#xxi').html('我的消息<span>('+ff+')</span>');
+        $('#xxi span').css('color','red');
+      }else{
+        $('#xxi').html('我的消息(&nbsp;&nbsp;)');
+        $('title').eq(0).html('【'+ff+'条新信息】北京分类信息 - 本地 免费 高效');
+      }
+      d++;
+    }else{
+      $('title').eq(0).html('【58同城 58.com】北京分类信息 - 本地 免费 高效');
+        $('#xxi').html('我的消息');
+    }
+  },1000);
+  
+ 
+</script>
+  </body>
+</html>
+</block>
+

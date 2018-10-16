@@ -1,0 +1,1161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    
+        <title>【北京餐饮美食团购网】专业的北京餐饮美食团购 - 58团购北京</title>
+<link href="__PUBLIC__/Home/shop_files/v4_002.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Home/shop_files/v2.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Home/shop_files/process.css" type="text/css" rel="stylesheet">
+<link href="__PUBLIC__/Home/shop_files/v4.css" type="text/css" rel="stylesheet">
+<link href="__PUBLIC__/Home/shop_files/v3.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="http://pic2.58.com/n/tuan/v3/favicon.ico">
+<script src="__PUBLIC__/Home/shop_files/core.php" charset="utf-8" async="" type="text/javascript"></script><script src="__PUBLIC__/Home/shop_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="__PUBLIC__/Home/shop_files/jquery-1.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop_files/popbox.js"></script>
+<script src="__PUBLIC__/Home/shop_files/jquery.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Home/shop_files/common.js" type="text/javascript"></script>
+<script language="javascript" src="__PUBLIC__/Home/shop_files/jquery_002.js" type="text/javascript"></script>
+<meta property="qc:admins" content="145505626406375"><script src="__PUBLIC__/Home/shop_files/ll.js"></script><script src="__PUBLIC__/Home/shop_files/im_config.js" type="text/javascript"></script><script charset="utf-8" type="text/javascript" src="__PUBLIC__/Home/shop_files/58_list.js"></script><script charset="utf-8" src="__PUBLIC__/Home/shop_files/StdID.js" id="bfd_cache_id"></script><script type="text/javascript" src="__PUBLIC__/Home/shop_files/bcore.js"></script><script charset="utf-8" src="__PUBLIC__/Home/shop_files/PageView.js"></script><script charset="utf-8" src="__PUBLIC__/Home/shop_files/rec_93C8CB06_98A3_C559_7BE2_FB119CA0895E.js"></script></head>
+
+
+<body><div style="display: none;" id="popOverlay"></div><div class="" style="padding-bottom: 14px; padding-right: 14px; display: none;" id="colorbox"><div style="" id="popWrapper"><div style="" id="false"><div style="float: left;" id="popTL"></div><div style="float: left;" id="popTC"></div><div style="float: left;" id="popTR"></div></div><div style="clear: left;" id="false"><div style="float: left;" id="popML"></div><div style="float: left;" id="popContent"><div style="width: 0px; height: 0px; overflow: hidden;" id="popLoadedContent"></div><div style="" id="popLoadingOverlay"></div><div style="" id="popLoadingGraphic"></div><div style="" id="popTitle"></div><div style="" id="popCurrent"></div><div style="" id="popNext"></div><div style="" id="popPrevious"></div><div style="" id="popSlideshow"></div><div style="" id="popClose"></div></div><div style="float: left;" id="popMR"></div></div><div style="clear: left;" id="false"><div style="float: left;" id="popBL"></div><div style="float: left;" id="popBC"></div><div style="float: left;" id="popBR"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;" id="false"></div></div>
+
+<div class="tooltip" id="tooltipdiv"></div>
+<div id="topbar">
+<div class="w">
+<span id="switchCity" class="cityname">北京</span><a href="http://t.58.com/cities" id="switchCityUrl">[切换城市]</a>
+<input id="sessionid" name="sessionid" value="FCEF5F8C59651717A0ED5AE45B499BAF" type="hidden">
+<ul class="topnav">
+<li><a rel="sidebar" title="58团购-惊喜团购每一天！" href="#" onclick="jQuery.addFavorite('http://t.58.com','58团购-惊喜团购每一天！');return false;">收藏</a></li>
+<li id="my58" onmouseover="this.className='hover'" onmouseout="this.className=''">
+    <a target="_blank" href="http://bj.58.com/" class="help">58同城<b class="ico down"></b></a>
+    <div class="sitemapBox">
+        <div class="maplist"> 
+            <a target="_blank" href="http://bj.58.com/house.shtml">房产</a>：
+            <a target="_blank" href="http://bj.58.com/zufang/">租房</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/ershoufang/">买房</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/duanzu/">短租</a><br>
+            <a target="_blank" href="http://bj.58.com/sale.shtml">二手</a>：
+            <a target="_blank" href="http://bj.58.com/diannao/">电脑</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/shouji/">手机</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/jiadian/">家电</a><br>
+            <a target="_blank" href="http://bj.58.com/job.shtml">招聘</a>：
+            <a target="_blank" href="http://bj.58.com/yewu/">销售</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/kefu/">客服</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/zpshengchankaifa/">普工</a><br>
+            <a target="_blank" href="http://bj.58.com/car.shtml">车辆</a>：
+            <a target="_blank" href="http://bj.58.com/ershouche/">汽车</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/zuche/">租车</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/pinche/">拼车</a><br>
+            <a target="_blank" href="http://bj.58.com/searchjob.shtml">求职</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/jianzhi.shtml">兼职</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/huangye/">黄页</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/jiaoyu.shtml">培训</a><br>
+            <a target="_blank" href="http://bj.58.com/piaowu.shtml">票务</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/lvyouxiuxian.shtml">旅游</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/pets.shtml">宠物</a> &nbsp; 
+            <a target="_blank" href="http://bj.58.com/jiaoyou.shtml">交友</a>
+        </div>
+        <div class="mapfuc">
+            <a href="http://my.58.com/">我的58»</a>
+        </div>
+    </div>
+</li>
+<li class="n_phone"><a href="http://t.58.com/help/mobile" target="_blank">手机版<b class="ico phone"></b></a></li>
+<li class="last"><a target="_blank" href="#" rel="nofollow" class="rss" id="headerMailButton" onclick="return false;">邮件订阅<b class="ico mail"></b></a></li>
+</ul>
+</div>
+</div>
+<div id="navlist">
+    <ul>
+        <li id="navbln"><a href="http://bj.58.com/" id="shenghuoinfo">生活信息</a></li>
+        <li class="sel"><a href="http://t.58.com/bj/" id="tuangouinfo">北京团购</a></li>
+        <li><a href="http://bj.58.com/job.shtml" id="zhaopininfo">北京招聘</a></li>
+        <li><a href="http://jiaoyou.58.com/" target="_blank">同城交友</a></li>
+        <li id="navbrn"><a href="http://wan.58.com/" target="_blank">网页游戏</a></li>
+    </ul>
+</div>
+<div id="header">
+<div class="w">
+<a href="http://t.58.com/bj/" id="logo"><img src="__PUBLIC__/Home/shop_files/new_logo.gif" alt="58团购" title="北京团购" height="50" width="188"></a>
+
+<div class="minbanner"><div id="minbanner"><a href="http://t.58.com/help/refund/?linkid=tuikuanbiaoji" class="baohu" rel="nofollow" target="_blank">58团购用户保障机制，15天未消费一键退款</a></div></div>
+<script type="text/javascript">
+var jsonpurl = "/showadvertise?cityname=bj&channelname=tg&adspaceid=1&callback=?";
+$(document).ready(function(){
+    $.getJSON(jsonpurl, function(data) {
+        if(data.adlink!=undefined && data.content!=undefined){
+            if(data.adtype==2){//图片
+                $("#minbanner").html("<a href='"+data.adlink+"' title='"+data.name+"' target='_blank'><img src='"+data.content+"'/></a>");
+            }else if(data.adtype==1){//文字
+                $("#minbanner").html("<a href='"+data.adlink+"' title='"+data.name+"' target='_blank'>"+data.content+"</a>");
+            }else{
+                $("#minbanner").html("<a href='/help/refund/?linkid=tuikuanbiaoji' class='baohu' rel='nofollow' target='_blank'>58团购用户保障机制，15天未消费一键退款</a>");
+            }
+        }else{
+            $("#minbanner").html("<a href='/help/refund/?linkid=tuikuanbiaoji' class='baohu' rel='nofollow' target='_blank'>58团购用户保障机制，15天未消费一键退款</a>");
+        }
+    });
+});
+</script>
+<div id="searhbar" class="rss">
+    <form id="indexSearchForm" method="post">
+      <input value="" id="headercityid" type="hidden">
+      <input class="kw" autocomplete="off" onfocus="idFocus('searchW');" onblur="idBlur('searchW');" onkeyup="keyUpOfById(event , 'searchW');" id="searchW" value="请输入商品、商家名称" type="text">
+      <input value="搜索" class="searchbtn" type="submit">
+
+
+    </form>
+</div>
+    <ul class="search_gjz" style="display:none" id="searchwordUl">
+    </ul>
+    <script type="text/javascript">
+        //获得搜索词返回的结果
+        function addSearchTipHtml(seachWord)
+        {
+            $.post("/bj/searchtip/"+ encodeURI(seachWord),{seachWord:seachWord},function(data)
+            {
+                if(data != "false" && data != "callback5805({\"w\":[]})")
+                {
+                    data = data.replace("callback5805({\"w\":" , "");
+                    data = data.replace("})" , "");
+                    data = data.replace(/["]h["]:\[{/g, "");
+                    data = data.replace(/\]\}/g, "");
+                    var jsonObject = eval('(' + data + ')');
+                    var webHtml = "";
+                    var size = jsonObject.length;
+                    for(i=0 ; i < size ; i++)
+                    {
+                        var json = jsonObject[i];
+                        var tmp1 = json.k;
+                        var tmp2 = json.v;
+                        var city = "bj";
+                        webHtml += "<li id='searchli"+ i +"' onmouseover=\"addLiClass('searchli"+i+"');\"  "+
+                                " onclick=\"addSearchWord('searchid" + i + "' , '"+city+"');\"  ><a id='searchid"+ i  +"' href='javascript:void(0);'>"
+                                + (json.k).replace(json.v, "<b>" + json.v + "</b>") + "</a></li>";
+
+                    }
+
+
+                    $("#searchwordUl").html(webHtml);
+
+//                    var position = null;
+//                    if(searchNum == 1)
+//                        position = $("#searhbar").offset();
+//                    else
+//                        position = $("#l_search").offset();
+                    $("#searchwordUl").css({"display":"block"});
+                }
+                else{
+                    $("#searchwordUl").css({"display":"none"});
+                    $("#searchwordUl").html("");
+                    boolClose = true;
+                }
+
+            });
+
+        };
+        $().ready(function(){
+            $("#indexSearchForm").submit( function () {
+                var value = $.trim($('#searchW').val());
+                if(value == "" || value == "请输入商品、商家名称")
+                    return false;
+                else{
+
+                    value = replaceAllSymbol(value);
+                    $("#indexSearchForm").attr("action","/bj/g_s/" + encodeURI(value) + "/");
+                }
+            });
+
+        });
+    </script>
+<div id="hotkeys"><a href="http://t.58.com/bj/p_wlgw/huazp/" title="护肤美妆" target="_blank">护肤美妆</a> <a href="http://t.58.com/bj/p_wlgw/xie/" title="冬季鞋靴" target="_blank">冬季鞋靴</a> <a href="http://t.58.com/bj/p_wlgw/shumajd/" title="家居用品" target="_blank">家居用品</a> </div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $.getJSON("/hotwords?cityname=bj&channelname=tg&adspaceid=2&callback=?", function(data){
+        var divValue = "";
+        if(data.hotwords!=undefined){
+            for(var i=0; i<data.hotwords.length; i++){
+                divValue += "<a href='"+data.hotwords[i].adlink+"' title='"+data.hotwords[i].name+"' target='_blank'>"+data.hotwords[i].content+"</a> ";
+            }
+        }
+        $("#hotkeys").html(divValue);
+    });
+});
+</script>
+</div>
+    <div class="nav_bj">
+        <div id="navbar">
+                    <ul class="nav" id="nav">
+            <li id="nav_0"><a href="http://t.58.com/bj/"><span>首页</span></a></li>
+                    <li class="cur" id="nav_1"><a href="http://t.58.com/bj/meishi/"><span>美食</span></a></li>
+            <li id="nav_2"><a href="http://t.58.com/bj/xiuxian/"><span>娱乐</span></a></li>
+            <li id="nav_3"><a href="http://t.58.com/bj/shenghuo/"><span>生活</span></a></li>
+                        <li id="nav_7"><a href="http://t.58.com/bj/p_wlgw/"><span>网购</span></a></li>
+            <!-- <li id="nav_11"><a  href="/bj/kaquan/"><span>卡券</span></a></li> -->
+            <li id="nav_9"><a href="http://t.58.com/hotel/bj/"><span>酒店</span></a></li>
+            <li id="nav_10"><a href="http://t.58.com/travel/bj/"><span>旅游</span></a></li>
+           <!--<li id="nav_12"><a  href="/bj/p_hzp"><span>化妆品</span></a></li>
+            < li id="nav_6" class="jp_tj_icon" >
+                <!--<a  href="/bj/jipiao/"><span>机票</span></a>
+            </li>-->
+           <!--<li id="nav_8"><a  href="/bj/brand/"><span>美妆特卖</span></a></li> -->
+        </ul>
+                <!--ennamePartner: meishi -->
+        <script type="text/javascript">
+                        var url=document.location.href;
+        if(url.indexOf('kaquan')>=0) {
+            $("#nav_11").addClass("cur");
+        } else if((url.indexOf('meishi') >= 0 || 0 >= 0) &&  url.indexOf('category')==-1  ){
+            $("#nav_1").addClass("cur");
+        }else if(url.indexOf('meirongmeifa') >= 0 || -1 >= 0 ){
+            $("#nav_4").addClass("cur");
+        }else if(url.indexOf('hotel') >=0){
+            $("#nav_9").addClass("cur");
+        }else if(url.indexOf('travel')>=0){
+            $("#nav_10").addClass("cur");
+        }else if( (url.indexOf('wlgw') >=0 || -1 >= 0) && url.indexOf('category')==-1 ){
+            $("#nav_7").addClass("cur");
+       }else if( (url.indexOf('hzp') >=0 || -1 >= 0) && url.indexOf('category')==-1 ){
+            $("#nav_12").addClass("cur");
+       
+        }else if(url.indexOf('help') >=0){
+        }else if( (url.indexOf('xiuxian') >= 0 || -1 >= 0) && url.indexOf('category')==-1  ){
+            $("#nav_2").addClass("cur");
+        }else if( (url.indexOf('shenghuo') >= 0 || -1 >= 0) &&  url.indexOf('category')==-1  ){
+            $("#nav_3").addClass("cur");
+        }else if(url.indexOf('jipiao')>=0){
+            $("#nav_6").addClass("cur");
+            $("#tj_icon_nav_6").hide();
+        }else if(url.indexOf('pinpaijd')>=0){
+            $("#nav_9").addClass("cur");
+        }else if(url.indexOf('brand') >=0){
+            $("#nav_8").addClass("cur");
+        }else {
+            $("#nav_0").addClass("cur");
+        }
+        //删除cookie
+        function delCookie(name){
+       //document.cookie = name+"=;expires="+(new Date(0)).toGMTString();    
+        var exp = new Date();
+        exp.setTime(exp.getTime() - 1);
+        var cval= "";
+        document.cookie= name + "="+cval+";path=/;domain=.58.com;expires="+exp.toGMTString();
+        }
+        function logoutfun(path){
+    //清除指定的cookie
+    //var userid = '';
+    //alert("index==>"+userid);
+    delCookie("order_tooltip");
+    //$.cookie("uc_"+username,null,{path:"/",domain:".58.com",expires:10});
+    document.location.href = "https://passport.58.com/logout?back=now&path="+path;
+        }
+        </script>
+        <ul class="loginbar logined" name="uc1" id="uc" style="display:none">
+            <li class="ucname">Hi，<span id="appnick"></span></li>
+            <li class="ulist" id="ulist_uc"><a href="http://t.58.com/usercenter/bj/index/">我的团购</a>
+                <ul class="downlist" style="display:none;">
+            <li><a id="inheaderMy58" href="http://t.58.com/usercenter/bj/orderlist/all/1?r=0.6179939174671458">我的交易</a></li>
+            <li><a id="inheaderMyMon" href="http://t.58.com/usercenter/bj/mymoney/1/?r=0.03749274776099665">58交易宝</a></li>
+                    <li><a id="inheaderMyCou" href="http://t.58.com/usercenter/bj/couponlist/nouse/1?r=0.04436214228133373">我的代金券</a></li>
+            <li><a id="inheaderMyCom" href="http://t.58.com/usercenter/comments/0/1/?r=0.3462676508363448">我的点评</a></li>
+            <li><a id="inheaderMyAc" href="http://t.58.com/usercenter/bj/userinfo/?r=0.6181403187284361">账号设置</a></li>
+            <li><a id="inheaderMyQ" href="http://t.58.com/usercenter/bj/answer/all/1/?r=0.08159617834225985">咨询/投诉</a></li>
+            <li class="shadow"></li>
+        </ul>
+    </li>
+    
+    <li><a id="logout1" onclick="javascript:logoutfun('http%3A%2F%2Ft.58.com%2Fbj%2Fmeishi%2F');" href="#">退出</a></li>
+        </ul>
+                 <ul class="loginbar nologin" name="uc2" style="">
+    <li><a href="https://passport.58.com/pso/tglogin?city=bj&amp;path=http%3A%2F%2Ft.58.com%2Fbj%2Fmeishi%2F">登录</a></li>
+    <li><a href="http://t.58.com/usercenter/bj/register?path=http%3A%2F%2Ft.58.com%2Fbj%2Fmeishi%2F">注册</a></li>
+        <li class="ulist" id="ulist_his">
+        <a href="javascript:void(0)">浏览记录</a>
+        <div style="display:none;" class="liu_jl">
+          <p class="tp_xt"></p>
+          <p class="w_jl">没有最近的浏览记录</p>
+        </div>
+    </li></ul>
+
+
+<script type="text/javascript">
+$("ul.downlist li a").each(function(){$(this).attr("href",$(this).attr("href")+"?r="+Math.random());});
+$("#ulist_uc").hover(
+        function(){
+            $(this).addClass('u_hover');
+            $('#ulist_uc>.downlist').show();
+        },
+        function(){
+            $('#ulist_uc>.downlist').hide();
+            $(this).removeClass('u_hover');
+        });
+$("#ulist_his").hover(
+        function(){
+            $(this).addClass('u_hover');
+            try{
+                bh.readCookie();bh.show();
+            }catch(e){}
+            $('#ulist_his>.liu_jl').show();
+        },
+        function(){
+            $('#ulist_his>.liu_jl').hide();
+            $(this).removeClass('u_hover');
+        });
+</script>
+<script>
+function addNoPayOrderNotice(cityname){
+    $("#noPayOrder_tooltip_close").live('click',function(){
+        $("#noPayOrder_tooltip").hide();
+        $.cookie('noPayOrder_tooltip',0,{expires:24, path:'/', domain:'58.com'});                       
+    });
+    var tip = $.cookie('noPayOrder_tooltip');
+    if(tip!=0){
+        $.ajax({
+            url:'/order/buy/'+cityname+'/nopayordercount/',
+            data:"tt="+(new Date()).valueOf(),
+            success:function(data){
+                try{
+                    var count = parseInt(data);
+                    if(count>0 && !isNaN(count)){
+                        var text = '<div class="msgTips" id="noPayOrder_tooltip" style=""><i class="msgTips_arrow"></i><div class="msgTips_con"><em class="zf_ts"></em>您有<strong class="red">'+count+'</strong>个未付款订单，<a href="http://t.58.com/usercenter/'+cityname+'/orderlist/nopay/1/">立即查看</a></div><i id="noPayOrder_tooltip_close" class="close" title="知道了"></i><i class="shadow"></i></div>';
+                        $("#navbar").append(text);
+                    }
+                }catch(e){
+                }
+            }
+        });
+    }
+}
+
+
+function addNoCommentOrderNotice(cityname){
+    $("#noCommentOrder_tooltip_close").live('click',function(){
+        $("#noCommentOrder_tooltip").hide();
+        $.cookie('noCommentOrder_tooltip',0,{expires:24, path:'/', domain:'58.com'});
+    });
+    var tip = $.cookie('noCommentOrder_tooltip');
+    if(tip!=0){
+        $.ajax({
+            url:'/order/buy/'+cityname+'/nocommentcount/',
+            data:"tt="+(new Date()).valueOf(),
+            success:function(data){
+                try{
+                    var count = parseInt(data);
+                    if(count>0 && !isNaN(count)){
+                        var text = '<div class="msgTips" id="noCommentOrder_tooltip" style=""><i class="msgTips_arrow"></i><div class="msgTips_con"><em class="zf_ts"></em>您还有未评价的订单，<a href="http://t.58.com/usercenter/'+cityname+'/orderlist/haspay/1/">立即评价&gt;&gt;</a></div><i id="noCommentOrder_tooltip_close" class="close" title="知道了"></i><i class="shadow"></i></div>';
+                        $("#navbar").append(text);
+                    }
+                }catch(e){
+                }
+            }
+        });
+    }
+}
+
+var product;
+var productlist = new Array();
+var tem;
+var username;
+function getUserInfo(){
+    var info = null;
+            var userurl = "/bj/showuserinfo/";
+        var _href = document.location.href;
+    if(_href.indexOf("/cities") > 0){
+        userurl = "/bj/showuserinfo/";
+    }
+    if(_href.indexOf("/help") > 0){
+                    $("ul[name='uc1']").hide();
+            $("ul[name='uc2']").show(); 
+                return;
+    }
+    jQuery.ajax({
+        type:"get",
+        url:userurl+"?"+Math.random(),
+        async:false,
+        success:function(data){ 
+                var ret = eval("(" + data + ")");
+                user = ret.user;
+                var isMailTipsHide = ret.isMailTipsHide;        
+                var url = document.location.href;
+                var urlShare = document.location.href;
+                var mailAddr = ret.MailAddr;
+                var rank = ret.rank;
+                cityename = ret.cityename;
+                cityname = ret.cityname;
+                if(cityname =='undefined'){
+                    cityame = '北京';
+                    cityename = 'bj';
+                }           
+                $("#switchCity").text(cityname);
+                var userid = "";
+                var returnurl = document.location.href;
+                if(returnurl.indexOf("\?") > 0){
+                    var urls = returnurl.split("\?");
+                    returnurl = urls[0];
+                }
+                if(user != null && user !='undefined' && user.username!=''){
+                    userid = user.userid;
+                    url = "http://t.58.com/invite/bj/"+user.invitecode;
+                    urlShare = url+"?path="+urlShare;
+                    product = {
+                               "name":'',
+                               "shortname":"",
+                               "image":"",
+                               "address":"北京",
+                               "url":url,
+                               "urlShare":urlShare
+                           };
+                    if(isMailTipsHide!='true'){
+                        $("#mailTips").show();
+                        $("#usermail").text(user.email);
+                    }
+                       
+                    $("ul[name='uc1']").show();
+                    $("ul[name='uc2']").hide();
+                    if($('.n_zx').length){
+                        $('.n_zx').show();
+                    }
+                    if(ret.appnick){
+                        $("#appnick").html(subviewstr(ret.appnick,16));
+                                                
+                    }else if(!ret.appnick){
+                        $("#appnick").html(subviewstr(user.username,16));
+                    }
+                    username =$("#appnick").text();
+                    addNoPayOrderNotice(cityename);
+                    addNoCommentOrderNotice(cityename);
+                }else{
+                    $("ul[name='uc1']").hide();
+                    $("ul[name='uc2']").append($('#ulist_his'));
+                    $("ul[name='uc2']").show(); 
+                    var hrefi ="https://passport.58.com/pso/tglogin?city="+cityename+"&path="+returnurl;
+                    var hrefj = "/usercenter/"+cityename+"/register?path=" +returnurl;
+                    $("#denglu").attr("href",hrefi);
+                    $("#zhuce").attr("href",hrefj);
+                }
+                
+                var showRefund = ret.showRefund;
+                var showBound = ret.showBound;
+                var refundHide = ret.refundHide;
+                var hidebound = ret.hidebound;
+                
+                if(refundHide == undefined || refundHide == null){
+                    refundHide = 'false';
+                }
+                if(hidebound == undefined || hidebound == null){
+                    hidebound = 'false';
+                }
+                if(user != null && user !='undefined' && user.inviteuserid > 0) {
+                    if( showRefund == true && user.returnstate == 0  && refundHide == 'false' ){$("#refundTip").show();}
+                    if( showBound == true && user.returnstate == 0  && hidebound == 'false' ){$("#boundTip").show();}
+                    
+                }
+                info = "{'user':'"+userid+"','cityenname':'"+cityename+"','cityname':'"+cityname+"'}";
+            }
+        });
+        var now = new Date();    
+        if(user!=null&&user!='undefined'&&user.inviteuserid>0&&user.isbound==0&&(now.getTime()-user.firstlogintime.time<86400000)&&user.returnstate!=2){
+            var url = 'http://t.58.com/usercenter/bj/bound/first?path='+window.location;
+            $("#mobileUrl").attr("href",url);
+        }
+        return info;  
+}
+function hidetips(){
+    jQuery.ajax({url: "/ajax/hidetips",type: 'post'});
+    $("#mailTips").hide();
+}
+
+function hideRefundTip(){
+    jQuery.ajax({url: "/ajax/hiderefund",type: 'post'});
+    $("#refundTip").hide();
+}
+info = getUserInfo();
+</script>
+        </div>
+    </div>
+</div>
+<input id="hcityname" name="thcityname" value="北京" type="hidden">
+<div class="none" style="display:none">
+    <!-- step1 -->
+    <div id="yjdy1">
+        <form id="personalityForm_email" name="personalityForm_email" method="post" onsubmit="return false;">
+            <input id="cityenname_email" name="cityenname_email" value="bj" type="hidden">
+            <table class="emailfeed" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr>
+                <th scope="row">邮箱：</th>
+                <td width="200">
+                <input id="headerMailInput" class="text" value="输入Email,订阅每日团购信息" autocomplete="off" maxlength="100" type="text">                                      
+                 <div id="mail_auto" style="background: none repeat scroll 0 0 #FFFFFF;
+                                            border: 1px solid #ABC553;
+                                            left: 142px;
+                                            position: absolute;
+                                            top: 60px;
+                                            width: 205px;                                           
+                                            height:120px;                                          
+                                            overflow-y: scroll;
+                                            overflow-x: hidden;
+                                            display:none;
+                                           "></div>                                        
+                </td>
+                <td width="150"><span id="email_error" class="red" style="display:none">请正确输入Email地址.</span></td>
+              </tr>
+              <tr>
+                <th scope="row">我在：</th>
+                <td>
+                <select class="i_select" id="dy_city_email" name="dy_city_email" size="1">
+                    <option selected="selected" value="bj">北京</option>           
+                </select>
+               </td>
+               <td></td>
+              </tr>
+              <tr>
+                <th scope="row"> </th>
+                <td>
+                <span class="ncbtn orange"><input id="submit_emailsub_1" value="确定" type="button"></span>
+                <span class="ncbtn"><input class="cancel" value="取消" type="button"></span></td>
+              </tr>
+            </tbody></table>
+        </form> 
+    </div>
+
+<!-- step2 -->
+<div id="yjdy2"><div class="suctip"><h2>恭喜您，订阅成功！</h2><br></div></div>
+</div>
+
+<script type="text/javascript">
+//添加到收藏夹方法
+jQuery.addFavorite=function(sURL, sTitle){
+    try{
+        window.external.addFavorite(sURL, sTitle);
+    }catch (e){
+        try{
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }catch (e){
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }   
+}
+</script>
+<script>
+    $(document).ready(function(){
+        jQuery.count();
+    });
+</script>
+<script type="text/javascript">
+     </script>
+<script src="__PUBLIC__/Home/shop_files/count.js" type="text/javascript"></script>
+
+
+<div class="mtips" style="position:relative;display:none" id="mailTips">您的邮箱<span class="red" id="usermail"></span>尚未验证，为及时收到重要邮件通知<a href="javascript:void(0);" onclick="verifyEmail()">请验证邮件</a><em class="close" onclick="hidetips();">close</em></div>
+
+
+
+
+
+
+<div class="box_bj">
+
+
+<div class="n_filter">
+
+
+
+
+
+
+<dl class="n_selitem">
+    <dt>类别：</dt>
+    <dd row="2">
+        <label class="sq_m" style="display: none;">更多</label>
+                                                <a class="qb n_select"><em>全部</em></a>
+                        
+        
+                        
+                                        <a href="http://t.58.com/bj/zhongcan/" class="addca"><em>中餐<span>(500)</span></em></a>
+                                                <a href="http://t.58.com/bj/huoguo/" class="addca"><em>火锅<span>(324)</span></em></a>
+                                                <a href="http://t.58.com/bj/tianpin/" class="addca"><em>蛋糕甜品<span>(266)</span></em></a>
+                                                <a href="http://t.58.com/bj/zizhucan/" class="addca"><em>自助餐<span>(221)</span></em></a>
+                                                <a href="http://t.58.com/bj/xckuaican/" class="addca"><em>小吃快餐<span>(158)</span></em></a>
+                                                <a href="http://t.58.com/bj/shaokao/" class="addca"><em>烧烤烤肉<span>(143)</span></em></a>
+                                                <a href="http://t.58.com/bj/xican/" class="addca"><em>西餐<span>(122)</span></em></a>
+                                                <a href="http://t.58.com/bj/haixian/" class="addca"><em>海鲜<span>(95)</span></em></a>
+                                                <a href="http://t.58.com/bj/rihanliaoli/" class="addca"><em>日韩料理<span>(46)</span></em></a>
+                                                <a href="http://t.58.com/bj/kafeiting/" class="addca"><em>咖啡茶馆<span>(41)</span></em></a>
+                                                <a href="http://t.58.com/bj/qitameishi/" class="addca"><em>其他美食<span>(38)</span></em></a>
+                                    </dd>
+</dl>
+
+
+<!-- 针对网络购物，显示二级分类开始 -->
+<!-- 针对网络购物，显示二级分类结束 -->
+
+<!-- 针对网络购物，在首页限时网络购物的一级分类 -->
+<!-- 针对网络购物，在首页限时网络购物的一级分类 -->
+<dl class="n_selitem">
+    <dt>商圈：</dt>
+    <dd class="fold1" row="1" id="hashideDiv">
+        <label class="sq_m" style="">更多</label>
+                <span class="qb n_select"><em>全部</em></span>
+                                        <a href="http://t.58.com/bj/chaoyang/meishi/" class="addca"><em>朝阳<span>(136)</span></em></a>
+                                                                        <a href="http://t.58.com/bj/haidian/meishi/" class="addca"><em>海淀<span>(72)</span></em></a>
+                                                <a href="http://t.58.com/bj/fengtai/meishi/" class="addca"><em>丰台<span>(69)</span></em></a>
+                                                <a href="http://t.58.com/bj/dongcheng/meishi/" class="addca"><em>东城<span>(43)</span></em></a>
+                                                <a href="http://t.58.com/bj/changping/meishi/" class="addca"><em>昌平<span>(34)</span></em></a>
+                                                <a href="http://t.58.com/bj/tongzhouqu/meishi/" class="addca"><em>通州<span>(32)</span></em></a>
+                                                <a href="http://t.58.com/bj/xicheng/meishi/" class="addca"><em>西城<span>(24)</span></em></a>
+                                                <a href="http://t.58.com/bj/daxing/meishi/" class="addca"><em>大兴<span>(19)</span></em></a>
+                                                <a href="http://t.58.com/bj/xuanwu/meishi/" class="addca"><em>宣武<span>(18)</span></em></a>
+                                                <a href="http://t.58.com/bj/chongwen/meishi/" class="addca"><em>崇文<span>(18)</span></em></a>
+                                                <a href="http://t.58.com/bj/shunyi/meishi/" class="addca"><em>顺义<span>(16)</span></em></a>
+                                                <a href="http://t.58.com/bj/mentougou/meishi/" class="addca"><em>门头沟<span>(10)</span></em></a>
+                                                <a href="http://t.58.com/bj/fangshan/meishi/" class="addca"><em>房山<span>(6)</span></em></a>
+                                                <a href="http://t.58.com/bj/shijingshan/meishi/" class="addca"><em>石景山<span>(6)</span></em></a>
+                                                <a href="http://t.58.com/bj/miyun/meishi/" class="addca"><em>密云<span>(3)</span></em></a>
+                                                <a href="http://t.58.com/bj/other/meishi/" class="addca"><em>其他<span>(84)</span></em></a>
+                <div class="clear"></div>
+                    </dd>
+</dl>
+<script>
+    (function($){
+        var unfold = '收起',fold = '更多';
+        $('.n_selitem').each(function(){
+            var t = $(this);
+            var dd = t.find('dd');
+            var foldObj = t.find('label[class$=sq_m]');
+            var shangquan = t.find('div[class$=d_sq]');
+            var row = dd.attr('row');
+            if(dd.height() > 25*row)
+            {
+                dd.attr('class','fold'+row);
+                //alert(t.find('a.n_select').length);
+                var position = t.find('a.n_select').position();
+                //alert(position);
+                if((position && position.top>25*row) || shangquan.length > 0){
+                    dd.addClass('autoHeight');
+                    foldObj.attr('class','s_sq').text(unfold).show();
+                    foldObj.append("<i class='sq_s'>");
+                }else{
+                    foldObj.attr('class','sq_m').text(fold).show();
+                };
+            }
+            foldObj.click(function(){
+                var tag = $(this).attr('class');
+                if(tag == 'sq_m'){
+                    dd.addClass('autoHeight');
+                    foldObj.attr('class','s_sq').text(unfold).show();
+                    foldObj.append("<i class='sq_s'>");
+                }else{
+                    dd.removeClass('autoHeight');
+                    foldObj.attr('class','sq_m').text(fold).show();
+                }
+                return false;
+            })
+        })
+    })(jQuery);
+</script>
+
+<div class="n_sortbar">
+    <ul class="n_sortor">
+                <li class="cur"><a href="#">默认排序</a></li>
+                        <li><a class="addca" href="{:U('Home/Shop/index')}?price=1">价格<i class="n_arrw"></i></a></li>
+                        <li><a class="addca" href="{:U('Home/Shop/index')}?xiaoliang=1">销量<i class="n_arrw1"></i></a></li>
+                        <li><a class="addca" href="">今日新单</a></li>
+            </ul>
+    <div class="topager">
+        <div class="headtitle">
+            <h1>北京餐饮美食团购</h1>
+            <label>共<span class="red">1943</span>个团购</label>  <span class="red">1</span>/33页
+                                     <span class="fy_s"></span><a class="fy_x addca" href="http://t.58.com/bj/meishi/p2/" title="下一页2"></a>  
+        </div>
+
+
+    </div>
+
+</div>
+</div>
+<!-- 展示左侧的导航 -->
+<link href="__PUBLIC__/Home/shop_files/new_tindex.css" rel="stylesheet">
+<!-- 添加导航 start -->
+<div class="topLeftFixdiv">
+  <h1><a href="http://t.58.com/bj">首页</a></h1>
+  <ul class="topLeftFixdiv_ul">
+    <li class="li1"><a href="http://t.58.com/bj/meishi/" class="haveBtn" target="_blank">美食</a>
+      <div class="showDiv">
+        <a href="http://t.58.com/bj/zhongcan/"><em>中餐</em></a>
+        <a href="http://t.58.com/bj/xckuaican/"><em>小吃快餐</em></a>
+        <a href="http://t.58.com/bj/kaoyu/"><em>香锅烤鱼</em></a>
+        <a href="http://t.58.com/bj/tianpin/"><em>蛋糕甜品</em></a>
+        <a href="http://t.58.com/bj/zizhucan/"><em>自助餐</em></a>
+        <a href="http://t.58.com/bj/rihanliaoli/"><em>日韩料理</em></a>
+        <a href="http://t.58.com/bj/xckuaican/"><em>海鲜</em></a>
+        <a href="http://t.58.com/bj/dongnanya/"><em>东南亚菜</em></a>
+        <a href="http://t.58.com/bj/qitameishi/"><em>其他美食</em></a>
+      </div>
+    </li>
+    <li class="li2"><a href="http://t.58.com/bj/xiuxian/" class="haveBtn" target="_blank">娱乐</a>
+      <div class="showDiv">
+        <a href="http://t.58.com/bj/zyanmo/"><em>足疗按摩</em></a>
+                <a href="http://t.58.com/bj/jianshen/"><em>运动健身</em></a>
+                <a href="http://t.58.com/bj/menpiao/"><em>景点门票</em></a>
+                <a href="http://t.58.com/bj/ktv/"><em>KTV</em></a>
+                <a href="http://t.58.com/bj/yuantuyou/"><em>国内游</em></a>
+                <a href="http://t.58.com/bj/wenquan/"><em>温泉</em></a>
+                <a href="http://t.58.com/bj/xiyu/"><em>洗浴</em></a>
+                <a href="http://t.58.com/bj/jiuba/"><em>酒吧</em></a>
+                <a href="http://t.58.com/bj/zhoubianyou/"><em>周边游</em></a>
+                <a href="http://t.58.com/bj/dianyingpiao/"><em>电影片</em></a>
+                <a href="http://t.58.com/bj/zhuoqiu/"><em>桌球</em></a>
+      </div>
+    </li>
+    <li class="li3"><a href="http://t.58.com/hotel/bj/" class="haveBtn" target="_blank">酒店</a></li>
+    <li class="li4"><a href="http://t.58.com/travel/bj/" class="haveBtn" target="_blank">旅游</a></li>
+    <li class="li5"><a href="http://t.58.com/bj/shenghuo/" class="haveBtn" target="_blank">生活</a>
+      <div class="showDiv">
+        <a href="http://t.58.com/bj/meijia/"><em>美甲</em></a>
+                <a href="http://t.58.com/bj/meifa/"><em>美发</em></a>
+                <a href="http://t.58.com/bj/meirongspa/"><em>美容SPA</em></a>
+                <a href="http://t.58.com/bj/xiezhen/"><em>个性写真</em></a>
+                <a href="http://t.58.com/bj/hunshasy/"><em>婚纱摄影</em></a>
+                <a href="http://t.58.com/bj/ertongsheying/"><em>儿童摄影</em></a>
+                <a href="http://t.58.com/bj/qiche/"><em>汽车服务</em></a>
+                <a href="http://t.58.com/bj/jiankang/"><em>体检保健</em></a>
+                <a href="http://t.58.com/bj/jiazhengfw/"><em>家政服务</em></a>
+      </div>
+    </li>
+    <li class="li6"><a href="http://t.58.com/bj/p_wlgw/" class="haveBtn" target="_blank">网购</a>
+      <div class="showDiv">
+        <a href="http://t.58.com/bj/p_wlgw/jiafang/"><em>精品家纺</em></a>
+                <a href="http://t.58.com/bj/p_wlgw/fuzhuang/"><em>服装</em></a>
+                <a href="http://t.58.com/bj/p_wlgw/xiuxianshipin/"><em>休闲食品</em></a>
+                <a href="http://t.58.com/bj/p_wlgw/shumajd/"><em>家居数码</em></a>
+                <a href="http://t.58.com/bj/p_wlgw/xie/"><em>鞋</em></a>
+                <a href="http://t.58.com/bj/p_wlgw/xbsp/"><em>箱包饰品 </em></a>
+      </div>
+    </li>
+    <li class="li7">
+        <form id="leftindexSearchForm" method="post">
+          <input class="sevenInput" id="leftsearchW" type="text">
+          <input class="searchBtn" style="border:none" value="" type="submit">
+        </form>
+    </li>
+  </ul>
+</div>
+<!-- 添加导航 end -->
+<script type="text/javascript">
+$().ready(function(){
+    $("#leftindexSearchForm").submit( function () {
+        var value = $.trim($('#leftsearchW').val());
+        if(value == "")
+            return false;
+        else{
+            value = replaceAllSymbol(value);
+            $("#leftindexSearchForm").attr("action","/bj/g_s/" + encodeURI(value) + "/");
+        }
+    });
+
+});
+</script><div id="main">
+<div class="listerouter">
+<div class="lister">
+        <!-- 首页团购广告-->
+    
+            <!-- 存在团购内容123-->
+                                                                                                                                        
+
+<foreach name="goods" item="vo">
+
+<dl id="gb__liebiao_1" class="tuanitem liebiao liebiao">
+            <dt>
+            <a id="firsturl_1" linkid="bj_liebiao_cyms_1" class="addlinkid" href="{:U('Home/Shop/detail')}?id={$vo['id']}" target="_blank">
+                <!-- <img width="294" height="184" class="lazy" alt="保利大厦：单人自助茶餐，节假日通用" isrc="http://t4.58cdn.com.cn/groupbuy/n_v1bkuyfvk22y3vne4mwvza_294_184.jpg" src="http://pic2.58.com/n/tuan/v4/img/loading.gif?v=2"> -->
+                <img class="lazy" alt="保利大厦：单人自助茶餐，节假日通用" src="__PUBLIC__{$vo['pic']}" height="184" width="294">
+            </a>
+            <i class="localmask" style="display:none;"></i>
+                                                <div class="local" title="东四十条" style="display:none;">
+                        <p>商家：{$vo['shang']}</p>
+                        <p>商家地址：{$vo['addr']}</p>
+                    </div>
+                                </dt>           
+    <dd class="des">
+        <h2>
+                        <a id="secondurl_1" linkid="bj_liebiao_cyms_1" target="_blank" href="http://www.lashou.com/deal/11862020.html?union_pid=111957107&amp;linkid=bj_liebiao_cyms_1" title="保利大厦：单人自助茶餐，节假日通用" class="c_b addlinkid">
+                {$vo['title']}
+            </a>
+        </h2>
+        <div class="gobuy">
+            <a id="thirdurl_1" linkid="bj_liebiao_cyms_1" href="http://www.lashou.com/deal/11862020.html?union_pid=111957107&amp;linkid=bj_liebiao_cyms_1" target="_blank" class="golook addlinkid">去抢购</a>
+            <span class="nprice dacuprice">
+                <i>¥</i>{$vo['price']}              </span>                             
+        </div>
+    </dd>
+    <dd class="btmbar">         
+        <span class="savemoney">zhe折</span>
+        <span class="oprice">原价：¥{$vo['yprice']}</span>
+                    <span class="ordernums"><b>0</b>人已购买</span>
+            </dd>
+    <dd class="new_last_dd">
+                <div class="new_last_dd_div"> 
+            <a class="other_w" href="http://www.lashou.com/" target="_blank">拉手网</a>                            <a href="http://t.58.com/bj/111840834159108014/" class="xiangq" target="_blank">详情</a>                                      <a href="http://t.58.com/bj/zizhucan/" class="thesame_w" target="_blank">类似团购</a>                       </div>
+    </dd>
+        </dl>
+</foreach>
+
+                                                                <div class="clear"></div>
+    <script>d();$(window).scroll(function(){d()});</script>
+</div>
+
+<div class="pager">
+
+        
+
+                <input value="0:/bj/meishi/p#page#/" type="hidden">
+    <input value="1:/bj/meishi/" type="hidden">
+     <span class="p_cur"><span>1</span></span>
+      <a class="addca" href="http://t.58.com/bj/meishi/p2/"><span>2</span></a>
+    <a class="addca" href="http://t.58.com/bj/meishi/p3/"><span>3</span></a>
+    <a class="addca" href="http://t.58.com/bj/meishi/p4/"><span>4</span></a>
+    <a class="addca" href="http://t.58.com/bj/meishi/p5/"><span>5</span></a>
+ <a class="addca" href="http://t.58.com/bj/meishi/p6/"><span>6</span></a>
+    <a class="addca" href="http://t.58.com/bj/meishi/p7/"><span>7</span></a>
+   <a class="addca" href="http://t.58.com/bj/meishi/p8/"><span>8</span></a>
+     <a class="addca" href="http://t.58.com/bj/meishi/p9/"><span>9</span></a>
+<a class="addca" href="http://t.58.com/bj/meishi/p10/"><span>10</span></a>
+                                                    <a class="p_next addca" href="http://t.58.com/bj/meishi/p2/"><span>下一页</span></a>
+                <a class=" addca" href="http://t.58.com/bj/meishi/p33/"><span>末页</span></a>
+        <div class="allcount">北京餐饮美食团购 
+     共<span class="red">
+    1943</span>条/每页<span class="red">
+    60</span>条</div>
+    </div>
+
+
+<div tmph="134" class="l_tj" style="" id="container_rmtj">
+    <div class="l_bar"><b>看过餐饮美食团购的用户还看过</b><a href="http://www.baifendian.com/" target="_blank" class="bfd_img_logo" title="百分点推荐引擎"></a></div>
+    <div class="lister_4" id="container_rmtj4s"><dl class="rdl_2">
+    <dt>
+        <a href="http://t.58.com/bj/111708665163780014/?linkid=bj_bfd_meishi__1" target="_blank" title="单人餐，免费打包">
+            <img src="__PUBLIC__/Home/shop_files/n_v1bkuyfvp34uzvnv4gjjza_55d4758bfcef8c23.jpg" height="131" width="210">单人餐，免费打包
+        </a>
+    </dt>
+    <dd class="info">
+        <span class="ltext">
+            <i>¥</i>
+            95
+        </span>
+        <span class="rtext">0人已购买</span>
+    </dd>
+    <dd class="zk_t"><b>8.64</b>折</dd>
+</dl>
+<dl class="rdl_2">
+    <dt>
+        <a href="http://t.58.com/bj/111000411685893013/?linkid=bj_bfd_meishi__2" target="_blank" title="现金抵用1次，免费WiFi，免费停车">
+            <img src="__PUBLIC__/Home/shop_files/n_v1bkuyfvlfmipvm3726mhq_55d4758bfcef8c23.jpg" height="131" width="210">现金抵用1次，免费WiFi，免费停车
+        </a>
+    </dt>
+    <dd class="info">
+        <span class="ltext">
+            <i>¥</i>
+            88
+        </span>
+        <span class="rtext">0人已购买</span>
+    </dd>
+    <dd class="zk_t"><b>8.8</b>折</dd>
+</dl>
+<dl class="rdl_2">
+    <dt>
+        <a href="http://t.58.com/bj/111708699077636010/?linkid=bj_bfd_meishi__3" target="_blank" title="现金抵用1次，可叠加使用">
+            <img src="__PUBLIC__/Home/shop_files/n_v1bl2lwtj54yzvmhsgfjjq_7b68319d66fe5558.jpg" height="131" width="210">现金抵用1次，可叠加使用
+        </a>
+    </dt>
+    <dd class="info">
+        <span class="ltext">
+            <i>¥</i>
+            79
+        </span>
+        <span class="rtext">0人已购买</span>
+    </dd>
+    <dd class="zk_t"><b>7.9</b>折</dd>
+</dl>
+<dl class="rdl_2">
+    <dt>
+        <a href="http://t.58.com/bj/94832183660548013/?linkid=bj_bfd_meishi__4" target="_blank" title="二姐粤菜海鲜舫：2-4人餐">
+            <img src="__PUBLIC__/Home/shop_files/n_v1bkuymc6lsipfmcs6fvta_bbacb0476c778e43.jpg" height="131" width="210">二姐粤菜海鲜舫：2-4人餐
+        </a>
+    </dt>
+    <dd class="info">
+        <span class="ltext">
+            <i>¥</i>
+            138
+        </span>
+        <span class="rtext">7人已购买</span>
+    </dd>
+    <dd class="zk_t"><b>3.47</b>折</dd>
+</dl>
+</div>
+</div>
+<!--品牌广告3个  tg -->
+<div id="pptm_ad" class="bottom_ad">   
+                                    <a href="http://t.58.com/bj/p_wlgw/shumajd/" title="家居数码" target="_blank"><img src="__PUBLIC__/Home/shop_files/n_s12589742644432728156_b852774785e5d34d.jpg"></a>
+                                                <a href="http://t.58.com/bj/p_wlgw/xbsp/" title="箱包饰品" target="_blank"><img src="__PUBLIC__/Home/shop_files/n_s12589737962033597156_5656fb4b873684ca.jpg"></a>
+                                                <a href="http://t.58.com/bj/p_wlgw/fuzhuang/" title="服装服饰" target="_blank"><img src="__PUBLIC__/Home/shop_files/n_s12589730249659082156_f2004a171e224518.jpg"></a>
+                    
+</div>
+<script>$.ajax({url:'/advertising/bj/pptm/',success:function(data){$("#pptm_ad").html(data)}});</script>
+<div id="wangmeng_ad"><iframe allowtransparency="true" src="__PUBLIC__/Home/shop_files/baidu_zhuti_foot.htm" hspace="0" marginwidth="0" marginheight="0" scrolling="no" vspace="0" id="baidu_wangmeng_foot_ad" frameborder="0" height="25" width="710"></iframe></div>
+<script type="text/javascript">document.write("<sc"+"ript language='JavaScript' src='http://static.track.58.com/baidu_wangmeng_ad.js?r="+parseInt(Math.random()*10000+1)+"'></scri"+"pt>");</script><script language="JavaScript" src="__PUBLIC__/Home/shop_files/baidu_wangmeng_ad.js"></script>
+<input id="mgbids" value="" type="hidden">
+<input id="mprices" value="" type="hidden">
+
+</div>
+
+<div id="GoTop" class="box_gd" style="visibility: visible;"><a href="javascript:void(0);" onclick="window.scroll(0,0);return false" class="g_top">回顶部</a></div>
+<script type="text/javascript">
+
+    $(window).scroll(
+            function() {
+                if ($(window).scrollTop() > 0) {
+
+                    $("#GoTop").css("visibility","visible");
+                } else {
+                    $("#GoTop").css("visibility","hidden");
+                }
+            });
+
+</script>
+</div>
+</div>
+<div class="footer">
+<div class="f_bottom">
+<dl class="db_xx">
+    <dt>
+                <span><b>新手帮助</b>
+                <a href="http://t.58.com/help/xszd_8">邮件订阅</a>
+                <a href="http://t.58.com/help/xszd_1">常见问题</a>
+                <a href="http://t.58.com/help/zffs_2">网上银行</a>
+                <a href="http://t.58.com/help/zffs_3">58交易宝</a>
+                <a href="http://t.58.com/help/zffs_4">支付宝</a>
+                <a href="http://t.58.com/help/zffs_1">财付通</a></span>
+                <span><b>售后服务</b>
+                <a href="http://t.58.com/help/wsdy">我要咨询</a>
+                <a href="http://t.58.com/help/tssj">我要投诉</a>
+                <a href="http://t.58.com/help/refund">用户保障</a></span>
+                <span><b>商务合作</b>
+                <a href="http://t.58.com/seller">商家入驻</a>
+                <a href="http://t.58.com/about/hz">推广与合作</a>
+                <a href="http://t.58.com/help/api">开放API</a></span>
+                <span><b>关于我们</b>
+                <a href="http://t.58.com/about/gywm">公司简介</a>
+                <a href="http://t.58.com/about/yssm">团购协议</a>
+                <a href="http://t.58.com/about/jrwm">加入我们</a>
+                <a href="http://t.58.com/help/mobile">手机访问</a>
+                <a href="http://mt.58.com/">mt.58.com</a></span>
+    </dt>
+    <dd><a class="sst" href="http://t.58.com/help/refund">随时退款</a><a class="gqt" href="http://t.58.com/help/refund">过期退款</a><a class="fxt" href="http://t.58.com/help/refund">放心团</a></dd>
+    
+    <dd class="n_zx" style="display:none"><a href="http://t.58.com/usercenter/bj/answer/all/1/">立即咨询</a></dd>
+    
+</dl>
+<ul class="d_link">
+    <!--热门城市团购 -->
+    <li id="hotarea" style="height:43px;overflow:hidden">热门城市团购：<span class="gd_m" onclick="showMoreHotarea()" id="btnspan">更多</span>
+        <!-- 商圈+团购，商圈+类别+团购  -->
+   t.58.com/bj/meishi/">北京餐饮美食团购</a>
+        <a href="http://t.58.com/cd/meishi/">成都餐饮美食团购</a>
+        <a href="http://t.58.com/cs/meishi/">长沙餐饮美食团购</a>
+        <a href="http://t.58.com/cq/meishi/">重庆餐饮美食团购</a>
+        <a href="http://t.58.com/cc/meishi/">长春餐饮美食团购</a>
+        <a href="http://t.58.com/dg/meishi/">东莞餐饮美食团购</a>
+        <a href="http://t.58.com/dl/meishi/">大连餐饮美食团购</a>
+        <a href="http://t.58.com/fz/meishi/">福州餐饮美食团购</a>
+        <a href="http://t.58.com/fs/meishi/">佛山餐饮美食团购</a>
+        <a href="http://t.58.com/gz/meishi/">广州餐饮美食团购</a>
+        <a href="http://t.58.com/hz/meishi/">杭州餐饮美食团购</a>
+        <a href="http://t.58.com/hrb/meishi/">哈尔滨餐饮美食团购</a>
+        <a href="http://t.58.com/hf/meishi/">合肥餐饮美食团购</a>
+        <a href="http://t.58.com/sjz/meishi/">石家庄餐饮美食团购</a>
+        <a href="http://t.58.com/jn/meishi/">济南餐饮美食团购</a>
+        <a href="http://t.58.com/km/meishi/">昆明餐饮美食团购</a>
+        <a href="http://t.58.com/nj/meishi/">南京餐饮美食团购</a>
+        <a href="http://t.58.com/nc/meishi/">南昌餐饮美食团购</a>
+        <a href="http://t.58.com/nb/meishi/">宁波餐饮美食团购</a>
+        <a href="http://t.58.com/nn/meishi/">南宁餐饮美食团购</a>
+        <a href="http://t.58.com/qd/meishi/">青岛餐饮美食团购</a>
+        <a href="http://t.58.com/sh/meishi/">上海餐饮美食团购</a>
+        <a href="http://t.58.com/sz/meishi/">深圳餐饮美食团购</a>
+        <a href="http://t.58.com/su/meishi/">苏州餐饮美食团购</a>
+        <a href="http://t.58.com/sy/meishi/">沈阳餐饮美食团购</a>
+        <a href="http://t.58.com/tj/meishi/">天津餐饮美食团购</a>
+        <a href="http://t.58.com/ty/meishi/">太原餐饮美食团购</a>
+        <a href="http://t.58.com/wh/meishi/">武汉餐饮美食团购</a>
+        <a href="http://t.58.com/wx/meishi/">无锡餐饮美食团购</a>
+        <a href="http://t.58.com/xa/meishi/">西安餐饮美食团购</a>
+        <a href="http://t.58.com/xm/meishi/">厦门餐饮美食团购</a>
+        <a href="http://t.58.com/zz/meishi/">郑州餐饮美食团购</a>
+        <a href="http://t.58.com/zh/meishi/">珠海餐饮美食团购</a>
+        <a href="http://t.58.com/wz/meishi/">温州餐饮美食团购</a>
+        <a href="http://t.58.com/cz/meishi/">常州餐饮美食团购</a>
+        <a href="http://t.58.com/bd/meishi/">保定餐饮美食团购</a>
+        <a href="http://t.58.com/yt/meishi/">烟台餐饮美食团购</a>
+        <a href="http://t.58.com/haikou/meishi/">海口餐饮美食团购</a>
+            </li>
+
+
+    <!--友情链接 -->
+    </ul>
+<!-- 热门，友情结束-->
+
+<!--底部版权 -->
+<p>© 2015 <a href="http://t.58.com/">58团购</a> <a href="http://t.58.com/bj/daohanglist/">团购导航</a> 京ICP证060405 <a href="http://t.58.com/about/licence/" target="_blank">营业执照</a>
+    <a target="_blank" class="cxwzbs" id="__szfw_logo__" href="https://search.szfw.org/cert/l/CX20120918001650001720">
+        <img src="__PUBLIC__/Home/shop_files/rongyum.png" align="absmiddle" height="20" width="86">
+    </a>
+</p><div id="gongshangDiv"></div>
+<p></p>
+
+<script type="text/javascript">
+    function showMoreHotarea(){
+    var btnspan = document.getElementById('btnspan');
+    //var hotcitydd = btnspan.parentNode;
+    var hotcitydd = document.getElementById("hotarea");
+    var flag = btnspan.innerHTML=="更多";
+        if(flag){btnspan.innerHTML="收起";hotcitydd.style.height = 'auto'}else{btnspan.innerHTML = '更多';hotcitydd.style.height = '43px';}
+    }
+    function showMoreRecommendarea(){
+    var btnspan = document.getElementById('btnspanTWO');
+    var hotcitydd = document.getElementById("recommendarea");
+    var flag = btnspan.innerHTML=="更多";
+        if(flag){btnspan.innerHTML="收起";hotcitydd.style.height = 'auto'}else{btnspan.innerHTML = '更多';hotcitydd.style.height = '43px';}
+    }
+</script>
+
+</div>
+
+</div>
+<!-- footer结束 -->
+
+
+<script type="text/javascript">
+            var url=document.location.href;
+    if('北京'=="苏州" && (url.indexOf('meishi')<0 && 0<0)
+        && (url.indexOf('/shenghuo')==0 || (url.indexOf('shenghuo')<0 && -1<0))
+        && (url.indexOf('meirongmeifa')<0 && -1<0)
+        && (url.indexOf('hotel')<0 && url.indexOf('travel')<0)
+        && (url.indexOf('wlgw')<0 && -1<0)
+        && (url.indexOf('xiuxian')<0 && -1<0)
+        && (url.indexOf('brand')<0 && -1<0)){
+    $("#gongshangDiv").html("<a href='http://www.szgswljg.gov.cn/getcompanyinfor.action?website1=su.58.com' target='_blank' style='position:relative;top:32px'><img border='0' src='http://www.szgswljg.gov.cn/images/szicb.gif?site=su.58.com'/></a>");
+    }
+</script>
+<div id="t1" name="t1"><input id="serverip" name="serverip" value="AB:A" type="hidden"></div>
+<script>
+    jQuery.ajax({
+    url:"/version/",
+    type:"GET",
+    async:false,
+    success:function(date){
+        $("#t1").html("<input  type='hidden' id='serverip' name='serverip' value='AB:"+date+"'/>");
+    }
+    });
+    var _hl = _hl || [];
+    _hl.push(['_setLRSM']);
+    _hl.push(['_setLGP', 'http://data.t.58.com/image/collectlog.gif']);
+    _hl.push(['_tp']);
+</script>
+<script src="__PUBLIC__/Home/shop_files/ualog.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];var site_name = "58";_gaq.push(['pageTracker._setAccount', 'UA-877409-4']);_gaq.push(['pageTracker._setDomainName', '.58.com']);_gaq.push(['pageTracker._trackPageview']);_gaq.push(['otherTracker._setAccount', 'UA-16713499-1']);_gaq.push(['otherTracker._setDomainName', 'none']);_gaq.push(['otherTracker._setCampaignCookieTimeout','0']);_gaq.push(['otherTracker._trackPageview']);
+    (function(){var ga = document.createElement('script');ga.type = 'text/javascript';ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga, s);
+        document.write("<script type=\"text/javascript\" src=\""+ ("https:" == document.location.protocol ? "https://" : "http://") + "track.58.com/referrer2.js\"><\/script>");
+    })(); </script><script type="text/javascript" src="__PUBLIC__/Home/shop_files/referrer2.js"></script>
+<div style="display:none">
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fcf56b981790bf3ad622276d9e97228ff' type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="__PUBLIC__/Home/shop_files/h.js" type="text/javascript"></script>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cdiv id='cnzz_stat_icon_30030878'%3E%3C/div%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30030878' type='text/javascript'%3E%3C/script%3E"));</script><div id="cnzz_stat_icon_30030878"></div><script src="__PUBLIC__/Home/shop_files/c.php" type="text/javascript"></script>
+<!-- 联盟广告 -->
+<script type="text/javascript">
+    window.bd_ll_config=window.bd_ll_config||{};
+    window.bd_ll_config['u1997921']={type:'flowbar'};
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://su.bdimg.com/static/dspui/js/ll/ll.js?t2='+~(-new Date()/56e5)];
+</script><script>
+    $("div.lister dl").live("mouseover",function(){$(this).addClass("tuanitem hover")});
+    $("div.lister dl").live("mouseout",function(){$(this).removeClass("hover")});
+    $("a.addlinkid").each(function(){addlinkid(this);});
+            $(document).ready(function(){
+            $(".allcount").prepend("北京餐饮美食团购 ");
+            var urlType = "/meishi";
+            var ennameType = "tg";
+        });
+        //左侧导航js
+    $('.topLeftFixdiv_ul li').mouseover(function () {
+        $('.topLeftFixdiv_ul li').removeClass('active');
+        $(this).addClass('active');
+    }).mouseout(function () {
+        $(this).removeClass('active');
+    })
+    $('#banner .banner_close_new').click(function(){
+        $('#banner').hide();
+    })
+</script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop_files/interface.js"></script>
+<script type="text/javascript">
+    var iminitright = "tuangou,bj";
+    jQuery.get("/bj/showuseridandsitekey"+"?"+Math.random(),function(data){
+        var ret = eval("(" + data + ")");
+        var iminitleft = ret.iminitleft;
+        IM_Init(iminitleft,iminitright);
+    });
+</script>
+
+<script type="text/javascript">
+    function showBfdTj(datas){
+        if(datas!=null && datas.length>0){
+            var ids = "";
+            var i = 0;
+            for(;i<datas.length && i<4;i++){
+                if(i==0){
+                    ids += datas[i];
+                }else{
+                    ids += ","+datas[i];
+                }
+            }
+            $.ajax({
+                url:"/common/bj/gbinfosByIds/",
+                data:"ids="+ids+"&cate=meishi"+'&area=',
+                success:function(text){
+                    $("#container_rmtj4s").html(text);
+                    $("#container_rmtj").show();
+                }
+            });
+        }
+    }
+</script>
+<script type="text/javascript">
+    var _BFD = window["_BFD"]||{};
+    _BFD.BFD_ITEM_INFO = {
+        user_id : "0" ,  //  当前用户的user_id，string类型
+
+        cat_name: ["餐饮美食"],  //当前所选的类别名称，string类型；
+
+        region:'',// 所选的城区  如果没有选 则为空 ""
+
+        sel_reg :'全部',  //当前所选的商圈名称，string类型；如果没有选则填写全部
+
+        city_info : ['北京','http://t.58.com/bj/'], //当前城市的信息  城市名称 和 城市首页url
+
+        client : "C58tuan"  //这个帐号是百分点技术人员使用的帐号，请您不要修改这句代码！
+    };
+    _BFD.bfd_show_hb= function(datas){
+        showBfdTj(datas);
+    };
+    _BFD.script = document.createElement("script");
+    _BFD.script.setAttribute("src", "http://static1.baifendian.com/service/58tuan/58_list.js");
+    _BFD.script.setAttribute('type', 'text/javascript');
+    _BFD.script.setAttribute("charset", "utf-8");
+    document.getElementsByTagName("head")[0].appendChild(_BFD.script);
+</script>
+
+
+<div id="BAIDU_DSPUI_FLOWBAR" fixed="true" style="height: 50px; position: fixed; width: 100%; z-index: 2147483647; overflow: visible; top: 0px; margin-top: -50px; left: 0px; right: auto;"><iframe src="__PUBLIC__/Home/shop_files/home.htm" style="height: 50px; background-color: transparent;" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="true" align="center,center" frameborder="0" height="100%" width="100%"></iframe><div style="display: none; position: absolute; opacity: 0.4; width: 40px; height: 20px; z-index: 111; background: rgb(0, 0, 0) none repeat scroll 0% 0%;"></div><div style="display: none; position: absolute; width: 40px; height: 20px; line-height: 20px; cursor: pointer; text-align: center; color: rgb(255, 255, 255); font-size: 12px; z-index: 112;">关闭</div></div><div style="position: fixed; right: 0px; bottom: 0px; width: 0px; height: 0px; border: 0px none; cursor: default; z-index: 99999;" name="im_div" id="im_div"><object data="__PUBLIC__/Home/shop_files/im_3.swf" name="im_swf" id="im_swf" type="application/x-shockwave-flash" align="middle" height="100%" width="100%"><param value="high" name="quality"><param value="always" name="allowscriptaccess"><param value="false" name="allowfullscreen"></object></div><iframe style="height: 0px; width: 0px; float: none; position: absolute; overflow: hidden; z-index: 333333; margin: 0px; padding: 0px; border: 0px none; background: transparent none repeat scroll 0% 0%;" scrolling="no" id="add_speed_bfd" allowtransparency="true" frameborder="0"></iframe><div style="display: block; position: absolute; left: -9999px; overflow: hidden; height: 1px; width: 1px;" id="bfd_flbox"><object id="bfd_swf_factory2" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" height="1" width="1"><param name="allowScriptAccess" value="always"><param name="wmode" value="window"><param name="movie" value="http://static.baifendian.com/api/2.0/main.swf"><param name="quality" value="high"><param name="FlashVars" value=""><embed src="__PUBLIC__/Home/shop_files/main.swf" flashvars="" quality="high" wmode="window" name="bfd_swf_factory2" allowscriptaccess="always" swliveconnect="true" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" height="1" width="1"></object></div></body></html>

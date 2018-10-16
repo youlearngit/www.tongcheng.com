@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+  
+  
+   .top{
+    padding:10px;
+    height:30px;
+    border-bottom: 2px solid orange;
+    font-size:20px;
+    font-weight:900;
+  }
+ 	li{
+ 		border-bottom:1px solid #ccc;
+ 		font-size:12px;
+ 	}
+ 	li .who{
+ 		color:purple;
+ 		font-size:12px;
+ 		font-weight:900;
+ 	}
+ 	li .ccc{
+ 		font-size:12px;
+ 	}
+  li .zi{
+    text-align:right;
+    color:blue;
+    padding-right:40px;
+    font-size:12px;
+  }
+ 	span{
+ 		display:block;
+ 		font-size:12px;
+ 		color:blue;
+    cursor:pointer;
+    float:right;
+    margin-right:20px;
+ 	}
+  .re{
+    display:none;
+  }
+  .qu{
+    display:none;
+  }
+</style>
+<script type="text/javascript" src="__PUBLIC__/Admin/jquery-1.8.3.min.js"></script>
+
+</head>
+<body>
+	<p class="top">我收到的留言</p>
+      <ul id="mmm">
+      <foreach name="arr" item="vo">
+        <li>
+          <p class="who">用户：{$vo['username']}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品：{$vo['name']}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：{$vo['tel']}</p>
+          <p class="ccc">{$vo['content']}</p>
+          <p class = "zi"><span class="fu">回复</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="qu">取消</span></p>
+          <div class="re">
+            <input type="hidden" name="sid" value="{$vo['sid']}">
+            <input type="hidden" name="gid" value="{$vo['gid']}">
+            <input type="hidden" name="uid" value="{$vo['uid']}">
+
+            <textarea name="re" class="con" cols="60" rows="4"></textarea>
+            <input type="button" value="发表回复" class="bre">
+          </div>
+
+        </li>
+        </foreach>
+      </ul>
+</body>
+<script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+  $('#mmm .fu').click(function(){
+    $(this).next().show();
+    $(this).parent().next().show();
+  })
+
+  $('#mmm .qu').click(function(){
+     $(this).hide();
+     $(this).parent().next().hide();
+  })
+
+  $('#mmm .re').find('.bre').click(function(){
+    var con = $(this).parent().find('.con').val();
+    var sid = $(this).parent().find('input[name=uid]').val();
+    var uid = $(this).parent().find('input[name=sid]').val();
+    var gid = $(this).parent().find('input[name=gid]').val();
+
+    $.get('{:U("Home/Index/res")}',{'content':con,'sid':sid,'uid':uid,'gid':gid},function(data){
+        if(data==1){
+          alert('留言成功');
+        }else{
+          alert('留言失败');
+        }
+    })
+  })
+
+</script>
+</html>

@@ -1,0 +1,12 @@
+/* postpage new header */
+#postheader #logo{width:188px;height:50px;margin-left:20px;float:left;margin-top:0}
+#postheader{margin:15px auto;width: 1000px;}
+#postheader{height:58px;position:relative;display: block;}
+#postheader #logo{margin-left:0;position:absolute;top:5px;left:0}
+#postheader .sub_title{font:26px/1 "微软雅黑",sans-serif;margin:10px 10px 0 20px;font-size:22px;line-height:120%;color:#585858;position:absolute;top:20px;left:185px;}
+#postheader .sub_title b{float:left;font-weight:lighter;}
+#postheader .changecity{font-family:Arial,simsun,sans-serif,"宋体";font-size:12px;font-weight:lighter;margin-left:5px;margin-top:6px;_margin-top:5px;display:inline-block;float:left}
+#postheader #login{position:absolute;top:43px;right:0;padding:0;color:#666;font-size:12px;line-height:100%}
+#postheader #login .gap{color:#d9d9d9;margin:0 6px;font-family: '宋体'}
+#postheader #login a{color:#666}
+#postheader #login a:hover,a:active,a:focus,a:hover{color:red}

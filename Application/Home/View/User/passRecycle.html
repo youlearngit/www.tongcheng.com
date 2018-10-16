@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>找回密码-58同城</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<link rel="Shortcut Icon" href="http://img.58cdn.com.cn/images/favicon.ico" type="image/x-icon">
+
+
+
+<link rel="stylesheet" href="__PUBLIC__/Home/passRecycle_files/login_6_v20150304144336.css" type="text/css"><style>
+.porleft { width:732px; padding:40px 10px 0 0px;}
+.porleft p { width:686px; padding:12px 0 12px 46px;}
+.porleft p.h{ background-color:#f9f9f9;}
+.porleft p input.w{ background-color:#e6e6e6;}
+</style>
+</head>
+<body>
+
+    <input id="page" name="page" value="forget" type="hidden">
+    <div id="header" class="win1000">
+        <a id="logo" href="{:U('Home/Index/index')}"><img alt="中文最大生活信息门户" src="__PUBLIC__/Home/passRecycle_files/logo-49h.gif"></a>
+        <div id="cityname" class="passwordname"><span>找回密码</span></div>
+        <div id="logintext"><a href="{:U('Home/Index/index')}">返回首页</a>|<a target="_blank" href="http://about.58.com/">帮助</a></div>
+    </div>
+    <div class="cb win1000">
+        
+        <form id="submitForm" action="" method="get" name="submitForm" target="formSubmit">
+        <div class="porleft" id="send">
+            <p><strong class="red">请输入您注册时所用手机号</strong></p>
+
+            <p id="mobilep">
+                <label class="zhmm" for="typemobile">手机号码</label>
+                <input size="20" class="inp inw w" id="mobileshadow" style="display: inline;" type="text" name="tel" remined="请输入11位手机号">
+                <img src="" alt="" />
+                <span class="" id="mobile_Tip"></span>
+            </p>
+
+             <p id="codep">
+                <label class="zhmm" for="typemobile">验证码&nbsp;&nbsp;&nbsp;</label>
+                <input size="13"  id="mobileshadow" style="display: inline;" type="text" name="code" remined="请按图输入">
+                <img src="" alt="" />
+                <span class="" id="code_Tip"></span>
+                <img src="{:U('Home/User/code')}" alt="" onclick="this.src='{:U('Home/User/code')}?id='+Math.random()" width="120" height="35"/>
+                <img src="" alt="" />
+                <span class="" id="code_Tip"></span>
+            </p>
+
+            <p>
+                <span class="pawgx">&nbsp;</span>
+                <label id="butt">
+                    <input value="下一步 -->" type="button" id="next">
+                </label>
+            </p>
+
+          
+        </div>
+        </form>
+
+        <form id="resetForm" action="{:U('Home/User/doReset')}" method="post" name="submitForm" target="formSubmit" style="display:none">
+        <div class="porleft" id="reset">
+            <div class="f12 password-tip" id="">
+                <h2><span class="password-tip-icon"></span>发送确认码成功</h2>
+                请输入您手机<strong class="red"></strong>上收到的确认码，填写正确以后可以设置新的登录密码..<span id="cb400Div"></span><br>
+            </div>
+
+            <p>
+                <span class="pawgx">用&nbsp;&nbsp;户&nbsp;&nbsp;名</span>
+                <input size="20" class="inp inw" id="validcode" maxlength="6" name="username" type="text"  remined="" readonly>
+            </p>
+            <p>
+                <span class="pawgx">手机确认码</span>
+                <input size="20" class="inp inw" id="validcode" maxlength="6" name="ucode" type="text"  remined="请输入手机确认码">
+                <img src="" alt="" />
+                <span id="validcode_Tip"></span>
+            </p>
+            <p>
+                <span class="pawgx">请输入新密码</span>
+                <input size="30" name="password" id="password" class="inp inw" type="password" remined="请输入新密码">
+                <img src="" alt="" />
+                <span id="password_Tip" style="z-index: 100;"></span>
+            </p>
+            <p>
+                <span class="pawgx">再次输入新密码</span>
+                <input size="30" name="repassword" id="cpassword" class="inp inw" onpaste="return false" type="password"  remined="请再次输入">
+                <input type="hidden" name="id" value="" />
+                <img src="" alt="" />
+                <span id="cpassword_Tip"></span>
+            </p>
+
+            <p>
+                <span class="pawgx">&nbsp;</span>
+                <label id="butt">
+                    <input value="密码重置" type="submit">
+                </label>
+            </p>
+            
+        </div>
+    </form>
+
+        <div class="porright">
+    <p><a href="{:U('Home/User/register')}">注册新账号</a></p>
+</div>  </div>
+<script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"></script>  
+<script type="text/javascript">
+    // 绑定获取焦点事件
+    $('input').focus(function(){
+        var remined = $(this).attr('remined');
+        $(this).next().attr('src','__PUBLIC__/Home/images/warning.png');
+        $(this).next().next().html(remined).css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+    });
+    var TP = false;
+    var CP = false;
+    var uInfo = null;
+    var code = null;
+    // 手机号的丧失焦点时间
+     $('input[name=tel]').blur(function(){
+        var v = $('input[name=tel]').val();
+        var reg = /^1\d{10}$/;
+        var res = reg.test(v);
+        if(!res){
+            $(this).next().next().html('请输入正确的手机号').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+            TP = false;
+        }else{
+            $(this).next().next().html('').css('background','#FFECEC');
+            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+           
+            var telInput = $(this);
+            $.post('{:U('Home/User/uInfoSelect')}',{tel:v},function(data){
+                // data = eval(data);
+                // alert(data);
+                if(data.length == 2){
+                    telInput.next().next().html('此手机号暂未绑定任何用户').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+                    telInput.next().attr('src','__PUBLIC__/Home/images/wrong.png');
+                     TP = false;
+                    // alert(1);
+                }else{
+                    uInfo = eval(data);
+                    // alert(data);
+                    // alert(uInfo[0]['tel']);
+                     TP = true;
+                }
+            })
+        }
+    })
+
+    // 绑定验证码的丧失焦点事件
+    $('input[name=code]').blur(function(){
+        var code = $('input[name=code]').val();
+        var COde = $(this);
+        // alert(code);
+        $.get('{:U('Home/User/check')}',{ucode:code},function(data){
+            // alert(data);
+                if(data == 0){
+                COde.next().next().html('验证码输入错误').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+                COde.next().attr('src','__PUBLIC__/Home/images/wrong.png');
+                CP = false;
+            }else{
+                COde.next().next().html('').css('background','#FFECEC');
+                COde.next().attr('src','__PUBLIC__/Home/images/right.png');  
+                CP = true;
+            }
+        })
+
+
+    })
+
+    $('#next').click(function(){
+        $('input[name=tel]').blur();
+        $('input[name=code]').blur();
+        
+        if(TP && CP){
+
+        //发送手机验证码
+            // alert(session('code'));
+            // alert(1);
+            var phone = $('input[name=telphone]').val();
+            // alert(phone);
+            // 发送Ajax
+            $.post('{:U('Home/User/send')}',{phone:phone},function(data){
+                // alert(data);
+                code = eval(data);
+                // alert(code);
+                // $('input[name=telcode]').attr('code',code);
+                })
+
+            // alert(uInfo[0]['id']);
+            // alert(code);
+            $('#submitForm').hide();
+            $('#resetForm').show();
+            // alert(uInfo[0]['username']);
+            $('input[name=username]').val(uInfo[0]['username']);
+            $('input[name=id]').val(uInfo[0]['id']);
+        }
+        return false;
+    });
+
+
+    var UP = false;
+    var PP = false;
+    var RPP = false;
+
+        $('input[name=ucode]').blur(function(){
+            // alert();
+            var v = $('input[name=ucode]').val();
+            if(v == code){
+                $(this).next().next().html('').css('background','#FFECEC');
+                $(this).next().attr('src','__PUBLIC__/Home/images/right.png');UP = true;  
+            }else{
+                $(this).next().next().html('验证码输入错误').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+                $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+                UP = false;
+            }
+        })
+
+
+
+          // 密码的正则
+    $('input[name=password]').blur(function(){
+        var v = $('input[name=password]').val();
+        var reg = /^(.){2,32}$/;
+        var res = reg.test(v);
+        if(!res){
+            $(this).next().next().html('验证码输入错误').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+                $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+                PP = false;
+        }else{
+            $(this).next().next().html('').css('background','#FFECEC');
+            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');
+            PP = true;
+        }
+    })
+
+
+
+      // 密码的再次确认
+    $('input[name=repassword]').blur(function(){
+        var v = $(this).val();
+        var lv = $('input[name=password]').val();
+        var res = v == lv;
+        if(!res){
+            $(this).next().next().html('两次密码不一致').css('font-size','12px').css('background','#F3FBFF').css('font-weight','550');
+                $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+                RPP = false;
+        }else{
+            $(this).next().next().html('').css('background','#FFECEC');
+            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');
+            RPP = true;
+        }
+    })
+
+
+      $('#resetForm').submit(function(){
+                $('input[name=password]').blur();
+                $('input[name=repassword]').blur();
+                $('input[name=ucode]').blur();
+
+                if(UP && PP && RPP){
+                    return true;
+                }
+                return false;
+            })
+
+
+
+
+
+
+
+
+
+
+
+    
+</script>
+    <div id="footer" class="win1000">
+        <p>© 58.com <a class="fduihua" target="_blank" title="有问题请与58客服进行对话" href="">与58对话</a></p>
+    </div>
+
+<div style="display:none">
+
+</div>
+
+
+</body></html>

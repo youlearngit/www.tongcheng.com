@@ -1,0 +1,656 @@
+<block name="content">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>【北京58到家】北京到家服务开创者-专业、便捷、安心！</title>
+		<meta name="keywords" content="北京58到家,北京58到家官网,北京生活服务,北京到家服务">
+		<meta name="description" content="北京58到家为您提供专业、便捷、安心的标准化到家服务，主要包括家政保洁、丽人美甲、搬家速运三大自营服务，以及月嫂、化妆、洗车等平台服务。北京58到家，简单、美好、轻松的全新生活方式。"><link href="__PUBLIC__/Home/Ziying_files/style.css" rel="stylesheet" type="text/css">
+		<link href="__PUBLIC__/Home/Ziying_files/home.css" rel="stylesheet" type="text/css">
+		<meta name="location" content="province=北京;city=北京">
+		<script src="__PUBLIC__/Home/Ziying_files/hm.js"></script><script src="__PUBLIC__/Home/Ziying_files/tracker.js"></script><script type="text/javascript">
+			// var bi_params = { cityid:'96',cateid:'',pagetype:'index'};
+			// (function() {
+			//   var bi_hm = document.createElement("script");
+			//   bi_hm.src = "http://pic2.58.com/m58/app58/m_static/js/bi/tracker.js";
+			//   var s = document.getElementsByTagName("script")[0]; 
+			//   s.parentNode.insertBefore(bi_hm, s);
+			// })();
+			// </script>
+		<link style="" id="layui_layer_csspartslayercss" href="__PUBLIC__/Home/Ziying_files/layer.css" rel="stylesheet"></head>
+	<body>
+	</block>
+		<div class="header">
+		  	<div class="head clearfix">
+		    		<div class="fl">
+		      			<a class="logo" href="http://bj.daojia.com/"><img src="__PUBLIC__/Home/index/logo.png" alt=""></a>
+		    		</div>
+		    		<div class="site fl">
+		            	<p class="site-t">
+		            		<strong>北京</strong> 
+		        		</p>
+		        		<p class="site-c">
+		            		[ <span><a href="javascript:void(0)" onclick="changeCity()">切换城市</a></span> ]
+		        		</p>
+		          	</div>
+			    	<div class="head-r fr">
+			     		<div class="tbar-login sty000 fr clearfix"></div>
+			      		<div class="nav sty000 fr clearfix">
+					        <a href="http://www.daojia.com/download/" rel="nofollow">下载APP</a> 
+					        <a href="http://bj.daojia.com/vip/" rel="nofollow">购买会员</a>
+					        <!-- <a href="{:U('Home/Ziying/duigongyewu')}">对公业务</a>   -->
+			                <a href="http:{:U('Home/Ziying/baomu')}" onclick='trackClick("action=daojia_baomu_pc_daohang");'>保姆</a>
+			                <a class="nav-ys" href="{:U('Home/Ziying/yuesao')}"><i></i>月嫂</a> 
+			                <a href="{:U('Home/Ziying/suyun')}">速运</a> 
+			                <a href="{:U('Home/Ziying/liren')}">丽人</a> 
+				    	    <a href="{:U('Home/Ziying/jiazheng')}">家政</a> 
+			                <a class="on" href="{:U('Home/Ziying/index')}">首页</a>
+			      		</div>
+		    		</div>
+		    		<form id="form1" method="post" action="http://www.daojia.com/selectCity/">
+		     			 <input id="backCityUrl" name="backCityUrl" value="http://_city_.daojia.com/" type="hidden">
+		    		</form>
+				   
+				
+		  	</div>
+		</div>
+		<block name="content1">
+	  	<div class="wrapper">
+		    <div class="banner">
+	      		<div class="menu-wrap">
+	        		<div class="menu">
+	        			<foreach name="cates" item="vo">
+	                    <div class="item jz first-item">
+	            			<h2><i></i> <a href="{:U('Home/Ziying/xiangqing')}?id={$vo['id']}">{$vo['name']}</a> <em></em></h2>
+	            			<div style="opacity: 0;" class="list-item animated-3 slide-in-down">
+	              				<ul>
+	        						<foreach name="vo['subCate']" item="v">
+		              	                <li class="item hover" data-role="sub-menu"><i class="dolt"></i>
+		                					<a href="{:U('Home/Ziying/xiangqing')}?id={$v['id']}">.&nbsp;{$v['name']}</a>
+		                				</li>
+	                                </foreach>
+	                              
+	                            </ul>
+	                           <!--  <ul></ul> -->
+	                        </div>
+	            			<i class="jt"></i>
+	          			</div>
+	                    </foreach>
+	        		</div>
+		    	</div>
+		   		<div class="flexslider">
+			        <ul class="slides">
+			            <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2; background: transparent url(&quot;http://dj.58cdn.com.cn/csdj/pc/home/1.0.0/images/banner/banner03-zc.jpg?v=201511102019&quot;) no-repeat scroll 50% 0px;">
+			                <a style="display:block; width: 100%; height:100%;" href="http://bj.daojia.com/yuesao/coupons/" target="_blank" onclick='trackClick("action=daojia_yuesao_pc_shouyebanner");'>
+			               		<img src="__PUBLIC__/Home/index/bg1.png" alt="" style="width: 100%; height:100%;">	
+			                </a>
+			            </li>
+			            <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1; background: transparent url(&quot;http://dj.58cdn.com.cn/csdj/pc/home/1.0.0/images/banner/banner-baomu.jpg?v=201511102019&quot;) no-repeat scroll 50% 0px;">
+			          	    <a style="display:block; width: 100%; height:100%;" href="http://bj.daojia.com/baomu/" target="_blank" onclick='trackClick("action=daojia_baomu_pc_shouyebanner");'>
+			               		<img src="__PUBLIC__/Home/index/bg2.png" alt="" style="width: 100%; height:100%;">
+			          	    	
+			          	    </a>
+			            </li>
+			            <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1; background: transparent url(&quot;http://dj.58cdn.com.cn/csdj/pc/home/1.0.0/images/banner/banner01.jpg?v=201511102019&quot;) no-repeat scroll 50% 0px;">
+			               <img src="__PUBLIC__/Home/index/bg3.jpg" alt="" style="width: 100%; height:100%;">
+			            </li>
+			         	<li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1; background: transparent url(&quot;http://dj.58cdn.com.cn/csdj/pc/home/1.0.0/images/banner/banner02.jpg?v=201511102019&quot;) no-repeat scroll 50% 0px;">
+			               <img src="__PUBLIC__/Home/index/bg2.jpg" alt="" style="width: 100%; height:100%;">
+			         	</li>
+			            <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1; background: transparent url(&quot;http://dj.58cdn.com.cn/csdj/pc/home/1.0.0/images/banner/banner05.jpg?v=201511102019&quot;) no-repeat scroll 50% 0px;">
+							<a style="display:block; width: 100%; height:100%;" href="http://t.jzt.58.com/weixingame/baojiemarcoupon/baojiCouponIndex?info=7F88F3D4C8B9BF59B3058407F781CA218475A8EC41483411C7B76D446507489C&amp;hmsr=58daojia_pcguanwangshouyebanner_guagua" target="_blank">
+			               		<img src="__PUBLIC__/Home/index/bg5.jpg" alt="" style="width: 100%; height:100%;">
+							</a>
+						</li>	
+					</ul>
+					<!-- <ol class="flex-control-nav flex-control-paging">
+						<li><a class="flex-active">1</a></li>
+						<li><a class="">2</a></li><li><a class="">3</a></li>
+						<li><a class="">4</a></li><li><a class="">5</a></li>
+					</ol> -->
+				</div>
+	    	</div>
+		    <div class="coupons">
+			    <ul>
+					<li class="coupon"><a href="http://bj.daojia.com/page/coupon/jiazheng/" target="_blank" rel="nofollow">
+					<img src="__PUBLIC__/Home/Ziying_files/baojie5.jpg"></a></li>
+					<li class="coupon"><a href="http://bj.daojia.com/page/coupon/meijia/" target="_blank" rel="nofollow">
+					<img src="__PUBLIC__/Home/Ziying_files/2015111111.jpg"></a></li>
+					<li class="coupon"><a href="http://bj.daojia.com/page/coupon/suyun/" target="_blank" rel="nofollow">
+					<img src="__PUBLIC__/Home/Ziying_files/201510301.jpg"></a></li>
+					<li class="coupon"><a href="http://t.jzt.58.com/weixingame/baojiemarcoupon/baojiCouponIndex?info=7F88F3D4C8B9BF59B3058407F781CA218475A8EC41483411C7B76D446507489C&amp;hmsr=58daojia_pcguanwangshouyebanner_guagua" target="_blank" rel="nofollow"><img src="__PUBLIC__/Home/Ziying_files/201510302.jpg"></a></li>	
+			    </ul>
+		    </div>
+		    <div class="main">
+		      	<div class="bgfff clearfix" style="position:relative;">
+		        	<div class="w599 fl">
+		          		<div class="title">
+		          			<span>
+		                        <a href="http://58yuesao.daojia.com/zt/yuesao0002?hmsr=yunyingwei" target="_blank" rel="nofollow">为什么你需要一名月嫂？</a>  
+		              		</span>
+		              		<b>服务品类</b>
+		              	</div>
+		          		<div class="column">
+		            		<ul>
+								<li>
+			                		<a href="http://bj.daojia.com/baojie1/">
+				                		<span><img src="__PUBLIC__/Home/index/baojie.png" alt=""></span>
+				                	  	<p>日常保洁</p>
+				              		</a>
+				              	</li>
+								<li>
+									<a href="http://bj.daojia.com/caboli/">
+				                		<span><img src="__PUBLIC__/Home/index/boli.png" alt=""></span>
+					                	<p>擦玻璃</p>
+			                		</a>
+				              	</li>
+								<li>
+			                		<a href="http://bj.daojia.com/baojie2/"> 
+					                	<span><img src="__PUBLIC__/Home/index/saodi.png" alt=""></span>
+					                	<p>深度保洁</p>
+				                	</a>
+				              	</li>
+								<li>
+									<a href="http://bj.daojia.com/jiadianqingxi/">
+					                	<span><img src="__PUBLIC__/Home/index/jiadian.png" alt=""></span>
+					                	<p>家电清洗</p>
+				                	</a>
+					             </li>
+		              	        <li>
+				                	<a href="http://bj.daojia.com/yanghu/">
+				                	<span><img src="__PUBLIC__/Home/index/jiaju.png" alt=""></span>
+				                	<p>家居养护</p>
+				                	</a>
+				              	</li>
+				          		<li>
+				                	<a href="http://bj.daojia.com/yuesao/" id="forwardYuesao">
+				                	<span><img src="__PUBLIC__/Home/index/yuesao.png" alt=""></span>
+				                	<p>月嫂</p>
+				                	</a>
+					            </li>
+			                	<li>
+				                	<a href="http://bj.daojia.com/baomu/" id="forwardBaomu">
+				                	<span><img src="__PUBLIC__/Home/index/baomu.png" alt=""></span>
+				                	<p>保姆</p>
+				                	</a>
+				              	</li>
+			             		<li>
+				                	<a href="http://bj.daojia.com/meijia/">
+				                	<span><img src="__PUBLIC__/Home/index/meijia.png" alt=""></span>
+				                	<p>美甲</p>
+				                	</a>
+				              	</li>
+			            	    <li>
+			            	    	<a href="http://bj.daojia.com/meijie/">
+				                	<span><img src="__PUBLIC__/Home/index/meijie.png" alt=""></span>
+				                	<p>美睫</p>
+				                	</a>
+				                </li>
+								<li>
+									<a href="http://bj.daojia.com/xiejia/">
+				                	<span><img src="__PUBLIC__/Home/index/xiuhu.png" alt=""></span>
+				                	<p>修护及卸甲</p>
+				                	</a>
+					            </li>
+								<li>
+									<a href="http://bj.daojia.com/huazhuang/">
+				                	<span><img src="__PUBLIC__/Home/index/huazhuang.png" alt=""></span>
+				                	<p>化妆</p>
+				                	</a>
+				                </li>
+								<li>
+									<a href="http://bj.daojia.com/huoyun/">
+				                	<span><img src="__PUBLIC__/Home/index/huazhuang.png" alt=""></span>
+				                	<p>速运</p>
+				                	</a>
+				                </li>
+								<li>
+									<a href="http://bj.daojia.com/banjia/">
+				                	<span><img src="__PUBLIC__/Home/index/banjia.png" alt=""></span>
+				                	<p>搬家</p>
+				                	</a>
+				                </li>
+								<li>
+									<div class="bright">先领券再洗车</div>
+		               			 	<a href="http://bj.daojia.com/xiche/">
+				                		<span><img src="__PUBLIC__/Home/index/xiche.png" alt=""></span>
+				                		<p>上门洗车</p>
+			                		</a>
+				              	</li>
+								<li>
+									<a href="http://bj.daojia.com/peilian/">
+				                	<span><img src="__PUBLIC__/Home/index/peiliang.png" alt=""></span>
+				                	<p>汽车陪练</p>
+				                	</a>
+				              	</li>
+								<li>
+									<a href="http://bj.daojia.com/anmo/"> 
+				                	<span><img src="__PUBLIC__/Home/index/anmo.png" alt=""></span>
+				                	<p>按摩</p>
+				                	</a>
+				              	</li>
+							</ul>
+		          		</div>
+		        	</div>
+		    		<div class="w300 fl">
+		      			<div class="title">
+		        			<b>大家说</b>
+		      			</div>
+		      			<div class="cols">
+		        			<div class="col1">
+		        				<div style="overflow: hidden; position: relative;" class="flex-viewport">
+		        					<ul style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-708px, 0px, 0px);" class="slides">
+		        						<li aria-hidden="true" class="clone" style="display: block; width: 354px; float: left;">
+		            	 					<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/woman.png" height="70px;" width="70px;">
+												<div class="say-content">
+													<div class="username">周女士说 </div>
+													<div class="content">(月嫂)高阿姨非常认真负责，对宝宝的照顾更是无微不至，同时也从高阿姨哪里学到了很多东西，现在宝宝非常健康聪明。</div>
+												</div>
+											</div>
+											<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/woman.png" height="70px;" width="70px;">
+													<div class="say-content">
+														<div class="username">曹女士说 </div>
+												            <div class="content">(化妆)当伴娘选择了一个叫小周的化妆师，很有经验，也很专业，推荐！</div>
+												    </div>
+											</div>
+											<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/men.png" height="70px;" width="70px;">
+												    <div class="say-content">
+												        <div class="username">方先生说 </div>
+												        <div class="content">(搬家)价格公道，没有加价，公开透明，师傅很辛苦，挣钱不容易。</div>
+												    </div>
+											</div>
+		            	 					<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/men.png" height="70px;" width="70px;">
+		                    						<div class="say-content">
+		                      							<div class="username">赵先生说 </div>
+		                      							<div class="content">(搬家)非常好！30多个箱子，来了4个师傅，搬家前后都有电话来，做的很到位。</div>
+		                    						</div>
+		                					</div>
+		            					</li>
+
+		            					<li aria-hidden="true" class="" style="display: block; width: 354px; float: left;">
+		            	 					<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/woman.png" height="70px;" width="70px;">
+												<div class="say-content">
+													<div class="username">周女士说 </div>
+													<div class="content">(月嫂)高阿姨非常认真负责，对宝宝的照顾更是无微不至，同时也从高阿姨哪里学到了很多东西，现在宝宝非常健康聪明。</div>
+												</div>
+											</div>
+											<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/woman.png" height="70px;" width="70px;">
+													<div class="say-content">
+														<div class="username">曹女士说 </div>
+												            <div class="content">(化妆)当伴娘选择了一个叫小周的化妆师，很有经验，也很专业，推荐！</div>
+												    </div>
+											</div>
+											<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/men.png" height="70px;" width="70px;">
+												    <div class="say-content">
+												        <div class="username">方先生说 </div>
+												        <div class="content">(搬家)价格公道，没有加价，公开透明，师傅很辛苦，挣钱不容易。</div>
+												    </div>
+											</div>
+		            	 					<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/men.png" height="70px;" width="70px;">
+		                    						<div class="say-content">
+		                      							<div class="username">赵先生说 </div>
+		                      							<div class="content">(搬家)非常好！30多个箱子，来了4个师傅，搬家前后都有电话来，做的很到位。</div>
+		                    						</div>
+		                					</div>
+		            					</li>  
+
+		            					<li aria-hidden="true" class="" style="display: block; width: 354px; float: left;">
+		            	 					<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/woman.png" height="70px;" width="70px;">
+												<div class="say-content">
+													<div class="username">周女士说 </div>
+													<div class="content">(月嫂)高阿姨非常认真负责，对宝宝的照顾更是无微不至，同时也从高阿姨哪里学到了很多东西，现在宝宝非常健康聪明。</div>
+												</div>
+											</div>
+											<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/woman.png" height="70px;" width="70px;">
+													<div class="say-content">
+														<div class="username">曹女士说 </div>
+												            <div class="content">(化妆)当伴娘选择了一个叫小周的化妆师，很有经验，也很专业，推荐！</div>
+												    </div>
+											</div>
+											<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/men.png" height="70px;" width="70px;">
+												    <div class="say-content">
+												        <div class="username">方先生说 </div>
+												        <div class="content">(搬家)价格公道，没有加价，公开透明，师傅很辛苦，挣钱不容易。</div>
+												    </div>
+											</div>
+		            	 					<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/men.png" height="70px;" width="70px;">
+		                    						<div class="say-content">
+		                      							<div class="username">赵先生说 </div>
+		                      							<div class="content">(搬家)非常好！30多个箱子，来了4个师傅，搬家前后都有电话来，做的很到位。</div>
+		                    						</div>
+		                					</div>
+		            					</li>  
+
+		            					<li aria-hidden="true" class="" style="display: block; width: 354px; float: left;">
+		            	 					<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/woman.png" height="70px;" width="70px;">
+												<div class="say-content">
+													<div class="username">周女士说 </div>
+													<div class="content">(月嫂)高阿姨非常认真负责，对宝宝的照顾更是无微不至，同时也从高阿姨哪里学到了很多东西，现在宝宝非常健康聪明。</div>
+												</div>
+											</div>
+											<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/woman.png" height="70px;" width="70px;">
+													<div class="say-content">
+														<div class="username">曹女士说 </div>
+												            <div class="content">(化妆)当伴娘选择了一个叫小周的化妆师，很有经验，也很专业，推荐！</div>
+												    </div>
+											</div>
+											<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/men.png" height="70px;" width="70px;">
+												    <div class="say-content">
+												        <div class="username">方先生说 </div>
+												        <div class="content">(搬家)价格公道，没有加价，公开透明，师傅很辛苦，挣钱不容易。</div>
+												    </div>
+											</div>
+		            	 					<div class="item">
+												<img draggable="false" src="__PUBLIC__/Home/Ziying_files/men.png" height="70px;" width="70px;">
+		                    						<div class="say-content">
+		                      							<div class="username">赵先生说 </div>
+		                      							<div class="content">(搬家)非常好！30多个箱子，来了4个师傅，搬家前后都有电话来，做的很到位。</div>
+		                    						</div>
+		                					</div>
+		            					</li>  
+		                            </ul>
+		                        </div>
+		                       <!--  <ol class="flex-control-nav flex-control-paging">
+		                        	<li><a class="">1</a></li>
+		                        	<li><a class="flex-active">2</a></li>
+		                        	<li><a class="">3</a></li>
+		                        	<li><a class="">4</a></li>
+		                        </ol> -->
+		                    </div>
+		      			</div>
+		    		</div>
+		      	</div>
+		      	<div class="bgfff clearfix">
+			        <div class="title">
+			          	<b>新闻大事记</b>
+			        </div>
+		        	<div class="w550 fl">
+		         		<div class="side-box">
+		            		<div class="catalog-scroller fl">
+		             		    <dl>
+		                			<dt>
+		                  				<p>11</p>
+		                  				<h6>2015.05</h6>
+		               				</dt>
+		                			<dd class="pointer">点</dd>
+		              			</dl>
+		              			<dl>
+		                			<dt>
+		                  				<p>08</p>
+		                  				<h6>2015.05</h6>
+		                			</dt>
+		                			<dd class="pointer">点</dd>
+		              			</dl>
+		              			<dl>
+					                <dt>
+					                  <p>05</p>
+					                  <h6>2015.05</h6>
+					                </dt>
+		                			<dd class="pointer">点</dd>
+		              			</dl>
+					            <dl>
+					                <dt>
+					                  <p>30</p>
+					                  <h6>2015.04</h6>
+					                </dt>
+					                <dd class="pointer">点</dd>
+					            </dl>
+					            <dl>
+					                <dt>
+					                   <p>24</p>
+					                   <h6>2015.04</h6>
+					                </dt>
+					                <dd class="pointer">点</dd>
+					            </dl>
+		            		</div>
+		            		<div class="side-bar fl">
+		              			<span></span>
+		            		</div>
+		            		<div class="para fl">
+				              <dl>
+				                <dt>
+				                  <a href="http://www.daojia.com/index/details/1/" target="_blank">58到家客户满意度超苹果手机 98.5%的人因何点赞？</a>
+				                </dt>
+				                <dd>58到家在以量取胜的同时，也在以质取胜，98.5%的客户满意度，遥遥领先于O2O到家服务领域的其他玩家。</dd>
+				              </dl>
+				              <dl>
+				                <dt>
+				                  <a href="http://www.daojia.com/index/details/2/" target="_blank">“58到家懒人节”全线爆单 火爆异常</a>
+				                </dt>
+				                <dd>“58到家懒人节”作为平台的第一役，不止为用户提供了一站式到家服务解决方案，同时将用户需求分解并导向平台内合作伙伴...</dd>
+				              </dl>
+						      <dl>
+				                <dt>
+				                  <a href="http://www.daojia.com/index/details/3/" target="_blank">58到家2.0发布会陈小华演讲实录</a>
+				                </dt>
+				                <dd>“互联网+”的时代，平台型企业将成未来经济主要形式。4月21日，58到家宣布2.0平台正式启动...</dd>
+				              </dl>
+				              <dl>
+				                <dt>
+				                  <a href="http://www.daojia.com/index/details/4/" target="_blank">58到家打造“懒人节” 5块8覆盖全品类上门服务</a>
+				                </dt>
+				                <dd>“58到家懒人节”是58到家开放平台的第一次集体行动，届时用户将以超值的价格享受58到家提供的各项服务...</dd>
+				              </dl>
+				              <dl>
+				                <dt>
+				                  <a href="http://www.daojia.com/index/details/5/" target="_blank">58到家平台演化 垂直品类服务洗牌在所难免</a>
+				                </dt>
+				                <dd>4月21日，58到家服务宣布完成从1.0自营模式到2.0“自营+开放平台”双轨模式的升级。这意味着一轮新的洗牌和碾轧将发生。</dd>
+				              </dl>
+		            		</div>
+		          		</div>
+		        	</div>
+		        	<div class="w255 fl">
+		          		<ul class="video styfff">
+				            <li url="http://player.youku.com/player.php/sid/XOTE1MzU4MDc2/v.swf"><a href="javascript:;">
+				              <img src="__PUBLIC__/Home/Ziying_files/radio-bg3.png" alt=""> <i>透明层</i>
+				              <p>
+				                <b>《向劳动者致敬》-58到家公益宣传片</b>
+				              </p> <em>视频</em></a>
+				            </li>
+				            <li url="http://player.youku.com/player.php/sid/XOTM4NjA3MTE2/v.swf"><a href="javascript:;">
+				              <img src="__PUBLIC__/Home/Ziying_files/radio-bg2.png" alt=""> <i>透明层</i>
+				              <p>
+				                <b>向劳动者致敬2</b>
+				              </p> <em>视频</em></a>
+				            </li>
+				            <li url="http://player.youku.com/player.php/sid/XMTI2NjgyMDE5Mg==/v.swf"><a href="javascript:;">
+				              <img src="__PUBLIC__/Home/Ziying_files/radio-bg1.png" alt=""> <i>透明层</i>
+				              <p>
+				                <b>向劳动者致敬3-父亲精神 </b>
+				              </p> <em>视频</em></a>
+				            </li>
+		          		</ul>
+		       		 </div>
+		        </div>
+		    </div>
+			</block>
+
+		    <div class="footer">
+				<div id="tbox">
+		  			<div class="icon">
+		    			<a id="coder" href="#tag_cmt"></a>
+		    			<div id="icon-01"></div>
+		   				<div id="coder_img"></div>
+		  			</div>
+		  			<div class="icon-t">
+		    			<a id="code" href="#tag_about"></a>
+		    			<div id="icon-02"></div>
+		    			<div id="code_img"></div>
+		  			</div>
+		  			<a style="display: none;" id="gotop" href="javascript:void(0)"></a>
+				</div>
+				<div class="standard">
+					<ul>
+					    <li class="standard-l">
+					        <p>
+					            <span><img src="__PUBLIC__/Home/index/zhuangye.png" alt=""></span>专业
+					        </p>
+					        <h6>标准化培训 严格甄选 专业设备</h6>
+					    </li>
+					    <li class="standard-l standard-c">
+					        <p>
+					            <span><img src="__PUBLIC__/Home/index/baozhang.png" alt=""></span>保障
+					        </p>
+					        <h6>专属客服跟进 有问题先赔款 服务到您满意</h6>
+					    </li>
+					    <li class="standard-l standard-r">
+					        <p>
+					            <span><img src="__PUBLIC__/Home/index/bianjie.png" alt=""></span>便捷
+					        </p>
+					        <h6>上千位服务人员 全城高密度覆盖 上门准时</h6>
+					    </li>
+					</ul>
+				</div>    
+				<div class="nav-footer">
+		  			<div class="link">
+		        		<ul>
+		      				<li><b>热门城市： </b></li>
+		      				<li class="ll">
+		      	        		<div class="link-item">
+		         		 			<a href="http://bj.daojia.com/">北京</a>
+		        				</div>
+		                        <div class="link-item">
+		         					 <a href="http://sh.daojia.com/">上海</a>
+		        				</div>
+		                        <div class="link-item">
+		          					<a href="http://gz.daojia.com/">广州</a>
+		       					</div>
+		                        <div class="link-item">
+		          					<a href="http://sz.daojia.com/">深圳</a>
+		        				</div>
+		                        <div class="link-item">
+		          					<a href="http://tj.daojia.com/">天津</a>
+		        				</div>
+		                        <div class="link-item">
+		          					<a href="http://cd.daojia.com/">成都</a>
+		        				</div>
+		                        <div class="link-item">
+		          					<a href="http://hz.daojia.com/">杭州</a>
+		        				</div>
+		                        <div class="link-item">
+		         					<a href="http://su.daojia.com/">苏州</a>
+		        				</div>
+		                        <div class="link-item">
+		          					<a href="http://cs.daojia.com/">长沙</a>
+		        				</div>
+		                        <div class="link-item">
+		         			 		<a href="http://cq.daojia.com/">重庆</a>
+		        				</div>
+		                        <div class="link-item">
+		          					<a href="http://dl.daojia.com/">大连</a>
+		        				</div>
+		                        <div class="link-item">
+		         					<a href="http://hrb.daojia.com/">哈尔滨</a>
+		        				</div>
+		             		</li>
+		    			</ul>
+		            	<ul>
+			      			<li><b>热门类别：</b></li>
+			      			<li class="ll">
+			            	    <div class="link-item">
+			         		 		<a href="http://bj.daojia.com/baojie1/">北京日常保洁</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         		 		<a href="http://bj.daojia.com/caboli/">北京擦玻璃</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         		 		<a href="http://bj.daojia.com/baojie2/">北京深度保洁</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         		 		<a href="http://bj.daojia.com/jiadianqingxi/">北京家电清洗</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         		 		<a href="http://bj.daojia.com/yanghu/">北京家居养护</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         				<a href="http://bj.daojia.com/yuesao/">北京月嫂</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         		 		<a href="http://bj.daojia.com/baomu/">北京保姆</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         		 		<a href="http://bj.daojia.com/meijia/">北京美甲</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         		 		<a href="http://bj.daojia.com/meijie/">北京美睫</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         		 		<a href="http://bj.daojia.com/xiejia/">北京修护及卸甲</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         			 	<a href="http://bj.daojia.com/huazhuang/">北京化妆</a>
+			        			</div>
+			        	      	<div class="link-item">
+			         		 		<a href="http://bj.daojia.com/huoyun/">北京速运</a>
+			        			</div>
+			        		</li>
+		    			</ul>
+		                <ul class="last">
+		      				<li><b>友情链接：</b></li>
+		      				<li class="ll">
+		                		<div class="link-item">
+		          					<a href="http://www.58.com/" target="blank">58同城</a>
+		       				 	</div>
+		                		<div class="link-item">
+		          					<a href="http://www.chinahr.com/beijing/" target="blank">北京招聘网</a>
+		        				</div>
+		                		<div class="link-item">
+		          					<a href="http://beijing.bianmin369.com/" target="blank">北京分类信息网</a>
+		        				</div>
+		                		<div class="link-item">
+		          					<a href="http://bj.ganji.com/huangye/" target="blank">北京黄页大全</a>
+		        				</div>
+		                		<div class="link-item">
+		          					<a href="http://www.2018.cn/beijing/" target="blank">北京招生信息网</a>
+		        				</div>
+		                		<div class="link-item">
+		          					<a href="http://beijing.jianzhimao.com/" target="blank">北京兼职网   </a>
+		        				</div>
+		                		<div class="link-item">
+		         		 			<a href="http://www.zhuanzhuan.com/" target="blank">转转</a>
+		        				</div>
+		                		<div class="link-item">
+		          					<a href="http://www.youpin.58.com/" target="blank">二手优品</a>
+		        				</div>
+		              		</li>
+		    			</ul>
+		      		</div>
+				</div>
+				<div class="nav-bottom">
+					  <p>
+					    <a href="http://bj.daojia.com/join/" rel="nofollow">加入我们</a>
+					    |<a href="http://www.daojia.com/aboutus/" rel="nofollow">关于我们</a>
+					    |<a href="http://bj.daojia.com/map/">网站地图</a>
+					    |<a href="http://www.daojia.com/reports/" rel="nofollow">媒体报道</a>
+					  </p>
+				  	  ©2015 Daojia.com 58到家版权所有  津ICP备15004920号 
+				  	  <br> 天津五八到家生活服务有限公司
+				</div>    
+		    </div>
+		<block name="content3">
+	    </div>
+		// <script type="text/javascript" src="__PUBLIC__/Home/Ziying_files/jquery-1.js"></script>
+		// <script type="text/javascript" src="__PUBLIC__/Home/Ziying_files/right_js.js"></script>
+		// <script src="__PUBLIC__/Home/Ziying_files/jquery.js"></script>
+		// <script src="__PUBLIC__/Home/Ziying_files/layer.js"></script>
+		// <script src="__PUBLIC__/Home/Ziying_files/home.js"></script>
+	</body>
+</html>
+</block>  

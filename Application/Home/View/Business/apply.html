@@ -1,0 +1,201 @@
+<extend name="Business/index" />
+
+<block name="focus"></block>
+
+<block name="contL">
+	<div class="contL">
+    	<h2><span>申请代理</span></h2>
+        <div class="agency">
+        	<ol>
+            	<li class="active">1.填写意向单</li>
+            	<li>2.专人洽谈</li>
+            	<li>3.签署合约</li>
+            	<li>4.加盟成功</li>
+            </ol>
+            <p>请认真填写下面信息，提交后有专人与您联系</p>
+            <div class="table">
+	            <form id="form1" action="{:U('Home/Business/doApply')}" method="post">
+		        	<table>
+		                <tbody>
+		               		<tr>
+		                        <th width="100"><b>*</b>代理城市：</th>
+		                        <td>
+				                	<select name="agency_city" id="agency_city">
+										<foreach name="citys" item="vo" >
+				                			<option value="{$vo['city']}">{$vo['city']}</option>
+				                		</foreach>
+				             		</select>
+		                        </td>
+		                	</tr>
+		                    <tr>
+		                        <th><b>*</b>代理产品线：</th>
+		                        <td>
+		                            <select name="agency">
+		                                <option selected="selected" value="黄页产品线">黄页产品线</option>
+										<option value="招聘产品线">招聘产品线</option>
+										<option value="房产产品线">房产产品线</option>
+		                            </select>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <th><b>*</b>公司全称：</th>
+		                        <td><input class="txtA" placeholder="公司全称不能为空" name="company" type="text"><img src="" alt="" ></td>
+		                    </tr>
+		                    <tr>
+		                        <th><b>*</b>联系人：</th>
+		                        <td><input class="txtA" placeholder="公司联系人不能为空" name="pname" type="text"><img src="" alt=""></td>
+		                    </tr>
+		                    <tr>
+		                        <th><b>*</b>联系电话：</th>
+		                        <td><input class="txtA" placeholder="公司联系人电话不能为空" name="tel" type="text"><img src="" alt=""></td>
+		                    </tr>
+		                    <tr>
+		                        <th><b>*</b>联系邮箱：</th>
+		                        <td><input class="txtA" placeholder="公司联系人邮件不能为空" name="email" type="text"><img src="" alt=""></td>
+		                    </tr>
+		                    <tr>
+		                        <th><b>*</b>详细地址：</th>
+		                        <td><input class="txtA" placeholder="公司详细地址不能为空" name="addr" type="text"><img src="" alt=""></td>
+		                    </tr>
+		                    <tr>
+		                        <th><b></b>主要介绍：</th>
+		                        <td><input class="txtA" placeholder="公司主要介绍不能为空" name="intro" type="text"><img src="" alt=""></td>
+		                    </tr>
+		                    <tr>
+		                        <th></th>
+		                        <td><input id="applyForm" class="butA" value="立刻申请" type="submit"></td>
+		                    </tr>
+		                </tbody>
+		            </table>
+	            </form>
+            </div>
+
+			<!-- ************ -->
+			<!-- ************ -->
+			<!-- ************ -->
+			<!-- ************ -->
+
+            <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"></script>
+			<script type="text/javascript">
+				var CP = false;
+				var NP = false;
+				var TP = false;
+				var EP = false;
+				var AP = false;
+				var IP = false;
+				// 绑定获取焦点事件
+			    $('input').focus(function(){
+			        $(this).next().attr('src','__PUBLIC__/Home/images/warning.png');
+			    })
+
+
+			    // title的正则
+			    $('input[name=company]').blur(function(){
+			        var v = $('input[name=company]').val();
+			        var reg = /^\S{1,18}$/;
+			        var res = reg.test(v);
+			        if(!res){
+			            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+			            CP = false;
+			        }else{
+			            $(this).next().next().html('').css('background','#FFECEC');
+			            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+			            CP = true;
+			        }
+			    })
+
+			      // name的正则
+			    $('input[name=panme]').blur(function(){
+			        var v = $('input[name=panme]').val();
+			        var reg = /^\S{1,18}$/;
+			        var res = reg.test(v);
+			        if(!res){
+			            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+			            NP = false;
+			        }else{
+			            $(this).next().next().html('').css('background','#FFECEC');
+			            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+			            NP = true;
+			        }
+			    })
+
+			        //tel的正则
+			    $('input[name=tel]').blur(function(){
+			        var v = $('input[name=tel]').val();
+			        var reg = /^1\d{10}$/;
+			        var res = reg.test(v);
+			        if(!res){
+			            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+			            TP = false;
+			        }else{
+			            $(this).next().next().html('').css('background','#FFECEC');
+			            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+			            TP = true;
+			        }
+			    })
+
+			    //email的正则
+			    $('input[name=email]').blur(function(){
+			        var v = $('input[name=email]').val();
+			        var reg = /^\w+@\w+\.(com|cn)$/;
+			        var res = reg.test(v);
+			        if(!res){
+			            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+			            EP = false;
+			        }else{
+			            $(this).next().next().html('').css('background','#FFECEC');
+			            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+			            EP = true;
+			        }
+			    })
+
+			    // addr的正则
+			    $('input[name=addr]').blur(function(){
+			        var v = $('input[name=addr]').val();
+			        var reg = /^\S{2,32}$/;
+			        var res = reg.test(v);
+			        if(!res){
+			            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+			            AP = false;
+			        }else{
+			            $(this).next().next().html('').css('background','#FFECEC');
+			            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+			            AP = true;
+			        }
+			    })
+
+
+			    //intro的正则
+			    $('input[name=intro]').blur(function(){
+			        var v = $('input[name=intro]').val();
+			        var reg = /^\S{1,18}$/;
+			        var res = reg.test(v);
+			        if(!res){
+			            $(this).next().attr('src','__PUBLIC__/Home/images/wrong.png');
+			            IP = false;
+			        }else{
+			            $(this).next().next().html('').css('background','#FFECEC');
+			            $(this).next().attr('src','__PUBLIC__/Home/images/right.png');  
+			            IP = true;
+			        }
+			    })
+
+
+
+		     $('#form1').submit(function(){
+                $('input[name=company]').blur();
+                $('input[name=pname').blur();
+                $('input[name=tel]').blur();
+                $('input[name=email]').blur();
+                $('input[name=addr]').blur();
+                $('input[name=intro]').blur();
+                if(CP && NP && TP && EP && AP && IP){
+                    return true;
+                }
+                return false;
+            })
+			</script>
+        </div>
+		</div>
+</block>
+  

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html><head lang="en">  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>信息发布成功-58同城</title>
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="分类信息网，新房产项目">
+    <meta name="description" content="分类信息网，新房产项目 ">
+    <link rel="shortcut icon" href="http://j2.58cdn.com.cn/back/favicon.ico">
+    <link type="text/css" href="__PUBLIC__/Home/sendok_files/post_new_v20151021185030.css" rel="stylesheet">
+    <link type="text/css" href="__PUBLIC__/Home/sendok_files/qiye.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/Home/sendok_files/psuccess.css">
+    <script type="text/javascript" src="__PUBLIC__/Home/sendok_files/jquery1_002.js"></script>
+    <script type="text/javascript">document.domain = '58.com';</script>
+    <script type="text/javascript">    try { var ____json4fe = { catentry: { dispid: '', name: '', listname: '39' }, locallist: { dispid: '1', name: '北京', listname: 'bj' }, modules: 'my', infoid: '24018867364409', isqqbind:'0'} } catch (e) { };</script>
+    <script src="__PUBLIC__/Home/sendok_files/boot_mypage_version_v20150821192344.js" type="text/javascript"></script><script type="text/javascript" charset="utf-8" src="__PUBLIC__/Home/sendok_files/6524561be210b0d4cd574e34b5a03315_1431054799442.js"></script><script src="__PUBLIC__/Home/sendok_files/im_config.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	var startEventTime=(new Date()).getTime();
+/**
+ * 分享到微信功能
+ * 2015-06-15
+ */
+var flag = true;
+function shareToWX(){
+	
+	/* $("#weixin_share_pic").attr("src",url);
+	$("#weixin_share_pic").css("width", 80);
+	$("#weixin_share_pic").css("width", 80);
+	$("#erwmDiv").css('display','block'); */
+}
+
+
+</script>
+<script src="__PUBLIC__/Home/sendok_files/m2013ad.js"></script></head>
+<body>
+
+<div class="post-header">
+    <div class="logo">
+        <a href="{:U('Home/Index/index')}" target="_blank" title="到58同城">
+            <img src="__PUBLIC__/Home/sendok_files/logo.gif" title="58同城" alt="58同城">
+        </a>
+    </div>
+
+    <h1 class="logo_title">免费发布信息</h1>
+        <div class="login">
+            <a href="http://www.58.com/">返回首页</a>
+            <span class="gap">|</span>
+            <a href="http://passport.58.com/reg/?city=post">注册</a>
+        </div>
+</div>
+
+<div class="post-content pr">
+    <div class="c_header ">
+        <strong class="c_success">恭喜您，信息已发布成功！</strong>
+        
+       				<p class="p_des"><span class="c_des">您的信息已成功发布在"</span><a href="http://bj.58.com/shouji/" target="_blank">北京  - 二手市场 - 二手手机</a><span class="c_des">"下，您可以：</span></p>
+	   	   	           <div class="c_p_bton clearfix">
+            <a href="http://bj.58.com/shouji/24018867364409x.shtml" class="post-btn-sm" onclick="clickLog('from=postsuccess_chakan');">
+                <span>查看信息</span>
+            </a>
+                      			   <a href="http://my.58.com/" class="post-btn-sm" onclick="clickLog('from=postsuccess_guanli');"><span>管理信息</span></a>
+						            <a href="javascript:;" class="post-btn-sm pr" id="f_d_bton" onclick="clickLog('from=postsuccess_zhiding');">
+                <span>置顶信息</span>
+                <em class="post-btn-recomm">推荐</em>
+            </a>
+                                <!-- 再发一条  begin -->
+        	<!-- 黄页相关类别引流 -->
+                        <a href="http://post.58.com/t/" class="a-bton-agin" onclick="clickLog('from=postsuccess_zaifa');">再发一条</a>
+                        	<div class="xx-share" style="z-index:101">
+			           	<span class="btn-xx-share">分享至微信/手机QQ</span>
+			            <div class="xx-share-main" style="display: none;" id="erwmDiv">
+			            	<!-- <i class="ico-arr-xxshare"></i> -->
+			                <div class="xx-share-in">
+			                	<div class="img-share-ewm"><img src="" id="weixin_share_pic"></div>
+			                    <div class="msg-share-ewm">使用微信 手机QQ扫描二维码<br>呼朋唤友传起来  效果更快更简单！</div>
+			                </div>
+			            </div>
+				</div>
+        </div>
+       	 					    </div>
+ 
+    <div class="snsshare" id="snsshare">
+        <span class="c_des">分享到</span>
+        <a href="#" class="fsico sina" source="sina" title="新浪微博"></a>
+        <a href="#" class="fsico tqq" source="tqq" title="腾讯微博"></a>
+        <a href="#" class="fsico qzone" source="qzone" title="QQ空间"></a>
+        <a href="#" class="fsico tie" source="tieba" title="百度贴吧"></a>
+        <a href="#" class="fsico dou" source="douban" title="豆瓣"></a>
+        <a href="#" class="fsico renren" source="renren" title="人人网"></a>
+        <span class="c_des">求朋友转发获得更多的展现和点击</span>
+    </div>
+</div>
+ <script type="text/javascript">
+      $(function(){
+    	  $("#snsshare").find("a").click(function(){
+    		  var share_source=$(this).attr("source");
+    		  var url='http://bj.58.com/shouji/24018867364409x.shtml?utm_source='+share_source+'&utm_campaign='+share_source+'-post-share&utm_medium=sns';
+    		  var text="各位朋友，我刚刚在#58同城#发布了一条#二手手机#信息：“酷派 大神 白色 5.0寸屏幕”，求转发，求扩散！谢谢！http://bj.58.com/shouji/24018867364409x.shtml";
+    		  if(share_source=="sina"){
+    			  ShareCode("http://v.t.sina.com.cn/share/share.php?title="+encodeURIComponent(text)+"&url="+encodeURIComponent(url));
+    		  }else  if(share_source=="tqq"){
+    			  ShareCode("http://share.v.t.qq.com/index.php?c=share&a=index&title="+encodeURIComponent(text)+"&url="+encodeURIComponent(url)+"&appkey=801cf76d3cfc44ada52ec13114e84a96");
+    		  }else  if(share_source=="qzone"){
+    			  ShareCode("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?title="+encodeURIComponent(text)+"&url="+encodeURIComponent(url));
+    		  }else  if(share_source=="tieba"){
+    			  ShareCode("http://tieba.baidu.com/f/commit/share/openShareApi?title="+encodeURIComponent(text)+"&url="+encodeURIComponent(url));
+    		  }else  if(share_source=="renren"){
+    			  ShareCode("http://share.renren.com/share/buttonshare.do?title="+encodeURIComponent(text)+"&url="+encodeURIComponent(url));
+    		  }else  if(share_source=="t163"){
+    			  ShareCode("http://t.163.com/article/user/checkLogin.do?info="+encodeURIComponent(text)+"&url="+encodeURIComponent(url));
+    		  }else  if(share_source=="douban"){
+    			  ShareCode("http://www.douban.com/recommend?title="+encodeURIComponent(text)+"&url="+encodeURIComponent(url));
+    		  } 
+    	  });
+      });
+      function ShareCode(server_url){
+    	     window.open(server_url,'_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes');
+    	}
+ </script>
+<div class="post-footer">
+    <div class="f_content">
+        <div class="f_header clearfix">
+            <ul class="f_ul">
+
+            <li class="mutate_post selected" id="f_bb_content_1" onclick="clickLog('from=postsuccess_ad_bangbang');" showid="postsuccess_bangbang_show">
+                    <div class="p_tab">
+                        <div class="tabicon bpicon" dataid="f_bp_content"></div>
+                    </div>
+                     <p class="tabfont">
+                       	 58配配
+                    </p>
+                </li>
+
+                <li class="mutate_post" id="f_qq_content_1" onclick="clickLog('from=postsuccess_ad_qq');" showid="postsuccess_qq_show">
+                    <div class="p_tab">
+                        <div class="tabicon qq" dataid="f_qq_content"></div>
+                    </div>
+                    <p class="tabfont">
+                        绑定QQ便捷沟通
+                    </p>
+                </li>
+
+                <li class="mutate_post" id="f_wx_content_1" onclick="clickLog('from=postsuccess_ad_weixin');" showid="postsuccess_weiixn_show">
+                    <div class="p_tab">
+                        <div class="tabicon weixin" dataid="f_wx_content"></div>
+                    </div>
+                    <p class="tabfont">
+                        <span style="color:red; ">尚未</span>同步到58同城官方微信平台
+                    </p>
+                </li>
+
+                <li id="f_d_content_1" onclick="clickLog('from=postsuccess_ad_zhiding');" showid="postsuccess_zhiding_show">
+                    <div class="p_tab">
+                        <div class="tabicon ding" dataid="f_d_content"></div>
+                    </div>
+                    <p class="tabfont">
+                        置顶推广效果翻倍
+                    </p>
+                </li>
+
+                <li id="f_qqrz_content_1" onclick="clickLog('from=postsuccess_ad_tencentcredit');" showid="postsuccess_tencentcredit_show">
+    				<div class="p_tab">
+        				<div class="tabicon tencentcredit" dataid="f_qqrz_content"></div>
+   					</div>
+    				<p class="tabfont">
+       				 认证信用助推交易
+    				</p>
+				 </li>
+
+                 </ul>
+        </div>
+        <div class="main_content" id="mmm">
+                 
+                     
+            <!--qq绑定沟通-->
+            <div style="display: none;" class="f_qq_content">
+                <div class="qq_content">
+                    <div class="fl">
+                        <div class="com_img">
+                            <a href="#"><div class="com_qq"></div></a>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="com_font">
+                            <p class="bd_font">
+                                绑定QQ
+                            </p>
+                            <p class="gt_safe">
+                                沟通更便利,更安全
+                            </p>
+                            <!--未绑定-->
+                            <a href="javascript:;" class="btn-bound" id="qq_bd_bton" onclick="clickLog('from=postsuccess_ad_qqbangding');">
+                                <span>一键绑定</span>
+                            </a>
+                            <a href="javascript:;" class="no_btn-bound" style="display: none">
+                                <span>已绑定</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+                      
+                       <div style="display: none;" class="f_wx_content clearfix hidden">
+                <p style="font-family:微软雅黑; color:#00801B;font-size:25px;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您发的信息<span style="font-family:微软雅黑; color:red;font-size:25px">尚未</span>同步到微信
+                        </p>
+                <div class="fl">
+                    <div class="weixin_content">
+                        <p class="wx_font">
+                           <!--  您发的信息<span class="orange">尚未</span>同步到微信 -->
+                        </p>
+                        <div class="wx_bg"></div>
+                    </div>
+
+                </div>
+
+                <div class="fl">
+                    <div class="wx_trigger">
+                        <p class="wx_bb_font">用58微信—交易掌握在你手中</p>
+                        <p class="wx_sfont">简单扫一扫，58微信帮你记录每次发帖，每笔账单</p>
+                        <ul class="wx_list">
+                            <li><i class="wx_icon"></i>实时接收信息发布成功提醒 </li>
+                            <li><i class="wx_icon"></i>实时接收访客咨询，一个交易都不错过 </li>
+                            <li><i class="wx_icon"></i>刷新次数通知，让你的刷新，物尽其用</li>
+                            <li><i class="wx_icon"></i>实时账单消息通知，每一笔消费，都清清楚楚</li>
+                            <li><i class="wx_icon"></i>刷新推广，聊着天赚钱，简单到爆</li>
+                        </ul>
+                       <p class="bb_sencond">
+                        <a href="http://weixin.58.com/pc?from=postsuccess">查看详情&gt;&gt;</a>
+                       </p>
+                    </div>
+                </div>
+            </div>
+                               <div class="f_bp_content clearfix hidden">
+             <div class="bb_content">
+	                <div class="fl left">
+	                	<span class="text1">58配配</span>
+	                	<span class="text2">新工作，新朋友</span>
+	                		                	<img src="__PUBLIC__/Home/sendok_files/58peipei_ewm49.png" alt="58帮帮" class="bb-ewm">
+	                		      
+	                    <span class="text3">扫我“码”上找到工作</span>
+	                </div>
+		            <div class="fl right">
+		                <div class="bb_trigger">
+		                    <span class="text4">58配配，帮你找附近好工作</span>
+		                    <p>
+			                    <span class="text6">工作超级多</span>
+			                    <br>
+			                    <span class="text7">本地最大的找工作平台，在这里你能找到“钱多活少离家近”的各种好工作；</span>
+		                    </p>
+		                    <p>
+			                    <span class="text6">结识附近老乡</span>
+			                    <br>
+		                    	<span class="text7">看照片结识附近的人，喜欢Ta右滑，不喜欢左滑，打工路上有你不寂寞！</span>
+		                    </p>
+		                    	                    	<a href="http://pei.58.com/pc/guanwang.html?from=pcfabuchenggong_peipei_47" class="bb_sencond">查看详情&gt;&gt;</a>
+	                    			                </div>
+		            </div>
+	            </div>
+     </div>
+                        <div style="display: none;" class="f_d_content">
+                <iframe class="popWindow" src="__PUBLIC__/Home/sendok_files/0.html" name="popWindow" scrolling="no" id="iframepage" allowtransparency="true" frameborder="0"></iframe>
+            </div>
+                                     <div style="display: none;" class="f_qqrz_content">
+                <iframe class="popWindow" src="__PUBLIC__/Home/sendok_files/toCreditIdentity.html" name="popWindow" scrolling="no" id="iframepage" allowtransparency="true" frameborder="0"></iframe>
+            </div>
+                    </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js">
+</script>
+<script type="text/javascript">
+    // var lis = $('#f_ul li');
+    // var mms = $('#mmm div');
+    // for(var i=0;i<lis.length;i++){
+    //     lis.eq(i).mouseover(function(){
+    //         mms.eq(i).show();
+    //     })
+    //     lis.eq(i).mouseout(function(){
+    //         mms.eq(i).hide();
+    //     })
+    // }
+
+</script>
+
+
+
+
+
+
+<script type="text/javascript" src="__PUBLIC__/Home/sendok_files/jquery1.js"></script>
+<script src="__PUBLIC__/Home/sendok_files/qiye.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/sendok_files/new_post_success.js"></script>
+<script type="text/javascript">
+	    
+        $("#pers_btn").on("click",function(e){
+            clickLog('from=fb_grrz');
+            window.location.href = "http://my.58.com/authrealname";
+        });
+        $("#qiye_btn").on("click",function(e){
+            clickLog('from=fb_qyrz');
+            window.location.href = "http://my.58.com/authbiz";
+        });
+    </script><div class="footer">
+    © 58.com <a href="http://about.58.com/v5/">帮助中心</a>
+</div><script type="text/javascript">
+	var usertype = "person";
+	if(!true){
+		usertype = "NA";
+	}
+	else if(false){
+		usertype = "vip";
+	}else if(false){
+		usertype = "biz";
+	}
+	
+    var _gaq = _gaq || []; var site_name = "58"; var page_type = "post";
+    var _trackURL = "{'area':'1,1141,6854','bonusfrom':'null','cate':'5,36','GA_pageview':'/bj/sale/shouji/person/success/add/','infoid':'24018867364409','pagetype':'post','postmode':'add','poststep':'success','usertype':'person','ver':'old'}";
+    _gaq.push(['pageTracker._setAccount', 'UA-877409-4']);
+    _gaq.push(['pageTracker._setDomainName', '.58.com']);
+    _gaq.push(['pageTracker._setAllowLinker', true]);
+    _gaq.push(['pageTracker._addOrganic', 'sogou', 'query']);
+    _gaq.push(['pageTracker._addOrganic', 'baidu', 'word']);
+    _gaq.push(['pageTracker._addOrganic', 'soso', 'w']);
+    _gaq.push(['pageTracker._addOrganic', 'youdao', 'q']);
+    _gaq.push(['pageTracker._addOrganic', '360', 'q']); 
+    _gaq.push(['pageTracker._trackPageview','/bj/sale/shouji/' + usertype + '/success/add/']);
+	$.getScript('http://tracklog.58.com/referrer4.js', function(response,status) {
+		// response - 包含来自请求的结果数据
+		// status - 包含请求的状态（"success", "notmodified", "error", "timeout" 或 "parsererror"）
+		try{
+			if(clickLog != undefined && typeof(clickLog)=="function"){
+				if(typeof(startEventTime) != "undefined") {
+					clickLog('from=Post_TriggerEventTime&key=htmlStart&eventTime='+startEventTime);
+				}
+				clickLog('from=Post_TriggerEventTime&key=formEnd&eventTime='+endEventTime);
+			}
+					}catch(e){
+//			console.log(e)
+		}
+	});
+	var endEventTime
+	$(function(){
+		endEventTime=(new Date()).getTime();
+	});
+    </script>
+
+<style type="text/css">
+.xx-share{float:left;height:40px;margin-left:20px;}
+.btn-xx-share{background:url(http://img.58cdn.com.cn/newvip/images/fx16.gif) no-repeat 0 3px;padding-left:20px;display:inline-block;height:20px;line-height:20px;color:#00c;cursor:pointer;margin-top:10px;font-size:12px;}
+.xx-share-main{width:325px;height:115px;border:1px solid #ddd;background:#fff;position:absolute;top:152px;right:300px;z-index:102;box-shadow:2px 2px 0 #f1f1f1}
+.ico-arr-xxshare{display:block;width:17px;height:9px;overflow:hidden;background:url(http://img.58cdn.com.cn/newvip/images/ico-arr-xxshare.gif) no-repeat 0 0;position:absolute;top:-9px;right:40px}
+.img-share-ewm{width:80px;height:80px;float:right;border:1px solid #eee;margin:15px 15px 0 0;padding:1px;*display:inline;*zoom:1}
+.msg-share-ewm{font-size:12px;line-height:22px;float:left;margin-top:33px;margin-left:15px;color:#333}
+.cg div.xx-share-main{margin:0;padding:0;}
+.cg div.xx-share-main div{margin:0;padding:0;}
+
+.cg div.xx-share-main div.msg-share-ewm{margin:33px 0 0 15px;}
+.cg div.xx-share-main div.img-share-ewm{margin:15px 15px 0 0;}
+</style>
+
+
+
+<div style="position: fixed; right: 0px; bottom: 0px; width: 174px; height: 36px; border: 0px none; cursor: default; z-index: 1000;" name="im_div" id="im_div"><object data="__PUBLIC__/Home/sendok_files/im_3.swf" name="im_swf" id="im_swf" type="application/x-shockwave-flash" height="100%" align="middle" width="100%"><param value="high" name="quality"><param value="always" name="allowscriptaccess"><param value="false" name="allowfullscreen"></object></div><link rel="stylesheet" type="text/css" href="toCreditIdentity_data/style.css"></body></html>

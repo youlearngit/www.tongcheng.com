@@ -1,0 +1,16 @@
+ 	<tr id="teltr" style="display:none"><td><button id="sendMessage" type="button">获取验证码</button></td><td><input class="inp inw c_ccc useplaceholder"  name="ucode" size="30" value=""  type="text"></td></tr>
+
+			var reg = /^1\d{10}$/;
+			var res = reg.test(v);
+
+if(res){
+				$('#error').html('您正在使用手机号登陆!!').css('color','blue');
+				setTimeout(function(){
+                    $('#error').fadeOut();
+                },500);
+				$('input[name=username]').css('border','solid 1px blue');
+				$('#strtr').hide();
+				$('#teltr').show();
+				UP = true;
+
+			}else

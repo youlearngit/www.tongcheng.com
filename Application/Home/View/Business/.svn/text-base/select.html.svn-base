@@ -1,0 +1,74 @@
+<block name="select">
+	<div class="contR"><!--右侧主题-->
+        <!-- 代理商申请 -->
+    	<div class="costar">
+            <h2><span>在线申请代理</span></h2>
+            <div class="apply">
+                <a href="" onclick="biz_applyform_load()" target="_blank">申请代理</a>
+            </div>
+        </div>
+
+        <!-- 代理商查询 -->
+    	<div class="costar">
+            <h2><span>授权代理商查询</span></h2>
+            <div class="refer">
+            	<form id="queryForm1" action="/agent/searchagent" method="post">
+                	<input id="agentBusinessName" name="agentBusinessName" class="txtA" type="text">
+                	<input style="display:none" type="text">
+                	<input class="butA" value="点击查询" style="text-align:center" readonly="readonly" onclick="query1()" type="button">
+                </form>
+            </div>
+        </div>
+
+
+    	<div class="costar">
+            <h2><span>联系我们</span></h2>
+            <div class="contact">
+            	<p>电话：400-818-1858</p>
+            	<p>E-mail：qudao-kf01@58.com</p>
+            	<p>地址：北京市朝阳区北苑路乙108号北美国际商务中心E座</p>
+            </div>
+            <h2 style="padding-top:10px;"><span>区域招商负责人查询</span></h2>
+            <div class="refer" style="margin-top:-13px">
+                <!-- 区域查询 -->
+            	<form id="queryForm2">
+                	<select id="cityId" name="agency_city">
+                		<option selected="selected" value="0">请选择查询城市</option>
+		                    <foreach name="citys" item="vo" >
+				               <option value="{$vo['city']}">{$vo['city']}</option>
+	                		</foreach>
+	                    </select>
+                	<input class="butA" value="点击查询" onclick="query2()" type="button">
+            	</form>
+
+            </div>
+        </div>
+    	
+    </div>
+	    <!-- 右侧结束部分 -->
+	    
+	<!-- 区域查询弹框部分 -->
+	    
+	<div id="hasResult" class="referA" style="width:700px">
+		
+
+	</div>
+	<div id="noResult" class="referA" style="width:700px">
+		<div class="close"></div>
+		<h3 id="warning"></h3>
+	    <p>您可以尝试重新输入您要查询的企业名称进行查询，完整的企业名称更容易获得准确的查询结果。</p>
+	</div>
+	<div id="contactMe" style="top: 150px;left: 45%;">
+		<div class="close"></div>
+		<p><b>您正在查询的城市是：</b><span id="city"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		<table id="tt">
+		</table>
+	</div>
+
+	<div id="contactMeNoManager" class="referA referWidB">
+		<div class="close"></div>
+	    <p><b>您正在查询的城市是：</b><span id="city">西安</span></p>
+	    <p><b>联系方式：</b><span id="mobile">1333333333333</span></p>
+	    
+	</div>
+</block>

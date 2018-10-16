@@ -1,0 +1,846 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>58同城-我的简历</title>
+     <script type="text/javascript">document.domain="58.com";</script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/qz1_files/user_center_new_v20150804171656.css">
+<script type="text/javascript" src="__PUBLIC__/Home/qz1_files/jquery-1.js"></script>
+<script type="text/javascript">try { var ____json4fe = { catentry: { dispid: '', name: '', listname: '39' }, locallist: { dispid: '1', name: '北京', listname: 'bj' }, modules: 'my'} } catch (e) { };</script>
+<script type="text/javascript" src="__PUBLIC__/Home/qz1_files/boot_mypage_new_v20150714230612.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/qz1_files/topbar_new_v20150906105001.js"></script><script src="__PUBLIC__/Home/qz1_files/im_config.js" type="text/javascript"></script>
+<link rel="stylesheet" href="__PUBLIC__/Home/qz1_files/slide_btn_v20150827115731.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/qz1_files/alert_v20150831104811.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/qz1_files/jiugongge_v20150827163254.css">
+
+<script> var win = new GetToolTipWindow('tooltipdiv', 'keyword', '3', '1', '', true, 4); win.setSearchButton('searchbtn');</script>
+<script type="text/javascript">
+       function displayPhoneAlias(infoId, alias) {
+            var html = $('#phone_alias_button_' + infoId).html();
+            $.ajax('http://my.58.com/phonealias/display/' + infoId + "/" + alias,{
+                dataType: 'json',
+                type: 'POST',
+                beforeSend: function(){$('#phone_alias_button_' + infoId).html('处理中...')},
+                error: function(){
+                    alert('显示失败');
+                    $('#phone_alias_button_' + infoId).html(html);
+                },
+                success: function(json) {
+                    if(json && json.code == 0) {
+                        $('#pao_container_' + infoId).html('小号：' + alias);
+                        $('#phone_alias_button_' + infoId).fadeOut();
+                    }else {
+                        alert('显示失败:' + json.msg);
+                        $('#phone_alias_button_' + infoId).html(html);
+                    }
+                }
+            });
+        }
+       
+
+      
+       
+</script>
+
+<script type="text/javascript">
+
+jQuery(function($){
+
+	//左侧菜单
+	$(".leftmenu-content li").click(function(){
+			var $subnav = $(this).children("ul");
+			var menu_id =  $(this).attr("id").substr(4);
+			var closed_menu_id = Cookie.getCookie(24567868631815 + "_closed_menu_id"); //cookie中获取折叠状态的左侧菜单，cookie值的格式为-menuId-menuId-menuId-
+			var opened_menu_id = Cookie.getCookie(24567868631815 + "_opened_menu_id"); //cookie中获取展开状态的左侧菜单，cookie值的格式为-menuId-menuId-menuId-
+			if($subnav && $subnav.is(":visible")){
+				//折叠菜单
+												
+				//cookie closed_menu_id中记录要折叠的菜单的menuId
+				if(closed_menu_id){//有已折叠状态的左侧菜单
+					if(closed_menu_id.indexOf("-"+ menu_id + "-")<0){
+						Cookie.setCookie(24567868631815 + "_closed_menu_id",closed_menu_id + menu_id +"-",{expireDays:30,path:"/",domain:"my.58.com"});
+				  }
+				}else{//没有已折叠状态的左侧菜单
+					  Cookie.setCookie(24567868631815 + "_closed_menu_id","-"+menu_id+ "-",{expireDays:30,path:"/",domain:"my.58.com"});
+				}
+				
+				//从cookie opened_menu_id中删除要折叠的菜单的menuId
+				if(opened_menu_id && opened_menu_id.indexOf("-" + menu_id + "-")>=0){
+					if(opened_menu_id.split("-"+menu_id+"-")[0] + "-" + opened_menu_id.split("-"+menu_id+"-")[1] == "-"){//判断cookie中的最后一个menuId
+						Cookie.setCookie(24567868631815 + "_opened_menu_id","",{expireDays:30,path:"/",domain:"my.58.com"});
+					}else{
+						Cookie.setCookie(24567868631815 + "_opened_menu_id",opened_menu_id.split("-"+menu_id+"-")[0] + "-" + opened_menu_id.split("-"+menu_id+"-")[1],{expireDays:30,path:"/",domain:"my.58.com"});
+					}
+				}
+			
+			}else{
+				 				 				
+				//从cookie中删除要展开的菜单的menuId
+					if(closed_menu_id && closed_menu_id.indexOf("-" + menu_id + "-")>=0){
+						if(closed_menu_id.split("-"+menu_id+"-")[0] + "-" + closed_menu_id.split("-"+menu_id+"-")[1] == "-"){//判断cookie中的最后一个menuId
+							Cookie.setCookie(24567868631815 + "_closed_menu_id","",{expireDays:30,path:"/",domain:"my.58.com"});
+						}else{
+							Cookie.setCookie(24567868631815 + "_closed_menu_id",closed_menu_id.split("-"+menu_id+"-")[0] + "-" + closed_menu_id.split("-"+menu_id+"-")[1],{expireDays:30,path:"/",domain:"my.58.com"});
+						}
+					}
+					
+					//cookie closed_menu_id中记录要展开的菜单的menuId
+					if(opened_menu_id){//有已展开状态的左侧菜单
+						if(opened_menu_id.indexOf("-"+ menu_id + "-")<0){
+							Cookie.setCookie(24567868631815 + "_opened_menu_id",opened_menu_id + menu_id +"-",{expireDays:30,path:"/",domain:"my.58.com"});
+					  }
+					}else{//没有已折叠状态的左侧菜单
+						  Cookie.setCookie(24567868631815 + "_opened_menu_id","-"+menu_id+ "-",{expireDays:30,path:"/",domain:"my.58.com"});
+					}
+				
+			}
+	});
+	
+	$(".leftmenu-content li a ").click(function(){
+		$("li").removeClass("li1-selected");
+		$(".leftmenu-content-ul li").removeClass("li-selected");
+		$(".leftmenu-content-slide-li1").removeClass("li1-selected");
+		$(".leftmenu-content-li2").removeClass("li1-selected");
+		var ul_temp = $(this).parent("li").parent("ul").attr("class");
+		if(ul_temp == "leftmenu-content-ul")
+			$(this).parent("li").addClass("li-selected");
+		else
+			$(this).parent("li").addClass("li1-selected");
+		$("#currentmenu_name").text("");
+		$("#currentmenu_name").append($(this).text());
+	});
+	
+})
+
+
+/**
+	*COOKIE相关 add by bsrn  
+	*
+*/
+ 
+		var Cookie=new Object();
+		var Cookie={
+			setCookie:function(){},
+			getCookie:function(){},
+			deleteCookie:function(){}
+		}
+		//setCookie
+		//name是要设置cookie的名字，value是要设置的值
+		//option 包括其他选项，是一个对象参数
+		Cookie.setCookie=function(name,value,option){
+			//用于存储负值给document.cookie的cookie格式字符串
+			var str=name+"="+escape(value);
+			if(option){
+				//如果设置了过期时间
+				if(option.expireDays){
+					var date=new Date();
+					var ms=option.expireDays*24*3600*1000;
+					date.setTime(date.getTime()+ms);
+					str+=";expires="+date.toGMTString();
+				}
+				if(option.path)str+=";path="+option.path;//设置访问路径
+				if(option.domain)str+=";domain="+option.domain;//设置访问主机
+				if(option.secure)str+=";true";//设置安全性
+			}
+			document.cookie=str;
+		}
+		//实现取Cookie值的方法
+		//name是指定Cookie的名字
+		Cookie.getCookie=function(cookieName){
+		var reg=new RegExp(cookieName+"=([^;]*);?");
+		if(reg.test(document.cookie)){
+			return decodeURIComponent(RegExp.$1);
+		}		
+	}
+		//实现删除Cookie 的方法
+		//name是指定的Cookie名称， 通过将expireDays属性指定为负数
+		Cookie.deleteCookie=function(name){
+			this.setCookie(name,"",{expireDays:-1,path:"/"});//将过期时间设置为过去来删除Cookie			
+			
+
+		}
+</script>
+
+     <script type="text/javascript">	 
+			var hashurl =  window.location.hash;
+			var menuurl="";
+			var menuReg=/^\/pro\/\w{2,30}\/(\w{1,30}\/)?$/; 
+			try{
+				if(hashurl!="" && hashurl.indexOf("#")>=0){
+					menuurl= decodeURI( hashurl.split("#")[1]);	 
+					if(menuurl!="" && menuurl.match(menuReg)){			
+						window.location.href=menuurl;
+					}
+				}			 
+			 }
+			catch(e){}			
+				
+			function getSubframe(){
+	            return document.getElementById("ContainerFrame");
+	        }
+			
+            function stateChangeIE(_frame) {
+                if (_frame.readyState == "complete") { ResizeFrame(_frame); }
+            }
+            var oldheight=0;
+            
+            function Statistics(){
+           		var hashurl =  window.location.hash;
+           		var statUrl;
+           		
+           		if(hashurl.split("#")[1]==undefined){
+           			url = window.location.href;
+           			statUrl =url.substring(url.indexOf("/pro")).split("?")[0];
+           		}else{
+           			statUrl = hashurl.split("#")[1];
+           		}
+           		try{
+               		_gaq.push(['_trackEvent', 'my', 'menu',statUrl]);
+           	 	}catch(e){}	
+            }
+            
+            function ResizeFrame(iframe) {
+                try {
+                	iframe=iframe||getSubframe();    
+                    	var height = Math.max(iframe.contentWindow.document.body.scrollHeight, iframe.contentWindow.document.documentElement.scrollHeight);
+                	
+                	height=Math.max(750,height);
+                    if(oldheight!=height){
+                		iframe.style.height = height + "px";
+                    }
+                    oldheight=height;
+                }
+                catch (ex) {}
+            }
+            setInterval("ResizeFrame()",1000);
+            
+            function isIE10(){
+			　　var flag = false;
+			　　try{
+			　　　　if(window.matchMedia("screen and (-ms-high-contrast: active), (-ms-high-contrast: none)").matches){
+			　　　　　　flag = true;
+			　　　　}
+			　　}catch(e){ }
+			
+			　　return flag;
+			}
+  </script>
+<script src="__PUBLIC__/Home/qz1_files/m2013ad.js"></script><style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+style.firebugResetStyles {
+    display: none !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style></head>
+<body>
+
+
+<!--顶部用户工具栏-->
+    <!--水平导航栏-->
+    <div id="topbar"><div class="w pos"><div class="bar_left"><a href="http://bj.58.com/">58同城首页</a><span class="gap">|</span><a target="_blank" class="mobile" href="http://wap.58.com/wap.html?from=center_top/">手机上58</a><a href="http://uc.58.com/" style="margin-left:10px;">返回旧版 &gt;</a></div><div class="bar_right"><div id="myunamemenu" class="haschild"><div id="login-name"><a href="http://my.58.com/">idhzn_p0</a></div><span class="arrow"></span><div style="width: 63px;" class="hc" id="unamebox"><a id="tomypost" href="./fb.html" onclick="clickLog('form=my_topbar_myrelease');">我的发布</a><a id="tomyqiuzhi" href="./qz.html" onclick="clickLog('form=my_topbar_myapply')">我的求职</a><a id="tozhaopin" href="./zp.html" onclick="clickLog('from=my_topbar_myrecruit');">我的招聘</a><a href="./gl.html" onclick="clickLog('form=my_topbar_account')">管理账户</a><a href="./w58.html" onclick="clickLog('my_topbar_mytiny58')">我的微58</a><a id="tomytrade" href="./jy.html">我的交易</a><a target="_self" href="https://passport.58.com/logout?path=" +="" escape(location.href)="" "&back="now&quot;" onclick="clickLog('my_topbar_exit')">退出</a></div></div><div id="message" class="haschild">消息<span class="arrow"></span> <div id="messagebox" class="hc"><i class="shadow"></i></div></div><div style="padding-right:10px" class="haschild"><a href="http://about.58.com/" onclick="javascript:clickLog('from=clicktohelp&amp;source=list&amp;city=bj&amp;cate=');_gaq.push(['pageTracker._trackEvent', 'list', 'topbar_click', '/bj/list/topbar/clicktohelp']);" target="_blank">帮助</a></div><div id="myfeet" class="haschild"><span class="topbaricon icon-history">浏览记录</span><div id="myfeetBox" class="hc"><ul id="feet_final"><li>数据加载中...</li></ul><i class="shadow"></i></div></div> <div id="sitemap" class="haschild"><span class="topbaricon icon-sitemap">导航</span> <div id="sitemapBox" class="hc">     <div class="maplist"> <a href="http://bj.58.com/house.shtml">房产</a>：<a href="http://bj.58.com/zufang/">租房</a>   <a href="http://bj.58.com/ershoufang/">买房</a>   <a href="http://bj.58.com/duanzu/">短租</a><br><a href="http://bj.58.com/sale.shtml">二手</a>：<a href="http://bj.58.com/diannao/">电脑</a>   <a href="http://bj.58.com/shouji/">手机</a>   <a href="http://bj.58.com/jiadian/">家电</a><br><a href="http://bj.58.com/job.shtml">招聘</a>：<a href="http://bj.58.com/yewu/">销售</a>   <a href="http://bj.58.com/kefu/">客服</a>   <a href="http://bj.58.com/zpshengchankaifa/">普工</a><br><a href="http://bj.58.com/car.shtml">车辆</a>：<a href="http://bj.58.com/ershouche/">汽车</a>   <a href="http://bj.58.com/zuche/">租车</a>   <a href="http://bj.58.com/pinche/">拼车</a><br><a href="http://bj.58.com/searchjob.shtml">求职</a>   <a href="http://bj.58.com/jianzhi.shtml">兼职</a>   <a href="http://bj.58.com/huangye/">黄页</a>   <a href="http://bj.58.com/jiaoyu.shtml">培训</a><br><a href="http://bj.58.com/piaowu.shtml">票务</a>   <a href="http://bj.58.com/lvyouxiuxian.shtml">旅游</a>   <a href="http://bj.58.com/pets.shtml">宠物</a>   <a href="http://bj.58.com/jiaoyou.shtml">交友</a>  </div>       <div class="mapfuc"><a href="http://t.58.com/?utm_source=58.com_myheader" class="c_r">同城团购   每日一团</a> <br><a href="http://post.58.com/t/">免费发布</a>   <a href="http://about.58.com/info/del-menu.html">删除信息</a><br><a href="http://about.58.com/yinsibaohu.html?utm_source=top-navigation&amp;utm_medium=58call&amp;utm_campaign=link-click">58隐私保护助手</a><br><a href="http://wap.58.com/wap.html">手机畅游58同城</a> <br><a href="http://apply.vip.58.com/">58同城网邻通</a> <br><a href="http://bangbang.58.com/?source=11" class="bangbang">58帮帮</a> <br><a class="fduihua" href="http://about.58.com/">帮助中心</a></div>   <i class="shadow"></i></div></div></div></div></div>
+    <script>
+        boot.require('business.topbar',
+                function (frame, topbar) {
+                    topbar.init();
+                })
+    </script>
+     <!--水平导航栏-->
+    <div class="header-guide">
+        <div class="header-container">
+        	<img src="__PUBLIC__/Home/qz1_files/uc_logo.gif" onclick="window.open('http://www.58.com');clickLog('from=my_logo');" style="cursor:pointer">
+            <ul class="header-ul" id="header-ul">
+            	             	 				 <li class="header-selected">
+					<a class="a1" href="http://my.58.com/index?r=0.7086509465473757" target="_self" onclick="clickLog('from=my_tab_center')">个人中心</a>
+				 </li>
+				 			 	             	             	 <li>
+                    <div id="account-setting">
+                        <div class="account-setting-div"><a class="a1 header-li-dropdown" href="http://my.58.com/pro/zhanghaoset/?r=0.30397641283066057" onclick="clickLog('from=my_tab_account')">账户设置<i class="icon"></i></a></div>
+                        <div class="account-dropdown-div" style="display: none;">
+                            <div>
+                                <p class="title">安全设置</p>
+                                <p><a href="http://my.58.com/pro/safeset/password" onclick="clickLog('from=my_tab_account_changepassword')">修改登录密码</a></p>
+                                <p><a href="http://my.58.com/pro/safeset/authmobile" onclick="clickLog('from=my_tab_account_bindphone')">手机绑定</a></p>
+                                <p><a href="http://my.58.com/pro/safeset/authmail" onclick="clickLog('from=my_tab_account_bindemail')">邮箱绑定</a></p>
+                            </div>
+                            <div>
+                                <p class="title">个人资料</p> 
+                                <p><a href="http://my.58.com/pro/userdata" onclick="clickLog('from=my_tab_account_changephoto')">修改头像昵称</a></p>
+                                <p><a href="http://my.58.com/pro/mycredit" onclick="clickLog('from=my_tab_account_credit')">信用明细</a></p>
+                                <p><a href="http://my.58.com/pro/safeset/privacySet" onclick="clickLog('from=my_tab_account_setprivacy')">隐私保护</a></p>
+                            </div>
+                            <div class="last">
+                                <p class="title">账号绑定</p>
+                                <p><a href="http://my.58.com/userbindlist" onclick="clickLog('from=my_tab_account_bindqq')">QQ</a></p>
+                                <p><a href="http://my.58.com/userbindlist" onclick="clickLog('from=my_tab_account_bindsina')">新浪微博</a></p>
+                                <p><a href="http://my.58.com/userbindlist" onclick="clickLog('from=my_tab_account_bindalipay')">支付宝</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            	 			 	             	 				 <li>
+					<a class="a1" href="http://my.58.com/pro/balance/?r=0.88038639161503" target="_self" onclick="clickLog('from=my_tab_fund')">我的资金</a>
+				 </li>
+				 			 	             	 				 <li>
+					<a class="a1" href="http://vip.58.com/" target="_blank" onclick="clickLog('from=my_tab_procenter')">专业版</a>
+				 </li>
+				 			 	             
+            </ul>
+            <div class="header-search-div">
+                <form onsubmit="b_query();return false;">
+			        <div class="header-input-div" id="searchbar">
+			                        <span id="key">
+			                            <input id="keyword" name="key" class="header-input" onblur="win.closeToolTipWindow();" placeholder="搜索" autocomplete="off" onkeyup="win.GetContentData();" type="text">
+			                        </span>
+			            <input class="header-input-search-bt" id="searchbtn" value="" onclick="clickLog('from=my_top_search_btn')" type="submit">
+			        </div>
+			    </form>
+                
+                <a class="header-bt" href="http://post.58.com/t/" onclick="clickLog('from=my_post_btn');" target="_blank">发布信息</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="uc-content-div">
+	<script type="text/javascript">
+function gotoFuncPage(menuUrl,funcId,name,content){
+	var tj_log = "from=" + content ;
+	clickLog(tj_log);
+	 if($("#ContainerFrame").length>0){		 
+		 $("#ContainerFrame").attr("src","/func/"+funcId + "?r=" + Math.random());
+		 window.location.href="#"+menuUrl;
+		 window.title="58同城-"+name;
+		 document.title="58同城-"+name;		
+	 }else{		
+		 window.location.href=menuUrl+ "?r=" + Math.random();
+	 }	
+}
+</script>
+
+        <!--左侧垂直导航栏-->
+        <div class="leftmenu-div">
+            <div class="leftmenu-content">
+                <div class="leftmenu-content-header">
+                    <a href="http://my.58.com/index?r=0.7086509465473757"><span>个人中心</span></a>
+                </div>
+                <ul class="leftmenu-content-ul">
+                            	              	<li id="menu2">
+             	<a class="" id="15" href="http://my.58.com/pro/infoall/" target="_self" onclick="clickLog('from=my_left_mypost')">
+				<span>我的发布</span>
+				</a></li>
+             	             	             	              	<li id="menu3">
+             	<a class="" id="19" onclick="gotoFuncPage('/pro/shoucangjianli/','19','我的收藏','my_left_mycollection');">
+				<span>我的收藏</span>
+				</a></li>
+             	             	             	              	<li class="leftmenu-content-slide-li" id="menu4" onclick="clickLog('from=my_jobhunt')">
+             	<span>我的求职</span><i class="icon up"></i>
+             		<ul class="leftmenu-content-ul1" style="">
+             		              		 		                	<li class="li1-selected" id="menu14">
+	                		                	<a class="" id="20" onclick="gotoFuncPage('/pro/myseekjob/1/','20','我的简历','my_jobhunt_resume');">						<span>我的简历</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu15">
+	                		                	<a id="21" onclick="gotoFuncPage('/pro/resumehisotry/','21','简历投递记录','my_jobhunt_sendrecord');">						<span>简历投递记录</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu16">
+	                		                	<a id="22" onclick="gotoFuncPage('/pro/resumedownhis/','22','谁下载了我的简历','my_jobhunt_whodownload');">						<span>谁下载了我的简历</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu17">
+	                		                	<a id="23" onclick="gotoFuncPage('/pro/interviewinvited/','23','工作邀请','my_jobhunt_invitation');">						<span>工作邀请</span>
+						</a>
+						
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu5" onclick="clickLog('from=my_recruit')">
+             	<span>我的招聘</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 							<li class="leftmenu-content-slide-li1" id="menu18" onclick="clickLog('from=my_recruit_position')">
+						<i class="icon up"></i><span>职位管理</span>
+							<ul class="leftmenu-content-ul2" style="display:block; position:relative;">
+							 							 <li id="menu39" class="leftmenu-content-li2">
+								 			                	<a id="24" onclick="gotoFuncPage('/pro/zpinfoall/574/','24','全职职位','my_recruit_position_full');">
+									<span>全职职位</span>
+								</a>
+															</li>
+														 <li id="menu40" class="leftmenu-content-li2">
+								 			                	<a id="25" onclick="gotoFuncPage('/pro/zpinfoall/577/','25','兼职职位','my_recruit_position_parttime');">
+									<span>兼职职位</span>
+								</a>
+															</li>
+														 <li id="menu41" class="leftmenu-content-li2">
+								 			                	<a id="26" onclick="gotoFuncPage('/pro/weizhaopin/','26','微招聘','my_recruit_position_tiny');">
+									<span>微招聘</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+					             		 							<li class="leftmenu-content-slide-li1" id="menu19" onclick="clickLog('from=my_recruit_resume')">
+						<i class="icon"></i><span>简历管理</span>
+							<ul class="leftmenu-content-ul2" style="display:none;">
+							 							 <li id="menu42" class="leftmenu-content-li2">
+								 			                	<a id="27" onclick="gotoFuncPage('/pro/reciveresume/','27','收到的简历','my_recruit_resume_receive');">
+									<span>收到的简历</span>
+								</a>
+															</li>
+														 <li id="menu43" class="leftmenu-content-li2">
+								 			                	<a id="28" onclick="gotoFuncPage('/pro/favoriteresumelist/','28','已下载的简历','my_recruit_resume_download');">
+									<span>已下载的简历</span>
+								</a>
+															</li>
+														 <li id="menu44" class="leftmenu-content-li2">
+								 			                	<a id="29" onclick="gotoFuncPage('/pro/interviewinvitesend/','29','发送的面试邀请','my_recruit_resume_interview');">
+									<span>发送的面试邀请</span>
+								</a>
+															</li>
+														 <li id="menu45" class="leftmenu-content-li2">
+								 			                	<a id="30" onclick="gotoFuncPage('/pro/resumereportrecord/','30','举报/返点记录','my_recruit_resume_report');">
+									<span>举报/返点记录</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+					             		 							<li class="leftmenu-content-slide-li1" id="menu135" onclick="clickLog('from=my_recruit_kszr')">
+						<i class="icon up"></i><span>快速招人</span>
+							<ul class="leftmenu-content-ul2" style="display:block; position:relative;">
+							 							 <li id="menu136" class="leftmenu-content-li2">
+								 			                	<a id="83" href="http://jianli.58.com/" target="_blank" onclick="clickLog('from=my_recruit_kszr_search')">
+									<span>搜索简历</span>
+								</a>
+															</li>
+														 <li id="menu137" class="leftmenu-content-li2">
+								 			                	<a id="32" onclick="gotoFuncPage('/pro/recruitautoorder/','32','购买简历','my_recruit_kszr_buy');">
+									<span>购买简历</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+					             		 							<li class="leftmenu-content-slide-li1" id="menu20" onclick="clickLog('from=my_recruit_account')">
+						<i class="icon"></i><span>账号信息</span>
+							<ul class="leftmenu-content-ul2" style="display:none;">
+							 							 <li id="menu48" class="leftmenu-content-li2">
+								 			                	<a id="31" onclick="gotoFuncPage('/pro/companyinfoextend/','31','公司资料','my_recruit_account_datum');">
+									<span>公司资料</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu6" onclick="clickLog('from=my_tiny58')">
+             	<span>我的微58</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 		                	<li id="menu21">
+	                		                	<a id="12" onclick="gotoFuncPage('/pro/wei58/','12','微58','my_tiny58_tiny58');">						<span>微58</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu139">
+	                		                	<a id="108" onclick="gotoFuncPage('/pro/wfang/','108','我的微房产','my_tiny58_mywfang');">						<span>我的微房产</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu140">
+	                		                	<a id="109" onclick="gotoFuncPage('/pro/wlife/','109','微生活','my_tiny58_tinylife');">						<span>微生活</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu141">
+	                		                	<a id="110" onclick="gotoFuncPage('/pro/wcar/','110','微车','my_tiny58_tinycar');">						<span>微车</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu22">
+	                		                	<a id="33" onclick="gotoFuncPage('/pro/wei58/wd/','33','我的微店','my_tiny58_tinyshop');">						<span>我的微店</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu23">
+	                		                	<a id="34" onclick="gotoFuncPage('/pro/wei58/settings/','34','微信消息设置','my_tiny58_setmessage');">						<span>微信消息设置</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu24">
+	                		                	<a id="35" onclick="gotoFuncPage('/pro/wei58/resume/','35','微简历','my_tiny58_tinyresume');">						<span>微简历</span>
+						</a>
+						
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu7" onclick="clickLog('from=my_deal')">
+             	<span>我的交易</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 							<li class="leftmenu-content-slide-li1" id="menu25" onclick="clickLog('from=my_deal_buyer')">
+						<i class="icon up"></i><span>买家交易</span>
+							<ul class="leftmenu-content-ul2" style="display:block; position:relative;">
+							 							 <li id="menu49" class="leftmenu-content-li2">
+								 			                	<a id="13" onclick="gotoFuncPage('/pro/buyordermgr/','13','订单管理','my_deal_buyer_order');">
+									<span>订单管理</span>
+								</a>
+															</li>
+														 <li id="menu50" class="leftmenu-content-li2">
+								 			                	<a id="61" onclick="gotoFuncPage('/pro/buyevaluatemgr/','61','评价管理','my_deal_buyer_judge');">
+									<span>评价管理</span>
+								</a>
+															</li>
+														 <li id="menu51" class="leftmenu-content-li2">
+								 			                	<a id="62" onclick="gotoFuncPage('/pro/buyrefundmgr/','62','退款管理','my_deal_buyer_refund');">
+									<span>退款管理</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+					             		 							<li class="leftmenu-content-slide-li1" id="menu26" onclick="clickLog('from=my_deal_seller')">
+						<i class="icon up"></i><span>卖家交易</span>
+							<ul class="leftmenu-content-ul2" style="display:block; position:relative;">
+							 							 <li id="menu52" class="leftmenu-content-li2">
+								 			                	<a id="14" onclick="gotoFuncPage('/pro/saleordermgr/','14','订单管理','my_deal_seller_order');">
+									<span>订单管理</span>
+								</a>
+															</li>
+														 <li id="menu117" class="leftmenu-content-li2">
+								 			                	<a id="63" onclick="gotoFuncPage('/pro/saleevaluatemgr/','63','评价管理','my_deal_seller_judge');">
+									<span>评价管理</span>
+								</a>
+															</li>
+														 <li id="menu53" class="leftmenu-content-li2">
+								 			                	<a id="64" onclick="gotoFuncPage('/pro/salerefundmgr/','64','退款管理','my_deal_seller_refund');">
+									<span>退款管理</span>
+								</a>
+															</li>
+														 <li id="menu54" class="leftmenu-content-li2">
+								 			                	<a id="65" onclick="gotoFuncPage('/pro/salewithdrawmoneymgr/','65','提现管理','my_deal_seller_tixian');">
+									<span>提现管理</span>
+								</a>
+															</li>
+														 <li id="menu118" class="leftmenu-content-li2">
+								 			                	<a id="66" onclick="gotoFuncPage('/pro/vipshop/shopdrawmoneymgr/','66','店铺提现','my_deal_seller_tixianshop');">
+									<span>店铺提现</span>
+								</a>
+															</li>
+														 <li id="menu119" class="leftmenu-content-li2">
+								 			                	<a id="67" onclick="gotoFuncPage('/pro/wubaquan/','67','58券管理','my_deal_seller_58card');">
+									<span>58券管理</span>
+								</a>
+															</li>
+														 <li id="menu138" class="leftmenu-content-li2">
+								 			                	<a id="107" onclick="gotoFuncPage('/pro/busimessage/','107','商机留言管理','my_deal_seller_busimessage');">
+									<span>商机留言管理</span>
+								</a>
+															</li>
+														</ul>
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu8" onclick="clickLog('from=my_left_shop_mag')">
+             	<span>店铺管理</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 		                	<li id="menu97">
+	                		                	<a id="68" onclick="gotoFuncPage('/pro/vipshop/shopinfo/','68','店铺资料','my_left_shop_mag_data');">						<span>店铺资料</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu99">
+	                		                	<a id="69" onclick="gotoFuncPage('/pro/vipshop/albummgr/','69','相册管理','my_left_shop_mag_album');">						<span>相册管理</span>
+						</a>
+						
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu9" onclick="clickLog('from=my_left_dgfw')">
+             	<span>我的订购</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 		                	<li id="menu27">
+	                		                	<a id="59" onclick="gotoFuncPage('/pro/order/','59','我的订单','my_left_dgfw_order');">						<span>我的订单</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu28">
+	                		                	<a id="60" onclick="gotoFuncPage('/pro/contract/','60','我的合同','my_left_dgfw_contract');">						<span>我的合同</span>
+						</a>
+						
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li class="leftmenu-content-slide-li" id="menu10" onclick="clickLog('from=my_left_khfw')">
+             	<span>客户服务</span><i class="icon"></i>
+             		<ul class="leftmenu-content-ul1" style="display:none;">
+             		              		 		                	<li id="menu29">
+	                		                	<a id="58" href="http://fanqizha.58.com/" target="_blank" onclick="clickLog('from=my_left_khfw_wdfqz')">						<span>我的反欺诈</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu30">
+	                		                	<a id="36" onclick="gotoFuncPage('/pro/mycomplain/','36','我的申诉','my_left_khfw_wdss');">						<span>我的申诉</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu31">
+	                		                	<a id="37" onclick="gotoFuncPage('/pro/voteappeal/','37','我的投诉','my_left_khfw_wdts');">						<span>我的投诉</span>
+						</a>
+						
+												</li>
+					             		 		                	<li id="menu32">
+	                		                	<a id="38" onclick="gotoFuncPage('/pro/showillegal/','38','违规记录','my_left_khfw_wgjl');">						<span>违规记录</span>
+						</a>
+						
+												</li>
+										</ul>
+	                </li>
+                              	             	              	<li id="menu11">
+             	<a id="105" href="http://about.58.com/help.html" target="_blank" onclick="clickLog('from=my_left_helpcenter')">
+				<span>帮助中心</span>
+				</a></li>
+             	             	              	 </ul>
+             	<div class="leftmenu-content-header tuiguang">
+                    <a onclick="clickLog('from=my_left_tgzx')" class="pointer" href="http://tuiguang.58.com/" target="_blank">推广中心</a>
+                    <i class="icon"></i>
+                </div>
+                <div class="leftmenu-life-tool-div">
+                    <div class="leftmenu-title">生活工具</div>
+                </div>
+                <div class="leftmenu-life-content">
+                    <div class="leftmenu-life-item">
+                    <a href="http://tools.58.com/phone.shtml" target="_blank" onclick="clickLog('from=my_tool_telphonefee');">
+                        <span class="icon phone"></span>
+                        <span>话费</span>
+                    </a>
+                    </div>
+                    <div class="leftmenu-life-item">
+                    <a href="http://tools.58.com/game.shtml" target="_blank" onclick="clickLog('from=my_tool_gamecard');">
+                        <span class="icon card"></span>
+                        <span>点卡</span>
+                    </a>
+                    </div>
+                    <div class="leftmenu-life-item">
+                    <a href="http://lieche.58.com/" target="_blank" onclick="clickLog('from=my_tool_train');">
+                        <span class="icon train"></span>
+                        <span>火车</span>
+                    </a>
+                    </div>
+                    <div class="leftmenu-life-item">
+                    <a href="http://jipiao.58.com/" target="_blank" onclick="clickLog('from=my_tool_airplane');">
+                        <span class="icon plane"></span>
+                        <span>飞机</span>
+                    </a>
+                    </div>
+                    <div class="leftmenu-life-item">
+                    <a href="http://tools.58.com/traffic.shtml" target="_blank" onclick="clickLog('from=my_tool_breakrules');">
+                        <span class="icon breakrule"></span>
+                        <span>违章</span>
+                    </a>
+                    </div>
+                    <div class="leftmenu-life-item">
+                    <a href="http://www.58.com/jdyd/" target="_blank" onclick="clickLog('from=my_tool_hotel');">
+                        <span class="icon hotel"></span>
+                        <span>酒店</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rightmenu-div">
+        	<a class="tousu-bt" href="http://about.58.com/feedback.html" target="_blank" onclick="clickLog('from=my_complain');"></a>
+            <span id="currentmenu_name">						我的简历
+						</span>
+
+        <iframe style="height: 750px;" id="ContainerFrame" name="ContainerFrame" onreadystatechange="stateChangeIE(this)" onload="ResizeFrame(this);Statistics()" scrolling="no" src="/func/20?r=0.5827189314350464" frameborder="0" height="750px" width="815px"></iframe>
+    </div>
+    </div>
+<div class="footer">
+    <span class="blk">@58.com</span>
+    <span class="red"><a href="http://about.58.com/" target="_blank">联系客服</a></span>
+</div><div class="syn_wx_mask"></div>
+<div class="syn_wx_con">
+	<a class="syn_wx_close" title="关闭"></a>
+	<div class="syn_wx_code"><img src=""></div>
+</div>
+<div id="job_doalog_mask" class="fe_window_mask" style=" position: fixed; height:100%; width:100%; _position:absolute;display: none"></div>
+<div id="job_doalog_content" class="fe_window" style=" display: none; left: 50%; margin: -135px 0px 0px -260px; top: 45%;">
+<div class="outer">
+	<div class="frame" style="width: 520px; height: 270px; padding: 8px;"></div>
+	<div class="contains" style="width: 520px; height: 270px; top: 8px; left: 8px;">
+		<div class="topbar" style="height: 34px;"><a id="job_doalog_closebtn" target="_self" class="closebtn" href="javascript:void(0);"></a><span id="fe_window_5990_title" class="title" style="">帖子刷新提示</span></div>
+		<iframe onload="" class="fe_window_iframe" style="height: 236px; width: 100%; display: block;" scrolling="no" id="fe_window_5990_iframe" src="__PUBLIC__/Home/qz1_files/codebck_v1.htm" visible="false" frameborder="0"></iframe>
+	</div>
+</div>
+</div>
+<div class="jgg-content" style="display:none">
+   <i id="jggClose" class="jgg-close"></i>
+   <input id="captcha_infoid" value="" type="hidden">
+   <input id="captcha_mobile" value="" type="hidden">
+   <input id="captcha_validateCodeKey" value="" type="hidden">
+   <div id="jggYzm" style="display:none">
+        <input id="captcha_type" name="captcha_type" value="600" type="hidden">
+        <input id="captcha_input" class="cptrHidden action_color" name="captcha_input" maxlength="6" type="text">
+        <span id="jggTitle" class="jgg-title"></span>
+        <div class="jgg-input-div"><input class="jgg-input" placeholder="请点击九宫格数字" type="text"></div>
+
+        <span id="jggTipSpan" class="jgg-tip-span" placeholder="请点击九宫格数字">请根据信息内容点击下面的图片<span id="jggResend" class="jgg-resend" style="display:none">重新获取</span><span id="jggTipCountSpan" class="jgg-tip-count-span">(<span id="timeCount"></span>秒后可重新发送)</span></span>
+        <table id="sqrTable" class="character">
+            <tbody>
+            <tr>
+                <td class="r1c1"></td>
+                <td class="r1c2"></td>
+                <td class="r1c3"></td>
+            </tr>
+            <tr>
+                <td class="r2c1"></td>
+                <td class="r2c2"></td>
+                <td class="r2c3"></td>
+            </tr>
+            <tr>
+                <td class="r3c1"></td>
+                <td class="r3c2"></td>
+                <td class="r3c3"></td>
+            </tr>
+            </tbody>
+        </table>
+        <a id="jggSubmit" class="jgg-submit">提交</a>
+    </div>
+    <div id="jggAudio" style="display:none">
+            <span id="jggAudioTitle" class="jgg-title">您发送的请求太多，客服一会儿会给你打电话，请提前想好怎么解释</span><a id="jggAudioUrl" href="javascript:void(0);" onclick="getAudioCaptcha();" style="color: #2c61cc;">获取验证码</a>
+            <span id="jggAudioTipCountSpan" class="jgg-tip-count-span">(<span id="audio-timeCount"></span>秒后可重新发送)</span>
+            <input id="jggAudioInput" class="jgg-audio-input" type="text">
+            <a id="jggAudioSubmit" class="jgg-audio-submit">确定</a>
+    </div>
+</div>   
+<script type="text/javascript" src="__PUBLIC__/Home/qz1_files/user_center_new_v20150714230618.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/qz1_files/referrer4.js"></script>
+<script src="__PUBLIC__/Home/qz1_files/alert_v20150827115731.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/qz1_files/9gongge_v20150827212814.js"></script>
+
+<div style="position: fixed; right: 0px; bottom: 0px; width: 174px; height: 36px; border: 0px none; cursor: default; z-index: 1000;" name="im_div" id="im_div"><object data="__PUBLIC__/Home/qz1_files/im_3.swf" name="im_swf" id="im_swf" type="application/x-shockwave-flash" align="middle" height="100%" width="100%"><param value="high" name="quality"><param value="always" name="allowscriptaccess"><param value="false" name="allowfullscreen"></object></div></body></html>

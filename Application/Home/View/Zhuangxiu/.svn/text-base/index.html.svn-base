@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <title>【北京家具厂|北京家具城|北京家具公司】- 北京58同城</title>
+		<meta name="description" content="58同城家具网,是专业的一站式家具采购平台,网站优选实木家具、红木家具、欧式家具、美式家具、儿童房家具等正品品牌家具,安全环保,优质低价。厂家还可承担来料加工、上门定做等服务。量大从优,欢迎选购。-58.com">
+		<meta name="keywords" content="北京家具市场,北京家具网,北京家具定制厂家">
+		<meta http-equiv="X-UA-Compatible" content="edge">
+		<meta name="location" content="province=北京;city=北京;coord=116.395645,39.929986">
+		<meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.58.com/bj/jiajusp/">
+		<meta http-equiv="mobile-agent" content="format=html5; url=http://m.58.com/bj/jiajusp/">
+		<meta http-equiv="mobile-agent" content="format=wml; url=http://m.58.com/bj/jiajusp/">
+		<link href="__PUBLIC__/Home/zhuangxiu_files/base-v1_v0.css" rel="stylesheet" type="text/css">
+		<link href="__PUBLIC__/Home/zhuangxiu_files/common-v1_v0.css" rel="stylesheet" type="text/css">
+		<link href="__PUBLIC__/Home/zhuangxiu_files/default-list-v2_v0.css" rel="stylesheet" type="text/css">
+		<link type="text/css" rel="stylesheet" href="__PUBLIC__/Home/zhuangxiu_files/new_jumpdiv03_v0.css">
+		<style type="text/css">
+			img {
+    			vertical-align: middle;
+			}
+
+			.filterbar-l{
+				font-size:12px;
+			}
+
+			.hotsearch{
+				font-size:12px;
+			}
+
+			.cright{
+			    width:150px;
+			    height:auto;
+			    float:right;
+			    margin-top:5px;
+			    margin-left:3px;
+			    margin-right:10px;
+
+			}
+
+			.pubu{
+			    width:150px;
+			    height:auto;
+			    float:left;
+			    list-style:none;
+			}
+
+			#item{
+			    width:160px;
+			    height:auto;
+			    /*border:solid 1px #ddd;*/
+			    padding-bottom:10px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<header id="header"> 
+				<br>
+				<a href="{:U('Home/Index/index')}" target="_blank">
+					<img src="__PUBLIC__/Home/zhuangxiu_files/logo.gif" title="58同城" alt="58同城">
+				</a>
+		
+            <div class="header-search">
+         		<form action="{:U('Home/Zhuangxiu/index')}" method="get">
+         	        <input x-webkit-grammar="builtin:translate" x-webkit-speech="" class="search-input c_000" id="keyword1" name="gtype" para="key" autocomplete="off" onkeyup="win1.GetContentData();" lang="zh-CN">
+                    <span onmouseout="this.className='sbtn'" onmouseover="this.className='sbtn hover'" class="sbtn">
+                		<input value="搜本类" class="but-bl" name="" id="searchbtn1" type="submit">
+                	</span>
+                	<span onmouseout="this.className='sbtn'" onmouseover="this.className='sbtn hover'" class="sbtn">
+    		    		<input onclick="b_query_all();" value="搜全站" class="but-qz" name="" type="button">
+                	</span>
+    		        <div class="clear"></div>
+	        		<span class="hotsearch">
+	       				<em>热搜：</em>
+			            <a href="{:U('Home/Zhuangxiu/index')}?gtype=工装服务">工装服务</a>
+			            <a href="{:U('Home/Zhuangxiu/index')}?gtype=家庭装修">家庭装修</a>
+			            <a href="{:U('Home/Zhuangxiu/index')}?gtype=家具">家具</a>
+			            <a href="{:U('Home/Zhuangxiu/index')}?gtype=建材">建材</a>
+	        		</span>
+    		    </form>
+       		</div>
+        	<a href="http://post.58.com/1/26523/s5" target="_blank" class="postbtn"><i></i>免费发布信息</a>
+    	</header>
+
+		<div id="brand_list_top_banner"></div>
+		<section id="selection">
+			<dl class="secitem">
+				<dt class="secitem_brand">类别 ：</dt>
+				<dd id="ObjectType">
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}" class="select">全部</a>
+					<foreach name="stype" item="vo">
+						<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&stype={$vo}">{$vo}</a>
+					</foreach>		
+				</dd>
+			</dl>
+			<dl class="secitem">
+				<dt class="secitem_brand">地址 ：</dt>
+				<dd id="local">
+					<a href="{:U('Home/Zhuangxiu/index')}gtype={$gtype}" class="select">全北京</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=朝阳">朝阳</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=海淀">海淀</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=东城">东城</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=西城">西城</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=崇文">崇文</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=宣武">宣武</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=丰台">丰台</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=通州">通州</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=石景山">石景山</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=房山">房山</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=昌平">昌平</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=大兴">大兴</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=顺义">顺义</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=密云">密云</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=怀柔">怀柔</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=延庆">延庆</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=平谷">平谷</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=门头沟">门头沟</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=燕郊">燕郊</a>
+					<a href="{:U('Home/Zhuangxiu/index')}?gtype={$gtype}&addr=北京周边">北京周边</a>
+				</dd>
+			</dl>
+			<i class="shadow"></i>
+		</section>
+		<!-- <div id="adtop_1" class="hc">
+			<div class="mouter defa">
+				<div class="inner">
+					<div id="md3" class="mdul"></div>
+						<ul id="md1" class="mdul"></ul>
+						<ul id="md2" class="mdul"></ul>
+						<ul id="md4" class="mdul"></ul>
+						<ul id="md5" class="mdul"></ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div class="tabsbar">
+			<div class="list-tabs">
+				<a href="http://bj.58.com/jiajusp/" class="sel"><h1>北京{$gtype}&nbsp;&nbsp;{$stp}</h1></a>
+			</div>
+			<span class="zhaobiao">
+				<a href="http://zhaobiao.58.com/pc/bid/goSubmit?plid=1&amp;pcateid=4063" onclick="clickLog('from=pc_list_huangye_zhaobiao_jtzxjj_textlink_bj&amp;psid=188228838189694595435779677');" target="_blank">
+				<img src="__PUBLIC__/Home/zhuangxiu_files/zhuangxiubanner.gif"></a>
+			</span>
+		</div>				
+		<section id="mainlist" class="main clearfix pr"> 
+			<div class="filterbar h28">
+				<div class="filterbar-l">
+        			<div class="filterup" id="filterup">
+     					<a class="m1 sel" title="默认" href="#" rel="nofollow" onclick="g2({sort:null}); clickLog('from=List_sort_default&amp;psid=188228838189694595435779677'); "><span>默认排序<em></em></span></a>
+				        <a class="m1" title="预约" href="#" rel="nofollow" onclick="g2({sort:'yuyue'});clickLog('from=List_sort_yuyue&amp;psid=188228838189694595435779677');return false;"><span>预约<em class="ico-miarr-d"></em></span></a>
+    					<a class="m1" title="评分" href="#" rel="nofollow" onclick="g2({sort:'pingfen'});clickLog('from=List_sort_pingfen&amp;psid=188228838189694595435779677');return false;"><span>评分<em class="ico-miarr-d"></em></span></a>
+					</div>
+        			<span class="checkbox-ico" id="isonline"><a href="javascript:void(0);">帮帮在线</a></span>
+					<span title="个人认证和企业认证用户" class="checkbox-ico" id="renzheng"><a href="javascript:void(0);">只看认证</a></span>
+				</div>  
+					<div class="filterbar-md">
+    		    	<a class="mdtj" style="display:inline-block;" rel="nofollow" target="_blank" href="http://e.58.com/shenghuo.html" onclick="clickLog('from=huangye_zhaoshang&amp;psid=188228838189694595435779677');">想更多接单详询4008107258</a>
+	    	    </div>        
+			</div>
+			<div id="infolist" class="cleft">
+				<table class="small-tbimg" id="jingzhun" cellpadding="0" cellspacing="0">
+					<tbody>
+						<foreach name="zhuangxiu" item="vo">
+							<tr class="" logr="q_2_17467799221767_23953907718712_4">
+								<td class="img">
+									<div>
+										<a href="{:U('Home/Zhuangxiu/detail')}?id={$vo['id']}" target="_blank" rel="nofollow">
+											<img src="__PUBLIC__{$vo['pic'][0]}">
+										</a>
+									</div>
+								</td>
+								<td class="t">
+									<div class="tdiv">
+										<a href="{:U('Home/Zhuangxiu/detail')}?id={$vo['id']}">{$vo['title']}电话咨询</a>
+										<span class="jingpin"></span><br>
+										<div>免费上门量尺，设计。出设计方案，整体和室产品保修两年北京藤源</div>
+                						<p class="seller">
+											<a href="" target="_blank" class="u" rel="nofollow">{$vo['company']}</a>
+											&nbsp;<span name="zaixian_17467799221767" url="" tag="bbbindcpc"></span>
+											<i class="picq geren" title="个人身份已认证"></i>
+											<span class="wlt3" title="58同城建议您优先选择网邻通商家"></span>
+											<span class="c_c0 pr5"> [网邻通指数:710]</span>
+										</p>
+    								</div>
+    							</td>
+								<td class="tdp">
+									<div class="pjdiv">
+										<span class="star00" title="0.0分"><span style="width:0.0%"></span></span>
+										<span class="p">
+											<a href="">当月预约<i>0</i>次</a>
+										</span><br>
+										<span class="p">
+											<a href="">当月评价<i>0</i>次</a>
+										</span>
+	    							</div>
+								</td>    	
+								<td class="vertop">
+									<div class="yuyue_vertop">
+										<span class="cont_Pa">
+											<a href="" class="click_btn" >免费预约</a>
+										</span>
+										<div class="content_jumpDiv height165px">
+										    <h2><a class="close_btn" href="javascript:;">×</a></h2>
+											    <div class="all_content">
+													<div class="tankuang_main">            
+														<a style="color:#ee5500" href="">
+											    			<div class="yuyue_btn">免费预约</div>
+											    		</a>  					
+											    		<p class="security">                               
+												    		<img src="__PUBLIC__/Home/zhuangxiu_files/security.png" class="security_img1">
+												    		<span class="rich_security">保障足</span>
+												    		<img src="__PUBLIC__/Home/zhuangxiu_files/judge.png" class="security_img2"><span class="can_pinajia">可评价</span> 					
+											    		</p> 
+											    	</div>                                             
+										    		<p class="jumpDiv_tel">
+										    			<img src="__PUBLIC__/Home/zhuangxiu_files/tel.png">  18601232927
+										    			<span class="guishudi">归属地（北京）</span>
+										    		</p> 
+												</div> 
+										</div>
+									</div>
+								</td>	
+							</tr>
+						</foreach>				
+					</tbody>
+				</table>
+			</div>
+			<div class="cright">
+                <li style="display:none" id="item">
+                    <img src="" alt="" width="100%">
+                </li>
+    
+                <ul class="pubu"></ul>
+                <script type="text/javascript" src="__PUBLIC__/Home/jquery-1.8.3.min.js"> </script>
+                <script type="text/javascript">
+                    var p = 1;
+                    var isLoading = false;//
+
+                    //滚动事件
+                    $(window).scroll(function(){
+                        //如果正在请求  返回函数
+                        if(isLoading) return;
+                        //获取滚动高度
+                        var sT = $(window).scrollTop();
+                        //获取窗口的高度
+                        var wH = $(window).height();
+                        //整个文档的高度
+                        var sH = $(document).height();
+                        //
+                        if(sH - sT - wH <= 200 ){
+                            ///关门  其他请求不能发送
+                            isLoading = true;
+                            load();
+                        }
+                    })
+
+                    //获取数据的函数封装
+                    function load(){
+                        $.get("{:U('Home/Zhuangxiu/gettips')}",{p:p},function(data){
+                            //循环创建元素
+                            for(var i=0;i<data.length;i++){
+                                //克隆元素
+                                var newLi = $('#item').clone(true);
+                                //修改元素的信息
+                                newLi.find('img').attr('src','__PUBLIC__/'+data[i].pic);
+                                //显示元素
+                                newLi.show();
+                                //执行插入
+                                $('.pubu').append(newLi);
+                            }
+                            p++;
+                            isLoading = false;
+                        },'json');
+                    }
+
+                    //页面加载的时候请求一次
+                    load();
+                </script>
+        	</div>
+		</section>
+
+		 <div class="pager" id="house-area"> 
+                           <style type="text/css">
+                    #pages{height:50px;width:800px;float:left;margin-left: 400px}
+                    #pages a{
+                        background-color: #fff;
+                        border: 1px solid #ddd;
+                        color: #337ab7;
+                        float: left;
+                        line-height: 1.42857;
+                        margin-left: -1px;
+                        padding: 6px 12px;
+                        position: relative;
+                        text-decoration: none;
+                    }
+                    #pages span{
+                        display: block;
+                        border: 1px solid #ddd;
+                        float: left;
+                        line-height: 1.42857;
+                        margin-left: -1px;
+                        padding: 6px 12px;
+                        position: relative;
+                        text-decoration: none;
+                        background-color: #337ab7;
+                        border-color: #337ab7;
+                        color: #fff;
+                        cursor: default;
+                        z-index: 2;
+                        border-radius: 80%;
+                    }
+                </style>
+                <div id="pages">
+                {$pages}
+                </div>
+            </div>
+										
+		<footer id="footer" class="footer">
+			<p class="copyright">© 58.com <a id="askicon" target="_blank" title="有问题请与58客服进行对话" rel="nofollow" href="http://about.58.com/v5/">帮助中心</a></p>
+		</footer>
+		
+	</body>
+</html>
